@@ -1,38 +1,63 @@
-<script>
-  let projects = [
-    { title: "Project Alpha", description: "Description of Project Alpha" },
-    { title: "Project Beta", description: "Description of Project Beta" }
-  ];
+<script lang="ts">
+  import Card from '@smui/card';
+  import Button from '@smui/button';
+  import Paper from '@smui/paper';
+  import ImageList from '@smui/image-list';
+  export let data: { projects: { name: string; description: string; details: string; image: string }[] };
+  console.log('Projects data in component:', data.projects);
 </script>
 
 <style>
-  h1 {
-    text-align: center;
-    margin-top: 20px;
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
-  .project-container {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
+
+  .project-card {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
   }
-  .project-title {
-    font-size: 1.5rem;
-    color: #333;
+
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
-  .project-description {
-    font-size: 1rem;
-    color: #666;
+
+  .project-content {
+    padding: 16px;
+  }
+
+  .project-content h2 {
+    margin: 0 0 8px 0;
+  }
+
+  .project-content p {
+    margin: 0 0 16px 0;
+  }
+
+  .project-content button {
+    display: block;
+    width: 100%;
   }
 </style>
 
-<main>
-  <h1>Current Projects</h1>
-  {#each projects as project}
-    <div class="project-container">
-      <h2 class="project-title">{project.title}</h2>
-      <p class="project-description">{project.description}</p>
-    </div>
+<h1>Our Projects</h1>
+
+<div class="project-grid">
+  {#each data.projects as project}
+    <Card class="project-card">
+      <img src={project.image} alt={project.name} class="project-image" />
+      <div class="project-content">
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <p>{project.details}</p>
+        <Button variant="raised">Learn More</Button>
+      </div>
+    </Card>
   {/each}
-</main>
+</div>
