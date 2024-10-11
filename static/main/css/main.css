@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* Adds styling to the text in the main part of the home page */
+main {
+    font-family: Arial, serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Styles the grid(div) that holds the picture and description */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh;
+    grid-gap: 20px;
+}
+
+/* The styling of a picture in the homepage */
+.home_img {
+    background-image: url('../images/Company_Logo.jpg');
+    background-size: cover;
+    background-position: top center;
+    width: 30vw;
+    justify-self: end;
+    border: 2px solid black;
+}
+
+/* The styling of a picture in the homepage */
+.def_team_img {
+    background-image: url('../images/default_pic.jpg');
+    background-size: cover;
+    background-position: top center;
+    width: 30vw;
+    justify-self: end;
+    border: 2px solid black;
+}
+
+/* The styling of the description */
+.home_desc {
+    width: 30vw;
+    justify-self: start;
+    overflow-y: auto;
+}
+
+/* Adds styling of a title and description */
+.title_desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Styling the <hr> line break thing */
+.divider {
+    width: 80vw;
+    margin: 0 auto
+}
+
+/* enlarges and emboldens the text inside span */
+.big_bold {
+    font-weight: bold;
+    font-size: 2em
+}
+
+@media screen and (max-width: 650px) {
+    /* Styles the grid(div) that holds a picture and description */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* The styling of a picture in the homepage */
+    .home_img {
+        background-image: url('../images/Company_Logo.jpg');
+        background-size: cover;
+        background-position: top center;
+        width: 80vw;
+        justify-self: center;
+        border: 2px solid black;
+    }
+
+    /* The styling of the description */
+    .home_desc {
+        width: 80vw;
+        justify-self: center;
+        overflow-y: visible;
+    }
+}
