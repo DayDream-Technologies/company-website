@@ -1,2 +1,2 @@
 # Company-Website
-A template website created while we wait for the official design/styling for the website.
+A webpage created from pure HTML, CSS and JavaScript. The website showcases the projects that the various teams are working on and it lists all the team members involved in DayDream Technologies.
