@@ -100,7 +100,7 @@ main {
     font-size: 0.9em;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
     }
