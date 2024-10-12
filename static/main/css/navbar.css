@@ -65,7 +65,7 @@ nav {
     opacity: 0.6;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 940px) {
     .respo_navbar {
         display: grid;
         grid-template-columns: 7fr 1fr;
@@ -78,7 +78,7 @@ nav {
     }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 940px) {
     .dropdown {
         display: none
     }
