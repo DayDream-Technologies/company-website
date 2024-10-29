@@ -1,6 +1,14 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+}
+
+/* Applies the colorful background effect across the site */
+body {
+    background: linear-gradient(135deg, #FF9A3F, #FF7539, #ff0000a9, #ff8800, #FFA500);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
 }
 
 /* Adds styling to the text in the main part of the home page */
@@ -57,13 +65,13 @@ main {
 /* Styling the <hr> line break thing */
 .divider {
     width: 80vw;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
-/* enlarges and emboldens the text inside span */
+/* Enlarges and emboldens the text inside span */
 .big_bold {
     font-weight: bold;
-    font-size: 2em
+    font-size: 2em;
 }
 
 .team-grid {
