@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Applies the colorful background effect across the site */
+/* Colorful background */
 body {
     background: linear-gradient(135deg, #FF9A3F, #FF7539, #ff0000a9, #ff8800, #FFA500);
     background-size: cover;
@@ -11,70 +6,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Adds styling to the text in the main part of the home page */
-main {
-    font-family: Arial, serif;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* Styles the grid(div) that holds the picture and description */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh;
-    grid-gap: 20px;
-}
-
-/* The styling of a picture in the homepage */
-.home_img {
-    background-image: url('../images/Company_Logo.jpg');
-    background-size: cover;
-    background-position: top center;
-    width: 30vw;
-    justify-self: end;
-    border: 2px solid black;
-}
-
-/* The styling of a picture in the homepage */
-.def_team_img {
-    background-image: url('../images/default_pic.jpg');
-    background-size: cover;
-    background-position: top center;
-    width: 30vw;
-    justify-self: end;
-    border: 2px solid black;
-}
-
-/* The styling of the description */
-.home_desc {
-    width: 30vw;
-    justify-self: start;
-    overflow-y: auto;
-}
-
-/* Adds styling of a title and description */
-.title_desc {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-    padding-top: 40px;
-}
-
-/* Styling the <hr> line break thing */
-.divider {
-    width: 80vw;
-    margin: 0 auto;
-}
-
-/* Enlarges and emboldens the text inside span */
-.big_bold {
-    font-weight: bold;
-    font-size: 2em;
-}
-
-.team-grid {
+/* Common grid styling for team and project containers */
+.team-grid, #projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -83,58 +16,81 @@ main {
     padding: 20px;
 }
 
-.team-member {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.342);
-    border: 5px solid rgb(73, 73, 73);
+/* Separate class for team-member and project cards */
+.team-member, .project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card structure and animation */
+.card {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    border-radius: 10px;
+}
+
+/* Front and back face for card flip */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     border-radius: 10px;
     color: white;
 }
 
-.team-member img {
-    width: 150px;
-    height: 150px;
+.card-front {
+    background-color: rgba(0, 0, 0, 0.342);
+    border: 5px solid rgb(73, 73, 73);
+}
+
+.card-back {
+    background-color: #0a66c2;
+    transform: rotateY(180deg);
+}
+
+/* Flip effect on hover */
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* Styling for images and text */
+.card-front img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.team-member h3 {
+.card-front h3 {
     margin-top: 10px;
     font-size: 1.2em;
 }
 
-.team-member p {
+.card-front p {
     font-size: 0.9em;
 }
 
-@media (max-width: 750px) {
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Styling for LinkedIn and project links */
+.card-back a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
 }
 
-@media screen and (max-width: 650px) {
-    /* Styles the grid(div) that holds a picture and description */
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    /* The styling of a picture in the homepage */
-    .home_img {
-        background-image: url('../images/Company_Logo.jpg');
-        background-size: cover;
-        background-position: top center;
-        width: 80vw;
-        justify-self: center;
-        border: 2px solid black;
-    }
-
-    /* The styling of the description */
-    .home_desc {
-        width: 80vw;
-        justify-self: center;
-        overflow-y: visible;
-    }
+.card-back a:hover {
+    text-decoration: underline;
 }
