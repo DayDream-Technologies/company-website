@@ -3,13 +3,13 @@ const teamMembers = [
         name: "Member 1",
         role: "Developer",
         linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default_pic.jpg"
+        image: "../static/main/images/default-featured-image.png.jpg"
     },
     {
         name: "Member 2",
         role: "Designer",
         linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default_pic.jpg"
+        image: "../static/main/images/default-featured-image.png.jpg"
     },
     // Add more team members as needed
 ];
@@ -19,13 +19,13 @@ const projects = [
         title: "Project 1",
         description: "Web Development",
         link: "https://example.com/project1",
-        image: "../static/main/images/project1.jpg"
+        image: "../static/main/images/default-featured-image.png.jpg"
     },
     {
         title: "Project 2",
         description: "App Design",
         link: "https://example.com/project2",
-        image: "../static/main/images/project2.jpg"
+        image: "../static/main/images/default-featured-image.png.jpg"
     },
     // Add more projects as needed
 ];

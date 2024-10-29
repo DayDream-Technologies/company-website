@@ -1,38 +1,65 @@
-/* Colorful background */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     background: linear-gradient(135deg, #FF9A3F, #FF7539, #ff0000a9, #ff8800, #FFA500);
     background-size: cover;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
-/* Common grid styling for team and project containers */
+/* Universal padding and margin reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center text content and add spacing */
+.title_desc, footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #f0f0f0;
+}
+
+/* Improved styling for grid containers */
 .team-grid, #projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
 }
 
-/* Separate class for team-member and project cards */
-.team-member, .project-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Card structure and animation */
-.card {
+/* Styling for cards */
+.team-member .card, .project-card .card {
     position: relative;
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     perspective: 1000px;
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Front and back face for card flip */
 .card-front, .card-back {
     position: absolute;
     width: 100%;
@@ -49,8 +76,7 @@ body {
 }
 
 .card-front {
-    background-color: rgba(0, 0, 0, 0.342);
-    border: 5px solid rgb(73, 73, 73);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-back {
@@ -58,7 +84,6 @@ body {
     transform: rotateY(180deg);
 }
 
-/* Flip effect on hover */
 .card:hover .card-front {
     transform: rotateY(180deg);
 }
@@ -67,30 +92,69 @@ body {
     transform: rotateY(0deg);
 }
 
-/* Styling for images and text */
+/* Image and text styling in cards */
 .card-front img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .card-front h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
+    margin: 10px 0 5px;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
 .card-front p {
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: 400;
 }
 
-/* Styling for LinkedIn and project links */
+/* Styling for link in card-back */
 .card-back a {
     color: white;
     font-size: 1.1em;
     text-decoration: none;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .card-back a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
     text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Navbar adjustments for centering and alignment */
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.nav_link {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+}
+
+.nav_link:hover {
+    color: #FFA500;
+    transition: color 0.3s;
 }
