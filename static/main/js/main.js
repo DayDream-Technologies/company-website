@@ -11,66 +11,7 @@ const teamMembers = [
         linkedin: "https://www.linkedin.com/company/daydream-technologies/",
         image: "../static/main/images/default-featured-image.png.jpg"
     },
-    {
-        name: "Member 1",
-        role: "Developer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 2",
-        role: "Designer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 1",
-        role: "Developer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 2",
-        role: "Designer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 1",
-        role: "Developer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 2",
-        role: "Designer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 1",
-        role: "Developer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 2",
-        role: "Designer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 1",
-        role: "Developer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
-    {
-        name: "Member 2",
-        role: "Designer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../static/main/images/default-featured-image.png.jpg"
-    },
+    
     // Add more team members as needed
 ];
 
@@ -146,6 +87,10 @@ function renderProjects() {
 
 // Call the functions to render team members and projects on page load
 document.addEventListener('DOMContentLoaded', () => {
-    renderTeamMembers();
-    renderProjects();
+    if (document.getElementById('team-container')) {
+        renderTeamMembers();
+    }
+    if (document.getElementById('projects-container')) {
+        renderProjects();
+    }
 });
