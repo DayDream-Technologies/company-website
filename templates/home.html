@@ -6,35 +6,59 @@
     <title>Daydream Technologies</title>
     <link rel="stylesheet" href="../static/main/css/navbar.css" />
     <link rel="stylesheet" href="../static/main/css/main.css" />
+    <link rel="stylesheet" href="../static/main/css/home.css" />
     <link rel="stylesheet" href="../static/main/css/footer.css" />
+    <script src="../static/main/js/main.js" defer></script>
 </head>
 <body>
     <nav>
         <ul class="links">
             <li>
                 <a class="nav_logo" href="home.html">
-                    <img class="logo_img" src="../static/main/images/Company_Logo.jpg" alt="Day Dream Technologies" />
+                    <img class="logo_img"
+                         src="../static/main/images/Company_Logo.jpg"
+                         alt="Day Dream Technologies" />
                 </a>
             </li>
             <div class="nav_links">
-                <li><a class="nav_link" href="home.html">Home</a></li>
-                <li><a class="nav_link" href="projects.html">Projects</a></li>
-                <li><a class="nav_link" href="team.html">Our Team</a></li>
-                <li><a class="nav_link contact-btn" href="contact.html">Contact</a></li>
+                <li><a class="nav_link" href="home.html" title="Daydream's homepage">HOME</a></li>
+                <li><a class="nav_link" href="projects.html" title="Projects page">PROJECTS</a></li>
+                <li><a class="nav_link" href="team.html" title="Meet the team">TEAM</a></li>
+                <li><a class="contact-link" href="contact.html" title="Contact us">CONTACT</a></li>
             </div>
+        </ul>
+        <ul class="respo_navbar">
+            <li>
+                <a class="nav_logo" href="home.html">
+                    <img class="logo_img"
+                         src="../static/main/images/Company_Logo.jpg"
+                         alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <li><img class="menu_bar" src="../static/main/images/menu-bar.png" alt="menu"></li>
+        </ul>
+        <ul class="dropdown">
+            <li><a class="nav_link" href="home.html" title="DayDream's homepage">Home</a></li>
+            <li><a class="nav_link" href="projects.html" title="Projects page">Projects</a></li>
+            <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
         </ul>
     </nav>
 
-    <main class="main-page">
-        <section class="welcome-section">
-            <div class="text-content">
-                <h1>Welcome to Daydream Technologies</h1>
-                <h2>Where innovation meets reliability.</h2>
-                <p>We specialize in delivering custom application, website, and software development services designed to modernize your business.</p>
-                <a href="projects.html" class="cta-button">Check out our projects →</a>
+    <main>
+        <section class="grid">
+            <div class="three_to_one">
+                <div class="title_desc">
+                    <h1>Welcome to Daydream Technologies</h1><br>
+                    <p>Where innovation meets reliability.</p><br>
+                    <p>We specialize in delivering custom application, website, and software development services designed to modernize your business.</p>
+                </div>
+                <div>
+                    <a class="proj-link" href="projects.html">Check out our projects &rarr;</a>
+                </div>
             </div>
             <div class="image-content">
-                <img src="../static/main/images/default-featured-image.png.jpg" alt="Working together">
+                <img src="../static/main/images/Stock_Web_Dev_Img.jpg" alt="Web Dev">
             </div>
         </section>
     </main>
