@@ -7,14 +7,9 @@ footer {
     font-family: Arial, serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #708090FF;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
     width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000; /* Ensures it stays above other content */
+    padding: 30px;
+    color: white;
+    margin-top: auto;
 }
