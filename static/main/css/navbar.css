@@ -44,6 +44,7 @@ nav {
     text-decoration: none;
     color: white;
     background-color: #e7823c;
+    border: 2px solid #e7823c;
 }
 
 .contact-link:hover {
