@@ -1,2 +1,0 @@
-# Company-Website
-A webpage created from pure HTML, CSS and JavaScript. The website showcases the projects that the various teams are working on and it lists all the team members involved in DayDream Technologies.
