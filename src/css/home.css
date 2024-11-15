@@ -32,8 +32,10 @@
     max-width: 800px;
 }
 
+/* Styling the link to the projects page on the home page */
 .proj-link {
-    display: inline-block;
+    display: inline-flex;  /* Use inline-flex to keep items inline and allow them to align properly */
+    align-items: center;
     padding: 10px 20px;
     border: 2px solid black;
     border-radius: 25px;
@@ -41,11 +43,26 @@
     color: black;
     background-color: white;
     margin-top: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Style the arrow using the ::after pseudo-element */
+.proj-link::after {
+    content: '→';
+    font-size: 1.5em;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to change color and move the arrow */
 .proj-link:hover {
     color: white;
     background-color: black;
+}
+
+/* Move the arrow when the link is hovered */
+.proj-link:hover::after {
+    transform: translateX(5px);
 }
 
 .image-content {
