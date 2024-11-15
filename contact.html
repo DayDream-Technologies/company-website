@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Srujan Patil" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./src/images/favicon.ico" />
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/contact.css" />
@@ -17,22 +16,22 @@
     <nav>
         <ul class="links">
             <li>
-                <a class="nav_logo" href="home.html">
+                <a class="nav_logo" href="index.html">
                     <img class="logo_img"
                          src="./src/images/Company_Logo.jpg"
                          alt="Day Dream Technologies" />
                 </a>
             </li>
             <div class="nav_links">
-                <li><a class="nav_link" href="home.html" title="Daydream's homepage">HOME</a></li>
-                <li><a class="nav_link" href="projects.html" title="Projects page">PROJECTS</a></li>
-                <li><a class="nav_link" href="team.html" title="Meet the team">TEAM</a></li>
-                <li><a class="contact-link" href="contact.html" title="Contact us">CONTACT</a></li>
+                <li><a class="nav_link" href="index.html" title="Daydream's homepage"><strong>Home</strong></a></li>
+                <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
+                <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
+                <li><a class="contact-link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
             </div>
         </ul>
         <ul class="respo_navbar">
             <li>
-                <a class="nav_logo" href="home.html">
+                <a class="nav_logo" href="index.html">
                     <img class="logo_img"
                          src="./src/images/Company_Logo.jpg"
                          alt="Day Dream Technologies" />
@@ -41,10 +40,10 @@
             <li><img class="menu_bar" src="./src/images/menu-bar.png" alt="menu"></li>
         </ul>
         <ul class="dropdown">
-            <li><a class="nav_link" href="home.html" title="DayDream's homepage">Home</a></li>
-            <li><a class="nav_link" href="projects.html" title="Projects page">Projects</a></li>
-            <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
-            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
+            <li><a class="nav_link" href="index.html" title="DayDream's homepage"><strong>Home</strong></a></li>
+            <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
+            <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
+            <li><a class="nav_link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
         </ul>
     </nav>
 
@@ -57,34 +56,41 @@
             <div class="contact-info">
                 <h2>Contact Information</h2>
                 <a class="mail_to" href="mailto:acornide@daydreamtechnologies.net">
-                    <i class="fa fa-envelope"></i>acornide@daydreamtechnologies.net</a>
-                <div class="social-icons">
-                    <a target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">
-                        <i class="fa fa-twitter"></i>
-                        <img class="logo_img"
-                        src="./static/main/images/alt-linkedin.jpg"
-                        alt="Daydream's LinkedIn" />
-                    </a>
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-facebook"></i>
-                </div>
+                    <img class="mail_img"
+                    src="./src/images/mail-img.png"
+                    alt="mail" />
+                    acornide@daydreamtechnologies.net
+                </a>
+                <a class="social_icons" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">
+                    <img class="logo_img"
+                    src="./src/images/alt-linkedin.jpg"
+                    alt="Daydream's LinkedIn" />
+                </a>
             </div>
 
             <!-- Contact Form Section -->
-            <form class="contact-form" action="#" method="post">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="First Name">
-                    <input type="text" id="surname" name="surname" placeholder="Last Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email">
-                    <input type="text" id="phone" name="phone" placeholder="Phone Number">
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Write your message..."></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            <!-- From Uiverse.io by gharsh11032000 -->
+            <!-- Here is the link; https://uiverse.io/gharsh11032000/bitter-cow-59 -->
+            <div class="form-container">
+                <form class="form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="Access_Key_Here">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">How Can We Help You?</label>
+                        <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+                    </div>
+                    <button class="form-submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </main>
 
