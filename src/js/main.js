@@ -2,26 +2,47 @@ const tst = document.querySelector('.menu_bar');
 const dropdown = document.querySelector('.dropdown');
 
 tst.addEventListener('click', event => {
-    if (dropdown.style.display === 'none') {
-        dropdown.style.display = 'grid';
-        dropdown.style.gridTemplateColumns = '1fr';
-        dropdown.style.gridTemplateRows = 'repeat(4, 50px)';
-        dropdown.style.background = '#787d7a';
+    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        dropdown.style.display = 'block';
+        dropdown.style.maxHeight = '0';
+        dropdown.style.transform = 'translateX(100%)';
+        dropdown.style.padding = '15px';
+        dropdown.style.transition = 'transform 0.1s ease-out, max-height 0s ease-out';
+        dropdown.style.position = 'fixed';
+        dropdown.style.top = '75px';
+        dropdown.style.right = '0';
+        dropdown.style.width = '150px';
+        dropdown.style.height = 'calc(100vh - 75px)';
+        dropdown.style.overflow = 'hidden';
+        dropdown.style.borderTop = '1px solid #d8d9da';
+        dropdown.style.borderLeft = '1px solid #d8d9da';
+        dropdown.style.borderBottom = '1px solid #d8d9da';
+        dropdown.style.borderRadius = '10px 0 0 10px';
+        dropdown.style.background = '#787a7d';
         dropdown.style.justifyItems = 'center';
         dropdown.style.alignItems = 'center';
-        dropdown.style.width = '100%';
         dropdown.style.listStyleType = 'none';
-        dropdown.style.position = 'fixed';
-        dropdown.style.zIndex = '9999';
-    }else{
+        
+        const items = dropdown.querySelectorAll('li');
+        items.forEach(item => {
+            item.style.marginBottom = '15px';  // Adjust margin as needed for spacing
+        });
+
+        setTimeout(function () {
+            dropdown.style.transform = 'translateX(0)';
+            dropdown.style.maxHeight = 'calc(100vh - 75px)';
+        }, 10);
+    } else {
         dropdown.style.display = 'none';
+        dropdown.style.transform = 'translateX(100%)';
+        dropdown.style.maxHeight = '0';
     }
 })
 
 // Function to handle dropdown visibility on resize
 const handleResize = () => {
-    if (window.innerWidth > 650) {
-        dropdown.style.display = 'none'; // Ensure dropdown is hidden on larger screens
+    if (window.innerWidth > 800) {
+        dropdown.style.display = 'none';
     }
 };
 
@@ -36,13 +57,13 @@ const teamMembers = [
         name: "Member 1",
         role: "Developer",
         linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../src/images/default_pic.jpg"
+        image: "./src/images/default_pic.jpg"
     },
     {
         name: "Member 2",
         role: "Designer",
         linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "../src/images/default_pic.jpg"
+        image: "./src/images/default_pic.jpg"
     },
     
     // Add more team members as needed
@@ -53,13 +74,13 @@ const projects = [
         title: "Project Y",
         description: "Web Development",
         link: "home.html",
-        image: "../src/images/proj-y.jpg"
+        image: "./src/images/proj-y.jpg"
     },
     {
         title: "Project X",
         description: "App Design",
         link: "home.html",
-        image: "../src/images/proj-x.jpg"
+        image: "./src/images/proj-x.jpg"
     },
     // Add more projects as needed
 ];
