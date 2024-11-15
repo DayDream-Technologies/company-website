@@ -34,7 +34,11 @@ nav {
 }
 
 .dropdown {
-    display: none;
+    display: block;
+    max-height: 0;
+    transform: translateX(100%);
+    overflow: hidden;
+    transition: transform 0.5s ease-out, max-height 0.5s ease-out;
 }
 
 .contact-link {
@@ -44,22 +48,26 @@ nav {
     text-decoration: none;
     color: white;
     background-color: #e7823c;
-    border: 2px solid #e7823c;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .contact-link:hover {
-    border: 2px solid #e7823c;
-    color: #e7823c;
-    background-color: white;
+    box-shadow: 0 0 18px 8px #f2b86d;
 }
 
 .nav_link:link, .nav_link:visited {
-    color: white;
     text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #f2b86d 50%, #e7823c 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background-position 0.5s ease;
 }
 
 .nav_link:hover {
-    text-decoration: underline;
+    background-position: -100% 0;
 }
 
 .nav_logo {
