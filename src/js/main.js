@@ -1,7 +1,8 @@
-const tst = document.querySelector('.menu_bar');
+/********* Begin JS for the dropdown menu *********/
+const menu_bar = document.querySelector('.menu_bar');
 const dropdown = document.querySelector('.dropdown');
 
-tst.addEventListener('click', event => {
+menu_bar.addEventListener('click', event => {
     if (dropdown.style.display === 'none' || dropdown.style.display === '') {
         dropdown.style.display = 'block';
         dropdown.style.maxHeight = '0';
@@ -17,7 +18,7 @@ tst.addEventListener('click', event => {
         dropdown.style.borderTop = '1px solid #d8d9da';
         dropdown.style.borderLeft = '1px solid #d8d9da';
         dropdown.style.borderBottom = '1px solid #d8d9da';
-        dropdown.style.borderRadius = '10px 0 0 10px';
+        dropdown.style.borderRadius = '7px 0 0 7px';
         dropdown.style.background = '#787a7d';
         dropdown.style.justifyItems = 'center';
         dropdown.style.alignItems = 'center';
@@ -38,6 +39,7 @@ tst.addEventListener('click', event => {
         dropdown.style.maxHeight = '0';
     }
 })
+/********* End JS for the dropdown menu *********/
 
 // Function to handle dropdown visibility on resize
 const handleResize = () => {
@@ -149,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-/* This verifies that a valid email is input */
+/********* Begin JS for the contact form *********/
 // JavaScript for additional email validation
 const form = document.querySelector('.form');
 const email = document.querySelector('#email');
@@ -174,3 +176,4 @@ form.addEventListener('submit', function (event) {
 email.addEventListener('input', function () {
     email.setCustomValidity(''); // Reset the custom error on input change
 });
+/********* End JS for the contact form *********/
