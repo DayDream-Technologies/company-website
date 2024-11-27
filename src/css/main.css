@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #e7823c, #f2b86d);
+    background: linear-gradient(180deg, #e7823c, #ea9149);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
@@ -24,7 +24,7 @@ body {
 .title_desc {
     text-align: center;
     padding: 20px;
-    color: black;
+    color: #ffffff;
 }
 
 h1 {
@@ -142,4 +142,23 @@ p {
 .card-back a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     text-decoration: underline;
+}
+
+footer {
+    font-family: Arial, serif;
+    display: grid;
+    grid-template-columns: 1fr 100fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 30px;
+    color: white;
+    margin-top: auto;
+}
+
+.linkdn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
 }
