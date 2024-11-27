@@ -56,31 +56,50 @@ window.addEventListener('resize', handleResize);
 
 const teamMembers = [
     {
-        name: "Member 1",
-        role: "Developer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "./src/images/default_pic.jpg"
+        name: "Ricardo Rivera",
+        role: "CEO",
+        linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQEWxpuuQsIRcg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1670962545560?e=1737590400&v=beta&t=ay86MyY0gVbliNS1Wno1JzjlymxktOYlyqIzyvTEYrQ"
     },
     {
-        name: "Member 2",
-        role: "Designer",
-        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
-        image: "./src/images/default_pic.jpg"
+        name: "David Wasilewski",
+        role: "CTO",
+        linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQFvtx7RpqgyBw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729095015171?e=1737590400&v=beta&t=TcyGATLamskb9oaMLq86Co1qHD2lGTElYXG2S94tjOY"
     },
+    {
+        name: "Andres Cornide",
+        role: "CFO",
+        linkedin: "https://www.linkedin.com/company/daydream-technologies/",
+        image: ""
+    },
+    {
+        name: "Gabe Moraru",
+        role: "Mobile App Developer",
+        linkedin: "https://www.linkedin.com/in/gabe-moraru",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQF9BUDyKnHJ_g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718317398583?e=1737590400&v=beta&t=O95KxoB0_lYiiGnQ-k1wQkyGD6kcKJZ3CBSrYs0nigg"
+    },
+    {
+        name: "Reid Davison",
+        role: "UI/UX Developer",
+        linkedin: "https://www.linkedin.com/in/reidddavison/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQGnE_nyBxfQaw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690898317331?e=1737590400&v=beta&t=6JXro648PQMKhKh12CgCXQ3lb0K3uHrEyrVUEAknCus"
+    },
+
     
     // Add more team members as needed
 ];
 
 const projects = [
     {
-        title: "Project Y",
-        description: "Web Development",
+        title: "Mobile app consulting",
+        description: "App Design",
         link: "home.html",
         image: "./src/images/proj-y.jpg"
     },
     {
-        title: "Project X",
-        description: "App Design",
+        title: "Web consulting",
+        description: "Web Development",
         link: "home.html",
         image: "./src/images/proj-x.jpg"
     },
