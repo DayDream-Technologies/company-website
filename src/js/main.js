@@ -85,6 +85,12 @@ const teamMembers = [
         linkedin: "https://www.linkedin.com/in/reidddavison/",
         image: "https://media.licdn.com/dms/image/v2/D5603AQGnE_nyBxfQaw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690898317331?e=1737590400&v=beta&t=6JXro648PQMKhKh12CgCXQ3lb0K3uHrEyrVUEAknCus"
     },
+    {
+        name: "Srujan Patil",
+        role: "Web Developer",
+        linkedin: "https://www.linkedin.com/in/srujan-patil/",
+        image: "https://media.licdn.com/dms/image/v2/D4D03AQFX5d7-lnFYrg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705280345028?e=1738800000&v=beta&t=Kzx2-tn_vncQVhXlU7CmKsfL4Oix7ufG6HiARdRT_mU"
+    },
 
     
     // Add more team members as needed
