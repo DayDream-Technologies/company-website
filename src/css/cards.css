@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #787a7d;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden;   /* Ensures the diagonal line doesn't stick out */
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 200%;
+    height: 1000px;
+    background-color: #222222;
+    transform: rotate(-12deg);
+    transform-origin: bottom left;
+    z-index: 1;
+}
+
+nav {
+    color: white;
+    background-color: #787a7d;
+    font-family: Arial, serif;
+    font-size: 15px;
+    width: 100%;
+    height: 75px;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Styling the link to the projects page on the home page */
+.shop-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Style the arrow using the ::after pseudo-element */
+.shop-link::after {
+    content: '→';
+    font-size: 1.5em;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to change color and move the arrow */
+.shop-link:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Move the arrow when the link is hovered */
+.shop-link:hover::after {
+    transform: translateX(5px);
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 75px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_links {
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    grid-template-rows: 12vh;
+    align-items: center;
+    justify-items: center;
+    padding-right: 10px;
+}
+
+.nav_link:link, .nav_link:visited {
+    text-decoration: none;
+    color: #ffffff;
+    background-size: 200%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.title {
+    padding-left: 15vw;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10vw;
+    gap: 5vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.cards-grid > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.cards_img {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 10px;
+    z-index: 3;
+}
