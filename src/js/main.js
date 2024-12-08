@@ -57,19 +57,16 @@ window.addEventListener('resize', handleResize);
 const teamMembers = [
     {
         name: "Ricardo Rivera",
-        role: "CEO",
         linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         image: "https://media.licdn.com/dms/image/v2/D5603AQEWxpuuQsIRcg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1670962545560?e=1737590400&v=beta&t=ay86MyY0gVbliNS1Wno1JzjlymxktOYlyqIzyvTEYrQ"
     },
     {
         name: "David Wasilewski",
-        role: "CTO",
         linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         image: "https://media.licdn.com/dms/image/v2/D4E03AQFvtx7RpqgyBw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729095015171?e=1737590400&v=beta&t=TcyGATLamskb9oaMLq86Co1qHD2lGTElYXG2S94tjOY"
     },
     {
         name: "Andres Cornide",
-        role: "CFO",
         linkedin: "https://www.linkedin.com/company/daydream-technologies/",
         image: ""
     },
@@ -81,13 +78,11 @@ const teamMembers = [
     },
     {
         name: "Reid Davison",
-        role: "UI/UX Developer",
         linkedin: "https://www.linkedin.com/in/reidddavison/",
         image: "https://media.licdn.com/dms/image/v2/D5603AQGnE_nyBxfQaw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690898317331?e=1737590400&v=beta&t=6JXro648PQMKhKh12CgCXQ3lb0K3uHrEyrVUEAknCus"
     },
     {
         name: "Srujan Patil",
-        role: "Web Developer",
         linkedin: "https://www.linkedin.com/in/srujan-patil/",
         image: "https://media.licdn.com/dms/image/v2/D4D03AQFX5d7-lnFYrg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705280345028?e=1738800000&v=beta&t=Kzx2-tn_vncQVhXlU7CmKsfL4Oix7ufG6HiARdRT_mU"
     },
@@ -132,7 +127,6 @@ function renderTeamMembers() {
                     <div class="card-front">
                         <img src="${member.image}" alt="${member.name}">
                         <h3>${member.name}</h3>
-                        <p>Role: ${member.role}</p>
                     </div>
                     <div class="card-back">
                         <a href="${member.linkedin}" target="_blank">LinkedIn Profile</a>
