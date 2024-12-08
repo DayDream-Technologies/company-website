@@ -38,9 +38,19 @@ p {
 }
 
 /* Grid containers for team and project cards */
-.team-grid, .project-grid {
+.team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -113,8 +123,8 @@ p {
 
 /* Styling the front of projects card */
 .project-card .card-front img {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     border-radius: 5px;
 }
 
