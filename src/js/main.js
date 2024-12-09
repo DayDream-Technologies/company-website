@@ -93,12 +93,6 @@ const teamMembers = [
 
 const projects = [
     {
-        title: "Cloud Cards",
-        description: "NFC Business Cards",
-        link: "cards.html",
-        image: "./src/images/cards-img.png"
-    },
-    {
         title: "Mobile app consulting",
         description: "App Design",
         link: "home.html",
