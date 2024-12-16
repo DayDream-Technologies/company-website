@@ -164,22 +164,3 @@ p {
     background-color: rgba(255, 255, 255, 0.3);
     text-decoration: underline;
 }
-
-footer {
-    font-family: Arial, serif;
-    display: grid;
-    grid-template-columns: 1fr 100fr;
-    justify-items: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    padding: 30px;
-    color: white;
-    margin-top: auto;
-}
-
-.linkdn {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-}

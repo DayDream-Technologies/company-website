@@ -1,0 +1,33 @@
+/* Footer styling */
+footer {
+    font-family: Arial, serif;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Opaque dark grey background */
+    width: 100%;
+    padding: 30px;
+    color: white;
+    margin-top: auto;
+    gap: 20px; /* Adds spacing between the logo and text */
+}
+
+/* Paragraph styling */
+footer p {
+    font-size: 1.1em;
+    margin: 0; /* Removes any default margin for better alignment */
+}
+
+/* Image styling */
+.linkdn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px; /* Slightly rounded edges */
+    transition: transform 0.2s; /* Adds hover effect */
+}
+
+/* Hover effect for the LinkedIn logo */
+.linkdn:hover {
+    transform: scale(1.1); /* Slight zoom-in on hover */
+}
