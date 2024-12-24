@@ -164,3 +164,27 @@ p {
     background-color: rgba(255, 255, 255, 0.3);
     text-decoration: underline;
 }
+
+.team-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    background-color: #EFA960;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #D37C50;
+}
+
