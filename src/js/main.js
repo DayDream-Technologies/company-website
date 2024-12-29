@@ -39,7 +39,6 @@ menu_bar.addEventListener('click', event => {
         dropdown.style.maxHeight = '0';
     }
 })
-/********* End JS for the dropdown menu *********/
 
 // Function to handle dropdown visibility on resize
 const handleResize = () => {
@@ -53,6 +52,7 @@ handleResize();
 
 // Add resize event listener
 window.addEventListener('resize', handleResize);
+/********* End JS for the dropdown menu *********/
 
 const teamMembers = [
     {

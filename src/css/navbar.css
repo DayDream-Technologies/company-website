@@ -4,6 +4,7 @@
 }
 
 nav {
+    --color-scheme: light;
     color: white;
     background-color: #787a7d;
     font-family: Arial, serif;
@@ -108,5 +109,17 @@ nav {
 @media screen and (min-width: 800px) {
     .dropdown {
         display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    nav {
+        --color-scheme: dark;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        font-family: Arial, serif;
+        font-size: 15px;
+        width: 100%;
+        height: 75px;
     }
 }
