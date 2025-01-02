@@ -57,166 +57,148 @@ window.addEventListener('resize', handleResize);
 const teamMembers = [
     {
         name: "Andres Cornide",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg", 
-        team: "Admin"
+        linkedin: "https://www.linkedin.com/in/andres-cornide/",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQFuhrKSSr7iiw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691001123915?e=1741219200&v=beta&t=VvvRdIjgBJsLFMzge23n4D5CFKKFmzX08mgVNsxeqv0", 
+        team: "CFO"
     },
     {
         name: "Ricardo Rivera",
         linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         image: "https://media.licdn.com/dms/image/v2/D4E03AQEoBYrEyUJmvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732589181706?e=1740614400&v=beta&t=SyDK7M90NSfIBUe4g-tHspnAJSuoxMPLcEjtOCgPY5A",
-        team: "Admin"
+        team: "CEO"
     },
     {
         name: "David Wasilewski",
         linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         image: "https://media.licdn.com/dms/image/v2/D4E03AQFvtx7RpqgyBw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729095015171?e=1737590400&v=beta&t=TcyGATLamskb9oaMLq86Co1qHD2lGTElYXG2S94tjOY",
-        team: "Admin"
+        team: "CTO"
     },
     {
-        name: "Lewi Anamo",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Backend Dev"
-    },
-    {
-        name: "Milo",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Backend Dev"
+        name: "Milo Baran",
+        linkedin: "https://www.linkedin.com/in/milo-baran-822a4126a/",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQGiJwE3Q5l0-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730849446933?e=1741219200&v=beta&t=to0LwE1F_yLEysY486nA8IdGKJAEiisgDJsVQDYM-Oo",
+        team: "Software Developer"
     },
     {
         name: "Joseph Biesiada",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Cybersecurity/IT"
+        team: "Cybersecurity Consultant"
     },
     {
         name: "Thomas Laidlaw",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Cybersecurity/IT"
+        linkedin: "https://www.linkedin.com/in/thomaslaidlaw284/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQHeMwN-NHCikQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700099652007?e=1741219200&v=beta&t=eN9---QBZh0k3FEUe7kACb3zrSWEQelhBGJDnOqctM8",
+        team: "Cybersecurity Consultant"
     },
     {
-        name: "Eli",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Design"
+        name: "Eli Klunder",
+        linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
+        image: "https://media.licdn.com/dms/image/v2/D5635AQFwVaxJhe6tNg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1690984842227?e=1736388000&v=beta&t=KWm0Dhgq9gOo2DzXeyvvoKBTo10ZcRmuv5uwWPx5MSo",
+        team: "DSoftware Developer"
     },
     {
         name: "Kaedan Palmitier",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Design"
+        linkedin: "https://www.linkedin.com/in/kaeden-palmitier-769940259/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQEHUXQLxeZSJQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672692060654?e=1741219200&v=beta&t=4TL746QGCeuPJgaNi1b1wSoK0rmHhYoF3E12o97nekY",
+        team: "Graphic Design Consultant"
     },
     {
         name: "Reid Davison",
         linkedin: "https://www.linkedin.com/in/reidddavison/",
         image: "https://media.licdn.com/dms/image/v2/D5603AQGnE_nyBxfQaw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690898317331?e=1737590400&v=beta&t=6JXro648PQMKhKh12CgCXQ3lb0K3uHrEyrVUEAknCus",
-        team: "Design"
+        team: "UI/UX Designer"
     },
     {
-        name: "Emmanuel",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Hardware dev"
+        name: "Emmanuel Butsana",
+        linkedin: "https://www.linkedin.com/in/emmanuel-ze-butsana/",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQHUVzUHLJ2NFA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693768998993?e=1741219200&v=beta&t=3og-TtdDZ69zx0eRjVmsVlfrw60-0iM93YYfankZJbk",
+        team: "Hardware Developer"
     },
     {
-        name: "Jake",
+        name: "Jake Jackson",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Hardware dev"
+        team: "Hardware Developer"
     },
     {
-        name: "Liam",
+        name: "Liam Sweetman",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Hardware dev"
+        team: "Hardware Developer"
     },
     {
         name: "Teo",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Hardware dev"
+        team: "Hardware Developer"
     },
     {
         name: "Arman",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Mobile app dev"
+        linkedin: "https://www.linkedin.com/in/arman-khan-17a365288/",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQG2vDjlzs0-NQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719433269121?e=1741219200&v=beta&t=poF--GqKPpnirI4-K_LgYcp0pgduQdCV2vxHucUlWMI",
+        team: "Mobile App Developer"
     },
     {
-        name: "Deni",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Mobile app dev"
+        name: "Deni Tepic",
+        linkedin: "https://www.linkedin.com/in/denitepic/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQEwzgQaF-UVNg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1666900364438?e=1741219200&v=beta&t=W2GRQZFi8PKzg8ZjGwPloAOwcXEcsIx3VKGirobto9A",
+        team: "Social Media Consultant"
     },
     {
         name: "Gabe Moraru",
         role: "Mobile App Developer",
         linkedin: "https://www.linkedin.com/in/gabe-moraru",
         image: "https://media.licdn.com/dms/image/v2/D5603AQF9BUDyKnHJ_g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718317398583?e=1737590400&v=beta&t=O95KxoB0_lYiiGnQ-k1wQkyGD6kcKJZ3CBSrYs0nigg",
-        team: "Mobile app dev"
+        team: "Software Developer"
     },
     {
-        name: "Joe R",
+        name: "Joe Robertson",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Mobile app dev"
+        team: "Software Developer"
     },
     {
-        name: "Matt",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Mobile app dev"
+        name: "Matt Willemin",
+        linkedin: "https://www.linkedin.com/in/matt-willemin/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQHgsnYVNVfLLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719518593039?e=1741219200&v=beta&t=tjBXYPkBFPo5UTKhGvvrSLOM5GX5AZXDjymWilR9SnM",
+        team: "Software Developer"
     },
     {
-        name: "Jack",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Mobile app dev/Web dev"
+        name: "Jack Baldwin",
+        linkedin: "https://www.linkedin.com/in/jackson-baldwin/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQEQM4Og3_ZPaw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724775174904?e=1741219200&v=beta&t=n8nKv8DsxLp3-06NcYvMsuADawh9p4YYpeEbT2TTGX4",
+        team: "Software Developer"
     },
     {
         name: "Srujan Patil",
         linkedin: "https://www.linkedin.com/in/srujan-patil/",
         image: "https://media.licdn.com/dms/image/v2/D4D03AQFX5d7-lnFYrg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705280345028?e=1738800000&v=beta&t=Kzx2-tn_vncQVhXlU7CmKsfL4Oix7ufG6HiARdRT_mU",
-        team: "Full stack developer"
+        team: "Software Developer"
     },
     {
         name: "Erkin Tuna Gumustas",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Web dev"
+        team: "Web Developer"
     },
     {
         name: "Logan Flannery",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Web dev"
+        team: "Web Developer"
     },
     {
         name: "Quinn Goergen",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Web dev"
-    },
-    {
-        name: "Tyler Mirabitur",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Web dev"
-    },
-    {
-        name: "Jake",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Hardware dev"
+        team: "Web Developer"
     },
     {
         name: "Humera Fatima",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Design"
+        linkedin: "https://www.linkedin.com/in/humera-fatima-/",
+        image: "https://media.licdn.com/dms/image/v2/D4D03AQFdTglFFcwptA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1671813049469?e=1741219200&v=beta&t=3sSblD7XnX4X8r2CX2wOkFuM54eUAH-LBHQKJlZalBc",
+        team: "UI/UX Designer"
     }
 ];
 
