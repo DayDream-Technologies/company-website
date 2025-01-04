@@ -14,9 +14,15 @@ footer {
 }
 
 /* Paragraph styling */
-footer p {
+footer p, footer a {
     font-size: 1.1em;
     margin: 0; /* Removes any default margin for better alignment */
+    color: inherit; /* Inherits the white color from the footer */
+    text-decoration: none;
+}
+
+footer a:hover { 
+    text-decoration: underline; /* Optional: Underline on hover */ 
 }
 
 /* Image styling */
