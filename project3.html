@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DayDream Technologies - Project Style 3</title>
+  <link rel="stylesheet" href="./src/css/navbar.css" />
+  <link rel="stylesheet" href="./src/css/main.css" />
+  <link rel="stylesheet" href="./src/css/footer.css" />
+  <script src="./src/js/main.js" defer></script>
+  <link rel="icon" href="./src/images/favicon.ico" />
+  <style>
+    /* Custom styles for Project Style 3 - Centered Card Layout */
+    .card-container {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .card-image img {
+      width: 100%;
+      display: block;
+    }
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+    .card-content h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .card-content p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #e7823c;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .back-link:hover {
+      color: #ea9149;
+    }
+    @media (max-width: 768px) {
+      .card-container {
+        margin: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="links">
+      <li>
+        <a class="nav_logo" href="index.html">
+          <img class="logo_img" src="./src/images/Company_Logo.png" alt="Day Dream Technologies" />
+        </a>
+      </li>
+      <div class="nav_links">
+        <li><a class="nav_link" href="index.html" title="Daydream's homepage"><strong>Home</strong></a></li>
+        <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
+        <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
+        <li><a class="contact-link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+      </div>
+    </ul>
+    <ul class="respo_navbar">
+      <li>
+        <a class="nav_logo" href="index.html">
+          <img class="logo_img" src="./src/images/Company_Logo.jpg" alt="Day Dream Technologies" />
+        </a>
+      </li>
+      <li><img class="menu_bar" src="./src/images/menu-bar.png" alt="menu" /></li>
+    </ul>
+    <ul class="dropdown">
+      <li><a class="nav_link" href="index.html" title="DayDream's homepage"><strong>Home</strong></a></li>
+      <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
+      <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
+      <li><a class="nav_link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="card-container">
+      <div class="card-image">
+        <img src="./src/images/cards-img.png" alt="Dream Cards Project" />
+      </div>
+      <div class="card-content">
+        <h2>Dream Cards</h2>
+        <p>
+          Discover our innovative Dream Cards that combine modern design with NFC technology, allowing you to effortlessly share your professional information.
+        </p>
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a class="comp_linkdn" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">
+      <img class="linkdn" src="./src/images/alt-linkedin.jpg" alt="Day Dream Technologies LinkedIn" />
+    </a>
+    <p>&#169; 2024 DayDream Technologies</p>
+  </footer>
+</body>
+</html>

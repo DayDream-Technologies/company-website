@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DayDream Technologies - Project Style 2</title>
+  <link rel="stylesheet" href="./src/css/navbar.css" />
+  <link rel="stylesheet" href="./src/css/main.css" />
+  <link rel="stylesheet" href="./src/css/footer.css" />
+  <script src="./src/js/main.js" defer></script>
+  <link rel="icon" href="./src/images/favicon.ico" />
+  <style>
+    /* Custom styles for Project Style 2 - Full Background with Overlay */
+    body.project-style2 {
+      margin: 0;
+      padding: 0;
+      background: url('./src/images/rubiks-cube.png') no-repeat center center/cover;
+      position: relative;
+      min-height: 100vh;
+      color: #fff;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .project-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    .project-content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .project-content p {
+      font-size: 1.5em;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    .back-link {
+      margin-top: 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #e7823c;
+      transition: color 0.3s ease;
+    }
+    .back-link:hover {
+      color: #ea9149;
+    }
+    @media (max-width: 768px) {
+      .project-content h1 {
+        font-size: 2.5em;
+      }
+      .project-content p {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body class="project-style2">
+  <nav>
+    <ul class="links">
+      <li>
+        <a class="nav_logo" href="index.html">
+          <img class="logo_img" src="./src/images/Company_Logo.png" alt="Day Dream Technologies" />
+        </a>
+      </li>
+      <div class="nav_links">
+        <li><a class="nav_link" href="index.html" title="Daydream's homepage"><strong>Home</strong></a></li>
+        <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
+        <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
+        <li><a class="contact-link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+      </div>
+    </ul>
+    <ul class="respo_navbar">
+      <li>
+        <a class="nav_logo" href="index.html">
+          <img class="logo_img" src="./src/images/Company_Logo.jpg" alt="Day Dream Technologies" />
+        </a>
+      </li>
+      <li><img class="menu_bar" src="./src/images/menu-bar.png" alt="menu" /></li>
+    </ul>
+    <ul class="dropdown">
+      <li><a class="nav_link" href="index.html" title="DayDream's homepage"><strong>Home</strong></a></li>
+      <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
+      <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
+      <li><a class="nav_link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay"></div>
+  <main>
+    <div class="project-content">
+      <h1>Rubik's Cube Project</h1>
+      <p>
+        Dive into a world of creativity with our Rubik's Cube project, where innovation meets puzzle-solving to deliver an engaging and thought-provoking experience.
+      </p>
+      <a href="projects.html" class="back-link">← Back to Projects</a>
+    </div>
+  </main>
+
+  <footer>
+    <a class="comp_linkdn" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">
+      <img class="linkdn" src="./src/images/alt-linkedin.jpg" alt="Day Dream Technologies LinkedIn" />
+    </a>
+    <p>&#169; 2024 DayDream Technologies</p>
+  </footer>
+</body>
+</html>

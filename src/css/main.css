@@ -10,16 +10,31 @@
 
 body {
     --color-scheme: light;
-    background: linear-gradient(180deg, #e7823c, #ea9149);
+    background: linear-gradient(135deg, #a1a1a1, #9b9b9b, #BBBDF2, #A0A4F2, #050259);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
+    animation: gradientAnimation 50s ease infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     min-height: 100vh;
+    background-size: 200% 200%;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 /* Center text content and add spacing */
 .title_desc {
@@ -100,7 +115,7 @@ p {
 }
 
 .card-front {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #0554F2;
 }
 
 .card-back {
@@ -188,7 +203,7 @@ p {
 .filter-btn:hover {
     background-color: #D37C50;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
     body {
         --color-scheme: dark;
@@ -202,4 +217,4 @@ p {
         margin: 0;
         min-height: 100vh;
     }
-}
+} */
