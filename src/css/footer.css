@@ -11,6 +11,7 @@ footer {
     color: white;
     margin-top: auto;
     gap: 20px; /* Adds spacing between the logo and text */
+    user-select: none;
 }
 
 /* Paragraph styling */

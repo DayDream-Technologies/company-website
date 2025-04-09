@@ -217,6 +217,21 @@ const projects = [
     },
 ];
 
+const services = [
+    {
+        title: "Web Hosting",
+        description: "Your website deserves a hosting solution as strong as your business. Our high-performance web hosting ensures your site loads in milliseconds, stays secure from threats, and scales effortlessly as you grow so you never lose a visitor (or a sale).",
+        link: "#",
+        image: "./src/images/web-hosting.png"
+    },
+    {
+        title: "Web Dev",
+        description: "In today's digital world, your website is your 24/7 salesperson, brand ambassador, and customer gateway. Our custom website development services ensure you get a high-performance, visually stunning, and user-friendly site tailored to your business goals.",
+        link: "#",
+        image: "./src/images/web-dev.png"
+    },
+];
+
 function renderTeamMembers(team = 'all') {
     const teamContainer = document.getElementById('team-container');
     if (teamContainer) {
@@ -289,6 +304,34 @@ function renderProjects() {
     }
 }
 
+function renderServices() {
+    const servicesContainer = document.getElementById('services-container');
+    if (servicesContainer) {
+        servicesContainer.innerHTML = '';  // Clear existing projects (if any)
+
+        services.forEach(service => {
+            const serviceDiv = document.createElement('div');
+            serviceDiv.classList.add('project-card');
+
+            serviceDiv.innerHTML = `
+                <div class="card">
+                    <div class="card-front">
+                        <img src="${service.image}" alt="${service.title}">
+                        <h3>${service.title}</h3>
+                    </div>
+                    <div class="card-back">
+                        <p style="user-select: none;">${service.description}</p>
+                        <br>
+                        <a href="${service.link}">Get Started🔗</a>
+                    </div>
+                </div>
+            `;
+            
+            servicesContainer.appendChild(serviceDiv);
+        });
+    }
+}
+
 // Call the functions to render team members and projects on page load
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('team-container')) {
@@ -296,6 +339,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (document.getElementById('projects-container')) {
         renderProjects();
+    }
+    if (document.getElementById('services-container')) {
+        renderServices();
     }
 });
 
