@@ -212,7 +212,7 @@ const projects = [
     {
         title: "Rubiks Cube",
         description: "Day Dream Technologies",
-        link: "#",
+        link: "https://daydream-technologies.github.io/Rubiks-cube-site/index.html",
         image: "./src/images/rubiks-cube.png"
     },
 ];
