@@ -52,7 +52,74 @@
         </div>
         
         <div id="projects-container" class="project-grid">
-            <!-- Projects will be rendered here -->
+            <div class="project-item">
+                <h3>Dream Cards</h3>
+                <p>NFC cloud business cards</p>
+                <img src="./src/images/cards-img.png" alt="Dream Cards">
+            </div>
+            <div class="project-item">
+                <h3>Rubiks Cube</h3>
+                <p>Day Dream Technologies</p>
+                <img src="./src/images/rubiks-cube.png" alt="Rubiks Cube">
+            </div>
+            <div class="project-item">
+                <h3>Portfolio</h3>
+                <p>Previous Work</p>
+                <img src="./src/images/rubiks-cube.png" alt="Portfolio">
+            </div>
+        </div>
+
+        <div class="title_desc"><br>
+            <h1>Previous Work</h1><br>
+            <div class="team-filters">
+                <button class="filter-btn" data-team="All">All</button>
+                <button class="filter-btn" data-team="Web">Web</button>
+                <button class="filter-btn" data-team="Graphic Design">Graphic Design</button>
+                <button class="filter-btn" data-team="Mobile Apps">Mobile Apps</button>
+                <button class="filter-btn" data-team="APIs">APIs</button>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-item graphic-design" data-team="Web">
+                <!-- The container that clips the website image -->
+                <div class="screenshot-container">
+                    <img 
+                        src="./src/images/card_website_ss.png" 
+                        alt="Card Website Screenshot" 
+                        class="card_website_ss"
+                    >
+                </div>
+            </div>
+            <div class="project-item graphic-design" data-team="Web">
+                <!-- The container that clips the website image -->
+                <div class="screenshot-container">
+                    <img 
+                        src="./src/images/main_ss.png" 
+                        alt="Main Website Screenshot" 
+                        class="main_ss"
+                    >
+                </div>
+            </div>
+            <div class="project-item graphic-design" data-team="Web">
+                <!-- The container that clips the website image -->
+                <div class="screenshot-container">
+                    <img 
+                        src="./src/images/ryan_talbot_ss.png" 
+                        alt="Ryan Talbot Website Screenshot" 
+                        class="ryan_talbot_ss"
+                    >
+                </div>
+            </div>
+            <div class="project-item graphic-design" data-team="Web">
+                <!-- The container that clips the website image -->
+                <div class="screenshot-container">
+                    <img 
+                        src="./src/images/jay_website_ss.png" 
+                        alt="Jay Website Screenshot" 
+                        class="jay_website_ss"
+                    >
+                </div>
+            </div>
         </div>
     </main>
     
@@ -64,5 +131,17 @@
         </a>
         <p>&#169; 2024 DayDream Technologies</p>
     </footer>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
