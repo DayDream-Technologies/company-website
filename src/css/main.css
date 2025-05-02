@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     --color-scheme: light;
@@ -189,6 +192,10 @@ p {
     background-color: #D37C50;
 }
 
+.filter-btn.selected {
+    background-color: #D37C50; 
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         --color-scheme: dark;
@@ -203,3 +210,57 @@ p {
         min-height: 100vh;
     }
 }
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between project items as needed */
+}
+
+.project-item {
+    flex: 1 1 30%; /* Adjust the width as needed */
+    max-width: 300px; /* Optional: set a max-width for each project item */
+    text-align: center;
+}
+
+/* Fade transition for the team container */
+#team-container {
+    opacity: 1;                      /* Start fully visible */
+    transition: opacity 0.4s ease;   /* 0.4s fade time, can be changed */
+}
+
+/* Fade-out utility class to trigger the opacity to 0 */
+#team-container.fade-out {
+    opacity: 0;  /* When applied, the container will transition to 0 */
+}
+
+.project-container {
+    display: flex;
+    justify-content: left;
+    gap: 50px; /* Adjust the gap between project items as needed */
+}
+
+.screenshot-container {  
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #000000;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+/* Target any <img> inside .screenshot-container */
+.screenshot-container img {
+    display: block;
+    width: 100%;
+    transition: transform 1s linear;
+    transform: translateY(0);
+}
+
+/* On hover, use the CSS variable we set in JS to scroll the image */
+.screenshot-container:hover img {
+    transform: translateY(var(--scrollDist, -100%));
+}
+
+
