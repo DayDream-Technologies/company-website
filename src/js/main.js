@@ -95,7 +95,7 @@ const teamMembers = [
         name: "Eli Klunder",
         linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
         image: "https://media.licdn.com/dms/image/v2/D5635AQFwVaxJhe6tNg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1690984842227?e=1736388000&v=beta&t=KWm0Dhgq9gOo2DzXeyvvoKBTo10ZcRmuv5uwWPx5MSo",
-        team: "DSoftware Developer"
+        team: "Software Developer"
     },
     {
         name: "Kaedan Palmitier",
@@ -183,13 +183,13 @@ const teamMembers = [
         team: "Web Developer"
     },
     {
-        name: "Logan Flannery",
+        name: "Quinn Goergen",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
         team: "Web Developer"
     },
     {
-        name: "Quinn Goergen",
+        name: "Logan Flannery",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
         team: "Web Developer"
@@ -212,42 +212,99 @@ const projects = [
     {
         title: "Rubiks Cube",
         description: "Day Dream Technologies",
-        link: "https://daydream-technologies.github.io/Rubiks-cube-site/index.html",
+        link: "#",
         image: "./src/images/rubiks-cube.png"
     },
 ];
 
+/*Function for updated job title selection*/
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            filterButtons.forEach(btn => btn.classList.remove('selected'));
+            this.classList.add('selected');
+        });
+    });
+});
+
+/*Function to switch job title tabs after x seconds*/
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    let currentIndex = 0;
+
+    function switchFilter() {
+        filterButtons.forEach(btn => btn.classList.remove('selected'));
+        filterButtons[currentIndex].classList.add('selected');
+        renderTeamMembers(filterButtons[currentIndex].dataset.team.toLowerCase());
+        currentIndex = (currentIndex + 1) % filterButtons.length;
+    }
+
+    filterButtons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            filterButtons.forEach(btn => btn.classList.remove('selected'));
+            this.classList.add('selected');
+            currentIndex = index;
+            renderTeamMembers(this.dataset.team.toLowerCase());
+        });
+    });
+
+    setInterval(switchFilter, 10000); // Switch filter every 5 seconds
+
+    // Initial call to set the first filter as selected
+    switchFilter();
+});
+
 function renderTeamMembers(team = 'all') {
     const teamContainer = document.getElementById('team-container');
-    if (teamContainer) {
+    if (!teamContainer) return;
+
+    // 1) Add the fade-out class
+    teamContainer.classList.add('fade-out');
+
+    // 2) Wait for the transition to complete (0.4s) before updating content
+    setTimeout(() => {
+        // Clear out existing members
         teamContainer.innerHTML = '';
 
+        // Your existing filtering logic remains the same
         teamMembers
-            .filter(member => team === 'all' || member.team === team)
+            .filter(member => {
+                // ... your condition ...
+                return team === 'all' 
+                    || member.team.toLowerCase() === team
+                    || (team === 'management' && ['Andres Cornide', 'Ricardo Rivera', 'David Wasilewski'].includes(member.name)) || (team === 'design' && ['Eli Klunder', 'Kaeden Palmitier', 'Reid Davison', 'Humera Fatima'].includes(member.name)) || (team === 'software dev' && ['Srujan Patil', 'Quinn Goergen', 'Logan Flannery', 'Erkin Tuna Gumustas', 'Jack Bladwin', 'Milo Baran', 'Arman', 'Deni Tepic', 'Gabe Moraru', 'Joe Robertson', 'Matt Willemin', 'Jack Baldwin'].includes(member.name)) || (team === 'cybersecurity/it' && ['Joseph Biesiada', 'Thomas Laidlaw'].includes(member.name)) || (team === 'hardware dev' && ['Emanuel Butsana', 'Jake Jackson', 'Liam Sweetman', 'Teo'].includes(member.name))
+                    // etc.
+            })
             .forEach(member => {
-                if (member.linkedin != '#' && member.image != './src/images/default_pic.jpg') {
-                    const memberDiv = document.createElement('div');
-                    memberDiv.classList.add('team-member');
+                // Create the card elements
+                const memberDiv = document.createElement('div');
+                memberDiv.classList.add('team-member');
 
-                    memberDiv.innerHTML = `
-                        <div class="card">
-                            <div class="card-front">
-                                <img src="${member.image}" alt="${member.name}">
-                                <h3>${member.name}</h3>
-                                <p>${member.team}</p>
-                            </div>
-                            <div class="card-back">
-                                <a href="${member.linkedin}" target="_blank">LinkedIn Profile</a>
-                            </div>
+                memberDiv.innerHTML = `
+                    <div class="card">
+                        <div class="card-front">
+                            <img src="${member.image}" alt="${member.name}">
+                            <h3>${member.name}</h3>
+                            <p>${member.team}</p>
                         </div>
-                    `;
-                    
-                    teamContainer.appendChild(memberDiv);
-                }
+                        <div class="card-back">
+                            <a href="${member.linkedin}" target="_blank">LinkedIn Profile</a>
+                        </div>
+                    </div>
+                `;
+
+                teamContainer.appendChild(memberDiv);
             });
-    }
+
+        // 3) Remove the fade-out class so it fades back in
+        teamContainer.classList.remove('fade-out');
+    }, 400); // Match the 0.1s in your CSS
 }
 
+
+        
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('team-container')) {
         renderTeamMembers();
@@ -260,6 +317,30 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all containers that hold screenshots
+  const containers = document.querySelectorAll('.screenshot-container');
+  
+  containers.forEach(container => {
+    // For each container, find all images within it
+    const images = container.querySelectorAll('img');
+    
+    images.forEach(image => {
+      const containerHeight = container.offsetHeight;
+      const imageHeight = image.offsetHeight;
+      const scrollDist = imageHeight - containerHeight;
+
+      // Only if the image is taller than the container do we need a scroll animation
+      if (scrollDist > 0) {
+        image.style.setProperty('--scrollDist', `-${scrollDist}px`);
+      } else {
+        // Otherwise, no scrolling is necessary
+        image.style.setProperty('--scrollDist', '0px');
+      }
+    });
+  });
 });
 
 function renderProjects() {
