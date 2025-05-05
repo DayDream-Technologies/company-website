@@ -58,112 +58,112 @@ const teamMembers = [
     {
         name: "Andres Cornide",
         linkedin: "https://www.linkedin.com/in/andres-cornide/",
-        image: "/src/images/headshots/Andres.jpg", 
+        image: "/company-website/src/images/headshots/Andres.jpg", 
         displayTitle: "CFO",
         team: "Admin"
     },
     {
         name: "Ricardo Rivera",
         linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "/src/images/headshots/Ricky.jpg",
+        image: "/company-website/src/images/headshots/Ricky.jpg",
         displayTitle: "CEO",
         team: "Admin"
     },
     {
         name: "David Wasilewski",
         linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "/src/images/headshots/David.jpg",
+        image: "/company-website/src/images/headshots/David.jpg",
         displayTitle: "CTO",
         team: "Admin"
     },
     {
         name: "Milo Baran",
         linkedin: "https://www.linkedin.com/in/milo-baran-822a4126a/",
-        image: "/src/images/headshots/Milo.jpg",
+        image: "/company-website/src/images/headshots/Milo.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Joseph Biesiada",
         linkedin: "#",
-        image: "/src/images/headshots/Joseph.jpg",
+        image: "/company-website/src/images/headshots/Joseph.jpg",
         displayTitle: "Cybersecurity Consultant",
         team: "Cybersecurity/IT"
     },
     {
         name: "Thomas Laidlaw",
         linkedin: "https://www.linkedin.com/in/thomaslaidlaw284/",
-        image: "/src/images/headshots/Tommy.jpg",
+        image: "/company-website/src/images/headshots/Tommy.jpg",
         displayTitle: "Cybersecurity Consultant",
         team: "Cybersecurity/IT"
     },
     {
         name: "Eli Klunder",
         linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
-        image: "/src/images/headshots/Eli.jpg",
+        image: "/company-website/src/images/headshots/Eli.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Kaedan Palmitier",
         linkedin: "https://www.linkedin.com/in/kaeden-palmitier-769940259/",
-        image: "/src/images/headshots/Kaeden.jpg",
+        image: "/company-website/src/images/headshots/Kaeden.jpg",
         displayTitle: "Graphic Design Consultant",
         team: "Design"
     },
     {
         name: "Emmanuel Butsana",
         linkedin: "https://www.linkedin.com/in/emmanuel-ze-butsana/",
-        image: "/src/images/headshots/Emmanuel.jpg",
+        image: "/company-website/src/images/headshots/Emmanuel.jpg",
         displayTitle: "Hardware Developer",
         team: "Hardware"
     },
     {
         name: "Matt Willemin",
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
-        image: "/src/images/headshots/Matt.jpg",
+        image: "/company-website/src/images/headshots/Matt.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Jack Baldwin",
         linkedin: "https://www.linkedin.com/in/jackson-baldwin/",
-        image: "/src/images/headshots/Jack.jpg",
+        image: "/company-website/src/images/headshots/Jack.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Srujan Patil",
         linkedin: "https://www.linkedin.com/in/srujan-patil/",
-        image: "/src/images/headshots/Srujan.jpg",
+        image: "/company-website/src/images/headshots/Srujan.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Erkin Tuna Gumustas",
         linkedin: "#",
-        image: "/src/images/default_pic.jpg",
+        image: "/company-website/src/images/default_pic.jpg",
         displayTitle: "Web Developer",
         team: "Developer"
     },
     {
         name: "Quinn Goergen",
         linkedin: "#",
-        image: "/src/images/headshots/Quinn.png",
+        image: "/company-website/src/images/headshots/Quinn.png",
         displayTitle: "Web Developer",
         team: "Developer"
     },
     {
         name: "Logan Flannery",
         linkedin: "#",
-        image: "/src/images/headshots/Logan.jpg",
+        image: "/company-website/src/images/headshots/Logan.jpg",
         displayTitle: "Web Developer",
         team: "Developer"
     },
     {
         name: "Humera Fatima",
         linkedin: "https://www.linkedin.com/in/humera-fatima-/",
-        image: "/src/images/headshots/Humera.jpg",
+        image: "/company-website/src/images/headshots/Humera.jpg",
         displayTitle: "UI/UX Designer",
         team: "Design"
     }
