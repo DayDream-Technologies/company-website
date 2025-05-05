@@ -240,7 +240,7 @@ p {
     gap: 50px; /* Adjust the gap between project items as needed */
 }
 
-.screenshot-container {  
+.screenshot-container {
     width: 200px;
     height: 250px;
     overflow: hidden;
@@ -261,6 +261,33 @@ p {
 /* On hover, use the CSS variable we set in JS to scroll the image */
 .screenshot-container:hover img {
     transform: translateY(var(--scrollDist, -100%));
+}
+
+/* Logo hover effect */
+.project-item[data-team="Graphic Design"] .screenshot-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #000000;
+    margin: 30px 0;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-item[data-team="Graphic Design"] .screenshot-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.project-item[data-team="Graphic Design"] .screenshot-container:hover img {
+    transform: scale(1.2);
 }
 
 

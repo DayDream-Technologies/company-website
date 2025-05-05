@@ -31,7 +31,7 @@
             <li>
                 <a class="nav_logo" href="index.html">
                     <img class="logo_img"
-                         src="./src/images/Company_Logo.jpg"
+                         src="./src/images/Company_Logo.png"
                          alt="Day Dream Technologies" />
                 </a>
             </li>
@@ -53,12 +53,9 @@
                 <button class="filter-btn" data-team="all">All</button>
                 <button class="filter-btn" data-team="Admin">Admin</button>
                 <button class="filter-btn" data-team="Design">Design</button>
-                <button class="filter-btn" data-team="Web dev">Web Dev</button>
-                <button class="filter-btn" data-team="Backend Dev">Backend Dev</button>
-                <button class="filter-btn" data-team="Full stack developer">Full Stack Dev</button>
+                <button class="filter-btn" data-team="Developer">Developer</button>
                 <button class="filter-btn" data-team="Cybersecurity/IT">Cybersecurity/IT</button>
-                <button class="filter-btn" data-team="Hardware dev">Hardware Dev</button>
-                <button class="filter-btn" data-team="Mobile app dev">Mobile App Dev</button>
+                <button class="filter-btn" data-team="Hardware">Hardware</button>
             </div>
         </div>
         
@@ -73,7 +70,12 @@
                  src="./src/images/alt-linkedin.jpg"
                  alt="Day Dream Technologies LinkedIn" />
         </a>
-        <p>&#169; 2024 DayDream Technologies</p>
+        <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
     </footer>
+    
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

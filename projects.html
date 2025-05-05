@@ -31,7 +31,7 @@
             <li>
                 <a class="nav_logo" href="index.html">
                     <img class="logo_img"
-                         src="./src/images/Company_Logo.jpg"
+                         src="./src/images/Company_Logo.png"
                          alt="Day Dream Technologies" />
                 </a>
             </li>
@@ -53,26 +53,15 @@
         
         <div id="projects-container" class="project-grid">
             <div class="project-item">
-                <h3>Dream Cards</h3>
-                <p>NFC cloud business cards</p>
-                <img src="./src/images/cards-img.png" alt="Dream Cards">
-            </div>
-            <div class="project-item">
-                <h3>Rubiks Cube</h3>
+                <h3>Bluetooth Rubiks Cube</h3>
                 <p>Day Dream Technologies</p>
                 <img src="./src/images/rubiks-cube.png" alt="Rubiks Cube">
-            </div>
-            <div class="project-item">
-                <h3>Portfolio</h3>
-                <p>Previous Work</p>
-                <img src="./src/images/rubiks-cube.png" alt="Portfolio">
             </div>
         </div>
 
         <div class="title_desc"><br>
-            <h1>Previous Work</h1><br>
+            <h1>Our Recent Projects</h1><br>
             <div class="team-filters">
-                <button class="filter-btn" data-team="All">All</button>
                 <button class="filter-btn" data-team="Web">Web</button>
                 <button class="filter-btn" data-team="Graphic Design">Graphic Design</button>
                 <button class="filter-btn" data-team="Mobile Apps">Mobile Apps</button>
@@ -80,43 +69,33 @@
             </div>
         </div>
         <div class="project-container">
-            <div class="project-item graphic-design" data-team="Web">
+            <div class="project-item" data-team="Web">
                 <!-- The container that clips the website image -->
                 <div class="screenshot-container">
                     <img 
-                        src="./src/images/card_website_ss.png" 
-                        alt="Card Website Screenshot" 
-                        class="card_website_ss"
-                    >
-                </div>
-            </div>
-            <div class="project-item graphic-design" data-team="Web">
-                <!-- The container that clips the website image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/main_ss.png" 
-                        alt="Main Website Screenshot" 
-                        class="main_ss"
-                    >
-                </div>
-            </div>
-            <div class="project-item graphic-design" data-team="Web">
-                <!-- The container that clips the website image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/ryan_talbot_ss.png" 
+                        src="./src/images/Projects/Websites/ryan_talbot_ss.png" 
                         alt="Ryan Talbot Website Screenshot" 
                         class="ryan_talbot_ss"
                     >
                 </div>
             </div>
-            <div class="project-item graphic-design" data-team="Web">
+            <div class="project-item" data-team="Web">
                 <!-- The container that clips the website image -->
                 <div class="screenshot-container">
                     <img 
-                        src="./src/images/jay_website_ss.png" 
+                        src="./src/images/Projects/Websites/jay_website_ss.png" 
                         alt="Jay Website Screenshot" 
                         class="jay_website_ss"
+                    >
+                </div>
+            </div>
+            <div class="project-item" data-team="Graphic Design">
+                <!-- The container that clips the logo image -->
+                <div class="screenshot-container">
+                    <img 
+                        src="./src/images/Projects/Graphic Design/Ryan_Talbot_Logo.jpg" 
+                        alt="Ryan Talbot Logo" 
+                        class="ryan_talbot_logo"
                     >
                 </div>
             </div>
@@ -129,10 +108,13 @@
                  src="./src/images/alt-linkedin.jpg"
                  alt="Day Dream Technologies LinkedIn" />
         </a>
-        <p>&#169; 2024 DayDream Technologies</p>
+        <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
     </footer>
     
     <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();

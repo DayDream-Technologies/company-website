@@ -33,7 +33,7 @@
             <li>
                 <a class="nav_logo" href="index.html">
                     <img class="logo_img"
-                         src="./src/images/Company_Logo.jpg"
+                         src="./src/images/Company_Logo.png"
                          alt="Day Dream Technologies" />
                 </a>
             </li>
@@ -85,7 +85,12 @@
                  src="./src/images/alt-linkedin.jpg"
                  alt="Day Dream Technologies LinkedIn" />
         </a>
-        <p>&#169; 2024 DayDream Technologies</p>
+        <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
     </footer>
+    
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

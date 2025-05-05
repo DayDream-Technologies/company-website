@@ -58,163 +58,157 @@ const teamMembers = [
     {
         name: "Andres Cornide",
         linkedin: "https://www.linkedin.com/in/andres-cornide/",
-        image: "https://media.licdn.com/dms/image/v2/D4E03AQFuhrKSSr7iiw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691001123915?e=1741219200&v=beta&t=VvvRdIjgBJsLFMzge23n4D5CFKKFmzX08mgVNsxeqv0", 
-        team: "CFO"
+        image: "./src/images/headshots/Andres.jpg", 
+        displayTitle: "CFO",
+        team: "Admin"
     },
     {
         name: "Ricardo Rivera",
         linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "https://media.licdn.com/dms/image/v2/D4E03AQEoBYrEyUJmvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732589181706?e=1740614400&v=beta&t=SyDK7M90NSfIBUe4g-tHspnAJSuoxMPLcEjtOCgPY5A",
-        team: "CEO"
+        image: "./src/images/headshots/Ricky.jpg",
+        displayTitle: "CEO",
+        team: "Admin"
     },
     {
         name: "David Wasilewski",
         linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "https://media.licdn.com/dms/image/v2/D4E03AQFvtx7RpqgyBw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729095015171?e=1737590400&v=beta&t=TcyGATLamskb9oaMLq86Co1qHD2lGTElYXG2S94tjOY",
-        team: "CTO"
+        image: "./src/images/headshots/David.jpg",
+        displayTitle: "CTO",
+        team: "Admin"
     },
     {
         name: "Milo Baran",
         linkedin: "https://www.linkedin.com/in/milo-baran-822a4126a/",
-        image: "https://media.licdn.com/dms/image/v2/D4E03AQGiJwE3Q5l0-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730849446933?e=1741219200&v=beta&t=to0LwE1F_yLEysY486nA8IdGKJAEiisgDJsVQDYM-Oo",
-        team: "Software Developer"
+        image: "./src/images/headshots/Milo.jpg",
+        displayTitle: "Software Developer",
+        team: "Developer"
     },
     {
         name: "Joseph Biesiada",
         linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Cybersecurity Consultant"
+        image: "./src/images/headshots/Joseph.jpg",
+        displayTitle: "Cybersecurity Consultant",
+        team: "Cybersecurity/IT"
     },
     {
         name: "Thomas Laidlaw",
         linkedin: "https://www.linkedin.com/in/thomaslaidlaw284/",
-        image: "https://media.licdn.com/dms/image/v2/D5603AQHeMwN-NHCikQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700099652007?e=1741219200&v=beta&t=eN9---QBZh0k3FEUe7kACb3zrSWEQelhBGJDnOqctM8",
-        team: "Cybersecurity Consultant"
+        image: "./src/images/headshots/Tommy.jpg",
+        displayTitle: "Cybersecurity Consultant",
+        team: "Cybersecurity/IT"
     },
     {
         name: "Eli Klunder",
         linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
-        image: "https://media.licdn.com/dms/image/v2/D5635AQFwVaxJhe6tNg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1690984842227?e=1736388000&v=beta&t=KWm0Dhgq9gOo2DzXeyvvoKBTo10ZcRmuv5uwWPx5MSo",
-        team: "Software Developer"
+        image: "./src/images/headshots/Eli.jpg",
+        displayTitle: "Software Developer",
+        team: "Developer"
     },
     {
         name: "Kaedan Palmitier",
         linkedin: "https://www.linkedin.com/in/kaeden-palmitier-769940259/",
-        image: "https://media.licdn.com/dms/image/v2/D5603AQEHUXQLxeZSJQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672692060654?e=1741219200&v=beta&t=4TL746QGCeuPJgaNi1b1wSoK0rmHhYoF3E12o97nekY",
-        team: "Graphic Design Consultant"
-    },
-    {
-        name: "Reid Davison",
-        linkedin: "https://www.linkedin.com/in/reidddavison/",
-        image: "https://media.licdn.com/dms/image/v2/D5603AQGnE_nyBxfQaw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690898317331?e=1737590400&v=beta&t=6JXro648PQMKhKh12CgCXQ3lb0K3uHrEyrVUEAknCus",
-        team: "UI/UX Designer"
+        image: "./src/images/headshots/Kaeden.jpg",
+        displayTitle: "Graphic Design Consultant",
+        team: "Design"
     },
     {
         name: "Emmanuel Butsana",
         linkedin: "https://www.linkedin.com/in/emmanuel-ze-butsana/",
-        image: "https://media.licdn.com/dms/image/v2/D4E03AQHUVzUHLJ2NFA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693768998993?e=1741219200&v=beta&t=3og-TtdDZ69zx0eRjVmsVlfrw60-0iM93YYfankZJbk",
-        team: "Hardware Developer"
-    },
-    {
-        name: "Jake Jackson",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Hardware Developer"
-    },
-    {
-        name: "Liam Sweetman",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Hardware Developer"
-    },
-    {
-        name: "Teo",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Hardware Developer"
-    },
-    {
-        name: "Arman",
-        linkedin: "https://www.linkedin.com/in/arman-khan-17a365288/",
-        image: "https://media.licdn.com/dms/image/v2/D4E03AQG2vDjlzs0-NQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719433269121?e=1741219200&v=beta&t=poF--GqKPpnirI4-K_LgYcp0pgduQdCV2vxHucUlWMI",
-        team: "Mobile App Developer"
-    },
-    {
-        name: "Deni Tepic",
-        linkedin: "https://www.linkedin.com/in/denitepic/",
-        image: "https://media.licdn.com/dms/image/v2/D5603AQEwzgQaF-UVNg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1666900364438?e=1741219200&v=beta&t=W2GRQZFi8PKzg8ZjGwPloAOwcXEcsIx3VKGirobto9A",
-        team: "Social Media Consultant"
-    },
-    {
-        name: "Gabe Moraru",
-        role: "Mobile App Developer",
-        linkedin: "https://www.linkedin.com/in/gabe-moraru",
-        image: "https://media.licdn.com/dms/image/v2/D5603AQF9BUDyKnHJ_g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718317398583?e=1737590400&v=beta&t=O95KxoB0_lYiiGnQ-k1wQkyGD6kcKJZ3CBSrYs0nigg",
-        team: "Software Developer"
-    },
-    {
-        name: "Joe Robertson",
-        linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Software Developer"
+        image: "./src/images/headshots/Emmanuel.jpg",
+        displayTitle: "Hardware Developer",
+        team: "Hardware"
     },
     {
         name: "Matt Willemin",
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
-        image: "https://media.licdn.com/dms/image/v2/D5603AQHgsnYVNVfLLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719518593039?e=1741219200&v=beta&t=tjBXYPkBFPo5UTKhGvvrSLOM5GX5AZXDjymWilR9SnM",
-        team: "Software Developer"
+        image: "./src/images/headshots/Matt.jpg",
+        displayTitle: "Software Developer",
+        team: "Developer"
     },
     {
         name: "Jack Baldwin",
         linkedin: "https://www.linkedin.com/in/jackson-baldwin/",
-        image: "https://media.licdn.com/dms/image/v2/D5603AQEQM4Og3_ZPaw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724775174904?e=1741219200&v=beta&t=n8nKv8DsxLp3-06NcYvMsuADawh9p4YYpeEbT2TTGX4",
-        team: "Software Developer"
+        image: "./src/images/headshots/Jack.jpg",
+        displayTitle: "Software Developer",
+        team: "Developer"
     },
     {
         name: "Srujan Patil",
         linkedin: "https://www.linkedin.com/in/srujan-patil/",
-        image: "https://media.licdn.com/dms/image/v2/D4D03AQFX5d7-lnFYrg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705280345028?e=1738800000&v=beta&t=Kzx2-tn_vncQVhXlU7CmKsfL4Oix7ufG6HiARdRT_mU",
-        team: "Software Developer"
+        image: "./src/images/headshots/Srujan.jpg",
+        displayTitle: "Software Developer",
+        team: "Developer"
     },
     {
         name: "Erkin Tuna Gumustas",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
-        team: "Web Developer"
+        displayTitle: "Web Developer",
+        team: "Developer"
     },
     {
         name: "Quinn Goergen",
         linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Web Developer"
+        image: "./src/images/headshots/Quinn.png",
+        displayTitle: "Web Developer",
+        team: "Developer"
     },
     {
         name: "Logan Flannery",
         linkedin: "#",
-        image: "./src/images/default_pic.jpg",
-        team: "Web Developer"
+        image: "./src/images/headshots/Logan.jpg",
+        displayTitle: "Web Developer",
+        team: "Developer"
     },
     {
         name: "Humera Fatima",
         linkedin: "https://www.linkedin.com/in/humera-fatima-/",
-        image: "https://media.licdn.com/dms/image/v2/D4D03AQFdTglFFcwptA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1671813049469?e=1741219200&v=beta&t=3sSblD7XnX4X8r2CX2wOkFuM54eUAH-LBHQKJlZalBc",
-        team: "UI/UX Designer"
+        image: "./src/images/headshots/Humera.jpg",
+        displayTitle: "UI/UX Designer",
+        team: "Design"
     }
 ];
 
 const projects = [
     {
-        title: "Dream Cards",
-        description: "NFC cloud business cards",
-        link: "#",
-        image: "./src/images/cards-img.png"
+        title: "Bluetooth Rubiks Cube",
+        description: "Day Dream Technologies",
+        link: "https://daydream-technologies.github.io/Rubiks-cube-site/",
+        image: "./src/images/rubiks-cube.png"
+    }
+];
+
+const previousWork = [
+    {
+        title: "Card Website",
+        description: "Previous Work",
+        image: "./src/images/card_website_ss.png",
+        category: "Web"
     },
     {
-        title: "Rubiks Cube",
-        description: "Day Dream Technologies",
-        link: "#",
-        image: "./src/images/rubiks-cube.png"
+        title: "Main Website",
+        description: "Previous Work",
+        image: "./src/images/main_ss.png",
+        category: "Web"
     },
+    {
+        title: "Ryan Talbot Website",
+        description: "Previous Work",
+        image: "./src/images/Projects/Websites/ryan_talbot_ss.png",
+        category: "Web"
+    },
+    {
+        title: "Rubik's Cube Research Website",
+        description: "Previous Work",
+        image: "./src/images/Projects/Websites/jay_website_ss.png",
+        category: "Web"
+    },
+    {
+        title: "Ryan Talbot Logo",
+        description: "Graphic Design",
+        image: "./src/images/Projects/Graphic Design/Ryan_Talbot_Logo.jpg",
+        category: "Graphic Design"
+    }
 ];
 
 /*Function for updated job title selection*/
@@ -225,36 +219,28 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             filterButtons.forEach(btn => btn.classList.remove('selected'));
             this.classList.add('selected');
-        });
-    });
-});
-
-/*Function to switch job title tabs after x seconds*/
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    let currentIndex = 0;
-
-    function switchFilter() {
-        filterButtons.forEach(btn => btn.classList.remove('selected'));
-        filterButtons[currentIndex].classList.add('selected');
-        renderTeamMembers(filterButtons[currentIndex].dataset.team.toLowerCase());
-        currentIndex = (currentIndex + 1) % filterButtons.length;
-    }
-
-    filterButtons.forEach((button, index) => {
-        button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('selected'));
-            this.classList.add('selected');
-            currentIndex = index;
-            renderTeamMembers(this.dataset.team.toLowerCase());
+            const category = this.dataset.team;
+            filterPreviousWork(category);
         });
     });
 
-    setInterval(switchFilter, 10000); // Switch filter every 5 seconds
-
-    // Initial call to set the first filter as selected
-    switchFilter();
+    // Initial filter to show all previous work
+    filterPreviousWork('All');
 });
+
+function filterPreviousWork(category) {
+    const projectContainer = document.querySelector('.project-container');
+    const projectItems = projectContainer.querySelectorAll('.project-item');
+    
+    projectItems.forEach(item => {
+        const projectCategory = item.dataset.team;
+        if (category === 'All' || projectCategory === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
 
 function renderTeamMembers(team = 'all') {
     const teamContainer = document.getElementById('team-container');
@@ -268,15 +254,9 @@ function renderTeamMembers(team = 'all') {
         // Clear out existing members
         teamContainer.innerHTML = '';
 
-        // Your existing filtering logic remains the same
+        // Filter and render team members
         teamMembers
-            .filter(member => {
-                // ... your condition ...
-                return team === 'all' 
-                    || member.team.toLowerCase() === team
-                    || (team === 'management' && ['Andres Cornide', 'Ricardo Rivera', 'David Wasilewski'].includes(member.name)) || (team === 'design' && ['Eli Klunder', 'Kaeden Palmitier', 'Reid Davison', 'Humera Fatima'].includes(member.name)) || (team === 'software dev' && ['Srujan Patil', 'Quinn Goergen', 'Logan Flannery', 'Erkin Tuna Gumustas', 'Jack Bladwin', 'Milo Baran', 'Arman', 'Deni Tepic', 'Gabe Moraru', 'Joe Robertson', 'Matt Willemin', 'Jack Baldwin'].includes(member.name)) || (team === 'cybersecurity/it' && ['Joseph Biesiada', 'Thomas Laidlaw'].includes(member.name)) || (team === 'hardware dev' && ['Emanuel Butsana', 'Jake Jackson', 'Liam Sweetman', 'Teo'].includes(member.name))
-                    // etc.
-            })
+            .filter(member => team === 'all' || member.team === team)
             .forEach(member => {
                 // Create the card elements
                 const memberDiv = document.createElement('div');
@@ -287,7 +267,7 @@ function renderTeamMembers(team = 'all') {
                         <div class="card-front">
                             <img src="${member.image}" alt="${member.name}">
                             <h3>${member.name}</h3>
-                            <p>${member.team}</p>
+                            <p>${member.displayTitle}</p>
                         </div>
                         <div class="card-back">
                             <a href="${member.linkedin}" target="_blank">LinkedIn Profile</a>
@@ -300,7 +280,7 @@ function renderTeamMembers(team = 'all') {
 
         // 3) Remove the fade-out class so it fades back in
         teamContainer.classList.remove('fade-out');
-    }, 400); // Match the 0.1s in your CSS
+    }, 400);
 }
 
 
@@ -338,6 +318,13 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         // Otherwise, no scrolling is necessary
         image.style.setProperty('--scrollDist', '0px');
+      }
+
+      // For graphic design projects, ensure the image fits properly
+      if (container.closest('[data-team="Graphic Design"]')) {
+        image.style.objectFit = 'contain';
+        image.style.width = '100%';
+        image.style.height = '100%';
       }
     });
   });
