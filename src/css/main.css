@@ -237,7 +237,25 @@ p {
 .project-container {
     display: flex;
     justify-content: left;
+    width: 90vw;
     gap: 50px; /* Adjust the gap between project items as needed */
+    overflow-x: auto;
+    scrollbar-color: white transparent;
+    scrollbar-width: thin;
+    padding-left: 50px;
+    padding-right: 50px;
+    mask-image: linear-gradient(to right, 
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(to right, 
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+    );
 }
 
 .screenshot-container {

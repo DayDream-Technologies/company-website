@@ -8,6 +8,24 @@
     box-sizing: border-box;
 }
 
+h2 {
+    color: white;
+    justify-self: center;
+}
+
+h2 + p {
+    color: white;
+    justify-self: center;
+    font-size: 1em;
+}
+
+.screenshot-container + p {
+    color: white;
+    justify-self: center;
+    align-self: center;
+    font-size: 1em;
+}
+
 .card {
     position: relative;
     width: 80vw;
