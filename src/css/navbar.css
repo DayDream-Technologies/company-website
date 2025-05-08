@@ -25,7 +25,7 @@ nav {
 
 .nav_links {
     display: grid;
-    grid-template-columns: repeat(4, 125px);
+    grid-template-columns: repeat(5, 125px);
     grid-template-rows: 12vh;
     align-items: center;
     justify-items: center;

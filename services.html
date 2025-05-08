@@ -6,6 +6,7 @@
     <title>DayDream Technologies - Projects</title>
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/services.css">
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
@@ -49,58 +50,43 @@
     
     <main>
         <div class="title_desc"><br>
-            <h1>Our Projects</h1><br>
-            <p>Hover over a project card to learn more.</p><br>
+            <h1>Power Your Online Presence</h1><br>
+            <p>Premium Web Hosting, Custom Website Design & Reliable Networking Solutions</p><br>
         </div>
         
-        <div id="projects-container" class="project-grid">
-            <div class="project-item">
-                <h3>Bluetooth Rubiks Cube</h3>
-                <p>Day Dream Technologies</p>
-                <img src="./src/images/rubiks-cube.png" alt="Rubiks Cube">
+        <div class="card">
+            <div class="bg">
+                <h1>Web Hosting</h1>
+                <div>
+                    <p>Your website deserves a hosting solution as strong as your business. Our high-performance web hosting ensures your site loads in milliseconds, stays secure from threats, and scales effortlessly as you grow so you never lose a visitor (or a sale).</p>
+                    <br>
+                    <a href="#">Learn More🔗</a>
+                </div>
             </div>
-        </div>
+            <div class="blob"></div>
+            <p>Test</p>
+        </div><br><br>
+        <div class="card">
+            <div class="bg">
+                <h1>Web Dev</h1>
+                <div>
+                    <p>In today's digital world, your website is your 24/7 salesperson, brand ambassador, and customer gateway. Our custom website development services ensure you get a high-performance, visually stunning, and user-friendly site tailored to your business goals.</p>
+                    <br>
+                    <a href="#">Learn More🔗</a>
+                </div>
+            </div>
+            <div class="blob"></div>
+            <p>Test</p>
+        </div><br><br>
+        <!--Copyright - 2025 dylanharriscameron (Dylan) 
 
-        <div class="title_desc"><br>
-            <h1>Our Recent Projects</h1><br>
-            <div class="team-filters">
-                <button class="filter-btn" data-team="Web">Web</button>
-                <button class="filter-btn" data-team="Graphic Design">Graphic Design</button>
-                <button class="filter-btn" data-team="Mobile Apps">Mobile Apps</button>
-                <button class="filter-btn" data-team="APIs">APIs</button>
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project-item" data-team="Web">
-                <!-- The container that clips the website image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/ryan_talbot_ss.png" 
-                        alt="Ryan Talbot Website Screenshot" 
-                        class="ryan_talbot_ss"
-                    >
-                </div>
-            </div>
-            <div class="project-item" data-team="Web">
-                <!-- The container that clips the website image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/jay_website_ss.png" 
-                        alt="Jay Website Screenshot" 
-                        class="jay_website_ss"
-                    >
-                </div>
-            </div>
-            <div class="project-item" data-team="Graphic Design">
-                <!-- The container that clips the logo image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Graphic Design/Ryan_Talbot_Logo.jpg" 
-                        alt="Ryan Talbot Logo" 
-                        class="ryan_talbot_logo"
-                    >
-                </div>
-            </div>
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+        <div class="lrn-more">
+            <p></p>
         </div>
     </main>
     
@@ -110,22 +96,7 @@
                  src="./src/images/alt-linkedin.jpg"
                  alt="Day Dream Technologies LinkedIn" />
         </a>
-        <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
+        <p>&#169; 2024 DayDream Technologies</p>
     </footer>
-    
-    <script>
-        // Update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
