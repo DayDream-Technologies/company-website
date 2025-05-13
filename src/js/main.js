@@ -58,84 +58,84 @@ const teamMembers = [
     {
         name: "Andres Cornide",
         linkedin: "https://www.linkedin.com/in/andres-cornide/",
-        image: "./src/images/headshots/Andres.jpg",
+        image: "./src/images/Headshots/Andres.jpg",
         displayTitle: "CFO",
         team: "Admin"
     },
     {
         name: "Ricardo Rivera",
         linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "./src/images/headshots/Ricky.jpg",
+        image: "./src/images/Headshots/Ricky.jpg",
         displayTitle: "CEO",
         team: "Admin"
     },
     {
         name: "David Wasilewski",
         linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "./src/images/headshots/David.jpg",
+        image: "./src/images/Headshots/David.jpg",
         displayTitle: "CTO",
         team: "Admin"
     },
     {
         name: "Milo Baran",
         linkedin: "https://www.linkedin.com/in/milo-baran-822a4126a/",
-        image: "./src/images/headshots/Milo.jpg",
+        image: "./src/images/Headshots/Milo.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Srujan Patil",
         linkedin: "https://www.linkedin.com/in/srujan-patil/",
-        image: "./src/images/headshots/Srujan.jpg",
+        image: "./src/images/Headshots/Srujan.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Joseph Biesiada",
         linkedin: "#",
-        image: "./src/images/headshots/Joseph.jpg",
+        image: "./src/images/Headshots/Joseph.jpg",
         displayTitle: "Cybersecurity Consultant",
         team: "Cybersecurity/IT"
     },
     {
         name: "Thomas Laidlaw",
         linkedin: "https://www.linkedin.com/in/thomaslaidlaw284/",
-        image: "./src/images/headshots/Tommy.jpg",
+        image: "./src/images/Headshots/Tommy.jpg",
         displayTitle: "Cybersecurity Consultant",
         team: "Cybersecurity/IT"
     },
     {
         name: "Eli Klunder",
         linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
-        image: "./src/images/headshots/Eli.jpg",
+        image: "./src/images/Headshots/Eli.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Kaedan Palmitier",
         linkedin: "https://www.linkedin.com/in/kaeden-palmitier-769940259/",
-        image: "./src/images/headshots/Kaeden.jpg",
+        image: "./src/images/Headshots/Kaeden.jpg",
         displayTitle: "Graphic Design Consultant",
         team: "Design"
     },
     {
         name: "Emmanuel Butsana",
         linkedin: "https://www.linkedin.com/in/emmanuel-ze-butsana/",
-        image: "./src/images/headshots/Emmanuel.jpg",
+        image: "./src/images/Headshots/Emmanuel.jpg",
         displayTitle: "Hardware Developer",
         team: "Hardware"
     },
     {
         name: "Matt Willemin",
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
-        image: "./src/images/headshots/Matt.jpg",
+        image: "./src/images/Headshots/Matt.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
     {
         name: "Jack Baldwin",
         linkedin: "https://www.linkedin.com/in/jackson-baldwin/",
-        image: "./src/images/headshots/Jack.jpg",
+        image: "./src/images/Headshots/Jack.jpg",
         displayTitle: "Software Developer",
         team: "Developer"
     },
@@ -149,21 +149,21 @@ const teamMembers = [
     {
         name: "Quinn Goergen",
         linkedin: "#",
-        image: "./src/images/headshots/Quinn.png",
+        image: "./src/images/Headshots/Quinn.png",
         displayTitle: "Web Developer",
         team: "Developer"
     },
     {
         name: "Logan Flannery",
         linkedin: "#",
-        image: "./src/images/headshots/Logan.jpg",
+        image: "./src/images/Headshots/Logan.jpg",
         displayTitle: "Web Developer",
         team: "Developer"
     },
     {
         name: "Humera Fatima",
         linkedin: "https://www.linkedin.com/in/humera-fatima-/",
-        image: "./src/images/headshots/Humera.jpg",
+        image: "./src/images/Headshots/Humera.jpg",
         displayTitle: "UI/UX Designer",
         team: "Design"
     }
