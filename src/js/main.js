@@ -81,14 +81,14 @@ const teamMembers = [
         linkedin: "https://www.linkedin.com/in/milo-baran-822a4126a/",
         image: "./src/images/Headshots/Milo.jpg",
         displayTitle: "Software Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Srujan Patil",
         linkedin: "https://www.linkedin.com/in/srujan-patil/",
         image: "./src/images/Headshots/Srujan.jpg",
         displayTitle: "Software Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Joseph Biesiada",
@@ -109,7 +109,7 @@ const teamMembers = [
         linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
         image: "./src/images/Headshots/Eli.jpg",
         displayTitle: "Software Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Kaedan Palmitier",
@@ -130,35 +130,35 @@ const teamMembers = [
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
         image: "./src/images/Headshots/Matt.jpg",
         displayTitle: "Software Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Jack Baldwin",
         linkedin: "https://www.linkedin.com/in/jackson-baldwin/",
         image: "./src/images/Headshots/Jack.jpg",
         displayTitle: "Software Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Erkin Tuna Gumustas",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
         displayTitle: "Web Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Quinn Goergen",
         linkedin: "#",
         image: "./src/images/Headshots/Quinn.png",
         displayTitle: "Web Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Logan Flannery",
         linkedin: "#",
         image: "./src/images/Headshots/Logan.jpg",
         displayTitle: "Web Developer",
-        team: "Developer"
+        team: "Software"
     },
     {
         name: "Humera Fatima",
