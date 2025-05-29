@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="responsive.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DayDream Technologies - Contact</title>
@@ -10,6 +11,8 @@
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
+<link rel="manifest" href="/manifest.webmanifest">
+<style>html{scroll-behavior:smooth;}</style>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
                 <a class="nav_logo" href="index.html">
                     <img class="logo_img"
                          src="./src/images/Company_Logo.png"
-                         alt="Day Dream Technologies" />
+                         alt="Day Dream Technologies loading="lazy"" />
                 </a>
             </li>
             <div class="nav_links">
@@ -35,10 +38,10 @@
                 <a class="nav_logo" href="index.html">
                     <img class="logo_img"
                          src="./src/images/Company_Logo.png"
-                         alt="Day Dream Technologies" />
+                         alt="Day Dream Technologies loading="lazy"" />
                 </a>
             </li>
-            <li><img class="menu_bar" src="./src/images/menu-bar.png" alt="menu"></li>
+            <li><img class="menu_bar" src="./src/images/menu-bar.png" alt="menu loading="lazy""></li>
         </ul>
         <ul class="dropdown">
             <li><a class="nav_link" href="index.html" title="DayDream's homepage"><strong>Home</strong></a></li>
@@ -85,7 +88,7 @@
         <a class="comp_linkdn" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">
             <img class="linkdn"
                  src="./src/images/alt-linkedin.jpg"
-                 alt="Day Dream Technologies LinkedIn" />
+                 alt="Day Dream Technologies LinkedIn loading="lazy"" />
         </a>
         <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
     </footer>
@@ -94,5 +97,48 @@
         // Update copyright year
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const header=document.querySelector('header');
+  if(!header) return;
+  window.addEventListener('scroll',()=>{ header.classList.toggle('shrink', window.scrollY>80); });
+});
+</script>
+<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+}
+</script>
+<script>
+(function(){
+  const toggle=document.getElementById('nav-toggle');
+  if(!toggle) return;
+  const overlay=document.querySelector('.nav-overlay');
+  const navLinks=document.querySelectorAll('header nav a');
+  function close(){toggle.checked=false;document.body.classList.remove('no-scroll');}
+  toggle.addEventListener('change',()=>{document.body.classList.toggle('no-scroll',toggle.checked);});
+  overlay&&overlay.addEventListener('click',close);
+  navLinks.forEach(l=>l.addEventListener('click',close));
+})();
+</script>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const btn=document.getElementById('backToTop');
+  if(!btn) return;
+  window.addEventListener('scroll',()=>{ btn.classList.toggle('show',window.scrollY>400); });
+  btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const els=[...document.querySelectorAll('.reveal')];
+  if(!('IntersectionObserver' in window) || !els.length) return;
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('shown');io.unobserve(e.target);}})
+  },{threshold:.15});
+  els.forEach(el=>io.observe(el));
+});
+</script>
 </body>
 </html>

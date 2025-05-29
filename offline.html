@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><title>Offline</title>
+<style>
+body{font-family:system-ui,Arial,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#222;color:#eee;text-align:center;padding:2rem;}
+h1{font-size:2rem;margin-bottom:1rem;}
+p{opacity:.8;}
+</style><style>html{scroll-behavior:smooth;}</style>
+</head><body>
+<div>
+<h1>You’re offline</h1>
+<p>It looks like you don’t have an internet connection right now.<br>Any cached pages will still work, and we’ll reconnect automatically when possible.</p>
+</div>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const btn=document.getElementById('backToTop');
+  if(!btn) return;
+  window.addEventListener('scroll',()=>{ btn.classList.toggle('show',window.scrollY>400); });
+  btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const els=[...document.querySelectorAll('.reveal')];
+  if(!('IntersectionObserver' in window) || !els.length) return;
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('shown');io.unobserve(e.target);}})
+  },{threshold:.15});
+  els.forEach(el=>io.observe(el));
+});
+</script>
+</body></html>

@@ -1,0 +1,112 @@
+
+/* Mobile enhancements automatically injected */
+*,*::before,*::after{box-sizing:border-box;}
+img, video {max-width: 100%; height: auto;}
+.container, .wrapper {width: 100%; padding: 0 1rem;}
+
+@media (max-width: 768px) {
+    header nav ul {display: flex; flex-direction: column; gap: 0.5rem;}
+    .hero, .banner {display: flex; flex-direction: column; align-items: center; text-align: center;}
+    .columns, .row {flex-direction: column;}
+}
+
+/* Subtle fade‑in for sections */
+section {opacity: 0; animation: fadeIn 0.8s forwards ease-in;}
+@keyframes fadeIn {to {opacity: 1; transform: none;} from {opacity: 0; transform: translateY(20px);}}
+
+
+/* === Mobile hamburger menu === */
+.nav-toggle{position:absolute;top:1rem;right:1rem;width:2rem;height:2rem;opacity:0;z-index:1001;}
+.nav-toggle-label{position:absolute;top:1rem;right:1rem;width:2rem;height:2rem;cursor:pointer;z-index:1000;display:none;}
+.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after{
+    display:block;position:absolute;width:100%;height:2px;background:#333;top:50%;left:0;transform:translateY(-50%);
+}
+.nav-toggle-label span::before, .nav-toggle-label span::after{content:'';}
+.nav-toggle-label span::before{transform:translateY(-8px);}
+.nav-toggle-label span::after{transform:translateY(8px);}
+@media(max-width:768px){
+    .nav-toggle-label{display:block;}
+    header nav{position:fixed;right:-100%;top:0;width:70%;height:100vh;background:#fff;padding:4rem 2rem;transition:right .3s ease;display:flex;flex-direction:column;gap:1.5rem;}
+    .nav-toggle:checked + .nav-toggle-label + nav{right:0;}
+}
+
+/* === Sticky shrinking header === */
+header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,0.9);backdrop-filter:blur(6px);transition:all .3s;}
+header.shrink{padding-top:.3rem;padding-bottom:.3rem;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+
+
+/* === Overlay for mobile nav === */
+@media (max-width:768px){
+    .nav-overlay{
+        position:fixed;
+        top:0;left:0;
+        width:100%;height:100vh;
+        background:rgba(0,0,0,0.4);
+        opacity:0;
+        pointer-events:none;
+        transition:opacity .3s;
+        z-index:999;
+    }
+    .nav-toggle:checked ~ .nav-overlay{
+        opacity:1;
+        pointer-events:auto;
+    }
+
+    /* Refined slide-in uses transform instead of right offset */
+    header nav{
+        right:auto;left:0;transform:translateX(-100%);
+    }
+    .nav-toggle:checked + .nav-toggle-label + nav{
+        transform:translateX(0);
+    }
+}
+
+
+/* === Full‑width overlay nav fix === */
+@media (max-width:768px){
+    header nav{
+        width:100%;
+        max-width:none;
+        background:#111;
+        z-index:1001;
+    }
+}
+
+
+/* === Force full‑width nav overlay and top z-index === */
+@media(max-width:768px){
+    header nav{
+        width:100% !important;
+        max-width:none !important;
+        left:0 !important; right:auto !important;
+        height:100vh !important;
+        z-index:9999 !important;
+        background:#111 !important;
+        transform:translateX(-100%) !important;
+        transition:transform .3s;
+    }
+    .nav-toggle:checked + .nav-toggle-label + nav{
+        transform:translateX(0) !important;
+    }
+    .nav-overlay{
+        z-index:9998 !important;
+    }
+}
+
+body.no-scroll{overflow:hidden;}
+
+
+/* Back-to-top button */
+#backToTop{
+  position:fixed;right:1rem;bottom:1rem;width:2.75rem;height:2.75rem;border:none;
+  border-radius:50%;background:#1a73e8;color:#fff;font-size:1.25rem;
+  opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;
+  transform:scale(0.8);z-index:1000;
+}
+#backToTop.show{
+  opacity:1;pointer-events:auto;transform:scale(1);
+}
+
+/* Reveal effect */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.shown{opacity:1;transform:none;}
