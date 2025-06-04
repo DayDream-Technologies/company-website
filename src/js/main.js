@@ -1,49 +1,63 @@
 /********* Begin JS for the dropdown menu *********/
-const menu_bar = document.querySelector('.menu_bar');
+const hamburger = document.querySelector('.hamburger');
 const dropdown = document.querySelector('.dropdown');
 
-menu_bar.addEventListener('click', event => {
-    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+// Remove the old menu_bar click listener since we're using the hamburger checkbox now
+hamburger.querySelector('input').addEventListener('change', event => {
+    if (event.target.checked) {
         dropdown.style.display = 'block';
         dropdown.style.maxHeight = '0';
-        dropdown.style.transform = 'translateX(100%)';
+        dropdown.style.transform = 'translateY(0%)';
         dropdown.style.padding = '15px';
         dropdown.style.transition = 'transform 0.1s ease-out, max-height 0s ease-out';
         dropdown.style.position = 'fixed';
         dropdown.style.top = '75px';
         dropdown.style.right = '0';
-        dropdown.style.width = '150px';
+        dropdown.style.width = '100vw';
         dropdown.style.height = 'calc(100vh - 75px)';
         dropdown.style.overflow = 'hidden';
         dropdown.style.borderTop = '1px solid #d8d9da';
         dropdown.style.borderLeft = '1px solid #d8d9da';
         dropdown.style.borderBottom = '1px solid #d8d9da';
-        dropdown.style.borderRadius = '7px 0 0 7px';
-        dropdown.style.background = '#787a7d';
+        dropdown.style.background = '#FFFFFF';
         dropdown.style.justifyItems = 'center';
         dropdown.style.alignItems = 'center';
         dropdown.style.listStyleType = 'none';
         
         const items = dropdown.querySelectorAll('li');
         items.forEach(item => {
-            item.style.marginBottom = '15px';  // Adjust margin as needed for spacing
+            item.style.marginBottom = '15px';
         });
 
         setTimeout(function () {
-            dropdown.style.transform = 'translateX(0)';
+            dropdown.style.transform = 'translateY(0%)';
             dropdown.style.maxHeight = 'calc(100vh - 75px)';
-        }, 10);
+        }, 1);
     } else {
         dropdown.style.display = 'none';
         dropdown.style.transform = 'translateX(100%)';
         dropdown.style.maxHeight = '0';
     }
-})
+});
+
+// Add event listener for dropdown links
+dropdown.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Uncheck the hamburger checkbox to trigger the close animation
+        hamburger.querySelector('input').checked = false;
+        // Trigger the change event to close the dropdown
+        hamburger.querySelector('input').dispatchEvent(new Event('change'));
+    });
+});
 
 // Function to handle dropdown visibility on resize
 const handleResize = () => {
     if (window.innerWidth > 800) {
         dropdown.style.display = 'none';
+        // Reset the checkbox state
+        if (hamburger.querySelector('input')) {
+            hamburger.querySelector('input').checked = false;
+        }
     }
 };
 
