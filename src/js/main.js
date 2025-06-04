@@ -70,20 +70,6 @@ window.addEventListener('resize', handleResize);
 
 const teamMembers = [
     {
-        name: "Andres Cornide",
-        linkedin: "https://www.linkedin.com/in/andres-cornide/",
-        image: "./src/images/Headshots/Andres.jpg",
-        displayTitle: "CFO",
-        team: "Admin"
-    },
-    {
-        name: "Ricardo Rivera",
-        linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "./src/images/Headshots/Ricky.jpg",
-        displayTitle: "CEO",
-        team: "Admin"
-    },
-    {
         name: "David Wasilewski",
         linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         image: "./src/images/Headshots/David.jpg",
