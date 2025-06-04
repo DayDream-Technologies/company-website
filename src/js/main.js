@@ -256,7 +256,12 @@ function renderTeamMembers(team = 'all') {
 
         // Filter and render team members
         teamMembers
-            .filter(member => team === 'all' || member.team === team)
+            .filter(member => {
+                // Check if member has LinkedIn and non-default profile picture
+                const hasLinkedIn = member.linkedin && member.linkedin !== '#';
+                const hasCustomImage = member.image && !member.image.includes('default_pic.jpg');
+                return (team === 'all' || member.team === team) && hasLinkedIn && hasCustomImage;
+            })
             .forEach(member => {
                 // Create the card elements
                 const memberDiv = document.createElement('div');
