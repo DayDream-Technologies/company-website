@@ -72,14 +72,16 @@ window.addEventListener('resize', handleResize);
 const container = document.querySelector('.container');
 const dropdownContent = document.querySelector('.dropdown-content');
 
-container.querySelector('input').addEventListener('change', event => {
-    if (!event.target.checked) {
-        dropdownContent.style.display = 'block';
-        dropdownContent.style.width = '100px';
-    } else {
-        dropdownContent.style.display = 'none';
-    }
-});
+if (container && dropdownContent) {
+    container.querySelector('input').addEventListener('change', event => {
+        if (!event.target.checked) {
+            dropdownContent.style.display = 'block';
+            dropdownContent.style.width = '100px';
+        } else {
+            dropdownContent.style.display = 'none';
+        }
+    });
+}
 /********* End JS for the explore dropdown *********/
 
 const teamMembers = [
