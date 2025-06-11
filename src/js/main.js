@@ -2,7 +2,6 @@
 const hamburger = document.querySelector('.hamburger');
 const dropdown = document.querySelector('.dropdown');
 
-// Remove the old menu_bar click listener since we're using the hamburger checkbox now
 hamburger.querySelector('input').addEventListener('change', event => {
     if (event.target.checked) {
         dropdown.style.display = 'block';
@@ -67,6 +66,21 @@ handleResize();
 // Add resize event listener
 window.addEventListener('resize', handleResize);
 /********* End JS for the dropdown menu *********/
+
+
+/********* Start JS for the explore dropdown *********/
+const container = document.querySelector('.container');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+container.querySelector('input').addEventListener('change', event => {
+    if (!event.target.checked) {
+        dropdownContent.style.display = 'block';
+        dropdownContent.style.width = '100px';
+    } else {
+        dropdownContent.style.display = 'none';
+    }
+});
+/********* End JS for the explore dropdown *********/
 
 const teamMembers = [
     {

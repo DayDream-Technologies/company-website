@@ -1,0 +1,79 @@
+/* Universal padding and margin reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hide the default checkbox */
+.container input {
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.container:hover {
+    background: #FBE8D4;
+}
+
+.explore {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+}
+
+.explore p {
+    transform: translateY(-4px);
+    user-select: none;
+}
+
+.line1 {
+    width: calc(100% - 8px);
+    height: 3px;
+    left: 4px;
+    background: #EFA960;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .7s transform cubic-bezier(0,1,.33,1.2), background .4s;
+}
+
+.line-indicator {
+    transform: translateY(-50%);
+}
+
+.container input:checked ~ .line-indicator {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.proj-cat {
+    max-width: 1500px;
+    padding: 40px 5vw 0px 5vw;
+    user-select: none;
+}
+
+.proj-cat p {
+    font-size: 1em;
+    padding: 10px 0px 15px 0px
+}
+
+.proj-cat h3 {
+    font-size: 1.5em;
+    color: #EFA960;
+}
+
+.dropdown-content {
+    display: none;
+}
