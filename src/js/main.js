@@ -108,7 +108,7 @@ const teamMembers = [
     },
     {
         name: "Joseph Biesiada",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/joseph-biesiada-648775231/",
         image: "./src/images/Headshots/Joseph.jpg",
         displayTitle: "Cybersecurity Consultant",
         team: "Cybersecurity/IT"
@@ -124,8 +124,8 @@ const teamMembers = [
         name: "Eli Klunder",
         linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
         image: "./src/images/Headshots/Eli.jpg",
-        displayTitle: "Software Developer",
-        team: "Software"
+        displayTitle: "Sales Engineer",
+        team: "Sales"
     },
     {
         name: "Kaedan Palmitier",
@@ -171,7 +171,7 @@ const teamMembers = [
     },
     {
         name: "Logan Flannery",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/logan-flannery-8173192b6/",
         image: "./src/images/Headshots/Logan.jpg",
         displayTitle: "Web Developer",
         team: "Software"
@@ -182,6 +182,13 @@ const teamMembers = [
         image: "./src/images/Headshots/Humera.jpg",
         displayTitle: "UI/UX Designer",
         team: "Design"
+    },
+    {
+        name: "Marvin Opoku Kwarteng",
+        linkedin: "https://www.linkedin.com/in/marvinopoku/",
+        image: "./src/images/Headshots/Marvin.png",
+        displayTitle: "Sales Engineer",
+        team: "Sales"
     }
 ];
 
