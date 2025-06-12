@@ -142,9 +142,23 @@ const teamMembers = [
         team: "Hardware"
     },
     {
+        name: "Jake Jackson",
+        linkedin: "",
+        image: "",
+        displayTitle: "Hardware Developer",
+        team: "Hardware"
+    },
+    {
         name: "Matt Willemin",
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
         image: "./src/images/Headshots/Matt.jpg",
+        displayTitle: "Software Developer",
+        team: "Software"
+    },
+    {
+        name: "Isaac Langerman",
+        linkedin: "",
+        image: "",
         displayTitle: "Software Developer",
         team: "Software"
     },
@@ -189,6 +203,27 @@ const teamMembers = [
         image: "./src/images/Headshots/Marvin.png",
         displayTitle: "Sales Engineer",
         team: "Sales"
+    },
+    {
+        name: "Jayden Savin",
+        linkedin: "https://www.linkedin.com/in/jayden-savin-35124030b/",
+        image: "./src/images/Headshots/Jayden.png",
+        displayTitle: "Medical Researcher",
+        team: "Research"
+    },
+    {
+        name: "Julian Ananyev",
+        linkedin: "https://www.linkedin.com/in/julianananyev/",
+        image: "./src/images/Headshots/Julian.png",
+        displayTitle: "Medical Researcher",
+        team: "Research"
+    },
+    {
+        name: "Bill Sun",
+        linkedin: "https://www.linkedin.com/in/btsun/",
+        image: "",
+        displayTitle: "Medical Researcher",
+        team: "Research"
     }
 ];
 
