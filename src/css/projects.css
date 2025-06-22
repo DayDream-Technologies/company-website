@@ -77,3 +77,44 @@
 .dropdown-content {
     display: none;
 }
+
+.dropdown-content img {
+    max-width: 1500px;
+    width: 89vw;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.graph-image-container {
+    max-width: 1500px;
+    width: 89vw;
+    height: 550px;
+    object-fit: contain;
+    border-radius: 5px;
+
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-button {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.image-button:hover {
+    color: #EFA960;
+}

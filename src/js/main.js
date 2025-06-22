@@ -68,20 +68,34 @@ window.addEventListener('resize', handleResize);
 /********* End JS for the dropdown menu *********/
 
 
-/********* Start JS for the explore dropdown *********/
-const container = document.querySelector('.container');
-const dropdownContent = document.querySelector('.dropdown-content');
+/********* Start JS for the PROJECTS PAGE explore dropdown *********/
+const containers = document.querySelectorAll('.container');
+const dropdownContents = document.querySelectorAll('.dropdown-content');
 
-if (container && dropdownContent) {
-    container.querySelector('input').addEventListener('change', event => {
-        if (!event.target.checked) {
-            dropdownContent.style.display = 'block';
-            dropdownContent.style.width = '100px';
-        } else {
-            dropdownContent.style.display = 'none';
-        }
-    });
-}
+// Loop through each container and add event listeners
+containers.forEach((container, index) => {
+    const dropdownContent = dropdownContents[index];
+    if (container && dropdownContent) {
+        container.querySelector('input').addEventListener('change', event => {
+            // Close all other dropdowns first
+            containers.forEach((otherContainer, otherIndex) => {
+                if (otherIndex !== index) {
+                    const otherDropdown = dropdownContents[otherIndex];
+                    otherDropdown.style.display = 'none';
+                    otherContainer.querySelector('input').checked = true;
+                }
+            });
+            
+            // Toggle the current dropdown
+            if (!event.target.checked) {
+                dropdownContent.style.display = 'block';
+                dropdownContent.style.width = '100px';
+            } else {
+                dropdownContent.style.display = 'none';
+            }
+        });
+    }
+});
 /********* End JS for the explore dropdown *********/
 
 const teamMembers = [
