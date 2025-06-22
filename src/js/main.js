@@ -1,49 +1,62 @@
 /********* Begin JS for the dropdown menu *********/
-const menu_bar = document.querySelector('.menu_bar');
+const hamburger = document.querySelector('.hamburger');
 const dropdown = document.querySelector('.dropdown');
 
-menu_bar.addEventListener('click', event => {
-    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+hamburger.querySelector('input').addEventListener('change', event => {
+    if (event.target.checked) {
         dropdown.style.display = 'block';
         dropdown.style.maxHeight = '0';
-        dropdown.style.transform = 'translateX(100%)';
+        dropdown.style.transform = 'translateY(0%)';
         dropdown.style.padding = '15px';
         dropdown.style.transition = 'transform 0.1s ease-out, max-height 0s ease-out';
         dropdown.style.position = 'fixed';
         dropdown.style.top = '75px';
         dropdown.style.right = '0';
-        dropdown.style.width = '150px';
+        dropdown.style.width = '100vw';
         dropdown.style.height = 'calc(100vh - 75px)';
         dropdown.style.overflow = 'hidden';
         dropdown.style.borderTop = '1px solid #d8d9da';
         dropdown.style.borderLeft = '1px solid #d8d9da';
         dropdown.style.borderBottom = '1px solid #d8d9da';
-        dropdown.style.borderRadius = '7px 0 0 7px';
-        dropdown.style.background = '#787a7d';
+        dropdown.style.background = '#FFFFFF';
         dropdown.style.justifyItems = 'center';
         dropdown.style.alignItems = 'center';
         dropdown.style.listStyleType = 'none';
         
         const items = dropdown.querySelectorAll('li');
         items.forEach(item => {
-            item.style.marginBottom = '15px';  // Adjust margin as needed for spacing
+            item.style.marginBottom = '15px';
         });
 
         setTimeout(function () {
-            dropdown.style.transform = 'translateX(0)';
+            dropdown.style.transform = 'translateY(0%)';
             dropdown.style.maxHeight = 'calc(100vh - 75px)';
-        }, 10);
+        }, 1);
     } else {
         dropdown.style.display = 'none';
         dropdown.style.transform = 'translateX(100%)';
         dropdown.style.maxHeight = '0';
     }
-})
+});
+
+// Add event listener for dropdown links
+dropdown.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Uncheck the hamburger checkbox to trigger the close animation
+        hamburger.querySelector('input').checked = false;
+        // Trigger the change event to close the dropdown
+        hamburger.querySelector('input').dispatchEvent(new Event('change'));
+    });
+});
 
 // Function to handle dropdown visibility on resize
 const handleResize = () => {
     if (window.innerWidth > 800) {
         dropdown.style.display = 'none';
+        // Reset the checkbox state
+        if (hamburger.querySelector('input')) {
+            hamburger.querySelector('input').checked = false;
+        }
     }
 };
 
@@ -54,21 +67,24 @@ handleResize();
 window.addEventListener('resize', handleResize);
 /********* End JS for the dropdown menu *********/
 
+
+/********* Start JS for the explore dropdown *********/
+const container = document.querySelector('.container');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+if (container && dropdownContent) {
+    container.querySelector('input').addEventListener('change', event => {
+        if (!event.target.checked) {
+            dropdownContent.style.display = 'block';
+            dropdownContent.style.width = '100px';
+        } else {
+            dropdownContent.style.display = 'none';
+        }
+    });
+}
+/********* End JS for the explore dropdown *********/
+
 const teamMembers = [
-    {
-        name: "Andres Cornide",
-        linkedin: "https://www.linkedin.com/in/andres-cornide/",
-        image: "./src/images/Headshots/Andres.jpg",
-        displayTitle: "CFO",
-        team: "Admin"
-    },
-    {
-        name: "Ricardo Rivera",
-        linkedin: "https://www.linkedin.com/in/ricardo-rivera-0090931a2/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "./src/images/Headshots/Ricky.jpg",
-        displayTitle: "CEO",
-        team: "Admin"
-    },
     {
         name: "David Wasilewski",
         linkedin: "https://www.linkedin.com/in/david-wasilewski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -92,7 +108,7 @@ const teamMembers = [
     },
     {
         name: "Joseph Biesiada",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/joseph-biesiada-648775231/",
         image: "./src/images/Headshots/Joseph.jpg",
         displayTitle: "Cybersecurity Consultant",
         team: "Cybersecurity/IT"
@@ -108,8 +124,8 @@ const teamMembers = [
         name: "Eli Klunder",
         linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
         image: "./src/images/Headshots/Eli.jpg",
-        displayTitle: "Software Developer",
-        team: "Software"
+        displayTitle: "Sales Engineer",
+        team: "Sales"
     },
     {
         name: "Kaedan Palmitier",
@@ -126,9 +142,23 @@ const teamMembers = [
         team: "Hardware"
     },
     {
+        name: "Jake Jackson",
+        linkedin: "",
+        image: "",
+        displayTitle: "Hardware Developer",
+        team: "Hardware"
+    },
+    {
         name: "Matt Willemin",
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
         image: "./src/images/Headshots/Matt.jpg",
+        displayTitle: "Software Developer",
+        team: "Software"
+    },
+    {
+        name: "Isaac Langerman",
+        linkedin: "",
+        image: "",
         displayTitle: "Software Developer",
         team: "Software"
     },
@@ -155,7 +185,7 @@ const teamMembers = [
     },
     {
         name: "Logan Flannery",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/logan-flannery-8173192b6/",
         image: "./src/images/Headshots/Logan.jpg",
         displayTitle: "Web Developer",
         team: "Software"
@@ -166,6 +196,34 @@ const teamMembers = [
         image: "./src/images/Headshots/Humera.jpg",
         displayTitle: "UI/UX Designer",
         team: "Design"
+    },
+    {
+        name: "Marvin Opoku Kwarteng",
+        linkedin: "https://www.linkedin.com/in/marvinopoku/",
+        image: "./src/images/Headshots/Marvin.png",
+        displayTitle: "Sales Engineer",
+        team: "Sales"
+    },
+    {
+        name: "Jayden Savin",
+        linkedin: "https://www.linkedin.com/in/jayden-savin-35124030b/",
+        image: "./src/images/Headshots/Jayden.png",
+        displayTitle: "Medical Researcher",
+        team: "Research"
+    },
+    {
+        name: "Julian Ananyev",
+        linkedin: "https://www.linkedin.com/in/julianananyev/",
+        image: "./src/images/Headshots/Julian.png",
+        displayTitle: "Medical Researcher",
+        team: "Research"
+    },
+    {
+        name: "Bill Sun",
+        linkedin: "https://www.linkedin.com/in/btsun/",
+        image: "",
+        displayTitle: "Medical Researcher",
+        team: "Research"
     }
 ];
 
@@ -256,7 +314,12 @@ function renderTeamMembers(team = 'all') {
 
         // Filter and render team members
         teamMembers
-            .filter(member => team === 'all' || member.team === team)
+            .filter(member => {
+                // Check if member has LinkedIn and non-default profile picture
+                const hasLinkedIn = member.linkedin && member.linkedin !== '#';
+                const hasCustomImage = member.image && !member.image.includes('default_pic.jpg');
+                return (team === 'all' || member.team === team) && hasLinkedIn && hasCustomImage;
+            })
             .forEach(member => {
                 // Create the card elements
                 const memberDiv = document.createElement('div');

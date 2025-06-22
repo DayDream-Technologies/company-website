@@ -22,11 +22,10 @@
                 </a>
             </li>
             <div class="nav_links">
-                <li><a class="nav_link" href="index.html" title="Daydream's homepage"><strong>Home</strong></a></li>
-                <li><a class="nav_link" href="projects.html" title="Our Projects"><strong>Projects</strong></a></li>
-                <li><a class="nav_link" href="services.html" title="Our Services"><strong>Services</strong></a></li>
-                <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
-                <li><a class="contact-link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+                <li><a class="nav_link" href="index.html" title="Daydream's homepage">Home</a></li>
+                <li><a class="nav_link" href="projects.html" title="Our Projects">Projects</a></li>
+                <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+                <li><a class="contact-link" href="contact.html" title="Contact us">Contact</a></li>
             </div>
         </ul>
         <ul class="respo_navbar">
@@ -37,19 +36,26 @@
                          alt="Day Dream Technologies" />
                 </a>
             </li>
-            <li><img class="menu_bar" src="./src/images/menu-bar.png" alt="menu"></li>
+            <li>
+                <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </li>
         </ul>
         <ul class="dropdown">
-            <li><a class="nav_link" href="index.html" title="DayDream's homepage"><strong>Home</strong></a></li>
-            <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
-            <li><a class="nav_link" href="services.html" title="Our Services"><strong>Services</strong></a></li>
-            <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
-            <li><a class="nav_link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+            <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
+            <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
+            <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
         </ul>
     </nav>
     
     <main>
-        <div class="title_desc"><br>
+        <!--<div class="title_desc"><br>
             <h1>Power Your Online Presence</h1><br>
             <p>Premium Web Hosting, Custom Website Design & Reliable Networking Solutions</p><br>
         </div>
@@ -75,7 +81,7 @@
                 </div>
             </div>
             <div class="blob"></div>
-        </div><br><br>
+        </div><br><br>-->
         <!--Copyright - 2025 dylanharriscameron (Dylan) 
 
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -83,38 +89,61 @@
         The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
         THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
-        <div>
-            <h2>Here are some of our web dev projects</h2>
-            <p>(hover over the cards to scroll)</p>
-        </div>
-        <div class="project-container" id="lrn-more-webdev">
-            <div class="project-item" data-team="Web">
-                <!-- The container that clips the website image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/ryan_talbot_ss.png" 
-                        alt="Ryan Talbot Website Screenshot" 
-                        class="ryan_talbot_ss">
+        <br><br>
+        <div class="section-container">
+            <h2>Graphic Design</h2>
+            <div class="project-container">
+                <div class="project-item" data-team="Graphic Design">
+                    <div class="screenshot-container">
+                        <img 
+                            src="./src/images/Projects/Graphic Design/Ryan_Talbot_Logo.jpg"
+                            alt="Ryan Talbot Logo"
+                            class="ryan_talbot_logo">
+                    </div>
                 </div>
-            </div>
-            <div class="project-item" data-team="Web">
-                <!-- The container that clips the website image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/jay_website_ss.png" 
-                        alt="Jay Website Screenshot" 
-                        class="jay_website_ss">
-                </div>
-            </div>
-            <div class="project-item" data-team="Web">
-                <!-- The container that clips the logo image -->
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/daydream_ss.png" 
-                        alt="DayDream Website Screenshot">
+                <div class="project-item" data-team="Graphic Design">
+                    <div class="screenshot-container">
+                        <img 
+                            src="./src/images/Projects/Graphic Design/Company_Logo.png"
+                            alt="Company Logo"
+                            class="company_logo">
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="section-container">
+            <h2>Web Development</h2>
+            <div class="project-container">
+                <div class="project-item" data-team="Web">
+                    <div class="screenshot-container">
+                        <img 
+                            src="./src/images/Projects/Websites/ryan_talbot_ss.png" 
+                            alt="Ryan Talbot Website Screenshot" 
+                            class="ryan_talbot_ss1">
+                    </div>
+                </div>
+                <div class="project-item" data-team="Web">
+                    <div class="screenshot-container">
+                        <img 
+                            src="./src/images/Projects/Websites/jay_website_ss.png" 
+                            alt="Jay Website Screenshot" 
+                            class="jay_website_ss1">
+                    </div>
+                </div>
+                <div class="project-item" data-team="Web">
+                    <div class="screenshot-container">
+                        <img 
+                            src="./src/images/Projects/Websites/daydream_ss.png" 
+                            alt="DayDream Website Screenshot" 
+                            class="day_dream_website_ss1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-container">
+            <h2>Web Hosting</h2>
+            <div class="project-container"></div>
+        </div><br><br>
     </main>
     
     <footer>

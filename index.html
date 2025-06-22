@@ -22,11 +22,10 @@
                 </a>
             </li>
             <div class="nav_links">
-                <li><a class="nav_link" href="index.html" title="Daydream's homepage"><strong>Home</strong></a></li>
-                <li><a class="nav_link" href="projects.html" title="Our Projects"><strong>Projects</strong></a></li>
-                <li><a class="nav_link" href="services.html" title="Our Services"><strong>Services</strong></a></li>
-                <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
-                <li><a class="contact-link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+                <li><a class="nav_link" id="current_page" href="index.html" title="Daydream's homepage">Home</a></li>
+                <li><a class="nav_link" href="projects.html" title="Our Projects">Projects</a></li>
+                <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+                <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
             </div>
         </ul>
         <ul class="respo_navbar">
@@ -37,18 +36,25 @@
                          alt="Day Dream Technologies" />
                 </a>
             </li>
-            <li><img class="menu_bar" src="./src/images/menu-bar.png" alt="menu"></li>
+            <li>
+                <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </li>
         </ul>
         <ul class="dropdown">
-            <li><a class="nav_link" href="index.html" title="DayDream's homepage"><strong>Home</strong></a></li>
-            <li><a class="nav_link" href="projects.html" title="Our projects"><strong>Projects</strong></a></li>
-            <li><a class="nav_link" href="services.html" title="Our Services"><strong>Services</strong></a></li>
-            <li><a class="nav_link" href="team.html" title="Meet the team"><strong>Team</strong></a></li>
-            <li><a class="nav_link" href="contact.html" title="Contact us"><strong>Contact</strong></a></li>
+            <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
+            <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
+            <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main><br>
         <section class="grid">
             <div class="three_to_one">
                 <div class="title_desc">
@@ -64,7 +70,7 @@
                 <!-- Here is the link showing this image is free to use; https://www.pexels.com/photo/two-women-looking-at-the-code-at-laptop-1181263/ -->
                 <img src="./src/images/Stock_Web_Dev_Img.jpg" alt="Web Dev">
             </div>
-        </section>
+        </section><br><br>
     </main>
 
     <footer>

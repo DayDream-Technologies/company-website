@@ -7,13 +7,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     --color-scheme: light;
-    background: linear-gradient(180deg, #e7823c, #ea9149);
+    background: #FFFFFF;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
@@ -28,7 +29,7 @@ body {
 .title_desc {
     text-align: center;
     padding: 20px;
-    color: #ffffff;
+    color: #000000;
 }
 
 h1 {
@@ -52,16 +53,6 @@ p {
     text-align: center;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
 /* Styling for team member cards */
 .team-member .card {
     background-color: #787a7d;
@@ -69,19 +60,6 @@ p {
     position: relative;
     width: 100%;
     height: 250px;
-    perspective: 1000px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Styling for project cards */
-.project-card .card {
-    background-color: #787a7d;
-    color: black;
-    position: relative;
-    width: 400px;
-    height: 350px;
     perspective: 1000px;
     border-radius: 10px;
     overflow: hidden;
@@ -123,13 +101,6 @@ p {
 .card-front img {
     object-fit: cover;
     margin-bottom: 10px;
-}
-
-/* Styling the front of projects card */
-.project-card .card-front img {
-    width: 300px;
-    height: 250px;
-    border-radius: 5px;
 }
 
 /* Styling the front of team-members card */
@@ -196,33 +167,6 @@ p {
     background-color: #D37C50; 
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        --color-scheme: dark;
-        background: linear-gradient(180deg, #787a7d, #414243);
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: 'Roboto', sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        min-height: 100vh;
-    }
-}
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adjust the gap between project items as needed */
-}
-
-.project-item {
-    flex: 1 1 30%; /* Adjust the width as needed */
-    max-width: 300px; /* Optional: set a max-width for each project item */
-    text-align: center;
-}
-
 /* Fade transition for the team container */
 #team-container {
     opacity: 1;                      /* Start fully visible */
@@ -232,30 +176,6 @@ p {
 /* Fade-out utility class to trigger the opacity to 0 */
 #team-container.fade-out {
     opacity: 0;  /* When applied, the container will transition to 0 */
-}
-
-.project-container {
-    display: flex;
-    justify-content: left;
-    width: 90vw;
-    gap: 50px; /* Adjust the gap between project items as needed */
-    overflow-x: auto;
-    scrollbar-color: white transparent;
-    scrollbar-width: thin;
-    padding-left: 50px;
-    padding-right: 50px;
-    mask-image: linear-gradient(to right, 
-        transparent 0%,
-        black 5%,
-        black 95%,
-        transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(to right, 
-        transparent 0%,
-        black 5%,
-        black 95%,
-        transparent 100%
-    );
 }
 
 .screenshot-container {
@@ -281,31 +201,9 @@ p {
     transform: translateY(var(--scrollDist, -100%));
 }
 
-/* Logo hover effect */
-.project-item[data-team="Graphic Design"] .screenshot-container {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid #000000;
-    margin: 30px 0;
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+@media screen and (max-width: 800px) {
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
 }
-
-.project-item[data-team="Graphic Design"] .screenshot-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    padding: 10px;
-}
-
-.project-item[data-team="Graphic Design"] .screenshot-container:hover img {
-    transform: scale(1.2);
-}
-
-

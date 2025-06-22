@@ -10,20 +10,12 @@
 
 h2 {
     color: white;
-    justify-self: center;
+    padding-left: 20px;
+    text-align: left;
 }
 
-h2 + p {
-    color: white;
-    justify-self: center;
-    font-size: 1em;
-}
-
-.screenshot-container + p {
-    color: white;
-    justify-self: center;
-    align-self: center;
-    font-size: 1em;
+.company_logo {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card {
