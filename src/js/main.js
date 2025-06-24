@@ -68,6 +68,22 @@ window.addEventListener('resize', handleResize);
 /********* End JS for the dropdown menu *********/
 
 
+/********* Start JS for the LANDING PAGE AOS *********/
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    })
+})
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+/********* End JS for the LANDING PAGE AOS *********/
+
+
 /********* Start JS for the PROJECTS PAGE explore dropdown *********/
 const containers = document.querySelectorAll('.container');
 const dropdownContents = document.querySelectorAll('.dropdown-content');

@@ -6,7 +6,8 @@
     <title>Daydream Technologies</title>
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/contact.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
@@ -55,7 +56,7 @@
     </nav>
 
     <main><br>
-        <section class="grid">
+        <section class="intro-section">
             <div class="three_to_one">
                 <div class="title_desc">
                     <h1>Welcome to Daydream Technologies</h1><br>
@@ -66,11 +67,98 @@
                     <a class="proj-link" href="projects.html">Check out our projects</a>
                 </div>
             </div>
-            <div class="image-content">
+            <div class="image-content hidden">
                 <!-- Here is the link showing this image is free to use; https://www.pexels.com/photo/two-women-looking-at-the-code-at-laptop-1181263/ -->
                 <img src="./src/images/Stock_Web_Dev_Img.jpg" alt="Web Dev">
             </div>
-        </section><br><br>
+        </section>
+        <section class="services-section">
+            <h2 class="services-title">Services</h2>
+            <div class="services-grid hidden">
+                <div class="service-card">
+                    <div>🛠️</div>
+                    <h3>Visual Identity & UI Design</h3>
+                    <p>We developed a bold and clean design language that mirrors the athlete's energy and professionalism. From typography to custom iconography, every element reinforces their brand.</p>
+                </div>
+                <div class="service-card">
+                    <div>💻</div>
+                    <h3>Responsive Web Development</h3>
+                    <p>Built from the ground up using modern frameworks (React, Next.js, or WordPress depending on your stack), the site is lightning-fast, SEO-optimized, and fully responsive on all devices.</p>
+                </div>
+                <div class="service-card">
+                    <div>📈</div>
+                    <h3>Interactive Career Timeline</h3>
+                    <p>Visitors can scroll through major milestones, stats, and memorable moments in a rich, interactive timeline that brings the athlete's story to life.</p>
+                </div>
+                <div class="service-card">
+                    <div>📰</div>
+                    <h3>Media Gallery & Press Hub</h3>
+                    <p>A curated section for videos, highlight reels, and press mentions ensures fans and media alike can access fresh, relevant content easily.</p>
+                </div>
+            </div>
+        </section>
+        <section class="detail-section">
+            <div class="detail-card hidden">
+                <h2>Experience Seamless Digital<br>Transformation Tailored to Your Industry</h2>
+                <p>From concept to launch, we craft solutions that fit your unique needs.<br>
+                    Whether you need a sleek website, a powerful app, or a scalable software platform, we're here to make your vision a reality.
+                </p>
+            </div>
+        </section>
+        <section class="review-section">
+            <h2 class="review-title">Customer reviews</h2>
+            <div class="review-grid hidden">
+                <div class="review-card">
+                    <span class="quote quote-open">“</span>
+                    <p>
+                        Daydream Technologies transformed our outdated systems into a modern, user-friendly platform. Their team was responsive, knowledgeable, and delivered ahead of schedule. Highly recommend!
+                    </p>
+                    <span class="quote quote-close">”</span>
+                </div>
+                <div class="review-card">
+                    <span class="quote quote-open">“</span>
+                    <p>
+                        They understood our unique needs and delivered a solution that exceeded our expectations.
+                    </p>
+                    <span class="quote quote-close">”</span>
+                </div>
+            </div>
+            <div class="review-nav">
+                <button class="nav-arrow"><span>&lt;</span></button>
+                <button class="nav-arrow"><span>&gt;</span></button>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="title_desc">
+                <h2 class="contact-title">Got a vision? Let’s make it real.</h2>
+                <p>Reach out with your questions, ideas, or projects—we’re here to bring them to life.</p>
+            </div>
+            <div class="contact-container hidden">
+                <!-- Contact Form Section -->
+                <!-- From Uiverse.io by gharsh11032000 -->
+                <!-- Here is the link; https://uiverse.io/gharsh11032000/bitter-cow-59 -->
+                <div class="form-container">
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+    
+                        <input type="hidden" name="access_key" value="ef24714b-247c-467f-b061-4b0f8c7e5fc1">
+    
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="main_website">How Can We Help You?</label>
+                            <textarea name="main_website" id="main_website" rows="10" cols="50" required=""></textarea>
+                        </div>
+                        <button class="form-submit-btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

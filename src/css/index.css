@@ -1,0 +1,425 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+/* Universal padding and margin reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15vh 80px 0 80px;
+    min-height: auto;
+}
+
+.three_to_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.title_desc {
+    text-align: left;
+}
+
+.title_desc h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #e7823c, #ea9149);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.title_desc p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-content img:hover {
+    transform: translateY(-5px);
+}
+
+.image-content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #e7823c, #ea9149);
+    border-radius: 15px;
+    z-index: -1;
+    transform: rotate(-5deg);
+    opacity: 0.1;
+}
+
+.proj-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #e7823c, #ea9149);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 130, 60, 0.3);
+    margin-top: 10px;
+}
+
+.proj-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(231, 130, 60, 0.4);
+}
+
+.proj-link::after {
+    content: '→';
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.proj-link:hover::after {
+    transform: translateX(5px);
+}
+
+/* --- Services Section (Card Style) --- */
+.services-section {
+    padding: 50vh 80px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: start;
+    background: none;
+    position: relative;
+    z-index: 1;
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 35vh;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 400px;
+    background: radial-gradient(ellipse at center, #fff6ee 70%, transparent 100%);
+    border-radius: 100% 100% 0 0 / 25% 25% 0 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.services-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #e7823c;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 48px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(231, 130, 60, 0.10), 0 1.5px 8px 0 rgba(0,0,0,0.04);
+    padding: 48px 48px 40px 48px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #e7823c;
+    margin-bottom: 6px;
+}
+
+.service-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.97rem;
+    color: #888;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* --- Detail Section (Card Style) --- */
+.detail-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 340px;
+    margin: 40px 0 0 0;
+    z-index: 1;
+}
+
+.detail-section::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    height: 220px;
+    background: #fbeee4;
+    z-index: 0;
+}
+
+.detail-card {
+    display: grid;
+    justify-items: center;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px 0 rgba(231, 130, 60, 0.10), 0 1.5px 8px 0 rgba(0,0,0,0.04);
+    padding: 48px 32px 32px 32px;
+    max-width: 1200px;
+    width: 90%;
+    z-index: 1;
+}
+
+.detail-card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e7823c;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.detail-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.08rem;
+    color: #e7823c;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* --- Review Section (Card Style) --- */
+.review-section {
+    display: grid;
+    place-items: center;
+    margin: 60px 0 0 0;
+    padding: 400px 20px;
+}
+
+.review-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #111;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.review-card {
+    position: relative;
+    background: #fff;
+    border-radius: 14px;
+    border: 1.5px solid #f2f2f2;
+    box-shadow: 0 2px 16px 0 rgba(231, 130, 60, 0.06);
+    padding: 36px 32px 32px 32px;
+    display: grid;
+    align-items: center;
+    min-height: 180px;
+}
+
+.review-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    color: #444;
+    text-align: center;
+    margin: 0 0 0 0;
+    line-height: 1.5;
+}
+
+.quote {
+    font-size: 2rem;
+    color: #bdbdbd;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.quote-open {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.quote-close {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+}
+
+.review-nav {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgba(231, 130, 60, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #e7823c;
+    transition: background 0.2s;
+}
+
+.nav-arrow:hover {
+    background: #fbeee4;
+}
+
+/* --- Contact Section (Card Style) --- */
+.contact-section {
+    display: grid;
+    place-items: center;
+    padding: 20px 20px 200px 20px;
+}
+
+.contact-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e7823c;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+    .intro-section {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .title_desc h1 {
+        font-size: 2.2rem;
+    }
+
+    .title_desc p {
+        font-size: 1rem;
+    }
+
+    .image-content {
+        order: -1;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 32px 16px;
+        gap: 24px;
+    }
+
+    .services-title {
+        max-width: 100%;
+        padding-left: 16px;
+    }
+
+    .detail-card {
+        padding: 32px 10px 24px 10px;
+    }
+
+    .detail-bg {
+        height: 160px;
+    }
+    
+    .review-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .contact-title {
+        font-size: 1.3rem;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-30%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
