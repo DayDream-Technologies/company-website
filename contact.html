@@ -100,5 +100,42 @@
         // Update copyright year
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+<!-- Back to Top Button -->
+<button id="backToTopBtn" title="Back to top">&#8679;</button>
+<style>
+#backToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+}
+#backToTopBtn:hover {
+  background-color: #555;
+}
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', ()=> {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
 </body>
 </html>

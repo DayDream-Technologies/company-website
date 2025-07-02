@@ -1,0 +1,72 @@
+/* Projects Page New Style */
+.project-block {
+    margin: 80px 0;
+}
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.project-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.project-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #ffffff;
+    border: 2px solid #1e40af;
+    color: #1e40af;
+    padding: 10px 18px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background .2s, color .2s;
+}
+.project-button:hover {
+    background: #1e40af;
+    color: #ffffff;
+}
+.project-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 24px 0 8px;
+    color: #0f172a;
+}
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 32px;
+    color: #334155;
+}
+.project-outcome-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #0f172a;
+}
+.project-outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+.outcome-box {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.outcome-box h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+.outcome-box p {
+    font-size: 0.875rem;
+    color: #475569;
+}
