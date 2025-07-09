@@ -485,4 +485,44 @@ form.addEventListener('submit', function (event) {
 email.addEventListener('input', function () {
     email.setCustomValidity(''); // Reset the custom error on input change
 });
+
+// Show contact form when #contact_form is clicked
+const contactFormLink = document.querySelectorAll('#contact_form');
+const contactContainer = document.querySelector('.contact-container');
+
+if (contactFormLink && contactContainer) {
+    contactFormLink.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            contactContainer.classList.remove('hidden');
+            contactContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+}
 /********* End JS for the contact form *********/
+
+/********* Begin JS for misc. stuff for pages *********/
+// Update copyright year
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Navbar scroll effect
+const navbar = document.querySelector('nav');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Scroll smoothly to the part of the webapge
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+/********* Begin JS for misc. stuff for pages *********/

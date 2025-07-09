@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/projects.css">
+    <link rel="stylesheet" href="./src/css/contact.css">
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
@@ -26,7 +27,7 @@
                 <li><a class="nav_link" href="index.html" title="Daydream's homepage">Home</a></li>
                 <li><a class="nav_link" id="current_page" href="projects.html" title="Our Projects">Projects</a></li>
                 <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
-                <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
+                <li><a class="nav_link" id="contact_form" href="#" title="Contact us">Contact</a></li>
             </div>
         </ul>
         <ul class="respo_navbar">
@@ -60,7 +61,7 @@
             <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
             <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
             <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
-            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
+            <li><a class="nav_link" id="contact_form" href="#" title="Contact us">Contact</a></li>
         </ul>
     </nav>
     
@@ -203,20 +204,5 @@
         </a>
         <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
     </footer>
-    
-    <script>
-        // Update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
