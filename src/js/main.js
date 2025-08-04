@@ -163,12 +163,19 @@ const teamMembers = [
         team: "Hardware"
     },
     {
+        name: "Patrick Shea",
+        linkedin: "https://www.linkedin.com/in/patrickshea210/",
+        image: "./src/images/Headshots/Patrick.jpg",
+        displayTitle: "Embedded Systems Engineer",
+        team: "Hardware"
+    },
+    /*{
         name: "Matt Willemin",
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
         image: "./src/images/Headshots/Matt.jpg",
         displayTitle: "Software Developer",
         team: "Software"
-    },
+    },*/
     {
         name: "Isaac Langerman",
         linkedin: "",
@@ -232,22 +239,29 @@ const teamMembers = [
         displayTitle: "Medical Researcher",
         team: "Research"
     },
-    {
+    /*{
         name: "Bill Sun",
         linkedin: "https://www.linkedin.com/in/btsun/",
         image: "",
         displayTitle: "Medical Researcher",
         team: "Research"
-    }
+    }*/
 ];
 
 const projects = [
     {
         title: "Bluetooth Rubiks Cube",
-        description: "Day Dream Technologies",
+        description: "Interactive Bluetooth Rubiks Cube to teach users how to solve the cube",
         link: "https://daydream-technologies.github.io/Rubiks-cube-site/",
         image: "./src/images/rubiks-cube.png"
-    }
+    },
+    {
+        title: "Cognition Daily",
+        description: "Web based application to track user's daily cognitive performance",
+        link: "https://cognitiondaily.net",
+        image: "./src/images/rubiks-cube.png"
+    },
+    {}
 ];
 
 const previousWork = [
