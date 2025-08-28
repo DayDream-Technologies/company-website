@@ -107,7 +107,7 @@ section {
 }
 
 .floating-image img {
-    opacity: 0.6;
+    opacity: 0.95;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
