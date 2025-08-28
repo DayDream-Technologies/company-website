@@ -18,25 +18,29 @@ section {
 }
 
 .intro-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 15vh 80px 0 80px;
+    padding: 25vh 80px 0 80px;
     min-height: auto;
 }
 
 .three_to_one {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 20px;
+    max-width: 9250x;
 }
 
 .title_desc {
-    text-align: left;
+    text-align: center;
 }
 
 .title_desc h1 {
@@ -45,7 +49,7 @@ section {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 10px;
-    background: linear-gradient(45deg, #e7823c, #ea9149);
+    background: linear-gradient(45deg, #D95204, #ea9149);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 3s ease infinite;
@@ -65,42 +69,11 @@ section {
     margin-bottom: 20px;
 }
 
-.image-content {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-content img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.image-content img:hover {
-    transform: translateY(-5px);
-}
-
-.image-content::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #e7823c, #ea9149);
-    border-radius: 15px;
-    z-index: -1;
-    transform: rotate(-5deg);
-    opacity: 0.1;
-}
-
 .proj-link {
     display: inline-flex;
     align-items: center;
     padding: 12px 25px;
-    background: linear-gradient(45deg, #e7823c, #ea9149);
+    background: linear-gradient(45deg, #D95204, #ea9149);
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -126,9 +99,58 @@ section {
     transform: translateX(5px);
 }
 
+/* Floating images animation */
+.floating-image {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-image img {
+    opacity: 0.6;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Individual floating animations with different timing and positions */
+.floating-1 {
+    top: 15%;
+    left: 15%;
+    animation: float-left-right 8s ease-in-out infinite;
+}
+
+.floating-2 {
+    top: 90%;
+    right: 5%;
+    animation: float-left-right 12s ease-in-out infinite reverse;
+}
+
+.floating-3 {
+    top: 25%;
+    right: 15%;
+    animation: float-left-right 10s ease-in-out infinite;
+}
+
+.floating-4 {
+    bottom: -20%;
+    left: 15%;
+    animation: float-left-right 9s ease-in-out infinite reverse;
+}
+
+@keyframes float-left-right {
+    0% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
 /* --- Services Section (Card Style) --- */
 .services-section {
-    padding: 50vh 80px;
+    padding: 40vh 80px;
     display: grid;
     grid-template-rows: auto 1fr;
     justify-items: center;
@@ -141,7 +163,7 @@ section {
 .services-title {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    color: #e7823c;
+    color: #D95204;
     font-weight: 700;
     margin-bottom: 32px;
     text-align: left;
@@ -179,7 +201,7 @@ section {
     font-family: 'Poppins', sans-serif;
     font-size: 1.08rem;
     font-weight: 600;
-    color: #e7823c;
+    color: #D95204;
     margin-bottom: 6px;
 }
 
@@ -217,7 +239,7 @@ section {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: #e7823c;
+    color: #D95204;
     text-align: center;
     margin-bottom: 18px;
 }
@@ -225,7 +247,7 @@ section {
 .detail-card p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.08rem;
-    color: #e7823c;
+    color: #000000;
     text-align: center;
     line-height: 1.5;
 }
@@ -315,7 +337,7 @@ section {
     justify-content: center;
     cursor: pointer;
     font-size: 1.3rem;
-    color: #e7823c;
+    color: #D95204;
     transition: background 0.2s;
 }
 
@@ -334,27 +356,17 @@ section {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: #e7823c;
+    color: #D95204;
     text-align: center;
 }
 
 @media (max-width: 800px) {
-    .intro-section {
-        grid-template-columns: 1fr;
-        padding: 15px;
-        gap: 20px;
-    }
-
     .title_desc h1 {
         font-size: 2.2rem;
     }
 
     .title_desc p {
         font-size: 1rem;
-    }
-
-    .image-content {
-        order: -1;
     }
 
     .services-grid {

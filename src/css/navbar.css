@@ -78,8 +78,7 @@ body {
 }
 
 .nav_link:hover {
-    color: #000000;
-    background-color: #EEEEEE;
+    background-color: #ea9149;
 }
 
 #current_page {
