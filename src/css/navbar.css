@@ -5,8 +5,8 @@
 
 nav {
     --color-scheme: light;
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #e7823c;
     font-family: Arial, serif;
     font-size: 15px;
     width: 100%;
@@ -71,17 +71,19 @@ body {
 
 .nav_link:link, .nav_link:visited {
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF;
     padding: 10px 15px;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 .nav_link:hover {
+    color: #000000;
     background-color: #EEEEEE;
 }
 
 #current_page {
+    color: #000000;
     background-color: #FBE8D4;
     padding: 10px 15px;
     border-radius: 10px;

@@ -14,7 +14,7 @@ html {
 
 body {
     --color-scheme: light;
-    background: #FFFFFF;
+    background: #000000;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
@@ -40,6 +40,10 @@ h1 {
 
 p {
     font-size: 1.1em;
+}
+
+#team-title {
+    color: #e7823c;
 }
 
 /* Grid containers for team and project cards */

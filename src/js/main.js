@@ -302,32 +302,37 @@ const previousWork = [
 /*Function for updated job title selection*/
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectContainer = document.querySelector('.project-container');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('selected'));
-            this.classList.add('selected');
-            const category = this.dataset.team;
-            filterPreviousWork(category);
+    if (projectContainer) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('selected'));
+                this.classList.add('selected');
+                const category = this.dataset.team;
+                filterPreviousWork(category);
+            });
         });
-    });
 
-    // Initial filter to show all previous work
-    filterPreviousWork('All');
+        // Initial filter to show all previous work
+        filterPreviousWork('All');
+    }
 });
 
 function filterPreviousWork(category) {
     const projectContainer = document.querySelector('.project-container');
-    const projectItems = projectContainer.querySelectorAll('.project-item');
-    
-    projectItems.forEach(item => {
-        const projectCategory = item.dataset.team;
-        if (category === 'All' || projectCategory === category) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
+    if (projectContainer) {
+        const projectItems = projectContainer.querySelectorAll('.project-item');
+        
+        projectItems.forEach(item => {
+            const projectCategory = item.dataset.team;
+            if (category === 'All' || projectCategory === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
 }
 
 function renderTeamMembers(team = 'all') {
@@ -465,26 +470,28 @@ document.addEventListener('DOMContentLoaded', () => {
 const form = document.querySelector('.form');
 const email = document.querySelector('#email');
 
-form.addEventListener('submit', function (event) {
-    // Simple email regex for validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (form && email) {
+    form.addEventListener('submit', function (event) {
+        // Simple email regex for validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailRegex.test(email.value)) {
-        // Prevent form submission if the email is invalid
-        event.preventDefault();
+        if (!emailRegex.test(email.value)) {
+            // Prevent form submission if the email is invalid
+            event.preventDefault();
 
-        // Set a custom validity message
-        email.setCustomValidity('Please enter a valid email address.');
-    } else {
-        // Reset the custom validity if the input is valid
-        email.setCustomValidity('');
-    }
-});
+            // Set a custom validity message
+            email.setCustomValidity('Please enter a valid email address.');
+        } else {
+            // Reset the custom validity if the input is valid
+            email.setCustomValidity('');
+        }
+    });
 
-// Reset custom validity message on every input change
-email.addEventListener('input', function () {
-    email.setCustomValidity(''); // Reset the custom error on input change
-});
+    // Reset custom validity message on every input change
+    email.addEventListener('input', function () {
+        email.setCustomValidity(''); // Reset the custom error on input change
+    });
+}
 
 // Show contact form when #contact_form is clicked
 const contactFormLink = document.querySelectorAll('#contact_form');
@@ -560,10 +567,9 @@ function createMouseHoverEffect() {
         backgroundImage = new Image();
         backgroundImage.onload = function() {
             // Image loaded successfully
-            console.log('Background image loaded');
         };
         backgroundImage.onerror = function() {
-            console.log('Failed to load background image');
+            // Failed to load background image
         };
         // Change this path to your desired background image
         backgroundImage.src = './src/images/hidden-bg.png';
