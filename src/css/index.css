@@ -41,6 +41,7 @@ section {
 
 .title_desc {
     text-align: center;
+    max-width: 1200px;
 }
 
 .title_desc h1 {
@@ -49,7 +50,7 @@ section {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 10px;
-    background: linear-gradient(45deg, #D95204, #ea9149);
+    background: #D95204;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 3s ease infinite;
@@ -72,8 +73,8 @@ section {
 .proj-link {
     display: inline-flex;
     align-items: center;
-    padding: 12px 25px;
-    background: linear-gradient(45deg, #D95204, #ea9149);
+    padding: 12px 20px;
+    background: #D95204;
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -83,54 +84,47 @@ section {
     box-shadow: 0 4px 15px rgba(231, 130, 60, 0.3);
     margin-top: 10px;
 }
+.proj-link img {
+    padding-left: 5px;
+}
 
 .proj-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(231, 130, 60, 0.4);
 }
 
-.proj-link::after {
-    content: '→';
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-}
-
-.proj-link:hover::after {
-    transform: translateX(5px);
-}
-
 /* Floating images animation */
-.floating-image {
+.cloud-image {
     position: absolute;
     pointer-events: none;
     z-index: 1;
 }
 
-.floating-image img {
-    opacity: 0.95;
+.cloud-image img {
+    opacity: 0.6;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 /* Individual floating animations with different timing and positions */
-.floating-1 {
+.cloud-1 {
     top: 15%;
     left: 15%;
     animation: float-left-right 8s ease-in-out infinite;
 }
 
-.floating-2 {
+.cloud-2 {
     top: 90%;
     right: 5%;
     animation: float-left-right 12s ease-in-out infinite reverse;
 }
 
-.floating-3 {
+.cloud-3 {
     top: 25%;
     right: 15%;
     animation: float-left-right 10s ease-in-out infinite;
 }
 
-.floating-4 {
+.cloud-4 {
     bottom: -20%;
     left: 15%;
     animation: float-left-right 9s ease-in-out infinite reverse;

@@ -510,9 +510,8 @@ if (contactFormLink && contactContainer) {
 
 /********* Begin JS for misc. stuff for pages *********/
 // Update copyright year
-document.getElementById('current-year').textContent = new Date().getFullYear();
+/*document.getElementById('current-year').textContent = new Date().getFullYear();
 
-// Navbar scroll effect
 const navbar = document.querySelector('nav');
 window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
@@ -522,7 +521,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Scroll smoothly to the part of the webapge
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -531,7 +529,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-});
+});*/
 /********* Begin JS for misc. stuff for pages *********/
 
 /********* Begin JS for mouse hover transparency effect *********/
