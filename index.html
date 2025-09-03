@@ -6,7 +6,8 @@
     <title>Daydream Technologies</title>
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/contact.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
@@ -25,7 +26,7 @@
                 <li><a class="nav_link" id="current_page" href="index.html" title="Daydream's homepage">Home</a></li>
                 <li><a class="nav_link" href="projects.html" title="Our Projects">Projects</a></li>
                 <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
-                <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
+                <li><a class="nav_link" href="#contact-section" title="Contact us">Contact</a></li>
             </div>
         </ul>
         <ul class="respo_navbar">
@@ -50,39 +51,143 @@
             <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
             <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
             <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
-            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
+            <li><a class="nav_link" href="#contact-section" title="Contact us">Contact</a></li>
         </ul>
     </nav>
 
     <main><br>
-        <section class="grid">
+        <section class="intro-section">
+            <!-- Floating images around the intro section -->
+            <div class="cloud-image cloud-1">
+                <img src="./src/images/cloud-1.png" alt="Cloud 1">
+            </div>
+            <div class="cloud-image cloud-2">
+                <img src="./src/images/cloud-2.png" alt="Cloud 2">
+            </div>
+            <div class="cloud-image cloud-3">
+                <img src="./src/images/cloud-3.png" alt="Cloud 3">
+            </div>
+            <div class="cloud-image cloud-4">
+                <img src="./src/images/cloud-4.png" alt="Cloud 4">
+            </div>
+            
             <div class="three_to_one">
                 <div class="title_desc">
-                    <h1>Welcome to Daydream Technologies</h1><br>
-                    <p>Where innovation meets reliability.</p><br>
-                    <p>We specialize in delivering custom application, website, and software development services designed to modernize your business.</p>
+                    <h1>Unlocking your full potential through continuous design innovation and expertise</h1><br>
+                    <p>Leverage intelligent technology and actionable insights to make smarter decisions and fuel sustainable growth. Daydream Technologies helps you turn data into results.</p>
                 </div>
                 <div>
-                    <a class="proj-link" href="projects.html">Check out our projects</a>
+                    <a class="proj-link" href="projects.html">Check out our projects <img src="./src/images/arrow.png" alt="arrow"></a>
                 </div>
             </div>
-            <div class="image-content">
-                <!-- Here is the link showing this image is free to use; https://www.pexels.com/photo/two-women-looking-at-the-code-at-laptop-1181263/ -->
-                <img src="./src/images/Stock_Web_Dev_Img.jpg" alt="Web Dev">
+        </section>
+        <section class="services-section">
+            <h2 class="services-title">Services</h2>
+            <div class="services-grid hidden">
+                <div class="service-card">
+                    <div>🛠️</div>
+                    <h3>Visual Identity & UI Design</h3>
+                    <p>We developed a bold and clean design language that mirrors the athlete's energy and professionalism. From typography to custom iconography, every element reinforces their brand.</p>
+                </div>
+                <div class="service-card">
+                    <div>💻</div>
+                    <h3>Responsive Web Development</h3>
+                    <p>Built from the ground up using modern frameworks (React, Next.js, or WordPress depending on your stack), the site is lightning-fast, SEO-optimized, and fully responsive on all devices.</p>
+                </div>
+                <div class="service-card">
+                    <div>📈</div>
+                    <h3>Interactive Career Timeline</h3>
+                    <p>Visitors can scroll through major milestones, stats, and memorable moments in a rich, interactive timeline that brings the athlete's story to life.</p>
+                </div>
+                <div class="service-card">
+                    <div>📰</div>
+                    <h3>Media Gallery & Press Hub</h3>
+                    <p>A curated section for videos, highlight reels, and press mentions ensures fans and media alike can access fresh, relevant content easily.</p>
+                </div>
             </div>
-        </section><br><br>
+        </section>
+        <section class="detail-section">
+            <div class="detail-card hidden">
+                <h2>Experience Seamless Digital<br>Transformation Tailored to Your Industry</h2>
+                <p>From concept to launch, we craft solutions that fit your unique needs.<br>
+                    Whether you need a sleek website, a powerful app, or a scalable software platform, we're here to make your vision a reality.
+                </p>
+            </div>
+        </section>
+        <section class="review-section">
+            <h2 class="review-title">What our clients say about us</h2>
+            <div class="review-grid hidden">
+                <div class="review-card">
+                    <span class="quote quote-open">“</span>
+                    <p>
+                        Daydream Technologies transformed our outdated systems into a modern, user-friendly platform. Their team was responsive, knowledgeable, and delivered ahead of schedule. Highly recommend!
+                    </p>
+                    <span class="quote quote-close">”</span>
+                </div>
+                <div class="review-card">
+                    <span class="quote quote-open">“</span>
+                    <p>
+                        They understood our unique needs and delivered a solution that exceeded our expectations.
+                    </p>
+                    <span class="quote quote-close">”</span>
+                </div>
+            </div>
+            <div class="review-nav">
+                <button class="nav-arrow"><span>&lt;</span></button>
+                <button class="nav-arrow"><span>&gt;</span></button>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <div class="title_desc">
+                <h2 class="contact-title">Got a vision? Let’s make it real.</h2>
+                <p>Reach out with your questions, ideas, or projects—we’re here to bring them to life.</p>
+            </div>
+            <div class="contact-container hidden">
+                <!-- Contact Form Section -->
+                <!-- From Uiverse.io by gharsh11032000 -->
+                <!-- Here is the link; https://uiverse.io/gharsh11032000/bitter-cow-59 -->
+                <div class="form-container">
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+    
+                        <input type="hidden" name="access_key" value="ef24714b-247c-467f-b061-4b0f8c7e5fc1">
+    
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="main_website">How Can We Help You?</label>
+                            <textarea name="main_website" id="main_website" rows="10" cols="50" required=""></textarea>
+                        </div>
+                        <button class="form-submit-btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <a class="footer_link">
+            <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
+            DayDream Technologies LLC
+        </a>
+        <div class="footer_links">
+            <a class="footer_link" href="home.html">About</a>
+            <a class="footer_link" href="#services-section">Services</a>
+            <a class="footer_link" href="team.html">Team</a>
+            <a class="footer_link" href="mailto:daydream@gmail.com">daydream@gmail.com</a>
+            <a class="footer_link" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">LinkedIn</a>
+        </div>
+        <!--
         <a class="comp_linkdn" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">
             <img class="linkdn" src="./src/images/alt-linkedin.jpg" alt="Day Dream Technologies LinkedIn" />
         </a>
         <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
+        -->
     </footer>
-    
-    <script>
-        // Update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
