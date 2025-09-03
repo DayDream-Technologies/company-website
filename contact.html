@@ -57,7 +57,7 @@
 
     <main class="contact-page"><br>
         <div class="title_desc">
-            <h1>Contact Us</h1><br>
+            <h1 id="alt-title">Contact Us</h1><br>
             <p>Any question or remarks? Just write us a message!</p><br><br>
         </div>
         <div class="contact-container">
@@ -88,17 +88,17 @@
     </main>
 
     <footer>
-        <a class="comp_linkdn" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">
-            <img class="linkdn"
-                 src="./src/images/alt-linkedin.jpg"
-                 alt="Day Dream Technologies LinkedIn" />
+        <a class="footer_link">
+            <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
+            DayDream Technologies LLC
         </a>
-        <p>&#169; <span id="current-year"></span> DayDream Technologies</p>
+        <div class="footer_links">
+            <a class="footer_link" href="home.html">About</a>
+            <a class="footer_link" href="projects.html">Projects</a>
+            <a class="footer_link" href="team.html">Team</a>
+            <a class="footer_link" href="mailto:daydream@gmail.com">daydream@gmail.com</a>
+            <a class="footer_link" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">LinkedIn</a>
+        </div>
     </footer>
-    
-    <script>
-        // Update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>

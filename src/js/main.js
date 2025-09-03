@@ -68,6 +68,22 @@ window.addEventListener('resize', handleResize);
 /********* End JS for the dropdown menu *********/
 
 
+/********* Start JS for the LANDING PAGE AOS *********/
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    })
+})
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+/********* End JS for the LANDING PAGE AOS *********/
+
+
 /********* Start JS for the PROJECTS PAGE explore dropdown *********/
 const containers = document.querySelectorAll('.container');
 const dropdownContents = document.querySelectorAll('.dropdown-content');
@@ -163,12 +179,19 @@ const teamMembers = [
         team: "Hardware"
     },
     {
+        name: "Patrick Shea",
+        linkedin: "https://www.linkedin.com/in/patrickshea210/",
+        image: "./src/images/Headshots/Patrick.jpg",
+        displayTitle: "Embedded Systems Engineer",
+        team: "Hardware"
+    },
+    /*{
         name: "Matt Willemin",
         linkedin: "https://www.linkedin.com/in/matt-willemin/",
         image: "./src/images/Headshots/Matt.jpg",
         displayTitle: "Software Developer",
         team: "Software"
-    },
+    },*/
     {
         name: "Isaac Langerman",
         linkedin: "",
@@ -232,22 +255,29 @@ const teamMembers = [
         displayTitle: "Medical Researcher",
         team: "Research"
     },
-    {
+    /*{
         name: "Bill Sun",
         linkedin: "https://www.linkedin.com/in/btsun/",
         image: "",
         displayTitle: "Medical Researcher",
         team: "Research"
-    }
+    }*/
 ];
 
 const projects = [
     {
         title: "Bluetooth Rubiks Cube",
-        description: "Day Dream Technologies",
+        description: "Interactive Bluetooth Rubiks Cube to teach users how to solve the cube",
         link: "https://daydream-technologies.github.io/Rubiks-cube-site/",
         image: "./src/images/rubiks-cube.png"
-    }
+    },
+    {
+        title: "Cognition Daily",
+        description: "Web based application to track user's daily cognitive performance",
+        link: "https://cognitiondaily.net",
+        image: "./src/images/rubiks-cube.png"
+    },
+    {}
 ];
 
 const previousWork = [
@@ -286,32 +316,37 @@ const previousWork = [
 /*Function for updated job title selection*/
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectContainer = document.querySelector('.project-container');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('selected'));
-            this.classList.add('selected');
-            const category = this.dataset.team;
-            filterPreviousWork(category);
+    if (projectContainer) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('selected'));
+                this.classList.add('selected');
+                const category = this.dataset.team;
+                filterPreviousWork(category);
+            });
         });
-    });
 
-    // Initial filter to show all previous work
-    filterPreviousWork('All');
+        // Initial filter to show all previous work
+        filterPreviousWork('All');
+    }
 });
 
 function filterPreviousWork(category) {
     const projectContainer = document.querySelector('.project-container');
-    const projectItems = projectContainer.querySelectorAll('.project-item');
-    
-    projectItems.forEach(item => {
-        const projectCategory = item.dataset.team;
-        if (category === 'All' || projectCategory === category) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
+    if (projectContainer) {
+        const projectItems = projectContainer.querySelectorAll('.project-item');
+        
+        projectItems.forEach(item => {
+            const projectCategory = item.dataset.team;
+            if (category === 'All' || projectCategory === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
 }
 
 function renderTeamMembers(team = 'all') {
@@ -449,24 +484,186 @@ document.addEventListener('DOMContentLoaded', () => {
 const form = document.querySelector('.form');
 const email = document.querySelector('#email');
 
-form.addEventListener('submit', function (event) {
-    // Simple email regex for validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (form && email) {
+    form.addEventListener('submit', function (event) {
+        // Simple email regex for validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailRegex.test(email.value)) {
-        // Prevent form submission if the email is invalid
-        event.preventDefault();
+        if (!emailRegex.test(email.value)) {
+            // Prevent form submission if the email is invalid
+            event.preventDefault();
 
-        // Set a custom validity message
-        email.setCustomValidity('Please enter a valid email address.');
+            // Set a custom validity message
+            email.setCustomValidity('Please enter a valid email address.');
+        } else {
+            // Reset the custom validity if the input is valid
+            email.setCustomValidity('');
+        }
+    });
+
+    // Reset custom validity message on every input change
+    email.addEventListener('input', function () {
+        email.setCustomValidity(''); // Reset the custom error on input change
+    });
+}
+
+// Show contact form when #contact_form is clicked
+const contactFormLink = document.querySelectorAll('#contact_form');
+const contactContainer = document.querySelector('.contact-container');
+
+if (contactFormLink && contactContainer) {
+    contactFormLink.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            contactContainer.classList.remove('hidden');
+            contactContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+}
+/********* End JS for the contact form *********/
+
+/********* Begin JS for misc. stuff for pages *********/
+// Update copyright year
+/*document.getElementById('current-year').textContent = new Date().getFullYear();
+
+const navbar = document.querySelector('nav');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
     } else {
-        // Reset the custom validity if the input is valid
-        email.setCustomValidity('');
+        navbar.classList.remove('scrolled');
     }
 });
 
-// Reset custom validity message on every input change
-email.addEventListener('input', function () {
-    email.setCustomValidity(''); // Reset the custom error on input change
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});*/
+/********* Begin JS for misc. stuff for pages *********/
+
+/********* Begin JS for mouse hover transparency effect *********/
+// Create a canvas element for the mouse hover effect
+function createMouseHoverEffect() {
+    // Create canvas element
+    const canvas = document.createElement('canvas');
+    canvas.id = 'mouse-hover-canvas';
+    canvas.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    `;
+    
+    // Get navbar height to position canvas below it
+    const navbar = document.querySelector('nav');
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+    
+    document.body.appendChild(canvas);
+    
+    const ctx = canvas.getContext('2d');
+    let mouseX = 0;
+    let mouseY = 0;
+    let isHovering = false;
+    let backgroundImage = null;
+    
+    // Load background image
+    function loadBackgroundImage() {
+        backgroundImage = new Image();
+        backgroundImage.onload = function() {
+            // Image loaded successfully
+        };
+        backgroundImage.onerror = function() {
+            // Failed to load background image
+        };
+        // Change this path to your desired background image
+        backgroundImage.src = './src/images/hidden-bg.png';
+    }
+    
+    loadBackgroundImage();
+    
+    // Set canvas size and position
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight - navbarHeight;
+        canvas.style.top = navbarHeight + 'px';
+        canvas.style.height = (window.innerHeight - navbarHeight) + 'px';
+    }
+    
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    
+    // Track mouse position
+    document.addEventListener('mousemove', (e) => {
+        // Check if mouse is over the navbar
+        const navbar = document.querySelector('nav');
+        const navbarRect = navbar.getBoundingClientRect();
+        
+        // Only apply effect if mouse is not over the navbar
+        if (e.clientY > navbarRect.bottom) {
+            mouseX = e.clientX;
+            mouseY = e.clientY - navbarHeight; // Adjust for navbar offset
+            isHovering = true;
+        } else {
+            isHovering = false;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    });
+    
+    // Clear effect when mouse leaves window
+    document.addEventListener('mouseleave', () => {
+        isHovering = false;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+    
+    // Animation loop
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        if (isHovering && backgroundImage) {
+            // Draw the background image first
+            const scale = Math.max(canvas.width / backgroundImage.width, canvas.height / backgroundImage.height);
+            const scaledWidth = backgroundImage.width * scale;
+            const scaledHeight = backgroundImage.height * scale;
+            const x = (canvas.width - scaledWidth) / 2;
+            const y = (canvas.height - scaledHeight) / 2;
+            
+            // Draw the background image
+            ctx.drawImage(backgroundImage, x, y, scaledWidth, scaledHeight);
+            
+            // Create a circular mask that reveals the background image
+            ctx.globalCompositeOperation = 'destination-in';
+            const gradient = ctx.createRadialGradient(
+                mouseX, mouseY, 0,
+                mouseX, mouseY, 150
+            );
+            
+            gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
+            gradient.addColorStop(0.7, 'rgba(255, 255, 255, 0.3)');
+            gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+            
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Reset composite operation
+            ctx.globalCompositeOperation = 'source-over';
+        }
+        
+        requestAnimationFrame(animate);
+    }
+    
+    animate();
+}
+
+// Initialize the mouse hover effect when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    createMouseHoverEffect();
 });
-/********* End JS for the contact form *********/
+/********* End JS for mouse hover transparency effect *********/

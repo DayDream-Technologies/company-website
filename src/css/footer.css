@@ -5,12 +5,12 @@ footer {
     grid-template-columns: auto 1fr;
     justify-items: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Opaque dark grey background */
+    background-color: rgba(0, 0, 0, 0.55); /* Opaque dark grey background */
     width: 100%;
-    padding: 30px;
+    padding: 30px 30px 30px 18vw;
     color: white;
     margin-top: auto;
-    gap: 20px; /* Adds spacing between the logo and text */
+    gap: 20px;
 }
 
 /* Paragraph styling */
@@ -36,4 +36,25 @@ footer a:hover {
 /* Hover effect for the LinkedIn logo */
 .linkdn:hover {
     transform: scale(1.1); /* Slight zoom-in on hover */
+}
+
+.footer_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px 16px;
+    align-items: center;
+}
+
+.footer_link {
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    footer {
+        padding: 30px 30px 30px 5vw;
+    }
 }
