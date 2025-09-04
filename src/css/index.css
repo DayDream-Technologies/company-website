@@ -51,6 +51,7 @@ section {
     line-height: 1.1;
     margin-bottom: 10px;
     background: #D95204;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 3s ease infinite;
@@ -246,6 +247,90 @@ section {
     line-height: 1.5;
 }
 
+/* --- Projects Section (Card Style) --- */
+.projects-section {
+    display: grid;
+    place-items: center;
+    padding: 450px 20px 0 20px;
+    background: transparent;
+}
+
+.projects-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #D95204;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.project-category {
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(231, 130, 60, 0.10), 0 1.5px 8px 0 rgba(0,0,0,0.04);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.category-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #D95204;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.category-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.project-card {
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px 0 rgba(231, 130, 60, 0.08);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px 0 rgba(231, 130, 60, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 /* --- Review Section (Card Style) --- */
 .review-section {
     display: grid;
@@ -389,6 +474,41 @@ section {
 
     .contact-title {
         font-size: 1.3rem;
+    }
+
+    /* Projects Section Mobile Styles */
+    .projects-section {
+        padding: 80px 10px 40px 10px;
+    }
+
+    .projects-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .projects-container {
+        gap: 40px;
+    }
+
+    .project-category {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .category-description {
+        font-size: 1rem;
+    }
+
+    .project-cards {
+        gap: 10px;
+    }
+
+    .project-card {
+        padding: 15px;
     }
 }
 
