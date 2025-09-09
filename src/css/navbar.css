@@ -58,7 +58,7 @@ body {
     right: 0;
     width: 150px;
     height: calc(100vh - 75px);
-    background: #FFFFFF;
+    background: #000000;
     border-top: 1px solid #d8d9da;
     border-left: 1px solid #d8d9da;
     border-bottom: 1px solid #d8d9da;
@@ -79,6 +79,24 @@ body {
 
 .nav_link:hover {
     background-color: #ea9149;
+}
+
+/* Dropdown specific styles */
+.dropdown .nav_link {
+    color: #D95204;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dropdown .nav_link:hover {
+    background-color: #333333;
+    color: #D95204;
+}
+
+.dropdown #current_page {
+    color: #000000;
+    background-color: #FBE8D4;
 }
 
 #current_page {

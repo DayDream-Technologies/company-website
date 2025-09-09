@@ -363,7 +363,7 @@ section {
 .project-link {
     position: absolute;
     top: 45px;
-    right: 10%;
+    right: 100px;
     background: #D95204;
     color: white;
     text-decoration: none;
@@ -528,6 +528,15 @@ section {
     font-weight: 700;
     color: #D95204;
     text-align: center;
+}
+
+/* Default desktop email display */
+.desktop-email {
+    display: inline;
+}
+
+.mobile-email {
+    display: none;
 }
 
 
@@ -708,6 +717,15 @@ section {
     .project-link {
         top: 25px;
         right: 65px;
+    }
+
+    /* Mobile email display */
+    .desktop-email {
+        display: none;
+    }
+    
+    .mobile-email {
+        display: inline;
     }
 }
 

@@ -18,7 +18,7 @@ hamburger.querySelector('input').addEventListener('change', event => {
         dropdown.style.borderTop = '1px solid #d8d9da';
         dropdown.style.borderLeft = '1px solid #d8d9da';
         dropdown.style.borderBottom = '1px solid #d8d9da';
-        dropdown.style.background = '#FFFFFF';
+        dropdown.style.background = '#000000';
         dropdown.style.justifyItems = 'center';
         dropdown.style.alignItems = 'center';
         dropdown.style.listStyleType = 'none';
@@ -26,6 +26,17 @@ hamburger.querySelector('input').addEventListener('change', event => {
         const items = dropdown.querySelectorAll('li');
         items.forEach(item => {
             item.style.marginBottom = '15px';
+        });
+
+        // Set text color to orange to match navbar
+        const links = dropdown.querySelectorAll('a');
+        links.forEach(link => {
+            if (link.id === 'current_page') {
+                link.style.color = '#000000';
+                link.style.backgroundColor = '#FBE8D4';
+            } else {
+                link.style.color = '#D95204';
+            }
         });
 
         setTimeout(function () {
