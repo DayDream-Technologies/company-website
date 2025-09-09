@@ -189,7 +189,7 @@
                 <h2 class="contact-title">Got a vision? Let’s make it real.</h2>
                 <p>Reach out with your questions, ideas, or projects—we’re here to bring them to life.</p>
             </div>
-            <div class="contact-container hidden">
+            <div class="contact-container">
                 <!-- Contact Form Section -->
                 <!-- From Uiverse.io by gharsh11032000 -->
                 <!-- Here is the link; https://uiverse.io/gharsh11032000/bitter-cow-59 -->
@@ -206,6 +206,61 @@
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="job_title">Job Title</label>
+                            <input type="text" id="job_title" name="job_title" placeholder="e.g., Marketing Manager, CEO, Developer">
+                        </div>
+                        <div class="form-group">
+                            <label for="website_url">Website URL (if applicable)</label>
+                            <input type="url" id="website_url" name="website_url" placeholder="https://yourwebsite.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">What service are you looking for?</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="hardware-development">Hardware Development</option>
+                                <option value="sales-consulting">Sales Consulting</option>
+                                <option value="research">Research</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Type</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="project_type" value="new-project" required>
+                                    <span class="radio-text">New project</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="project_type" value="redesign" required>
+                                    <span class="radio-text">Redesign</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="project_type" value="maintenance" required>
+                                    <span class="radio-text">Maintenance</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="project_type" value="consultation" required>
+                                    <span class="radio-text">Consultation</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="hear_about">How did you hear about us?</label>
+                            <select id="hear_about" name="hear_about">
+                                <option value="">Select an option</option>
+                                <option value="google-search">Google search</option>
+                                <option value="social-media">Social media</option>
+                                <option value="referral">Referral</option>
+                                <option value="previous-client">Previous client</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="conference">Conference/Event</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="main_website">How Can We Help You?</label>
