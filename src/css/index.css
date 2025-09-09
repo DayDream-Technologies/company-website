@@ -36,7 +36,7 @@ section {
     align-items: center;
     text-align: center;
     gap: 20px;
-    max-width: 9250x;
+    max-width: 925px;
 }
 
 .title_desc {
@@ -67,7 +67,7 @@ section {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     line-height: 1.4;
-    color: #FFFFFF;  /* Changed from #333 to orange to match your theme */
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
@@ -192,7 +192,7 @@ section {
     transform: translateY(-5px);
 }
 
-.service-card h {
+.service-card h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.08rem;
     font-weight: 600;
@@ -253,6 +253,7 @@ section {
     place-items: center;
     padding: 450px 20px 0 20px;
     background: transparent;
+    overflow-x: hidden;
 }
 
 .projects-title {
@@ -270,6 +271,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    overflow-x: hidden;
 }
 
 .project-category {
@@ -280,6 +282,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    overflow-x: hidden;
 }
 
 .category-title {
@@ -305,9 +308,11 @@ section {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .project-card {
+    position: relative;
     background: transparent;
     border-radius: 12px;
     box-shadow: 0 4px 16px 0 rgba(231, 130, 60, 0.08);
@@ -317,6 +322,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .project-card:hover {
@@ -325,10 +331,33 @@ section {
 }
 
 .project-card img {
-    width: 100%;
+    width: 80%;
     aspect-ratio: 3/2;
     border-radius: 8px;
     object-fit: cover;
+}
+
+.project-link {
+    position: absolute;
+    top: 45px;
+    right: 135px;
+    background: #D95204;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(217, 82, 4, 0.3);
+}
+
+.project-link:hover {
+    background: #B84403;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 82, 4, 0.4);
 }
 
 /* --- Review Section (Card Style) --- */
@@ -435,7 +464,7 @@ section {
     font-size: 1.05rem;
     color: #444;
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 0;
     line-height: 1.5;
 }
 
@@ -631,6 +660,11 @@ section {
     .cloud-image {
         display: none;
     }
+
+    .project-link {
+        top: 25px;
+        right: 65px;
+    }
 }
 
 .hidden {
@@ -638,10 +672,12 @@ section {
     filter: blur(5px);
     transform: translateY(30%);
     transition: all 2s;
+    overflow-x: hidden;
 }
 
 .show {
     opacity: 1;
     filter: blur(0px);
     transform: translateY(0);
+    overflow-x: hidden;
 }

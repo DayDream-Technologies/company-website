@@ -71,7 +71,6 @@ window.addEventListener('resize', handleResize);
 /********* Start JS for the LANDING PAGE AOS *********/
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
@@ -276,8 +275,7 @@ const projects = [
         description: "Web based application to track user's daily cognitive performance",
         link: "https://cognitiondaily.net",
         image: "./src/images/rubiks-cube.png"
-    },
-    {}
+    }
 ];
 
 const previousWork = [
@@ -522,29 +520,6 @@ if (contactFormLink && contactContainer) {
 }
 /********* End JS for the contact form *********/
 
-/********* Begin JS for misc. stuff for pages *********/
-// Update copyright year
-/*document.getElementById('current-year').textContent = new Date().getFullYear();
-
-const navbar = document.querySelector('nav');
-window.addEventListener('scroll', function() {
-    if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});*/
-/********* Begin JS for misc. stuff for pages *********/
 
 /********* Begin JS for mouse hover transparency effect *********/
 // Create a canvas element for the mouse hover effect
