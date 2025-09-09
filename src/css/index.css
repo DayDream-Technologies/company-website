@@ -117,6 +117,8 @@ section {
 .cloud-image img {
     opacity: 0.99;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    width: 12vw;
+    height: auto;
 }
 
 /* Individual floating animations with different timing and positions */
@@ -146,13 +148,13 @@ section {
 
 @keyframes float-left-right {
     0% {
-        transform: translateX(-20px);
+        transform: translateX(-2vw);
     }
     50% {
-        transform: translateX(20px);
+        transform: translateX(2vw);
     }
     100% {
-        transform: translateX(-20px);
+        transform: translateX(-2vw);
     }
 }
 
@@ -528,6 +530,7 @@ section {
     text-align: center;
 }
 
+
 @media (max-width: 800px) {
     /* Prevent horizontal overflow */
     html, body {
@@ -681,9 +684,25 @@ section {
         padding: 15px;
     }
 
-    /* Hide clouds on mobile */
-    .cloud-image {
-        display: none;
+    /* Scale clouds for mobile */
+    .cloud-image img {
+        width: 15vw;
+    }
+    
+    .cloud-1 {
+        left: 10%;
+    }
+    
+    .cloud-2 {
+        right: 3%;
+    }
+    
+    .cloud-3 {
+        right: 10%;
+    }
+    
+    .cloud-4 {
+        left: 10%;
     }
 
     .project-link {
