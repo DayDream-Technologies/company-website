@@ -540,6 +540,7 @@ section {
 }
 
 
+
 @media (max-width: 800px) {
     /* Prevent horizontal overflow */
     html, body {
@@ -727,6 +728,7 @@ section {
     .mobile-email {
         display: inline;
     }
+
 }
 
 .hidden {
