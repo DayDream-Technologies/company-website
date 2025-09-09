@@ -173,3 +173,10 @@
     color: #000;
     font-family: inherit;
 }
+
+/* Required field asterisk styling */
+.form-container .required-asterisk {
+    color: #ff0000;
+    font-weight: bold;
+    margin-left: 2px;
+}

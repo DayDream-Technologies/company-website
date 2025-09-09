@@ -71,11 +71,11 @@
                     <input type="hidden" name="redirect" value="https://www.daydreamtechnologies.net/thanks.html">
 
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Name <span class="required-asterisk">*</span></label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email <span class="required-asterisk">*</span></label>
                         <input type="text" id="email" name="email" required>
                     </div>
                     <div class="form-group">
@@ -87,7 +87,7 @@
                         <input type="url" id="website_url" name="website_url" placeholder="https://yourwebsite.com">
                     </div>
                     <div class="form-group">
-                        <label for="service">What service are you looking for?</label>
+                        <label for="service">What service are you looking for? <span class="required-asterisk">*</span></label>
                         <select id="service" name="service" required>
                             <option value="">Select a service</option>
                             <option value="web-development">Web Development</option>
@@ -100,7 +100,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Project Type</label>
+                        <label>Project Type <span class="required-asterisk">*</span></label>
                         <div class="radio-group">
                             <label class="radio-label">
                                 <input type="radio" name="project_type" value="new-project" required>
@@ -134,7 +134,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="main_website">How Can We Help You?</label>
+                        <label for="main_website">How Can We Help You? <span class="required-asterisk">*</span></label>
                         <textarea name="main_website" id="main_website" rows="10" cols="50" required=""></textarea>
                     </div>
                     <button class="form-submit-btn" type="submit">Send</button>
