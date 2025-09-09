@@ -53,18 +53,15 @@ h2 {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
+    margin-bottom: 30px;
 }
 
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px 0 rgba(231, 130, 60, 0.15);
-}
 
-.service-card > div:first-child {
+.service-icon {
     font-size: 3rem;
     margin-bottom: 20px;
     display: block;
@@ -72,11 +69,21 @@ h2 {
 
 .service-card h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
+    color: #D95204;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.service-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: #FFFFFF;
-    margin-bottom: 15px;
-    text-align: center;
+    margin-bottom: 20px;
+    text-align: left;
+    font-style: italic;
 }
 
 .service-card p {
@@ -84,8 +91,41 @@ h2 {
     font-size: 1.1rem;
     color: #FFFFFF;
     line-height: 1.6;
-    text-align: center;
-    max-width: 800px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.why-choose {
+    margin-top: 20px;
+}
+
+.why-choose h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #D95204;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.why-choose ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why-choose li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding-left: 0;
+}
+
+.why-choose strong {
+    color: #D95204;
+    font-weight: 600;
 }
 
 /* Contact Link */
@@ -224,20 +264,37 @@ h2 {
 
     .service-card {
         padding: 30px 20px;
+        margin-bottom: 20px;
     }
 
-    .service-card > div:first-child {
+    .service-icon {
         font-size: 2.5rem;
         margin-bottom: 15px;
     }
 
     .service-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 12px;
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .service-card h4 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
     }
 
     .service-card p {
         font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .why-choose h5 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .why-choose li {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
     }
 
     .contact-link-container {
