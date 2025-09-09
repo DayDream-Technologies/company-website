@@ -36,7 +36,7 @@ section {
     align-items: center;
     text-align: center;
     gap: 20px;
-    max-width: 9250x;
+    max-width: 925px;
 }
 
 .title_desc {
@@ -51,6 +51,7 @@ section {
     line-height: 1.1;
     margin-bottom: 10px;
     background: #D95204;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 3s ease infinite;
@@ -66,7 +67,7 @@ section {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     line-height: 1.4;
-    color: #FFFFFF;  /* Changed from #333 to orange to match your theme */
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
@@ -191,7 +192,7 @@ section {
     transform: translateY(-5px);
 }
 
-.service-card h {
+.service-card h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.08rem;
     font-weight: 600;
@@ -246,12 +247,149 @@ section {
     line-height: 1.5;
 }
 
-/* --- Review Section (Card Style) --- */
-.review-section {
+/* --- Projects Section (Card Style) --- */
+.projects-section {
     display: grid;
     place-items: center;
+    padding: 450px 20px 0 20px;
+    background: transparent;
+    overflow-x: hidden;
+}
+
+.projects-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #D95204;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    overflow-x: hidden;
+}
+
+.project-category {
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(231, 130, 60, 0.10), 0 1.5px 8px 0 rgba(0,0,0,0.04);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.category-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #D95204;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.category-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.project-card {
+    position: relative;
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px 0 rgba(231, 130, 60, 0.08);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px 0 rgba(231, 130, 60, 0.15);
+}
+
+.project-card img {
+    width: 80%;
+    aspect-ratio: 3/2;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-link {
+    position: absolute;
+    top: 45px;
+    right: 135px;
+    background: #D95204;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(217, 82, 4, 0.3);
+}
+
+.project-link:hover {
+    background: #B84403;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 82, 4, 0.4);
+}
+
+/* --- Review Section (Card Style) --- */
+.review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 60px 0 0 0;
     padding: 400px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.review-section::before,
+.review-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.review-section::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+}
+
+.review-section::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
 }
 
 .review-title {
@@ -259,29 +397,66 @@ section {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 60px;
     color: #FFFFFF;
 }
 
-.review-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    max-width: 900px;
+.review-container {
     width: 100%;
-    margin-bottom: 32px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.review-row {
+    display: flex;
+    gap: 30px;
+    width: 200%;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.top-row {
+    animation-name: move-right;
+}
+
+.bottom-row {
+    animation-name: move-left;
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .review-card {
     position: relative;
-    background: #FBE8D4;
+    background: #F2B705;
     border-radius: 14px;
-    border: 1.5px solid #f2f2f2;
     box-shadow: 0 2px 16px 0 rgba(231, 130, 60, 0.06);
-    padding: 36px 32px 32px 32px;
+    padding: 15px 30px;
     display: grid;
     align-items: center;
-    min-height: 180px;
+    height: 240px;
+    flex: 0 0 525px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .review-card p {
@@ -289,13 +464,13 @@ section {
     font-size: 1.05rem;
     color: #444;
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 0;
     line-height: 1.5;
 }
 
 .quote {
     font-size: 2rem;
-    color: #bdbdbd;
+    color: #000000;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
@@ -312,32 +487,6 @@ section {
     right: 18px;
 }
 
-.review-nav {
-    display: flex;
-    gap: 18px;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-arrow {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: none;
-    background: #fff;
-    box-shadow: 0 2px 8px 0 rgba(231, 130, 60, 0.10);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.3rem;
-    color: #D95204;
-    transition: background 0.2s;
-}
-
-.nav-arrow:hover {
-    background: #fbeee4;
-}
 
 /* --- Contact Section (Card Style) --- */
 .contact-section {
@@ -355,6 +504,37 @@ section {
 }
 
 @media (max-width: 800px) {
+    /* Prevent horizontal overflow */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    /* Ensure all sections fit within viewport */
+    section {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .cloud-image {
+        display: none;
+    }
+
+    .intro-section {
+        padding: 25vh 15px 0 15px;
+        max-width: 100vw;
+    }
+
+    .three_to_one {
+        max-width: 100%;
+    }
+
+    .title_desc {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
     .title_desc h1 {
         font-size: 2.2rem;
     }
@@ -382,13 +562,108 @@ section {
         height: 160px;
     }
     
-    .review-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
+    .review-section {
+        padding: 200px 10px;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .review-container {
+        gap: 20px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .review-row {
+        gap: 15px;
+        width: 200%;
+        max-width: 100%;
+    }
+
+    .review-card {
+        flex: 0 0 270px;
+        height: 180px;
+        padding: 12px 25px;
+        max-width: 100%;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .review-card p {
+        font-size: 0.9rem;
     }
 
     .contact-title {
         font-size: 1.3rem;
+    }
+
+    .contact-section {
+        padding: 20px 10px 100px 10px;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .contact-container {
+        max-width: 100%;
+    }
+
+    /* Projects Section Mobile Styles */
+    .projects-section {
+        padding: 80px 10px 40px 10px;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .projects-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .projects-container {
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .project-category {
+        padding: 30px 15px;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .project-cards {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .category-description {
+        font-size: 1rem;
+    }
+
+    .project-cards {
+        gap: 10px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    /* Hide clouds on mobile */
+    .cloud-image {
+        display: none;
+    }
+
+    .project-link {
+        top: 25px;
+        right: 65px;
     }
 }
 
@@ -397,10 +672,12 @@ section {
     filter: blur(5px);
     transform: translateY(30%);
     transition: all 2s;
+    overflow-x: hidden;
 }
 
 .show {
     opacity: 1;
     filter: blur(0px);
     transform: translateY(0);
+    overflow-x: hidden;
 }
