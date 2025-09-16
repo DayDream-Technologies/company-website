@@ -38,7 +38,7 @@ section {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    padding: 25vh 80px 0 80px;
+    padding: 25vh 120px 120px 120px;
     min-height: auto;
 }
 
@@ -107,43 +107,91 @@ section {
     box-shadow: 0 6px 20px rgba(231, 130, 60, 0.4);
 }
 
-/* Floating images animation */
-.cloud-image {
+/* Service icons animation */
+.service-icon-container {
     position: absolute;
     pointer-events: none;
     z-index: 1;
 }
 
-.cloud-image img {
-    opacity: 0.99;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
-    width: 12vw;
-    height: auto;
+.service-icon-box {
+    width: 80px;
+    height: 80px;
+    background: #D95204;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s ease;
 }
 
-/* Individual floating animations with different timing and positions */
-.cloud-1 {
+.icon-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: brightness(0);
+}
+
+/* Individual icon positions */
+.icon-1 {
     top: 15%;
     left: 15%;
-    animation: float-left-right 8s ease-in-out infinite;
 }
 
-.cloud-2 {
-    top: 90%;
+.icon-1 .service-icon-box {
+    box-shadow: -8px -8px 24px rgba(217, 82, 4, 0.5), -4px -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-2 {
+    top: 95%;
     right: 5%;
-    animation: float-left-right 12s ease-in-out infinite reverse;
 }
 
-.cloud-3 {
+.icon-2 .service-icon-box {
+    box-shadow: 8px 8px 24px rgba(217, 82, 4, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-3 {
     top: 25%;
     right: 15%;
-    animation: float-left-right 10s ease-in-out infinite;
 }
 
-.cloud-4 {
+.icon-3 .service-icon-box {
+    box-shadow: 8px -8px 24px rgba(217, 82, 4, 0.7), 4px -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-4 {
     bottom: -20%;
     left: 15%;
-    animation: float-left-right 9s ease-in-out infinite reverse;
+}
+
+.icon-4 .service-icon-box {
+    box-shadow: -8px 8px 24px rgba(217, 82, 4, 0.5), -4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects with directional shadows */
+.icon-1 .service-icon-box:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: -12px -12px 32px #D95204, -6px -6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.icon-4 .service-icon-box:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: -12px 12px 32px #D95204, -6px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.icon-2 .service-icon-box:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 12px 12px 32px #D95204, 6px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.icon-3 .service-icon-box:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 12px -12px 32px #D95204, 6px -6px 16px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes float-left-right {
@@ -155,6 +203,15 @@ section {
     }
     100% {
         transform: translateX(-2vw);
+    }
+}
+
+@keyframes float-gentle {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
 
@@ -541,6 +598,24 @@ section {
 
 
 
+@media (max-width: 1200px) {
+    .icon-1 {
+        left: 12%;
+    }
+    
+    .icon-2 {
+        right: 8%;
+    }
+    
+    .icon-3 {
+        right: 12%;
+    }
+    
+    .icon-4 {
+        left: 12%;
+    }
+}
+
 @media (max-width: 800px) {
     /* Prevent horizontal overflow */
     html, body {
@@ -555,13 +630,14 @@ section {
         overflow-x: hidden;
     }
 
-    .cloud-image {
-        display: none;
+    .service-icon-container {
+        display: block;
     }
 
     .intro-section {
-        padding: 25vh 15px 0 15px;
+        padding: 25vh 60px 60px 60px;
         max-width: 100vw;
+        overflow: visible;
     }
 
     .three_to_one {
@@ -694,25 +770,36 @@ section {
         padding: 15px;
     }
 
-    /* Scale clouds for mobile */
-    .cloud-image img {
-        width: 15vw;
+    /* Scale service icons for mobile */
+    .service-icon-box {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
     }
     
-    .cloud-1 {
-        left: 10%;
+    .icon-image {
+        width: 40px;
+        height: 40px;
     }
     
-    .cloud-2 {
-        right: 3%;
+    .icon-1 {
+        left: 20%;
+        top: 20%;
     }
     
-    .cloud-3 {
-        right: 10%;
+    .icon-2 {
+        right: 20%;
+        top: 95%;
     }
     
-    .cloud-4 {
-        left: 10%;
+    .icon-3 {
+        right: 20%;
+        top: 20%;
+    }
+    
+    .icon-4 {
+        left: 20%;
+        bottom: -10%;
     }
 
     .project-link {
