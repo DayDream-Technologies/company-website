@@ -161,11 +161,11 @@ const teamMembers = [
         team: "Cybersecurity/IT"
     },
     {
-        name: "Eli Klunder",
-        linkedin: "https://www.linkedin.com/in/eli-klunder-9822a7270/",
-        image: "./src/images/Headshots/Eli.jpg",
-        displayTitle: "Sales Engineer",
-        team: "Sales"
+        name: "Jason Dominic",
+        linkedin: "https://www.linkedin.com/in/jasond26/",
+        image: "./src/images/Headshots/Jason.jpg",
+        displayTitle: "Website Developer",
+        team: "Software"
     },
     {
         name: "Kaedan Palmitier",
