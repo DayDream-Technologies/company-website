@@ -783,23 +783,19 @@ section {
     }
     
     .icon-1 {
-        left: 20%;
-        top: 20%;
+        display: none;
     }
     
     .icon-2 {
-        right: 20%;
-        top: 95%;
+        display: none;
     }
     
     .icon-3 {
-        right: 20%;
-        top: 20%;
+        display: none;
     }
     
     .icon-4 {
-        left: 20%;
-        bottom: -10%;
+        display: none;
     }
 
     .project-link {

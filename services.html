@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/services.css">
+    <link rel="stylesheet" href="./src/css/globe.css">
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
@@ -137,7 +138,639 @@
                 <a class="contact-link" href="contact.html">Get in contact <img src="./src/images/arrow.png" alt="arrow"></a>
             </div>
         </section>
+        
+        <section class="globe-section">
+            <h2 class="globe-title">Our Global Projects</h2>
+            <div class="globe-container">
+                <div id="globe-canvas"></div>
+                <div class="globe-details-box">
+                    <div class="details-content">
+                        <h3 id="project-name">Project Name</h3>
+                        <p class="project-type" id="project-type">Type</p>
+                        <p id="project-description">Description</p>
+                        <a id="project-link" href="#" target="_blank" class="project-details-link" style="display:none;">View Project →</a>
+                    </div>
+                </div>
+                <div class="globe-legend">
+                    <div class="legend-title">Project Types</div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #D95204;"></div>
+                        <span>Web Development</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #0099ff;"></div>
+                        <span>Web Hosting</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #00cc77;"></div>
+                        <span>Graphic Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // Project data with types and colors
+        const projectTypes = {
+            'Web Development': '#D95204',
+            'Web Hosting': '#0099ff',
+            'Graphic Design': '#00cc77'
+        };
+
+        // Sample projects
+        const projects = [
+            {
+                name: 'B2B Content Cure',
+                types: ['Web Development', 'Web Hosting', 'Graphic Design'],
+                description: 'Content marketing platform designed and hosted to help B2B companies create strategic content that drives engagement and conversions.',
+                lat: 41.4993,
+                lng: -81.6944,
+                link: 'https://b2bcontentcure.com'
+            },
+            {
+                name: 'Anderson PLC',
+                types: ['Web Development', 'Web Hosting'],
+                description: 'Professional services website built with secure hosting infrastructure to showcase Anderson PLC\'s consulting expertise and capabilities.',
+                lat: 42.3314,
+                lng: -83.0458,
+                link: 'https://AndersonPLC.com'
+            },
+            {
+                name: 'Cloud Cards',
+                types: ['Web Development'],
+                description: 'Revolutionary cloud-based payment card platform providing seamless transaction processing and business intelligence tools.',
+                lat: 42.7335,
+                lng: -84.5555,
+                link: 'https://www.cloud-cards.link/'
+            },
+            {
+                name: 'Wasilewski Holdings',
+                types: ['Web Development', 'Web Hosting', 'Graphic Design'],
+                description: 'Investment portfolio website featuring branding design, interactive project showcase, and reliable hosting infrastructure.',
+                lat: 43.0633,
+                lng: -86.2293,
+                link: ''
+            },
+            {
+                name: 'Writer Strategist',
+                types: ['Web Development'],
+                description: 'Content strategy and writing services platform connecting businesses with professional writers and marketing consultants.',
+                lat: 42.9633,
+                lng: -85.6789,
+                link: 'https://writer-strategist.com'
+            },
+            {
+                name: '1Call Resolution',
+                types: ['Web Development'],
+                description: 'Customer service solutions platform enabling businesses to manage support tickets and client communications efficiently.',
+                lat: 42.9633,
+                lng: -85.6789,
+                link: 'https://1callresolution.com'
+            },
+            {
+                name: 'PowerShade',
+                types: ['Web Development', 'Web Hosting'],
+                description: 'E-commerce platform for innovative solar-powered beach umbrellas with integrated payment processing and inventory management.',
+                lat: 42.7335,
+                lng: -84.5555,
+                link: 'https://PowerShade.io'
+            },
+            {
+                name: 'Cognition Daily',
+                types: ['Web Development', 'Web Hosting', 'Graphic Design'],
+                description: 'Cognitive performance tracking application combining modern web development, secure hosting, and intuitive UI/UX design.',
+                lat: 40.7128,
+                lng: -74.0060,
+                link: 'https://cognitiondaily.net'
+            },
+            {
+                name: 'Ryan Talbot',
+                types: ['Web Development', 'Web Hosting', 'Graphic Design'],
+                description: 'Professional athlete portfolio website featuring custom branding, responsive design, and optimized hosting for peak performance.',
+                lat: 32.7157,
+                lng: -117.1611,
+                link: 'https://ryantalbot.net'
+            },
+            {
+                name: 'STEMBridge Japan',
+                types: ['Web Development'],
+                description: 'Educational exchange program platform connecting U.S. students with study opportunities in Japan with localized content management.',
+                lat: 35.6762,
+                lng: 139.6503,
+                link: ''
+            }
+        ];
+
+        // Scene setup
+        const scene = new THREE.Scene();
+        scene.background = null;
+        
+        // Function to convert lat/lng to 3D coordinates (define early so it can be used)
+        function latLngToXYZ(lat, lng, radius = 200) {
+            const phi = THREE.MathUtils.degToRad(90 - lat);
+            const theta = THREE.MathUtils.degToRad(-lng);  // Negate longitude for correct positioning
+            
+            const x = radius * Math.sin(phi) * Math.cos(theta);
+            const y = radius * Math.cos(phi);
+            const z = radius * Math.sin(phi) * Math.sin(theta);
+            
+            return new THREE.Vector3(x, y, z);
+        }
+        
+        const container = document.getElementById('globe-canvas');
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+        
+        const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 2000);
+        
+        // Start at coordinates 0,0 (Prime Meridian & Equator)
+        const initialPosition = latLngToXYZ(0, 0, 500);
+        camera.position.copy(initialPosition);
+        camera.lookAt(0, 0, 0);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(width, height);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        container.appendChild(renderer.domElement);
+
+        // Controls
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.enableZoom = true;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.5;
+
+        // Lighting
+        scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+        const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+        dirLight.position.set(5, 3, 5);
+        scene.add(dirLight);
+        
+        // Add a subtle fill light for better depth
+        const fillLight = new THREE.DirectionalLight(0x0099ff, 0.3);
+        fillLight.position.set(-5, -3, -5);
+        scene.add(fillLight);
+
+        // Create Globe
+        const globeGroup = new THREE.Group();
+        scene.add(globeGroup);
+
+        // Create sphere geometry
+        const geometry = new THREE.SphereGeometry(200, 128, 64);
+        
+        // Use real Earth textures
+        const textureLoader = new THREE.TextureLoader();
+        let globeMaterial;
+        
+        // Try to load real Earth texture, fallback to procedural if it fails
+        textureLoader.load(
+            'https://unpkg.com/three-globe/example/img/earth-dark.jpg',
+            (texture) => {
+                // Successfully loaded real texture
+                globeMaterial = new THREE.MeshPhongMaterial({
+                    map: texture,
+                    shininess: 5
+                });
+                globe.material = globeMaterial;
+                
+                // Try to load and apply bump map for more realism
+                textureLoader.load(
+                    'https://unpkg.com/three-globe/example/img/earth-topology.png',
+                    (bumpMap) => {
+                        globeMaterial.bumpMap = bumpMap;
+                        globeMaterial.bumpScale = 8;
+                    }
+                );
+            },
+            undefined,
+            (error) => {
+                // Fallback to procedural texture if loading fails
+                console.warn('Could not load Earth texture, using procedural texture');
+                createProceduralTexture();
+            }
+        );
+        
+        // Function to create detailed procedural texture as fallback
+        function createProceduralTexture() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 2048;
+            canvas.height = 1024;
+            const ctx = canvas.getContext('2d');
+            
+            // Dark ocean background
+            const oceanGradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            oceanGradient.addColorStop(0, '#0a1428');
+            oceanGradient.addColorStop(0.5, '#05080f');
+            oceanGradient.addColorStop(1, '#020408');
+            ctx.fillStyle = oceanGradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Add detailed continents with lighter colors
+            ctx.fillStyle = '#c8a882';
+            // North America
+            ctx.beginPath();
+            ctx.ellipse(150, 250, 120, 150, -0.3, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // South America
+            ctx.beginPath();
+            ctx.ellipse(250, 450, 80, 120, 0.2, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Europe/Africa
+            ctx.beginPath();
+            ctx.ellipse(650, 280, 200, 240, 0.1, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Asia
+            ctx.beginPath();
+            ctx.ellipse(1200, 200, 250, 200, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Australia
+            ctx.beginPath();
+            ctx.ellipse(1400, 500, 70, 80, 0.3, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Add some lighter land areas for variation
+            ctx.fillStyle = '#d4b896';
+            ctx.beginPath();
+            ctx.ellipse(180, 150, 60, 80, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.ellipse(750, 150, 100, 120, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Add some darker land areas for contrast
+            ctx.fillStyle = '#a08968';
+            ctx.beginPath();
+            ctx.ellipse(400, 350, 50, 60, 0.5, 0, Math.PI * 2);
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.ellipse(1050, 400, 60, 70, 0.2, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Add Great Lakes (simplified as circles/ellipses)
+            // Coordinate conversion: lng to x: (lng + 180) / 360 * 2048, lat to y: (90 - lat) / 180 * 1024
+            ctx.fillStyle = '#1a3a52';
+            
+            // Lake Superior (~48°N, 88°W)
+            const superiority = (90 - 48) / 180 * 1024;
+            const superiorx = ((-88) + 180) / 360 * 2048;
+            ctx.beginPath();
+            ctx.ellipse(superiorx, superiority, 35, 40, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Lake Michigan (~42.5°N, 87.5°W)
+            const michiganY = (90 - 42.5) / 180 * 1024;
+            const michiganX = ((-87.5) + 180) / 360 * 2048;
+            ctx.beginPath();
+            ctx.ellipse(michiganX, michiganY, 20, 35, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Lake Huron (~45°N, 83°W)
+            const huronY = (90 - 45) / 180 * 1024;
+            const huronX = ((-83) + 180) / 360 * 2048;
+            ctx.beginPath();
+            ctx.ellipse(huronX, huronY, 25, 32, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Lake Erie (~42°N, 81°W)
+            const erieY = (90 - 42) / 180 * 1024;
+            const erieX = ((-81) + 180) / 360 * 2048;
+            ctx.beginPath();
+            ctx.ellipse(erieX, erieY, 28, 15, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Lake Ontario (~43.5°N, 79°W)
+            const ontarioY = (90 - 43.5) / 180 * 1024;
+            const ontarioX = ((-79) + 180) / 360 * 2048;
+            ctx.beginPath();
+            ctx.ellipse(ontarioX, ontarioY, 20, 18, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Add simplified borders (thin lines)
+            ctx.strokeStyle = '#9b8b7e';
+            ctx.lineWidth = 2;
+            
+            // US-Canada border (simplified - horizontal line around 49°N)
+            const canadaBorderY = (90 - 49) / 180 * 1024;
+            ctx.beginPath();
+            ctx.moveTo(0, canadaBorderY);
+            ctx.lineTo(500, canadaBorderY);
+            ctx.stroke();
+            
+            // US-Mexico border (simplified - horizontal line around 31°N)
+            const mexicoBorderY = (90 - 31) / 180 * 1024;
+            ctx.beginPath();
+            ctx.moveTo(0, mexicoBorderY);
+            ctx.lineTo(350, mexicoBorderY);
+            ctx.stroke();
+            
+            // Simplified state borders in the Great Lakes region
+            // Michigan-Wisconsin border (vertical around 88°W)
+            const michiganBorderX = ((-88) + 180) / 360 * 2048;
+            ctx.beginPath();
+            ctx.moveTo(michiganBorderX, 210);
+            ctx.lineTo(michiganBorderX, 320);
+            ctx.stroke();
+            
+            // Ohio-Michigan border (horizontal around 42°N)
+            const ohioBorderY = (90 - 42) / 180 * 1024;
+            ctx.beginPath();
+            ctx.moveTo(350, ohioBorderY);
+            ctx.lineTo(450, ohioBorderY);
+            ctx.stroke();
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            globeMaterial = new THREE.MeshPhongMaterial({
+                map: texture,
+                shininess: 5
+            });
+            globe.material = globeMaterial;
+        }
+        
+        // Create initial material
+        globeMaterial = new THREE.MeshPhongMaterial({
+            color: 0x1a3a52,
+            shininess: 5
+        });
+        
+        const globe = new THREE.Mesh(geometry, globeMaterial);
+        globeGroup.add(globe);
+        
+        // Add atmospheric glow
+        const glowGeometry = new THREE.SphereGeometry(205, 64, 32);
+        const glowMaterial = new THREE.MeshBasicMaterial({
+            color: 0x0099ff,
+            transparent: true,
+            opacity: 0.1
+        });
+        const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+        globeGroup.add(glow);
+
+        // Add stars
+        const starsGeometry = new THREE.BufferGeometry();
+        const starsMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 2 });
+        const starsVertices = [];
+        for (let i = 0; i < 200; i++) {
+            const x = (Math.random() - 0.5) * 2000;
+            const y = (Math.random() - 0.5) * 2000;
+            const z = (Math.random() - 0.5) * 2000;
+            starsVertices.push(x, y, z);
+        }
+        starsGeometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(starsVertices), 3));
+        const stars = new THREE.Points(starsGeometry, starsMaterial);
+        scene.add(stars);
+
+        // Function to convert lat/lng to 3D coordinates
+
+        // Create point markers
+        const pointMarkers = [];
+        const markerSizeSmall = 1.5;
+        const markerSizeLarge = 3;
+        
+        projects.forEach((project, index) => {
+            const colors = project.types.map(type => projectTypes[type]);
+            const position = latLngToXYZ(project.lat, project.lng, 210);
+            
+            // Create marker with first color (small initially)
+            const markerGeometry = new THREE.SphereGeometry(markerSizeSmall, 32, 32);
+            const markerMaterial = new THREE.MeshBasicMaterial({ color: new THREE.Color(colors[0]) });
+            const marker = new THREE.Mesh(markerGeometry, markerMaterial);
+            marker.position.copy(position);
+            marker.userData.projectIndex = index;
+            marker.userData.colors = colors;
+            marker.userData.colorIndex = 0;
+            marker.userData.isSelected = false;
+            globeGroup.add(marker);
+            
+            // Create glow
+            const glowGeometry = new THREE.SphereGeometry(5, 32, 32);
+            const glowMaterial = new THREE.MeshBasicMaterial({
+                color: new THREE.Color(colors[0]),
+                transparent: true,
+                opacity: 0.3
+            });
+            const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+            glow.position.copy(position);
+            glow.userData.colors = colors;
+            glow.userData.colorIndex = 0;
+            globeGroup.add(glow);
+            
+            pointMarkers.push({ marker, glow, project, index, colors });
+        });
+
+        // Color cycling animation (cycle every 5 seconds)
+        let colorCycleTime = 0;
+        const colorCycleInterval = 5;
+
+        // Auto-focus on points
+        let currentPointIndex = 0;
+        let focusTimer = null;
+        let lastInteractionTime = Date.now();
+        let isAutoRotating = true;
+
+        function updateDetailsBox(project) {
+            document.getElementById('project-name').textContent = project.name;
+            document.getElementById('project-type').textContent = project.types.join(' + ');
+            document.getElementById('project-description').textContent = project.description;
+            
+            const linkElement = document.getElementById('project-link');
+            if (project.link) {
+                linkElement.href = project.link;
+                linkElement.style.display = 'inline-block';
+            } else {
+                linkElement.style.display = 'none';
+            }
+        }
+
+        function focusOnPoint(index) {
+            const project = projects[index];
+            const position = latLngToXYZ(project.lat, project.lng, 200);
+            
+            // Calculate camera position (offset from point)
+            const distance = 500;
+            const direction = position.clone().normalize();
+            const targetPosition = direction.multiplyScalar(distance);
+            
+            let startPos = camera.position.clone();
+            let progress = 0;
+            let animationDuration = 1.5;
+            
+            function animateCamera() {
+                progress += 0.016 / animationDuration;
+                if (progress < 1) {
+                    camera.position.lerpVectors(startPos, targetPosition, progress);
+                    camera.lookAt(0, 0, 0);
+                    requestAnimationFrame(animateCamera);
+                }
+            }
+            
+            animateCamera();
+            updateDetailsBox(project);
+        }
+
+        function startAutoRotation() {
+            if (focusTimer) clearTimeout(focusTimer);
+            
+            focusOnPoint(currentPointIndex);
+            
+            focusTimer = setTimeout(() => {
+                currentPointIndex = (currentPointIndex + 1) % projects.length;
+                if (isAutoRotating) {
+                    startAutoRotation();
+                }
+            }, 12000);
+        }
+
+        function pauseAutoRotation() {
+            isAutoRotating = false;
+            if (focusTimer) clearTimeout(focusTimer);
+            controls.autoRotate = false;
+        }
+
+        function resumeAutoRotation() {
+            isAutoRotating = true;
+            controls.autoRotate = true;
+            startAutoRotation();
+        }
+
+        // User interaction detection
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        
+        renderer.domElement.addEventListener('click', (event) => {
+            // Calculate mouse position in normalized device coordinates
+            const rect = renderer.domElement.getBoundingClientRect();
+            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+            
+            // Update the picking ray with the camera and mouse position
+            raycaster.setFromCamera(mouse, camera);
+            
+            // Calculate objects intersecting the picking ray
+            const markers = pointMarkers.map(pm => pm.marker);
+            const intersects = raycaster.intersectObjects(markers);
+            
+            if (intersects.length > 0) {
+                // Get the first intersected marker
+                const clickedMarker = intersects[0].object;
+                const projectIndex = clickedMarker.userData.projectIndex;
+                
+                // Update current point to the clicked one
+                currentPointIndex = projectIndex;
+                pauseAutoRotation();
+                lastInteractionTime = Date.now();
+                
+                // Focus on the selected point
+                focusOnPoint(currentPointIndex);
+            }
+        });
+        
+        renderer.domElement.addEventListener('mousedown', () => {
+            pauseAutoRotation();
+            lastInteractionTime = Date.now();
+        });
+
+        renderer.domElement.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            pauseAutoRotation();
+            lastInteractionTime = Date.now();
+        });
+
+        renderer.domElement.addEventListener('touchstart', () => {
+            pauseAutoRotation();
+            lastInteractionTime = Date.now();
+        });
+
+        // Start auto-rotation
+        startAutoRotation();
+
+        // Check for resume
+        setInterval(() => {
+            if (!isAutoRotating && Date.now() - lastInteractionTime > 10000) {
+                resumeAutoRotation();
+            }
+        }, 1000);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            const newWidth = container.clientWidth;
+            const newHeight = container.clientHeight;
+            
+            camera.aspect = newWidth / newHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(newWidth, newHeight);
+        });
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            // Update color cycle time
+            colorCycleTime += 0.016; // assuming ~60fps
+            if (colorCycleTime >= colorCycleInterval) {
+                colorCycleTime = 0;
+            }
+            
+            // Animate point markers with color cycling
+            pointMarkers.forEach(({ marker, glow, colors }, idx) => {
+                const isSelected = idx === currentPointIndex;
+                
+                if (colors.length > 1) {
+                    // Cycle through colors
+                    const cycleProgress = colorCycleTime / colorCycleInterval;
+                    const currentColorIndex = Math.floor(cycleProgress * colors.length);
+                    const nextColorIndex = (currentColorIndex + 1) % colors.length;
+                    const lerpFactor = (cycleProgress * colors.length) % 1;
+                    
+                    const currentColor = new THREE.Color(colors[currentColorIndex]);
+                    const nextColor = new THREE.Color(colors[nextColorIndex]);
+                    const blendedColor = currentColor.lerp(nextColor, lerpFactor);
+                    
+                    marker.material.color.copy(blendedColor);
+                    glow.material.color.copy(blendedColor);
+                }
+                
+                marker.rotation.x += 0.01;
+                marker.rotation.y += 0.01;
+                
+                // Scale marker based on selection
+                if (isSelected) {
+                    marker.scale.set(markerSizeLarge / markerSizeSmall, markerSizeLarge / markerSizeSmall, markerSizeLarge / markerSizeSmall);
+                    glow.scale.x = 1 + Math.sin(Date.now() * 0.002) * 0.2;
+                    glow.scale.y = 1 + Math.sin(Date.now() * 0.002) * 0.2;
+                    glow.scale.z = 1 + Math.sin(Date.now() * 0.002) * 0.2;
+                    glow.material.opacity = 0.3;
+                } else {
+                    marker.scale.set(1, 1, 1);
+                    glow.scale.set(1, 1, 1);
+                    glow.material.opacity = 0;
+                }
+            });
+            
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
     
     <footer>
         <a class="footer_link">
@@ -145,10 +778,6 @@
             DayDream Technologies LLC
         </a>
         <div class="footer_links">
-            <a class="footer_link" href="home.html">About</a>
-            <a class="footer_link" href="services.html">Services</a>
-            <a class="footer_link" href="team.html">Team</a>
-            <a class="footer_link" href="mailto:info@daydreamtechnologies.net">info@daydreamtechnologies.net</a>
             <a class="footer_link" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">LinkedIn</a>
         </div>
     </footer>
