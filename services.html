@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DayDream Technologies - Projects</title>
+    <title>DayDream Technologies - Services</title>
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/services.css">
@@ -56,86 +56,198 @@
     </nav>
     
     <main>
-        <section class="services-section">
-            <h2 class="services-title">Our Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Website Development</h3>
-                    <h4>Build Your Digital Foundation</h4>
-                    <p>Your website is your digital storefront, and it needs to be built on the right foundation. Whether you need a completely custom-built platform for complex needs, the design freedom of Webflow, the e-commerce power of Shopify, or the user-friendly flexibility of WordPress, we have the expertise to deliver. We don't just build pages; we engineer high-performing digital experiences tailored to your business goals, ensuring your site is fast, secure, and ready to convert visitors into customers.</p>
-                    <div class="why-choose">
-                        <h5>Why choose us?</h5>
-                        <ul>
-                            <li><strong>Right Tool for the Job:</strong> We're platform-agnostic experts. We'll recommend the perfect solution (Custom, Webflow, Shopify, WordPress) based on your specific needs, not just what we know best.</li>
-                            <li><strong>Performance by Design:</strong> Every site we build is optimized for speed and search engines from the ground up, giving you a competitive edge.</li>
-                            <li><strong>Beyond the Build:</strong> We focus on creating a user journey that drives action, whether it's making a purchase, filling out a form, or calling your business.</li>
+        <!-- Hero Section -->
+        <section class="services-hero">
+            <!-- Animated SVG Background Elements -->
+            <div class="hero-bg-shapes">
+                <svg class="shape shape-1" viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="50" r="40" stroke="#D95204" stroke-width="2" opacity="0.3"/>
+                    <circle cx="50" cy="50" r="25" stroke="#D95204" stroke-width="1.5" opacity="0.2"/>
+                </svg>
+                <svg class="shape shape-2" viewBox="0 0 100 100" fill="none">
+                    <rect x="20" y="20" width="60" height="60" stroke="#D95204" stroke-width="2" opacity="0.25" rx="8"/>
+                </svg>
+                <svg class="shape shape-3" viewBox="0 0 100 100" fill="none">
+                    <polygon points="50,10 90,90 10,90" stroke="#D95204" stroke-width="2" fill="none" opacity="0.2"/>
+                </svg>
+                <svg class="shape shape-4" viewBox="0 0 100 100" fill="none">
+                    <path d="M10 50 Q 50 10, 90 50 Q 50 90, 10 50" stroke="#D95204" stroke-width="2" opacity="0.15"/>
+                </svg>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">Your Complete <span class="highlight">Digital Partner</span></h1>
+                <p class="hero-subtitle">Every piece of software your business needs — handled.</p>
+                <p class="hero-description">From stunning websites to powerful apps, professional branding to reliable hosting. We're the one-stop solution that grows with your business.</p>
+            </div>
+        </section>
+
+        <!-- Bento Services Grid -->
+        <section class="services-bento">
+            <div class="bento-grid">
+                <!-- Website Development - Large Card -->
+                <div class="bento-card bento-large" data-service="web-dev">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" class="service-svg">
+                            <rect x="8" y="12" width="64" height="48" rx="4" stroke="currentColor" stroke-width="2.5" class="svg-line"/>
+                            <line x1="8" y1="24" x2="72" y2="24" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <circle cx="16" cy="18" r="2" fill="currentColor" class="svg-dot"/>
+                            <circle cx="24" cy="18" r="2" fill="currentColor" class="svg-dot"/>
+                            <circle cx="32" cy="18" r="2" fill="currentColor" class="svg-dot"/>
+                            <text x="24" y="44" font-family="monospace" font-size="16" fill="currentColor" class="svg-code">&lt;/&gt;</text>
+                            <path d="M48 36 L56 42 L48 48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-line"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Website Development</h3>
+                        <p>Custom-built websites, Webflow, Shopify, or WordPress — we engineer high-performing digital experiences tailored to your business goals. Fast, secure, and built to convert.</p>
+                        <ul class="card-features">
+                            <li>Custom & platform solutions</li>
+                            <li>SEO optimized from day one</li>
+                            <li>Mobile-first responsive design</li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Web Hosting & Management</h3>
-                    <h4>Host with the Most. Reliability You Can Trust.</h4>
-                    <p>A brilliant website is useless if it's down, slow, or insecure. Our enterprise-grade hosting infrastructure is engineered for peak performance, ironclad security, and 99.9% uptime. We provide seamless, managed hosting for both custom applications and WordPress sites, handling all the technical complexities—including professional email setup—so you can focus on your business. Sleep soundly knowing your digital presence is in expert hands.</p>
-                    <div class="why-choose">
-                        <h5>Why choose us?</h5>
-                        <ul>
-                            <li><strong>No Downtime, No Drama:</strong> Our robust infrastructure and 24/7 monitoring ensure your site is always available to your customers.</li>
-                            <li><strong>Security First:</strong> We proactively manage firewalls, malware scans, and updates to protect your data and your customers' trust.</li>
-                            <li><strong>Hassle-Free Management:</strong> We handle the servers, backups, and technical maintenance. You just manage your content.</li>
+
+                <!-- App Development - Large Card -->
+                <div class="bento-card bento-large" data-service="app-dev">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" class="service-svg">
+                            <!-- Mobile Phone -->
+                            <rect x="12" y="8" width="28" height="48" rx="4" stroke="currentColor" stroke-width="2.5" class="svg-line"/>
+                            <line x1="12" y1="16" x2="40" y2="16" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                            <line x1="12" y1="48" x2="40" y2="48" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                            <circle cx="26" cy="52" r="2" fill="currentColor" class="svg-dot"/>
+                            <!-- Tablet -->
+                            <rect x="44" y="16" width="28" height="40" rx="3" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <line x1="44" y1="22" x2="72" y2="22" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                            <circle cx="58" cy="52" r="1.5" fill="currentColor" class="svg-dot"/>
+                            <!-- App icon squares -->
+                            <rect x="18" y="24" width="6" height="6" rx="1" fill="currentColor" opacity="0.5" class="svg-app"/>
+                            <rect x="28" y="24" width="6" height="6" rx="1" fill="currentColor" opacity="0.5" class="svg-app"/>
+                            <rect x="18" y="34" width="6" height="6" rx="1" fill="currentColor" opacity="0.5" class="svg-app"/>
+                            <rect x="28" y="34" width="6" height="6" rx="1" fill="currentColor" opacity="0.5" class="svg-app"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>App Development</h3>
+                        <p>Native mobile apps and progressive web applications that extend your reach. Cross-platform solutions built for performance and seamless user experiences.</p>
+                        <ul class="card-features">
+                            <li>iOS & Android native apps</li>
+                            <li>Progressive Web Apps (PWA)</li>
+                            <li>API integrations & backends</li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>Creative & Design Services</h3>
-                    <h4>Design That Tells Your Story and Drives Results</h4>
-                    <p>First impressions are everything. We craft stunning, strategic designs that do more than just look good—they communicate your brand's essence, build credibility, and engage your audience. From a comprehensive website redesign and cohesive branding to social media graphics that stop the scroll, our creative team translates your vision into a powerful visual identity that resonates and converts.</p>
-                    <div class="why-choose">
-                        <h5>Why choose us?</h5>
-                        <ul>
-                            <li><strong>Strategic, Not Just Pretty:</strong> Our designs are informed by marketing strategy to ensure they achieve your business objectives.</li>
-                            <li><strong>Full-Brand Consistency:</strong> We create a unified look and feel across your website, logo, social media, and more, making your brand instantly recognizable.</li>
-                            <li><strong>Audience-Focused:</strong> We design for your customers, creating visuals that appeal directly to them and guide them to take action.</li>
-                        </ul>
+
+                <!-- Graphic Design - Standard Card -->
+                <div class="bento-card" data-service="design">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 60 60" fill="none" class="service-svg">
+                            <!-- Pen tool -->
+                            <path d="M12 48 L30 12 L36 18 L18 54 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" class="svg-line"/>
+                            <circle cx="30" cy="12" r="3" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <!-- Shapes -->
+                            <circle cx="46" cy="20" r="8" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <rect x="38" y="36" width="14" height="14" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                        </svg>
                     </div>
+                    <h3>Graphic Design</h3>
+                    <p class="card-desc">Logos, branding, marketing materials — visuals that tell your story.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Advanced Solutions & Integrations</h3>
-                    <h4>Innovative Technology to Power Your Business</h4>
-                    <p>Unlock new levels of efficiency and capability. We bridge the gaps in your tech stack by building custom mobile apps and creating seamless integrations between your website, CRM, payment processors, and other essential business tools. From developing a standalone mobile app to crafting custom API integrations and unique solutions like cloud cards, we automate workflows and connect your data, empowering you to work smarter.</p>
-                    <div class="why-choose">
-                        <h5>Why choose us?</h5>
-                        <ul>
-                            <li><strong>Solve Unique Challenges:</strong> We specialize in building bespoke solutions for problems that off-the-shelf software can't fix.</li>
-                            <li><strong>Automate & Streamline:</strong> We connect your disparate systems to eliminate manual data entry, reduce errors, and save you valuable time.</li>
-                            <li><strong>Future-Proof Your Tech:</strong> Our scalable solutions grow with your business, providing a solid foundation for innovation.</li>
-                        </ul>
+
+                <!-- Website Hosting - Standard Card -->
+                <div class="bento-card" data-service="hosting">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 60 60" fill="none" class="service-svg">
+                            <!-- Server stack -->
+                            <rect x="10" y="8" width="40" height="12" rx="2" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <rect x="10" y="24" width="40" height="12" rx="2" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <rect x="10" y="40" width="40" height="12" rx="2" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <!-- LED dots -->
+                            <circle cx="18" cy="14" r="2" fill="currentColor" class="svg-dot"/>
+                            <circle cx="18" cy="30" r="2" fill="currentColor" class="svg-dot"/>
+                            <circle cx="18" cy="46" r="2" fill="currentColor" class="svg-dot"/>
+                            <!-- Lines -->
+                            <line x1="26" y1="14" x2="42" y2="14" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                            <line x1="26" y1="30" x2="42" y2="30" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                            <line x1="26" y1="46" x2="42" y2="46" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                        </svg>
                     </div>
+                    <h3>Website Hosting</h3>
+                    <p class="card-desc">Enterprise-grade hosting with 99.9% uptime and ironclad security.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">💳</div>
-                    <h3>Seamless Platform Setup & Integration</h3>
-                    <h4>From Box to Business. Ready. Integrated. Done.</h4>
-                    <p>You've invested in powerful tools like Cloud Cards, but now you're faced with the daunting task of setup, configuration, and integration. This is where we step in. We offer complete, white-glove implementation service to turn your new platform into a fully functional, profit-driving asset. We handle the entire technical integration with your website, CRM, and payment systems, so you can start realizing your ROI on day one—without the stress, guesswork, or internal resource drain.</p>
-                    <div class="why-choose">
-                        <h5>Why choose us?</h5>
-                        <ul>
-                            <li><strong>Zero Friction Implementation:</strong> We eliminate the setup headache. You buy the platform; we do the heavy lifting to make it work seamlessly for your business.</li>
-                            <li><strong>Experts in Integration:</strong> We ensure your new tool speaks perfectly with your existing tech stack, creating a unified and efficient workflow.</li>
-                            <li><strong>Hit the Ground Running:</strong> While we handle the complex setup, your team remains focused on their core responsibilities, accelerating your time to value.</li>
-                        </ul>
+
+                <!-- Email Hosting - Standard Card -->
+                <div class="bento-card" data-service="email">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 60 60" fill="none" class="service-svg">
+                            <!-- Envelope -->
+                            <rect x="6" y="14" width="48" height="32" rx="3" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <path d="M6 18 L30 34 L54 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-line"/>
+                            <!-- @ symbol -->
+                            <circle cx="30" cy="28" r="4" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                            <path d="M34 28 C34 24, 38 22, 40 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="svg-line"/>
+                        </svg>
+                    </div>
+                    <h3>Email Hosting</h3>
+                    <p class="card-desc">Professional email with your domain — reliable and secure communication.</p>
+                </div>
+
+                <!-- CRM Implementations - Standard Card -->
+                <div class="bento-card" data-service="crm">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 60 60" fill="none" class="service-svg">
+                            <!-- User nodes -->
+                            <circle cx="30" cy="14" r="6" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <circle cx="14" cy="42" r="6" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <circle cx="46" cy="42" r="6" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <!-- Connection lines -->
+                            <line x1="26" y1="20" x2="18" y2="36" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <line x1="34" y1="20" x2="42" y2="36" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <line x1="20" y1="42" x2="40" y2="42" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <!-- Center dot -->
+                            <circle cx="30" cy="32" r="3" fill="currentColor" class="svg-dot"/>
+                        </svg>
+                    </div>
+                    <h3>CRM Implementations</h3>
+                    <p class="card-desc">Streamline customer relationships with tailored CRM solutions.</p>
+                </div>
+
+                <!-- Marketing - Wide Card -->
+                <div class="bento-card bento-wide" data-service="marketing">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 60" fill="none" class="service-svg">
+                            <!-- Megaphone -->
+                            <path d="M8 24 L8 36 L16 36 L32 48 L32 12 L16 24 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" class="svg-line"/>
+                            <ellipse cx="8" cy="30" rx="4" ry="6" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <!-- Sound waves -->
+                            <path d="M38 20 Q44 30, 38 40" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                            <path d="M44 14 Q54 30, 44 46" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                            <!-- Chart -->
+                            <rect x="56" y="18" width="18" height="32" stroke="currentColor" stroke-width="2" rx="2" class="svg-line"/>
+                            <polyline points="60,42 64,34 68,38 72,26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-line"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Marketing</h3>
+                        <p>Strategic digital marketing that amplifies your brand. SEO, social media management, content strategy, and paid advertising — all working together to grow your business.</p>
                     </div>
                 </div>
             </div>
-            <div class="contact-link-container">
-                <a class="contact-link" href="contact.html">Get in contact <img src="./src/images/arrow.png" alt="arrow"></a>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="services-cta">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's discuss how we can help you achieve your digital goals.</p>
+                <a href="contact.html" class="cta-button">
+                    Get Started
+                    <svg viewBox="0 0 24 24" fill="none" class="cta-arrow">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
         </section>
         

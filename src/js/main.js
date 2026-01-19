@@ -140,13 +140,6 @@ const teamMembers = [
         team: "Software"
     },
     {
-        name: "Srujan Patil",
-        linkedin: "https://www.linkedin.com/in/srujan-patil/",
-        image: "./src/images/Headshots/Srujan.jpg",
-        displayTitle: "Software Developer",
-        team: "Software"
-    },
-    {
         name: "Joseph Biesiada",
         linkedin: "https://www.linkedin.com/in/joseph-biesiada-648775231/",
         image: "./src/images/Headshots/Joseph.jpg",
@@ -210,13 +203,6 @@ const teamMembers = [
         team: "Software"
     },
     {
-        name: "Jack Baldwin",
-        linkedin: "https://www.linkedin.com/in/jackson-baldwin/",
-        image: "./src/images/Headshots/Jack.jpg",
-        displayTitle: "Software Developer",
-        team: "Software"
-    },
-    {
         name: "Erkin Tuna Gumustas",
         linkedin: "#",
         image: "./src/images/default_pic.jpg",
@@ -236,13 +222,6 @@ const teamMembers = [
         image: "./src/images/Headshots/Logan.jpg",
         displayTitle: "Web Developer",
         team: "Software"
-    },
-    {
-        name: "Humera Fatima",
-        linkedin: "https://www.linkedin.com/in/humera-fatima-/",
-        image: "./src/images/Headshots/Humera.jpg",
-        displayTitle: "UI/UX Designer",
-        team: "Design"
     },
     {
         name: "Marvin Opoku Kwarteng",
