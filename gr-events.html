@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GR Events Calendar | Daydream Technologies</title>
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="stylesheet" href="./src/css/gr-events.css" />
+    <link rel="icon" href="./src/images/favicon.ico" />
+    
+    <!-- Google Fonts - Outfit for GR Events -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FullCalendar for Calendar View -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    
+    <!-- Leaflet for Map View -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- GR Events Scripts -->
+    <script src="./src/js/gr-events/types.js" defer></script>
+    <script src="./src/js/gr-events/lib/date-utils.js" defer></script>
+    <script src="./src/js/gr-events/lib/ics-export.js" defer></script>
+    <script src="./src/js/gr-events/components/event-card.js" defer></script>
+    <script src="./src/js/gr-events/components/list-view.js" defer></script>
+    <script src="./src/js/gr-events/components/calendar-view.js" defer></script>
+    <script src="./src/js/gr-events/components/map-view.js" defer></script>
+    <script src="./src/js/gr-events/app.js" defer></script>
+    
+    <!-- Main site JS -->
+    <script src="./src/js/main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li>
+                <a class="nav_logo" href="index.html">
+                    <img class="logo_img"
+                         src="./src/images/Company_Logo.png"
+                         alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <div class="nav_links">
+                <li><a class="nav_link" href="index.html" title="Daydream's homepage">Home</a></li>
+                <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
+                <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+                <li><a class="nav_link" href="index.html#contact-section" title="Contact us">Contact</a></li>
+            </div>
+        </ul>
+        <ul class="respo_navbar">
+            <li>
+                <a class="nav_logo" href="index.html">
+                    <img class="logo_img"
+                         src="./src/images/Company_Logo.png"
+                         alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <li>
+                <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </li>
+        </ul>
+        <ul class="dropdown">
+            <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
+            <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
+            <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+            <li><a class="nav_link" href="index.html#contact-section" title="Contact us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- GR Events App Content -->
+    <div class="gr-events-app min-h-screen">
+        <!-- App Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="header-content">
+                    <!-- Logo Section -->
+                    <div class="logo-section">
+                        <div class="logo-icon">
+                            <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="logo-title">GR Events</h1>
+                            <p class="logo-subtitle">Startup & Entrepreneurship Events</p>
+                        </div>
+                    </div>
+
+                    <!-- View Tabs -->
+                    <div class="view-tabs" id="viewTabs">
+                        <button class="view-tab active" data-view="list">
+                            <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                            </svg>
+                            <span class="tab-label">List</span>
+                        </button>
+                        <button class="view-tab" data-view="calendar">
+                            <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span class="tab-label">Calendar</span>
+                        </button>
+                        <button class="view-tab" data-view="map">
+                            <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                            </svg>
+                            <span class="tab-label">Map</span>
+                        </button>
+                    </div>
+
+                    <!-- Refresh Button -->
+                    <button class="refresh-btn" id="refreshBtn">
+                        <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                        <span class="btn-label">Refresh</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Status Banner -->
+        <div class="status-banner hidden" id="statusBanner"></div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stats-container">
+                <div class="stats-content">
+                    <div class="stats-summary">
+                        <span id="eventCount">0 events</span>
+                        <span>•</span>
+                        <span id="lastUpdated">Updated never</span>
+                    </div>
+                    <div class="flex-spacer"></div>
+                    <div class="source-stats" id="sourceStats"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Loading State -->
+            <div class="loading-state" id="loadingState">
+                <div class="spinner"></div>
+                <p class="loading-text">Loading events...</p>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state hidden" id="emptyState">
+                <div class="empty-icon">
+                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h2 class="empty-title">No events found</h2>
+                <p class="empty-text">Run the scraper script to generate event data, or check back later.</p>
+            </div>
+
+            <!-- Views Container -->
+            <div class="views-container hidden" id="viewsContainer">
+                <div id="listView"></div>
+                <div id="calendarView" class="hidden"></div>
+                <div id="mapView" class="hidden"></div>
+            </div>
+        </main>
+
+        <!-- App Footer -->
+        <div class="app-footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-sources" id="footerSources"></div>
+                    <div class="footer-credit">
+                        Built for the Grand Rapids startup community
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Modal -->
+    <div class="modal hidden" id="eventModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content" id="eventModalContent">
+            <!-- Content injected by JS -->
+        </div>
+    </div>
+
+    <footer>
+        <a class="footer_link">
+            <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
+            DayDream Technologies LLC
+        </a>
+        <div class="footer_links">
+            <a class="footer_link" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

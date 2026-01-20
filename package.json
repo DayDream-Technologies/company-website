@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "scrape": "node scripts/scrape-events.js"
+  },
   "dependencies": {
+    "cheerio": "^1.1.2",
     "three-globe": "^2.45.0"
   }
 }

@@ -1,0 +1,1428 @@
+/* ==========================================================================
+   GR Events Calendar Styles
+   Adapted from gr-events with site integration
+   ========================================================================== */
+
+/* ==========================================================================
+   CSS Variables
+   ========================================================================== */
+.gr-events-app {
+  --gr-background: #0a0a0a;
+  --gr-foreground: #ededed;
+  --gr-primary: #10b981;
+  --gr-primary-dark: #059669;
+  --gr-secondary: #6366f1;
+  --gr-accent: #f59e0b;
+  --gr-card-bg: #1a1a1a;
+  --gr-card-border: #2a2a2a;
+  --gr-text-muted: #888888;
+  --gr-text-secondary: #666666;
+}
+
+/* ==========================================================================
+   Base Styles for GR Events App
+   ========================================================================== */
+.gr-events-app {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  background: var(--gr-background);
+  color: var(--gr-foreground);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gr-events-app a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gr-events-app button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.gr-events-app input,
+.gr-events-app select {
+  font-family: inherit;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+.gr-events-app .hidden { display: none !important; }
+.gr-events-app .flex-spacer { flex: 1; }
+
+.gr-events-app .icon-sm { width: 1.25rem; height: 1.25rem; }
+.gr-events-app .icon-md { width: 1.5rem; height: 1.5rem; }
+.gr-events-app .icon-lg { width: 2.5rem; height: 2.5rem; }
+
+.gr-events-app .text-primary { color: var(--gr-primary); }
+.gr-events-app .text-secondary { color: var(--gr-secondary); }
+.gr-events-app .text-muted { color: var(--gr-text-muted); }
+
+.gr-events-app .line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.gr-events-app .line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* ==========================================================================
+   Scrollbar
+   ========================================================================== */
+.gr-events-app ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.gr-events-app ::-webkit-scrollbar-track {
+  background: var(--gr-card-bg);
+}
+
+.gr-events-app ::-webkit-scrollbar-thumb {
+  background: var(--gr-card-border);
+  border-radius: 4px;
+}
+
+.gr-events-app ::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+.gr-events-app.min-h-screen {
+  min-height: calc(100vh - 80px); /* Account for site nav */
+  display: flex;
+  flex-direction: column;
+}
+
+.gr-events-app .main-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+  flex: 1;
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .main-content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gr-events-app .main-content {
+    padding: 2rem 2rem;
+  }
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.gr-events-app .header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(12px);
+  background: rgba(10, 10, 10, 0.8);
+  border-bottom: 1px solid var(--gr-card-border);
+}
+
+.gr-events-app .header-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .header-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gr-events-app .header-container {
+    padding: 0 2rem;
+  }
+}
+
+.gr-events-app .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  gap: 1rem;
+}
+
+/* Logo Section */
+.gr-events-app .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.gr-events-app .logo-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, var(--gr-primary), var(--gr-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.gr-events-app .logo-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gr-foreground);
+  margin: 0;
+}
+
+.gr-events-app .logo-subtitle {
+  font-size: 0.75rem;
+  color: var(--gr-text-muted);
+  display: none;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .logo-subtitle {
+    display: block;
+  }
+}
+
+/* View Tabs */
+.gr-events-app .view-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--gr-card-bg);
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  border: 1px solid var(--gr-card-border);
+}
+
+.gr-events-app .view-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gr-text-muted);
+  transition: all 0.2s ease;
+}
+
+.gr-events-app .view-tab:hover {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .view-tab.active {
+  background: var(--gr-primary);
+  color: white;
+}
+
+.gr-events-app .tab-label {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .tab-label {
+    display: inline;
+  }
+}
+
+/* Refresh Button */
+.gr-events-app .refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gr-foreground);
+  transition: all 0.2s ease;
+}
+
+.gr-events-app .refresh-btn:hover {
+  border-color: var(--gr-primary);
+}
+
+.gr-events-app .refresh-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gr-events-app .refresh-btn .btn-label {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .refresh-btn .btn-label {
+    display: inline;
+  }
+}
+
+.gr-events-app .refresh-btn.loading svg {
+  animation: gr-spin 1s linear infinite;
+}
+
+@keyframes gr-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Status Banner
+   ========================================================================== */
+.gr-events-app .status-banner {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.gr-events-app .status-banner.error {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.gr-events-app .status-banner.success {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.gr-events-app .status-banner.info {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--gr-primary);
+}
+
+/* ==========================================================================
+   Stats Bar
+   ========================================================================== */
+.gr-events-app .stats-bar {
+  border-bottom: 1px solid var(--gr-card-border);
+  background: rgba(26, 26, 26, 0.5);
+}
+
+.gr-events-app .stats-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .stats-container {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gr-events-app .stats-container {
+    padding: 0.75rem 2rem;
+  }
+}
+
+.gr-events-app .stats-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.gr-events-app .stats-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .source-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.gr-events-app .source-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gr-events-app .source-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.gr-events-app .source-stat-text {
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .source-stat-count {
+  color: var(--gr-foreground);
+}
+
+/* ==========================================================================
+   Loading State
+   ========================================================================== */
+.gr-events-app .loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.gr-events-app .spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid rgba(16, 185, 129, 0.3);
+  border-top-color: var(--gr-primary);
+  border-radius: 50%;
+  animation: gr-spin 1s linear infinite;
+}
+
+.gr-events-app .loading-text {
+  margin-top: 1rem;
+  color: var(--gr-text-muted);
+}
+
+/* ==========================================================================
+   Empty State
+   ========================================================================== */
+.gr-events-app .empty-state {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.gr-events-app .empty-icon {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto 1.5rem;
+  border-radius: 1rem;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gr-text-secondary);
+}
+
+.gr-events-app .empty-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gr-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.gr-events-app .empty-text {
+  color: var(--gr-text-muted);
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   App Footer
+   ========================================================================== */
+.gr-events-app .app-footer {
+  border-top: 1px solid var(--gr-card-border);
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.gr-events-app .app-footer .footer-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .app-footer .footer-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gr-events-app .app-footer .footer-container {
+    padding: 0 2rem;
+  }
+}
+
+.gr-events-app .app-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+}
+
+@media (min-width: 640px) {
+  .gr-events-app .app-footer .footer-content {
+    flex-direction: row;
+  }
+}
+
+.gr-events-app .footer-sources a {
+  color: var(--gr-primary);
+  transition: color 0.2s;
+}
+
+.gr-events-app .footer-sources a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Modal
+   ========================================================================== */
+.gr-events-app .modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.gr-events-app .modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.gr-events-app .modal-content {
+  position: relative;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 32rem;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.gr-events-app .modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem;
+  color: var(--gr-text-muted);
+  transition: color 0.2s;
+}
+
+.gr-events-app .modal-close:hover {
+  color: var(--gr-foreground);
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+.gr-events-app .card {
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.gr-events-app .card:hover {
+  border-color: var(--gr-primary);
+  box-shadow: 0 10px 40px -15px rgba(16, 185, 129, 0.1);
+}
+
+.gr-events-app .card-link {
+  display: block;
+}
+
+/* ==========================================================================
+   Event Card
+   ========================================================================== */
+.gr-events-app .event-card {
+  position: relative;
+}
+
+.gr-events-app .event-card-inner {
+  display: flex;
+  gap: 1rem;
+}
+
+.gr-events-app .event-date-badge {
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05));
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gr-events-app .event-date-month {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gr-primary);
+  text-transform: uppercase;
+}
+
+.gr-events-app .event-date-day {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .event-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.gr-events-app .event-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gr-events-app .badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.gr-events-app .badge-category {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--gr-secondary);
+}
+
+.gr-events-app .event-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gr-foreground);
+  transition: color 0.2s;
+  margin-bottom: 0.5rem;
+}
+
+.gr-events-app .card:hover .event-title {
+  color: var(--gr-primary);
+}
+
+.gr-events-app .event-description {
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.gr-events-app .event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .event-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.gr-events-app .event-meta-item svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.gr-events-app .event-arrow {
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+  color: var(--gr-primary);
+}
+
+.gr-events-app .card:hover .event-arrow {
+  opacity: 1;
+}
+
+/* Event Card - Calendar Button */
+.gr-events-app .event-calendar-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--gr-card-border);
+  color: var(--gr-text-muted);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.gr-events-app .card:hover .event-calendar-btn {
+  opacity: 1;
+}
+
+.gr-events-app .event-calendar-btn:hover {
+  color: var(--gr-primary);
+  border-color: var(--gr-primary);
+}
+
+/* ==========================================================================
+   List View
+   ========================================================================== */
+.gr-events-app .list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Filters */
+.gr-events-app .list-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gr-events-app .search-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.gr-events-app .search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.gr-events-app .search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border-radius: 0.75rem;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  color: var(--gr-foreground);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.gr-events-app .search-input::placeholder {
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .search-input:focus {
+  outline: none;
+  border-color: var(--gr-primary);
+}
+
+.gr-events-app .select-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  color: var(--gr-text-muted);
+  transition: all 0.2s;
+}
+
+.gr-events-app .select-btn:hover {
+  color: var(--gr-foreground);
+  border-color: var(--gr-primary);
+}
+
+/* Filter Chips */
+.gr-events-app .filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.gr-events-app .filter-chip {
+  padding: 0.375rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--gr-card-bg);
+  color: var(--gr-text-muted);
+  border: 1px solid var(--gr-card-border);
+  transition: all 0.2s;
+}
+
+.gr-events-app .filter-chip:hover {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .filter-chip.active {
+  color: white;
+  border-color: transparent;
+}
+
+.gr-events-app .filter-divider {
+  width: 1px;
+  height: 1.5rem;
+  background: var(--gr-card-border);
+  align-self: center;
+  margin: 0 0.25rem;
+}
+
+/* Sort & Options Row */
+.gr-events-app .filter-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gr-events-app .filter-options-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gr-events-app .sort-select {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  color: var(--gr-foreground);
+  font-size: 0.875rem;
+}
+
+.gr-events-app .sort-select:focus {
+  outline: none;
+  border-color: var(--gr-primary);
+}
+
+.gr-events-app .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+  cursor: pointer;
+}
+
+.gr-events-app .checkbox-label input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--gr-card-border);
+  background: var(--gr-card-bg);
+  cursor: pointer;
+  accent-color: var(--gr-primary);
+}
+
+.gr-events-app .clear-filters-btn {
+  font-size: 0.875rem;
+  color: var(--gr-primary);
+  transition: text-decoration 0.2s;
+}
+
+.gr-events-app .clear-filters-btn:hover {
+  text-decoration: underline;
+}
+
+/* Results Count */
+.gr-events-app .results-count {
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .results-count .selection-info {
+  margin-left: 0.5rem;
+  color: var(--gr-primary);
+}
+
+/* Date Group */
+.gr-events-app .date-group {
+  margin-bottom: 2rem;
+}
+
+.gr-events-app .date-group:last-child {
+  margin-bottom: 0;
+}
+
+.gr-events-app .date-group-header {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gr-foreground);
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 4rem;
+  background: var(--gr-background);
+  z-index: 10;
+}
+
+.gr-events-app .date-group-events {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Selection Mode Toolbar */
+.gr-events-app .selection-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.gr-events-app .selection-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gr-events-app .selection-checkbox input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  accent-color: var(--gr-primary);
+}
+
+.gr-events-app .selection-count {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .selection-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gr-events-app .export-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--gr-primary);
+  color: white;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.gr-events-app .export-btn:hover {
+  background: var(--gr-primary-dark);
+}
+
+.gr-events-app .cancel-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--gr-text-muted);
+  transition: color 0.2s;
+}
+
+.gr-events-app .cancel-btn:hover {
+  color: var(--gr-foreground);
+}
+
+/* Export Menu */
+.gr-events-app .export-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.5rem;
+  width: 14rem;
+  padding: 0.5rem;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.gr-events-app .export-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.gr-events-app .export-option:hover {
+  background: #1f1f1f;
+}
+
+.gr-events-app .export-title {
+  font-weight: 500;
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .export-subtitle {
+  font-size: 0.75rem;
+  color: var(--gr-text-muted);
+}
+
+/* Event Selection Button */
+.gr-events-app .event-select-btn {
+  position: absolute;
+  left: -0.5rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.gr-events-app .event-select-btn button {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  color: var(--gr-text-muted);
+  transition: all 0.2s;
+}
+
+.gr-events-app .event-select-btn button:hover {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .event-select-btn button.selected {
+  background: var(--gr-primary);
+  border-color: var(--gr-primary);
+  color: white;
+}
+
+/* No Results */
+.gr-events-app .no-results {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.gr-events-app .no-results-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  color: var(--gr-text-secondary);
+}
+
+.gr-events-app .no-results-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gr-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.gr-events-app .no-results-text {
+  color: var(--gr-text-muted);
+}
+
+/* ==========================================================================
+   Calendar View
+   ========================================================================== */
+.gr-events-app .calendar-container {
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+/* FullCalendar Theme Overrides */
+.gr-events-app .fc {
+  --fc-border-color: var(--gr-card-border);
+  --fc-button-bg-color: var(--gr-card-bg);
+  --fc-button-border-color: var(--gr-card-border);
+  --fc-button-hover-bg-color: #2a2a2a;
+  --fc-button-hover-border-color: #3a3a3a;
+  --fc-button-active-bg-color: var(--gr-primary);
+  --fc-button-active-border-color: var(--gr-primary);
+  --fc-event-bg-color: var(--gr-primary);
+  --fc-event-border-color: var(--gr-primary-dark);
+  --fc-today-bg-color: rgba(16, 185, 129, 0.1);
+  --fc-page-bg-color: var(--gr-background);
+  --fc-neutral-bg-color: var(--gr-card-bg);
+  --fc-list-event-hover-bg-color: var(--gr-card-bg);
+}
+
+.gr-events-app .fc .fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .fc .fc-button {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.gr-events-app .fc .fc-button:focus {
+  box-shadow: 0 0 0 2px var(--gr-primary);
+}
+
+.gr-events-app .fc-theme-standard td,
+.gr-events-app .fc-theme-standard th {
+  border-color: var(--gr-card-border);
+}
+
+.gr-events-app .fc .fc-daygrid-day {
+  background: var(--gr-card-bg);
+}
+
+.gr-events-app .fc .fc-daygrid-day:hover {
+  background: #1f1f1f;
+}
+
+.gr-events-app .fc .fc-daygrid-day.fc-day-today {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.gr-events-app .fc .fc-daygrid-day-number {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .fc .fc-col-header-cell-cushion {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .fc .fc-event {
+  border-radius: 0.375rem;
+  padding: 2px 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.gr-events-app .fc .fc-event:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  transition: all 0.15s ease;
+}
+
+.gr-events-app .fc .fc-list-event:hover td {
+  background: var(--gr-card-bg);
+}
+
+.gr-events-app .fc .fc-list-day-cushion {
+  background: var(--gr-card-bg);
+}
+
+.gr-events-app .fc .fc-popover {
+  background: var(--gr-card-bg);
+  border-color: var(--gr-card-border);
+}
+
+.gr-events-app .fc .fc-popover-header {
+  background: var(--gr-card-bg);
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .fc .fc-more-popover .fc-popover-body {
+  background: var(--gr-card-bg);
+}
+
+/* ==========================================================================
+   Map View
+   ========================================================================== */
+.gr-events-app .map-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .gr-events-app .map-layout {
+    flex-direction: row;
+  }
+}
+
+.gr-events-app .map-container {
+  flex: 1;
+  height: 600px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--gr-card-border);
+}
+
+.gr-events-app .map-sidebar {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .gr-events-app .map-sidebar {
+    width: 20rem;
+  }
+}
+
+.gr-events-app .map-sidebar-card {
+  padding: 1rem;
+}
+
+.gr-events-app .map-sidebar-title {
+  font-weight: 600;
+  color: var(--gr-foreground);
+  margin-bottom: 0.25rem;
+}
+
+.gr-events-app .map-sidebar-subtitle {
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+  margin-bottom: 1rem;
+}
+
+.gr-events-app .map-sidebar-events {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.gr-events-app .map-sidebar-event {
+  display: block;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: #141414;
+  transition: background 0.2s;
+}
+
+.gr-events-app .map-sidebar-event:hover {
+  background: #1a1a1a;
+}
+
+.gr-events-app .map-sidebar-event-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.gr-events-app .map-sidebar-event-title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .map-sidebar-event-meta {
+  font-size: 0.75rem;
+  color: var(--gr-text-muted);
+  margin-top: 0.25rem;
+}
+
+.gr-events-app .map-sidebar-more {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+  padding: 0.5rem 0;
+}
+
+/* Leaflet Overrides */
+.gr-events-app .leaflet-container {
+  background: var(--gr-card-bg);
+}
+
+.gr-events-app .leaflet-marker-icon {
+  filter: hue-rotate(120deg) saturate(1.5);
+}
+
+.gr-events-app .leaflet-popup-content-wrapper {
+  background: var(--gr-card-bg);
+  color: var(--gr-foreground);
+  border-radius: 12px;
+  border: 1px solid var(--gr-card-border);
+}
+
+.gr-events-app .leaflet-popup-tip {
+  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+}
+
+.gr-events-app .leaflet-popup-close-button {
+  color: var(--gr-foreground) !important;
+}
+
+.gr-events-app .leaflet-control-zoom a {
+  background: var(--gr-card-bg) !important;
+  color: var(--gr-foreground) !important;
+  border-color: var(--gr-card-border) !important;
+}
+
+.gr-events-app .leaflet-control-zoom a:hover {
+  background: #2a2a2a !important;
+}
+
+.gr-events-app .leaflet-control-attribution {
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: #888 !important;
+}
+
+.gr-events-app .leaflet-control-attribution a {
+  color: var(--gr-primary) !important;
+}
+
+/* Popup Content */
+.gr-events-app .popup-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.gr-events-app .popup-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.gr-events-app .popup-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .popup-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.gr-events-app .popup-meta-item svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.gr-events-app .popup-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gr-primary);
+}
+
+.gr-events-app .popup-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Event Modal (for calendar clicks)
+   ========================================================================== */
+.gr-events-app .event-modal-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.gr-events-app .event-modal-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gr-foreground);
+  margin-bottom: 1rem;
+}
+
+.gr-events-app .event-modal-description {
+  color: var(--gr-text-muted);
+  margin-bottom: 1rem;
+}
+
+.gr-events-app .event-modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.gr-events-app .event-modal-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #d1d5db;
+}
+
+.gr-events-app .event-modal-detail svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--gr-primary);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.gr-events-app .event-modal-location-name {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .event-modal-location-address {
+  font-size: 0.875rem;
+  color: var(--gr-text-muted);
+}
+
+.gr-events-app .event-modal-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  background: var(--gr-primary);
+  color: white;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.gr-events-app .event-modal-btn:hover {
+  background: var(--gr-primary-dark);
+}
+
+.gr-events-app .event-modal-btn svg {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}

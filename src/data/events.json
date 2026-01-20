@@ -1,0 +1,299 @@
+{
+  "events": [
+    {
+      "id": "msu-foundation-agtech-summit-2026-01-01",
+      "title": "AgTech Summit",
+      "description": "Annual summit hosted by MSU Foundation",
+      "date": "2026-01-01",
+      "time": "TBD",
+      "startDateTime": "2026-01-01T09:00:00",
+      "location": {
+        "name": "MSU Foundation",
+        "address": "325 E. Grand River Ave.",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "conference",
+      "scrapedAt": "2026-01-20T02:47:28.112Z"
+    },
+    {
+      "id": "grand-rapids-org-latina-connect-build-your-2026-plan-2026-01-22",
+      "title": "Latina Connect: Build Your 2026 Plan",
+      "description": "From Intention to Action: Build Your 2026 Plan Start 2026 with clarity. This Latina Connect session helps professionals and business owners turn ideas into a real plan for growth. Too often we start the year with big goals but no structure. This event will give participants the tools and support needed to map out their development, whether that means advancing your career, earning a certification, or growing your business. You’ll leave with a 2026 development plan started in the room and partners who can help you keep the momentum going.",
+      "date": "2026-01-22",
+      "time": "January 22 @ 11:30 am - 1:30 pm Latina Connect",
+      "startDateTime": "2026-01-22T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/latina-connect-1-22/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-chamber-happy-hour-2026-01-28",
+      "title": "Chamber Happy Hour",
+      "description": "Join the Grand Rapids Chamber for happy hour and networking with fellow and future members. Chamber Happy Hour takes place on Wednesdays throughout the year in our Work Café.",
+      "date": "2026-01-28",
+      "time": "January 28 @ 4:00 pm - 5:00 pm Chamber Happy Hour",
+      "startDateTime": "2026-01-28T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/chamber-happy-hour-1-28/",
+      "source": "grand-rapids-org",
+      "category": "networking",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-138th-annual-meeting-the-state-of-grand-rapids-",
+      "title": "138th Annual Meeting: The State of Grand Rapids Business",
+      "description": "",
+      "date": "2026-01-29",
+      "time": "January 29 @ 7:30 am - 10:00 am",
+      "startDateTime": "2026-01-29T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/annual-meeting-2026/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-business-exchange-breakfast-2026-02-05",
+      "title": "Business Exchange Breakfast",
+      "description": "",
+      "date": "2026-02-05",
+      "time": "February 5 @ 8:00 am - 10:00 am Business Exchange Series",
+      "startDateTime": "2026-02-05T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/business-exchange-breakfast-2-5/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-first-friday-update-2026-02-06",
+      "title": "First Friday Update",
+      "description": "The updates occur on the first Friday of each month from 10:00 – 10:30 a.m. We will provide a quick overview on current advocacy efforts and top priorities being accomplished to create a thriving and diverse business climate for all.",
+      "date": "2026-02-06",
+      "time": "February 6 @ 10:00 am - 10:30 am First Friday Update",
+      "startDateTime": "2026-02-06T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/first-friday-update-2-6/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-athena-leadership-forum-the-power-of-giving-bac",
+      "title": "ATHENA Leadership Forum: The Power of Giving Back",
+      "description": "",
+      "date": "2026-02-17",
+      "time": "February 17 @ 11:30 am - 1:30 pm ATHENA",
+      "startDateTime": "2026-02-17T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/athena-leadership-forum-2-17/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-business-exchange-luncheon-2026-02-19",
+      "title": "Business Exchange Luncheon",
+      "description": "",
+      "date": "2026-02-19",
+      "time": "February 19 @ 11:30 am - 1:30 pm Business Exchange Series",
+      "startDateTime": "2026-02-19T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/business-exchange-luncheon-2-19/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-leadership-lesson-breakfast-2026-02-24",
+      "title": "Leadership Lesson Breakfast",
+      "description": "",
+      "date": "2026-02-24",
+      "time": "February 24 @ 7:30 am - 9:00 am Leadership Lesson Breakfast",
+      "startDateTime": "2026-02-24T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/leadership-lesson-breakfast-2-24/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "grand-rapids-org-chamber-happy-hour-2026-02-25",
+      "title": "Chamber Happy Hour",
+      "description": "Join the Grand Rapids Chamber for happy hour and networking with fellow and future members. Chamber Happy Hour takes place on Wednesdays throughout the year in our Work Café.",
+      "date": "2026-02-25",
+      "time": "February 25 @ 4:00 pm - 5:00 pm Chamber Happy Hour",
+      "startDateTime": "2026-02-25T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/chamber-happy-hour-2-25/",
+      "source": "grand-rapids-org",
+      "category": "networking",
+      "scrapedAt": "2026-01-20T02:47:32.764Z"
+    },
+    {
+      "id": "msu-foundation-women-in-tech-summit-2026-03-01",
+      "title": "Women In Tech Summit",
+      "description": "Annual summit hosted by MSU Foundation",
+      "date": "2026-03-01",
+      "time": "TBD",
+      "startDateTime": "2026-03-01T09:00:00",
+      "location": {
+        "name": "MSU Foundation",
+        "address": "325 E. Grand River Ave.",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "conference",
+      "scrapedAt": "2026-01-20T02:47:28.112Z"
+    },
+    {
+      "id": "msu-foundation-mobility-summit-2026-08-11",
+      "title": "Mobility Summit",
+      "description": "Annual summit hosted by MSU Foundation",
+      "date": "2026-08-11",
+      "time": "TBD",
+      "startDateTime": "2026-08-11T09:00:00",
+      "location": {
+        "name": "MSU Foundation",
+        "address": "325 E. Grand River Ave.",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "conference",
+      "scrapedAt": "2026-01-20T02:47:28.112Z"
+    },
+    {
+      "id": "msu-foundation-data-science-ai-summit-2026-10-01",
+      "title": "Data Science + AI Summit",
+      "description": "Annual summit hosted by MSU Foundation",
+      "date": "2026-10-01",
+      "time": "TBD",
+      "startDateTime": "2026-10-01T09:00:00",
+      "location": {
+        "name": "MSU Foundation",
+        "address": "325 E. Grand River Ave.",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "conference",
+      "scrapedAt": "2026-01-20T02:47:28.112Z"
+    }
+  ],
+  "lastScraped": "2026-01-20T02:47:33.820Z",
+  "sources": {
+    "msu-foundation": {
+      "id": "msu-foundation",
+      "name": "MSU Foundation",
+      "url": "https://msufoundation.org/events/",
+      "color": "#18453B",
+      "eventCount": 4,
+      "lastScraped": "2026-01-20T02:47:28.122Z"
+    },
+    "start-garden": {
+      "id": "start-garden",
+      "name": "Start Garden",
+      "url": "https://startgarden.com/events/",
+      "color": "#FF6B35",
+      "eventCount": 0,
+      "lastScraped": "2026-01-20T02:47:29.303Z"
+    },
+    "bamboo": {
+      "id": "bamboo",
+      "name": "Bamboo Cowork",
+      "url": "https://www.bamboocowork.com/events-at-bamboo",
+      "color": "#4CAF50",
+      "eventCount": 0,
+      "lastScraped": "2026-01-20T02:47:30.621Z"
+    },
+    "grand-rapids-org": {
+      "id": "grand-rapids-org",
+      "name": "Experience GR",
+      "url": "https://grandrapids.org/events/",
+      "color": "#2196F3",
+      "eventCount": 32,
+      "lastScraped": "2026-01-20T02:47:32.806Z"
+    }
+  }
+}
