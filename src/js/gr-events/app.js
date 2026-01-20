@@ -30,7 +30,6 @@
   // DOM Elements
   const elements = {
     viewTabs: document.getElementById('viewTabs'),
-    refreshBtn: document.getElementById('refreshBtn'),
     statusBanner: document.getElementById('statusBanner'),
     eventCount: document.getElementById('eventCount'),
     lastUpdated: document.getElementById('lastUpdated'),
@@ -67,23 +66,49 @@
       }
     });
     
-    // Refresh button
-    elements.refreshBtn.addEventListener('click', loadEvents);
-    
     // Modal backdrop click to close
     elements.eventModal.querySelector('.modal-backdrop')?.addEventListener('click', () => {
       elements.eventModal.classList.add('hidden');
     });
   }
   
+  // Cache key and duration for localStorage
+  const CACHE_KEY = 'gr-events-cache';
+  const CACHE_DURATION_MS = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+  
   /**
-   * Load events from data file
+   * Load events from cache or data file (fetches at most once per day)
    */
   async function loadEvents() {
     showLoading();
     
+    // Check localStorage cache first
     try {
-      // Updated path to new location
+      const cached = localStorage.getItem(CACHE_KEY);
+      if (cached) {
+        const { data, cachedAt } = JSON.parse(cached);
+        const now = Date.now();
+        
+        // Use cache if it's less than 24 hours old
+        if (now - cachedAt < CACHE_DURATION_MS) {
+          state.events = data.events || [];
+          state.lastScraped = data.lastScraped;
+          state.sources = data.sources || {};
+          state.isLoading = false;
+          
+          updateUI();
+          showStatus('success', `Loaded ${state.events.length} events (cached)`);
+          setTimeout(() => hideStatus(), 3000);
+          return;
+        }
+      }
+    } catch (e) {
+      // Cache read failed, proceed with fetch
+      console.warn('Cache read failed:', e);
+    }
+    
+    // Cache is stale or missing - fetch fresh data
+    try {
       const response = await fetch('src/data/events.json');
       
       if (!response.ok) {
@@ -91,6 +116,16 @@
       }
       
       const data = await response.json();
+      
+      // Save to localStorage cache
+      try {
+        localStorage.setItem(CACHE_KEY, JSON.stringify({
+          data,
+          cachedAt: Date.now(),
+        }));
+      } catch (e) {
+        console.warn('Cache write failed:', e);
+      }
       
       state.events = data.events || [];
       state.lastScraped = data.lastScraped;
@@ -233,8 +268,6 @@
     elements.loadingState.classList.remove('hidden');
     elements.emptyState.classList.add('hidden');
     elements.viewsContainer.classList.add('hidden');
-    elements.refreshBtn.classList.add('loading');
-    elements.refreshBtn.disabled = true;
   }
   
   /**
@@ -244,8 +277,6 @@
     elements.loadingState.classList.add('hidden');
     elements.emptyState.classList.remove('hidden');
     elements.viewsContainer.classList.add('hidden');
-    elements.refreshBtn.classList.remove('loading');
-    elements.refreshBtn.disabled = false;
   }
   
   /**
@@ -255,8 +286,6 @@
     elements.loadingState.classList.add('hidden');
     elements.emptyState.classList.add('hidden');
     elements.viewsContainer.classList.remove('hidden');
-    elements.refreshBtn.classList.remove('loading');
-    elements.refreshBtn.disabled = false;
   }
   
   /**

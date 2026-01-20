@@ -822,6 +822,38 @@ async function main() {
   console.log('╚═══════════════════════════════════════╝');
   console.log('');
   
+  // Check for --force flag to bypass the 24-hour limit
+  const forceRun = process.argv.includes('--force');
+  
+  // Check if we've scraped within the last 24 hours
+  if (!forceRun) {
+    try {
+      const existingData = await fs.readFile(DATA_FILE, 'utf-8');
+      const { lastScraped } = JSON.parse(existingData);
+      
+      if (lastScraped) {
+        const lastScrapedDate = new Date(lastScraped);
+        const now = new Date();
+        const hoursSinceLastScrape = (now - lastScrapedDate) / (1000 * 60 * 60);
+        
+        if (hoursSinceLastScrape < 24) {
+          const hoursRemaining = Math.ceil(24 - hoursSinceLastScrape);
+          console.log(`⏳ Last scrape was ${Math.floor(hoursSinceLastScrape)} hours ago.`);
+          console.log(`   Scraping is limited to once per day to avoid excessive requests.`);
+          console.log(`   Next scrape allowed in ~${hoursRemaining} hour(s).`);
+          console.log('');
+          console.log('   Use --force flag to override: node scripts/scrape-events.js --force');
+          process.exit(0);
+        }
+      }
+    } catch {
+      // No existing data file or invalid JSON, proceed with scrape
+    }
+  } else {
+    console.log('⚠️  Force flag detected - bypassing 24-hour limit');
+    console.log('');
+  }
+  
   try {
     // Run scrapers
     console.log('Starting scrape...');
