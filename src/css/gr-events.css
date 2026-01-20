@@ -4,7 +4,7 @@
    ========================================================================== */
 
 /* ==========================================================================
-   CSS Variables - Matching main site colors
+   CSS Variables - Matching main site colors (dark theme)
    ========================================================================== */
 .gr-events-app {
   --gr-background: #000000;
@@ -14,12 +14,12 @@
   --gr-primary-light: #EFA960;
   --gr-secondary: #F2B705;
   --gr-accent: #e7823c;
-  --gr-card-bg: #ffffff;
-  --gr-card-border: rgba(231, 130, 60, 0.15);
-  --gr-card-shadow: 0 8px 32px 0 rgba(231, 130, 60, 0.10), 0 1.5px 8px 0 rgba(0,0,0,0.04);
-  --gr-text-muted: #888888;
-  --gr-text-secondary: #666666;
-  --gr-text-dark: #000000;
+  --gr-card-bg: rgba(255, 255, 255, 0.05);
+  --gr-card-border: rgba(217, 82, 4, 0.2);
+  --gr-card-shadow: 0 8px 32px 0 rgba(217, 82, 4, 0.08), 0 1.5px 8px 0 rgba(0,0,0,0.2);
+  --gr-text-muted: #999999;
+  --gr-text-secondary: #777777;
+  --gr-text-light: #ffffff;
 }
 
 /* ==========================================================================
@@ -88,17 +88,17 @@
 }
 
 .gr-events-app ::-webkit-scrollbar-track {
-  background: rgba(217, 82, 4, 0.05);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 4px;
 }
 
 .gr-events-app ::-webkit-scrollbar-thumb {
-  background: rgba(217, 82, 4, 0.2);
+  background: rgba(217, 82, 4, 0.25);
   border-radius: 4px;
 }
 
 .gr-events-app ::-webkit-scrollbar-thumb:hover {
-  background: rgba(217, 82, 4, 0.3);
+  background: rgba(217, 82, 4, 0.4);
 }
 
 /* ==========================================================================
@@ -426,11 +426,11 @@
   margin: 0 auto 1.5rem;
   border-radius: 1rem;
   background: rgba(217, 82, 4, 0.1);
-  border: 1px solid rgba(217, 82, 4, 0.2);
+  border: 1px solid var(--gr-card-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
 }
 
 .gr-events-app .empty-title {
@@ -524,15 +524,15 @@
 
 .gr-events-app .modal-content {
   position: relative;
-  background: var(--gr-card-bg);
-  border: none;
+  background: #1a1a1a;
+  border: 1px solid var(--gr-card-border);
   border-radius: 16px;
   padding: 1.5rem;
   max-width: 32rem;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 25px 50px -12px rgba(217, 82, 4, 0.15), 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 10px 30px -10px rgba(217, 82, 4, 0.1);
 }
 
 .gr-events-app .modal-close {
@@ -545,7 +545,7 @@
 }
 
 .gr-events-app .modal-close:hover {
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
 }
 
 /* ==========================================================================
@@ -553,7 +553,7 @@
    ========================================================================== */
 .gr-events-app .card {
   background: var(--gr-card-bg);
-  border: none;
+  border: 1px solid var(--gr-card-border);
   border-radius: 16px;
   padding: 1.25rem;
   box-shadow: var(--gr-card-shadow);
@@ -561,8 +561,9 @@
 }
 
 .gr-events-app .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px 0 rgba(231, 130, 60, 0.15), 0 2px 10px 0 rgba(0,0,0,0.06);
+  transform: translateY(-3px);
+  border-color: var(--gr-primary);
+  box-shadow: 0 12px 40px 0 rgba(217, 82, 4, 0.15), 0 2px 10px 0 rgba(0,0,0,0.3);
 }
 
 .gr-events-app .card-link {
@@ -638,13 +639,13 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
-  color: var(--gr-text-dark);
+  color: var(--gr-foreground);
   transition: color 0.2s;
   margin-bottom: 0.5rem;
 }
 
 .gr-events-app .card:hover .event-title {
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
 }
 
 .gr-events-app .event-description {
@@ -693,9 +694,9 @@
   right: 0.75rem;
   padding: 0.5rem;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(217, 82, 4, 0.2);
+  border: 1px solid var(--gr-card-border);
   color: var(--gr-text-muted);
   opacity: 0;
   transition: all 0.2s;
@@ -706,9 +707,9 @@
 }
 
 .gr-events-app .event-calendar-btn:hover {
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
   border-color: var(--gr-primary);
-  background: white;
+  background: rgba(217, 82, 4, 0.15);
 }
 
 /* ==========================================================================
@@ -749,12 +750,11 @@
   width: 100%;
   padding: 0.75rem 1rem 0.75rem 3rem;
   border-radius: 50px;
-  background: var(--gr-card-bg);
-  border: 1px solid rgba(217, 82, 4, 0.15);
-  color: var(--gr-text-dark);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gr-card-border);
+  color: var(--gr-foreground);
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: var(--gr-card-shadow);
 }
 
 .gr-events-app .search-input::placeholder {
@@ -764,7 +764,7 @@
 .gr-events-app .search-input:focus {
   outline: none;
   border-color: var(--gr-primary);
-  box-shadow: 0 0 0 3px rgba(217, 82, 4, 0.1);
+  box-shadow: 0 0 0 3px rgba(217, 82, 4, 0.15);
 }
 
 .gr-events-app .select-btn {
@@ -773,15 +773,14 @@
   gap: 0.5rem;
   padding: 0.75rem 1rem;
   border-radius: 50px;
-  background: var(--gr-card-bg);
-  border: 1px solid rgba(217, 82, 4, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gr-card-border);
   color: var(--gr-text-muted);
   transition: all 0.3s ease;
-  box-shadow: var(--gr-card-shadow);
 }
 
 .gr-events-app .select-btn:hover {
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
   border-color: var(--gr-primary);
 }
 
@@ -797,15 +796,14 @@
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 500;
-  background: var(--gr-card-bg);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--gr-text-muted);
-  border: 1px solid rgba(217, 82, 4, 0.15);
+  border: 1px solid var(--gr-card-border);
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .gr-events-app .filter-chip:hover {
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
   border-color: var(--gr-primary);
 }
 
@@ -819,7 +817,7 @@
 .gr-events-app .filter-divider {
   width: 1px;
   height: 1.5rem;
-  background: rgba(217, 82, 4, 0.2);
+  background: rgba(217, 82, 4, 0.3);
   align-self: center;
   margin: 0 0.25rem;
 }
@@ -842,11 +840,10 @@
 .gr-events-app .sort-select {
   padding: 0.5rem 0.75rem;
   border-radius: 8px;
-  background: var(--gr-card-bg);
-  border: 1px solid rgba(217, 82, 4, 0.15);
-  color: var(--gr-text-dark);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gr-card-border);
+  color: var(--gr-foreground);
   font-size: 0.875rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .gr-events-app .sort-select:focus {
@@ -867,8 +864,8 @@
   width: 1rem;
   height: 1rem;
   border-radius: 0.25rem;
-  border: 1px solid rgba(217, 82, 4, 0.3);
-  background: var(--gr-card-bg);
+  border: 1px solid var(--gr-card-border);
+  background: rgba(255, 255, 255, 0.05);
   cursor: pointer;
   accent-color: var(--gr-primary);
 }
@@ -998,10 +995,10 @@
   margin-top: 0.5rem;
   width: 14rem;
   padding: 0.5rem;
-  background: var(--gr-card-bg);
-  border: none;
+  background: #1a1a1a;
+  border: 1px solid var(--gr-card-border);
   border-radius: 12px;
-  box-shadow: var(--gr-card-shadow);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
   z-index: 20;
 }
 
@@ -1017,12 +1014,12 @@
 }
 
 .gr-events-app .export-option:hover {
-  background: rgba(217, 82, 4, 0.08);
+  background: rgba(217, 82, 4, 0.15);
 }
 
 .gr-events-app .export-title {
   font-weight: 500;
-  color: var(--gr-text-dark);
+  color: var(--gr-foreground);
 }
 
 .gr-events-app .export-subtitle {
@@ -1048,15 +1045,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--gr-card-bg);
-  border: 1px solid rgba(217, 82, 4, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gr-card-border);
   color: var(--gr-text-muted);
   transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .gr-events-app .event-select-btn button:hover {
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
   border-color: var(--gr-primary);
 }
 
@@ -1096,35 +1092,34 @@
    ========================================================================== */
 .gr-events-app .calendar-container {
   background: var(--gr-card-bg);
-  border: none;
+  border: 1px solid var(--gr-card-border);
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: var(--gr-card-shadow);
 }
 
 /* FullCalendar Theme Overrides */
 .gr-events-app .fc {
-  --fc-border-color: rgba(217, 82, 4, 0.1);
-  --fc-button-bg-color: var(--gr-card-bg);
-  --fc-button-border-color: rgba(217, 82, 4, 0.2);
-  --fc-button-text-color: var(--gr-text-dark);
-  --fc-button-hover-bg-color: rgba(217, 82, 4, 0.1);
+  --fc-border-color: rgba(217, 82, 4, 0.15);
+  --fc-button-bg-color: rgba(255, 255, 255, 0.05);
+  --fc-button-border-color: var(--gr-card-border);
+  --fc-button-text-color: var(--gr-foreground);
+  --fc-button-hover-bg-color: rgba(217, 82, 4, 0.2);
   --fc-button-hover-border-color: var(--gr-primary);
   --fc-button-active-bg-color: var(--gr-primary);
   --fc-button-active-border-color: var(--gr-primary);
   --fc-event-bg-color: var(--gr-primary);
   --fc-event-border-color: var(--gr-primary-dark);
-  --fc-today-bg-color: rgba(217, 82, 4, 0.08);
-  --fc-page-bg-color: var(--gr-card-bg);
-  --fc-neutral-bg-color: var(--gr-card-bg);
-  --fc-list-event-hover-bg-color: rgba(217, 82, 4, 0.05);
+  --fc-today-bg-color: rgba(217, 82, 4, 0.1);
+  --fc-page-bg-color: transparent;
+  --fc-neutral-bg-color: rgba(255, 255, 255, 0.03);
+  --fc-list-event-hover-bg-color: rgba(217, 82, 4, 0.1);
 }
 
 .gr-events-app .fc .fc-toolbar-title {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
 }
 
 .gr-events-app .fc .fc-button {
@@ -1141,27 +1136,27 @@
 
 .gr-events-app .fc-theme-standard td,
 .gr-events-app .fc-theme-standard th {
-  border-color: rgba(217, 82, 4, 0.1);
+  border-color: rgba(217, 82, 4, 0.15);
 }
 
 .gr-events-app .fc .fc-daygrid-day {
-  background: var(--gr-card-bg);
+  background: transparent;
 }
 
 .gr-events-app .fc .fc-daygrid-day:hover {
-  background: rgba(217, 82, 4, 0.05);
-}
-
-.gr-events-app .fc .fc-daygrid-day.fc-day-today {
   background: rgba(217, 82, 4, 0.08);
 }
 
+.gr-events-app .fc .fc-daygrid-day.fc-day-today {
+  background: rgba(217, 82, 4, 0.12);
+}
+
 .gr-events-app .fc .fc-daygrid-day-number {
-  color: var(--gr-text-dark);
+  color: var(--gr-foreground);
 }
 
 .gr-events-app .fc .fc-col-header-cell-cushion {
-  color: var(--gr-text-dark);
+  color: var(--gr-text-muted);
   font-weight: 600;
 }
 
@@ -1180,28 +1175,28 @@
 }
 
 .gr-events-app .fc .fc-list-event:hover td {
-  background: rgba(217, 82, 4, 0.05);
+  background: rgba(217, 82, 4, 0.1);
 }
 
 .gr-events-app .fc .fc-list-day-cushion {
-  background: rgba(217, 82, 4, 0.05);
+  background: rgba(217, 82, 4, 0.08);
 }
 
 .gr-events-app .fc .fc-popover {
-  background: var(--gr-card-bg);
-  border-color: rgba(217, 82, 4, 0.2);
+  background: #1a1a1a;
+  border-color: var(--gr-card-border);
   border-radius: 12px;
   box-shadow: var(--gr-card-shadow);
 }
 
 .gr-events-app .fc .fc-popover-header {
-  background: var(--gr-card-bg);
-  color: var(--gr-text-dark);
+  background: #1a1a1a;
+  color: var(--gr-foreground);
   font-weight: 600;
 }
 
 .gr-events-app .fc .fc-more-popover .fc-popover-body {
-  background: var(--gr-card-bg);
+  background: #1a1a1a;
 }
 
 /* ==========================================================================
@@ -1224,8 +1219,7 @@
   height: 600px;
   border-radius: 16px;
   overflow: hidden;
-  border: none;
-  box-shadow: var(--gr-card-shadow);
+  border: 1px solid var(--gr-card-border);
 }
 
 .gr-events-app .map-sidebar {
@@ -1245,7 +1239,7 @@
 .gr-events-app .map-sidebar-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
   margin-bottom: 0.25rem;
 }
 
@@ -1267,8 +1261,8 @@
   display: block;
   padding: 0.75rem;
   border-radius: 10px;
-  background: rgba(217, 82, 4, 0.05);
-  border: 1px solid rgba(217, 82, 4, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--gr-card-border);
   transition: all 0.2s;
 }
 
@@ -1287,7 +1281,7 @@
 .gr-events-app .map-sidebar-event-title {
   font-weight: 500;
   font-size: 0.875rem;
-  color: var(--gr-text-dark);
+  color: var(--gr-foreground);
 }
 
 .gr-events-app .map-sidebar-event-meta {
@@ -1305,7 +1299,7 @@
 
 /* Leaflet Overrides */
 .gr-events-app .leaflet-container {
-  background: #f5f5f5;
+  background: #1a1a1a;
 }
 
 .gr-events-app .leaflet-marker-icon {
@@ -1313,34 +1307,33 @@
 }
 
 .gr-events-app .leaflet-popup-content-wrapper {
-  background: var(--gr-card-bg);
-  color: var(--gr-text-dark);
+  background: #1a1a1a;
+  color: var(--gr-foreground);
   border-radius: 12px;
-  border: none;
-  box-shadow: var(--gr-card-shadow);
+  border: 1px solid var(--gr-card-border);
 }
 
 .gr-events-app .leaflet-popup-tip {
-  background: var(--gr-card-bg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #1a1a1a;
+  border: 1px solid var(--gr-card-border);
 }
 
 .gr-events-app .leaflet-popup-close-button {
-  color: var(--gr-text-dark) !important;
+  color: var(--gr-foreground) !important;
 }
 
 .gr-events-app .leaflet-control-zoom a {
-  background: var(--gr-card-bg) !important;
-  color: var(--gr-text-dark) !important;
-  border-color: rgba(217, 82, 4, 0.2) !important;
+  background: #1a1a1a !important;
+  color: var(--gr-foreground) !important;
+  border-color: var(--gr-card-border) !important;
 }
 
 .gr-events-app .leaflet-control-zoom a:hover {
-  background: rgba(217, 82, 4, 0.1) !important;
+  background: rgba(217, 82, 4, 0.2) !important;
 }
 
 .gr-events-app .leaflet-control-attribution {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
   color: #888 !important;
 }
 
@@ -1357,8 +1350,8 @@
   font-size: 0.75rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  background: rgba(217, 82, 4, 0.1);
-  color: var(--gr-primary);
+  background: rgba(217, 82, 4, 0.2);
+  color: var(--gr-primary-light);
 }
 
 .gr-events-app .popup-title {
@@ -1366,7 +1359,7 @@
   font-weight: 600;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
-  color: var(--gr-text-dark);
+  color: var(--gr-foreground);
 }
 
 .gr-events-app .popup-meta {
@@ -1386,7 +1379,7 @@
 .gr-events-app .popup-meta-item svg {
   width: 0.875rem;
   height: 0.875rem;
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
 }
 
 .gr-events-app .popup-link {
@@ -1396,11 +1389,11 @@
   margin-top: 0.75rem;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
 }
 
 .gr-events-app .popup-link:hover {
-  color: var(--gr-primary-dark);
+  color: var(--gr-primary);
   text-decoration: underline;
 }
 
@@ -1418,7 +1411,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--gr-text-dark);
+  color: var(--gr-foreground);
   margin-bottom: 1rem;
 }
 
@@ -1445,13 +1438,13 @@
 .gr-events-app .event-modal-detail svg {
   width: 1.25rem;
   height: 1.25rem;
-  color: var(--gr-primary);
+  color: var(--gr-primary-light);
   flex-shrink: 0;
   margin-top: 0.125rem;
 }
 
 .gr-events-app .event-modal-location-name {
-  color: var(--gr-text-dark);
+  color: var(--gr-foreground);
   font-weight: 500;
 }
 

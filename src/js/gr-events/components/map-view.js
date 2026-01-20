@@ -223,7 +223,4 @@ function destroyMapView() {
 window.GREvents = window.GREvents || {};
 window.GREvents.initMapView = initMapView;
 window.GREvents.destroyMapView = destroyMapView;
-// #region agent log
-fetch('http://127.0.0.1:7245/ingest/57d3c4f2-eb6c-4edd-957c-6cde40b0a5e2',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'map-view.js:END',message:'Map View module loaded',data:{hasInitMapView:!!window.GREvents.initMapView},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1'})}).catch(()=>{});
-// #endregion
 })();

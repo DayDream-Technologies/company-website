@@ -469,7 +469,4 @@ function initListView(container, events) {
 // Export for use in other modules
 window.GREvents = window.GREvents || {};
 window.GREvents.initListView = initListView;
-// #region agent log
-fetch('http://127.0.0.1:7245/ingest/57d3c4f2-eb6c-4edd-957c-6cde40b0a5e2',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'list-view.js:END',message:'List View module loaded',data:{hasInitListView:!!window.GREvents.initListView},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H3'})}).catch(()=>{});
-// #endregion
 })();
