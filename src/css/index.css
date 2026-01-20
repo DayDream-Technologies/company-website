@@ -844,8 +844,11 @@ section {
 }
 
 .emerging-tech-featured {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .featured-tech-card {
@@ -1029,6 +1032,12 @@ section {
 }
 
 /* --- Responsive Styles for New Sections --- */
+@media (max-width: 1000px) {
+    .emerging-tech-featured {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 800px) {
     .emerging-tech-section {
         padding: 60px 20px;
@@ -1036,6 +1045,10 @@ section {
     
     .emerging-tech-title {
         font-size: 1.8rem;
+    }
+    
+    .emerging-tech-featured {
+        grid-template-columns: 1fr;
     }
     
     .featured-tech-card {
