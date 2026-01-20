@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +9,124 @@
 /* Contact Page Styling */
 .contact-page {
     text-align: center;
-    padding: 20px;
+    padding: 0;
+}
+
+/* Contact Hero Section */
+.contact-hero {
+    padding: 140px 40px 80px;
+    background: linear-gradient(180deg, transparent 0%, rgba(217, 82, 4, 0.05) 100%);
+}
+
+.contact-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.contact-hero-title .highlight {
+    color: #D95204;
+}
+
+.contact-hero-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.contact-hero-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.contact-features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #D95204;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.contact-feature svg {
+    width: 24px;
+    height: 24px;
+    stroke: #D95204;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 60px 40px 100px;
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-intro h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.form-intro p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #a0a0a0;
+}
+
+/* Responsive Contact Hero */
+@media (max-width: 800px) {
+    .contact-hero {
+        padding: 120px 20px 60px;
+    }
+    
+    .contact-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .contact-hero-description {
+        font-size: 1rem;
+    }
+    
+    .contact-features {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .contact-form-section {
+        padding: 40px 20px 80px;
+    }
+    
+    .form-intro h2 {
+        font-size: 1.5rem;
+    }
 }
 
 .contact-container {

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/index.css" />
-    <link rel="stylesheet" href="./src/css/contact.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
@@ -26,7 +25,7 @@
                 <li><a class="nav_link" id="current_page" href="index.html" title="Daydream's homepage">Home</a></li>
                 <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
                 <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
-                <li><a class="nav_link" href="#contact-section" title="Contact us">Contact</a></li>
+                <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
             </div>
         </ul>
         <ul class="respo_navbar">
@@ -51,11 +50,12 @@
             <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
             <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
             <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
-            <li><a class="nav_link" href="#contact-section" title="Contact us">Contact</a></li>
+            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
         </ul>
     </nav>
 
     <main>
+        <!-- Hero Section -->
         <section class="intro-section">
             <!-- Service icons around the intro section -->
             <div class="service-icon-container icon-1">
@@ -79,52 +79,55 @@
             
             <div class="three_to_one">
                 <div class="title_desc">
-                    <h1>Unlocking your full potential through continuous design innovation and expertise</h1>
-                    <p>Leverage intelligent technology and actionable insights to make smarter decisions and fuel sustainable growth. Daydream Technologies helps you turn data into results.</p>
+                    <h1>Modernizing the Technology Your Business Relies On</h1>
+                    <p>We help businesses upgrade their technology stack with modern solutions that drive efficiency, security, and growth. From legacy system updates to implementing cutting-edge platforms, DayDream Technologies is your partner in digital transformation.</p>
                 </div>
                 <div>
-                    <a class="proj-link" href="services.html">Check out our services <img src="./src/images/arrow.png" alt="arrow"></a>
+                    <a class="proj-link" href="contact.html">Start Your Transformation <img src="./src/images/arrow.png" alt="arrow"></a>
                 </div>
             </div>
         </section>
-        <section class="projects-section">
-            <h2 class="projects-title">Projects</h2>
-            <div class="projects-container">
-                <!-- Websites Section -->
-                <div class="project-category">
-                    <h3 class="category-title">Web Development</h3>
-                    <p class="category-description">We craft compelling visuals that speak your brand's language. Whether it's a new logo, product packaging, or a full-scale marketing campaign, our graphic design team combines creativity with strategy to ensure every pixel has purpose.</p>
-                    <div class="project-cards">
-                        <div class="project-card hidden">
-                            <a href="https://daydreamtechnologies.net" class="project-link">Visit Site</a>
-                            <img src="./src/images/Projects/Websites/daydream_ss.png" alt="Daydream Website Screenshot" />
-                        </div>
-                        <div class="project-card hidden">
-                            <a href="http://cognitiondaily.net/" target="_blank" class="project-link">Visit Site</a>
-                            <img src="./src/images/Projects/Websites/jay_website_ss.png" alt="Jay Website Screenshot" />
-                        </div>
-                        <div class="project-card hidden">
-                            <a href="http://ryantalbot.net/" target="_blank" class="project-link">Visit Site</a>
-                            <img src="./src/images/Projects/Websites/ryan_talbot_ss.png" alt="Ryan Talbot Website Screenshot" />
-                        </div>
+
+        <!-- Emerging Technologies Section -->
+        <section class="emerging-tech-section">
+            <div class="emerging-tech-header">
+                <h2 class="emerging-tech-title">Emerging Technologies We're Implementing</h2>
+                <p class="emerging-tech-subtitle">Stay ahead of the curve with next-generation solutions</p>
+            </div>
+            <div class="emerging-tech-featured">
+                <div class="featured-tech-card">
+                    <div class="featured-tech-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <rect x="10" y="20" width="60" height="40" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                            <rect x="18" y="28" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="44" y1="32" x2="62" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="44" y1="38" x2="56" y2="38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="28" cy="52" r="4" stroke="currentColor" stroke-width="2"/>
+                            <line x1="32" y1="52" x2="62" y2="52" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
                     </div>
-                </div>
-                
-                <!-- Graphic Design Section -->
-                <div class="project-category">
-                    <h3 class="category-title">Graphic Design</h3>
-                    <p class="category-description">We craft compelling visuals that speak your brand's language. Whether it's a new logo, product packaging, or a full-scale marketing campaign, our graphic design team combines creativity with strategy to ensure every pixel has purpose.</p>
-                    <div class="project-cards">
-                        <div class="project-card hidden">
-                            <img src="./src/images/Projects/Graphic Design/Company_Logo.png" alt="Company Logo" />
-                        </div>
-                        <div class="project-card hidden">
-                            <img src="./src/images/Projects/Graphic Design/Ryan_Talbot_Logo.jpg" alt="Ryan Talbot Logo" />
-                        </div>
+                    <div class="featured-tech-content">
+                        <span class="tech-badge">Featured Partnership</span>
+                        <h3>Cloud Cards</h3>
+                        <p>Revolutionary cloud-based payment card platform providing seamless transaction processing and business intelligence tools. We're helping clients implement this cutting-edge payment infrastructure to modernize their financial operations.</p>
+                        <ul class="tech-features">
+                            <li>Seamless payment processing</li>
+                            <li>Real-time business intelligence</li>
+                            <li>Secure cloud infrastructure</li>
+                            <li>Easy integration with existing systems</li>
+                        </ul>
+                        <a href="https://www.cloud-cards.link/" target="_blank" rel="noopener noreferrer" class="tech-link">
+                            Learn More About Cloud Cards
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Reviews Section -->
         <section class="review-section">
             <h2 class="review-title">What our clients say about us</h2>
             <div class="review-container">
@@ -190,103 +193,35 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section" id="contact-section">
-            <div class="title_desc">
-                <h2 class="contact-title">Got a vision? Let’s make it real.</h2>
-                <p>Reach out with your questions, ideas, or projects—we’re here to bring them to life.</p>
-            </div>
-            <div class="contact-container">
-                <!-- Contact Form Section -->
-                <!-- From Uiverse.io by gharsh11032000 -->
-                <!-- Here is the link; https://uiverse.io/gharsh11032000/bitter-cow-59 -->
-                <div class="form-container">
-                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
-    
-                        <input type="hidden" name="access_key" value="ef24714b-247c-467f-b061-4b0f8c7e5fc1">
-                        <input type="hidden" name="redirect" value="https://www.daydreamtechnologies.net/thanks.html">
-    
-                        <div class="form-group">
-                            <label for="name">Name <span class="required-asterisk">*</span></label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email <span class="required-asterisk">*</span></label>
-                            <input type="text" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="job_title">Job Title</label>
-                            <input type="text" id="job_title" name="job_title" placeholder="e.g., Marketing Manager, CEO, Developer">
-                        </div>
-                        <div class="form-group">
-                            <label for="website_url">Website URL (if applicable)</label>
-                            <input type="url" id="website_url" name="website_url" placeholder="https://yourwebsite.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">What service are you looking for? <span class="required-asterisk">*</span></label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option value="web-development">Web Development</option>
-                                <option value="graphic-design">Graphic Design</option>
-                                <option value="cybersecurity">Cybersecurity</option>
-                                <option value="hardware-development">Hardware Development</option>
-                                <option value="sales-consulting">Sales Consulting</option>
-                                <option value="research">Research</option>
-                                <option value="Integration&Setup">Integration&Setup</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Project Type <span class="required-asterisk">*</span></label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="project_type" value="new-project" required>
-                                    <span class="radio-text">New project</span>
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="project_type" value="redesign" required>
-                                    <span class="radio-text">Redesign</span>
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="project_type" value="maintenance" required>
-                                    <span class="radio-text">Maintenance</span>
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="project_type" value="consultation" required>
-                                    <span class="radio-text">Consultation</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="hear_about">How did you hear about us?</label>
-                            <select id="hear_about" name="hear_about">
-                                <option value="">Select an option</option>
-                                <option value="google-search">Google search</option>
-                                <option value="social-media">Social media</option>
-                                <option value="referral">Referral</option>
-                                <option value="previous-client">Previous client</option>
-                                <option value="advertisement">Advertisement</option>
-                                <option value="conference">Conference/Event</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="main_website">How Can We Help You? <span class="required-asterisk">*</span></label>
-                            <textarea name="main_website" id="main_website" rows="10" cols="50" required=""></textarea>
-                        </div>
-                        <button class="form-submit-btn" type="submit">Send</button>
-                    </form>
-                </div>
+
+        <!-- Contact CTA Section -->
+        <section class="contact-cta-section">
+            <div class="cta-content">
+                <h2>Ready to Modernize Your Business?</h2>
+                <p>Let's discuss how we can help upgrade your technology and drive your business forward.</p>
+                <a href="contact.html" class="cta-button">
+                    Get in Touch
+                    <svg viewBox="0 0 24 24" fill="none" class="cta-arrow">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <a class="footer_link">
-            <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
-            DayDream Technologies LLC
-        </a>
+        <div class="footer_left">
+            <a class="footer_link" href="index.html">
+                <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
+                DayDream Technologies LLC
+            </a>
+            <p class="footer_copyright">© 2026 DayDream Technologies LLC. All rights reserved.</p>
+        </div>
         <div class="footer_links">
-            <a class="footer_link" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">LinkedIn</a>
+            <a class="footer_link footer_social" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/" title="Follow us on LinkedIn">
+                <img src="./src/images/alt-linkedin.jpg" alt="LinkedIn" class="social-icon" />
+                <span>LinkedIn</span>
+            </a>
         </div>
     </footer>
 </body>

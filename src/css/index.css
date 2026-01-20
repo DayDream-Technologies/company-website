@@ -814,6 +814,273 @@ section {
 
 }
 
+/* --- Emerging Technologies Section --- */
+.emerging-tech-section {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, transparent 0%, rgba(217, 82, 4, 0.05) 50%, transparent 100%);
+    min-height: auto;
+}
+
+.emerging-tech-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.emerging-tech-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.emerging-tech-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
+
+.emerging-tech-featured {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.featured-tech-card {
+    display: flex;
+    gap: 40px;
+    background: #0a0a0a;
+    border: 1px solid rgba(217, 82, 4, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.featured-tech-card:hover {
+    border-color: rgba(217, 82, 4, 0.6);
+    box-shadow: 0 10px 40px rgba(217, 82, 4, 0.15);
+}
+
+.featured-tech-icon {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(217, 82, 4, 0.1);
+    border-radius: 20px;
+    color: #D95204;
+}
+
+.featured-tech-icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.featured-tech-content {
+    flex: 1;
+}
+
+.tech-badge {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #D95204;
+    background: rgba(217, 82, 4, 0.15);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.featured-tech-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.featured-tech-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    color: #a0a0a0;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.tech-features {
+    list-style: none;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.tech-features li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #cccccc;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tech-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: #D95204;
+    border-radius: 50%;
+}
+
+.tech-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #D95204;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tech-link svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.tech-link:hover {
+    color: #ff6b1a;
+}
+
+.tech-link:hover svg {
+    transform: translate(3px, -3px);
+}
+
+/* --- Contact CTA Section --- */
+.contact-cta-section {
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+}
+
+.contact-cta-section .cta-content {
+    text-align: center;
+    max-width: 700px;
+}
+
+.contact-cta-section .cta-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.contact-cta-section .cta-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-cta-section .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #D95204, #b84403);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(217, 82, 4, 0.4);
+}
+
+.contact-cta-section .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(217, 82, 4, 0.5);
+}
+
+.contact-cta-section .cta-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.contact-cta-section .cta-button:hover .cta-arrow {
+    transform: translateX(4px);
+}
+
+/* --- Responsive Styles for New Sections --- */
+@media (max-width: 800px) {
+    .emerging-tech-section {
+        padding: 60px 20px;
+    }
+    
+    .emerging-tech-title {
+        font-size: 1.8rem;
+    }
+    
+    .featured-tech-card {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 24px;
+    }
+    
+    .featured-tech-icon {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+    
+    .featured-tech-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .featured-tech-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .tech-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-cta-section {
+        padding: 60px 20px;
+    }
+    
+    .contact-cta-section .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-cta-section .cta-content p {
+        font-size: 1rem;
+    }
+    
+    .contact-cta-section .cta-button {
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
+}
+
 .hidden {
     opacity: 0;
     filter: blur(5px);

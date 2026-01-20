@@ -55,12 +55,45 @@
         </ul>
     </nav>
 
-    <main class="contact-page"><br>
-        <div class="title_desc">
-            <h1 id="alt-title">Contact Us</h1><br>
-            <p>Any question or remarks? Just write us a message!</p><br><br>
-        </div>
-        <div class="contact-container">
+    <main class="contact-page">
+        <!-- Welcome Hero Section -->
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">We're Excited to <span class="highlight">Work With You</span></h1>
+                <p class="contact-hero-subtitle">Every great partnership starts with a conversation.</p>
+                <p class="contact-hero-description">
+                    Whether you're looking to modernize your business technology, launch a new project, or explore innovative solutions, we're here to help. Our team is passionate about turning your vision into reality.
+                </p>
+                <div class="contact-features">
+                    <div class="contact-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Quick Response Time</span>
+                    </div>
+                    <div class="contact-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Dedicated Team</span>
+                    </div>
+                    <div class="contact-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Proven Results</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="form-intro">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and we'll get back to you within 24-48 hours.</p>
+            </div>
+            <div class="contact-container">
             <!-- Contact Form Section -->
             <!-- From Uiverse.io by gharsh11032000 -->
             <!-- Here is the link; https://uiverse.io/gharsh11032000/bitter-cow-59 -->
@@ -140,16 +173,23 @@
                     <button class="form-submit-btn" type="submit">Send</button>
                 </form>
             </div>
-        </div><br><br><br>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <a class="footer_link">
-            <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
-            DayDream Technologies LLC
-        </a>
+        <div class="footer_left">
+            <a class="footer_link" href="index.html">
+                <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
+                DayDream Technologies LLC
+            </a>
+            <p class="footer_copyright">© 2026 DayDream Technologies LLC. All rights reserved.</p>
+        </div>
         <div class="footer_links">
-            <a class="footer_link" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">LinkedIn</a>
+            <a class="footer_link footer_social" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/" title="Follow us on LinkedIn">
+                <img src="./src/images/alt-linkedin.jpg" alt="LinkedIn" class="social-icon" />
+                <span>LinkedIn</span>
+            </a>
         </div>
     </footer>
 </body>
