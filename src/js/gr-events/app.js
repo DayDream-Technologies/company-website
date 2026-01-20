@@ -245,9 +245,7 @@
    */
   function renderActiveView() {
     if (state.events.length === 0) return;
-    // #region agent log
-    fetch('http://127.0.0.1:7245/ingest/57d3c4f2-eb6c-4edd-957c-6cde40b0a5e2',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:renderActiveView',message:'About to render view',data:{activeView:state.activeView,hasInitListView:typeof initListView,hasInitCalendarView:typeof initCalendarView,hasInitMapView:typeof initMapView},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H3'})}).catch(()=>{});
-    // #endregion
+    
     switch (state.activeView) {
       case 'list':
         initListView(elements.listView, state.events);
