@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/projects.css">
-    <link rel="stylesheet" href="./src/css/contact.css">
     <link rel="stylesheet" href="./src/css/footer.css" />
     <script src="./src/js/main.js" defer></script>
     <link rel="icon" href="./src/images/favicon.ico" />
 </head>
 <body>
     <nav>
-        <!-- Cool nav idea; https://uiverse.io/Admin12121/soft-falcon-79 -->
         <ul class="links">
             <li>
                 <a class="nav_logo" href="index.html">
@@ -25,8 +23,8 @@
             </li>
             <div class="nav_links">
                 <li><a class="nav_link" href="index.html" title="Daydream's homepage">Home</a></li>
-                <li><a class="nav_link" id="current_page" href="projects.html" title="Our Projects">Services</a></li>
-                <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+                <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
+                <li><a class="nav_link" id="current_page" href="projects.html" title="Our projects">Projects</a></li>
                 <li><a class="nav_link" id="contact_form" href="contact.html" title="Contact us">Contact</a></li>
             </div>
         </ul>
@@ -47,162 +45,166 @@
                     </svg>
                 </label>
             </li>
-            <!--
-            Copyright - 2025 JulanDeAlb (JulanDeAlb) 
-
-            Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-            
-            The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-            
-            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-            -->            
         </ul>
         <ul class="dropdown">
             <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
-            <li><a class="nav_link" href="projects.html" title="Our projects">Services</a></li>
-            <li><a class="nav_link" href="team.html" title="Meet the team">Team</a></li>
+            <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
+            <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
             <li><a class="nav_link" id="contact_form" href="contact.html" title="Contact us">Contact</a></li>
         </ul>
     </nav>
     
     <main>
-        <!--
-        Copyright - 2025 AbanoubMagdy1 (Abanoub Magdy) 
+        <!-- Hero Section -->
+        <section class="projects-hero">
+            <!-- Animated SVG Background Elements -->
+            <div class="hero-bg-shapes">
+                <svg class="shape shape-1" viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="50" r="40" stroke="#D95204" stroke-width="2" opacity="0.3"/>
+                    <circle cx="50" cy="50" r="25" stroke="#D95204" stroke-width="1.5" opacity="0.2"/>
+                </svg>
+                <svg class="shape shape-2" viewBox="0 0 100 100" fill="none">
+                    <rect x="20" y="20" width="60" height="60" stroke="#D95204" stroke-width="2" opacity="0.25" rx="8"/>
+                </svg>
+                <svg class="shape shape-3" viewBox="0 0 100 100" fill="none">
+                    <polygon points="50,10 90,90 10,90" stroke="#D95204" stroke-width="2" fill="none" opacity="0.2"/>
+                </svg>
+                <svg class="shape shape-4" viewBox="0 0 100 100" fill="none">
+                    <path d="M10 50 Q 50 10, 90 50 Q 50 90, 10 50" stroke="#D95204" stroke-width="2" opacity="0.15"/>
+                </svg>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">Our <span class="highlight">Projects</span></h1>
+                <p class="hero-subtitle">Building solutions that make a difference.</p>
+                <p class="hero-description">From community tools to innovative applications, we create digital experiences that serve real needs and empower our community.</p>
+            </div>
+        </section>
 
-        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        <!-- Featured Projects Section -->
+        <section class="projects-bento">
+            <div class="bento-grid">
+                <!-- GR Events Calendar - Large Card -->
+                <div class="bento-card bento-large" data-project="gr-events">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" class="project-svg">
+                            <!-- Calendar -->
+                            <rect x="10" y="16" width="60" height="52" rx="4" stroke="currentColor" stroke-width="2.5" class="svg-line"/>
+                            <line x1="10" y1="32" x2="70" y2="32" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <line x1="26" y1="8" x2="26" y2="24" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="svg-line"/>
+                            <line x1="54" y1="8" x2="54" y2="24" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="svg-line"/>
+                            <!-- Calendar dots -->
+                            <circle cx="26" cy="44" r="3" fill="currentColor" class="svg-dot"/>
+                            <circle cx="40" cy="44" r="3" fill="currentColor" class="svg-dot"/>
+                            <circle cx="54" cy="44" r="3" fill="currentColor" class="svg-dot"/>
+                            <circle cx="26" cy="56" r="3" fill="currentColor" class="svg-dot"/>
+                            <circle cx="40" cy="56" r="3" fill="currentColor" class="svg-dot"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>GR Events Calendar</h3>
+                        <p>A comprehensive community events aggregator for Grand Rapids. Discover local events, networking opportunities, and community gatherings all in one place with list, calendar, and map views.</p>
+                        <ul class="card-features">
+                            <li>Multiple event sources aggregated</li>
+                            <li>Interactive map and calendar views</li>
+                            <li>Export events to your calendar</li>
+                        </ul>
+                        <a href="gr-events.html" class="project-link">
+                            Explore Events
+                            <svg viewBox="0 0 24 24" fill="none" class="link-arrow">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
-        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                <!-- Cognition Daily - Large Card -->
+                <div class="bento-card bento-large" data-project="cognition-daily">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" class="project-svg">
+                            <!-- Brain outline -->
+                            <path d="M40 12 C28 12, 16 22, 16 36 C16 44, 20 50, 26 54 L26 64 C26 66, 28 68, 30 68 L50 68 C52 68, 54 66, 54 64 L54 54 C60 50, 64 44, 64 36 C64 22, 52 12, 40 12Z" stroke="currentColor" stroke-width="2.5" class="svg-line"/>
+                            <!-- Brain waves -->
+                            <path d="M28 36 Q32 32, 36 36 Q40 40, 44 36 Q48 32, 52 36" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                            <path d="M32 44 Q36 40, 40 44 Q44 48, 48 44" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                            <!-- Light rays -->
+                            <line x1="40" y1="4" x2="40" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                            <line x1="56" y1="8" x2="54" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                            <line x1="24" y1="8" x2="26" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cognition Daily</h3>
+                        <p>A brain-health-focused app emphasizing habit tracking, cognitive wellness, and long-term independence, especially designed for older adults seeking to maintain mental sharpness.</p>
+                        <ul class="card-features">
+                            <li>Daily habit tracking</li>
+                            <li>Cognitive wellness monitoring</li>
+                            <li>Independence-focused design</li>
+                        </ul>
+                        <a href="https://cognitiondaily.net/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            Visit Site
+                            <svg viewBox="0 0 24 24" fill="none" class="link-arrow">
+                                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-        -->
-        <div class="proj-cat">
-            <h3>Graphic Design</h3>
-            <p>We craft compelling visuals that speak your brand's language. Whether it's a new logo, product packaging, or a full-scale marketing campaign, our graphic deisgn team combines creativity with strategy to ensure every pixel has purpose.</p>
-            <div class="explore">
-                <label class="container">
-                    <input type="checkbox" checked="checked">
-                    <div class="line1"></div>
-                    <div class="line1 line-indicator"></div>
-                </label>
-                <p>Explore Projects</p>
-            </div>
-            <div class="dropdown-content">
-                <div class="image-container">
-                    <img src="./src/images/Projects/Graphic Design/Ryan_Talbot_Logo.jpg" alt="Ryan Talbot's Logo">
-                    <h3>Ryan Talbot's Logo</h3>
-                    <p>We brought USA Decathlete Ryan Talbot's vision to life by designing a custom logo that perfectly captures his brand identity.</p>
+        <!-- Nonprofit Commitment Section -->
+        <section class="nonprofit-section">
+            <div class="nonprofit-content">
+                <div class="nonprofit-icon">
+                    <svg viewBox="0 0 80 80" fill="none">
+                        <path d="M40 16 L44 28 L56 28 L46 36 L50 48 L40 40 L30 48 L34 36 L24 28 L36 28 Z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                        <circle cx="40" cy="40" r="28" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                    </svg>
                 </div>
-                <div class="image-container">
-                    <img src="./src/images/Company_Logo.png" alt="DayDream Technologies' Logo">
-                    <h3>DayDream Technologies Logo</h3>
-                    <p>We crafted a custom logo for DayDream Technologies that reflects our commitment to turning creative visions into technological reality.</p>
-                </div>
+                <h2 class="nonprofit-title">Giving Back to Our Community</h2>
+                <p class="nonprofit-description">
+                    DayDream Technologies is committed to making a positive impact. We complete <strong>one project each quarter at no cost</strong> for local nonprofits, helping organizations that serve our community achieve their digital goals.
+                </p>
+                <p class="nonprofit-cta-text">
+                    Are you a nonprofit organization with a project in mind? We'd love to hear from you.
+                </p>
+                <a href="contact.html" class="nonprofit-button">
+                    Get in Touch
+                    <svg viewBox="0 0 24 24" fill="none" class="btn-arrow">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
-        </div>
-        <div class="proj-cat">
-            <h3>Web Development</h3>
-            <p>Your website is often the first impression. We make sure it's unforgettable. From simple landing pages to complex web platforms. We build responsive, secure, and high-performance websites tailored to your needs.</p>
-            <div class="explore">
-                <label class="container">
-                    <input type="checkbox" checked="checked">
-                    <div class="line1"></div>
-                    <div class="line1 line-indicator"></div>
-                </label>
-                <p>Explore Projects</p>
-            </div>
-            <div class="dropdown-content">
-                <div class="image-container">
-                    <img src="./src/images/rubiks-default.jpg" alt="Rubiks Cube">
-                    <a class="image-button" href="#" title="Rubik's Cube Website">Open Website ↗</a>
-                    <h3>Bluetooth Rubik's Cube</h3>
-                    <p>We designed an interactive rubik's cube for...</p>
-                </div>
-                <div class="image-container">
-                    <img src="./src/images/Company_Logo.png" alt="DayDream Technologies Logo">
-                    <a class="image-button" href="#" title="Rubik's Cube Website">Open Website ↗</a>
-                    <h3>DayDream Technologies Website</h3>
-                    <p>We designed and built the DayDream website from the ground up using pure HTML, CSS, and JS.</p>
-                </div>
-            </div>
-        </div>
-        <div class="proj-cat">
-            <h3>UI/UX Design</h3>
-            <p>We don't just make things look good-we make them work beautifully. Our UI/UX team blends user psychology with intuitive design to create experiences that delight and convert.</p>
-            <div class="explore">
-                <label class="container">
-                    <input type="checkbox" checked="checked">
-                    <div class="line1"></div>
-                    <div class="line1 line-indicator"></div>
-                </label>
-                <p>Explore Projects</p>
-            </div>
-            <div class="dropdown-content">
-                <!-- Place the content from your image here -->
-            </div>
-        </div>
+        </section>
 
-        <!--<div id="projects-container" class="project-grid">
-            <div class="project-item">
-                <h3>Bluetooth Rubiks Cube</h3>
-                <p>Day Dream Technologies</p>
-                <img src="./src/images/rubiks-cube.png" alt="Rubiks Cube">
+        <!-- CTA Section -->
+        <section class="projects-cta">
+            <div class="cta-content">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's discuss how we can bring your vision to life.</p>
+                <a href="contact.html" class="cta-button">
+                    Start a Conversation
+                    <svg viewBox="0 0 24 24" fill="none" class="cta-arrow">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
-        </div>
-
-        <div class="title_desc"><br>
-            <h1>Our Recent Projects</h1><br>
-            <div class="team-filters">
-                <button class="filter-btn" data-team="Web">Web</button>
-                <button class="filter-btn" data-team="Graphic Design">Graphic Design</button>
-                <button class="filter-btn" data-team="Mobile Apps">Mobile Apps</button>
-                <button class="filter-btn" data-team="APIs">APIs</button>
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project-item" data-team="Web">
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/ryan_talbot_ss.png" 
-                        alt="Ryan Talbot Website Screenshot" 
-                        class="ryan_talbot_ss"
-                    >
-                </div>
-            </div>
-            <div class="project-item" data-team="Web">
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/jay_website_ss.png" 
-                        alt="Jay Website Screenshot" 
-                        class="jay_website_ss"
-                    >
-                </div>
-            </div>
-            <div class="project-item" data-team="Web">
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Websites/daydream_ss.png" 
-                        alt="DayDream Website Screenshot">
-                </div>
-            </div>
-            <div class="project-item" data-team="Graphic Design">
-                <div class="screenshot-container">
-                    <img 
-                        src="./src/images/Projects/Graphic Design/Ryan_Talbot_Logo.jpg" 
-                        alt="Ryan Talbot Logo" 
-                        class="ryan_talbot_logo"
-                    >
-                </div>
-            </div>
-        </div><br><br><br>-->
+        </section>
     </main>
     
     <footer>
-        <a class="footer_link">
-            <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
-            DayDream Technologies LLC
-        </a>
+        <div class="footer_left">
+            <a class="footer_link" href="index.html">
+                <img class="linkdn" src="./src/images/Company_Logo.png" alt="Daydream Technologies" />
+                DayDream Technologies LLC
+            </a>
+            <p class="footer_copyright">© 2026 DayDream Technologies LLC. All rights reserved.</p>
+        </div>
         <div class="footer_links">
-            <a class="footer_link" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/">LinkedIn</a>
+            <a class="footer_link footer_social" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/" title="Follow us on LinkedIn">
+                <img src="./src/images/alt-linkedin.jpg" alt="LinkedIn" class="social-icon" />
+                <span>LinkedIn</span>
+            </a>
         </div>
     </footer>
 </body>
