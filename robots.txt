@@ -1,0 +1,41 @@
+# robots.txt for DayDream Technologies
+# https://www.daydreamtechnologies.net
+
+User-agent: *
+Allow: /
+
+# Disallow utility pages
+Disallow: /thanks.html
+Disallow: /team.html
+
+# Disallow source files
+Disallow: /src/js/
+Disallow: /src/css/
+Disallow: /src/data/
+Disallow: /scripts/
+Disallow: /node_modules/
+
+# Allow images for rich results
+Allow: /src/images/
+
+# Sitemap location
+Sitemap: https://www.daydreamtechnologies.net/sitemap.xml
+
+# AI crawlers - Allow for AI search optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /

@@ -3,12 +3,97 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GR Events Calendar | Daydream Technologies</title>
+    <title>GR Events Calendar | Grand Rapids Community Events by DayDream Technologies</title>
+    <meta name="description" content="Discover Grand Rapids community events in one place. Interactive calendar, map view, and list view. Filter by category and export to your calendar." />
+    <meta name="keywords" content="Grand Rapids events, GR events calendar, community events Michigan, things to do Grand Rapids, local events" />
+    <meta name="author" content="DayDream Technologies" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.daydreamtechnologies.net/gr-events.html" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="GR Events Calendar | Grand Rapids Community Events" />
+    <meta property="og:description" content="Discover Grand Rapids community events in one place. Interactive calendar, map view, and list view. Filter by category and export to your calendar." />
+    <meta property="og:image" content="https://www.daydreamtechnologies.net/src/images/Company_Logo.png" />
+    <meta property="og:url" content="https://www.daydreamtechnologies.net/gr-events.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DayDream Technologies" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GR Events Calendar | Grand Rapids Community Events" />
+    <meta name="twitter:description" content="Discover Grand Rapids community events in one place. Interactive calendar, map view, and list view." />
+    <meta name="twitter:image" content="https://www.daydreamtechnologies.net/src/images/Company_Logo.png" />
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/gr-events.css" />
     <link rel="icon" href="./src/images/favicon.ico" />
+    
+    <!-- Structured Data (JSON-LD) for GR Events -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebApplication",
+                "@id": "https://www.daydreamtechnologies.net/gr-events.html",
+                "url": "https://www.daydreamtechnologies.net/gr-events.html",
+                "name": "GR Events Calendar",
+                "description": "Interactive calendar aggregating community events from across Grand Rapids, Michigan. Features calendar view, map view, list view, category filtering, and calendar export.",
+                "applicationCategory": "EventApplication",
+                "operatingSystem": "Web Browser",
+                "browserRequirements": "Requires JavaScript",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "featureList": [
+                    "Interactive calendar view",
+                    "Map view with event locations",
+                    "List view for easy browsing",
+                    "Category filtering",
+                    "Export events to personal calendar",
+                    "Search functionality"
+                ],
+                "creator": {
+                    "@id": "https://www.daydreamtechnologies.net/#organization"
+                },
+                "isPartOf": {
+                    "@id": "https://www.daydreamtechnologies.net/#website"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.daydreamtechnologies.net/gr-events.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.daydreamtechnologies.net/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Projects",
+                        "item": "https://www.daydreamtechnologies.net/projects.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "GR Events Calendar",
+                        "item": "https://www.daydreamtechnologies.net/gr-events.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
     
     <!-- Google Fonts - Outfit for GR Events -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
