@@ -2,7 +2,10 @@
  * GR Events Calendar - ICS Export Utility
  */
 
-const { formatICSDate, formatGoogleDate } = window.GREvents.DateUtils;
+(function() {
+  'use strict';
+  
+  const { formatICSDate, formatGoogleDate } = window.GREvents.DateUtils;
 
 /**
  * Escape special characters for ICS format
@@ -156,3 +159,7 @@ window.GREvents.ICSExport = {
   downloadICS,
   getGoogleCalendarUrl,
 };
+// #region agent log
+fetch('http://127.0.0.1:7245/ingest/57d3c4f2-eb6c-4edd-957c-6cde40b0a5e2',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'ics-export.js:END',message:'ICS Export module loaded',data:{hasICSExport:!!window.GREvents.ICSExport},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1'})}).catch(()=>{});
+// #endregion
+})();
