@@ -39,7 +39,7 @@ body {
 
 .nav_links {
     display: grid;
-    grid-template-columns: repeat(5, 125px);
+    grid-template-columns: repeat(5, minmax(90px, 115px));
     grid-template-rows: 12vh;
     align-items: center;
     justify-items: center;

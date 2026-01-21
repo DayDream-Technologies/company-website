@@ -28,6 +28,12 @@ const SOURCE_CONFIG = {
     url: 'https://grandrapids.org/events/',
     color: '#2196F3', // Blue
   },
+  'gr-junior-chamber': {
+    id: 'gr-junior-chamber',
+    name: 'GR Junior Chamber',
+    url: 'https://www.grjuniorchamber.com/',
+    color: '#9C27B0', // Purple
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)
