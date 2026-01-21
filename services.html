@@ -384,6 +384,28 @@
                         <p>Strategic digital marketing that amplifies your brand. SEO, social media management, content strategy, and paid advertising — all working together to grow your business.</p>
                     </div>
                 </div>
+
+                <!-- E-commerce - Wide Card -->
+                <div class="bento-card bento-wide" data-service="ecommerce">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 60" fill="none" class="service-svg">
+                            <!-- Shopping Cart -->
+                            <circle cx="24" cy="52" r="4" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <circle cx="56" cy="52" r="4" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <path d="M8 8 L16 8 L24 40 L60 40 L68 16 L20 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-line"/>
+                            <!-- Product box in cart -->
+                            <rect x="32" y="22" width="20" height="14" stroke="currentColor" stroke-width="2" rx="2" class="svg-line"/>
+                            <line x1="42" y1="22" x2="42" y2="36" stroke="currentColor" stroke-width="1.5" class="svg-line"/>
+                            <!-- Price tag -->
+                            <circle cx="66" cy="8" r="6" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <text x="66" y="11" text-anchor="middle" font-size="8" fill="currentColor">$</text>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>E-commerce</h3>
+                        <p>Launch and scale your online store with platforms like Shopify, WooCommerce, or custom solutions. From product catalogs and payment processing to inventory management and shipping integrations — we build stores that convert.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -427,6 +449,10 @@
                         <div class="legend-color" style="background-color: #00cc77;"></div>
                         <span>Graphic Design</span>
                     </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #FF4081;"></div>
+                        <span>E-commerce</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -449,7 +475,8 @@
         const projectTypes = {
             'Web Development': '#D95204',
             'Web Hosting': '#0099ff',
-            'Graphic Design': '#00cc77'
+            'Graphic Design': '#00cc77',
+            'E-commerce': '#FF4081'
         };
 
         // Sample projects
@@ -533,6 +560,14 @@
                 lat: 35.6762,
                 lng: 139.6503,
                 link: ''
+            },
+            {
+                name: 'SABE Sauce',
+                types: ['E-commerce'],
+                description: 'Clean-ingredient single-serving sauce brand with Shopify e-commerce platform, featuring product showcases, subscription options, and seamless checkout.',
+                lat: 25.7617,
+                lng: -80.1918,
+                link: 'https://sabesauce.com/'
             }
         ];
 
