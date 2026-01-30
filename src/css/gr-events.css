@@ -388,6 +388,84 @@
 }
 
 /* ==========================================================================
+   Filter Controls
+   ========================================================================== */
+.gr-events-app .filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gr-events-app .filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: var(--gr-text-muted);
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.gr-events-app .filter-checkbox:hover {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .filter-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.gr-events-app .checkbox-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--gr-primary);
+  border-radius: 4px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.gr-events-app .filter-checkbox input[type="checkbox"]:checked + .checkbox-custom {
+  background: var(--gr-primary);
+}
+
+.gr-events-app .checkbox-custom::after {
+  content: '';
+  width: 5px;
+  height: 9px;
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-1px);
+  transition: border-color 0.2s ease;
+}
+
+.gr-events-app .filter-checkbox input[type="checkbox"]:checked + .checkbox-custom::after {
+  border-color: white;
+}
+
+.gr-events-app .filter-checkbox:focus-within .checkbox-custom {
+  box-shadow: 0 0 0 2px rgba(217, 82, 4, 0.3);
+}
+
+.gr-events-app .checkbox-label {
+  white-space: nowrap;
+}
+
+/* Hide filter controls on very small screens, show in column layout */
+@media (max-width: 480px) {
+  .gr-events-app .filter-controls {
+    width: 100%;
+    order: 10;
+  }
+}
+
+/* ==========================================================================
    Loading State
    ========================================================================== */
 .gr-events-app .loading-state {

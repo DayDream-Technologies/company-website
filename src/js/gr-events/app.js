@@ -25,6 +25,7 @@
     lastScraped: null,
     activeView: 'list',
     isLoading: true,
+    hideRecurring: false,
   };
   
   // DOM Elements
@@ -42,15 +43,53 @@
     mapView: document.getElementById('mapView'),
     footerSources: document.getElementById('footerSources'),
     eventModal: document.getElementById('eventModal'),
+    hideRecurringCheckbox: document.getElementById('hideRecurringCheckbox'),
   };
+  
+  // Preferences key for localStorage
+  const PREFS_KEY = 'gr-events-prefs';
   
   /**
    * Initialize the application
    */
   function init() {
+    loadPreferences();
     setupEventListeners();
     renderFooterSources();
     loadEvents();
+  }
+  
+  /**
+   * Load user preferences from localStorage
+   */
+  function loadPreferences() {
+    try {
+      const prefs = localStorage.getItem(PREFS_KEY);
+      if (prefs) {
+        const parsed = JSON.parse(prefs);
+        state.hideRecurring = parsed.hideRecurring || false;
+      }
+    } catch (e) {
+      console.warn('Failed to load preferences:', e);
+    }
+    
+    // Sync checkbox state with loaded preference
+    if (elements.hideRecurringCheckbox) {
+      elements.hideRecurringCheckbox.checked = state.hideRecurring;
+    }
+  }
+  
+  /**
+   * Save user preferences to localStorage
+   */
+  function savePreferences() {
+    try {
+      localStorage.setItem(PREFS_KEY, JSON.stringify({
+        hideRecurring: state.hideRecurring,
+      }));
+    } catch (e) {
+      console.warn('Failed to save preferences:', e);
+    }
   }
   
   /**
@@ -70,66 +109,98 @@
     elements.eventModal.querySelector('.modal-backdrop')?.addEventListener('click', () => {
       elements.eventModal.classList.add('hidden');
     });
+    
+    // Hide recurring events checkbox
+    if (elements.hideRecurringCheckbox) {
+      elements.hideRecurringCheckbox.addEventListener('change', (e) => {
+        state.hideRecurring = e.target.checked;
+        savePreferences();
+        updateUI();
+      });
+    }
   }
   
-  // Cache key and duration for localStorage
+  /**
+   * Get filtered events based on current filter settings
+   */
+  function getFilteredEvents() {
+    let events = state.events;
+    
+    if (state.hideRecurring) {
+      events = events.filter(event => !event.isRecurring);
+    }
+    
+    return events;
+  }
+  
+  // Cache key for localStorage
   const CACHE_KEY = 'gr-events-cache';
-  const CACHE_DURATION_MS = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
   
   /**
-   * Load events from cache or data file (fetches at most once per day)
+   * Load events - always checks server for fresh data
+   * Compares server's lastScraped with cached lastScraped to determine if cache is valid
    */
   async function loadEvents() {
     showLoading();
     
-    // Check localStorage cache first
+    // Get cached data if available
+    let cachedData = null;
+    let cachedLastScraped = null;
     try {
       const cached = localStorage.getItem(CACHE_KEY);
       if (cached) {
-        const { data, cachedAt } = JSON.parse(cached);
-        const now = Date.now();
-        
-        // Use cache if it's less than 24 hours old
-        if (now - cachedAt < CACHE_DURATION_MS) {
-          state.events = data.events || [];
-          state.lastScraped = data.lastScraped;
-          state.sources = data.sources || {};
-          state.isLoading = false;
-          
-          updateUI();
-          showStatus('success', `Loaded ${state.events.length} events (cached)`);
-          setTimeout(() => hideStatus(), 3000);
-          return;
-        }
+        const parsed = JSON.parse(cached);
+        cachedData = parsed.data;
+        cachedLastScraped = cachedData?.lastScraped;
       }
     } catch (e) {
-      // Cache read failed, proceed with fetch
       console.warn('Cache read failed:', e);
     }
     
-    // Cache is stale or missing - fetch fresh data
+    // Always fetch from server to check for updates
     try {
-      const response = await fetch('src/data/events.json');
+      const response = await fetch('src/data/events.json', {
+        // Add cache-busting to ensure we get the latest file
+        cache: 'no-cache'
+      });
       
       if (!response.ok) {
         throw new Error('Events data not found');
       }
       
-      const data = await response.json();
+      const serverData = await response.json();
+      const serverLastScraped = serverData.lastScraped;
       
-      // Save to localStorage cache
+      // Compare server data with cached data
+      const serverDate = new Date(serverLastScraped).getTime();
+      const cachedDate = cachedLastScraped ? new Date(cachedLastScraped).getTime() : 0;
+      
+      if (cachedData && serverDate <= cachedDate) {
+        // Cache is still valid - server hasn't updated
+        state.events = cachedData.events || [];
+        state.lastScraped = cachedData.lastScraped;
+        state.sources = cachedData.sources || {};
+        state.isLoading = false;
+        
+        updateUI();
+        showStatus('success', `Loaded ${state.events.length} events (cached)`);
+        setTimeout(() => hideStatus(), 3000);
+        return;
+      }
+      
+      // Server has newer data - update cache
       try {
         localStorage.setItem(CACHE_KEY, JSON.stringify({
-          data,
+          data: serverData,
           cachedAt: Date.now(),
         }));
       } catch (e) {
         console.warn('Cache write failed:', e);
       }
       
-      state.events = data.events || [];
-      state.lastScraped = data.lastScraped;
-      state.sources = data.sources || {};
+      state.events = serverData.events || [];
+      state.lastScraped = serverData.lastScraped;
+      state.sources = serverData.sources || {};
       state.isLoading = false;
       
       updateUI();
@@ -140,6 +211,20 @@
       
     } catch (error) {
       console.error('Failed to load events:', error);
+      
+      // If fetch failed but we have cached data, use it
+      if (cachedData) {
+        state.events = cachedData.events || [];
+        state.lastScraped = cachedData.lastScraped;
+        state.sources = cachedData.sources || {};
+        state.isLoading = false;
+        
+        updateUI();
+        showStatus('warning', `Loaded ${state.events.length} events (offline cache)`);
+        setTimeout(() => hideStatus(), 5000);
+        return;
+      }
+      
       state.isLoading = false;
       state.events = [];
       
@@ -153,8 +238,14 @@
    * Update the UI based on current state
    */
   function updateUI() {
-    // Update stats
-    elements.eventCount.textContent = `${state.events.length} events`;
+    const filteredEvents = getFilteredEvents();
+    
+    // Update stats - show filtered count and total
+    if (state.hideRecurring && filteredEvents.length !== state.events.length) {
+      elements.eventCount.textContent = `${filteredEvents.length} of ${state.events.length} events`;
+    } else {
+      elements.eventCount.textContent = `${state.events.length} events`;
+    }
     elements.lastUpdated.textContent = `Updated ${formatRelativeTime(state.lastScraped)}`;
     
     // Update source stats
@@ -163,7 +254,7 @@
     // Show appropriate state
     if (state.isLoading) {
       showLoading();
-    } else if (state.events.length === 0) {
+    } else if (filteredEvents.length === 0) {
       showEmpty();
     } else {
       showContent();
@@ -244,17 +335,18 @@
    * Render the currently active view
    */
   function renderActiveView() {
-    if (state.events.length === 0) return;
+    const filteredEvents = getFilteredEvents();
+    if (filteredEvents.length === 0) return;
     
     switch (state.activeView) {
       case 'list':
-        initListView(elements.listView, state.events);
+        initListView(elements.listView, filteredEvents);
         break;
       case 'calendar':
-        initCalendarView(elements.calendarView, state.events);
+        initCalendarView(elements.calendarView, filteredEvents);
         break;
       case 'map':
-        initMapView(elements.mapView, state.events);
+        initMapView(elements.mapView, filteredEvents);
         break;
     }
   }
