@@ -19,7 +19,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-breakfast-2026-02-05",
@@ -40,7 +40,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": true,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-west-michigan-minority-contractors-construction",
@@ -61,7 +61,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-02-06",
@@ -82,7 +82,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": true,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-chamber-101-2026-02-11",
@@ -103,7 +103,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-athena-leadership-forum-the-power-of-giving-bac",
@@ -124,7 +124,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-02-19",
@@ -145,7 +145,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": true,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-chamber-issues-forum-health-care-in-west-michig",
@@ -166,7 +166,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-leadership-lesson-breakfast-2026-02-24",
@@ -187,7 +187,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-02-25",
@@ -208,7 +208,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": true,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-women-in-leadership-spring-cohort-kickoff-2026-",
@@ -229,7 +229,7 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-business-growth-workshop-2026-03-03",
@@ -250,7 +250,7 @@
       "source": "grand-rapids-org",
       "category": "workshop",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     },
     {
       "id": "grand-rapids-org-emerging-leaders-spring-cohort-kickoff-2026-03-",
@@ -271,10 +271,10 @@
       "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "scrapedAt": "2026-02-01T21:34:36.217Z"
+      "scrapedAt": "2026-02-01T21:35:29.951Z"
     }
   ],
-  "lastScraped": "2026-02-01T21:34:38.891Z",
+  "lastScraped": "2026-02-01T21:35:32.392Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -282,7 +282,7 @@
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
       "eventCount": 0,
-      "lastScraped": "2026-02-01T21:34:31.406Z"
+      "lastScraped": "2026-02-01T21:35:25.520Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -290,7 +290,7 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-02-01T21:34:32.538Z"
+      "lastScraped": "2026-02-01T21:35:26.644Z"
     },
     "bamboo": {
       "id": "bamboo",
@@ -298,7 +298,7 @@
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
       "eventCount": 0,
-      "lastScraped": "2026-02-01T21:34:34.056Z"
+      "lastScraped": "2026-02-01T21:35:27.902Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -306,7 +306,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 49,
-      "lastScraped": "2026-02-01T21:34:36.254Z"
+      "lastScraped": "2026-02-01T21:35:29.988Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -314,7 +314,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 0,
-      "lastScraped": "2026-02-01T21:34:37.889Z"
+      "lastScraped": "2026-02-01T21:35:31.390Z"
     }
   }
 }
