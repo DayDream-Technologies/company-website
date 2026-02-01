@@ -1,16 +1,12 @@
 name: Scrape GR Events
 
 on:
-  # Run daily at 6:00 AM UTC (1:00 AM EST / 2:00 AM EDT)
+  # Run weekly on Monday at 8:00 AM UTC (3:00 AM EST / 4:00 AM EDT)
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 8 * * 1'
   
   # Allow manual trigger from GitHub Actions UI
   workflow_dispatch:
-  
-  # Allow trigger via API (from Lambda function)
-  repository_dispatch:
-    types: [scrape-events]
 
 jobs:
   scrape:
