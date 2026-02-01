@@ -18,6 +18,14 @@
   
   const { formatRelativeTime } = window.GREvents.DateUtils;
   
+  // Configuration
+  const CONFIG = {
+    // API endpoint to trigger scraper update (AWS Lambda/API Gateway URL)
+    updateApiUrl: 'https://3y2xxqsrea.execute-api.us-east-1.amazonaws.com/trigger-scrape',
+    // How old the data must be (in hours) before showing the update button
+    staleThresholdHours: 24,
+  };
+  
   // Application state
   const state = {
     events: [],
@@ -26,6 +34,7 @@
     activeView: 'list',
     isLoading: true,
     hideRecurring: false,
+    isUpdating: false,
   };
   
   // DOM Elements
@@ -44,6 +53,8 @@
     footerSources: document.getElementById('footerSources'),
     eventModal: document.getElementById('eventModal'),
     hideRecurringCheckbox: document.getElementById('hideRecurringCheckbox'),
+    updateBanner: document.getElementById('updateBanner'),
+    updateButton: document.getElementById('updateButton'),
   };
   
   // Preferences key for localStorage
@@ -117,6 +128,103 @@
         savePreferences();
         updateUI();
       });
+    }
+    
+    // Update button click
+    if (elements.updateButton) {
+      elements.updateButton.addEventListener('click', triggerUpdate);
+    }
+  }
+  
+  /**
+   * Check if data is stale (older than threshold)
+   */
+  function isDataStale() {
+    if (!state.lastScraped) return true;
+    
+    const lastScrapedTime = new Date(state.lastScraped).getTime();
+    const now = Date.now();
+    const hoursSinceUpdate = (now - lastScrapedTime) / (1000 * 60 * 60);
+    
+    return hoursSinceUpdate > CONFIG.staleThresholdHours;
+  }
+  
+  /**
+   * Show or hide the update banner based on data freshness
+   */
+  function updateStaleDataBanner() {
+    if (!elements.updateBanner) return;
+    
+    // Only show if data is stale AND we have an API URL configured
+    if (isDataStale() && CONFIG.updateApiUrl) {
+      elements.updateBanner.classList.remove('hidden');
+    } else {
+      elements.updateBanner.classList.add('hidden');
+    }
+  }
+  
+  /**
+   * Trigger an update via the API
+   */
+  async function triggerUpdate() {
+    if (state.isUpdating || !CONFIG.updateApiUrl) return;
+    
+    state.isUpdating = true;
+    
+    // Update button state
+    if (elements.updateButton) {
+      elements.updateButton.disabled = true;
+      elements.updateButton.classList.add('loading');
+      elements.updateButton.querySelector('span').textContent = 'Updating...';
+    }
+    
+    try {
+      const response = await fetch(CONFIG.updateApiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ action: 'scrape-events' }),
+      });
+      
+      if (!response.ok) {
+        throw new Error(`Update failed: ${response.status}`);
+      }
+      
+      const result = await response.json();
+      
+      // Show success message
+      showStatus('success', 'Update triggered! New events will be available in a few minutes.');
+      
+      // Hide the update banner
+      if (elements.updateBanner) {
+        elements.updateBanner.classList.add('hidden');
+      }
+      
+      // Set a timer to reload the data after the scraper likely completes
+      setTimeout(() => {
+        showStatus('info', 'Checking for updated events...');
+        // Clear the cache to force a fresh fetch
+        try {
+          localStorage.removeItem(CACHE_KEY);
+        } catch (e) {
+          // Ignore
+        }
+        loadEvents();
+      }, 120000); // 2 minutes - adjust based on how long your scraper takes
+      
+    } catch (error) {
+      console.error('Update failed:', error);
+      showStatus('error', 'Failed to trigger update. Please try again later.');
+    } finally {
+      state.isUpdating = false;
+      
+      // Reset button state
+      if (elements.updateButton) {
+        elements.updateButton.disabled = false;
+        elements.updateButton.classList.remove('loading');
+        elements.updateButton.querySelector('span').textContent = 'Update Events';
+      }
     }
   }
   
@@ -250,6 +358,9 @@
     
     // Update source stats
     renderSourceStats();
+    
+    // Check if data is stale and show update banner
+    updateStaleDataBanner();
     
     // Show appropriate state
     if (state.isLoading) {
