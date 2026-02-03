@@ -253,77 +253,81 @@
     </main>
 
     <script>
-        const form = document.getElementById('contactForm');
-        const messagesDiv = document.getElementById('form-messages');
-        const submitBtn = document.getElementById('submitBtn');
+        (function() {
+            const contactForm = document.getElementById('contactForm');
+            const messagesDiv = document.getElementById('form-messages');
+            const submitBtn = document.getElementById('submitBtn');
 
-        function showMessage(type, text) {
-            messagesDiv.innerHTML = `<div class="form-message ${type}">${text}</div>`;
-            messagesDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
+            if (!contactForm) return;
 
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            // Clear previous messages
-            messagesDiv.innerHTML = '';
-            
-            // Disable button
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
-
-            // Validate required fields
-            const name = form.name.value.trim();
-            const email = form.email.value.trim();
-            const service = form.service.value;
-            const projectType = form.project_type.value;
-            const message = form.main_website.value.trim();
-
-            if (!name || !email || !service || !projectType || !message) {
-                showMessage('error', 'Please fill in all required fields.');
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send';
-                return;
+            function showMessage(type, text) {
+                messagesDiv.innerHTML = `<div class="form-message ${type}">${text}</div>`;
+                messagesDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
 
-            // Validate email format
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showMessage('error', 'Please enter a valid email address.');
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send';
-                return;
-            }
-
-            try {
-                const formData = new URLSearchParams(new FormData(form));
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
                 
-                const response = await fetch('https://1zxkecx75f.execute-api.us-east-1.amazonaws.com/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                        'Accept': 'application/json'
-                    },
-                    body: formData.toString()
-                });
+                // Clear previous messages
+                messagesDiv.innerHTML = '';
+                
+                // Disable button
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
 
-                const result = await response.json();
+                // Validate required fields
+                const name = contactForm.name.value.trim();
+                const emailValue = contactForm.email.value.trim();
+                const service = contactForm.service.value;
+                const projectType = contactForm.project_type.value;
+                const message = contactForm.main_website.value.trim();
 
-                if (response.ok && result.success) {
-                    // Redirect to thank you page on success
-                    window.location.href = 'thanks.html';
-                } else {
-                    showMessage('error', 'Something went wrong. Please try again or email us directly at contact@daydreamtechnologies.net');
+                if (!name || !emailValue || !service || !projectType || !message) {
+                    showMessage('error', 'Please fill in all required fields.');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send';
+                    return;
+                }
+
+                // Validate email format
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailValue)) {
+                    showMessage('error', 'Please enter a valid email address.');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send';
+                    return;
+                }
+
+                try {
+                    const formData = new URLSearchParams(new FormData(contactForm));
+                    
+                    const response = await fetch('https://1zxkecx75f.execute-api.us-east-1.amazonaws.com/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                            'Accept': 'application/json'
+                        },
+                        body: formData.toString()
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+                        // Redirect to thank you page on success
+                        window.location.href = 'thanks.html';
+                    } else {
+                        showMessage('error', 'Something went wrong. Please try again or email us directly at contact@daydreamtechnologies.net');
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Send';
+                    }
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    showMessage('error', 'Unable to send your message. Please try again or email us directly at contact@daydreamtechnologies.net');
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Send';
                 }
-            } catch (error) {
-                console.error('Form submission error:', error);
-                showMessage('error', 'Unable to send your message. Please try again or email us directly at contact@daydreamtechnologies.net');
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send';
-            }
-        });
+            });
+        })();
     </script>
 
     <footer>
