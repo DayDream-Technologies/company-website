@@ -299,7 +299,14 @@
                 }
 
                 try {
-                    const formData = new URLSearchParams(new FormData(contactForm));
+                    const formData = new FormData(contactForm);
+                    const urlParams = new URLSearchParams();
+                    for (const [key, value] of formData.entries()) {
+                        urlParams.append(key, value);
+                    }
+                    
+                    // Debug: log what we're sending
+                    console.log('Sending form data:', urlParams.toString());
                     
                     const response = await fetch('https://1zxkecx75f.execute-api.us-east-1.amazonaws.com/contact', {
                         method: 'POST',
@@ -307,10 +314,19 @@
                             'Content-Type': 'application/x-www-form-urlencoded',
                             'Accept': 'application/json'
                         },
-                        body: formData.toString()
+                        body: urlParams.toString()
                     });
 
-                    const result = await response.json();
+                    const responseText = await response.text();
+                    console.log('Response status:', response.status);
+                    console.log('Response body:', responseText);
+                    
+                    let result;
+                    try {
+                        result = JSON.parse(responseText);
+                    } catch {
+                        result = { success: false, error: responseText };
+                    }
 
                     if (response.ok && result.success) {
                         // Redirect to thank you page on success
