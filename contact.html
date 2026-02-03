@@ -175,18 +175,16 @@
             </div>
             <div class="contact-container">
             <!-- Contact Form Section -->
-            <!-- From Uiverse.io by gharsh11032000 -->
-            <!-- Here is the link; https://uiverse.io/gharsh11032000/bitter-cow-59 -->
+            <div id="form-messages"></div>
             <div class="form-container">
-                <form class="form" action="https://1zxkecx75f.execute-api.us-east-1.amazonaws.com/contact" method="POST">
-
+                <form class="form" id="contactForm">
                     <div class="form-group">
                         <label for="name">Name <span class="required-asterisk">*</span></label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email <span class="required-asterisk">*</span></label>
-                        <input type="text" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="job_title">Job Title</label>
@@ -217,15 +215,15 @@
                                 <span class="radio-text">New project</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="project_type" value="redesign" required>
+                                <input type="radio" name="project_type" value="redesign">
                                 <span class="radio-text">Redesign</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="project_type" value="maintenance" required>
+                                <input type="radio" name="project_type" value="maintenance">
                                 <span class="radio-text">Maintenance</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="project_type" value="consultation" required>
+                                <input type="radio" name="project_type" value="consultation">
                                 <span class="radio-text">Consultation</span>
                             </label>
                         </div>
@@ -245,14 +243,88 @@
                     </div>
                     <div class="form-group">
                         <label for="main_website">How Can We Help You? <span class="required-asterisk">*</span></label>
-                        <textarea name="main_website" id="main_website" rows="10" cols="50" required=""></textarea>
+                        <textarea name="main_website" id="main_website" rows="10" cols="50" required></textarea>
                     </div>
-                    <button class="form-submit-btn" type="submit">Send</button>
+                    <button class="form-submit-btn" type="submit" id="submitBtn">Send</button>
                 </form>
             </div>
             </div>
         </section>
     </main>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const messagesDiv = document.getElementById('form-messages');
+        const submitBtn = document.getElementById('submitBtn');
+
+        function showMessage(type, text) {
+            messagesDiv.innerHTML = `<div class="form-message ${type}">${text}</div>`;
+            messagesDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Clear previous messages
+            messagesDiv.innerHTML = '';
+            
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            // Validate required fields
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const service = form.service.value;
+            const projectType = form.project_type.value;
+            const message = form.main_website.value.trim();
+
+            if (!name || !email || !service || !projectType || !message) {
+                showMessage('error', 'Please fill in all required fields.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send';
+                return;
+            }
+
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('error', 'Please enter a valid email address.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send';
+                return;
+            }
+
+            try {
+                const formData = new URLSearchParams(new FormData(form));
+                
+                const response = await fetch('https://1zxkecx75f.execute-api.us-east-1.amazonaws.com/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Accept': 'application/json'
+                    },
+                    body: formData.toString()
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    // Redirect to thank you page on success
+                    window.location.href = 'thanks.html';
+                } else {
+                    showMessage('error', 'Something went wrong. Please try again or email us directly at contact@daydreamtechnologies.net');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send';
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                showMessage('error', 'Unable to send your message. Please try again or email us directly at contact@daydreamtechnologies.net');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send';
+            }
+        });
+    </script>
 
     <footer>
         <div class="footer_left">
