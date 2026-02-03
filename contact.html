@@ -316,13 +316,13 @@
                         // Redirect to thank you page on success
                         window.location.href = 'thanks.html';
                     } else {
-                        showMessage('error', 'Something went wrong. Please try again or email us directly at contact@daydreamtechnologies.net');
+                        showMessage('error', 'Something went wrong. Please try again or email us directly at info@daydreamtechnologies.net');
                         submitBtn.disabled = false;
                         submitBtn.textContent = 'Send';
                     }
                 } catch (error) {
                     console.error('Form submission error:', error);
-                    showMessage('error', 'Unable to send your message. Please try again or email us directly at contact@daydreamtechnologies.net');
+                    showMessage('error', 'Unable to send your message. Please try again or email us directly at info@daydreamtechnologies.net');
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Send';
                 }
