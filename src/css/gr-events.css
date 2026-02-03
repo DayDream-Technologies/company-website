@@ -388,6 +388,172 @@
 }
 
 /* ==========================================================================
+   Update Banner (Stale Data Warning)
+   ========================================================================== */
+.gr-events-app .update-banner {
+  background: linear-gradient(135deg, rgba(217, 82, 4, 0.15) 0%, rgba(242, 183, 5, 0.1) 100%);
+  border-bottom: 1px solid rgba(217, 82, 4, 0.3);
+  padding: 0.75rem 1rem;
+}
+
+.gr-events-app .update-banner-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.gr-events-app .update-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--gr-secondary);
+  flex-shrink: 0;
+}
+
+.gr-events-app .update-message {
+  color: var(--gr-text-light);
+  font-size: 0.875rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.gr-events-app .update-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--gr-primary);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.gr-events-app .update-button:hover {
+  background: var(--gr-primary-dark);
+  transform: translateY(-1px);
+}
+
+.gr-events-app .update-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.gr-events-app .update-button-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.gr-events-app .update-button.loading .update-button-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 480px) {
+  .gr-events-app .update-banner-content {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .gr-events-app .update-message {
+    width: 100%;
+  }
+  
+  .gr-events-app .update-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Filter Controls
+   ========================================================================== */
+.gr-events-app .filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gr-events-app .filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: var(--gr-text-muted);
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.gr-events-app .filter-checkbox:hover {
+  color: var(--gr-foreground);
+}
+
+.gr-events-app .filter-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.gr-events-app .checkbox-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--gr-primary);
+  border-radius: 4px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.gr-events-app .filter-checkbox input[type="checkbox"]:checked + .checkbox-custom {
+  background: var(--gr-primary);
+}
+
+.gr-events-app .checkbox-custom::after {
+  content: '';
+  width: 5px;
+  height: 9px;
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-1px);
+  transition: border-color 0.2s ease;
+}
+
+.gr-events-app .filter-checkbox input[type="checkbox"]:checked + .checkbox-custom::after {
+  border-color: white;
+}
+
+.gr-events-app .filter-checkbox:focus-within .checkbox-custom {
+  box-shadow: 0 0 0 2px rgba(217, 82, 4, 0.3);
+}
+
+.gr-events-app .checkbox-label {
+  white-space: nowrap;
+}
+
+/* Hide filter controls on very small screens, show in column layout */
+@media (max-width: 480px) {
+  .gr-events-app .filter-controls {
+    width: 100%;
+    order: 10;
+  }
+}
+
+/* ==========================================================================
    Loading State
    ========================================================================== */
 .gr-events-app .loading-state {

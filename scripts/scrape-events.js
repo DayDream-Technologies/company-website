@@ -206,6 +206,66 @@ function cleanText(text) {
   return text.replace(/\s+/g, ' ').trim();
 }
 
+// =============================================================================
+// Recurring Event Detection
+// =============================================================================
+
+// Known recurring event titles (case-insensitive partial matches)
+const KNOWN_RECURRING_EVENTS = [
+  'chamber happy hour',
+  'business exchange',
+  'latina connect',
+  'coffee connect',
+  'networking lunch',
+  'weekly meetup',
+  'monthly meetup',
+  'office hours',
+  'open house',
+  'coworking day',
+  'first friday',
+  'third thursday',
+];
+
+// Patterns that indicate a recurring event
+const RECURRING_PATTERNS = [
+  /\bevery\s+(week|month|day|monday|tuesday|wednesday|thursday|friday|saturday|sunday)/i,
+  /\bweekly\b/i,
+  /\bmonthly\b/i,
+  /\bdaily\b/i,
+  /\brecurring\b/i,
+  /\bongoing\b/i,
+  /\b(first|second|third|fourth|last)\s+(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/i,
+  /\bevery\s+\d+(st|nd|rd|th)/i,
+  /\bthroughout\s+the\s+year\b/i,
+];
+
+/**
+ * Detect if an event is recurring based on title, description, and other metadata
+ * @param {string} title - Event title
+ * @param {string} description - Event description
+ * @param {string} timeText - Time text that might contain frequency info
+ * @returns {boolean} - True if the event appears to be recurring
+ */
+function detectRecurringEvent(title, description = '', timeText = '') {
+  const combinedText = `${title} ${description} ${timeText}`.toLowerCase();
+  
+  // Check against known recurring event titles
+  for (const knownTitle of KNOWN_RECURRING_EVENTS) {
+    if (combinedText.includes(knownTitle)) {
+      return true;
+    }
+  }
+  
+  // Check against recurring patterns
+  for (const pattern of RECURRING_PATTERNS) {
+    if (pattern.test(combinedText)) {
+      return true;
+    }
+  }
+  
+  return false;
+}
+
 function createScrapeResult(source, events, error) {
   return {
     success: !error,
@@ -276,6 +336,7 @@ async function scrapeMsuFoundation() {
             },
             url: href.startsWith('http') ? href : `https://msufoundation.org${href}`,
             source: SOURCE,
+            isRecurring: detectRecurringEvent(text, ''),
             scrapedAt,
           });
         }
@@ -309,6 +370,7 @@ async function scrapeMsuFoundation() {
             },
             url: link.startsWith('http') ? link : `https://msufoundation.org${link}`,
             source: SOURCE,
+            isRecurring: detectRecurringEvent(title, description, timeText),
             scrapedAt,
           });
         }
@@ -383,6 +445,7 @@ async function scrapeStartGarden() {
           },
           url: link.startsWith('http') ? link : `https://startgarden.com${link}`,
           source: SOURCE,
+          isRecurring: detectRecurringEvent(title, description, timeText),
           scrapedAt,
         });
       }
@@ -479,6 +542,7 @@ async function scrapeBamboo() {
           },
           url: link.startsWith('http') ? link : `https://www.bamboocowork.com${link}`,
           source: SOURCE,
+          isRecurring: detectRecurringEvent(title, description, dateTimeText),
           scrapedAt,
         });
       }
@@ -570,6 +634,7 @@ async function scrapeGrandRapidsOrg() {
           url: link.startsWith('http') ? link : `https://grandrapids.org${link}`,
           source: SOURCE,
           category,
+          isRecurring: detectRecurringEvent(title, description, timeText),
           scrapedAt,
         });
       }
@@ -725,11 +790,12 @@ async function scrapeGrJuniorChamber() {
       const locationText = cleanText($el.find('[class*="location"], [class*="Location"], [class*="venue"]').first().text());
       
       const category = categorizeEvent(title, description);
+      const effectiveDescription = description || 'Leadership development and networking event hosted by the Grand Rapids Junior Chamber';
       
       events.push({
         id: generateEventId(SOURCE, title, date),
         title,
-        description: description || 'Leadership development and networking event hosted by the Grand Rapids Junior Chamber',
+        description: effectiveDescription,
         date,
         time,
         startDateTime: toISODateTime(date, time),
@@ -743,6 +809,7 @@ async function scrapeGrJuniorChamber() {
         url: link || config.url,
         source: SOURCE,
         category,
+        isRecurring: detectRecurringEvent(title, effectiveDescription, fullText),
         scrapedAt,
       });
     });
