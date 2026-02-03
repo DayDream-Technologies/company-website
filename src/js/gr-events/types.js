@@ -34,6 +34,12 @@ const SOURCE_CONFIG = {
     url: 'https://www.grjuniorchamber.com/',
     color: '#9C27B0', // Purple
   },
+  'right-place': {
+    id: 'right-place',
+    name: 'The Right Place',
+    url: 'https://www.rightplace.org/events/',
+    color: '#1E3A5F', // Dark blue
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)

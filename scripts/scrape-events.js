@@ -53,6 +53,12 @@ const SOURCE_CONFIG = {
     url: 'https://www.grjuniorchamber.com/',
     color: '#9C27B0',
   },
+  'right-place': {
+    id: 'right-place',
+    name: 'The Right Place',
+    url: 'https://www.rightplace.org/events/',
+    color: '#1E3A5F',
+  },
 };
 
 // Updated paths for new location
@@ -825,6 +831,159 @@ async function scrapeGrJuniorChamber() {
   }
 }
 
+async function scrapeRightPlace() {
+  const SOURCE = 'right-place';
+  const config = SOURCE_CONFIG[SOURCE];
+  
+  function categorizeEvent(title, description) {
+    const text = `${title} ${description}`.toLowerCase();
+    if (text.includes('network') || text.includes('mixer') || text.includes('coffee') || text.includes('exchange')) return 'networking';
+    if (text.includes('workshop') || text.includes('training') || text.includes('candid conversation')) return 'workshop';
+    if (text.includes('conference') || text.includes('summit') || text.includes('forum')) return 'conference';
+    if (text.includes('meetup') || text.includes('connect')) return 'meetup';
+    if (text.includes('pitch') || text.includes('startup') || text.includes('entrepreneur')) return 'pitch';
+    if (text.includes('developer') || text.includes('tech')) return 'workshop';
+    return 'other';
+  }
+  
+  try {
+    const html = await fetchHtml(config.url);
+    const $ = loadHtml(html);
+    const events = [];
+    const scrapedAt = new Date().toISOString();
+
+    // The Right Place uses card-based event listings
+    const eventSelectors = [
+      '.event-card',
+      '[class*="event-item"]',
+      '[class*="EventCard"]',
+      'article[class*="event"]',
+      '.card',
+      'a[href*="/events/"]',
+    ];
+
+    let eventElements = $();
+    
+    // First, try to find event containers
+    for (const selector of eventSelectors) {
+      const found = $(selector).filter((_, el) => {
+        const text = $(el).text();
+        // Must have a date pattern to be an event
+        return /(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}/i.test(text);
+      });
+      if (found.length > 0) {
+        eventElements = found;
+        break;
+      }
+    }
+
+    // If no containers found, look for h3 headers that might be event titles
+    if (eventElements.length === 0) {
+      $('h3').each((_, el) => {
+        const $el = $(el);
+        const parent = $el.closest('div, article, section, li').first();
+        const text = parent.text();
+        
+        // Check if parent has date pattern
+        if (/(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}/i.test(text)) {
+          eventElements = eventElements.add(parent);
+        }
+      });
+    }
+
+    eventElements.each((_, el) => {
+      const $el = $(el);
+      const fullText = $el.text();
+      
+      // Extract title - usually in h3 or strong element
+      let title = cleanText(
+        $el.find('h3').first().text() ||
+        $el.find('h2').first().text() ||
+        $el.find('strong').first().text() ||
+        $el.find('[class*="title"]').first().text()
+      );
+      
+      if (!title || title.length < 5 || title.length > 200) return;
+      
+      // Skip navigation items
+      if (['Events', 'News', 'Contact', 'About Us', 'Home'].includes(title)) return;
+      
+      // Extract description
+      const description = cleanText(
+        $el.find('p').first().text() ||
+        $el.find('[class*="description"]').first().text()
+      );
+      
+      // Extract date - format: "February 4, 2026"
+      const dateMatch = fullText.match(/([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
+      if (!dateMatch) return;
+      
+      const month = MONTHS[dateMatch[1].toLowerCase()];
+      if (!month) return;
+      
+      const day = dateMatch[2].padStart(2, '0');
+      const year = dateMatch[3];
+      const date = `${year}-${month}-${day}`;
+      
+      // Extract time - format: "2:30PM–6:00PM" or "8:00AM–2:00PM"
+      const timeMatch = fullText.match(/(\d{1,2}:\d{2}\s*(?:AM|PM))/i);
+      const time = timeMatch ? parseTime(timeMatch[1]) : 'TBD';
+      
+      // Extract location
+      let locationText = '';
+      const locationPatterns = [
+        /(?:at|@)\s+([^,\n]+)/i,
+        /(Frederik Meijer Gardens|Amway Grand Plaza|Junior Achievement|Bamboo|GVSU|DeVos)/i,
+      ];
+      
+      for (const pattern of locationPatterns) {
+        const locMatch = fullText.match(pattern);
+        if (locMatch) {
+          locationText = cleanText(locMatch[1]);
+          break;
+        }
+      }
+      
+      // Get link
+      let link = $el.find('a').first().attr('href') || $el.attr('href') || '';
+      if (link && !link.startsWith('http')) {
+        link = `https://www.rightplace.org${link.startsWith('/') ? '' : '/'}${link}`;
+      }
+      
+      const category = categorizeEvent(title, description);
+      
+      events.push({
+        id: generateEventId(SOURCE, title, date),
+        title,
+        description: description || 'Business and economic development event hosted by The Right Place.',
+        date,
+        time,
+        startDateTime: toISODateTime(date, time),
+        location: {
+          name: locationText || 'The Right Place',
+          address: '25 Ottawa Ave SW, Suite 400',
+          city: 'Grand Rapids',
+          state: 'MI',
+          zip: '49503',
+        },
+        url: link || config.url,
+        source: SOURCE,
+        category,
+        scrapedAt,
+      });
+    });
+
+    // Deduplicate by title + date
+    const uniqueEvents = Array.from(
+      new Map(events.map(e => [`${e.title}-${e.date}`, e])).values()
+    );
+
+    return createScrapeResult(SOURCE, uniqueEvents);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
 // =============================================================================
 // Geocoding
 // =============================================================================
@@ -861,6 +1020,13 @@ const KNOWN_VENUES = {
   'bamboo royal oak': { lat: 42.4895, lng: -83.1446 },
   'gr junior chamber': { lat: 42.9634, lng: -85.6681 },
   'grand rapids junior chamber': { lat: 42.9634, lng: -85.6681 },
+  'the right place': { lat: 42.9634, lng: -85.6732 },
+  'right place': { lat: 42.9634, lng: -85.6732 },
+  'frederik meijer gardens': { lat: 42.9797, lng: -85.5889 },
+  'amway grand plaza': { lat: 42.9689, lng: -85.6772 },
+  'junior achievement': { lat: 42.9556, lng: -85.6544 },
+  'gvsu': { lat: 42.9631, lng: -85.8886 },
+  'gvsu allendale': { lat: 42.9631, lng: -85.8886 },
 };
 
 function getKnownVenueCoords(venueName) {
@@ -1015,6 +1181,7 @@ async function runFullScrape() {
     { name: 'Bamboo', fn: scrapeBamboo },
     { name: 'Grand Rapids Org', fn: scrapeGrandRapidsOrg },
     { name: 'GR Junior Chamber', fn: scrapeGrJuniorChamber },
+    { name: 'The Right Place', fn: scrapeRightPlace },
   ];
   
   const results = [];
