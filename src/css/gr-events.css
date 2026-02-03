@@ -320,6 +320,27 @@
 }
 
 /* ==========================================================================
+   Update Notice
+   ========================================================================== */
+.gr-events-app .update-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(217, 82, 4, 0.1);
+  border-bottom: 1px solid rgba(217, 82, 4, 0.2);
+  font-size: 0.875rem;
+  color: var(--gr-primary-light);
+}
+
+.gr-events-app .update-notice .notice-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
    Stats Bar
    ========================================================================== */
 .gr-events-app .stats-bar {
