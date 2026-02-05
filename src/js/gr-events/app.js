@@ -26,6 +26,7 @@
     activeView: 'list',
     isLoading: true,
     hideRecurring: false,
+    showFreeOnly: false,
   };
   
   // DOM Elements
@@ -44,6 +45,7 @@
     footerSources: document.getElementById('footerSources'),
     eventModal: document.getElementById('eventModal'),
     hideRecurringCheckbox: document.getElementById('hideRecurringCheckbox'),
+    freeOnlyCheckbox: document.getElementById('freeOnlyCheckbox'),
   };
   
   // Preferences key for localStorage
@@ -68,14 +70,18 @@
       if (prefs) {
         const parsed = JSON.parse(prefs);
         state.hideRecurring = parsed.hideRecurring || false;
+        state.showFreeOnly = parsed.showFreeOnly || false;
       }
     } catch (e) {
       console.warn('Failed to load preferences:', e);
     }
     
-    // Sync checkbox state with loaded preference
+    // Sync checkbox states with loaded preferences
     if (elements.hideRecurringCheckbox) {
       elements.hideRecurringCheckbox.checked = state.hideRecurring;
+    }
+    if (elements.freeOnlyCheckbox) {
+      elements.freeOnlyCheckbox.checked = state.showFreeOnly;
     }
   }
   
@@ -86,6 +92,7 @@
     try {
       localStorage.setItem(PREFS_KEY, JSON.stringify({
         hideRecurring: state.hideRecurring,
+        showFreeOnly: state.showFreeOnly,
       }));
     } catch (e) {
       console.warn('Failed to save preferences:', e);
@@ -118,6 +125,15 @@
         updateUI();
       });
     }
+    
+    // Free events only checkbox
+    if (elements.freeOnlyCheckbox) {
+      elements.freeOnlyCheckbox.addEventListener('change', (e) => {
+        state.showFreeOnly = e.target.checked;
+        savePreferences();
+        updateUI();
+      });
+    }
   }
   
   /**
@@ -128,6 +144,10 @@
     
     if (state.hideRecurring) {
       events = events.filter(event => !event.isRecurring);
+    }
+    
+    if (state.showFreeOnly) {
+      events = events.filter(event => event.isFree !== false);
     }
     
     return events;
@@ -240,8 +260,9 @@
   function updateUI() {
     const filteredEvents = getFilteredEvents();
     
-    // Update stats - show filtered count and total
-    if (state.hideRecurring && filteredEvents.length !== state.events.length) {
+    // Update stats - show filtered count and total when any filter is active
+    const isFiltered = state.hideRecurring || state.showFreeOnly;
+    if (isFiltered && filteredEvents.length !== state.events.length) {
       elements.eventCount.textContent = `${filteredEvents.length} of ${state.events.length} events`;
     } else {
       elements.eventCount.textContent = `${state.events.length} events`;

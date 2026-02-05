@@ -272,6 +272,48 @@ function detectRecurringEvent(title, description = '', timeText = '') {
   return false;
 }
 
+// =============================================================================
+// Free Event Detection
+// =============================================================================
+
+/**
+ * Detect if an event is free based on title, description, and other metadata
+ * @param {string} title - Event title
+ * @param {string} description - Event description
+ * @param {string} extraText - Additional text (e.g., event type badges, button text)
+ * @returns {boolean} - True if the event appears to be free
+ */
+function detectFreeEvent(title, description = '', extraText = '') {
+  const text = `${title} ${description} ${extraText}`.toLowerCase();
+  
+  // Definitely NOT free - membership required
+  if (text.includes('members only') || text.includes('member only')) return false;
+  if (text.includes('private event')) return false;
+  
+  // Definitely NOT free - tickets/payment required
+  if (text.includes('get tickets') || text.includes('buy tickets')) return false;
+  if (text.includes('purchase tickets')) return false;
+  if (/\$\d+/.test(text)) return false; // Has dollar amount like $25
+  if (text.includes('registration fee') || text.includes('admission fee')) return false;
+  if (text.includes('ticket price') || text.includes('event fee')) return false;
+  if (text.includes('paid event')) return false;
+  
+  // Explicitly free
+  if (text.includes('free event') || text.includes('free admission')) return true;
+  if (text.includes('no cost') || text.includes('no charge') || text.includes('no fee')) return true;
+  if (/\bfree\b/.test(text) && !text.includes('free parking')) return true;
+  
+  // Public events without ticket mentions are typically free
+  if (text.includes('public event') && !text.includes('ticket')) return true;
+  
+  // Community/coworking events are typically free
+  if (text.includes('community coworking')) return true;
+  if (text.includes('open house') && !text.includes('ticket')) return true;
+  
+  // Default: assume free if no cost indicators found
+  return true;
+}
+
 function createScrapeResult(source, events, error) {
   return {
     success: !error,
@@ -343,6 +385,7 @@ async function scrapeMsuFoundation() {
             url: href.startsWith('http') ? href : `https://msufoundation.org${href}`,
             source: SOURCE,
             isRecurring: detectRecurringEvent(text, ''),
+            isFree: detectFreeEvent(text, ''),
             scrapedAt,
           });
         }
@@ -377,6 +420,7 @@ async function scrapeMsuFoundation() {
             url: link.startsWith('http') ? link : `https://msufoundation.org${link}`,
             source: SOURCE,
             isRecurring: detectRecurringEvent(title, description, timeText),
+            isFree: detectFreeEvent(title, description),
             scrapedAt,
           });
         }
@@ -452,6 +496,7 @@ async function scrapeStartGarden() {
           url: link.startsWith('http') ? link : `https://startgarden.com${link}`,
           source: SOURCE,
           isRecurring: detectRecurringEvent(title, description, timeText),
+          isFree: detectFreeEvent(title, description),
           scrapedAt,
         });
       }
@@ -467,20 +512,18 @@ async function scrapeBamboo() {
   const SOURCE = 'bamboo';
   const config = SOURCE_CONFIG[SOURCE];
   
-  function parseLocation(locationText) {
-    const locations = {
-      'ann arbor': { name: 'Bamboo Ann Arbor', city: 'Ann Arbor' },
-      'downtown detroit': { name: 'Bamboo Downtown Detroit', city: 'Detroit' },
-      'midtown detroit': { name: 'Bamboo Midtown Detroit', city: 'Detroit' },
-      'grand rapids': { name: 'Bamboo Grand Rapids', city: 'Grand Rapids' },
-      'royal oak': { name: 'Bamboo Royal Oak', city: 'Royal Oak' },
-    };
-
-    const lower = (locationText || '').toLowerCase();
-    for (const [key, loc] of Object.entries(locations)) {
-      if (lower.includes(key)) return loc;
-    }
-    return { name: 'Bamboo Cowork', city: 'Grand Rapids' };
+  function parseLocation(fullText) {
+    // Look for location keywords in the full text of the event card
+    const lower = (fullText || '').toLowerCase();
+    
+    // Check for specific location mentions
+    if (lower.includes('grand rapids')) return { name: 'Bamboo Grand Rapids', city: 'Grand Rapids' };
+    if (lower.includes('ann arbor')) return { name: 'Bamboo Ann Arbor', city: 'Ann Arbor' };
+    if (lower.includes('downtown detroit') || lower.includes('detroit') && !lower.includes('midtown')) return { name: 'Bamboo Downtown Detroit', city: 'Detroit' };
+    if (lower.includes('midtown')) return { name: 'Bamboo Midtown Detroit', city: 'Detroit' };
+    if (lower.includes('royal oak')) return { name: 'Bamboo Royal Oak', city: 'Royal Oak' };
+    
+    return { name: 'Bamboo Cowork', city: 'Unknown' };
   }
   
   try {
@@ -488,10 +531,16 @@ async function scrapeBamboo() {
     const $ = loadHtml(html);
     const events = [];
     const scrapedAt = new Date().toISOString();
+    const seenTitles = new Set();
 
+    // Webflow uses w-dyn-item for collection items
+    // Also try other common Webflow patterns
     const eventSelectors = [
-      '.event-item', '[class*="event-card"]', '[class*="event_card"]',
-      '.w-dyn-item', '[class*="collection-item"]',
+      '.w-dyn-item',
+      '[class*="collection-item"]',
+      '[class*="event-card"]',
+      '[class*="event_card"]',
+      '.event-item',
     ];
 
     let eventElements = $();
@@ -499,68 +548,118 @@ async function scrapeBamboo() {
       const found = $(selector);
       if (found.length > 0) {
         eventElements = found;
+        console.log(`    Found ${found.length} elements with selector: ${selector}`);
         break;
       }
+    }
+    
+    // If no collection items found, try finding by link pattern
+    if (eventElements.length === 0) {
+      console.log('    No collection items found, trying link-based approach');
+      $('a[href*="/events-at-bamboo/"]').each((_, el) => {
+        const $link = $(el);
+        const href = $link.attr('href') || '';
+        
+        // Skip the main events page link
+        if (href === '/events-at-bamboo' || href === '/events-at-bamboo/') return;
+        
+        // Get parent container
+        const $parent = $link.closest('div').parent().closest('div');
+        if ($parent.length > 0) {
+          eventElements = eventElements.add($parent);
+        }
+      });
+      console.log(`    Found ${eventElements.length} events via link pattern`);
     }
 
     eventElements.each((_, el) => {
       const $el = $(el);
+      const fullText = $el.text();
       
-      const title = cleanText($el.find('h2, h3, h4, [class*="title"], [class*="heading"]').first().text());
-      if (!title || title.length < 3) return;
+      // Get title
+      const title = cleanText(
+        $el.find('h2, h3, h4, h5, [class*="title"], [class*="heading"], [class*="name"]').first().text()
+      );
       
-      const description = cleanText($el.find('p, [class*="description"], [class*="excerpt"]').first().text());
+      if (!title || title.length < 3 || title.length > 200) return;
       
-      let dateTimeText = '';
-      $el.find('[class*="date"], [class*="time"], time').each((_, dateEl) => {
-        dateTimeText += ' ' + $(dateEl).text();
+      // Skip duplicates and navigation items
+      if (seenTitles.has(title)) return;
+      if (['Events', 'Filters', 'View details', 'Book a tour', 'Contact us'].includes(title)) return;
+      
+      // Get description
+      const description = cleanText(
+        $el.find('p, [class*="description"], [class*="excerpt"], [class*="summary"]').first().text()
+      );
+      
+      // Extract date from full text - format: "Jan 13, 2026 9:00 AM" or "Feb 4, 2026 8:30 AM"
+      const dateMatch = fullText.match(/([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(\d{4})/);
+      if (!dateMatch) return;
+      
+      const month = MONTHS[dateMatch[1].toLowerCase()];
+      if (!month) return;
+      
+      const day = dateMatch[2].padStart(2, '0');
+      const year = dateMatch[3];
+      const date = `${year}-${month}-${day}`;
+      
+      // Extract time
+      const timeMatch = fullText.match(/(\d{1,2}):(\d{2})\s*(AM|PM|am|pm)/i);
+      const time = timeMatch ? parseTime(`${timeMatch[1]}:${timeMatch[2]} ${timeMatch[3]}`) : 'TBD';
+      
+      // Parse location from full text
+      const location = parseLocation(fullText);
+      
+      // Get link
+      let link = $el.find('a[href*="/events-at-bamboo/"]').first().attr('href') || 
+                 $el.find('a').first().attr('href') || '';
+      
+      if (link && !link.startsWith('http')) {
+        link = `https://www.bamboocowork.com${link.startsWith('/') ? '' : '/'}${link}`;
+      }
+      
+      // Check for event type badges (Public Event, Members Only, Private Event)
+      const eventTypeBadge = cleanText(
+        $el.find('[class*="tag"], [class*="badge"], [class*="label"], [class*="category"], [class*="type"]').text()
+      );
+      
+      // Determine if free - Members Only and Private Event are NOT free
+      const isFree = !eventTypeBadge.toLowerCase().includes('members only') &&
+                     !eventTypeBadge.toLowerCase().includes('private') &&
+                     !fullText.toLowerCase().includes('members only') &&
+                     !fullText.toLowerCase().includes('private event');
+      
+      seenTitles.add(title);
+      
+      events.push({
+        id: generateEventId(SOURCE, title, date),
+        title,
+        description: description || '',
+        date,
+        time,
+        startDateTime: toISODateTime(date, time),
+        location: {
+          name: location.name,
+          address: location.city === 'Grand Rapids' ? '38 Commerce Ave SW' : '',
+          city: location.city,
+          state: 'MI',
+        },
+        url: link || config.url,
+        source: SOURCE,
+        isRecurring: detectRecurringEvent(title, description, fullText),
+        isFree,
+        scrapedAt,
       });
-      dateTimeText = cleanText(dateTimeText);
-      
-      if (!dateTimeText) {
-        const allText = $el.text();
-        const dateMatch = allText.match(/(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4}/i);
-        if (dateMatch) dateTimeText = dateMatch[0];
-      }
-      
-      const timeMatch = dateTimeText.match(/\d{1,2}:\d{2}\s*(?:AM|PM|am|pm)/);
-      const time = timeMatch ? parseTime(timeMatch[0]) : 'TBD';
-      const date = parseDate(dateTimeText);
-      
-      const locationText = cleanText($el.find('[class*="location"], [class*="venue"]').first().text());
-      const location = parseLocation(locationText);
-      
-      const link = $el.find('a').first().attr('href') || $el.closest('a').attr('href') || '';
-      
-      if (title && date) {
-        events.push({
-          id: generateEventId(SOURCE, title, date),
-          title,
-          description,
-          date,
-          time,
-          startDateTime: toISODateTime(date, time),
-          location: {
-            name: location.name,
-            address: '38 Commerce Ave SW',
-            city: location.city,
-            state: 'MI',
-          },
-          url: link.startsWith('http') ? link : `https://www.bamboocowork.com${link}`,
-          source: SOURCE,
-          isRecurring: detectRecurringEvent(title, description, dateTimeText),
-          scrapedAt,
-        });
-      }
     });
 
-    // Filter to only include Michigan events
-    const miEvents = events.filter(e => {
-      const city = e.location.city.toLowerCase();
-      return ['grand rapids', 'ann arbor', 'detroit', 'royal oak'].includes(city);
+    // Filter to only include Grand Rapids events
+    const grEvents = events.filter(e => {
+      return e.location.city.toLowerCase() === 'grand rapids';
     });
+    
+    console.log(`    Total events found: ${events.length}, Grand Rapids events: ${grEvents.length}`);
 
-    return createScrapeResult(SOURCE, miEvents);
+    return createScrapeResult(SOURCE, grEvents);
   } catch (error) {
     return createScrapeResult(SOURCE, [], error.message);
   }
@@ -641,6 +740,7 @@ async function scrapeGrandRapidsOrg() {
           source: SOURCE,
           category,
           isRecurring: detectRecurringEvent(title, description, timeText),
+          isFree: detectFreeEvent(title, description),
           scrapedAt,
         });
       }
@@ -660,7 +760,7 @@ async function scrapeGrJuniorChamber() {
     const text = `${title} ${description}`.toLowerCase();
     if (text.includes('network') || text.includes('mixer') || text.includes('happy hour') || text.includes('exchange')) return 'networking';
     if (text.includes('workshop') || text.includes('training') || text.includes('leadership')) return 'workshop';
-    if (text.includes('conference') || text.includes('summit') || text.includes('celebration')) return 'conference';
+    if (text.includes('conference') || text.includes('summit') || text.includes('celebration') || text.includes('gala') || text.includes('awards')) return 'conference';
     if (text.includes('meetup') || text.includes('connect')) return 'meetup';
     if (text.includes('pitch') || text.includes('startup') || text.includes('entrepreneur')) return 'pitch';
     return 'other';
@@ -672,128 +772,90 @@ async function scrapeGrJuniorChamber() {
     const events = [];
     const scrapedAt = new Date().toISOString();
 
-    // Wix event selectors - they use various class patterns
-    const eventSelectors = [
-      '[data-hook="events-card"]',
-      '.event-item',
-      '.event-card',
-      '[class*="eventCard"]',
-      '[class*="EventCard"]',
-      '.wixui-events-widget__event',
-      '[data-testid="event-list-item"]',
-      'li[class*="event"]',
-      'article[class*="event"]',
-      // Wix dynamic list items
-      '.comp-wrapper [class*="event"]',
-    ];
-
-    let eventElements = $();
-    for (const selector of eventSelectors) {
-      const found = $(selector);
-      if (found.length > 0) {
-        eventElements = found;
-        console.log(`    Found ${found.length} elements with selector: ${selector}`);
-        break;
-      }
+    // Primary selector - Wix Events widget uses data-hook="event-list-item"
+    let eventElements = $('[data-hook="event-list-item"]');
+    
+    if (eventElements.length > 0) {
+      console.log(`    Found ${eventElements.length} events using Wix Events widget selector`);
     }
-
-    // If no event containers found, try to find events by looking for date patterns
+    
+    // Fallback selectors if primary doesn't work
     if (eventElements.length === 0) {
-      // Look for elements containing date-like text
-      $('div, li, article, section').each((_, el) => {
-        const $el = $(el);
-        const text = $el.text();
-        
-        // Look for date patterns like "Feb 06, 2026" or "Fri, Feb 06"
-        const hasDate = /(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}/i.test(text);
-        const hasTitle = $el.find('h2, h3, h4, [class*="title"], [class*="name"]').length > 0;
-        
-        if (hasDate && hasTitle && text.length < 2000) {
-          eventElements = eventElements.add($el);
-        }
-      });
-    }
-
-    // Also try to find events via links to event pages
-    $('a[href*="event"]').each((_, el) => {
-      const $el = $(el);
-      const href = $el.attr('href') || '';
-      const parent = $el.closest('div, li, article').first();
+      const fallbackSelectors = [
+        'li.FwdPeD',  // Wix event list item class
+        '[data-hook="events-card"]',
+        '[data-testid="event-list-item"]',
+      ];
       
-      if (parent.length > 0 && !eventElements.is(parent)) {
-        const parentText = parent.text();
-        const hasDate = /(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}/i.test(parentText);
-        if (hasDate) {
-          eventElements = eventElements.add(parent);
+      for (const selector of fallbackSelectors) {
+        const found = $(selector);
+        if (found.length > 0) {
+          eventElements = found;
+          console.log(`    Found ${found.length} events with fallback selector: ${selector}`);
+          break;
         }
       }
-    });
+    }
 
     eventElements.each((_, el) => {
       const $el = $(el);
       
-      // Try to find the title
+      // Get title from Wix data-hook attribute
       const title = cleanText(
-        $el.find('h2, h3, h4, [class*="title"], [class*="Title"], [class*="name"], [class*="Name"]').first().text() ||
-        $el.find('a').first().text()
+        $el.find('[data-hook="ev-list-item-title"]').text() ||
+        $el.find('.noWi58').text() ||
+        $el.find('[class*="title"]').first().text()
       );
       
-      if (!title || title.length < 3 || title.length > 200) return;
+      if (!title || title.length < 3 || title.length > 300) return;
       
-      // Skip navigation/menu items
-      if (['Home', 'Get Involved', 'Events', 'About Us', "Let's Connect", 'CYE', 'More'].includes(title)) return;
-      
-      // Get description
+      // Get description from Wix data-hook attribute
       const description = cleanText(
-        $el.find('p, [class*="description"], [class*="Description"], [class*="excerpt"]').first().text()
+        $el.find('[data-hook="ev-list-item-description"]').text() ||
+        $el.find('.aHRnBg').text()
       );
       
-      // Extract date and time from the element text
-      const fullText = $el.text();
+      // Get full date/time from Wix data-hook (format: "Feb 12, 2026, 5:30 PM – 7:30 PM")
+      const dateTimeText = cleanText(
+        $el.find('[data-hook="date"]').text() ||
+        $el.find('.Ke8eTf').text()
+      );
       
-      // Try various date patterns
-      // Pattern: "Feb 06, 2026, 7:00 PM"
-      let dateMatch = fullText.match(/([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(\d{4})/);
-      let timeMatch = fullText.match(/(\d{1,2}):(\d{2})\s*(AM|PM|am|pm)/);
+      // Also get short date display (format: "Thu, Feb 12")
+      const shortDateText = cleanText(
+        $el.find('[data-hook="ev-date"]').text() ||
+        $el.find('.nDmqzY').text()
+      );
       
-      // Pattern: "Fri, Feb 06"
-      if (!dateMatch) {
-        dateMatch = fullText.match(/(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*,?\s+([A-Za-z]{3,9})\.?\s+(\d{1,2})/i);
-        if (dateMatch) {
-          // Assume current/next year
-          const currentYear = new Date().getFullYear();
-          const monthNum = MONTHS[dateMatch[1].toLowerCase()];
-          if (monthNum) {
-            const currentMonth = new Date().getMonth() + 1;
-            const eventMonth = parseInt(monthNum);
-            const year = eventMonth < currentMonth ? currentYear + 1 : currentYear;
-            dateMatch = [null, dateMatch[1], dateMatch[2], year.toString()];
-          }
-        }
-      }
+      // Parse date from full datetime text (e.g., "Feb 12, 2026, 5:30 PM – 7:30 PM")
+      const fullDateMatch = dateTimeText.match(/([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(\d{4})/);
+      const timeMatch = dateTimeText.match(/(\d{1,2}):(\d{2})\s*(AM|PM|am|pm)/i);
       
-      if (!dateMatch) return;
+      if (!fullDateMatch) return;
       
-      const month = MONTHS[dateMatch[1].toLowerCase()];
+      const month = MONTHS[fullDateMatch[1].toLowerCase()];
       if (!month) return;
       
-      const day = dateMatch[2].padStart(2, '0');
-      const year = dateMatch[3];
+      const day = fullDateMatch[2].padStart(2, '0');
+      const year = fullDateMatch[3];
       const date = `${year}-${month}-${day}`;
       
       const time = timeMatch ? parseTime(`${timeMatch[1]}:${timeMatch[2]} ${timeMatch[3]}`) : 'TBD';
       
-      // Get link
-      let link = $el.find('a[href*="event"]').first().attr('href') || 
-                 $el.find('a').first().attr('href') || 
+      // Get link from RSVP button
+      let link = $el.find('[data-hook="ev-rsvp-button"]').attr('href') || 
+                 $el.find('a[href*="event"]').first().attr('href') ||
                  '';
       
       if (link && !link.startsWith('http')) {
         link = `https://www.grjuniorchamber.com${link.startsWith('/') ? '' : '/'}${link}`;
       }
       
-      // Get location if available
-      const locationText = cleanText($el.find('[class*="location"], [class*="Location"], [class*="venue"]').first().text());
+      // Determine if event is free - check button text
+      const buttonText = cleanText($el.find('[data-hook="ev-rsvp-button"]').text());
+      const isFree = !buttonText.toLowerCase().includes('buy') && 
+                     !buttonText.toLowerCase().includes('ticket') &&
+                     !buttonText.toLowerCase().includes('register');
       
       const category = categorizeEvent(title, description);
       const effectiveDescription = description || 'Leadership development and networking event hosted by the Grand Rapids Junior Chamber';
@@ -806,7 +868,7 @@ async function scrapeGrJuniorChamber() {
         time,
         startDateTime: toISODateTime(date, time),
         location: {
-          name: locationText || 'Grand Rapids Junior Chamber',
+          name: 'Grand Rapids Junior Chamber',
           address: '250 Monroe Ave NW Ste 150',
           city: 'Grand Rapids',
           state: 'MI',
@@ -815,7 +877,8 @@ async function scrapeGrJuniorChamber() {
         url: link || config.url,
         source: SOURCE,
         category,
-        isRecurring: detectRecurringEvent(title, effectiveDescription, fullText),
+        isRecurring: detectRecurringEvent(title, effectiveDescription, dateTimeText),
+        isFree,
         scrapedAt,
       });
     });
@@ -839,10 +902,10 @@ async function scrapeRightPlace() {
     const text = `${title} ${description}`.toLowerCase();
     if (text.includes('network') || text.includes('mixer') || text.includes('coffee') || text.includes('exchange')) return 'networking';
     if (text.includes('workshop') || text.includes('training') || text.includes('candid conversation')) return 'workshop';
-    if (text.includes('conference') || text.includes('summit') || text.includes('forum')) return 'conference';
+    if (text.includes('conference') || text.includes('summit') || text.includes('forum') || text.includes('outlook')) return 'conference';
     if (text.includes('meetup') || text.includes('connect')) return 'meetup';
     if (text.includes('pitch') || text.includes('startup') || text.includes('entrepreneur')) return 'pitch';
-    if (text.includes('developer') || text.includes('tech')) return 'workshop';
+    if (text.includes('developer') || text.includes('tech') || text.includes('go beyond')) return 'workshop';
     return 'other';
   }
   
@@ -851,71 +914,53 @@ async function scrapeRightPlace() {
     const $ = loadHtml(html);
     const events = [];
     const scrapedAt = new Date().toISOString();
+    const seenLinks = new Set();
 
-    // The Right Place uses card-based event listings
-    const eventSelectors = [
-      '.event-card',
-      '[class*="event-item"]',
-      '[class*="EventCard"]',
-      'article[class*="event"]',
-      '.card',
-      'a[href*="/events/"]',
-    ];
-
-    let eventElements = $();
-    
-    // First, try to find event containers
-    for (const selector of eventSelectors) {
-      const found = $(selector).filter((_, el) => {
-        const text = $(el).text();
-        // Must have a date pattern to be an event
-        return /(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}/i.test(text);
-      });
-      if (found.length > 0) {
-        eventElements = found;
-        break;
+    // Primary approach: Find all links to event detail pages
+    $('a[href*="/events/"]').each((_, el) => {
+      const $link = $(el);
+      const href = $link.attr('href') || '';
+      
+      // Skip if not an event detail link or already processed
+      if (!href || href === '/events' || href === '/events/' || href.endsWith('/events')) return;
+      if (seenLinks.has(href)) return;
+      
+      // Skip pagination links
+      if (/\/events\/p\d+/.test(href)) return;
+      
+      // Build full URL
+      let fullUrl = href;
+      if (!href.startsWith('http')) {
+        fullUrl = `https://www.rightplace.org${href.startsWith('/') ? '' : '/'}${href}`;
       }
-    }
-
-    // If no containers found, look for h3 headers that might be event titles
-    if (eventElements.length === 0) {
-      $('h3').each((_, el) => {
-        const $el = $(el);
-        const parent = $el.closest('div, article, section, li').first();
-        const text = parent.text();
-        
-        // Check if parent has date pattern
-        if (/(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}/i.test(text)) {
-          eventElements = eventElements.add(parent);
-        }
-      });
-    }
-
-    eventElements.each((_, el) => {
-      const $el = $(el);
-      const fullText = $el.text();
       
-      // Extract title - usually in h3 or strong element
+      // Get the container element - look for parent with event info
+      let $container = $link.closest('div, article, section, li').first();
+      
+      // If container is too small, try parent
+      if ($container.text().length < 50) {
+        $container = $container.parent().closest('div, article, section').first();
+      }
+      
+      const containerText = $container.text();
+      
+      // Get title - prefer h3 inside or near the link
       let title = cleanText(
-        $el.find('h3').first().text() ||
-        $el.find('h2').first().text() ||
-        $el.find('strong').first().text() ||
-        $el.find('[class*="title"]').first().text()
+        $link.find('h3').text() ||
+        $container.find('h3').first().text() ||
+        $link.text()
       );
       
-      if (!title || title.length < 5 || title.length > 200) return;
+      // Clean up title
+      if (!title || title.length < 5) return;
+      if (title.length > 200) title = title.substring(0, 200);
       
-      // Skip navigation items
-      if (['Events', 'News', 'Contact', 'About Us', 'Home'].includes(title)) return;
+      // Skip navigation/filter items
+      if (['Events', 'News', 'Contact', 'About Us', 'Home', 'Upcoming Events', 'Past Events', 'Filter'].includes(title)) return;
+      if (title.startsWith('View ') || title.includes('Sponsorship')) return;
       
-      // Extract description
-      const description = cleanText(
-        $el.find('p').first().text() ||
-        $el.find('[class*="description"]').first().text()
-      );
-      
-      // Extract date - format: "February 4, 2026"
-      const dateMatch = fullText.match(/([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
+      // Extract date - format: "February 12, 2026" or "March 3, 2026"
+      const dateMatch = containerText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:–\d{1,2})?,?\s+(\d{4})/i);
       if (!dateMatch) return;
       
       const month = MONTHS[dateMatch[1].toLowerCase()];
@@ -925,37 +970,53 @@ async function scrapeRightPlace() {
       const year = dateMatch[3];
       const date = `${year}-${month}-${day}`;
       
-      // Extract time - format: "2:30PM–6:00PM" or "8:00AM–2:00PM"
-      const timeMatch = fullText.match(/(\d{1,2}:\d{2}\s*(?:AM|PM))/i);
-      const time = timeMatch ? parseTime(timeMatch[1]) : 'TBD';
+      // Skip past events
+      if (containerText.toLowerCase().includes('past event')) return;
       
-      // Extract location
+      // Extract time - format: "7:30AM–10:00AM" or "8:00AM"
+      const timeMatch = containerText.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+      const time = timeMatch ? parseTime(`${timeMatch[1]}:${timeMatch[2]} ${timeMatch[3]}`) : 'TBD';
+      
+      // Extract description
+      let description = '';
+      const $desc = $container.find('p').first();
+      if ($desc.length > 0) {
+        description = cleanText($desc.text());
+      }
+      
+      // Extract location from known venue patterns
       let locationText = '';
       const locationPatterns = [
-        /(?:at|@)\s+([^,\n]+)/i,
-        /(Frederik Meijer Gardens|Amway Grand Plaza|Junior Achievement|Bamboo|GVSU|DeVos)/i,
+        /(Frederik Meijer Gardens)/i,
+        /(Amway Grand Plaza)/i,
+        /(JW Marriott Grand Rapids)/i,
+        /(Bamboo Grand Rapids)/i,
+        /(DeVos Place)/i,
+        /(GVSU)/i,
       ];
       
       for (const pattern of locationPatterns) {
-        const locMatch = fullText.match(pattern);
+        const locMatch = containerText.match(pattern);
         if (locMatch) {
           locationText = cleanText(locMatch[1]);
           break;
         }
       }
       
-      // Get link
-      let link = $el.find('a').first().attr('href') || $el.attr('href') || '';
-      if (link && !link.startsWith('http')) {
-        link = `https://www.rightplace.org${link.startsWith('/') ? '' : '/'}${link}`;
+      // Check for TBD location
+      if (!locationText && containerText.includes('TBD')) {
+        locationText = 'TBD';
       }
       
+      seenLinks.add(href);
+      
       const category = categorizeEvent(title, description);
+      const effectiveDescription = description || 'Business and economic development event hosted by The Right Place.';
       
       events.push({
         id: generateEventId(SOURCE, title, date),
         title,
-        description: description || 'Business and economic development event hosted by The Right Place.',
+        description: effectiveDescription,
         date,
         time,
         startDateTime: toISODateTime(date, time),
@@ -966,9 +1027,11 @@ async function scrapeRightPlace() {
           state: 'MI',
           zip: '49503',
         },
-        url: link || config.url,
+        url: fullUrl,
         source: SOURCE,
         category,
+        isRecurring: detectRecurringEvent(title, effectiveDescription, containerText),
+        isFree: detectFreeEvent(title, effectiveDescription, containerText),
         scrapedAt,
       });
     });
@@ -977,6 +1040,8 @@ async function scrapeRightPlace() {
     const uniqueEvents = Array.from(
       new Map(events.map(e => [`${e.title}-${e.date}`, e])).values()
     );
+    
+    console.log(`    Found ${uniqueEvents.length} events from The Right Place`);
 
     return createScrapeResult(SOURCE, uniqueEvents);
   } catch (error) {

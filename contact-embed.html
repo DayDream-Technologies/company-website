@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            background-color: #0a0a0a;
+            font-family: 'Roboto', sans-serif;
+            padding: 20px;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 20px;
+            padding: 10px;
+            background: #FBE8D4;
+            border-radius: 10px;
+        }
+
+        /* Contact Form Container */
+        .form-container {
+            width: 100%;
+            background: linear-gradient(#ffffff, #ffffff) padding-box,
+                        linear-gradient(145deg, transparent 35%,#e7823c, #ea9149) border-box;
+            border: 2px solid transparent;
+            padding: 32px 24px;
+            font-size: 14px;
+            font-family: inherit;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-sizing: border-box;
+            border-radius: 16px;
+            text-align: left;
+        }
+
+        .form-container button:active {
+            scale: 0.95;
+        }
+
+        .form-container .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-container .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .form-container .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #e7823c;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .form-container .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            color: #000;
+            font-family: inherit;
+            background-color: transparent;
+            border: 1px solid #a1a1a1;
+        }
+
+        .form-container .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            resize: none;
+            color: #000;
+            height: 96px;
+            border: 1px solid #a1a1a1;
+            background-color: transparent;
+            font-family: inherit;
+        }
+
+        .form-container .form-group input::placeholder {
+            opacity: 0.5;
+        }
+
+        .form-container .form-group input:focus {
+            outline: none;
+            border-color: #100c09;
+        }
+
+        .form-container .form-group textarea:focus {
+            outline: none;
+            border-color: #e7823c;
+        }
+
+        .form-container .form-submit-btn {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            align-self: flex-start;
+            font-family: inherit;
+            font-weight: 600;
+            width: 40%;
+            color: #212121;
+            background: #FBE8D4;
+            border: 1px solid #fff;
+            padding: 12px 16px;
+            font-size: inherit;
+            gap: 8px;
+            margin-top: 8px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .form-container .form-submit-btn:hover {
+            background: #e7823c;
+        }
+
+        .form-container .form-submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Select dropdown styling */
+        .form-container .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            color: #000;
+            font-family: inherit;
+            background-color: transparent;
+            border: 1px solid #a1a1a1;
+            font-size: inherit;
+            cursor: pointer;
+        }
+
+        .form-container .form-group select:focus {
+            outline: none;
+            border-color: #e7823c;
+        }
+
+        .form-container .form-group select::placeholder {
+            opacity: 0.5;
+        }
+
+        /* Radio button group styling */
+        .form-container .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .form-container .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .form-container .radio-label input[type="radio"] {
+            margin-right: 8px;
+            width: auto;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .form-container .radio-text {
+            color: #000;
+            font-family: inherit;
+        }
+
+        /* Required field asterisk styling */
+        .form-container .required-asterisk {
+            color: #ff0000;
+            font-weight: bold;
+            margin-left: 2px;
+        }
+
+        /* Success/Error Message */
+        .success-message {
+            display: none;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideIn 0.4s ease-out;
+        }
+
+        .error-message {
+            display: none;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideIn 0.4s ease-out;
+        }
+
+        .success-message.show,
+        .error-message.show {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .form-container .form-submit-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-wrapper">
+        <div class="success-message" id="successMessage">
+            ✓ Thank you for your message! We'll get back to you soon.
+        </div>
+        <div class="error-message" id="errorMessage">
+            ✗ There was an error submitting the form. Please try again.
+        </div>
+        
+        <div class="form-container">
+            <form class="form" id="contactForm" action="https://1zxkecx75f.execute-api.us-east-1.amazonaws.com/contact" method="POST">
+                <div class="form-group">
+                    <label for="name">Name <span class="required-asterisk">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required-asterisk">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="job_title">Job Title</label>
+                    <input type="text" id="job_title" name="job_title" placeholder="e.g., Marketing Manager, CEO, Developer">
+                </div>
+                <div class="form-group">
+                    <label for="website_url">Website URL (if applicable)</label>
+                    <input type="url" id="website_url" name="website_url" placeholder="https://yourwebsite.com">
+                </div>
+                <div class="form-group">
+                    <label for="service">What service are you looking for? <span class="required-asterisk">*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="hardware-development">Hardware Development</option>
+                        <option value="sales-consulting">Sales Consulting</option>
+                        <option value="research">Research</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Project Type <span class="required-asterisk">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="project_type" value="new-project" required>
+                            <span class="radio-text">New project</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="project_type" value="redesign" required>
+                            <span class="radio-text">Redesign</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="project_type" value="maintenance" required>
+                            <span class="radio-text">Maintenance</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="project_type" value="consultation" required>
+                            <span class="radio-text">Consultation</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hear_about">How did you hear about us?</label>
+                    <select id="hear_about" name="hear_about">
+                        <option value="">Select an option</option>
+                        <option value="google-search">Google search</option>
+                        <option value="social-media">Social media</option>
+                        <option value="referral">Referral</option>
+                        <option value="previous-client">Previous client</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="conference">Conference/Event</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="main_website">How Can We Help You? <span class="required-asterisk">*</span></label>
+                    <textarea name="main_website" id="main_website" rows="10" cols="50" required></textarea>
+                </div>
+                <button class="form-submit-btn" type="submit" id="submitBtn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const email = document.getElementById('email');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        const submitBtn = document.getElementById('submitBtn');
+
+        function showMessage(messageElement, duration = 5000) {
+            messageElement.classList.add('show');
+            setTimeout(() => {
+                messageElement.classList.remove('show');
+            }, duration);
+        }
+
+        if (form && email) {
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!emailRegex.test(email.value)) {
+                    email.setCustomValidity('Please enter a valid email address.');
+                    email.reportValidity();
+                    return;
+                } else {
+                    email.setCustomValidity('');
+                }
+
+                // Disable submit button
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+
+                try {
+                    const formData = new FormData(form);
+                    
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        showMessage(successMessage);
+                        form.reset();
+                        submitBtn.textContent = 'Send';
+                        submitBtn.disabled = false;
+                    } else {
+                        showMessage(errorMessage);
+                        submitBtn.textContent = 'Send';
+                        submitBtn.disabled = false;
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    showMessage(errorMessage);
+                    submitBtn.textContent = 'Send';
+                    submitBtn.disabled = false;
+                }
+            });
+
+            email.addEventListener('input', function () {
+                email.setCustomValidity('');
+            });
+        }
+    </script>
+</body>
+</html>
