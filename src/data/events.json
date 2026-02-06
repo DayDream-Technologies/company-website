@@ -1,12 +1,12 @@
 {
   "events": [
     {
-      "id": "grand-rapids-org-events-search-and-views-navigation-2026-02-04",
+      "id": "grand-rapids-org-events-search-and-views-navigation-2026-02-05",
       "title": "Events Search and Views Navigation",
       "description": "",
-      "date": "2026-02-04",
+      "date": "2026-02-05",
       "time": "Now Now",
-      "startDateTime": "2026-02-04T00:00:00",
+      "startDateTime": "2026-02-05T00:00:00",
       "location": {
         "name": "Grand Rapids",
         "address": "",
@@ -20,51 +20,70 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
     },
     {
-      "id": "grand-rapids-org-business-exchange-breakfast-2026-02-05",
-      "title": "Business Exchange Breakfast",
-      "description": "",
+      "id": "bamboo-the-quarter-mornings-2026-02-05",
+      "title": "The Quarter Mornings",
+      "description": "​A weekly peer group for founders building from $0 to $250k, focused on customers and revenue, not fundraising.",
       "date": "2026-02-05",
-      "time": "February 5 @ 8:00 am - 10:00 am Business Exchange Series",
-      "startDateTime": "2026-02-05T00:00:00",
+      "time": "7:30 AM",
+      "startDateTime": "2026-02-05T07:30:00",
       "location": {
-        "name": "Grand Rapids",
-        "address": "",
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
         "city": "Grand Rapids",
         "state": "MI",
         "lat": 42.9614,
         "lng": -85.6726
       },
-      "url": "https://grandrapids.org/event/business-exchange-breakfast-2-5/",
-      "source": "grand-rapids-org",
-      "category": "other",
+      "url": "https://www.bamboocowork.com/events-at-bamboo/the-quarter-mornings",
+      "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
-      "id": "grand-rapids-org-west-michigan-minority-contractors-construction",
-      "title": "West Michigan Minority Contractors & Construction Allies in Action Meet & Greet",
-      "description": "",
+      "id": "bamboo-lunch-break-2026-02-05",
+      "title": "Lunch Break",
+      "description": "Lunch Break is our weekly community lunch. Every Thursday at noon, all Bamboo GR members are invited to gather in the 5th floor kitchen for lunch together.",
       "date": "2026-02-05",
-      "time": "February 5 @ 4:00 pm - 6:00 pm West Michigan Minority Contractors",
-      "startDateTime": "2026-02-05T00:00:00",
+      "time": "12:00 PM",
+      "startDateTime": "2026-02-05T12:00:00",
       "location": {
-        "name": "Grand Rapids",
-        "address": "",
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
         "city": "Grand Rapids",
         "state": "MI",
         "lat": 42.9614,
         "lng": -85.6726
       },
-      "url": "https://grandrapids.org/event/west-michigan-minority-contractors-2-5/",
-      "source": "grand-rapids-org",
-      "category": "other",
+      "url": "https://www.bamboocowork.com/events-at-bamboo/lunch-break-2",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": false,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
+    },
+    {
+      "id": "bamboo-seamless-ventures-smart-legos-sunlight-hunters-and-humano",
+      "title": "Seamless Ventures | Smart Legos, Sunlight Hunters, and Humanoid Robots - CES Debrief",
+      "description": "​Join the Seamless Community as we discuss the important, fun, and weird from CES.",
+      "date": "2026-02-05",
+      "time": "1:00 PM",
+      "startDateTime": "2026-02-05T13:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/seamless-ventures-smart-legos-sunlight-hunters-and-humanoid-robots---ces-debrief",
+      "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-02-06",
@@ -86,7 +105,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
     },
     {
       "id": "grand-rapids-org-chamber-101-2026-02-11",
@@ -108,7 +127,28 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "bamboo-lunch-break-2026-02-12",
+      "title": "Lunch Break",
+      "description": "Lunch Break is our weekly community lunch. Every Thursday at noon, all Bamboo GR members are invited to gather in the 5th floor kitchen for lunch together.",
+      "date": "2026-02-12",
+      "time": "12:00 PM",
+      "startDateTime": "2026-02-12T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/lunch-break-3",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": false,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "gr-junior-chamber-leadership-isn-t-about-authority-it-s-about-un",
@@ -131,7 +171,28 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-04T19:59:23.277Z"
+      "scrapedAt": "2026-02-06T04:05:41.679Z"
+    },
+    {
+      "id": "bamboo-women-in-healthcare-galentines-coffee-meet-and-greet-2026",
+      "title": "Women in Healthcare Galentines Coffee Meet and Greet",
+      "description": "Women in Healthcare - West Side: Galentines Coffee Connect",
+      "date": "2026-02-13",
+      "time": "8:30 AM",
+      "startDateTime": "2026-02-13T08:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/women-in-healthcare-galentines-coffee-meet-and-greet",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": false,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "grand-rapids-org-athena-leadership-forum-the-power-of-giving-bac",
@@ -153,7 +214,28 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "bamboo-midwest-marketing-meetup-2026-02-18",
+      "title": "Midwest Marketing Meetup",
+      "description": "Whether you're seasoned or new to the industry, connect with West Michigan's marketing community and hear real insights from someone in the trenches.",
+      "date": "2026-02-18",
+      "time": "4:30 PM",
+      "startDateTime": "2026-02-18T16:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/midwest-marketing-meetup",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-02-19",
@@ -175,7 +257,49 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "bamboo-lunch-break-2026-02-19",
+      "title": "Lunch Break",
+      "description": "Lunch Break is our weekly community lunch. Every Thursday at noon, all Bamboo GR members are invited to gather in the 5th floor kitchen for lunch together.",
+      "date": "2026-02-19",
+      "time": "12:00 PM",
+      "startDateTime": "2026-02-19T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/lunch-break-4",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": false,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
+    },
+    {
+      "id": "bamboo-the-rink-film-screening-2026-02-19",
+      "title": "The Rink Film Screening",
+      "description": "Come out for a film screening of the short film \"THE RINK\" featuring a Q+A with the cast and crew. Sounds by DJ Wranger",
+      "date": "2026-02-19",
+      "time": "6:00 PM",
+      "startDateTime": "2026-02-19T18:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/the-rink-film-screening",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "grand-rapids-org-chamber-issues-forum-health-care-in-west-michig",
@@ -197,7 +321,28 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "bamboo-candid-conversations-2026-02-20",
+      "title": "Candid Conversations",
+      "description": "Developing Talent Pipelines Through Internships and Strength-Based Hiring with Stacy Paul",
+      "date": "2026-02-20",
+      "time": "9:00 AM",
+      "startDateTime": "2026-02-20T09:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/candid-conversations",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "gr-junior-chamber-stress-burnout-and-mental-health-how-to-care-f",
@@ -220,7 +365,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-04T19:59:23.277Z"
+      "scrapedAt": "2026-02-06T04:05:41.679Z"
     },
     {
       "id": "grand-rapids-org-leadership-lesson-breakfast-2026-02-24",
@@ -242,7 +387,28 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "bamboo-5x5-night-2026-02-24",
+      "title": "5X5 Night",
+      "description": "Five Michigan innovators. Five minutes each. One $5,000 winner.",
+      "date": "2026-02-24",
+      "time": "5:00 PM",
+      "startDateTime": "2026-02-24T17:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/5x5-night",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-02-25",
@@ -264,7 +430,49 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "bamboo-lunch-break-2026-02-26",
+      "title": "Lunch Break",
+      "description": "Lunch Break is our weekly community lunch. Every Thursday at noon, all Bamboo GR members are invited to gather in the 5th floor kitchen for lunch together.",
+      "date": "2026-02-26",
+      "time": "12:00 PM",
+      "startDateTime": "2026-02-26T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/lunch-break-5",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": false,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
+    },
+    {
+      "id": "bamboo-film-resurgo-the-rise-from-within-2026-02-26",
+      "title": "FILM - Resurgo: The Rise From Within",
+      "description": "Resurgo: The Rise From Within is a landmark documentary from director Stephen McGee and poet-producer Jessica Care Moore, created from twenty years of immersive filmmaking in Detroit.",
+      "date": "2026-02-26",
+      "time": "6:00 PM",
+      "startDateTime": "2026-02-26T18:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/resurgo-film",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-02-06T04:05:37.097Z"
     },
     {
       "id": "grand-rapids-org-women-in-leadership-spring-cohort-kickoff-2026-",
@@ -286,7 +494,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
     },
     {
       "id": "grand-rapids-org-business-growth-workshop-new-tax-breaks-for-bus",
@@ -308,7 +516,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
     },
     {
       "id": "grand-rapids-org-emerging-leaders-spring-cohort-kickoff-2026-03-",
@@ -330,7 +538,51 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:21.754Z"
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "grand-rapids-org-leadup-spring-cohort-kickoff-2026-03-05",
+      "title": "LeadUp Spring Cohort Kickoff",
+      "description": "",
+      "date": "2026-03-05",
+      "time": "March 5 @ 1:00 pm - 4:30 pm Lead Up",
+      "startDateTime": "2026-03-05T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/leadup-spring/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
+    },
+    {
+      "id": "grand-rapids-org-grand-rapids-policy-conference-2026-03-06",
+      "title": "Grand Rapids Policy Conference",
+      "description": "",
+      "date": "2026-03-06",
+      "time": "March 6 @ 7:30 am - 12:00 pm",
+      "startDateTime": "2026-03-06T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/grand-rapids-policy-conference-2026/",
+      "source": "grand-rapids-org",
+      "category": "conference",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-06T04:05:40.240Z"
     },
     {
       "id": "gr-junior-chamber-grand-rapids-junior-chamber-annual-gala-rising",
@@ -353,30 +605,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-04T19:59:23.277Z"
-    },
-    {
-      "id": "right-place-2026-q1-technology-exchange-february-4-2026-02-04",
-      "title": "2026 Q1 Technology Exchange | February 4",
-      "description": "This is a closed, members-only session.",
-      "date": "2026-02-04",
-      "time": "62:30 PM",
-      "startDateTime": "2026-02-04T74:30:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/2026-q1-technology-exchange",
-      "source": "right-place",
-      "category": "networking",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:41.679Z"
     },
     {
       "id": "right-place-the-right-place-s-2026-2028-strategic-plan-launch-ev",
@@ -399,7 +628,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-west-michigan-manufacturing-defense-cooperative-inte",
@@ -422,7 +651,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-coffee-circle-february-18-2026-02-18",
@@ -445,7 +674,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-candid-conversations-february-20-2026-02-20",
@@ -468,7 +697,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-supply-chain-management-conference-2026-2026-03-03",
@@ -491,7 +720,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-career-readiness-conference-2026-2026-03-10",
@@ -514,7 +743,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-2026-q2-technology-exchange-april-22-2026-04-22",
@@ -537,7 +766,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-go-beyond-2026-2026-05-07",
@@ -560,7 +789,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -583,10 +812,33 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-04T19:59:26.006Z"
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
+    },
+    {
+      "id": "right-place-candid-conversations-june-18-2026-06-18",
+      "title": "Candid Conversations | June 18",
+      "description": "Higher Education’s Role in Preparing Tomorrow’s Workforce with Dr. Philomena Mantella",
+      "date": "2026-06-18",
+      "time": "63:00 PM",
+      "startDateTime": "2026-06-18T75:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.rightplace.org/events/candid-conversations-june-18",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-06T04:05:44.184Z"
     }
   ],
-  "lastScraped": "2026-02-04T19:59:30.351Z",
+  "lastScraped": "2026-02-06T04:05:46.708Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -594,7 +846,7 @@
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
       "eventCount": 0,
-      "lastScraped": "2026-02-04T19:59:17.284Z"
+      "lastScraped": "2026-02-06T04:05:34.705Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -602,15 +854,15 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-02-04T19:59:18.405Z"
+      "lastScraped": "2026-02-06T04:05:35.863Z"
     },
     "bamboo": {
       "id": "bamboo",
       "name": "Bamboo Cowork",
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
-      "eventCount": 0,
-      "lastScraped": "2026-02-04T19:59:19.728Z"
+      "eventCount": 12,
+      "lastScraped": "2026-02-06T04:05:37.130Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -618,7 +870,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 49,
-      "lastScraped": "2026-02-04T19:59:21.783Z"
+      "lastScraped": "2026-02-06T04:05:40.277Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -626,7 +878,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-02-04T19:59:23.279Z"
+      "lastScraped": "2026-02-06T04:05:41.681Z"
     },
     "right-place": {
       "id": "right-place",
@@ -634,7 +886,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-02-04T19:59:26.010Z"
+      "lastScraped": "2026-02-06T04:05:44.188Z"
     }
   }
 }

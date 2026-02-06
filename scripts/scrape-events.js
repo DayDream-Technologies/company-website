@@ -512,18 +512,17 @@ async function scrapeBamboo() {
   const SOURCE = 'bamboo';
   const config = SOURCE_CONFIG[SOURCE];
   
-  function parseLocation(fullText) {
-    // Look for location keywords in the full text of the event card
-    const lower = (fullText || '').toLowerCase();
+  function parseLocationText(locationText) {
+    // Parse location from fs-cmsfilter-field="location" value
+    const lower = (locationText || '').toLowerCase().trim();
     
-    // Check for specific location mentions
-    if (lower.includes('grand rapids')) return { name: 'Bamboo Grand Rapids', city: 'Grand Rapids' };
-    if (lower.includes('ann arbor')) return { name: 'Bamboo Ann Arbor', city: 'Ann Arbor' };
-    if (lower.includes('downtown detroit') || lower.includes('detroit') && !lower.includes('midtown')) return { name: 'Bamboo Downtown Detroit', city: 'Detroit' };
-    if (lower.includes('midtown')) return { name: 'Bamboo Midtown Detroit', city: 'Detroit' };
-    if (lower.includes('royal oak')) return { name: 'Bamboo Royal Oak', city: 'Royal Oak' };
+    if (lower === 'grand rapids') return { name: 'Bamboo Grand Rapids', city: 'Grand Rapids' };
+    if (lower === 'ann arbor') return { name: 'Bamboo Ann Arbor', city: 'Ann Arbor' };
+    if (lower === 'downtown detroit') return { name: 'Bamboo Downtown Detroit', city: 'Detroit' };
+    if (lower === 'midtown detroit') return { name: 'Bamboo Midtown Detroit', city: 'Detroit' };
+    if (lower === 'royal oak') return { name: 'Bamboo Royal Oak', city: 'Royal Oak' };
     
-    return { name: 'Bamboo Cowork', city: 'Unknown' };
+    return { name: 'Bamboo Cowork', city: lower || 'Unknown' };
   }
   
   try {
@@ -531,69 +530,59 @@ async function scrapeBamboo() {
     const $ = loadHtml(html);
     const events = [];
     const scrapedAt = new Date().toISOString();
-    const seenTitles = new Set();
+    const seenLinks = new Set();
 
-    // Webflow uses w-dyn-item for collection items
-    // Also try other common Webflow patterns
-    const eventSelectors = [
-      '.w-dyn-item',
-      '[class*="collection-item"]',
-      '[class*="event-card"]',
-      '[class*="event_card"]',
-      '.event-item',
-    ];
-
-    let eventElements = $();
-    for (const selector of eventSelectors) {
-      const found = $(selector);
-      if (found.length > 0) {
-        eventElements = found;
-        console.log(`    Found ${found.length} elements with selector: ${selector}`);
-        break;
-      }
-    }
+    // Primary selector - Webflow CMS event cards
+    const eventElements = $('article.cms-event');
     
-    // If no collection items found, try finding by link pattern
-    if (eventElements.length === 0) {
-      console.log('    No collection items found, trying link-based approach');
-      $('a[href*="/events-at-bamboo/"]').each((_, el) => {
-        const $link = $(el);
-        const href = $link.attr('href') || '';
-        
-        // Skip the main events page link
-        if (href === '/events-at-bamboo' || href === '/events-at-bamboo/') return;
-        
-        // Get parent container
-        const $parent = $link.closest('div').parent().closest('div');
-        if ($parent.length > 0) {
-          eventElements = eventElements.add($parent);
-        }
-      });
-      console.log(`    Found ${eventElements.length} events via link pattern`);
+    if (eventElements.length > 0) {
+      console.log(`    Found ${eventElements.length} events using article.cms-event selector`);
+    } else {
+      console.log('    No events found with article.cms-event selector');
     }
 
     eventElements.each((_, el) => {
       const $el = $(el);
-      const fullText = $el.text();
       
-      // Get title
+      // Get title from fs-cmsfilter-field="name"
       const title = cleanText(
-        $el.find('h2, h3, h4, h5, [class*="title"], [class*="heading"], [class*="name"]').first().text()
+        $el.find('[fs-cmsfilter-field="name"]').text() ||
+        $el.find('h4.heading-xsmall').text()
       );
       
       if (!title || title.length < 3 || title.length > 200) return;
       
-      // Skip duplicates and navigation items
-      if (seenTitles.has(title)) return;
+      // Get link from blog1_title-link
+      let link = $el.find('a.blog1_title-link').attr('href') || '';
+      
+      // Skip duplicates
+      if (link && seenLinks.has(link)) return;
+      if (link) seenLinks.add(link);
+      
+      // Skip navigation items
       if (['Events', 'Filters', 'View details', 'Book a tour', 'Contact us'].includes(title)) return;
       
-      // Get description
-      const description = cleanText(
-        $el.find('p, [class*="description"], [class*="excerpt"], [class*="summary"]').first().text()
-      );
+      // Get location from fs-cmsfilter-field="location"
+      const locationText = cleanText($el.find('[fs-cmsfilter-field="location"]').text());
+      const location = parseLocationText(locationText);
       
-      // Extract date from full text - format: "Jan 13, 2026 9:00 AM" or "Feb 4, 2026 8:30 AM"
-      const dateMatch = fullText.match(/([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(\d{4})/);
+      // Get date/time - from .cms-event-card_info that doesn't have fs-cmsfilter-field
+      // The date is in format: "Feb 5, 2026 7:30 AM"
+      let dateText = '';
+      $el.find('.cms-event-card_info').each((_, infoEl) => {
+        const $info = $(infoEl);
+        // Skip if it has fs-cmsfilter-field (that's the location)
+        if (!$info.attr('fs-cmsfilter-field') && !$info.hasClass('w-condition-invisible')) {
+          const text = $info.text();
+          // Check if it looks like a date
+          if (/[A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4}/.test(text)) {
+            dateText = text;
+          }
+        }
+      });
+      
+      // Parse date
+      const dateMatch = dateText.match(/([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(\d{4})/);
       if (!dateMatch) return;
       
       const month = MONTHS[dateMatch[1].toLowerCase()];
@@ -603,33 +592,49 @@ async function scrapeBamboo() {
       const year = dateMatch[3];
       const date = `${year}-${month}-${day}`;
       
-      // Extract time
-      const timeMatch = fullText.match(/(\d{1,2}):(\d{2})\s*(AM|PM|am|pm)/i);
+      // Extract time from date text
+      const timeMatch = dateText.match(/(\d{1,2}):(\d{2})\s*(AM|PM|am|pm)/i);
       const time = timeMatch ? parseTime(`${timeMatch[1]}:${timeMatch[2]} ${timeMatch[3]}`) : 'TBD';
       
-      // Parse location from full text
-      const location = parseLocation(fullText);
+      // Get description - it's in a plain div after the date info
+      const fullText = $el.text();
+      let description = '';
+      $el.find('div').each((_, divEl) => {
+        const $div = $(divEl);
+        const text = $div.text().trim();
+        // Skip if it's a tag, info, or button element
+        if (!$div.attr('class') && 
+            !$div.attr('fs-cmsfilter-field') && 
+            text.length > 30 && 
+            text.length < 1000 &&
+            !text.includes('RSVP') &&
+            !text.includes('View details')) {
+          description = cleanText(text);
+        }
+      });
       
-      // Get link
-      let link = $el.find('a[href*="/events-at-bamboo/"]').first().attr('href') || 
-                 $el.find('a').first().attr('href') || '';
+      // Get event type from visible .cms-event-card_tag (not w-condition-invisible)
+      const eventType = cleanText(
+        $el.find('.cms-event-card_tag:not(.w-condition-invisible)').first().text()
+      );
       
+      // Get button text for free detection
+      const buttonText = cleanText($el.find('.button-tertiary').text());
+      
+      // Determine if free:
+      // - "Members Only" = NOT free (requires membership)
+      // - "Private Event" = NOT free
+      // - Button says "Get Tickets" or "Buy Tickets" = NOT free
+      // - "Public Event" with "RSVP" or "View" = likely free
+      const isFree = !eventType.toLowerCase().includes('members only') &&
+                     !eventType.toLowerCase().includes('private') &&
+                     !buttonText.toLowerCase().includes('get tickets') &&
+                     !buttonText.toLowerCase().includes('buy tickets');
+      
+      // Build full URL
       if (link && !link.startsWith('http')) {
         link = `https://www.bamboocowork.com${link.startsWith('/') ? '' : '/'}${link}`;
       }
-      
-      // Check for event type badges (Public Event, Members Only, Private Event)
-      const eventTypeBadge = cleanText(
-        $el.find('[class*="tag"], [class*="badge"], [class*="label"], [class*="category"], [class*="type"]').text()
-      );
-      
-      // Determine if free - Members Only and Private Event are NOT free
-      const isFree = !eventTypeBadge.toLowerCase().includes('members only') &&
-                     !eventTypeBadge.toLowerCase().includes('private') &&
-                     !fullText.toLowerCase().includes('members only') &&
-                     !fullText.toLowerCase().includes('private event');
-      
-      seenTitles.add(title);
       
       events.push({
         id: generateEventId(SOURCE, title, date),
