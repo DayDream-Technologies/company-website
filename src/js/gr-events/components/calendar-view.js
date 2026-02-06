@@ -71,11 +71,13 @@ function initCalendarView(container, events) {
 }
 
 /**
- * Handle event click - show modal
+ * Handle event click - open event URL directly
  */
 function handleEventClick(info) {
   const event = info.event.extendedProps.event;
-  showEventModal(event);
+  if (event.url) {
+    window.open(event.url, '_blank', 'noopener,noreferrer');
+  }
 }
 
 /**
