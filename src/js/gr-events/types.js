@@ -40,6 +40,12 @@ const SOURCE_CONFIG = {
     url: 'https://www.rightplace.org/events/',
     color: '#1E3A5F', // Dark blue
   },
+  'startup-garage': {
+    id: 'startup-garage',
+    name: 'Startup Garage',
+    url: 'https://www.startupgarage.org/events',
+    color: '#E65100', // Orange
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)

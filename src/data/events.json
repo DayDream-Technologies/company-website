@@ -20,7 +20,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "grand-rapids-org-chamber-101-2026-02-11",
@@ -42,7 +42,29 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
+    },
+    {
+      "id": "startup-garage-speaker-series-paul-hontz-2026-02-11",
+      "title": "speaker series: Paul Hontz",
+      "description": "Startup Garage event: speaker series: Paul Hontz",
+      "date": "2026-02-11",
+      "time": "6:30 PM",
+      "startDateTime": "2026-02-11T18:30:00",
+      "location": {
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9242,
+        "lng": -85.5875
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
     },
     {
       "id": "bamboo-the-quarter-mornings-2026-02-12",
@@ -63,7 +85,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "bamboo-lunch-break-2026-02-12",
@@ -84,7 +106,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "bamboo-data-centers-the-good-the-bad-the-ugly-2026-02-12",
@@ -105,7 +127,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "gr-junior-chamber-leadership-isn-t-about-authority-it-s-about-un",
@@ -128,7 +150,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:16.824Z"
+      "scrapedAt": "2026-02-09T19:38:32.667Z"
     },
     {
       "id": "bamboo-women-in-healthcare-galentines-coffee-meet-and-greet-2026",
@@ -149,7 +171,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "grand-rapids-org-athena-leadership-forum-the-power-of-giving-bac",
@@ -171,7 +193,29 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
+    },
+    {
+      "id": "startup-garage-workshop-turning-vision-into-venture-2026-02-17",
+      "title": "WORKSHOP: Turning Vision Into Venture",
+      "description": "Startup Garage event: WORKSHOP: Turning Vision Into Venture",
+      "date": "2026-02-17",
+      "time": "5:00 PM",
+      "startDateTime": "2026-02-17T17:00:00",
+      "location": {
+        "name": "Grace Christian University",
+        "address": "1011 Aldon St SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9234,
+        "lng": -85.7056
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-02-18",
@@ -192,7 +236,29 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
+    },
+    {
+      "id": "startup-garage-workshop-social-media-headshots-2026-02-18",
+      "title": "WORKSHOP: Social MEdia & HEadshots",
+      "description": "Startup Garage event: WORKSHOP: Social MEdia & HEadshots",
+      "date": "2026-02-18",
+      "time": "6:30 PM",
+      "startDateTime": "2026-02-18T18:30:00",
+      "location": {
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9242,
+        "lng": -85.5875
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-02-19",
@@ -214,7 +280,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "bamboo-the-quarter-mornings-2026-02-19",
@@ -235,7 +301,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "bamboo-lunch-break-2026-02-19",
@@ -256,7 +322,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "bamboo-the-rink-film-screening-2026-02-19",
@@ -277,7 +343,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "grand-rapids-org-chamber-issues-forum-health-care-in-west-michig",
@@ -299,7 +365,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "bamboo-candid-conversations-2026-02-20",
@@ -320,7 +386,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "gr-junior-chamber-stress-burnout-and-mental-health-how-to-care-f",
@@ -343,7 +409,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:16.824Z"
+      "scrapedAt": "2026-02-09T19:38:32.667Z"
     },
     {
       "id": "grand-rapids-org-leadership-lesson-breakfast-2026-02-24",
@@ -365,7 +431,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "bamboo-5x5-night-2026-02-24",
@@ -386,7 +452,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-02-25",
@@ -408,7 +474,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "bamboo-the-quarter-mornings-2026-02-26",
@@ -429,7 +495,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "bamboo-lunch-break-2026-02-26",
@@ -450,7 +516,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "bamboo-film-resurgo-the-rise-from-within-2026-02-26",
@@ -471,7 +537,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:13.084Z"
+      "scrapedAt": "2026-02-09T19:38:28.902Z"
     },
     {
       "id": "grand-rapids-org-women-in-leadership-spring-cohort-kickoff-2026-",
@@ -493,7 +559,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "grand-rapids-org-business-growth-workshop-new-tax-breaks-for-bus",
@@ -515,7 +581,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "grand-rapids-org-emerging-leaders-spring-cohort-kickoff-2026-03-",
@@ -537,7 +603,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "grand-rapids-org-leadup-spring-cohort-kickoff-2026-03-05",
@@ -559,7 +625,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "grand-rapids-org-grand-rapids-policy-conference-2026-03-06",
@@ -581,7 +647,29 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
+    },
+    {
+      "id": "startup-garage-speaker-series-mike-king-2026-03-08",
+      "title": "speaker series: Mike King",
+      "description": "Startup Garage event: speaker series: Mike King",
+      "date": "2026-03-08",
+      "time": "6:30 PM",
+      "startDateTime": "2026-03-08T18:30:00",
+      "location": {
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9242,
+        "lng": -85.5875
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
     },
     {
       "id": "grand-rapids-org-talent-human-resources-workshop-2026-03-10",
@@ -603,7 +691,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:15.315Z"
+      "scrapedAt": "2026-02-09T19:38:30.884Z"
     },
     {
       "id": "gr-junior-chamber-grand-rapids-junior-chamber-annual-gala-rising",
@@ -626,7 +714,95 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T08:54:16.824Z"
+      "scrapedAt": "2026-02-09T19:38:32.667Z"
+    },
+    {
+      "id": "startup-garage-workshop-network-with-confidence-2026-03-18",
+      "title": "WORKSHOP: Network with Confidence",
+      "description": "Startup Garage event: WORKSHOP: Network with Confidence",
+      "date": "2026-03-18",
+      "time": "6:30 PM",
+      "startDateTime": "2026-03-18T18:30:00",
+      "location": {
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9242,
+        "lng": -85.5875
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
+    },
+    {
+      "id": "startup-garage-workshop-pitch-principles-2026-03-25",
+      "title": "WORKSHOP: Pitch Principles",
+      "description": "Startup Garage event: WORKSHOP: Pitch Principles",
+      "date": "2026-03-25",
+      "time": "3:00 PM",
+      "startDateTime": "2026-03-25T15:00:00",
+      "location": {
+        "name": "Cornerstone University",
+        "address": "1001 E Beltline Ave NE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9875,
+        "lng": -85.5872
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
+    },
+    {
+      "id": "startup-garage-speaker-series-sheena-brown-2026-04-22",
+      "title": "speaker series: Sheena Brown",
+      "description": "Startup Garage event: speaker series: Sheena Brown",
+      "date": "2026-04-22",
+      "time": "6:30 PM",
+      "startDateTime": "2026-04-22T18:30:00",
+      "location": {
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9242,
+        "lng": -85.5875
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
+    },
+    {
+      "id": "startup-garage-speaker-series-jim-mallekoote-2026-04-30",
+      "title": "speaker series: Jim Mallekoote",
+      "description": "Startup Garage event: speaker series: Jim Mallekoote",
+      "date": "2026-04-30",
+      "time": "6:30 PM",
+      "startDateTime": "2026-04-30T18:30:00",
+      "location": {
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9242,
+        "lng": -85.5875
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-09T19:38:33.682Z"
     },
     {
       "id": "right-place-the-right-place-s-2026-2028-strategic-plan-launch-ev",
@@ -649,7 +825,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-west-michigan-manufacturing-defense-cooperative-inte",
@@ -672,7 +848,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-coffee-circle-february-18-2026-02-18",
@@ -695,7 +871,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-candid-conversations-february-20-2026-02-20",
@@ -718,7 +894,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-supply-chain-management-conference-2026-2026-03-03",
@@ -741,7 +917,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-career-readiness-conference-2026-2026-03-10",
@@ -764,7 +940,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-2026-q2-technology-exchange-april-22-2026-04-22",
@@ -787,7 +963,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-go-beyond-2026-2026-05-07",
@@ -810,7 +986,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -833,7 +1009,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     },
     {
       "id": "right-place-candid-conversations-june-18-2026-06-18",
@@ -856,10 +1032,10 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T08:54:19.849Z"
+      "scrapedAt": "2026-02-09T19:38:36.981Z"
     }
   ],
-  "lastScraped": "2026-02-09T08:54:22.357Z",
+  "lastScraped": "2026-02-09T19:38:39.521Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -867,7 +1043,7 @@
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
       "eventCount": 0,
-      "lastScraped": "2026-02-09T08:54:10.508Z"
+      "lastScraped": "2026-02-09T19:38:26.416Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -875,7 +1051,7 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-02-09T08:54:11.724Z"
+      "lastScraped": "2026-02-09T19:38:27.585Z"
     },
     "bamboo": {
       "id": "bamboo",
@@ -883,7 +1059,7 @@
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
       "eventCount": 13,
-      "lastScraped": "2026-02-09T08:54:13.134Z"
+      "lastScraped": "2026-02-09T19:38:28.952Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -891,7 +1067,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 49,
-      "lastScraped": "2026-02-09T08:54:15.369Z"
+      "lastScraped": "2026-02-09T19:38:30.954Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -899,7 +1075,15 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-02-09T08:54:16.827Z"
+      "lastScraped": "2026-02-09T19:38:32.672Z"
+    },
+    "startup-garage": {
+      "id": "startup-garage",
+      "name": "Startup Garage",
+      "url": "https://www.startupgarage.org/events",
+      "color": "#E65100",
+      "eventCount": 8,
+      "lastScraped": "2026-02-09T19:38:34.268Z"
     },
     "right-place": {
       "id": "right-place",
@@ -907,7 +1091,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-02-09T08:54:19.853Z"
+      "lastScraped": "2026-02-09T19:38:37.004Z"
     }
   }
 }

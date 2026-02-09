@@ -59,6 +59,12 @@ const SOURCE_CONFIG = {
     url: 'https://www.rightplace.org/events/',
     color: '#1E3A5F',
   },
+  'startup-garage': {
+    id: 'startup-garage',
+    name: 'Startup Garage',
+    url: 'https://www.startupgarage.org/events',
+    color: '#E65100',
+  },
 };
 
 // Updated paths for new location
@@ -899,6 +905,189 @@ async function scrapeGrJuniorChamber() {
   }
 }
 
+async function scrapeStartupGarage() {
+  const SOURCE = 'startup-garage';
+  const config = SOURCE_CONFIG[SOURCE];
+  const eventsPageUrl = config.url;
+  const scrapedAt = new Date().toISOString();
+  const currentYear = new Date().getFullYear();
+
+  function parseStartupGarageDate(text) {
+    // Match "Wednesday, February 11" or "Wednesday, March 4" (when page has "March 46:30pm" with no space)
+    const monthNames = /(January|February|March|April|May|June|July|August|September|October|November|December)/i;
+    const monthMatch = text.match(monthNames);
+    if (!monthMatch) return null;
+    const month = MONTHS[monthMatch[1].toLowerCase()];
+    if (!month) return null;
+    const afterMonth = text.slice(text.indexOf(monthMatch[1]) + monthMatch[1].length);
+    // Day: two digits when followed by time with no space (e.g. "116:30pm" -> 11); one/two digits when followed by space/comma/end; single digit when followed by time (e.g. "46:30pm" -> 4)
+    const twoDigitBeforeTime = afterMonth.match(/\s+(\d\d)(?=[1-9]:\d{2}\s*(?:am|pm))/i);
+    const oneOrTwoDay = afterMonth.match(/\s+(\d{1,2})(?=\s|,|$)/);
+    const singleDayBeforeTime = afterMonth.match(/\s+(\d)(?=\d{1,2}:\d{2}\s*(?:am|pm))/i);
+    const dayStr = twoDigitBeforeTime ? twoDigitBeforeTime[1] : (oneOrTwoDay ? oneOrTwoDay[1] : (singleDayBeforeTime ? singleDayBeforeTime[1] : null));
+    if (!dayStr) return null;
+    const dayNum = parseInt(dayStr, 10);
+    if (dayNum < 1 || dayNum > 31) return null;
+    const day = dayStr.padStart(2, '0');
+    return `${currentYear}-${month}-${day}`;
+  }
+
+  function parseStartupGarageTime(text) {
+    // Match "6:30pm-7:30pm" or "6:30pm" - hour 1-12 only so we don't grab "11" from date or "46" from "March 46:30"
+    const rangeMatch = text.match(/([1-9]|1[0-2]):(\d{2})\s*(am|pm)\s*-\s*\d{1,2}:\d{2}\s*(?:am|pm)/i);
+    if (rangeMatch) {
+      return parseTime(`${rangeMatch[1]}:${rangeMatch[2]} ${rangeMatch[3]}`);
+    }
+    const singleMatch = text.match(/([1-9]|1[0-2]):(\d{2})\s*(am|pm)/i);
+    if (singleMatch) {
+      return parseTime(`${singleMatch[1]}:${singleMatch[2]} ${singleMatch[3]}`);
+    }
+    return 'TBD';
+  }
+
+  function getCategory(title) {
+    const t = title.toUpperCase();
+    if (t.includes('WORKSHOP')) return 'workshop';
+    if (t.includes('PITCH')) return 'pitch';
+    if (t.includes('SPEAKER')) return 'other';
+    return 'other';
+  }
+
+  try {
+    const html = await fetchHtml(eventsPageUrl);
+    const $ = loadHtml(html);
+    const events = [];
+
+    // Event blocks: look for h4 headings (event titles), then parse only content between this h4 and the next h4
+    const $headings = $('h4');
+    $headings.each((i, el) => {
+      const $heading = $(el);
+      const title = cleanText($heading.text());
+      if (!title || (title.length < 3)) return;
+      if (!/speaker series|workshop/i.test(title)) return;
+
+      const $block = $heading.nextUntil('h4');
+      const blockText = ($block.length ? $block.text() : $heading.parent().text()).trim();
+
+      const date = parseStartupGarageDate(blockText);
+      if (!date) return;
+
+      const time = parseStartupGarageTime(blockText);
+      const description = cleanText($block.find('p').first().text()) || '';
+
+      // RSVP link: first link in block that looks like eventbrite or same-site event, else main page
+      let url = eventsPageUrl;
+      $block.find('a[href*="eventbrite"], a[href*="event"]').each((__, link) => {
+        const href = $(link).attr('href') || '';
+        const text = $(link).text().toLowerCase();
+        if (href && (href.includes('eventbrite') || (href.includes('startupgarage') && text.includes('rsvp')))) {
+          url = href.startsWith('http') ? href : `https://www.startupgarage.org${href.startsWith('/') ? '' : '/'}${href}`;
+          return false; // break
+        }
+      });
+
+      // Venue: known names or address pattern "Street, Grand Rapids, MI zip"
+      let locationName = '';
+      let address = '';
+      if (/Calvin School of Business/i.test(blockText)) {
+        locationName = 'Calvin School of Business';
+        address = '1810 E Beltline Ave SE';
+      } else if (/Grace Christian University/i.test(blockText)) {
+        locationName = 'Grace Christian University';
+        address = '1011 Aldon St SW';
+      } else if (/Cornerstone University/i.test(blockText)) {
+        locationName = 'Cornerstone University';
+        address = '1001 E Beltline Ave NE';
+      }
+      if (!locationName) {
+        const addrMatch = blockText.match(/(\d+[\w\s\.]+(?:Ave|St|Blvd|Dr|Rd)[\w\s\.]*),?\s*Grand Rapids,?\s*MI\s*(\d{5})/i);
+        if (addrMatch) {
+          address = cleanText(addrMatch[1]);
+          locationName = address || 'Grand Rapids';
+        } else {
+          locationName = 'Grand Rapids';
+        }
+      }
+
+      events.push({
+        id: generateEventId(SOURCE, title, date),
+        title,
+        description: description || `Startup Garage event: ${title}`,
+        date,
+        time,
+        startDateTime: toISODateTime(date, time),
+        location: {
+          name: locationName,
+          address: address || '',
+          city: 'Grand Rapids',
+          state: 'MI',
+        },
+        url,
+        source: SOURCE,
+        category: getCategory(title),
+        isRecurring: false,
+        isFree: true,
+        scrapedAt,
+      });
+    });
+
+    // Fallback: if no h4-based events, try parsing by sections or repeated pattern (e.g. "#### title" in markdown -> might be different selector)
+    if (events.length === 0) {
+      const fullText = $('body').text();
+      const eventTitleMatches = fullText.matchAll(/(?:speaker series|WORKSHOP):[^\n]+/gi);
+      for (const titleMatch of eventTitleMatches) {
+        const title = cleanText(titleMatch[0]);
+        const startIdx = titleMatch.index;
+        const nextSection = fullText.indexOf('RSVP', startIdx);
+        const blockText = nextSection > startIdx ? fullText.slice(startIdx, nextSection + 20) : fullText.slice(startIdx, startIdx + 800);
+
+        const date = parseStartupGarageDate(blockText);
+        if (!date) continue;
+
+        const time = parseStartupGarageTime(blockText);
+        let locationName = 'Grand Rapids';
+        let address = '';
+        if (/Calvin School of Business/i.test(blockText)) {
+          locationName = 'Calvin School of Business';
+          address = '1810 E Beltline Ave SE';
+        } else if (/Grace Christian University/i.test(blockText)) {
+          locationName = 'Grace Christian University';
+          address = '1011 Aldon St SW';
+        } else if (/Cornerstone University/i.test(blockText)) {
+          locationName = 'Cornerstone University';
+          address = '1001 E Beltline Ave NE';
+        }
+
+        const descMatch = blockText.match(/\n\n([A-Z][^\n]+(?:\n[^\n]+){0,3})/);
+        const description = descMatch ? cleanText(descMatch[1].replace(/\n/g, ' ').substring(0, 500)) : '';
+
+        events.push({
+          id: generateEventId(SOURCE, title, date),
+          title,
+          description: description || `Startup Garage event: ${title}`,
+          date,
+          time,
+          startDateTime: toISODateTime(date, time),
+          location: { name: locationName, address, city: 'Grand Rapids', state: 'MI' },
+          url: eventsPageUrl,
+          source: SOURCE,
+          category: getCategory(title),
+          isRecurring: false,
+          isFree: true,
+          scrapedAt,
+        });
+      }
+    }
+
+    const uniqueEvents = Array.from(
+      new Map(events.map(e => [`${e.title}-${e.date}`, e])).values()
+    );
+    return createScrapeResult(SOURCE, uniqueEvents);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
 async function scrapeRightPlace() {
   const SOURCE = 'right-place';
   const config = SOURCE_CONFIG[SOURCE];
@@ -1097,6 +1286,10 @@ const KNOWN_VENUES = {
   'junior achievement': { lat: 42.9556, lng: -85.6544 },
   'gvsu': { lat: 42.9631, lng: -85.8886 },
   'gvsu allendale': { lat: 42.9631, lng: -85.8886 },
+  'calvin school of business': { lat: 42.9242, lng: -85.5875 },
+  'calvin university': { lat: 42.9242, lng: -85.5875 },
+  'grace christian university': { lat: 42.9234, lng: -85.7056 },
+  'cornerstone university': { lat: 42.9875, lng: -85.5872 },
 };
 
 function getKnownVenueCoords(venueName) {
@@ -1251,6 +1444,7 @@ async function runFullScrape() {
     { name: 'Bamboo', fn: scrapeBamboo },
     { name: 'Grand Rapids Org', fn: scrapeGrandRapidsOrg },
     { name: 'GR Junior Chamber', fn: scrapeGrJuniorChamber },
+    { name: 'Startup Garage', fn: scrapeStartupGarage },
     { name: 'The Right Place', fn: scrapeRightPlace },
   ];
   
