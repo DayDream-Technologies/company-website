@@ -342,101 +342,210 @@ async function scrapeMsuFoundation() {
   const SOURCE = 'msu-foundation';
   const config = SOURCE_CONFIG[SOURCE];
   
+  // Elfsight widget ID for MSU Foundation events calendar
+  const ELFSIGHT_WIDGET_ID = 'b3ad2fe6-b56f-4b93-a321-654a85c4427b';
+  const ELFSIGHT_API_URL = `https://core.service.elfsight.com/p/boot/?page=${encodeURIComponent(config.url)}&w=${ELFSIGHT_WIDGET_ID}`;
+  
+  // MSU Foundation location mapping based on location ID or name
+  function getLocationFromId(locationIds, locationSettings) {
+    // Default location
+    const defaultLocation = {
+      name: 'MSU Research Foundation',
+      address: '325 E. Grand River Ave., Suite 275',
+      city: 'East Lansing',
+      state: 'MI',
+    };
+    
+    if (!locationIds || locationIds.length === 0) return defaultLocation;
+    
+    // Try to find the location in settings
+    const locationId = locationIds[0];
+    const locationData = locationSettings?.[locationId];
+    
+    if (!locationData) {
+      // Try to infer from location ID name patterns
+      const idLower = locationId.toLowerCase();
+      if (idLower.includes('grand rapids') || idLower.includes('bridge')) {
+        return {
+          name: 'The Bridge - MSU Research Foundation',
+          address: '109 Michigan St NW, Suite 414',
+          city: 'Grand Rapids',
+          state: 'MI',
+        };
+      }
+      if (idLower.includes('detroit') || idLower.includes('newlab')) {
+        return {
+          name: 'Newlab - MSU Research Foundation',
+          address: '2050 15th St.',
+          city: 'Detroit',
+          state: 'MI',
+        };
+      }
+      if (idLower.includes('traverse')) {
+        return {
+          name: 'MSU Foundation - Traverse City',
+          address: '',
+          city: 'Traverse City',
+          state: 'MI',
+        };
+      }
+      return defaultLocation;
+    }
+    
+    // Use location data from settings
+    const venueName = (locationData.name || locationData.value || '').toLowerCase();
+    
+    if (venueName.includes('grand rapids') || venueName.includes('bridge')) {
+      return {
+        name: locationData.name || locationData.value || 'The Bridge - MSU Research Foundation',
+        address: locationData.address || '109 Michigan St NW, Suite 414',
+        city: 'Grand Rapids',
+        state: 'MI',
+      };
+    }
+    
+    if (venueName.includes('detroit') || venueName.includes('newlab')) {
+      return {
+        name: locationData.name || locationData.value || 'Newlab - MSU Research Foundation',
+        address: locationData.address || '2050 15th St.',
+        city: 'Detroit',
+        state: 'MI',
+      };
+    }
+    
+    if (venueName.includes('traverse')) {
+      return {
+        name: locationData.name || locationData.value || 'MSU Foundation - Traverse City',
+        address: locationData.address || '',
+        city: 'Traverse City',
+        state: 'MI',
+      };
+    }
+    
+    return {
+      name: locationData.name || locationData.value || defaultLocation.name,
+      address: locationData.address || defaultLocation.address,
+      city: 'East Lansing',
+      state: 'MI',
+    };
+  }
+  
   try {
-    const html = await fetchHtml(config.url);
-    const $ = loadHtml(html);
+    // Fetch event data from Elfsight API
+    const response = await fetch(ELFSIGHT_API_URL);
+    if (!response.ok) {
+      throw new Error(`Elfsight API error: ${response.status}`);
+    }
+    
+    const apiData = await response.json();
+    const widgetData = apiData?.data?.widgets?.[ELFSIGHT_WIDGET_ID]?.data;
+    
+    if (!widgetData || !widgetData.settings?.events) {
+      console.log('    No events found in Elfsight API response');
+      return createScrapeResult(SOURCE, []);
+    }
+    
+    const eventsList = widgetData.settings.events;
+    const locationSettings = widgetData.settings.locations || {};
     const events = [];
     const scrapedAt = new Date().toISOString();
-
-    const eventSelectors = [
-      '.event-item', '.event-card', '[class*="event"]',
-      '.tribe-events-calendar-list__event', 'article.event', '.eventbrite-event',
-    ];
-
-    let eventElements = $();
-    for (const selector of eventSelectors) {
-      const found = $(selector);
-      if (found.length > 0) {
-        eventElements = found;
-        break;
+    const seenEvents = new Set();
+    
+    // Get current date for filtering past events
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    
+    for (const event of eventsList) {
+      try {
+        const title = cleanText(event.name || '');
+        if (!title || title.length < 3) continue;
+        
+        // Parse date
+        const startDate = event.start?.date;
+        if (!startDate) continue;
+        
+        // Validate date format (YYYY-MM-DD)
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(startDate)) continue;
+        
+        // Skip past events
+        const eventDate = new Date(startDate);
+        if (eventDate < today) continue;
+        
+        // Create unique key to avoid duplicates
+        const eventKey = `${title}-${startDate}`;
+        if (seenEvents.has(eventKey)) continue;
+        seenEvents.add(eventKey);
+        
+        // Parse time
+        const startTime = event.start?.time || '';
+        let time = 'TBD';
+        if (startTime) {
+          const [hours, minutes] = startTime.split(':');
+          const hour = parseInt(hours);
+          const ampm = hour >= 12 ? 'PM' : 'AM';
+          const hour12 = hour > 12 ? hour - 12 : (hour === 0 ? 12 : hour);
+          time = `${hour12}:${minutes} ${ampm}`;
+        }
+        
+        // Get description (clean HTML entities)
+        const description = cleanText((event.description || '')
+          .replace(/&amp;/g, '&')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'"));
+        
+        // Get location
+        const location = getLocationFromId(event.location, locationSettings);
+        
+        // Get event URL
+        const eventUrl = event.buttonLink?.value || config.url;
+        
+        // Determine if free
+        const buttonText = (event.buttonText || '').toLowerCase();
+        const isFree = detectFreeEvent(title, description) ||
+                       title.toLowerCase().includes('office hours') ||
+                       description.toLowerCase().includes('free') ||
+                       buttonText.includes('register') ||
+                       buttonText.includes('learn more');
+        
+        events.push({
+          id: generateEventId(SOURCE, title, startDate),
+          title,
+          description,
+          date: startDate,
+          time,
+          startDateTime: toISODateTime(startDate, time),
+          location,
+          url: eventUrl,
+          source: SOURCE,
+          category: categorizeEventByContent(title, description),
+          isRecurring: event.repeatPeriod !== 'noRepeat',
+          isFree,
+          scrapedAt,
+        });
+      } catch (e) {
+        // Skip invalid events
       }
     }
-
-    if (eventElements.length === 0) {
-      $('a[href*="event"]').each((_, el) => {
-        const $el = $(el);
-        const href = $el.attr('href') || '';
-        const text = cleanText($el.text());
-        
-        if (text.length < 5 || text.toLowerCase().includes('view all')) return;
-        
-        const parent = $el.closest('div, article, section, li');
-        const dateText = parent.find('[class*="date"], time, .date').first().text();
-        const date = parseDate(dateText) || parseDate(text);
-        
-        if (date && text) {
-          events.push({
-            id: generateEventId(SOURCE, text, date),
-            title: text,
-            description: '',
-            date,
-            time: 'TBD',
-            startDateTime: toISODateTime(date, '00:00 AM'),
-            location: {
-              name: 'MSU Foundation',
-              address: '325 E. Grand River Ave.',
-              city: 'East Lansing',
-              state: 'MI',
-            },
-            url: href.startsWith('http') ? href : `https://msufoundation.org${href}`,
-            source: SOURCE,
-            isRecurring: detectRecurringEvent(text, ''),
-            isFree: detectFreeEvent(text, ''),
-            scrapedAt,
-          });
-        }
-      });
-    } else {
-      eventElements.each((_, el) => {
-        const $el = $(el);
-        
-        const title = cleanText($el.find('h2, h3, h4, .event-title, .title').first().text());
-        const description = cleanText($el.find('p, .description, .event-description').first().text());
-        const dateText = cleanText($el.find('.date, time, [class*="date"]').first().text());
-        const timeText = cleanText($el.find('.time, [class*="time"]').first().text());
-        const link = $el.find('a').first().attr('href') || '';
-        
-        const date = parseDate(dateText);
-        const time = parseTime(timeText);
-        
-        if (title && date) {
-          events.push({
-            id: generateEventId(SOURCE, title, date),
-            title,
-            description,
-            date,
-            time,
-            startDateTime: toISODateTime(date, time),
-            location: {
-              name: 'MSU Foundation',
-              address: '325 E. Grand River Ave.',
-              city: 'East Lansing',
-              state: 'MI',
-            },
-            url: link.startsWith('http') ? link : `https://msufoundation.org${link}`,
-            source: SOURCE,
-            isRecurring: detectRecurringEvent(title, description, timeText),
-            isFree: detectFreeEvent(title, description),
-            scrapedAt,
-          });
-        }
-      });
-    }
+    
+    console.log(`    Found ${events.length} events from Elfsight API`);
 
     return createScrapeResult(SOURCE, events);
   } catch (error) {
     return createScrapeResult(SOURCE, [], error.message);
   }
+}
+
+// Helper function to categorize events based on content
+function categorizeEventByContent(title, description) {
+  const text = `${title} ${description}`.toLowerCase();
+  if (text.includes('pitch') || text.includes('startup') || text.includes('founder') || text.includes('venture')) return 'pitch';
+  if (text.includes('workshop') || text.includes('training') || text.includes('session') || text.includes('101')) return 'workshop';
+  if (text.includes('summit') || text.includes('conference')) return 'conference';
+  if (text.includes('network') || text.includes('mixer') || text.includes('meetup') || text.includes('connection')) return 'networking';
+  if (text.includes('office hours') || text.includes('mentorship') || text.includes('panel')) return 'meetup';
+  return 'other';
 }
 
 async function scrapeStartGarden() {

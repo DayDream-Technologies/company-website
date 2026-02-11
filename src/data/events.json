@@ -1,12 +1,12 @@
 {
   "events": [
     {
-      "id": "grand-rapids-org-events-search-and-views-navigation-2026-02-09",
+      "id": "grand-rapids-org-events-search-and-views-navigation-2026-02-11",
       "title": "Events Search and Views Navigation",
       "description": "",
-      "date": "2026-02-09",
+      "date": "2026-02-11",
       "time": "Now Now",
-      "startDateTime": "2026-02-09T00:00:00",
+      "startDateTime": "2026-02-11T00:00:00",
       "location": {
         "name": "Grand Rapids",
         "address": "",
@@ -20,7 +20,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "grand-rapids-org-chamber-101-2026-02-11",
@@ -42,7 +42,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "startup-garage-speaker-series-paul-hontz-2026-02-11",
@@ -64,7 +64,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
     },
     {
       "id": "bamboo-the-quarter-mornings-2026-02-12",
@@ -85,7 +85,29 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
+    },
+    {
+      "id": "msu-foundation-insurance-basics-product-liability-service-risk-2",
+      "title": "INSURANCE BASICS, PRODUCT LIABILITY, & SERVICE RISK",
+      "description": "<div>Learn how to assess and manage customer claims risk through the right insurance strategies. This session covers coverage considerations for physical products, digital apps, services, and professional liability across startup types.</div><br><div><strong>PRESENTER:</strong> Joe Morrison (Barnes & Thornburg LLP)</div>",
+      "date": "2026-02-12",
+      "time": "8:30 AM",
+      "startDateTime": "2026-02-12T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/morrison-in-the-morning-tickets-1000909606577?aff=oddtdtcreator",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
     },
     {
       "id": "bamboo-lunch-break-2026-02-12",
@@ -106,7 +128,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "bamboo-data-centers-the-good-the-bad-the-ugly-2026-02-12",
@@ -127,7 +149,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "gr-junior-chamber-leadership-isn-t-about-authority-it-s-about-un",
@@ -150,7 +172,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:32.667Z"
+      "scrapedAt": "2026-02-11T16:28:21.941Z"
     },
     {
       "id": "bamboo-women-in-healthcare-galentines-coffee-meet-and-greet-2026",
@@ -171,7 +193,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "grand-rapids-org-athena-leadership-forum-the-power-of-giving-bac",
@@ -193,7 +215,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "startup-garage-workshop-turning-vision-into-venture-2026-02-17",
@@ -215,7 +237,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-02-18",
@@ -236,7 +258,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "startup-garage-workshop-social-media-headshots-2026-02-18",
@@ -258,7 +280,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-02-19",
@@ -280,7 +302,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "bamboo-the-quarter-mornings-2026-02-19",
@@ -301,7 +323,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "bamboo-lunch-break-2026-02-19",
@@ -322,7 +344,29 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
+    },
+    {
+      "id": "msu-foundation-2026-startup-career-fair-2026-02-19",
+      "title": "2026 Startup Career Fair",
+      "description": "<div><span>The </span><strong>Startup Career Fair </strong><span>offers students at Michigan State University the opportunity to engage directly with founders and early-stage team members, gaining insight into the entrepreneurial environment and the potential for rapid career growth.</span></div><br><div><strong>HOSTED BY:</strong> Burgess Institute for Entrepreneurship & Innovation</div>",
+      "date": "2026-02-19",
+      "time": "2:00 PM",
+      "startDateTime": "2026-02-19T14:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/2026-startup-career-fair-tickets-1549686858109?aff=ebdsoporgprofile",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
     },
     {
       "id": "bamboo-the-rink-film-screening-2026-02-19",
@@ -343,7 +387,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "grand-rapids-org-chamber-issues-forum-health-care-in-west-michig",
@@ -365,7 +409,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "bamboo-candid-conversations-2026-02-20",
@@ -386,7 +430,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "gr-junior-chamber-stress-burnout-and-mental-health-how-to-care-f",
@@ -409,7 +453,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:32.667Z"
+      "scrapedAt": "2026-02-11T16:28:21.941Z"
     },
     {
       "id": "grand-rapids-org-leadership-lesson-breakfast-2026-02-24",
@@ -431,7 +475,72 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
+    },
+    {
+      "id": "msu-foundation-paths-to-growth-scaling-for-high-growth-in-michig",
+      "title": "Paths to Growth: Scaling for High-Growth in Michigan",
+      "description": "<div><span>This hands-on session will guide founders through Michigan’s growth-stage ecosystem, from venture capital and grant funding to commercialization, advanced manufacturing, and talent programs.</span></div><br><div></div><br><div><strong>PRESENTER: </strong>Bradley Matson<strong> </strong>(MSU Research Foundation)</div>",
+      "date": "2026-02-24",
+      "time": "10:00 AM",
+      "startDateTime": "2026-02-24T10:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/paths-to-growth-scaling-for-high-growth-in-michigan-tickets-1980200945333?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
+    },
+    {
+      "id": "msu-foundation-building-your-founder-brand-why-it-matters-early-",
+      "title": "Building Your Founder Brand: Why It Matters Early",
+      "description": "<div>Discover how personal branding can open doors for your startup. This session explores why a founder’s online presence, thought leadership, and networking strategy are key to building trust, attracting opportunities, and leading with authenticity.</div><br><div><strong>PRESENTERS: </strong>Pete Martin (MSU Research Foundation)</div>",
+      "date": "2026-02-24",
+      "time": "12:00 PM",
+      "startDateTime": "2026-02-24T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/1676164937449?aff=oddtdtcreator",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
+    },
+    {
+      "id": "bamboo-show-tell-marketing-automations-for-non-developers-2026-0",
+      "title": "Show & Tell - Marketing Automations for Non-Developers",
+      "description": "Most marketers know AI exists. Very few are actually using it to eliminate hours of manual work.",
+      "date": "2026-02-24",
+      "time": "12:00 PM",
+      "startDateTime": "2026-02-24T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/show-tell---marketing-automations-for-non-developers",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "bamboo-5x5-night-2026-02-24",
@@ -452,7 +561,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-02-25",
@@ -474,7 +583,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "bamboo-the-quarter-mornings-2026-02-26",
@@ -495,7 +604,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "bamboo-lunch-break-2026-02-26",
@@ -516,7 +625,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "bamboo-film-resurgo-the-rise-from-within-2026-02-26",
@@ -537,7 +646,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:28.902Z"
+      "scrapedAt": "2026-02-11T16:28:18.447Z"
     },
     {
       "id": "grand-rapids-org-women-in-leadership-spring-cohort-kickoff-2026-",
@@ -559,7 +668,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "grand-rapids-org-business-growth-workshop-new-tax-breaks-for-bus",
@@ -581,7 +690,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "grand-rapids-org-emerging-leaders-spring-cohort-kickoff-2026-03-",
@@ -603,7 +712,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "grand-rapids-org-leadup-spring-cohort-kickoff-2026-03-05",
@@ -625,7 +734,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "grand-rapids-org-grand-rapids-policy-conference-2026-03-06",
@@ -647,7 +756,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
     },
     {
       "id": "startup-garage-speaker-series-mike-king-2026-03-08",
@@ -669,7 +778,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
     },
     {
       "id": "grand-rapids-org-talent-human-resources-workshop-2026-03-10",
@@ -691,7 +800,51 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:30.884Z"
+      "scrapedAt": "2026-02-11T16:28:20.430Z"
+    },
+    {
+      "id": "msu-foundation-innovate-state-reinventing-with-ai-2026-03-11",
+      "title": "Innovate State: Reinventing with AI",
+      "description": "<div>The <strong>Innovate State Speaker Series</strong> brings emerging and accomplished Spartan entrepreneurs—innovators, builders, creators, and visionaries—to campus for a live, unscripted fireside chat. These 60-minute sessions offer the chance for guests to share their perspectives on a wide array of topics like innovation, startup life, investments, and career paths. </div><br><div><strong>HOSTED BY:</strong> MSU Burgess Institute for Entrepreneurship & Innovation</div>",
+      "date": "2026-03-11",
+      "time": "6:00 PM",
+      "startDateTime": "2026-03-11T18:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/innovate-state-reinventing-with-ai-tickets-1933773892769?aff=erellivmlt",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
+    },
+    {
+      "id": "msu-foundation-cap-table-cleanup-legal-pitfalls-in-founder-and-a",
+      "title": "CAP TABLE CLEANUP: Legal Pitfalls in Founder and Advisor Equity",
+      "description": "<div>Avoid early equity decisions that can create future problems. This session covers how to identify and fix common cap table issues, manage advisor grants, and prepare for future fundraising with clean and compliant ownership records.</div><br><div><strong>PRESENTER:</strong> Joe Morrison (Barnes & Thornburg LLP)</div>",
+      "date": "2026-03-12",
+      "time": "8:30 AM",
+      "startDateTime": "2026-03-12T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/morrison-in-the-morning-tickets-1000909606577?aff=oddtdtcreator",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
     },
     {
       "id": "gr-junior-chamber-grand-rapids-junior-chamber-annual-gala-rising",
@@ -714,7 +867,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-02-09T19:38:32.667Z"
+      "scrapedAt": "2026-02-11T16:28:21.941Z"
     },
     {
       "id": "startup-garage-workshop-network-with-confidence-2026-03-18",
@@ -736,7 +889,29 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
+    },
+    {
+      "id": "msu-foundation-startup-law-101-2026-03-24",
+      "title": "Startup Law 101",
+      "description": "<div>Get a legal crash course tailored to early-stage entrepreneurs. This session outlines startup law essentials, including entity formation, founder agreements, and intellectual property ownership—so you can make informed decisions from day one.</div><br><div><strong>PRESENTERS: </strong>Foster Swift Collins & Smith Law Firm</div>",
+      "date": "2026-03-24",
+      "time": "12:00 PM",
+      "startDateTime": "2026-03-24T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/1676164937449?aff=oddtdtcreator",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
     },
     {
       "id": "startup-garage-workshop-pitch-principles-2026-03-25",
@@ -758,7 +933,95 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
+    },
+    {
+      "id": "msu-foundation-pitchmi-championship-2026-04-07",
+      "title": "PitchMI Championship",
+      "description": "<div>Four teams are advancing to the statewide championship, where they’ll go head-to-head at <strong>517 E&I Week</strong> in Greater Lansing for an additional $1 million investment and the title of PitchMI Champion.</div><br><div><strong>HOSTED BY:</strong> MSU Research Foundation and Michigan Economic Development Corporation (MEDC)</div>",
+      "date": "2026-04-07",
+      "time": "12:00 PM",
+      "startDateTime": "2026-04-07T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://msufoundation.org/pitchmi/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
+    },
+    {
+      "id": "msu-foundation-innovate-state-from-supply-chain-to-global-change",
+      "title": "Innovate State: From Supply Chain to Global Change",
+      "description": "<div>The <strong>Innovate State Speaker Series</strong> brings emerging and accomplished Spartan entrepreneurs—innovators, builders, creators, and visionaries—to campus for a live, unscripted fireside chat. These 60-minute sessions offer the chance for guests to share their perspectives on a wide array of topics like innovation, startup life, investments, and career paths. </div><br><div><strong>HOSTED BY:</strong> MSU Burgess Institute for Entrepreneurship & Innovation</div>",
+      "date": "2026-04-08",
+      "time": "6:00 PM",
+      "startDateTime": "2026-04-08T18:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/innovate-state-from-supply-chain-to-global-change-tickets-1549600269119?aff=ebdsoporgprofile",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
+    },
+    {
+      "id": "msu-foundation-exit-acquisition-basics-legal-prep-even-early-sta",
+      "title": "EXIT & ACQUISITION BASICS: Legal Prep Even Early Startups Should Know",
+      "description": "<div>Start preparing for acquisition from day one. Learn what legal diligence involves, what records matter most, and how early-stage decisions can support or hinder a smooth exit process later on.</div><br><div><strong>PRESENTER:</strong> Joe Morrison (Barnes & Thornburg LLP)</div>",
+      "date": "2026-04-09",
+      "time": "8:30 AM",
+      "startDateTime": "2026-04-09T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/morrison-in-the-morning-tickets-1000909606577?aff=oddtdtcreator",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
+    },
+    {
+      "id": "msu-foundation-2026-burgess-new-venture-challenge-2026-04-09",
+      "title": "2026 Burgess New Venture Challenge",
+      "description": "<div><strong>Burgess New Venture Challenge</strong><span> is the premier pitch competition for student entrepreneurs at Michigan State University. On Thursday, April 9, 2025, as part of </span><a target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https://www.517ei.com/\"><u>517 Entrepreneurship & Innovation Week</u></a><span>, fifteen student semifinalists will participate in a transformational experience to compete for $50,000+ in funding.</span></div><br><div><strong>HOSTED BY:</strong> Burgess Institute for Entrepreneurship & Innovation</div>",
+      "date": "2026-04-09",
+      "time": "5:00 PM",
+      "startDateTime": "2026-04-09T17:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/2026-burgess-new-venture-challenge-registration-1597760256939?aff=ebdsoporgprofile",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
     },
     {
       "id": "startup-garage-speaker-series-sheena-brown-2026-04-22",
@@ -780,7 +1043,29 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
+    },
+    {
+      "id": "msu-foundation-msu-faculty-founders-panel-lessons-from-the-trenc",
+      "title": "MSU Faculty Founders Panel: Lessons from the Trenches",
+      "description": "<div>Hear firsthand from MSU faculty who have successfully launched ventures based on university research. This panel discussion dives into their journeys, challenges, and lessons learned—along with resources like the MSU Startup Guide and support from MSU Technologies.</div><br><div><strong>PRESENTERS: </strong>TBD</div>",
+      "date": "2026-04-28",
+      "time": "12:00 PM",
+      "startDateTime": "2026-04-28T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/1676164937449?aff=oddtdtcreator",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
     },
     {
       "id": "startup-garage-speaker-series-jim-mallekoote-2026-04-30",
@@ -802,7 +1087,51 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:33.682Z"
+      "scrapedAt": "2026-02-11T16:28:22.948Z"
+    },
+    {
+      "id": "msu-foundation-mobility-summit-2026-08-11",
+      "title": "Mobility Summit",
+      "description": "<div>This one-day summit brings together researchers, industry partners, and innovators to explore mobility challenges and solutions—from autonomous transit and drones to supply chain resilience and off-road transportation. The program features keynote talks, technology showcases, panel discussions, and opportunities for connection and conversation.</div><br><div><strong>CO-HOSTED BY:</strong> MSU Research Foundation and MSU Mobility</div>",
+      "date": "2026-08-11",
+      "time": "7:30 AM",
+      "startDateTime": "2026-08-11T07:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://msufoundation.org/mobility-summit-2026/",
+      "source": "msu-foundation",
+      "category": "conference",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
+    },
+    {
+      "id": "msu-foundation-data-science-ai-summit-2026-10-01",
+      "title": "Data Science + AI Summit",
+      "description": "<div>Explore how data science and agentic AI are advancing human potential, shaping the future of work, and driving cross-sector innovation. Featuring keynotes, panels, case studies, interactive sessions, and networking to spark intentional partnerships.</div><br><div><strong>HOSTED BY:</strong> MSU Research Foundation</div>",
+      "date": "2026-10-01",
+      "time": "8:30 AM",
+      "startDateTime": "2026-10-01T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://msufoundation.org/data-science-summit-2026/",
+      "source": "msu-foundation",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-02-11T16:28:16.119Z"
     },
     {
       "id": "right-place-the-right-place-s-2026-2028-strategic-plan-launch-ev",
@@ -825,7 +1154,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-west-michigan-manufacturing-defense-cooperative-inte",
@@ -848,7 +1177,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-coffee-circle-february-18-2026-02-18",
@@ -871,7 +1200,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-candid-conversations-february-20-2026-02-20",
@@ -894,7 +1223,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-supply-chain-management-conference-2026-2026-03-03",
@@ -917,7 +1246,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-career-readiness-conference-2026-2026-03-10",
@@ -940,7 +1269,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-2026-q2-technology-exchange-april-22-2026-04-22",
@@ -963,7 +1292,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-go-beyond-2026-2026-05-07",
@@ -986,7 +1315,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -1009,7 +1338,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     },
     {
       "id": "right-place-candid-conversations-june-18-2026-06-18",
@@ -1032,18 +1361,18 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-02-09T19:38:36.981Z"
+      "scrapedAt": "2026-02-11T16:28:25.897Z"
     }
   ],
-  "lastScraped": "2026-02-09T19:38:39.521Z",
+  "lastScraped": "2026-02-11T16:28:51.866Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
       "name": "MSU Foundation",
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
-      "eventCount": 0,
-      "lastScraped": "2026-02-09T19:38:26.416Z"
+      "eventCount": 14,
+      "lastScraped": "2026-02-11T16:28:16.121Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -1051,15 +1380,15 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-02-09T19:38:27.585Z"
+      "lastScraped": "2026-02-11T16:28:17.216Z"
     },
     "bamboo": {
       "id": "bamboo",
       "name": "Bamboo Cowork",
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
-      "eventCount": 13,
-      "lastScraped": "2026-02-09T19:38:28.952Z"
+      "eventCount": 14,
+      "lastScraped": "2026-02-11T16:28:18.482Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -1067,7 +1396,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 49,
-      "lastScraped": "2026-02-09T19:38:30.954Z"
+      "lastScraped": "2026-02-11T16:28:20.459Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -1075,7 +1404,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-02-09T19:38:32.672Z"
+      "lastScraped": "2026-02-11T16:28:21.944Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -1083,7 +1412,7 @@
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
       "eventCount": 8,
-      "lastScraped": "2026-02-09T19:38:34.268Z"
+      "lastScraped": "2026-02-11T16:28:23.266Z"
     },
     "right-place": {
       "id": "right-place",
@@ -1091,7 +1420,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-02-09T19:38:37.004Z"
+      "lastScraped": "2026-02-11T16:28:25.900Z"
     }
   }
 }

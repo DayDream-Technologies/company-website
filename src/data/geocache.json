@@ -3,5 +3,10 @@
   "|grand rapids|mi": {
     "lat": 42.9632425,
     "lng": -85.6678639
+  },
+  "325 e. grand river ave., suite 275|east lansing|mi": null,
+  "|east lansing|mi": {
+    "lat": 42.7320307,
+    "lng": -84.4721678
   }
 }
