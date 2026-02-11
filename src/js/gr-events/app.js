@@ -311,7 +311,18 @@
       return `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name}</a>${i < arr.length - 1 ? ', ' : ''}`;
     }).join('');
     
-    elements.footerSources.innerHTML = `<span>Aggregating events from </span>${sourceLinks}`;
+    // Additional resource links (not event sources)
+    const resourceLinks = [
+      { name: 'GR SmartZone', url: 'https://smartzonegr.com/' },
+    ];
+    
+    const resourcesHtml = resourceLinks.length > 0 
+      ? ` <span class="footer-divider">|</span> <span>Resources: </span>${resourceLinks.map((r, i, arr) => 
+          `<a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a>${i < arr.length - 1 ? ', ' : ''}`
+        ).join('')}`
+      : '';
+    
+    elements.footerSources.innerHTML = `<span>Aggregating events from </span>${sourceLinks}${resourcesHtml}`;
   }
   
   /**
