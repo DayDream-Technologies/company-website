@@ -218,6 +218,16 @@ function cleanText(text) {
   return text.replace(/\s+/g, ' ').trim();
 }
 
+/** Strip HTML tags from a string and normalize whitespace (for descriptions from APIs/HTML). */
+function stripHtml(html) {
+  if (!html) return '';
+  const text = String(html)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return text;
+}
+
 // =============================================================================
 // Recurring Event Detection
 // =============================================================================
@@ -487,13 +497,14 @@ async function scrapeMsuFoundation() {
           time = `${hour12}:${minutes} ${ampm}`;
         }
         
-        // Get description (clean HTML entities)
-        const description = cleanText((event.description || '')
+        // Get description (strip HTML tags, decode entities, then clean)
+        const rawDesc = (event.description || '')
           .replace(/&amp;/g, '&')
           .replace(/&lt;/g, '<')
           .replace(/&gt;/g, '>')
           .replace(/&quot;/g, '"')
-          .replace(/&#39;/g, "'"));
+          .replace(/&#39;/g, "'");
+        const description = cleanText(stripHtml(rawDesc));
         
         // Get location
         const location = getLocationFromId(event.location, locationSettings);
@@ -824,6 +835,8 @@ async function scrapeGrandRapidsOrg() {
       
       const title = cleanText($el.find('h2, h3, h4, .event-title, .title, [itemprop="name"]').first().text());
       if (!title || title.length < 3) return;
+      // Ignore Chamber site navigation/fake listing entry (appears weekly)
+      if (title.includes('Events Search and Views Navigation')) return;
       
       const description = cleanText($el.find('p, .description, .event-description, [itemprop="description"]').first().text());
       
