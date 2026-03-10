@@ -333,6 +333,29 @@ body {
     border-radius: 50%;
 }
 
+/* Card Note */
+.card-note {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-light-gray);
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    background: rgba(217, 82, 4, 0.1);
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-orange);
+}
+
+.card-note a {
+    color: var(--primary-orange);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.card-note a:hover {
+    color: var(--text-white);
+    text-decoration: underline;
+}
+
 /* Project Link */
 .project-link {
     display: inline-flex;
