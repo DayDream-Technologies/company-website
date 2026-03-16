@@ -46,6 +46,12 @@ const SOURCE_CONFIG = {
     url: 'https://www.startupgarage.org/events',
     color: '#E65100', // Orange
   },
+  'ada-business-association': {
+    id: 'ada-business-association',
+    name: 'Ada Business Association',
+    url: 'https://adabusinessassociation.com/happy_hour/',
+    color: '#1976D2',
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)
