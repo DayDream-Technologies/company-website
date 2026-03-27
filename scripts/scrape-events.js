@@ -1047,22 +1047,24 @@ async function scrapeStartupGarage() {
   const currentYear = new Date().getFullYear();
 
   function parseStartupGarageDate(text) {
-    // Match "Wednesday, February 11" or "Wednesday, March 4" (when page has "March 46:30pm" with no space)
-    const monthNames = /(January|February|March|April|May|June|July|August|September|October|November|December)/i;
-    const monthMatch = text.match(monthNames);
-    if (!monthMatch) return null;
-    const month = MONTHS[monthMatch[1].toLowerCase()];
+    // Squarespace uses <br> between date and time. If <br> is lost, text becomes "April 16:30pm" (day 1 + "6:30")
+    // and the old heuristic could treat "30" from "6:30pm" as the calendar day (e.g. April 30). Parse only the
+    // weekday date line: "Wednesday, April 1" with a word boundary after the day.
+    const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+    const dateLine =
+      lines.find((l) =>
+        /(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)/i.test(l) &&
+        /(January|February|March|April|May|June|July|August|September|October|November|December)/i.test(l)
+      ) || text;
+    const m = dateLine.match(
+      /(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\b/i
+    );
+    if (!m) return null;
+    const month = MONTHS[m[1].toLowerCase()];
     if (!month) return null;
-    const afterMonth = text.slice(text.indexOf(monthMatch[1]) + monthMatch[1].length);
-    // Day: two digits when followed by time with no space (e.g. "116:30pm" -> 11); one/two digits when followed by space/comma/end; single digit when followed by time (e.g. "46:30pm" -> 4)
-    const twoDigitBeforeTime = afterMonth.match(/\s+(\d\d)(?=[1-9]:\d{2}\s*(?:am|pm))/i);
-    const oneOrTwoDay = afterMonth.match(/\s+(\d{1,2})(?=\s|,|$)/);
-    const singleDayBeforeTime = afterMonth.match(/\s+(\d)(?=\d{1,2}:\d{2}\s*(?:am|pm))/i);
-    const dayStr = twoDigitBeforeTime ? twoDigitBeforeTime[1] : (oneOrTwoDay ? oneOrTwoDay[1] : (singleDayBeforeTime ? singleDayBeforeTime[1] : null));
-    if (!dayStr) return null;
-    const dayNum = parseInt(dayStr, 10);
+    const dayNum = parseInt(m[2], 10);
     if (dayNum < 1 || dayNum > 31) return null;
-    const day = dayStr.padStart(2, '0');
+    const day = String(dayNum).padStart(2, '0');
     return `${currentYear}-${month}-${day}`;
   }
 
@@ -1101,17 +1103,56 @@ async function scrapeStartupGarage() {
       if (!/speaker series|workshop/i.test(title)) return;
 
       const $block = $heading.nextUntil('h4');
-      const blockText = ($block.length ? $block.text() : $heading.parent().text()).trim();
+      // Squarespace 7.1 often puts the h4 title in one .fe-block and the date/venue <p> in the *next* .fe-block
+      // (not as siblings of the h4), so nextUntil('h4') is empty and parent().text() was only the title.
+      const $titleFe = $heading.closest('.fe-block');
+      let rawHtml = '';
+      if ($titleFe.length) {
+        const $detailFe = $titleFe.nextAll('.fe-block').first();
+        if ($detailFe.length) {
+          rawHtml = $detailFe
+            .find('.sqs-html-content')
+            .toArray()
+            .map((node) => $(node).html() || '')
+            .join('\n');
+        }
+      }
+      if (!rawHtml && $block.length) {
+        rawHtml = $block
+          .toArray()
+          .map((node) => $(node).html() || '')
+          .join('\n');
+      }
+      if (!rawHtml) {
+        rawHtml = $heading.parent().html() || '';
+      }
+      // Preserve line breaks where Squarespace uses <br> between "Wednesday, April 1" and "6:30pm-…".
+      const normalized = rawHtml.replace(/<br\s*\/?>/gi, '\n');
+      const $wrap = loadHtml(`<div>${normalized}</div>`);
+      const blockText = $wrap('div').text().trim();
 
       const date = parseStartupGarageDate(blockText);
       if (!date) return;
 
       const time = parseStartupGarageTime(blockText);
-      const description = cleanText($block.find('p').first().text()) || '';
+      let description = '';
+      if ($titleFe.length) {
+        const $dateFe = $titleFe.nextAll('.fe-block').first();
+        const $descFe = $dateFe.length ? $dateFe.nextAll('.fe-block').first() : null;
+        if ($descFe && $descFe.length) {
+          description = cleanText($descFe.find('.sqs-html-content p').first().text()) || '';
+        }
+      }
+      if (!description) {
+        description = cleanText($block.find('p').first().text()) || '';
+      }
 
       // RSVP link: first link in block that looks like eventbrite or same-site event, else main page
       let url = eventsPageUrl;
-      $block.find('a[href*="eventbrite"], a[href*="event"]').each((__, link) => {
+      const $linkScope = $titleFe.length
+        ? $titleFe.add($titleFe.nextAll('.fe-block').slice(0, 12))
+        : $block;
+      $linkScope.find('a[href*="eventbrite"], a[href*="event"]').each((__, link) => {
         const href = $(link).attr('href') || '';
         const text = $(link).text().toLowerCase();
         if (href && (href.includes('eventbrite') || (href.includes('startupgarage') && text.includes('rsvp')))) {
@@ -1559,7 +1600,7 @@ async function scrapeSpringGr() {
 
     for (const event of jsonLdEvents) {
       try {
-        const title = decodeHtmlEntities(event.name || '');
+        const title = cleanText(stripHtml(decodeHtmlEntities(event.name || '')));
         if (!title || title.length < 3) continue;
         if (/alumni only/i.test(title)) continue;
 
@@ -1577,7 +1618,10 @@ async function scrapeSpringGr() {
 
         let description = '';
         if (event.description) {
-          description = cleanText(decodeHtmlEntities(event.description));
+          // JSON-LD may include literal or entity-encoded <p>, <br>, etc.; strip tags after decode (same idea as MSU Foundation).
+          description = cleanText(
+            stripHtml(decodeHtmlEntities(event.description)).replace(/\\n/g, ' ')
+          );
         }
 
         const loc = locationFromSpringGrJsonLd(event.location);

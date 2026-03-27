@@ -3,7 +3,7 @@
     {
       "id": "startup-garage-workshop-pitch-principles-2026-03-25",
       "title": "WORKSHOP: Pitch Principles",
-      "description": "Startup Garage event: WORKSHOP: Pitch Principles",
+      "description": "Pitch Principles is an interactive, experiential workshop designed to help students transform the way they present their ideas. Too often, pitches become rehearsed scripts delivered to slides instead of compelling stories delivered to people. In this session, students will learn how to communicate with confidence, clarity, and authentic presence.",
       "date": "2026-03-25",
       "time": "3:00 PM",
       "startDateTime": "2026-03-25T15:00:00",
@@ -20,7 +20,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:50.442Z"
+      "scrapedAt": "2026-03-27T20:30:11.940Z"
     },
     {
       "id": "bamboo-creative-leadership-forum-2026-03-28",
@@ -41,7 +41,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "msu-foundation-powering-communities-building-partnerships-for-el",
@@ -63,7 +63,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "bamboo-the-quarter-evenings-2026-03-31",
@@ -84,7 +84,29 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
+    },
+    {
+      "id": "startup-garage-speaker-series-jim-mallekoote-2026-04-01",
+      "title": "speaker series: Jim Mallekoote",
+      "description": "Jim Mallekoote spent nearly 30 years at Apple, serving as Senior Director of Retail Sales and working directly with Steve Jobs in both Apple’s early and revival eras. He played a key role in launching the original iPod team in 2002, helping Apple transition from a computer company to a consumer technology leader. Jim will share behind-the-scenes stories and leadership lessons from one of the most innovative companies in the world.",
+      "date": "2026-04-01",
+      "time": "6:30 PM",
+      "startDateTime": "2026-04-01T18:30:00",
+      "location": {
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9242,
+        "lng": -85.5875
+      },
+      "url": "https://www.startupgarage.org/events",
+      "source": "startup-garage",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T20:30:11.940Z"
     },
     {
       "id": "right-place-ai-for-manufacturing-hands-on-training-series-2026-0",
@@ -107,7 +129,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "bamboo-members-lunch-break-2026-04-02",
@@ -128,7 +150,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-04-03",
@@ -150,7 +172,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "msu-foundation-that-s-it-i-ve-had-enough-i-m-starting-my-own-com",
@@ -172,7 +194,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "msu-foundation-pitchmi-championship-2026-04-07",
@@ -194,7 +216,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "msu-foundation-innovation-celebration-2026-04-07",
@@ -216,7 +238,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "bamboo-the-quarter-evenings-2026-04-07",
@@ -237,7 +259,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "ada-business-association-april-happy-hour-aba-2026-04-08",
@@ -259,7 +281,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:54.438Z"
+      "scrapedAt": "2026-03-27T20:30:17.346Z"
     },
     {
       "id": "msu-foundation-bringing-your-online-business-to-life-with-ai-202",
@@ -281,7 +303,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "msu-foundation-innovate-state-from-supply-chain-to-global-change",
@@ -303,12 +325,12 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "startup-garage-workshop-pitch-like-a-pro-2026-04-08",
       "title": "Workshop: Pitch Like A Pro",
-      "description": "Startup Garage event: Workshop: Pitch Like A Pro",
+      "description": "The Pitch Like a Pro Workshop offers an engaging, hands‑on environment for anyone looking to build confidence in their pitch - whether they’re new to pitching or simply want extra practice. Participants receive practical guidance and supportive feedback to help them communicate their ideas clearly and compellingly. While the workshop is open to all aspiring pitchers, there is a special invitation for students competing in MWest the following week, giving them a valuable opportunity to refine their pitch, strengthen their delivery, and gain added confidence before stepping into the competition.",
       "date": "2026-04-08",
       "time": "6:30 PM",
       "startDateTime": "2026-04-08T18:30:00",
@@ -325,7 +347,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:50.442Z"
+      "scrapedAt": "2026-03-27T20:30:11.940Z"
     },
     {
       "id": "msu-foundation-student-venture-capital-fund-investment-celebrati",
@@ -347,7 +369,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "msu-foundation-2026-burgess-new-venture-challenge-2026-04-09",
@@ -369,7 +391,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "msu-foundation-business-made-simple-the-stunio-story-with-adam-g",
@@ -391,7 +413,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "gr-junior-chamber-april-monthly-leadership-exchange-the-pressure",
@@ -414,7 +436,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-27T17:15:49.431Z"
+      "scrapedAt": "2026-03-27T20:30:10.933Z"
     },
     {
       "id": "bamboo-the-quarter-evenings-2026-04-14",
@@ -435,7 +457,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "grand-rapids-org-national-civics-bee-2026-04-15",
@@ -457,7 +479,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-04-16",
@@ -479,7 +501,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "msu-foundation-innovate-state-the-pursuit-of-hidden-opportunity-",
@@ -501,12 +523,12 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "springgr-lunch-learn-pitch-to-win-2026-04-17",
       "title": "Lunch & Learn: Pitch to Win.",
-      "description": "<p>Winning a pitch competition is a great way to fund a business need, BUT only the best ‘pitchers’ win. Join us on April 17 to learn from multiple pitch-winner Maneeka Brown. We can’t guarantee your future results, but […]</p>\\n",
+      "description": "Winning a pitch competition is a great way to fund a business need, BUT only the best ‘pitchers’ win. Join us on April 17 to learn from multiple pitch-winner Maneeka Brown. We can’t guarantee your future results, but […]",
       "date": "2026-04-17",
       "time": "12:00 PM",
       "startDateTime": "2026-04-17T12:00:00",
@@ -524,7 +546,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:57.290Z"
+      "scrapedAt": "2026-03-27T20:30:18.877Z"
     },
     {
       "id": "grand-rapids-org-breakfast-with-legislators-2026-04-20",
@@ -546,7 +568,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "msu-foundation-distilling-innovation-2026-04-21",
@@ -568,7 +590,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-04-21",
@@ -589,12 +611,12 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "startup-garage-workshop-build-an-app-in-two-hours-2026-04-21",
       "title": "Workshop: Build an app in two hours",
-      "description": "Startup Garage event: Workshop: Build an app in two hours",
+      "description": "In this hands-on workshop, Jon VerLee will guide early-stage founders and aspiring entrepreneurs through the process of turning an app idea into a functional MVP. Using modern tools and practical frameworks, you’ll learn how to move from concept to creation quickly - no technical experience necessary. By the end, you’ll walk away with a working MVP you can begin testing, validating, and refining with real users.",
       "date": "2026-04-21",
       "time": "5:00 PM",
       "startDateTime": "2026-04-21T17:00:00",
@@ -611,7 +633,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:50.442Z"
+      "scrapedAt": "2026-03-27T20:30:11.940Z"
     },
     {
       "id": "grand-rapids-org-outpro-forum-the-business-of-belonging-2026-04-",
@@ -633,12 +655,12 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "startup-garage-speaker-series-sheena-brown-2026-04-22",
       "title": "speaker series: Sheena Brown",
-      "description": "Startup Garage event: speaker series: Sheena Brown",
+      "description": "Sheena Brown is the founder of Fatirah’s Designs and a creative visionary with over 20 years of experience designing and producing transformational events. A former special education educator turned entrepreneur, Sheena blends artistic excellence with deep care for client experience. Recognized in national and local publications, she will share her journey of building a creative business rooted in vision, purpose, and excellence.",
       "date": "2026-04-22",
       "time": "6:30 PM",
       "startDateTime": "2026-04-22T18:30:00",
@@ -655,7 +677,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:50.442Z"
+      "scrapedAt": "2026-03-27T20:30:11.940Z"
     },
     {
       "id": "grand-rapids-org-west-michigan-minority-contractors-2026-04-23",
@@ -677,7 +699,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-04-23",
@@ -698,12 +720,12 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "springgr-email-marketing-workshop-2026-04-27",
       "title": "Email Marketing Workshop",
-      "description": "<p>Email marketing is essential for most businesses, but it can be overwhelming to get started. Join us for a workshop on the basics of email marketing, so you can unleash its power. In this workshop you will learn how […]</p>\\n",
+      "description": "Email marketing is essential for most businesses, but it can be overwhelming to get started. Join us for a workshop on the basics of email marketing, so you can unleash its power. In this workshop you will learn how […]",
       "date": "2026-04-27",
       "time": "6:00 PM",
       "startDateTime": "2026-04-27T18:00:00",
@@ -721,7 +743,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-03-27T17:15:57.290Z"
+      "scrapedAt": "2026-03-27T20:30:18.877Z"
     },
     {
       "id": "msu-foundation-msu-faculty-founders-panel-lessons-from-the-trenc",
@@ -743,7 +765,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-04-29",
@@ -765,7 +787,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-breakfast-2026-04-30",
@@ -787,29 +809,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
-    },
-    {
-      "id": "startup-garage-speaker-series-jim-mallekoote-2026-04-30",
-      "title": "speaker series: Jim Mallekoote",
-      "description": "Startup Garage event: speaker series: Jim Mallekoote",
-      "date": "2026-04-30",
-      "time": "6:30 PM",
-      "startDateTime": "2026-04-30T18:30:00",
-      "location": {
-        "name": "Calvin School of Business",
-        "address": "1810 E Beltline Ave SE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9242,
-        "lng": -85.5875
-      },
-      "url": "https://www.startupgarage.org/events",
-      "source": "startup-garage",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:50.442Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-05-01",
@@ -831,7 +831,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "grand-rapids-org-small-business-week-kickoff-2026-05-04",
@@ -853,7 +853,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "bamboo-founders-fireside-chat-2026-05-05",
@@ -874,7 +874,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "grand-rapids-org-business-growth-workshop-outgrow-how-to-increas",
@@ -896,7 +896,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "bamboo-creating-magnetic-workplaces-2026-05-06",
@@ -917,7 +917,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "grand-rapids-org-latina-connect-2026-05-07",
@@ -939,7 +939,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:47.734Z"
+      "scrapedAt": "2026-03-27T20:30:09.154Z"
     },
     {
       "id": "gr-junior-chamber-may-monthly-leadership-exchange-save-the-date-",
@@ -962,7 +962,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-27T17:15:49.431Z"
+      "scrapedAt": "2026-03-27T20:30:10.933Z"
     },
     {
       "id": "gr-junior-chamber-june-monthly-leadership-exchange-save-the-date",
@@ -985,7 +985,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-27T17:15:49.431Z"
+      "scrapedAt": "2026-03-27T20:30:10.933Z"
     },
     {
       "id": "right-place-2026-q2-technology-exchange-april-22-2026-04-22",
@@ -1008,7 +1008,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-west-michigan-manufacturing-defense-cooperative-mark",
@@ -1031,7 +1031,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-go-beyond-2026-2026-05-07",
@@ -1054,7 +1054,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-candid-conversations-may-11-2026-05-11",
@@ -1077,7 +1077,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-supply-chain-management-council-itw-drawform-tour-co",
@@ -1100,7 +1100,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-connecting-entrepreneurial-communities-2026-2026-05-",
@@ -1123,7 +1123,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-how-much-is-a-new-customer-worth-to-you-2026-05-29",
@@ -1146,7 +1146,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -1169,7 +1169,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "right-place-west-michigan-intern-connect-2026-06-10",
@@ -1192,12 +1192,12 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:53.431Z"
+      "scrapedAt": "2026-03-27T20:30:16.338Z"
     },
     {
       "id": "springgr-lunch-learn-how-to-get-a-loan-with-a-cdfi-2026-05-08",
       "title": "Lunch & Learn: How to get a loan with a CDFI",
-      "description": "<p>GROW is a CDFI that helps small business owners get loans from $1-50K. They have a friendly and supportive process to help you prepare and apply for a loan. Come learn and ask all of your questions at this Lunch & Learn.</p>\\n",
+      "description": "GROW is a CDFI that helps small business owners get loans from $1-50K. They have a friendly and supportive process to help you prepare and apply for a loan. Come learn and ask all of your questions at this Lunch & Learn.",
       "date": "2026-05-08",
       "time": "11:30 AM",
       "startDateTime": "2026-05-08T11:30:00",
@@ -1215,12 +1215,12 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:57.290Z"
+      "scrapedAt": "2026-03-27T20:30:18.877Z"
     },
     {
       "id": "springgr-c-mo-obtener-un-pr-stamo-con-una-cdfi-2026-05-08",
-      "title": "Cómo obtener un préstamo con una CDFI ",
-      "description": "<p>GROW es una CDFI que ayuda a propietarios de pequeños negocios a obtener préstamos de $1,000 a $50,000. Su proceso es amable y acompañan a los emprendedores para prepararse y solicitar un préstamo con confianza. Acompáñanos para aprender más y hacer todas tus preguntas en este Lunch & Learn</p>\\n",
+      "title": "Cómo obtener un préstamo con una CDFI",
+      "description": "GROW es una CDFI que ayuda a propietarios de pequeños negocios a obtener préstamos de $1,000 a $50,000. Su proceso es amable y acompañan a los emprendedores para prepararse y solicitar un préstamo con confianza. Acompáñanos para aprender más y hacer todas tus preguntas en este Lunch & Learn",
       "date": "2026-05-08",
       "time": "12:30 PM",
       "startDateTime": "2026-05-08T12:30:00",
@@ -1238,7 +1238,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:57.290Z"
+      "scrapedAt": "2026-03-27T20:30:18.877Z"
     },
     {
       "id": "ada-business-association-may-happy-hour-aba-2026-05-13",
@@ -1260,7 +1260,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:54.438Z"
+      "scrapedAt": "2026-03-27T20:30:17.346Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-05-26",
@@ -1281,7 +1281,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "ada-business-association-june-happy-hour-aba-2026-06-10",
@@ -1303,7 +1303,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:54.438Z"
+      "scrapedAt": "2026-03-27T20:30:17.346Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-06-24",
@@ -1324,7 +1324,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-07-23",
@@ -1345,7 +1345,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "msu-foundation-mobility-summit-2026-08-11",
@@ -1367,7 +1367,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-08-18",
@@ -1388,7 +1388,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-08-25",
@@ -1409,7 +1409,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:45.509Z"
+      "scrapedAt": "2026-03-27T20:30:06.896Z"
     },
     {
       "id": "msu-foundation-data-science-ai-summit-2026-10-01",
@@ -1431,10 +1431,10 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-27T17:15:42.906Z"
+      "scrapedAt": "2026-03-27T20:30:04.620Z"
     }
   ],
-  "lastScraped": "2026-03-27T17:16:27.252Z",
+  "lastScraped": "2026-03-27T20:30:47.055Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -1442,7 +1442,7 @@
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
       "eventCount": 14,
-      "lastScraped": "2026-03-27T17:15:42.933Z"
+      "lastScraped": "2026-03-27T20:30:04.622Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -1450,7 +1450,7 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-03-27T17:15:44.120Z"
+      "lastScraped": "2026-03-27T20:30:05.725Z"
     },
     "bamboo": {
       "id": "bamboo",
@@ -1458,7 +1458,7 @@
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
       "eventCount": 14,
-      "lastScraped": "2026-03-27T17:15:45.633Z"
+      "lastScraped": "2026-03-27T20:30:06.925Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -1466,7 +1466,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 48,
-      "lastScraped": "2026-03-27T17:15:47.821Z"
+      "lastScraped": "2026-03-27T20:30:09.181Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -1474,7 +1474,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-03-27T17:15:49.437Z"
+      "lastScraped": "2026-03-27T20:30:10.935Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -1482,7 +1482,7 @@
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
       "eventCount": 5,
-      "lastScraped": "2026-03-27T17:15:50.826Z"
+      "lastScraped": "2026-03-27T20:30:13.245Z"
     },
     "right-place": {
       "id": "right-place",
@@ -1490,7 +1490,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-03-27T17:15:53.437Z"
+      "lastScraped": "2026-03-27T20:30:16.340Z"
     },
     "ada-business-association": {
       "id": "ada-business-association",
@@ -1498,7 +1498,7 @@
       "url": "https://adabusinessassociation.com/happy_hour/",
       "color": "#1976D2",
       "eventCount": 3,
-      "lastScraped": "2026-03-27T17:15:55.765Z"
+      "lastScraped": "2026-03-27T20:30:17.504Z"
     },
     "springgr": {
       "id": "springgr",
@@ -1506,7 +1506,7 @@
       "url": "https://www.springgr.com/events-page/",
       "color": "#2E7D32",
       "eventCount": 4,
-      "lastScraped": "2026-03-27T17:15:57.297Z"
+      "lastScraped": "2026-03-27T20:30:18.881Z"
     }
   }
 }
