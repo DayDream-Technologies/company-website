@@ -52,6 +52,12 @@ const SOURCE_CONFIG = {
     url: 'https://adabusinessassociation.com/happy_hour/',
     color: '#1976D2',
   },
+  'springgr': {
+    id: 'springgr',
+    name: 'SpringGR',
+    url: 'https://www.springgr.com/events-page/',
+    color: '#2E7D32',
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)

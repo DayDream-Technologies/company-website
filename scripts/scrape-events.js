@@ -71,6 +71,12 @@ const SOURCE_CONFIG = {
     url: 'https://adabusinessassociation.com/happy_hour/',
     color: '#1976D2',
   },
+  'springgr': {
+    id: 'springgr',
+    name: 'SpringGR',
+    url: 'https://www.springgr.com/events-page/',
+    color: '#2E7D32',
+  },
 };
 
 // Updated paths for new location
@@ -1456,6 +1462,161 @@ async function scrapeAdaBusinessAssociation() {
   }
 }
 
+/** Decode HTML entities to plain text (for JSON-LD strings). */
+function decodeHtmlEntities(str) {
+  if (!str) return '';
+  try {
+    const $ = loadHtml('<div></div>');
+    $('div').html(String(str));
+    return $('div').text();
+  } catch {
+    return cleanText(stripHtml(String(str)));
+  }
+}
+
+/** Parse SpringGR / ECTBE Event array from ld+json scripts. */
+function extractSpringGrJsonLdEvents($) {
+  const scripts = $('script[type="application/ld+json"]');
+  for (let i = 0; i < scripts.length; i++) {
+    const raw = $(scripts[i]).html();
+    if (!raw) continue;
+    try {
+      const data = JSON.parse(raw.trim());
+      if (Array.isArray(data) && data[0] && data[0]['@type'] === 'Event') {
+        return data;
+      }
+    } catch {
+      // ignore invalid JSON
+    }
+  }
+  return [];
+}
+
+/** Map TEC JSON-LD location to our event location shape. */
+function locationFromSpringGrJsonLd(loc) {
+  if (!loc) {
+    return {
+      name: 'SpringGR',
+      address: '818 Butterworth St SW',
+      city: 'Grand Rapids',
+      state: 'MI',
+      zip: '49504',
+    };
+  }
+  const addr = loc.address || {};
+  const street = addr.streetAddress || '';
+  const city = addr.addressLocality || 'Grand Rapids';
+  const state = addr.addressRegion || 'MI';
+  const zip = addr.postalCode || '';
+  return {
+    name: loc.name || 'SpringGR',
+    address: street,
+    city,
+    state,
+    ...(zip ? { zip } : {}),
+  };
+}
+
+/** ISO startDate string → { date, time, startDateTime } for our schema. */
+function springGrParseStart(isoStr) {
+  if (!isoStr) return null;
+  const d = new Date(isoStr);
+  if (isNaN(d.getTime())) return null;
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  const date = `${y}-${m}-${day}`;
+  const h = d.getHours();
+  const min = d.getMinutes();
+  const s = d.getSeconds();
+  if (h === 0 && min === 0 && s === 0) {
+    return { date, time: 'TBD', startDateTime: `${date}T00:00:00` };
+  }
+  const hour12 = h % 12 === 0 ? 12 : h % 12;
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  const timeStr = `${hour12}:${String(min).padStart(2, '0')} ${ampm}`;
+  return { date, time: timeStr, startDateTime: toISODateTime(date, timeStr) };
+}
+
+async function scrapeSpringGr() {
+  const SOURCE = 'springgr';
+  const config = SOURCE_CONFIG[SOURCE];
+
+  try {
+    const html = await fetchHtml(config.url);
+    const $ = loadHtml(html);
+    const scrapedAt = new Date().toISOString();
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const jsonLdEvents = extractSpringGrJsonLdEvents($);
+    if (jsonLdEvents.length === 0) {
+      console.log('    SpringGR: no Event JSON-LD array found on page');
+    }
+
+    const events = [];
+    const seen = new Set();
+
+    for (const event of jsonLdEvents) {
+      try {
+        const title = decodeHtmlEntities(event.name || '');
+        if (!title || title.length < 3) continue;
+        if (/alumni only/i.test(title)) continue;
+
+        const parsed = springGrParseStart(event.startDate);
+        if (!parsed) continue;
+        const { date, time, startDateTime } = parsed;
+
+        const eventDateOnly = new Date(`${date}T12:00:00`);
+        eventDateOnly.setHours(0, 0, 0, 0);
+        if (eventDateOnly < today) continue;
+
+        const dedupeKey = `${title}-${date}`;
+        if (seen.has(dedupeKey)) continue;
+        seen.add(dedupeKey);
+
+        let description = '';
+        if (event.description) {
+          description = cleanText(decodeHtmlEntities(event.description));
+        }
+
+        const loc = locationFromSpringGrJsonLd(event.location);
+
+        let isFree = detectFreeEvent(title, description);
+        const offers = event.offers;
+        if (Array.isArray(offers) && offers[0] && offers[0].price !== undefined && offers[0].price !== '') {
+          const p = parseFloat(String(offers[0].price), 10);
+          if (!isNaN(p)) isFree = p === 0;
+        }
+
+        events.push({
+          id: generateEventId(SOURCE, title, date),
+          title,
+          description: description || 'Small business program event hosted by SpringGR in Grand Rapids.',
+          date,
+          time,
+          startDateTime,
+          location: loc,
+          url: event.url || config.url,
+          source: SOURCE,
+          category: categorizeEventByContent(title, description),
+          isRecurring: detectRecurringEvent(title, description, time),
+          isFree,
+          scrapedAt,
+        });
+      } catch {
+        // skip invalid
+      }
+    }
+
+    console.log(`    Found ${events.length} SpringGR events`);
+
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
 // =============================================================================
 // Geocoding
 // =============================================================================
@@ -1665,6 +1826,7 @@ async function runFullScrape() {
     { name: 'Startup Garage', fn: scrapeStartupGarage },
     { name: 'The Right Place', fn: scrapeRightPlace },
     { name: 'Ada Business Association', fn: scrapeAdaBusinessAssociation },
+    { name: 'SpringGR', fn: scrapeSpringGr },
   ];
   
   const results = [];

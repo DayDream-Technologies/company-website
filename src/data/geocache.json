@@ -8,5 +8,9 @@
   "|east lansing|mi": {
     "lat": 42.7320307,
     "lng": -84.4721678
+  },
+  "818 butterworth st sw|grand rapids|mi": {
+    "lat": 42.959034,
+    "lng": -85.688525
   }
 }

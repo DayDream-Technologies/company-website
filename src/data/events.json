@@ -1,157 +1,6 @@
 {
   "events": [
     {
-      "id": "startup-garage-workshop-network-with-confidence-2026-03-18",
-      "title": "WORKSHOP: Network with Confidence",
-      "description": "Startup Garage event: WORKSHOP: Network with Confidence",
-      "date": "2026-03-18",
-      "time": "6:30 PM",
-      "startDateTime": "2026-03-18T18:30:00",
-      "location": {
-        "name": "Calvin School of Business",
-        "address": "1810 E Beltline Ave SE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9242,
-        "lng": -85.5875
-      },
-      "url": "https://www.startupgarage.org/events",
-      "source": "startup-garage",
-      "category": "workshop",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:21.848Z"
-    },
-    {
-      "id": "msu-foundation-building-your-founder-brand-why-it-matters-early-",
-      "title": "Building Your Founder Brand: Why It Matters Early",
-      "description": "Discover how personal branding can open doors for your startup. This session explores why a founder’s online presence, thought leadership, and networking strategy are key to building trust, attracting opportunities, and leading with authenticity. PRESENTER: Pete Martin (MSU Research Foundation)",
-      "date": "2026-03-23",
-      "time": "12:00 PM",
-      "startDateTime": "2026-03-23T12:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://www.eventbrite.com/e/building-your-founder-brand-why-it-matters-early-tickets-1983392843386?aff=oddtdtcreator",
-      "source": "msu-foundation",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
-    },
-    {
-      "id": "bamboo-grwebdev-meetup-2026-03-23",
-      "title": "GRWebDev Meetup",
-      "description": "GRWebDev Powered by LaFleur presents Emily Lynn",
-      "date": "2026-03-23",
-      "time": "6:00 PM",
-      "startDateTime": "2026-03-23T18:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/grwebdev-meetup",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
-    },
-    {
-      "id": "msu-foundation-startup-law-101-2026-03-24",
-      "title": "Startup Law 101",
-      "description": "Get a legal crash course tailored to early-stage entrepreneurs. This session outlines startup law essentials, including entity formation, founder agreements, and intellectual property ownership—so you can make informed decisions from day one. PRESENTERS: Foster Swift Collins & Smith Law Firm",
-      "date": "2026-03-24",
-      "time": "12:00 PM",
-      "startDateTime": "2026-03-24T12:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://www.eventbrite.com/e/1676164937449?aff=oddtdtcreator",
-      "source": "msu-foundation",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
-    },
-    {
-      "id": "bamboo-crashthatcourse-show-tell-2026-03-24",
-      "title": "CrashThatCourse Show & Tell",
-      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
-      "date": "2026-03-24",
-      "time": "12:00 PM",
-      "startDateTime": "2026-03-24T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
-    },
-    {
-      "id": "bamboo-the-quarter-evenings-2026-03-24",
-      "title": "The Quarter Evenings",
-      "description": "​A weekly peer group for founders building from $0 to $250k, focused on customers and revenue, not fundraising.",
-      "date": "2026-03-24",
-      "time": "6:00 PM",
-      "startDateTime": "2026-03-24T18:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/the-quarter-mornings-8",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
-    },
-    {
-      "id": "grand-rapids-org-chamber-happy-hour-2026-03-25",
-      "title": "Chamber Happy Hour",
-      "description": "",
-      "date": "2026-03-25",
-      "time": "March 25 @ 4:00 pm - 5:00 pm Chamber Happy Hour",
-      "startDateTime": "2026-03-25T00:00:00",
-      "location": {
-        "name": "Grand Rapids",
-        "address": "",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://grandrapids.org/event/chamber-happy-hour-3-25/",
-      "source": "grand-rapids-org",
-      "category": "other",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
-    },
-    {
       "id": "startup-garage-workshop-pitch-principles-2026-03-25",
       "title": "WORKSHOP: Pitch Principles",
       "description": "Startup Garage event: WORKSHOP: Pitch Principles",
@@ -171,71 +20,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:21.848Z"
-    },
-    {
-      "id": "grand-rapids-org-business-exchange-luncheon-2026-03-26",
-      "title": "Business Exchange Luncheon",
-      "description": "",
-      "date": "2026-03-26",
-      "time": "March 26 @ 11:30 am - 1:30 pm Business Exchange Series",
-      "startDateTime": "2026-03-26T00:00:00",
-      "location": {
-        "name": "Grand Rapids",
-        "address": "",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://grandrapids.org/event/business-exchange-luncheon-3-26/",
-      "source": "grand-rapids-org",
-      "category": "other",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
-    },
-    {
-      "id": "bamboo-members-lunch-break-2026-03-26",
-      "title": "Members Lunch Break",
-      "description": "​Lunch Break is our weekly community lunch. Every Thursday at noon, all Bamboo GR members are invited to gather in the 5th floor kitchen for lunch together.",
-      "date": "2026-03-26",
-      "time": "12:00 PM",
-      "startDateTime": "2026-03-26T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/members-lunch-break-3",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": false,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
-    },
-    {
-      "id": "bamboo-foodie-connect-2026-03-26",
-      "title": "Foodie Connect",
-      "description": "Foodie Connect is a curated networking experience bringing together the people who build culture in Grand Rapids",
-      "date": "2026-03-26",
-      "time": "6:00 PM",
-      "startDateTime": "2026-03-26T18:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/foodie-connect",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:50.442Z"
     },
     {
       "id": "bamboo-creative-leadership-forum-2026-03-28",
@@ -256,7 +41,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "msu-foundation-powering-communities-building-partnerships-for-el",
@@ -278,7 +63,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "bamboo-the-quarter-evenings-2026-03-31",
@@ -299,7 +84,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "right-place-ai-for-manufacturing-hands-on-training-series-2026-0",
@@ -322,7 +107,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
     },
     {
       "id": "bamboo-members-lunch-break-2026-04-02",
@@ -343,7 +128,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-04-03",
@@ -365,7 +150,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "msu-foundation-that-s-it-i-ve-had-enough-i-m-starting-my-own-com",
@@ -387,7 +172,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "msu-foundation-pitchmi-championship-2026-04-07",
@@ -409,7 +194,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "msu-foundation-innovation-celebration-2026-04-07",
@@ -431,7 +216,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "bamboo-the-quarter-evenings-2026-04-07",
@@ -452,7 +237,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "ada-business-association-april-happy-hour-aba-2026-04-08",
@@ -474,7 +259,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:26.458Z"
+      "scrapedAt": "2026-03-27T17:15:54.438Z"
     },
     {
       "id": "msu-foundation-bringing-your-online-business-to-life-with-ai-202",
@@ -496,7 +281,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "msu-foundation-innovate-state-from-supply-chain-to-global-change",
@@ -518,7 +303,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "startup-garage-workshop-pitch-like-a-pro-2026-04-08",
@@ -540,15 +325,15 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:21.848Z"
+      "scrapedAt": "2026-03-27T17:15:50.442Z"
     },
     {
-      "id": "msu-foundation-exit-acquisition-basics-legal-prep-even-early-sta",
-      "title": "EXIT & ACQUISITION BASICS: Legal Prep Even Early Startups Should Know",
-      "description": "Start preparing for acquisition from day one. Learn what legal diligence involves, what records matter most, and how early-stage decisions can support or hinder a smooth exit process later on. PRESENTER: Joe Morrison (Barnes & Thornburg LLP)",
+      "id": "msu-foundation-student-venture-capital-fund-investment-celebrati",
+      "title": "Student Venture Capital Fund Investment Celebration 2026",
+      "description": "This event showcases MSU FI 444 Entrepreneurial Finance students as they present Michigan-based startups recommended for pre-seed investment. HOSTED BY: The MSU Research Foundation and the Broad College of Business Center of Venture Capital, Private Equity, and Entrepreneurial Finance",
       "date": "2026-04-09",
-      "time": "8:30 AM",
-      "startDateTime": "2026-04-09T08:30:00",
+      "time": "10:00 AM",
+      "startDateTime": "2026-04-09T10:00:00",
       "location": {
         "name": "MSU Research Foundation",
         "address": "325 E. Grand River Ave., Suite 275",
@@ -557,12 +342,12 @@
         "lat": 42.7320307,
         "lng": -84.4721678
       },
-      "url": "https://www.eventbrite.com/e/morrison-in-the-morning-tickets-1000909606577?aff=oddtdtcreator",
+      "url": "https://www.eventbrite.com/e/student-venture-capital-fund-investment-celebration-2026-tickets-1985719490450?aff=oddtdtcreator",
       "source": "msu-foundation",
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "msu-foundation-2026-burgess-new-venture-challenge-2026-04-09",
@@ -584,7 +369,29 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
+    },
+    {
+      "id": "msu-foundation-business-made-simple-the-stunio-story-with-adam-g",
+      "title": "Business Made Simple: The Stunio Story with Adam Green",
+      "description": "​In this session, Adam Green, President & CEO of Stunio, will share the story behind building a platform that connects employers with students for one-day shifts, internships, and part-time work. HOSTED BY: LEAP, Lansing Regional SmartZone",
+      "date": "2026-04-09",
+      "time": "5:30 PM",
+      "startDateTime": "2026-04-09T17:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://luma.com/cjqq0tad",
+      "source": "msu-foundation",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "gr-junior-chamber-april-monthly-leadership-exchange-the-pressure",
@@ -607,7 +414,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-23T08:56:20.843Z"
+      "scrapedAt": "2026-03-27T17:15:49.431Z"
     },
     {
       "id": "bamboo-the-quarter-evenings-2026-04-14",
@@ -628,7 +435,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "grand-rapids-org-national-civics-bee-2026-04-15",
@@ -650,7 +457,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-04-16",
@@ -672,7 +479,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "msu-foundation-innovate-state-the-pursuit-of-hidden-opportunity-",
@@ -694,7 +501,30 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
+    },
+    {
+      "id": "springgr-lunch-learn-pitch-to-win-2026-04-17",
+      "title": "Lunch & Learn: Pitch to Win.",
+      "description": "<p>Winning a pitch competition is a great way to fund a business need, BUT only the best ‘pitchers’ win. Join us on April 17 to learn from multiple pitch-winner Maneeka Brown. We can’t guarantee your future results, but […]</p>\\n",
+      "date": "2026-04-17",
+      "time": "12:00 PM",
+      "startDateTime": "2026-04-17T12:00:00",
+      "location": {
+        "name": "SpringGR",
+        "address": "818 Butterworth St SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49504",
+        "lat": 42.959034,
+        "lng": -85.688525
+      },
+      "url": "https://www.springgr.com/event/lunch-learn-pitch-to-win/",
+      "source": "springgr",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:57.290Z"
     },
     {
       "id": "grand-rapids-org-breakfast-with-legislators-2026-04-20",
@@ -716,7 +546,29 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
+    },
+    {
+      "id": "msu-foundation-distilling-innovation-2026-04-21",
+      "title": "Distilling Innovation",
+      "description": "Join us during Northern Michigan Startup Week at Mammoth Distilling for a panel and candid conversation about what it takes to turn ideas into companies. Founders, investors, and researchers will share their experiences building ventures rooted in Michigan innovation—from space technology to sustainable craft beverage systems and heritage agriculture.",
+      "date": "2026-04-21",
+      "time": "2:00 PM",
+      "startDateTime": "2026-04-21T14:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/distilling-innovation-tickets-1985101923290?aff=oddtdtcreator",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-04-21",
@@ -737,7 +589,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "startup-garage-workshop-build-an-app-in-two-hours-2026-04-21",
@@ -759,7 +611,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:21.848Z"
+      "scrapedAt": "2026-03-27T17:15:50.442Z"
     },
     {
       "id": "grand-rapids-org-outpro-forum-the-business-of-belonging-2026-04-",
@@ -781,7 +633,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "startup-garage-speaker-series-sheena-brown-2026-04-22",
@@ -791,19 +643,19 @@
       "time": "6:30 PM",
       "startDateTime": "2026-04-22T18:30:00",
       "location": {
-        "name": "Grand Rapids",
-        "address": "",
+        "name": "Calvin School of Business",
+        "address": "1810 E Beltline Ave SE",
         "city": "Grand Rapids",
         "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
+        "lat": 42.9242,
+        "lng": -85.5875
       },
       "url": "https://www.startupgarage.org/events",
       "source": "startup-garage",
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:21.848Z"
+      "scrapedAt": "2026-03-27T17:15:50.442Z"
     },
     {
       "id": "grand-rapids-org-west-michigan-minority-contractors-2026-04-23",
@@ -825,7 +677,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-04-23",
@@ -846,7 +698,30 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
+    },
+    {
+      "id": "springgr-email-marketing-workshop-2026-04-27",
+      "title": "Email Marketing Workshop",
+      "description": "<p>Email marketing is essential for most businesses, but it can be overwhelming to get started. Join us for a workshop on the basics of email marketing, so you can unleash its power. In this workshop you will learn how […]</p>\\n",
+      "date": "2026-04-27",
+      "time": "6:00 PM",
+      "startDateTime": "2026-04-27T18:00:00",
+      "location": {
+        "name": "SpringGR",
+        "address": "818 Butterworth St SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49504",
+        "lat": 42.959034,
+        "lng": -85.688525
+      },
+      "url": "https://www.springgr.com/event/email-marketing-workshop/",
+      "source": "springgr",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-03-27T17:15:57.290Z"
     },
     {
       "id": "msu-foundation-msu-faculty-founders-panel-lessons-from-the-trenc",
@@ -868,7 +743,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-04-29",
@@ -890,7 +765,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-breakfast-2026-04-30",
@@ -912,7 +787,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "startup-garage-speaker-series-jim-mallekoote-2026-04-30",
@@ -934,7 +809,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:21.848Z"
+      "scrapedAt": "2026-03-27T17:15:50.442Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-05-01",
@@ -956,7 +831,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "grand-rapids-org-small-business-week-kickoff-2026-05-04",
@@ -978,7 +853,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:19.377Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "bamboo-founders-fireside-chat-2026-05-05",
@@ -999,7 +874,29 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
+    },
+    {
+      "id": "grand-rapids-org-business-growth-workshop-outgrow-how-to-increas",
+      "title": "Business Growth Workshop: Outgrow: How to Increase Your Sales by 17%",
+      "description": "",
+      "date": "2026-05-06",
+      "time": "May 6 @ 8:30 am - 10:30 am Business Growth Workshop",
+      "startDateTime": "2026-05-06T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/business-growth-workshop-5-6/",
+      "source": "grand-rapids-org",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "bamboo-creating-magnetic-workplaces-2026-05-06",
@@ -1020,30 +917,29 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
-      "id": "right-place-go-beyond-2026-2026-05-07",
-      "title": "Go Beyond 2026",
-      "description": "Registration open!",
+      "id": "grand-rapids-org-latina-connect-2026-05-07",
+      "title": "Latina Connect",
+      "description": "",
       "date": "2026-05-07",
-      "time": "12:00 AM",
+      "time": "May 7 @ 3:00 pm - 5:00 pm Latina Connect",
       "startDateTime": "2026-05-07T00:00:00",
       "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "25 Ottawa Ave SW, Suite 400",
+        "name": "Grand Rapids",
+        "address": "",
         "city": "Grand Rapids",
         "state": "MI",
-        "zip": "49503",
         "lat": 42.9614,
         "lng": -85.6726
       },
-      "url": "https://www.rightplace.org/events/go-beyond-2026",
-      "source": "right-place",
-      "category": "workshop",
-      "isRecurring": false,
+      "url": "https://grandrapids.org/event/latina-connect-5-7/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:47.734Z"
     },
     {
       "id": "gr-junior-chamber-may-monthly-leadership-exchange-save-the-date-",
@@ -1066,7 +962,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-23T08:56:20.843Z"
+      "scrapedAt": "2026-03-27T17:15:49.431Z"
     },
     {
       "id": "gr-junior-chamber-june-monthly-leadership-exchange-save-the-date",
@@ -1089,7 +985,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-03-23T08:56:20.843Z"
+      "scrapedAt": "2026-03-27T17:15:49.431Z"
     },
     {
       "id": "right-place-2026-q2-technology-exchange-april-22-2026-04-22",
@@ -1112,7 +1008,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
     },
     {
       "id": "right-place-west-michigan-manufacturing-defense-cooperative-mark",
@@ -1135,7 +1031,53 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
+    },
+    {
+      "id": "right-place-go-beyond-2026-2026-05-07",
+      "title": "Go Beyond 2026",
+      "description": "Registration now open!",
+      "date": "2026-05-07",
+      "time": "68:00 AM",
+      "startDateTime": "2026-05-07T68:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.rightplace.org/events/go-beyond-2026",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
+    },
+    {
+      "id": "right-place-candid-conversations-may-11-2026-05-11",
+      "title": "Candid Conversations | May 11",
+      "description": "Unlocking Talent Through Mentorship-Driven Leadership with Dr. Richard J. Pappas",
+      "date": "2026-05-11",
+      "time": "61:00 PM",
+      "startDateTime": "2026-05-11T73:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/candid-conversations-may-11",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
     },
     {
       "id": "right-place-supply-chain-management-council-itw-drawform-tour-co",
@@ -1158,7 +1100,53 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
+    },
+    {
+      "id": "right-place-connecting-entrepreneurial-communities-2026-2026-05-",
+      "title": "Connecting Entrepreneurial Communities 2026",
+      "description": "A small-town conference for small towns in a small town. In 2026, the communities of Newaygo and Fremont will host CEC on May 28-29; register today!",
+      "date": "2026-05-28",
+      "time": "12:00 PM",
+      "startDateTime": "2026-05-28T12:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/connecting-entrepreneurial-communities-2026",
+      "source": "right-place",
+      "category": "conference",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
+    },
+    {
+      "id": "right-place-how-much-is-a-new-customer-worth-to-you-2026-05-29",
+      "title": "How Much is a New Customer Worth to You?",
+      "description": "Join us for a half-day, strategy-driven sales training focused on diversification, differentiation, and profitable growth.",
+      "date": "2026-05-29",
+      "time": "68:00 AM",
+      "startDateTime": "2026-05-29T68:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/valueselling-training",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -1181,99 +1169,76 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
     },
     {
-      "id": "right-place-candid-conversations-june-18-2026-06-18",
-      "title": "Candid Conversations | June 18",
-      "description": "Higher Education’s Role in Preparing Tomorrow’s Workforce with Dr. Philomena Mantella",
-      "date": "2026-06-18",
-      "time": "63:00 PM",
-      "startDateTime": "2026-06-18T75:00:00",
+      "id": "right-place-west-michigan-intern-connect-2026-06-10",
+      "title": "West Michigan Intern Connect",
+      "description": "Business and economic development event hosted by The Right Place.",
+      "date": "2026-06-10",
+      "time": "61:00 PM",
+      "startDateTime": "2026-06-10T73:00:00",
       "location": {
-        "name": "Bamboo Grand Rapids",
+        "name": "Amway Grand Plaza",
         "address": "25 Ottawa Ave SW, Suite 400",
         "city": "Grand Rapids",
         "state": "MI",
         "zip": "49503",
-        "lat": 42.9614,
-        "lng": -85.6726
+        "lat": 42.9689,
+        "lng": -85.6772
       },
-      "url": "https://www.rightplace.org/events/candid-conversations-june-18",
+      "url": "https://www.rightplace.org/events/west-michigan-intern-connect",
       "source": "right-place",
-      "category": "workshop",
+      "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:53.431Z"
     },
     {
-      "id": "right-place-2026-q3-technology-exchange-july-8-2026-07-08",
-      "title": "2026 Q3 Technology Exchange | July 8",
-      "description": "This is a member-exclusive event.",
-      "date": "2026-07-08",
-      "time": "63:00 PM",
-      "startDateTime": "2026-07-08T75:00:00",
+      "id": "springgr-lunch-learn-how-to-get-a-loan-with-a-cdfi-2026-05-08",
+      "title": "Lunch & Learn: How to get a loan with a CDFI",
+      "description": "<p>GROW is a CDFI that helps small business owners get loans from $1-50K. They have a friendly and supportive process to help you prepare and apply for a loan. Come learn and ask all of your questions at this Lunch & Learn.</p>\\n",
+      "date": "2026-05-08",
+      "time": "11:30 AM",
+      "startDateTime": "2026-05-08T11:30:00",
       "location": {
-        "name": "TBD",
-        "address": "25 Ottawa Ave SW, Suite 400",
+        "name": "SpringGR",
+        "address": "818 Butterworth St SW",
         "city": "Grand Rapids",
         "state": "MI",
-        "zip": "49503",
-        "lat": 42.9632425,
-        "lng": -85.6678639
+        "zip": "49504",
+        "lat": 42.959034,
+        "lng": -85.688525
       },
-      "url": "https://www.rightplace.org/events/2026-q3-technology-exchange",
-      "source": "right-place",
-      "category": "networking",
+      "url": "https://www.springgr.com/event/lunch-learn-how-to-get-a-loan-with-a-cdfi/",
+      "source": "springgr",
+      "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:57.290Z"
     },
     {
-      "id": "right-place-candid-conversations-august-6-2026-08-06",
-      "title": "Candid Conversations | August 6",
-      "description": "Becoming an Employer of Choice through Culture, Talent Development, and Inclusion with Misti Stanton",
-      "date": "2026-08-06",
-      "time": "63:00 PM",
-      "startDateTime": "2026-08-06T75:00:00",
+      "id": "springgr-c-mo-obtener-un-pr-stamo-con-una-cdfi-2026-05-08",
+      "title": "Cómo obtener un préstamo con una CDFI ",
+      "description": "<p>GROW es una CDFI que ayuda a propietarios de pequeños negocios a obtener préstamos de $1,000 a $50,000. Su proceso es amable y acompañan a los emprendedores para prepararse y solicitar un préstamo con confianza. Acompáñanos para aprender más y hacer todas tus preguntas en este Lunch & Learn</p>\\n",
+      "date": "2026-05-08",
+      "time": "12:30 PM",
+      "startDateTime": "2026-05-08T12:30:00",
       "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "25 Ottawa Ave SW, Suite 400",
+        "name": "SpringGR",
+        "address": "818 Butterworth St SW",
         "city": "Grand Rapids",
         "state": "MI",
-        "zip": "49503",
-        "lat": 42.9614,
-        "lng": -85.6726
+        "zip": "49504",
+        "lat": 42.959034,
+        "lng": -85.688525
       },
-      "url": "https://www.rightplace.org/events/candid-conversations-august-6",
-      "source": "right-place",
-      "category": "workshop",
+      "url": "https://www.springgr.com/event/como-obtener-un-prestamo-con-una-cdfi/",
+      "source": "springgr",
+      "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
-    },
-    {
-      "id": "right-place-2026-q4-technology-exchange-october-14-2026-10-14",
-      "title": "2026 Q4 Technology Exchange | October 14",
-      "description": "This is a member-exclusive event.",
-      "date": "2026-10-14",
-      "time": "63:00 PM",
-      "startDateTime": "2026-10-14T75:00:00",
-      "location": {
-        "name": "TBD",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9632425,
-        "lng": -85.6678639
-      },
-      "url": "https://www.rightplace.org/events/2026-q4-technology-exchange",
-      "source": "right-place",
-      "category": "networking",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:25.453Z"
+      "scrapedAt": "2026-03-27T17:15:57.290Z"
     },
     {
       "id": "ada-business-association-may-happy-hour-aba-2026-05-13",
@@ -1295,7 +1260,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:26.458Z"
+      "scrapedAt": "2026-03-27T17:15:54.438Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-05-26",
@@ -1316,7 +1281,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "ada-business-association-june-happy-hour-aba-2026-06-10",
@@ -1338,7 +1303,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:26.458Z"
+      "scrapedAt": "2026-03-27T17:15:54.438Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-06-24",
@@ -1359,7 +1324,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-07-23",
@@ -1380,7 +1345,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "msu-foundation-mobility-summit-2026-08-11",
@@ -1402,7 +1367,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-08-18",
@@ -1423,7 +1388,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-08-25",
@@ -1444,7 +1409,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:17.407Z"
+      "scrapedAt": "2026-03-27T17:15:45.509Z"
     },
     {
       "id": "msu-foundation-data-science-ai-summit-2026-10-01",
@@ -1466,10 +1431,10 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-03-23T08:56:15.065Z"
+      "scrapedAt": "2026-03-27T17:15:42.906Z"
     }
   ],
-  "lastScraped": "2026-03-23T08:56:51.684Z",
+  "lastScraped": "2026-03-27T17:16:27.252Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -1477,7 +1442,7 @@
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
       "eventCount": 14,
-      "lastScraped": "2026-03-23T08:56:15.068Z"
+      "lastScraped": "2026-03-27T17:15:42.933Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -1485,15 +1450,15 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-03-23T08:56:16.101Z"
+      "lastScraped": "2026-03-27T17:15:44.120Z"
     },
     "bamboo": {
       "id": "bamboo",
       "name": "Bamboo Cowork",
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
-      "eventCount": 19,
-      "lastScraped": "2026-03-23T08:56:17.459Z"
+      "eventCount": 14,
+      "lastScraped": "2026-03-27T17:15:45.633Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -1501,7 +1466,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 48,
-      "lastScraped": "2026-03-23T08:56:19.432Z"
+      "lastScraped": "2026-03-27T17:15:47.821Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -1509,15 +1474,15 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-03-23T08:56:20.847Z"
+      "lastScraped": "2026-03-27T17:15:49.437Z"
     },
     "startup-garage": {
       "id": "startup-garage",
       "name": "Startup Garage",
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
-      "eventCount": 6,
-      "lastScraped": "2026-03-23T08:56:22.402Z"
+      "eventCount": 5,
+      "lastScraped": "2026-03-27T17:15:50.826Z"
     },
     "right-place": {
       "id": "right-place",
@@ -1525,7 +1490,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-03-23T08:56:25.457Z"
+      "lastScraped": "2026-03-27T17:15:53.437Z"
     },
     "ada-business-association": {
       "id": "ada-business-association",
@@ -1533,7 +1498,15 @@
       "url": "https://adabusinessassociation.com/happy_hour/",
       "color": "#1976D2",
       "eventCount": 3,
-      "lastScraped": "2026-03-23T08:56:26.644Z"
+      "lastScraped": "2026-03-27T17:15:55.765Z"
+    },
+    "springgr": {
+      "id": "springgr",
+      "name": "SpringGR",
+      "url": "https://www.springgr.com/events-page/",
+      "color": "#2E7D32",
+      "eventCount": 4,
+      "lastScraped": "2026-03-27T17:15:57.297Z"
     }
   }
 }
