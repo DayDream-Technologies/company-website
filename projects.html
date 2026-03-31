@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | DayDream Technologies - GR Events Calendar, Cognition Daily</title>
-    <meta name="description" content="Explore DayDream Technologies projects including the GR Events Calendar and Cognition Daily. Free quarterly projects for local nonprofits in Grand Rapids." />
-    <meta name="keywords" content="DayDream projects, GR Events Calendar, Cognition Daily, Grand Rapids events, nonprofit projects, community technology" />
+    <title>Projects | DayDream Technologies - GR Events, Cognition Daily, 3D Arcade Games</title>
+    <meta name="description" content="Explore DayDream Technologies projects including the GR Events Calendar, Cognition Daily, 3D Arcade Games (Three.js), and more. Free quarterly projects for local nonprofits in Grand Rapids." />
+    <meta name="keywords" content="DayDream projects, GR Events Calendar, Cognition Daily, 3D Arcade Games, Three.js, browser games, Grand Rapids events, nonprofit projects, community technology" />
     <meta name="author" content="DayDream Technologies" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.daydreamtechnologies.net/projects.html" />
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Projects | DayDream Technologies - GR Events Calendar, Cognition Daily" />
-    <meta property="og:description" content="Explore DayDream Technologies projects including the GR Events Calendar and Cognition Daily. Free quarterly projects for local nonprofits in Grand Rapids." />
+    <meta property="og:title" content="Projects | DayDream Technologies - GR Events, Cognition Daily, 3D Arcade Games" />
+    <meta property="og:description" content="Explore DayDream Technologies projects including the GR Events Calendar, Cognition Daily, 3D Arcade Games (Three.js), and more. Free quarterly projects for local nonprofits in Grand Rapids." />
     <meta property="og:image" content="https://www.daydreamtechnologies.net/src/images/Company_Logo.png" />
     <meta property="og:url" content="https://www.daydreamtechnologies.net/projects.html" />
     <meta property="og:type" content="website" />
@@ -23,7 +23,7 @@
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Projects | DayDream Technologies" />
-    <meta name="twitter:description" content="Explore DayDream Technologies projects including the GR Events Calendar and Cognition Daily." />
+    <meta name="twitter:description" content="Explore DayDream Technologies projects including the GR Events Calendar, Cognition Daily, and 3D Arcade Games (Three.js)." />
     <meta name="twitter:image" content="https://www.daydreamtechnologies.net/src/images/Company_Logo.png" />
     
     <!-- Stylesheets -->
@@ -44,7 +44,7 @@
                 "@id": "https://www.daydreamtechnologies.net/projects.html",
                 "url": "https://www.daydreamtechnologies.net/projects.html",
                 "name": "Projects | DayDream Technologies",
-                "description": "Explore DayDream Technologies projects including the GR Events Calendar and Cognition Daily.",
+                "description": "Explore DayDream Technologies projects including the GR Events Calendar, Cognition Daily, 3D Arcade Games (Three.js), and more.",
                 "isPartOf": {
                     "@id": "https://www.daydreamtechnologies.net/#website"
                 },
@@ -110,6 +110,23 @@
                         "description": "A free tool for creating fully customizable QR codes. Supports various data types, styles, colors, download formats, and custom image embedding.",
                         "url": "https://manifest-app-9aa26b07-d74a-468f-974e-b6dbbb8c5cc8.manifestsites.co/",
                         "applicationCategory": "UtilityApplication",
+                        "operatingSystem": "Web Browser",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "USD"
+                        },
+                        "creator": {
+                            "@id": "https://www.daydreamtechnologies.net/#organization"
+                        }
+                    },
+                    {
+                        "@type": "WebApplication",
+                        "position": 4,
+                        "name": "3D Arcade Games",
+                        "description": "Browser-based arcade games built with Three.js, used to explore and test new object rendering in the browser.",
+                        "url": "https://daydream-technologies.github.io/threejs-games/",
+                        "applicationCategory": "Game",
                         "operatingSystem": "Web Browser",
                         "offers": {
                             "@type": "Offer",
@@ -306,6 +323,36 @@
                         </div>
                         <a href="https://manifest-app-9aa26b07-d74a-468f-974e-b6dbbb8c5cc8.manifestsites.co/" target="_blank" rel="noopener noreferrer" class="project-link">
                             Generate QR Code
+                            <svg viewBox="0 0 24 24" fill="none" class="link-arrow">
+                                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3D Arcade Games - Large Card -->
+                <div class="bento-card bento-large" data-project="3d-arcade-games">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" class="project-svg" aria-hidden="true">
+                            <!-- Isometric cube (3D) -->
+                            <path d="M40 12 L62 24 L62 48 L40 60 L18 48 L18 24 Z" stroke="currentColor" stroke-width="2.5" class="svg-line" fill="none"/>
+                            <path d="M18 24 L40 36 L62 24" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <path d="M40 36 L40 60" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <!-- Joystick / arcade hint -->
+                            <circle cx="40" cy="42" r="6" stroke="currentColor" stroke-width="2" class="svg-line"/>
+                            <line x1="40" y1="48" x2="40" y2="54" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="svg-line"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>3D Arcade Games</h3>
+                        <p>Arcade-style games in the browser built with <strong>Three.js</strong>. This project is an example of testing new browser-based object rendering—experimenting with 3D scenes, materials, and performance in modern WebGL without a native app.</p>
+                        <ul class="card-features">
+                            <li>Three.js WebGL rendering in the browser</li>
+                            <li>Explores 3D object rendering and interaction</li>
+                            <li>No install—runs in your web browser</li>
+                        </ul>
+                        <a href="https://daydream-technologies.github.io/threejs-games/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            Play games
                             <svg viewBox="0 0 24 24" fill="none" class="link-arrow">
                                 <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
