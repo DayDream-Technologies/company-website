@@ -1,181 +1,6 @@
 {
   "events": [
     {
-      "id": "ada-business-association-april-happy-hour-aba-2026-04-08",
-      "title": "April Happy Hour (ABA)",
-      "description": "Our April Happy Hour on April 8th from 4:30-6:30pm, will be hosted at Gravel Bottom Craft Brewery. Enjoy a relaxed evening of networking, conversation, and community connection in one of Ada’s favorite gathering spots. Whether you’re reconnecting with fellow members or meeting new faces, this casual after-hours event is a great way to stay engaged with the ABA community. We look forward to seeing you on April 8th at Gravel Bottom Craft Brewery.",
-      "date": "2026-04-08",
-      "time": "4:30 PM",
-      "startDateTime": "2026-04-08T16:30:00",
-      "location": {
-        "name": "Gravel Bottom Craft Brewery",
-        "address": "452 Ada Dr",
-        "city": "Ada",
-        "state": "MI",
-        "lat": 42.9522,
-        "lng": -85.4889
-      },
-      "url": "https://adabusinessassociation.com/happy_hour/",
-      "source": "ada-business-association",
-      "category": "networking",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:04.925Z"
-    },
-    {
-      "id": "msu-foundation-mobility-insiders-networking-dinner-2026-04-14",
-      "title": "Mobility Insiders Networking Dinner",
-      "description": "The Clean Fuels Michigan Mobility Insiders Networking Dinner provides a unique opportunity to meet with state leaders in small groups over dinner, drinks, and dessert to discuss clean mobility priorities and initiatives.",
-      "date": "2026-04-14",
-      "time": "5:00 PM",
-      "startDateTime": "2026-04-14T17:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://www.cleanfuelsmichigan.org/event/mobility-insiders-networking-dinner/",
-      "source": "msu-foundation",
-      "category": "networking",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:53.382Z"
-    },
-    {
-      "id": "grand-rapids-org-national-civics-bee-2026-04-15",
-      "title": "National Civics Bee",
-      "description": "",
-      "date": "2026-04-15",
-      "time": "April 15 @ 11:00 am - 12:30 pm",
-      "startDateTime": "2026-04-15T00:00:00",
-      "location": {
-        "name": "Grand Rapids",
-        "address": "",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://grandrapids.org/event/national-civics-bee-4-15/",
-      "source": "grand-rapids-org",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
-    },
-    {
-      "id": "bamboo-river-city-ai-dev-user-group-meetup-2026-04-15",
-      "title": "River City AI & Dev User Group Meetup",
-      "description": "Come meet fellow developers from across the Grand Rapids area, hear about what this community is building toward, and stay for an AI talk to be announced soon.",
-      "date": "2026-04-15",
-      "time": "6:00 PM",
-      "startDateTime": "2026-04-15T18:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/river-city-ai-dev-user-group-meetup",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
-    },
-    {
-      "id": "grand-rapids-org-business-exchange-luncheon-2026-04-16",
-      "title": "Business Exchange Luncheon",
-      "description": "",
-      "date": "2026-04-16",
-      "time": "April 16 @ 11:30 am - 1:30 pm Business Exchange Series",
-      "startDateTime": "2026-04-16T00:00:00",
-      "location": {
-        "name": "Grand Rapids",
-        "address": "",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://grandrapids.org/event/business-exchange-luncheon-4-16/",
-      "source": "grand-rapids-org",
-      "category": "other",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
-    },
-    {
-      "id": "bamboo-members-lunch-break-2026-04-16",
-      "title": "Members Lunch Break",
-      "description": "​Lunch Break is our weekly community lunch. Every Thursday at noon, all Bamboo GR members are invited to gather in the 5th floor kitchen for lunch together.",
-      "date": "2026-04-16",
-      "time": "12:00 PM",
-      "startDateTime": "2026-04-16T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/members-lunch-break-5",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": false,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
-    },
-    {
-      "id": "msu-foundation-innovate-state-the-pursuit-of-hidden-opportunity-",
-      "title": "Innovate State: The Pursuit of Hidden Opportunity",
-      "description": "The Innovate State Speaker Series brings emerging and accomplished Spartan entrepreneurs—innovators, builders, creators, and visionaries—to campus for a live, unscripted fireside chat. These 60-minute sessions offer the chance for guests to share their perspectives on a wide array of topics like innovation, startup life, investments, and career paths. HOSTED BY: MSU Burgess Institute for Entrepreneurship & Innovation",
-      "date": "2026-04-16",
-      "time": "1:00 PM",
-      "startDateTime": "2026-04-16T13:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://www.eventbrite.com/e/innovate-state-the-pursuit-of-hidden-opportunity-tickets-1983911982144?aff=ebdsoporgprofile",
-      "source": "msu-foundation",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:53.382Z"
-    },
-    {
-      "id": "springgr-lunch-learn-pitch-to-win-2026-04-17",
-      "title": "Lunch & Learn: Pitch to Win.",
-      "description": "Winning a pitch competition is a great way to fund a business need, BUT only the best ‘pitchers’ win. Join us on April 17 to learn from multiple pitch-winner Maneeka Brown. We can’t guarantee your future results, but […]",
-      "date": "2026-04-17",
-      "time": "4:00 PM",
-      "startDateTime": "2026-04-17T16:00:00",
-      "location": {
-        "name": "SpringGR",
-        "address": "818 Butterworth St SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49504",
-        "lat": 42.959034,
-        "lng": -85.688525
-      },
-      "url": "https://www.springgr.com/event/lunch-learn-pitch-to-win/",
-      "source": "springgr",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:07.195Z"
-    },
-    {
       "id": "grand-rapids-org-breakfast-with-legislators-2026-04-20",
       "title": "Breakfast With Legislators",
       "description": "",
@@ -195,7 +20,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "msu-foundation-distilling-innovation-2026-04-21",
@@ -217,28 +42,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:53.382Z"
-    },
-    {
-      "id": "bamboo-midwest-marketing-meetup-2026-04-21",
-      "title": "Midwest Marketing Meetup",
-      "description": "Whether you're seasoned or new to the industry, connect with West Michigan's marketing community and hear real insights from someone in the trenches.",
-      "date": "2026-04-21",
-      "time": "4:30 PM",
-      "startDateTime": "2026-04-21T16:30:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/midwest-marketing-meetup-2",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:54.165Z"
     },
     {
       "id": "startup-garage-workshop-build-an-app-in-two-hours-2026-04-21",
@@ -260,7 +64,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:00.159Z"
+      "scrapedAt": "2026-04-20T09:58:04.737Z"
     },
     {
       "id": "grand-rapids-org-outpro-forum-the-business-of-belonging-2026-04-",
@@ -282,7 +86,28 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
+    },
+    {
+      "id": "bamboo-west-michigan-technology-council-technology-exchange-2026",
+      "title": "West Michigan Technology Council: Technology Exchange",
+      "description": "Technology doesn’t just solve problems; it brings people together, amplifies voices, and builds something bigger than any one company or idea.",
+      "date": "2026-04-22",
+      "time": "3:00 PM",
+      "startDateTime": "2026-04-22T15:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/west-michigan-technology-council-technology-exchange",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "startup-garage-speaker-series-sheena-brown-2026-04-22",
@@ -304,7 +129,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:00.159Z"
+      "scrapedAt": "2026-04-20T09:58:04.737Z"
     },
     {
       "id": "grand-rapids-org-west-michigan-minority-contractors-2026-04-23",
@@ -326,7 +151,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "gr-junior-chamber-morning-momentum-2026-04-23",
@@ -349,7 +174,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-04-13T09:54:59.155Z"
+      "scrapedAt": "2026-04-20T09:58:03.732Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-04-23",
@@ -370,7 +195,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "bamboo-members-lunch-break-2026-04-23",
@@ -391,7 +216,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "msu-foundation-msu-faculty-founders-panel-lessons-from-the-trenc",
@@ -413,7 +238,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:53.382Z"
+      "scrapedAt": "2026-04-20T09:57:54.165Z"
     },
     {
       "id": "bamboo-start-garden-5x5-night-2026-04-28",
@@ -434,7 +259,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "springgr-email-marketing-workshop-2026-04-28",
@@ -457,7 +282,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-04-13T09:55:07.195Z"
+      "scrapedAt": "2026-04-20T09:58:12.539Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-04-29",
@@ -479,7 +304,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-breakfast-2026-04-30",
@@ -501,7 +326,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "bamboo-members-lunch-break-2026-04-30",
@@ -522,7 +347,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-05-01",
@@ -544,7 +369,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "bamboo-founders-first-fridays-2026-05-01",
@@ -565,7 +390,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "bamboo-start-garden-first-fridays-2026-05-01",
@@ -586,11 +411,11 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
-      "id": "bamboo-spring-reset-barr3-at-bamboo-2026-05-02",
-      "title": "Spring Reset: barr3 at Bamboo",
+      "id": "bamboo-spring-reset-barre3-at-bamboo-2026-05-02",
+      "title": "Spring Reset: barre3 at Bamboo",
       "description": "Step into spring with a free barre3 Signature class at Bamboo Grand Rapids.",
       "date": "2026-05-02",
       "time": "11:00 AM",
@@ -607,7 +432,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "grand-rapids-org-small-business-week-kickoff-2026-05-04",
@@ -629,7 +454,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "bamboo-from-content-to-connection-how-to-turn-your-content-into-",
@@ -650,7 +475,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "bamboo-promote-protect-prevail-the-small-biz-reputation-toolkit-",
@@ -671,7 +496,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "bamboo-founders-fireside-chat-2026-05-05",
@@ -692,7 +517,28 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
+    },
+    {
+      "id": "bamboo-midwest-marketing-meetup-2026-05-05",
+      "title": "Midwest Marketing Meetup",
+      "description": "Whether you're seasoned or new to the industry, connect with West Michigan's marketing community and hear real insights from someone in the trenches.",
+      "date": "2026-05-05",
+      "time": "4:30 PM",
+      "startDateTime": "2026-05-05T16:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/midwest-marketing-meetup-2",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "grand-rapids-org-business-growth-workshop-outgrow-how-to-increas",
@@ -714,7 +560,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "bamboo-creating-magnetic-workplaces-2026-05-06",
@@ -735,7 +581,28 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
+    },
+    {
+      "id": "bamboo-lunch-and-learn-fraud-prevention-for-small-businesses-sta",
+      "title": "Lunch and Learn: Fraud Prevention for Small Businesses & Startups",
+      "description": "Learn how to spot and stop fraud with former DHS/FBI officer Michael Moll using real cases and insights, with lunch provided.",
+      "date": "2026-05-06",
+      "time": "11:30 AM",
+      "startDateTime": "2026-05-06T11:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/lunch-and-learn-fraud-prevention-for-small-businesses-startups",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "bamboo-patio-grand-opening-2026-05-06",
@@ -756,7 +623,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "grand-rapids-org-latina-connect-craft-your-digital-brand-2026-05",
@@ -778,7 +645,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "bamboo-the-quarter-revenue-retreat-2026-05-08",
@@ -799,7 +666,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
     },
     {
       "id": "springgr-lunch-learn-how-to-get-a-loan-with-a-cdfi-2026-05-08",
@@ -822,7 +689,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:07.195Z"
+      "scrapedAt": "2026-04-20T09:58:12.539Z"
     },
     {
       "id": "springgr-c-mo-obtener-un-pr-stamo-con-una-cdfi-2026-05-08",
@@ -845,7 +712,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:07.195Z"
+      "scrapedAt": "2026-04-20T09:58:12.539Z"
     },
     {
       "id": "grand-rapids-org-chamber-101-2026-05-13",
@@ -867,12 +734,12 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:57.752Z"
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "ada-business-association-may-happy-hour-aba-2026-05-13",
       "title": "May Happy Hour (ABA)",
-      "description": "ABA monthly happy hour. Connect with fellow ABA members, 4:30–6:30pm. No registration required.",
+      "description": "Stop by, make new connections, and help us thank BGR Event Center for their continued support of the ABA community. With activities like Laser Tag, Archery Tag, and Axe Throwing available, we encourage participants to complete the waiver in advance here.",
       "date": "2026-05-13",
       "time": "4:30 PM",
       "startDateTime": "2026-05-13T16:30:00",
@@ -889,11 +756,11 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:04.925Z"
+      "scrapedAt": "2026-04-20T09:58:09.261Z"
     },
     {
-      "id": "gr-junior-chamber-may-monthly-leadership-exchange-save-the-date-",
-      "title": "May Monthly Leadership Exchange - Save the Date!",
+      "id": "gr-junior-chamber-may-monthly-leadership-exchange-with-guest-spe",
+      "title": "May Monthly Leadership Exchange with Guest Speaker, Michelle L. Steffes!",
       "description": "Your monthly boost of inspiration, connection, and leadership growth! Every session delivers high-value insights, dynamic speakers, and actionable takeaways to help you lead with confidence. New topic, new energy, every month.",
       "date": "2026-05-14",
       "time": "5:30 PM",
@@ -907,35 +774,56 @@
         "lat": 42.9634,
         "lng": -85.6681
       },
-      "url": "https://www.grjuniorchamber.com/event-details-registration/may-monthly-leadership-exchange-save-the-date",
+      "url": "https://www.grjuniorchamber.com/event-details-registration/may-monthly-leadership-exchange-with-guest-speaker-michelle-l-steffes",
       "source": "gr-junior-chamber",
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-04-13T09:54:59.155Z"
+      "scrapedAt": "2026-04-20T09:58:03.732Z"
     },
     {
-      "id": "gr-junior-chamber-engaging-early-career-professionals-in-the-wor",
-      "title": "Engaging Early-Career Professionals in the Workforce",
-      "description": "Join us for a panel discussion where we will highlight and discuss current data and trends on early-career professionals in the workforce.",
-      "date": "2026-05-22",
-      "time": "8:30 AM",
-      "startDateTime": "2026-05-22T08:30:00",
+      "id": "grand-rapids-org-create-great-leaders-annual-party-2026-05-15",
+      "title": "Create Great Leaders Annual Party",
+      "description": "",
+      "date": "2026-05-15",
+      "time": "May 15 @ 4:00 pm - 6:00 pm",
+      "startDateTime": "2026-05-15T00:00:00",
       "location": {
-        "name": "Grand Rapids Junior Chamber",
-        "address": "250 Monroe Ave NW Ste 150",
+        "name": "Grand Rapids",
+        "address": "",
         "city": "Grand Rapids",
         "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6681
+        "lat": 42.9614,
+        "lng": -85.6726
       },
-      "url": "https://www.grjuniorchamber.com/event-details-registration/engaging-early-career-professionals-in-the-workforce",
-      "source": "gr-junior-chamber",
+      "url": "https://grandrapids.org/event/create-great-leaders-annual-party-5-15/",
+      "source": "grand-rapids-org",
       "category": "other",
       "isRecurring": false,
-      "isFree": false,
-      "scrapedAt": "2026-04-13T09:54:59.155Z"
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
+    },
+    {
+      "id": "grand-rapids-org-talent-human-resources-workshop-inclusive-colla",
+      "title": "Talent & Human Resources Workshop: Inclusive Collaboration",
+      "description": "",
+      "date": "2026-05-19",
+      "time": "May 19 @ 8:30 am - 10:30 am Talent & Human Resource Programs",
+      "startDateTime": "2026-05-19T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/talent-human-resources-workshop-5-19/",
+      "source": "grand-rapids-org",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:58.752Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-05-26",
@@ -956,7 +844,30 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
+    },
+    {
+      "id": "gr-junior-chamber-engaging-early-career-professionals-in-the-wor",
+      "title": "Engaging Early-Career Professionals in the Workforce",
+      "description": "Join us for a panel discussion where we will highlight and discuss current data and trends on early-career professionals in the workforce.",
+      "date": "2026-05-27",
+      "time": "8:30 AM",
+      "startDateTime": "2026-05-27T08:30:00",
+      "location": {
+        "name": "Grand Rapids Junior Chamber",
+        "address": "250 Monroe Ave NW Ste 150",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6681
+      },
+      "url": "https://www.grjuniorchamber.com/event-details-registration/engaging-early-career-professionals-in-the-workforce",
+      "source": "gr-junior-chamber",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-04-20T09:58:03.732Z"
     },
     {
       "id": "right-place-connecting-entrepreneurial-communities-2026-2026-05-",
@@ -979,295 +890,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
-    },
-    {
-      "id": "ada-business-association-june-happy-hour-aba-2026-06-10",
-      "title": "June Happy Hour (ABA)",
-      "description": "Mark your calendar for the ABA June Happy Hour on Wednesday, June 10th from 4:30 to 6:30pm at the ABA office. Celebrate the start of summer with fellow members and guests in a relaxed, outdoor setting. This special happy hour is a chance to stop by our office, enjoy the garden-party atmosphere, and connect with the ABA community in a casual, welcoming way.",
-      "date": "2026-06-10",
-      "time": "4:30 PM",
-      "startDateTime": "2026-06-10T16:30:00",
-      "location": {
-        "name": "ABA Office",
-        "address": "7178 Headley St",
-        "city": "Ada",
-        "state": "MI",
-        "lat": 42.9522,
-        "lng": -85.4889
-      },
-      "url": "https://adabusinessassociation.com/happy_hour/",
-      "source": "ada-business-association",
-      "category": "networking",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:04.925Z"
-    },
-    {
-      "id": "bamboo-crashthatcourse-show-tell-2026-06-24",
-      "title": "CrashThatCourse Show & Tell",
-      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
-      "date": "2026-06-24",
-      "time": "12:00 PM",
-      "startDateTime": "2026-06-24T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell-3",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
-    },
-    {
-      "id": "bamboo-crashthatcourse-show-tell-2026-07-23",
-      "title": "CrashThatCourse Show & Tell",
-      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
-      "date": "2026-07-23",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-23T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell-4",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
-    },
-    {
-      "id": "msu-foundation-mobility-summit-2026-08-11",
-      "title": "Mobility Summit",
-      "description": "This one-day summit brings together researchers, industry partners, and innovators to explore mobility challenges and solutions—from autonomous transit and drones to supply chain resilience and off-road transportation. The program features keynote talks, technology showcases, panel discussions, and opportunities for connection and conversation. CO-HOSTED BY: MSU Research Foundation and MSU Mobility",
-      "date": "2026-08-11",
-      "time": "7:30 AM",
-      "startDateTime": "2026-08-11T07:30:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://msufoundation.org/mobility-summit-2026/",
-      "source": "msu-foundation",
-      "category": "conference",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:53.382Z"
-    },
-    {
-      "id": "bamboo-midwest-marketing-meetup-2026-08-18",
-      "title": "Midwest Marketing Meetup",
-      "description": "Whether you're seasoned or new to the industry, connect with West Michigan's marketing community and hear real insights from someone in the trenches.",
-      "date": "2026-08-18",
-      "time": "4:30 PM",
-      "startDateTime": "2026-08-18T16:30:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/midwest-marketing-meetup-3",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
-    },
-    {
-      "id": "bamboo-crashthatcourse-show-tell-2026-08-25",
-      "title": "CrashThatCourse Show & Tell",
-      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
-      "date": "2026-08-25",
-      "time": "12:00 PM",
-      "startDateTime": "2026-08-25T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell-5",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:55.720Z"
-    },
-    {
-      "id": "msu-foundation-data-science-ai-summit-2026-10-01",
-      "title": "Data Science + AI Summit",
-      "description": "Explore how data science and agentic AI are advancing human potential, shaping the future of work, and driving cross-sector innovation. Featuring keynotes, panels, case studies, interactive sessions, and networking to spark intentional partnerships. HOSTED BY: MSU Research Foundation",
-      "date": "2026-10-01",
-      "time": "8:30 AM",
-      "startDateTime": "2026-10-01T08:30:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://msufoundation.org/data-science-summit-2026/",
-      "source": "msu-foundation",
-      "category": "workshop",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:54:53.382Z"
-    },
-    {
-      "id": "right-place-2026-q2-technology-exchange-april-22-2026-04-22",
-      "title": "2026 Q2 Technology Exchange | April 22",
-      "description": "This is a member-exclusive event.",
-      "date": "2026-04-22",
-      "time": "63:00 PM",
-      "startDateTime": "2026-04-22T75:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.rightplace.org/events/2026-q2-technology-exchange",
-      "source": "right-place",
-      "category": "networking",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
-    },
-    {
-      "id": "right-place-west-michigan-manufacturing-defense-cooperative-mark",
-      "title": "West Michigan Manufacturing Defense Cooperative | Market & Operational Readiness",
-      "description": "This is an exclusive, interactive cohort designed for manufacturers interested in diversifying operations and exploring opportunities within the Department of Defense supply chain.",
-      "date": "2026-04-28",
-      "time": "69:00 AM",
-      "startDateTime": "2026-04-28T69:00:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/west-michigan-manufacturing-defense-cooperative-market-operational-readiness",
-      "source": "right-place",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
-    },
-    {
-      "id": "right-place-go-beyond-2026-2026-05-07",
-      "title": "Go Beyond 2026",
-      "description": "Registration now open!",
-      "date": "2026-05-07",
-      "time": "68:30 AM",
-      "startDateTime": "2026-05-07T68:30:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.rightplace.org/events/go-beyond-2026",
-      "source": "right-place",
-      "category": "workshop",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
-    },
-    {
-      "id": "right-place-candid-conversations-may-11-2026-05-11",
-      "title": "Candid Conversations | May 11",
-      "description": "Unlocking Talent Through Mentorship-Driven Leadership with Dr. Richard J. Pappas",
-      "date": "2026-05-11",
-      "time": "61:00 PM",
-      "startDateTime": "2026-05-11T73:00:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/candid-conversations-may-11",
-      "source": "right-place",
-      "category": "workshop",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
-    },
-    {
-      "id": "right-place-supply-chain-management-council-itw-drawform-tour-co",
-      "title": "Supply Chain Management Council | ITW Drawform Tour & Company Overview",
-      "description": "This is a supply chain management council member-exclusive event.",
-      "date": "2026-05-20",
-      "time": "67:30 AM",
-      "startDateTime": "2026-05-20T67:30:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/supply-chain-management-council-itw-drawform-tour-company-overview",
-      "source": "right-place",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
-    },
-    {
-      "id": "right-place-how-much-is-a-new-customer-worth-to-you-2026-05-29",
-      "title": "How Much is a New Customer Worth to You?",
-      "description": "Join us for a half-day, strategy-driven sales training focused on diversification, differentiation, and profitable growth.",
-      "date": "2026-05-29",
-      "time": "68:00 AM",
-      "startDateTime": "2026-05-29T68:00:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/valueselling-training",
-      "source": "right-place",
-      "category": "workshop",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -1290,7 +913,295 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
+    },
+    {
+      "id": "ada-business-association-june-happy-hour-aba-2026-06-10",
+      "title": "June Happy Hour (ABA)",
+      "description": "Mark your calendar for the ABA June Happy Hour on Wednesday, June 10th from 4:30 to 6:30pm at the ABA office. Celebrate the start of summer with fellow members and guests in a relaxed, outdoor setting. This special happy hour is a chance to stop by our office, enjoy the garden-party atmosphere, and connect with the ABA community in a casual, welcoming way.",
+      "date": "2026-06-10",
+      "time": "4:30 PM",
+      "startDateTime": "2026-06-10T16:30:00",
+      "location": {
+        "name": "ABA Office",
+        "address": "7178 Headley St",
+        "city": "Ada",
+        "state": "MI",
+        "lat": 42.9522,
+        "lng": -85.4889
+      },
+      "url": "https://adabusinessassociation.com/happy_hour/",
+      "source": "ada-business-association",
+      "category": "networking",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:58:09.261Z"
+    },
+    {
+      "id": "bamboo-crashthatcourse-show-tell-2026-06-24",
+      "title": "CrashThatCourse Show & Tell",
+      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
+      "date": "2026-06-24",
+      "time": "12:00 PM",
+      "startDateTime": "2026-06-24T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell-3",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
+    },
+    {
+      "id": "bamboo-crashthatcourse-show-tell-2026-07-23",
+      "title": "CrashThatCourse Show & Tell",
+      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
+      "date": "2026-07-23",
+      "time": "12:00 PM",
+      "startDateTime": "2026-07-23T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell-4",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
+    },
+    {
+      "id": "msu-foundation-mobility-summit-2026-08-11",
+      "title": "Mobility Summit",
+      "description": "This one-day summit brings together researchers, industry partners, and innovators to explore mobility challenges and solutions—from autonomous transit and drones to supply chain resilience and off-road transportation. The program features keynote talks, technology showcases, panel discussions, and opportunities for connection and conversation. CO-HOSTED BY: MSU Research Foundation and MSU Mobility",
+      "date": "2026-08-11",
+      "time": "7:30 AM",
+      "startDateTime": "2026-08-11T07:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://msufoundation.org/mobility-summit-2026/",
+      "source": "msu-foundation",
+      "category": "conference",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:54.165Z"
+    },
+    {
+      "id": "bamboo-midwest-marketing-meetup-2026-08-18",
+      "title": "Midwest Marketing Meetup",
+      "description": "Whether you're seasoned or new to the industry, connect with West Michigan's marketing community and hear real insights from someone in the trenches.",
+      "date": "2026-08-18",
+      "time": "4:30 PM",
+      "startDateTime": "2026-08-18T16:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/midwest-marketing-meetup-3",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
+    },
+    {
+      "id": "bamboo-crashthatcourse-show-tell-2026-08-25",
+      "title": "CrashThatCourse Show & Tell",
+      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
+      "date": "2026-08-25",
+      "time": "12:00 PM",
+      "startDateTime": "2026-08-25T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell-5",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:56.700Z"
+    },
+    {
+      "id": "msu-foundation-data-science-ai-summit-2026-10-01",
+      "title": "Data Science + AI Summit",
+      "description": "Explore how data science and agentic AI are advancing human potential, shaping the future of work, and driving cross-sector innovation. Featuring keynotes, panels, case studies, interactive sessions, and networking to spark intentional partnerships. HOSTED BY: MSU Research Foundation",
+      "date": "2026-10-01",
+      "time": "8:30 AM",
+      "startDateTime": "2026-10-01T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://msufoundation.org/data-science-summit-2026/",
+      "source": "msu-foundation",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:57:54.165Z"
+    },
+    {
+      "id": "right-place-2026-q2-technology-exchange-april-22-2026-04-22",
+      "title": "2026 Q2 Technology Exchange | April 22",
+      "description": "This is a member-exclusive event.",
+      "date": "2026-04-22",
+      "time": "63:00 PM",
+      "startDateTime": "2026-04-22T75:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.rightplace.org/events/2026-q2-technology-exchange",
+      "source": "right-place",
+      "category": "networking",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
+    },
+    {
+      "id": "right-place-west-michigan-manufacturing-defense-cooperative-mark",
+      "title": "West Michigan Manufacturing Defense Cooperative | Market & Operational Readiness",
+      "description": "This is an exclusive, interactive cohort designed for manufacturers interested in diversifying operations and exploring opportunities within the Department of Defense supply chain.",
+      "date": "2026-04-28",
+      "time": "69:00 AM",
+      "startDateTime": "2026-04-28T69:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/west-michigan-manufacturing-defense-cooperative-market-operational-readiness",
+      "source": "right-place",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
+    },
+    {
+      "id": "right-place-go-beyond-2026-2026-05-07",
+      "title": "Go Beyond 2026",
+      "description": "Registration now open!",
+      "date": "2026-05-07",
+      "time": "68:30 AM",
+      "startDateTime": "2026-05-07T68:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.rightplace.org/events/go-beyond-2026",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
+    },
+    {
+      "id": "right-place-candid-conversations-may-11-2026-05-11",
+      "title": "Candid Conversations | May 11",
+      "description": "Unlocking Talent Through Mentorship-Driven Leadership with Dr. Richard J. Pappas",
+      "date": "2026-05-11",
+      "time": "61:00 PM",
+      "startDateTime": "2026-05-11T73:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/candid-conversations-may-11",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
+    },
+    {
+      "id": "right-place-supply-chain-management-council-itw-drawform-tour-co",
+      "title": "Supply Chain Management Council | ITW Drawform Tour & Company Overview",
+      "description": "This is a supply chain management council member-exclusive event.",
+      "date": "2026-05-20",
+      "time": "67:30 AM",
+      "startDateTime": "2026-05-20T67:30:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/supply-chain-management-council-itw-drawform-tour-company-overview",
+      "source": "right-place",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
+    },
+    {
+      "id": "right-place-how-much-is-a-new-customer-worth-to-you-2026-05-29",
+      "title": "How Much is a New Customer Worth to You?",
+      "description": "Join us for a half-day, strategy-driven sales training focused on diversification, differentiation, and profitable growth.",
+      "date": "2026-05-29",
+      "time": "68:00 AM",
+      "startDateTime": "2026-05-29T68:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/valueselling-training",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
     },
     {
       "id": "right-place-west-michigan-intern-connect-2026-06-10",
@@ -1313,7 +1224,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
     },
     {
       "id": "right-place-candid-conversations-june-18-2026-06-18",
@@ -1336,18 +1247,18 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-13T09:55:03.920Z"
+      "scrapedAt": "2026-04-20T09:58:08.255Z"
     }
   ],
-  "lastScraped": "2026-04-13T09:55:24.725Z",
+  "lastScraped": "2026-04-20T09:58:25.565Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
       "name": "MSU Foundation",
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
-      "eventCount": 6,
-      "lastScraped": "2026-04-13T09:54:53.383Z"
+      "eventCount": 4,
+      "lastScraped": "2026-04-20T09:57:54.167Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -1355,7 +1266,7 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-04-13T09:54:54.457Z"
+      "lastScraped": "2026-04-20T09:57:55.295Z"
     },
     "bamboo": {
       "id": "bamboo",
@@ -1363,7 +1274,7 @@
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
       "eventCount": 21,
-      "lastScraped": "2026-04-13T09:54:55.769Z"
+      "lastScraped": "2026-04-20T09:57:56.760Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -1371,7 +1282,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 48,
-      "lastScraped": "2026-04-13T09:54:57.798Z"
+      "lastScraped": "2026-04-20T09:57:58.806Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -1379,7 +1290,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-04-13T09:54:59.157Z"
+      "lastScraped": "2026-04-20T09:58:03.736Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -1387,7 +1298,7 @@
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
       "eventCount": 2,
-      "lastScraped": "2026-04-13T09:55:00.583Z"
+      "lastScraped": "2026-04-20T09:58:05.009Z"
     },
     "right-place": {
       "id": "right-place",
@@ -1395,23 +1306,23 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-04-13T09:55:03.923Z"
+      "lastScraped": "2026-04-20T09:58:08.259Z"
     },
     "ada-business-association": {
       "id": "ada-business-association",
       "name": "Ada Business Association",
       "url": "https://adabusinessassociation.com/happy_hour/",
       "color": "#1976D2",
-      "eventCount": 3,
-      "lastScraped": "2026-04-13T09:55:05.093Z"
+      "eventCount": 2,
+      "lastScraped": "2026-04-20T09:58:10.523Z"
     },
     "springgr": {
       "id": "springgr",
       "name": "SpringGR",
       "url": "https://www.springgr.com/events-page/",
       "color": "#2E7D32",
-      "eventCount": 4,
-      "lastScraped": "2026-04-13T09:55:07.200Z"
+      "eventCount": 3,
+      "lastScraped": "2026-04-20T09:58:12.544Z"
     }
   }
 }
