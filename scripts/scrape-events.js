@@ -158,8 +158,8 @@ function parseTime(timeStr) {
   
   const cleaned = timeStr.trim().replace(/\s+/g, ' ');
   
-  // Already in good format like "10:00 AM"
-  if (/^\d{1,2}:\d{2}\s*(AM|PM|am|pm)$/i.test(cleaned)) {
+  // Already in good format like "10:00 AM" (require space before AM/PM so "3:00PM" uses branch below)
+  if (/^\d{1,2}:\d{2}\s+(AM|PM|am|pm)$/i.test(cleaned)) {
     return cleaned.toUpperCase();
   }
   
@@ -187,6 +187,45 @@ function parseTime(timeStr) {
   }
   
   return cleaned;
+}
+
+/**
+ * Some CMS layouts drop whitespace so text becomes "April 22, 20266:00 PM" (year glued to time).
+ * A naive (\d{1,2}):(\d{2}) match then captures "66:00" or "63:00" instead of "6:00" / "3:00".
+ */
+function normalizeGluedYearBeforeTime(text) {
+  if (!text) return text;
+  return text.replace(
+    /(\d{4})(?=\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))/g,
+    '$1 '
+  );
+}
+
+/**
+ * Parse "3:00PM–5:00PM" / "3:00 PM – 5:00 PM" or a single 12h time from listing text.
+ * @returns {{ display: string, startForIso: string, endForIso: string | null }}
+ */
+function parseTimeRangeOrSingleFromText(text) {
+  const normalized = normalizeGluedYearBeforeTime(text || '');
+  const rangeRe = /(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))\s*[\u2013\u2014-]\s*(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))/i;
+  const rangeMatch = normalized.match(rangeRe);
+  if (rangeMatch) {
+    const start = parseTime(rangeMatch[1]);
+    const end = parseTime(rangeMatch[2]);
+    if (start !== 'TBD' && end !== 'TBD') {
+      return {
+        display: `${start} – ${end}`,
+        startForIso: start,
+        endForIso: end,
+      };
+    }
+  }
+  const timeMatch = normalized.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  if (timeMatch) {
+    const t = parseTime(`${timeMatch[1]}:${timeMatch[2]} ${timeMatch[3]}`);
+    return { display: t, startForIso: t, endForIso: null };
+  }
+  return { display: 'TBD', startForIso: 'TBD', endForIso: null };
 }
 
 function toISODateTime(date, time) {
@@ -1342,9 +1381,8 @@ async function scrapeRightPlace() {
       // Skip past events
       if (containerText.toLowerCase().includes('past event')) return;
       
-      // Extract time - format: "7:30AM–10:00AM" or "8:00AM"
-      const timeMatch = containerText.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
-      const time = timeMatch ? parseTime(`${timeMatch[1]}:${timeMatch[2]} ${timeMatch[3]}`) : 'TBD';
+      // Extract time (range when present, e.g. "7:30AM–10:00AM" or "3:00PM–5:00PM")
+      const { display: time, startForIso, endForIso } = parseTimeRangeOrSingleFromText(containerText);
       
       // Extract description
       let description = '';
@@ -1382,13 +1420,13 @@ async function scrapeRightPlace() {
       const category = categorizeEvent(title, description);
       const effectiveDescription = description || 'Business and economic development event hosted by The Right Place.';
       
-      events.push({
+      const eventRecord = {
         id: generateEventId(SOURCE, title, date),
         title,
         description: effectiveDescription,
         date,
         time,
-        startDateTime: toISODateTime(date, time),
+        startDateTime: toISODateTime(date, startForIso),
         location: {
           name: locationText || 'The Right Place',
           address: '25 Ottawa Ave SW, Suite 400',
@@ -1402,7 +1440,11 @@ async function scrapeRightPlace() {
         isRecurring: detectRecurringEvent(title, effectiveDescription, containerText),
         isFree: detectFreeEvent(title, effectiveDescription, containerText),
         scrapedAt,
-      });
+      };
+      if (endForIso) {
+        eventRecord.endDateTime = toISODateTime(date, endForIso);
+      }
+      events.push(eventRecord);
     });
 
     // Deduplicate by title + date
