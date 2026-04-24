@@ -12,5 +12,9 @@
   "818 butterworth st sw|grand rapids|mi": {
     "lat": 42.959034,
     "lng": -85.688525
+  },
+  "|ada|mi": {
+    "lat": 42.9547136,
+    "lng": -85.4879523
   }
 }

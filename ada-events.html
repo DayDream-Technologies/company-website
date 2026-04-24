@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GR Events Calendar | Grand Rapids Community Events by DayDream Technologies</title>
-    <meta name="description" content="Discover Grand Rapids community events in one place. Interactive calendar, map view, and list view. Filter by category and export to your calendar." />
-    <meta name="keywords" content="Grand Rapids events, GR events calendar, community events Michigan, things to do Grand Rapids, local events" />
+    <title>Ada Events Calendar | Ada Michigan Community Events by DayDream Technologies</title>
+    <meta name="description" content="Discover Ada, Michigan community events in one place. Interactive calendar, map view, and list view. Aggregated from Ada Business Association, Ada Township, Amy Van Andel Library, and more." />
+    <meta name="keywords" content="Ada Michigan events, Ada events calendar, Ada Business Association, Ada Township events, community events Ada MI, Amy Van Andel Library, Ada Farmers Market" />
     <meta name="author" content="DayDream Technologies" />
-    
+
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.daydreamtechnologies.net/gr-events.html" />
-    
+    <link rel="canonical" href="https://www.daydreamtechnologies.net/ada-events.html" />
+
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="GR Events Calendar | Grand Rapids Community Events" />
-    <meta property="og:description" content="Discover Grand Rapids community events in one place. Interactive calendar, map view, and list view. Filter by category and export to your calendar." />
+    <meta property="og:title" content="Ada Events Calendar | Ada Michigan Community Events" />
+    <meta property="og:description" content="Discover Ada, Michigan community events in one place. Interactive calendar, map view, and list view. Filter by category and export to your calendar." />
     <meta property="og:image" content="https://www.daydreamtechnologies.net/src/images/Company_Logo.png" />
-    <meta property="og:url" content="https://www.daydreamtechnologies.net/gr-events.html" />
+    <meta property="og:url" content="https://www.daydreamtechnologies.net/ada-events.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DayDream Technologies" />
     <meta property="og:locale" content="en_US" />
-    
+
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="GR Events Calendar | Grand Rapids Community Events" />
-    <meta name="twitter:description" content="Discover Grand Rapids community events in one place. Interactive calendar, map view, and list view." />
+    <meta name="twitter:title" content="Ada Events Calendar | Ada Michigan Community Events" />
+    <meta name="twitter:description" content="Discover Ada, Michigan community events in one place. Interactive calendar, map view, and list view." />
     <meta name="twitter:image" content="https://www.daydreamtechnologies.net/src/images/Company_Logo.png" />
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/gr-events.css" />
     <link rel="icon" href="./src/images/favicon.ico" />
-    
-    <!-- Structured Data (JSON-LD) for GR Events -->
+
+    <!-- Structured Data (JSON-LD) for Ada Events -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "WebApplication",
-                "@id": "https://www.daydreamtechnologies.net/gr-events.html",
-                "url": "https://www.daydreamtechnologies.net/gr-events.html",
-                "name": "GR Events Calendar",
-                "description": "Interactive calendar aggregating community events from across Grand Rapids, Michigan. Features calendar view, map view, list view, category filtering, and calendar export.",
+                "@id": "https://www.daydreamtechnologies.net/ada-events.html",
+                "url": "https://www.daydreamtechnologies.net/ada-events.html",
+                "name": "Ada Events Calendar",
+                "description": "Interactive calendar aggregating community events from across Ada, Michigan. Features calendar view, map view, list view, category filtering, and calendar export.",
                 "applicationCategory": "EventApplication",
                 "operatingSystem": "Web Browser",
                 "browserRequirements": "Requires JavaScript",
@@ -69,7 +69,7 @@
             },
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://www.daydreamtechnologies.net/gr-events.html#breadcrumb",
+                "@id": "https://www.daydreamtechnologies.net/ada-events.html#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
@@ -86,37 +86,41 @@
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "GR Events Calendar",
-                        "item": "https://www.daydreamtechnologies.net/gr-events.html"
+                        "name": "Ada Events Calendar",
+                        "item": "https://www.daydreamtechnologies.net/ada-events.html"
                     }
                 ]
             }
         ]
     }
     </script>
-    
-    <!-- Google Fonts - Outfit for GR Events -->
+
+    <!-- Google Fonts - Outfit for Ada Events -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- FullCalendar for Calendar View -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
-    
+
     <!-- Leaflet for Map View -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
-    <!-- GR Events Scripts -->
-    <script src="./src/js/gr-events/types.js" defer></script>
+
+    <!--
+      Ada Events loads its own types.js / app.js but reuses the shared
+      lib/ and components/ modules under src/js/gr-events/ (they read from
+      the same window.GREvents namespace that ada-events/types.js populates).
+    -->
+    <script src="./src/js/ada-events/types.js" defer></script>
     <script src="./src/js/gr-events/lib/date-utils.js" defer></script>
     <script src="./src/js/gr-events/lib/ics-export.js" defer></script>
     <script src="./src/js/gr-events/components/event-card.js" defer></script>
     <script src="./src/js/gr-events/components/list-view.js" defer></script>
     <script src="./src/js/gr-events/components/calendar-view.js" defer></script>
     <script src="./src/js/gr-events/components/map-view.js" defer></script>
-    <script src="./src/js/gr-events/app.js" defer></script>
-    
+    <script src="./src/js/ada-events/app.js" defer></script>
+
     <!-- Main site JS -->
     <script src="./src/js/main.js" defer></script>
 </head>
@@ -165,7 +169,7 @@
         </ul>
     </nav>
 
-    <!-- GR Events App Content -->
+    <!-- Ada Events App Content -->
     <div class="gr-events-app min-h-screen">
         <!-- App Header -->
         <header class="header">
@@ -179,8 +183,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h1 class="logo-title">GR Events</h1>
-                            <p class="logo-subtitle">Startup & Entrepreneurship Events</p>
+                            <h1 class="logo-title">Ada Events Calendar</h1>
+                            <p class="logo-subtitle">Community Events in Ada, Michigan</p>
                         </div>
                     </div>
 
@@ -212,13 +216,13 @@
 
         <!-- Status Banner -->
         <div class="status-banner hidden" id="statusBanner"></div>
-        
+
         <!-- Update Notice -->
         <div class="update-notice">
             <svg class="notice-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span>Events are updated every Monday morning &nbsp;&middot;&nbsp; Based in Ada? <a href="ada-events.html" style="color: inherit; text-decoration: underline;">View the Ada Events Calendar</a></span>
+            <span>Events are updated every Monday morning &nbsp;&middot;&nbsp; Looking for Grand Rapids? <a href="gr-events.html" style="color: inherit; text-decoration: underline;">View the GR Events Calendar</a></span>
         </div>
 
         <!-- Stats Bar -->
@@ -264,7 +268,7 @@
                     </svg>
                 </div>
                 <h2 class="empty-title">No events found</h2>
-                <p class="empty-text">Run the scraper script to generate event data, or check back later.</p>
+                <p class="empty-text">Run <code>npm run scrape:ada</code> to generate event data, or check back later.</p>
             </div>
 
             <!-- Views Container -->
@@ -281,7 +285,7 @@
                 <div class="footer-content">
                     <div class="footer-sources" id="footerSources"></div>
                     <div class="footer-credit">
-                        Built for the Grand Rapids startup community
+                        Built for the Ada, Michigan community
                     </div>
                 </div>
             </div>

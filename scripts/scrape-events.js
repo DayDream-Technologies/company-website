@@ -65,12 +65,6 @@ const SOURCE_CONFIG = {
     url: 'https://www.startupgarage.org/events',
     color: '#E65100',
   },
-  'ada-business-association': {
-    id: 'ada-business-association',
-    name: 'Ada Business Association',
-    url: 'https://adabusinessassociation.com/happy_hour/',
-    color: '#1976D2',
-  },
   'springgr': {
     id: 'springgr',
     name: 'SpringGR',
@@ -1460,90 +1454,8 @@ async function scrapeRightPlace() {
   }
 }
 
-async function scrapeAdaBusinessAssociation() {
-  const SOURCE = 'ada-business-association';
-  const config = SOURCE_CONFIG[SOURCE];
-  const url = config.url;
-  const scrapedAt = new Date().toISOString();
-  const ABA_TIME = '4:30 PM';
-
-  try {
-    const html = await fetchHtml(url);
-    const $ = loadHtml(html);
-    const events = [];
-
-    const $h4s = $('h4').toArray();
-    const monthHappyHourPattern = /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+Happy\s+Hour$/i;
-
-    for (let i = 0; i < $h4s.length; i++) {
-      const titleText = cleanText($($h4s[i]).text());
-      if (!monthHappyHourPattern.test(titleText)) continue;
-
-      const dateH4 = $h4s[i + 1];
-      const venueH4 = $h4s[i + 2];
-      if (!dateH4 || !venueH4) continue;
-
-      const dateLine = cleanText($(dateH4).text());
-      const venueLine = cleanText($(venueH4).text());
-
-      const dateMatch = dateLine.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})/i);
-      if (!dateMatch) continue;
-
-      const month = MONTHS[dateMatch[1].toLowerCase()];
-      if (!month) continue;
-
-      const day = dateMatch[2].padStart(2, '0');
-      const year = dateMatch[3];
-      const date = `${year}-${month}-${day}`;
-
-      const dashIndex = venueLine.indexOf(' - ');
-      const locationName = dashIndex >= 0 ? venueLine.substring(0, dashIndex).trim() : venueLine;
-      const address = dashIndex >= 0 ? venueLine.substring(dashIndex + 3).trim() : '';
-
-      let city = 'Ada';
-      if (/Comstock Park/i.test(venueLine)) {
-        city = 'Comstock Park';
-      } else if (address && !/Ada|Headley/i.test(venueLine) && !/ABA Office/i.test(locationName)) {
-        city = 'Grand Rapids';
-      }
-
-      const $block = $(venueH4).nextUntil('h4');
-      let description = '';
-      $block.find('p').each((_, p) => {
-        const text = cleanText($(p).text());
-        if (text) description += (description ? ' ' : '') + text;
-      });
-      if (description.length > 500) description = description.substring(0, 497) + '...';
-
-      const title = `${titleText} (ABA)`;
-
-      events.push({
-        id: generateEventId(SOURCE, title, date),
-        title,
-        description: description || `ABA monthly happy hour. Connect with fellow ABA members, 4:30–6:30pm. No registration required.`,
-        date,
-        time: ABA_TIME,
-        startDateTime: toISODateTime(date, ABA_TIME),
-        location: {
-          name: locationName,
-          address: address || '',
-          city,
-          state: 'MI',
-        },
-        url,
-        source: SOURCE,
-        category: 'networking',
-        isRecurring: true,
-        isFree: true,
-        scrapedAt,
-      });
-    }
-
-    return createScrapeResult(SOURCE, events);
-  } catch (error) {
-    return createScrapeResult(SOURCE, [], error.message);
-  }
-}
+// Ada Business Association scraping was moved to scripts/scrape-ada-events.js
+// along with the full set of Ada-area event sources. See ada-events.html.
 
 /** Decode HTML entities to plain text (for JSON-LD strings). */
 function decodeHtmlEntities(str) {
@@ -1911,7 +1823,6 @@ async function runFullScrape() {
     { name: 'GR Junior Chamber', fn: scrapeGrJuniorChamber },
     { name: 'Startup Garage', fn: scrapeStartupGarage },
     { name: 'The Right Place', fn: scrapeRightPlace },
-    { name: 'Ada Business Association', fn: scrapeAdaBusinessAssociation },
     { name: 'SpringGR', fn: scrapeSpringGr },
   ];
   

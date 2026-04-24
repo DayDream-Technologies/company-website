@@ -39,4 +39,12 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- Ada Events Calendar -->
+    <url>
+        <loc>https://www.daydreamtechnologies.net/ada-events.html</loc>
+        <lastmod>2026-04-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
