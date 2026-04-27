@@ -20,7 +20,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:51.048Z"
+      "scrapedAt": "2026-04-27T10:15:15.145Z"
     },
     {
       "id": "right-place-west-michigan-manufacturing-defense-cooperative-mark",
@@ -43,30 +43,8 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-04-28T11:00:00"
-    },
-    {
-      "id": "msu-foundation-msu-faculty-founders-panel-lessons-from-the-trenc",
-      "title": "MSU Faculty Founders Panel: Lessons from the Trenches",
-      "description": "Hear firsthand from MSU faculty who have successfully launched ventures based on university research. This panel discussion dives into their journeys, challenges, and lessons learned—along with resources like the MSU Startup Guide and support from MSU Technologies. PRESENTERS: TBD",
-      "date": "2026-04-28",
-      "time": "12:00 PM",
-      "startDateTime": "2026-04-28T12:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://www.eventbrite.com/e/1676164937449?aff=oddtdtcreator",
-      "source": "msu-foundation",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:42.825Z"
     },
     {
       "id": "bamboo-start-garden-5x5-night-2026-04-28",
@@ -87,15 +65,15 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "springgr-email-marketing-workshop-2026-04-28",
       "title": "Email Marketing Workshop",
       "description": "Email marketing is essential for most businesses, but it can be overwhelming to get started. Join us for a workshop on the basics of email marketing, so you can unleash its power. In this workshop you will learn how […]",
       "date": "2026-04-28",
-      "time": "6:00 PM",
-      "startDateTime": "2026-04-28T18:00:00",
+      "time": "10:00 PM",
+      "startDateTime": "2026-04-28T22:00:00",
       "location": {
         "name": "SpringGR",
         "address": "818 Butterworth St SW",
@@ -110,7 +88,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-04-24T18:33:56.687Z"
+      "scrapedAt": "2026-04-27T10:15:19.950Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-04-29",
@@ -132,7 +110,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-breakfast-2026-04-30",
@@ -154,7 +132,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "bamboo-members-lunch-break-2026-04-30",
@@ -175,7 +153,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "grand-rapids-org-first-friday-update-2026-05-01",
@@ -197,7 +175,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "bamboo-founders-first-fridays-2026-05-01",
@@ -218,7 +196,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-start-garden-first-fridays-2026-05-01",
@@ -239,7 +217,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-spring-reset-barre3-at-bamboo-2026-05-02",
@@ -260,7 +238,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "grand-rapids-org-small-business-week-kickoff-2026-05-04",
@@ -282,7 +260,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "bamboo-from-content-to-connection-how-to-turn-your-content-into-",
@@ -303,7 +281,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-promote-protect-prevail-the-small-biz-reputation-toolkit-",
@@ -324,7 +302,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-founders-fireside-chat-2026-05-05",
@@ -345,7 +323,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-05-05",
@@ -366,7 +344,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "grand-rapids-org-business-growth-workshop-outgrow-how-to-increas",
@@ -388,7 +366,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "bamboo-creating-magnetic-workplaces-2026-05-06",
@@ -409,7 +387,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-lunch-and-learn-fraud-prevention-for-small-businesses-sta",
@@ -430,7 +408,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-patio-grand-opening-2026-05-06",
@@ -451,7 +429,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "grand-rapids-org-latina-connect-craft-your-digital-brand-2026-05",
@@ -473,7 +451,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "right-place-go-beyond-2026-2026-05-07",
@@ -496,7 +474,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-05-07T16:00:00"
     },
     {
@@ -518,7 +496,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-the-quarter-revenue-retreat-2026-05-08",
@@ -539,15 +517,15 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "springgr-lunch-learn-how-to-get-a-loan-with-a-cdfi-2026-05-08",
       "title": "Lunch & Learn: How to get a loan with a CDFI",
       "description": "GROW is a CDFI that helps small business owners get loans from $1-50K. They have a friendly and supportive process to help you prepare and apply for a loan. Come learn and ask all of your questions at this Lunch & Learn.",
       "date": "2026-05-08",
-      "time": "11:30 AM",
-      "startDateTime": "2026-05-08T11:30:00",
+      "time": "3:30 PM",
+      "startDateTime": "2026-05-08T15:30:00",
       "location": {
         "name": "SpringGR",
         "address": "818 Butterworth St SW",
@@ -562,15 +540,15 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:56.687Z"
+      "scrapedAt": "2026-04-27T10:15:19.950Z"
     },
     {
       "id": "springgr-c-mo-obtener-un-pr-stamo-con-una-cdfi-2026-05-08",
       "title": "Cómo obtener un préstamo con una CDFI",
       "description": "GROW es una CDFI que ayuda a propietarios de pequeños negocios a obtener préstamos de $1,000 a $50,000. Su proceso es amable y acompañan a los emprendedores para prepararse y solicitar un préstamo con confianza. Acompáñanos para aprender más y hacer todas tus preguntas en este Lunch & Learn",
       "date": "2026-05-08",
-      "time": "12:30 PM",
-      "startDateTime": "2026-05-08T12:30:00",
+      "time": "4:30 PM",
+      "startDateTime": "2026-05-08T16:30:00",
       "location": {
         "name": "SpringGR",
         "address": "818 Butterworth St SW",
@@ -585,7 +563,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:56.687Z"
+      "scrapedAt": "2026-04-27T10:15:19.950Z"
     },
     {
       "id": "right-place-candid-conversations-may-11-2026-05-11",
@@ -608,7 +586,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-05-11T15:00:00"
     },
     {
@@ -631,7 +609,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "gr-junior-chamber-may-monthly-leadership-exchange-with-guest-spe",
@@ -654,7 +632,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-04-24T18:33:50.038Z"
+      "scrapedAt": "2026-04-27T10:15:14.139Z"
     },
     {
       "id": "grand-rapids-org-create-great-leaders-annual-party-2026-05-15",
@@ -676,7 +654,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "grand-rapids-org-talent-human-resources-workshop-inclusive-colla",
@@ -698,7 +676,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "right-place-supply-chain-management-council-itw-drawform-tour-co",
@@ -721,7 +699,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-05-20T09:30:00"
     },
     {
@@ -744,7 +722,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-05-26",
@@ -765,7 +743,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-05-27",
@@ -787,7 +765,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "gr-junior-chamber-engaging-early-career-professionals-in-the-wor",
@@ -810,7 +788,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-04-24T18:33:50.038Z"
+      "scrapedAt": "2026-04-27T10:15:14.139Z"
     },
     {
       "id": "right-place-connecting-entrepreneurial-communities-2026-2026-05-",
@@ -833,7 +811,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-05-28T12:00:00"
     },
     {
@@ -857,7 +835,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-05-29T12:30:00"
     },
     {
@@ -880,7 +858,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:48.223Z"
+      "scrapedAt": "2026-04-27T10:15:12.625Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -903,7 +881,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-06-09T17:00:00"
     },
     {
@@ -927,7 +905,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-06-10T17:00:00"
     },
     {
@@ -951,15 +929,15 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-04-24T18:33:50.038Z"
+      "scrapedAt": "2026-04-27T10:15:14.139Z"
     },
     {
       "id": "springgr-bootcamp-de-marketing-digital-2026-06-15",
       "title": "Bootcamp de Marketing Digital",
       "description": "de 6 semanas – Cupos limitados ¿Sientes que tu negocio tiene potencial pero no sabes cómo organizar tu marketing, atraer más clientes o usar herramientas digitales sin sentirte abrumado(a)? Este […]",
       "date": "2026-06-15",
-      "time": "TBD",
-      "startDateTime": "2026-06-15T00:00:00",
+      "time": "4:00 AM",
+      "startDateTime": "2026-06-15T04:00:00",
       "location": {
         "name": "SpringGR",
         "address": "818 Butterworth St SW",
@@ -974,7 +952,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:56.687Z"
+      "scrapedAt": "2026-04-27T10:15:19.950Z"
     },
     {
       "id": "right-place-candid-conversations-june-18-2026-06-18",
@@ -997,7 +975,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-06-18T17:00:00"
     },
     {
@@ -1005,8 +983,8 @@
       "title": "Digital Marketing Bootcamp",
       "description": "(6-Week Program) Limited Spots This Digital Marketing Bootcamp is designed for entrepreneurs who are ready to stop guessing and start building with clarity, strategy, and systems that drive real results. […]",
       "date": "2026-06-24",
-      "time": "TBD",
-      "startDateTime": "2026-06-24T00:00:00",
+      "time": "4:00 AM",
+      "startDateTime": "2026-06-24T04:00:00",
       "location": {
         "name": "SpringGR",
         "address": "818 Butterworth St SW",
@@ -1021,7 +999,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:56.687Z"
+      "scrapedAt": "2026-04-27T10:15:19.950Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-06-24",
@@ -1042,7 +1020,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "right-place-2026-q3-technology-exchange-july-8-2026-07-08",
@@ -1065,7 +1043,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:54.656Z",
+      "scrapedAt": "2026-04-27T10:15:18.544Z",
       "endDateTime": "2026-07-08T17:00:00"
     },
     {
@@ -1087,29 +1065,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
-    },
-    {
-      "id": "msu-foundation-mobility-summit-2026-08-11",
-      "title": "Mobility Summit",
-      "description": "This one-day summit brings together researchers, industry partners, and innovators to explore mobility challenges and solutions—from autonomous transit and drones to supply chain resilience and off-road transportation. The program features keynote talks, technology showcases, panel discussions, and opportunities for connection and conversation. CO-HOSTED BY: MSU Research Foundation and MSU Mobility",
-      "date": "2026-08-11",
-      "time": "7:30 AM",
-      "startDateTime": "2026-08-11T07:30:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://msufoundation.org/mobility-summit-2026/",
-      "source": "msu-foundation",
-      "category": "conference",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:42.825Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-08-18",
@@ -1130,7 +1086,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-08-25",
@@ -1151,40 +1107,18 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:45.569Z"
-    },
-    {
-      "id": "msu-foundation-data-science-ai-summit-2026-10-01",
-      "title": "Data Science + AI Summit",
-      "description": "Explore how data science and agentic AI are advancing human potential, shaping the future of work, and driving cross-sector innovation. Featuring keynotes, panels, case studies, interactive sessions, and networking to spark intentional partnerships. HOSTED BY: MSU Research Foundation",
-      "date": "2026-10-01",
-      "time": "8:30 AM",
-      "startDateTime": "2026-10-01T08:30:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://msufoundation.org/data-science-summit-2026/",
-      "source": "msu-foundation",
-      "category": "workshop",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-04-24T18:33:42.825Z"
+      "scrapedAt": "2026-04-27T10:15:10.450Z"
     }
   ],
-  "lastScraped": "2026-04-24T18:34:09.770Z",
+  "lastScraped": "2026-04-27T10:15:29.969Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
       "name": "MSU Foundation",
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
-      "eventCount": 3,
-      "lastScraped": "2026-04-24T18:33:42.828Z"
+      "eventCount": 0,
+      "lastScraped": "2026-04-27T10:15:07.968Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -1192,7 +1126,7 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-04-24T18:33:44.191Z"
+      "lastScraped": "2026-04-27T10:15:09.152Z"
     },
     "bamboo": {
       "id": "bamboo",
@@ -1200,7 +1134,7 @@
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
       "eventCount": 19,
-      "lastScraped": "2026-04-24T18:33:45.680Z"
+      "lastScraped": "2026-04-27T10:15:10.506Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -1208,7 +1142,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 48,
-      "lastScraped": "2026-04-24T18:33:48.269Z"
+      "lastScraped": "2026-04-27T10:15:12.677Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -1216,7 +1150,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-04-24T18:33:50.041Z"
+      "lastScraped": "2026-04-27T10:15:14.143Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -1224,7 +1158,7 @@
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
       "eventCount": 1,
-      "lastScraped": "2026-04-24T18:33:51.808Z"
+      "lastScraped": "2026-04-27T10:15:15.571Z"
     },
     "right-place": {
       "id": "right-place",
@@ -1232,7 +1166,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-04-24T18:33:54.661Z"
+      "lastScraped": "2026-04-27T10:15:18.548Z"
     },
     "springgr": {
       "id": "springgr",
@@ -1240,7 +1174,7 @@
       "url": "https://www.springgr.com/events-page/",
       "color": "#2E7D32",
       "eventCount": 5,
-      "lastScraped": "2026-04-24T18:33:56.694Z"
+      "lastScraped": "2026-04-27T10:15:19.956Z"
     }
   }
 }
