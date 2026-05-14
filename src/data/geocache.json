@@ -20,5 +20,9 @@
   "|wyoming|mi": {
     "lat": 42.9132581,
     "lng": -85.7057035
+  },
+  "38 fulton street west|grand rapids|mi": {
+    "lat": 42.9629896,
+    "lng": -85.6695214
   }
 }

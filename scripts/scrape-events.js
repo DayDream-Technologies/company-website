@@ -611,74 +611,206 @@ function categorizeEventByContent(title, description) {
   return 'other';
 }
 
+/** Next.js apps (e.g. Eventbrite organizer profile) embed page data here. */
+function extractNextDataJson(html) {
+  const m = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
+  if (!m) return null;
+  try {
+    return JSON.parse(m[1]);
+  } catch {
+    return null;
+  }
+}
+
+/** Eventbrite JSON uses 24h "HH:MM:SS" in the organizer's local context. */
+function formatTimeFrom24h(hms) {
+  if (!hms || typeof hms !== 'string') return 'TBD';
+  const parts = hms.split(':');
+  const h = parseInt(parts[0], 10);
+  const min = (parts[1] || '00').replace(/\D/g, '') || '00';
+  if (Number.isNaN(h)) return 'TBD';
+  const period = h >= 12 ? 'PM' : 'AM';
+  const h12 = h % 12 || 12;
+  return `${h12}:${String(min).padStart(2, '0')} ${period}`;
+}
+
+/**
+ * Start Garden lists events as links to /start-garden-event/... with
+ * "Month D, YYYY H:MM am/pm …" at the start of the link text.
+ */
+function parseStartGardenEventLinkText(rawText) {
+  const cleaned = cleanText(rawText).replace(/\s*Learn More\s*$/i, '');
+  const m = cleaned.match(
+    /^([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})\s+(\d{1,2}):(\d{2})\s*(am|pm)\s+/i
+  );
+  if (!m) return null;
+  const month = MONTHS[m[1].toLowerCase()];
+  if (!month) return null;
+  const date = `${m[3]}-${month}-${m[2].padStart(2, '0')}`;
+  const time = parseTime(`${m[4]}:${m[5]} ${m[6].toUpperCase()}`);
+  let rest = cleaned.slice(m[0].length).trim();
+  let venueLine = '';
+  const paren = rest.match(/^\(([^)]+)\)\s*/);
+  if (paren) {
+    venueLine = paren[1].trim();
+    rest = rest.slice(paren[0].length).trim();
+  }
+  const description = rest || cleaned;
+  let title = rest;
+  const firstDot = title.indexOf('.');
+  if (firstDot >= 12 && firstDot <= 140) title = title.slice(0, firstDot).trim();
+  if (title.length > 120) title = `${title.slice(0, 117)}...`;
+  if (!title) title = 'Start Garden event';
+  return { date, time, title, description, venueLine };
+}
+
+function parseStartGardenVenueLine(venueLine) {
+  if (!venueLine) return null;
+  const dash = venueLine.match(/^(.+?)\s*-\s*(.+)$/);
+  if (!dash) return null;
+  const locName = dash[1].trim();
+  const tail = dash[2].trim();
+  const cityZip = tail.match(/,\s*([^,]+),\s*MI\s*(\d{5})?\s*$/i);
+  let address = tail;
+  let city = 'Grand Rapids';
+  let zip = '';
+  if (cityZip) {
+    address = tail.slice(0, cityZip.index).trim().replace(/,\s*$/, '');
+    city = cityZip[1].trim();
+    zip = cityZip[2] || '';
+  }
+  return { name: locName, address, city, state: 'MI', zip: zip || undefined };
+}
+
 async function scrapeStartGarden() {
   const SOURCE = 'start-garden';
   const config = SOURCE_CONFIG[SOURCE];
-  
+  const DEFAULT_LOCATION = {
+    name: 'Start Garden',
+    address: '2 Fulton Street W',
+    city: 'Grand Rapids',
+    state: 'MI',
+    zip: '49503',
+  };
+
   try {
     const html = await fetchHtml(config.url);
     const $ = loadHtml(html);
     const events = [];
     const scrapedAt = new Date().toISOString();
+    const seen = new Set();
 
-    const eventSelectors = [
-      '.event', '.event-item', '.event-card', '[class*="event-"]',
-      '.tribe-events-calendar-list__event', 'article',
-    ];
-
-    let eventElements = $();
-    for (const selector of eventSelectors) {
-      const found = $(selector).filter((_, el) => {
-        const $el = $(el);
-        return $el.find('h1, h2, h3, h4, .title').length > 0;
+    function pushFromParsed(parsed, url) {
+      if (!parsed || seen.has(url)) return;
+      seen.add(url);
+      const locParsed = parseStartGardenVenueLine(parsed.venueLine);
+      const location = locParsed || { ...DEFAULT_LOCATION };
+      events.push({
+        id: generateEventId(SOURCE, parsed.title, parsed.date),
+        title: parsed.title,
+        description: parsed.description,
+        date: parsed.date,
+        time: parsed.time,
+        startDateTime: toISODateTime(parsed.date, parsed.time),
+        location,
+        url,
+        source: SOURCE,
+        category: categorizeEventByContent(parsed.title, parsed.description),
+        isRecurring: detectRecurringEvent(parsed.title, parsed.description, parsed.time),
+        isFree: detectFreeEvent(parsed.title, parsed.description),
+        scrapedAt,
       });
-      if (found.length > 0) {
-        eventElements = found;
-        break;
-      }
     }
 
-    eventElements.each((_, el) => {
-      const $el = $(el);
-      
-      const title = cleanText($el.find('h1, h2, h3, h4, .event-title, .title').first().text());
-      if (!title || title.length < 3) return;
-      
-      const description = cleanText($el.find('p, .description, .event-description, .excerpt').first().text());
-      let dateText = cleanText(
-        $el.find('.date, time, [class*="date"], .event-date').first().text() ||
-        $el.find('[datetime]').attr('datetime') || ''
-      );
-      const timeText = cleanText($el.find('.time, [class*="time"], .event-time').first().text());
-      const link = $el.find('a').first().attr('href') || $el.closest('a').attr('href') || '';
-      const locationText = cleanText($el.find('.location, .venue, [class*="location"], .event-location').first().text());
-      
-      const date = parseDate(dateText);
-      const time = parseTime(timeText);
-      
-      if (title && date) {
-        events.push({
-          id: generateEventId(SOURCE, title, date),
-          title,
-          description,
-          date,
-          time,
-          startDateTime: toISODateTime(date, time),
-          location: {
-            name: locationText || 'Start Garden',
-            address: '40 Pearl St NW',
-            city: 'Grand Rapids',
-            state: 'MI',
-            zip: '49503',
-          },
-          url: link.startsWith('http') ? link : `https://startgarden.com${link}`,
-          source: SOURCE,
-          isRecurring: detectRecurringEvent(title, description, timeText),
-          isFree: detectFreeEvent(title, description),
-          scrapedAt,
-        });
+    // Primary: WordPress-style event permalinks with date+time in link text
+    $('a[href*="/start-garden-event/"]').each((_, el) => {
+      let href = $(el).attr('href') || '';
+      if (!href) return;
+      if (!href.startsWith('http')) {
+        href = `https://startgarden.com${href.startsWith('/') ? '' : '/'}${href}`;
       }
+      if (!/\/start-garden-event\//i.test(href)) return;
+      const linkText = $(el).text();
+      let parsed = parseStartGardenEventLinkText(linkText);
+      if (!parsed) {
+        const parentText = $(el).closest('article, li, div').first().text();
+        parsed = parseStartGardenEventLinkText(parentText);
+      }
+      pushFromParsed(parsed, href);
     });
+
+    if (events.length > 0) {
+      console.log(`    Start Garden: ${events.length} events from /start-garden-event/ links`);
+    }
+
+    // Legacy: event cards / The Events Calendar style blocks
+    if (events.length === 0) {
+      const eventSelectors = [
+        '.event', '.event-item', '.event-card', '[class*="event-"]',
+        '.tribe-events-calendar-list__event', 'article',
+      ];
+
+      let eventElements = $();
+      for (const selector of eventSelectors) {
+        const found = $(selector).filter((_, el) => {
+          const $el = $(el);
+          return $el.find('h1, h2, h3, h4, .title').length > 0;
+        });
+        if (found.length > 0) {
+          eventElements = found;
+          break;
+        }
+      }
+
+      eventElements.each((_, el) => {
+        const $el = $(el);
+
+        const title = cleanText($el.find('h1, h2, h3, h4, .event-title, .title').first().text());
+        if (!title || title.length < 3) return;
+
+        const description = cleanText($el.find('p, .description, .event-description, .excerpt').first().text());
+        let dateText = cleanText(
+          $el.find('.date, time, [class*="date"], .event-date').first().text() ||
+            $el.find('[datetime]').attr('datetime') ||
+            ''
+        );
+        const timeText = cleanText($el.find('.time, [class*="time"], .event-time').first().text());
+        const link = $el.find('a').first().attr('href') || $el.closest('a').attr('href') || '';
+        const locationText = cleanText(
+          $el.find('.location, .venue, [class*="location"], .event-location').first().text()
+        );
+
+        const date = parseDate(dateText);
+        const time = parseTime(timeText);
+
+        if (title && date) {
+          const fullUrl = link.startsWith('http') ? link : `https://startgarden.com${link}`;
+          if (seen.has(fullUrl)) return;
+          seen.add(fullUrl);
+          events.push({
+            id: generateEventId(SOURCE, title, date),
+            title,
+            description,
+            date,
+            time,
+            startDateTime: toISODateTime(date, time),
+            location: {
+              name: locationText || DEFAULT_LOCATION.name,
+              address: DEFAULT_LOCATION.address,
+              city: 'Grand Rapids',
+              state: 'MI',
+              zip: DEFAULT_LOCATION.zip,
+            },
+            url: fullUrl,
+            source: SOURCE,
+            category: categorizeEventByContent(title, description),
+            isRecurring: detectRecurringEvent(title, description, timeText),
+            isFree: detectFreeEvent(title, description),
+            scrapedAt,
+          });
+        }
+      });
+    }
 
     return createScrapeResult(SOURCE, events);
   } catch (error) {
@@ -1209,9 +1341,74 @@ async function scrapeStartupGarage() {
   }
 
   try {
-    const html = await fetchHtml(eventsPageUrl);
-    const $ = loadHtml(html);
     const events = [];
+    const EVENTBRITE_ORG_URL = 'https://www.eventbrite.com/o/startup-garage-120881113796';
+
+    try {
+      const ebHtml = await fetchHtml(EVENTBRITE_ORG_URL);
+      const nd = extractNextDataJson(ebHtml);
+      const upcoming = nd?.props?.pageProps?.upcomingEvents;
+      if (Array.isArray(upcoming) && upcoming.length > 0) {
+        for (const ev of upcoming) {
+          if (!ev || ev.is_cancelled) continue;
+          const title = cleanText(ev.name || '');
+          const date = ev.start_date;
+          if (!title || !date) continue;
+          const time = formatTimeFrom24h(ev.start_time);
+          const addr = ev.primary_venue?.address;
+          const location = addr
+            ? {
+                name: cleanText(ev.primary_venue?.name || 'Startup Garage'),
+                address: cleanText(addr.address_1 || ''),
+                city: cleanText(addr.city || 'Grand Rapids'),
+                state: addr.region || 'MI',
+                ...(addr.postal_code ? { zip: String(addr.postal_code) } : {}),
+              }
+            : {
+                name: 'Startup Garage',
+                address: '',
+                city: 'Grand Rapids',
+                state: 'MI',
+              };
+          const description =
+            cleanText(ev.summary || '') || `Startup Garage event: ${title}`;
+          const isFree = ev.ticket_availability?.is_free !== false;
+          const url = cleanText(ev.url || '') || EVENTBRITE_ORG_URL;
+          const event = {
+            id: generateEventId(SOURCE, title, date),
+            title,
+            description,
+            date,
+            time,
+            startDateTime: toISODateTime(date, time),
+            location,
+            url,
+            source: SOURCE,
+            category: categorizeEventByContent(title, description),
+            isRecurring: false,
+            isFree,
+            scrapedAt,
+          };
+          const endTimeDisp = formatTimeFrom24h(ev.end_time);
+          if (
+            ev.end_date &&
+            endTimeDisp !== 'TBD' &&
+            (ev.end_date !== date || endTimeDisp !== time)
+          ) {
+            event.endDateTime = toISODateTime(ev.end_date, endTimeDisp);
+          }
+          events.push(event);
+        }
+        console.log(`    Startup Garage: ${events.length} events from Eventbrite organizer page`);
+      }
+    } catch (e) {
+      console.log(`    Startup Garage Eventbrite: ${e.message}`);
+    }
+
+    // Legacy: Squarespace blocks on startupgarage.org/events
+    if (events.length === 0) {
+      const html = await fetchHtml(eventsPageUrl);
+      const $ = loadHtml(html);
 
     // Event blocks: look for h4 headings (event titles), then parse only content between this h4 and the next h4
     const $headings = $('h4');
@@ -1371,6 +1568,7 @@ async function scrapeStartupGarage() {
           scrapedAt,
         });
       }
+    }
     }
 
     const uniqueEvents = Array.from(
