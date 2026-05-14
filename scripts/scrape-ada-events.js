@@ -16,6 +16,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const { parseChamberMasterEventDetail } = require('./lib/parse-chambermaster-event-detail');
 
 let cheerio;
 try {
@@ -495,112 +496,18 @@ function parseAbaWordPressPage($, pageUrl, defaultTime) {
 // =============================================================================
 
 function parseChamberMasterEventPage($, pageUrl) {
-  const SOURCE = 'ada-business-association';
-  const scrapedAt = new Date().toISOString();
-
-  // Title: first h1 of the main content
-  const title = cleanText($('h1').not(':contains("EVENTS")').first().text()) ||
-                cleanText($('h1').last().text()) || '';
-  if (!title || title.length < 3) return null;
-
-  // Body text for date/location/admission parsing
-  const bodyText = cleanText($('main, #primary, .entry-content, body').first().text());
-
-  // Look for "Date and Time" block which has a structure like:
-  //   Saturday Mar 7, 2026
-  //   9:00 AM - 1:00 PM EST
-  // The labelled <h5> headings ("Date and Time", "Location", "Fees/Admission")
-  // mark the start of each sidebar block.
-  let dateBlock = '';
-  let locationBlock = '';
-  let feesBlock = '';
-  $('h5').each((_, h5) => {
-    const label = cleanText($(h5).text()).toLowerCase();
-    const $container = $(h5).parent();
-    const next = cleanText($container.text()).replace(cleanText($(h5).text()), '').trim();
-    if (label.includes('date and time') && !dateBlock) dateBlock = next;
-    else if (label.includes('location') && !locationBlock) locationBlock = next;
-    else if ((label.includes('fees') || label.includes('admission')) && !feesBlock) feesBlock = next;
+  return parseChamberMasterEventDetail($, pageUrl, {
+    sourceId: 'ada-business-association',
+    scrapedAt: new Date().toISOString(),
+    parseTime,
+    toISODateTime,
+    generateEventId,
+    detectRecurringEvent,
+    detectFreeEvent,
+    categorizeEvent: categorizeEventByContent,
+    defaultDescription: 'Ada Business Association community event.',
+    defaultLocation: { name: 'Ada, MI', address: '', city: 'Ada', state: 'MI' },
   });
-
-  if (!dateBlock) {
-    // Fallback: hunt for a date pattern in the whole body
-    dateBlock = bodyText;
-  }
-
-  const dateMatch = dateBlock.match(/([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(\d{4})/);
-  if (!dateMatch) return null;
-  const month = MONTHS[dateMatch[1].toLowerCase()];
-  if (!month) return null;
-  const day = dateMatch[2].padStart(2, '0');
-  const date = `${dateMatch[3]}-${month}-${day}`;
-
-  // Optional end date — e.g. "Tuesday Dec 1, 2026 Thursday Dec 31, 2026"
-  const endDateMatch = dateBlock.slice(dateMatch.index + dateMatch[0].length)
-    .match(/([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(\d{4})/);
-  let endDate = null;
-  if (endDateMatch) {
-    const em = MONTHS[endDateMatch[1].toLowerCase()];
-    if (em) endDate = `${endDateMatch[3]}-${em}-${endDateMatch[2].padStart(2, '0')}`;
-  }
-
-  // Time "9:00 AM - 1:00 PM"
-  const timeMatch = dateBlock.match(/(\d{1,2}:\d{2}\s*(?:AM|PM))\s*-\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/i);
-  const singleTimeMatch = dateBlock.match(/(\d{1,2}:\d{2}\s*(?:AM|PM))/i);
-  let time = 'TBD';
-  let endTime = null;
-  if (timeMatch) {
-    time = parseTime(timeMatch[1]);
-    endTime = parseTime(timeMatch[2]);
-  } else if (singleTimeMatch) {
-    time = parseTime(singleTimeMatch[1]);
-  }
-
-  // Location: "Ada Christian School - 6206 Ada Dr, Ada, MI"
-  let locationName = 'Ada, MI';
-  let address = '';
-  let city = 'Ada';
-  if (locationBlock) {
-    const dashIdx = locationBlock.indexOf(' - ');
-    if (dashIdx >= 0) {
-      locationName = locationBlock.substring(0, dashIdx).trim();
-      address = locationBlock.substring(dashIdx + 3).trim();
-    } else {
-      locationName = locationBlock.trim();
-    }
-    const cityMatch = address.match(/,\s*([A-Za-z][A-Za-z\s]+?),\s*MI/);
-    if (cityMatch) city = cityMatch[1].trim();
-  }
-
-  // Description: first large paragraph after the title
-  let description = '';
-  $('p').each((_, p) => {
-    if (description) return;
-    const t = cleanText($(p).text());
-    if (t.length > 40 && t.length < 700) description = t;
-  });
-
-  const feesText = (feesBlock || '').toLowerCase();
-  const isFree = /no\s+admission|free/.test(feesText) || detectFreeEvent(title, description, feesText);
-
-  const event = {
-    id: generateEventId(SOURCE, title, date),
-    title,
-    description: description || 'Ada Business Association community event.',
-    date,
-    time,
-    startDateTime: toISODateTime(date, time),
-    location: { name: locationName, address, city, state: 'MI' },
-    url: pageUrl,
-    source: SOURCE,
-    category: categorizeEventByContent(title, description),
-    isRecurring: detectRecurringEvent(title, description, bodyText),
-    isFree,
-    scrapedAt,
-  };
-  if (endTime) event.endDateTime = toISODateTime(date, endTime);
-  if (endDate && endDate !== date) event.endDate = endDate;
-  return event;
 }
 
 // =============================================================================

@@ -52,6 +52,12 @@ const SOURCE_CONFIG = {
     url: 'https://www.springgr.com/events-page/',
     color: '#2E7D32',
   },
+  'south-kent-chamber': {
+    id: 'south-kent-chamber',
+    name: 'South Kent Area Chamber',
+    url: 'https://business.southkent.org/events/',
+    color: '#00695C',
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)

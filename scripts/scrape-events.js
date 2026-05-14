@@ -8,6 +8,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const { parseChamberMasterEventDetail } = require('./lib/parse-chambermaster-event-detail');
 
 // Try to import cheerio (for HTML parsing)
 let cheerio;
@@ -70,6 +71,12 @@ const SOURCE_CONFIG = {
     name: 'SpringGR',
     url: 'https://www.springgr.com/events-page/',
     color: '#2E7D32',
+  },
+  'south-kent-chamber': {
+    id: 'south-kent-chamber',
+    name: 'South Kent Area Chamber',
+    url: 'https://business.southkent.org/events/',
+    color: '#00695C',
   },
 };
 
@@ -925,6 +932,85 @@ async function scrapeGrandRapidsOrg() {
     });
 
     return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeSouthKentChamber() {
+  const SOURCE = 'south-kent-chamber';
+  const config = SOURCE_CONFIG[SOURCE];
+  const BASE = 'https://business.southkent.org';
+
+  function categorizeEvent(title, description) {
+    const text = `${title} ${description}`.toLowerCase();
+    if (text.includes('network') || text.includes('mixer')) return 'networking';
+    if (text.includes('workshop') || text.includes('training')) return 'workshop';
+    if (text.includes('conference') || text.includes('summit')) return 'conference';
+    if (text.includes('meetup')) return 'meetup';
+    if (text.includes('pitch') || text.includes('startup')) return 'pitch';
+    return 'other';
+  }
+
+  try {
+    const scrapedAt = new Date().toISOString();
+    const listHtml = await fetchHtml(config.url);
+    const $list = loadHtml(listHtml);
+    const seen = new Set();
+    const detailUrls = [];
+
+    $list('a[href*="/events/details/"]').each((_, a) => {
+      let href = $list(a).attr('href') || '';
+      if (!href) return;
+      if (!href.startsWith('http')) {
+        href = href.startsWith('/') ? `${BASE}${href}` : `${BASE}/${href}`;
+      }
+      if (!/\/events\/details\//i.test(href)) return;
+      if (seen.has(href)) return;
+      seen.add(href);
+      detailUrls.push(href);
+    });
+
+    console.log(`    South Kent: ${detailUrls.length} detail URLs from listing`);
+
+    const events = [];
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    for (const pageUrl of detailUrls) {
+      try {
+        const html = await fetchHtml(pageUrl);
+        const $ = loadHtml(html);
+        const ev = parseChamberMasterEventDetail($, pageUrl, {
+          sourceId: SOURCE,
+          scrapedAt,
+          parseTime,
+          toISODateTime,
+          generateEventId,
+          detectRecurringEvent,
+          detectFreeEvent,
+          categorizeEvent,
+          defaultDescription: 'South Kent Area Chamber community event.',
+          defaultLocation: {
+            name: 'South Kent Area Chamber',
+            address: '',
+            city: 'Wyoming',
+            state: 'MI',
+          },
+        });
+        if (ev) {
+          const eventDate = new Date(`${ev.date}T12:00:00`);
+          const endDate = ev.endDate ? new Date(`${ev.endDate}T12:00:00`) : eventDate;
+          if (endDate >= today) events.push(ev);
+        }
+        await delay(500);
+      } catch (e) {
+        console.log(`      South Kent skip ${pageUrl}: ${e.message}`);
+      }
+    }
+
+    const unique = Array.from(new Map(events.map(e => [e.id, e])).values());
+    return createScrapeResult(SOURCE, unique);
   } catch (error) {
     return createScrapeResult(SOURCE, [], error.message);
   }
@@ -1820,6 +1906,7 @@ async function runFullScrape() {
     { name: 'Start Garden', fn: scrapeStartGarden },
     { name: 'Bamboo', fn: scrapeBamboo },
     { name: 'Grand Rapids Org', fn: scrapeGrandRapidsOrg },
+    { name: 'South Kent Chamber', fn: scrapeSouthKentChamber },
     { name: 'GR Junior Chamber', fn: scrapeGrJuniorChamber },
     { name: 'Startup Garage', fn: scrapeStartupGarage },
     { name: 'The Right Place', fn: scrapeRightPlace },
