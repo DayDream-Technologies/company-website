@@ -1200,13 +1200,18 @@ async function scrapeSandyPines() {
   const config = SOURCE_CONFIG[SOURCE];
   const scrapedAt = new Date().toISOString();
 
-  const DEFAULT_LOCATION = {
-    name: 'Sandy Pines Wilderness Park',
-    address: '2745 84th St',
-    city: 'Shelbyville',
+  // Chapel PM concerts — shared venue/time from the schedule block above the lineup.
+  const CHAPEL_LOCATION = {
+    name: 'Sandy Pines Chapel',
+    address: '3630 26th Ave',
+    city: 'Dorr',
     state: 'MI',
-    zip: '49344',
+    zip: '49323',
   };
+
+  // "May 24 | Phil Cross and Poet Voices"
+  const SCHEDULE_LINE_RE =
+    /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*\|\s*(.+)$/i;
 
   try {
     const html = await fetchHtml(config.url);
@@ -1215,87 +1220,77 @@ async function scrapeSandyPines() {
     const seen = new Set();
     const today = new Date();
     today.setHours(0, 0, 0, 0);
+    const year = today.getFullYear();
 
-    // Sandy Pines uses The Events Calendar (WordPress plugin)
-    const jsonLdItems = extractJsonLdEvents($);
-    for (const item of jsonLdItems) {
-      const ev = parseJsonLdEvent(item, SOURCE, scrapedAt);
-      if (ev && !seen.has(ev.id)) {
-        if (!ev.location.address) ev.location = { ...DEFAULT_LOCATION };
-        seen.add(ev.id);
-        events.push(ev);
-      }
+    // Shared time/address from the page intro (not from the Upcoming Events widget).
+    const introText = cleanText(
+      $('.wpb_text_column').first().text() ||
+      $('article.tribe_events').first().text() ||
+      $('body').text()
+    );
+
+    let time = '6:00 PM';
+    const concertTimeMatch = introText.match(/Concerts begin at\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
+    if (concertTimeMatch) {
+      time = parseTime(concertTimeMatch[1]);
     }
 
-    if (events.length === 0) {
-      // The Events Calendar recurring events use article.type-tribe_events
-      const $articles = $('article.type-tribe_events, .tribe-events-calendar-list__event, article[class*="tribe"]');
-      $articles.each((_, el) => {
-        const $el = $(el);
-        const title = cleanText($el.find('.tribe-event-title, h2, h3, .tribe-events-list-event-title').first().text());
-        if (!title) return;
+    const gateOpenMatch = introText.match(/Gate Opens[^.]*at\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
+    const gateTime = gateOpenMatch ? parseTime(gateOpenMatch[1]) : null;
 
-        const dateAttr = $el.find('[datetime]').first().attr('datetime') ||
-          $el.find('.tribe-event-date-start').first().text();
-        const date = parseDate(dateAttr);
-        if (!date) return;
-        const d = new Date(date);
-        if (d < today) return;
+    const descriptionParts = [
+      'Chapel PM concert at Sandy Pines.',
+      gateTime ? `Chapel gate opens at ${gateTime}.` : 'Chapel gate opens at 5:00 PM.',
+      `Concerts begin at ${time}.`,
+      'Free will offering; lawn chairs recommended. No tickets required.',
+    ];
 
-        const timeText = cleanText($el.find('.tribe-event-time, .tribe-event-start-time').first().text());
-        const time = parseTime(timeText) || 'TBD';
+    // Sunday PM Concert Schedule: h3 lines in WPB content only (ignore tribe widget lists).
+    $('h3').each((_, el) => {
+      const line = cleanText($(el).text());
+      const match = line.match(SCHEDULE_LINE_RE);
+      if (!match) return;
 
-        const link = $el.find('a').first().attr('href') || config.url;
-        const id = generateEventId(SOURCE, title, date);
-        if (seen.has(id)) return;
-        seen.add(id);
+      const month = MONTHS[match[1].toLowerCase()];
+      if (!month) return;
 
-        events.push({
-          id,
-          title,
-          description: `Live music at Sandy Pines Wilderness Park.`,
-          date,
-          time,
-          startDateTime: toISODateTime(date, time),
-          location: DEFAULT_LOCATION,
-          url: link.startsWith('http') ? link : config.url,
-          source: SOURCE,
-          category: 'concert',
-          isRecurring: detectRecurringEvent(title, '', ''),
-          isFree: false,
-          scrapedAt,
-        });
-      });
-    }
+      const day = match[2].padStart(2, '0');
+      const date = `${year}-${month}-${day}`;
+      const title = cleanText(match[3]);
+      if (!title) return;
 
-    if (events.length === 0) {
-      const generic = scrapeGenericEvents($, SOURCE, DEFAULT_LOCATION, scrapedAt);
-      events.push(...generic.filter(e => {
-        const d = new Date(e.date);
-        return d >= today;
-      }));
-    }
+      const eventDate = new Date(`${date}T12:00:00`);
+      if (eventDate < today) return;
 
-    if (events.length === 0) {
-      const id = generateEventId(SOURCE, 'Chapel PM Concerts', '2026-05-24');
+      const id = generateEventId(SOURCE, title, date);
+      if (seen.has(id)) return;
+      seen.add(id);
+
+      // Optional per-show blurb in the next <p> sibling within the same column.
+      const $column = $(el).closest('.wpb_text_column, .wpb_wrapper');
+      const blurb = cleanText($column.find('p').first().text());
+      const description = blurb && blurb.length > 20 && !SCHEDULE_LINE_RE.test(blurb)
+        ? `${descriptionParts.join(' ')} ${blurb.substring(0, 400)}`
+        : descriptionParts.join(' ');
+
       events.push({
         id,
-        title: 'Chapel PM Concerts at Sandy Pines',
-        description: 'Summer concert series at Sandy Pines Wilderness Park. Check back for the full schedule of performers.',
-        date: '2026-05-24',
-        time: 'TBD',
-        startDateTime: toISODateTime('2026-05-24', 'TBD'),
-        location: DEFAULT_LOCATION,
+        title,
+        description,
+        date,
+        time,
+        startDateTime: toISODateTime(date, time),
+        location: { ...CHAPEL_LOCATION },
         url: config.url,
         source: SOURCE,
         category: 'concert',
-        isRecurring: true,
-        isFree: false,
+        isRecurring: false,
+        isFree: true,
         scrapedAt,
       });
-    }
+    });
 
-    console.log(`    Found ${events.length} Sandy Pines events`);
+    console.log(`    Found ${events.length} Sandy Pines Chapel PM concerts`);
     return createScrapeResult(SOURCE, events);
   } catch (error) {
     return createScrapeResult(SOURCE, [], error.message);
@@ -1854,6 +1849,7 @@ const KNOWN_VENUES = {
   'beacon hill at eastgate': { lat: 42.9887, lng: -85.6118 },
   'beacon hill': { lat: 42.9887, lng: -85.6118 },
   'sandy pines': { lat: 42.6328, lng: -85.7253 },
+  'sandy pines chapel': { lat: 42.6258, lng: -85.7524 },
   'dunneback': { lat: 43.0125, lng: -85.7253 },
   'coopersville': { lat: 43.0651, lng: -85.9266 },
   'maranatha': { lat: 43.1753, lng: -86.2717 },
