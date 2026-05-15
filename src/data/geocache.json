@@ -24,5 +24,13 @@
   "38 fulton street west|grand rapids|mi": {
     "lat": 42.9629896,
     "lng": -85.6695214
+  },
+  "2745 136th ave|hopkins|mi": {
+    "lat": 42.6822352,
+    "lng": -85.8139387
+  },
+  "708 wealthy st se|grand rapids|mi": {
+    "lat": 42.9555402,
+    "lng": -85.6513897
   }
 }
