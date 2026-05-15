@@ -126,7 +126,7 @@ const SORT_OPTIONS = {
 const EVENT_CATEGORIES = [
   'concert',
   'jazz',
-  'worship',
+  'faith based',
   'outdoor',
   'other',
 ];

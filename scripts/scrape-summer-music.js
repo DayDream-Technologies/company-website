@@ -263,12 +263,36 @@ function cleanText(text) {
   return text.replace(/\s+/g, ' ').trim();
 }
 
+function decodeHtmlEntities(str) {
+  if (!str) return '';
+  try {
+    const $ = loadHtml('<div></div>');
+    $('div').html(String(str));
+    return $('div').text();
+  } catch {
+    return String(str)
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&nbsp;/g, ' ');
+  }
+}
+
 function stripHtml(html) {
   if (!html) return '';
   return String(html)
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/** Decode entities, strip tags, normalize whitespace (for JSON-LD / CMS descriptions). */
+function cleanDescription(raw) {
+  if (!raw) return '';
+  const decoded = decodeHtmlEntities(String(raw).replace(/\\n/g, ' '));
+  return cleanText(stripHtml(decoded));
 }
 
 function createScrapeResult(source, events, error) {
@@ -334,7 +358,7 @@ function detectRecurringEvent(title, description, timeText) {
 function categorizeMusicEvent(title, description) {
   const text = `${title} ${description}`.toLowerCase();
   if (text.includes('jazz')) return 'jazz';
-  if (text.includes('worship') || text.includes('praise') || text.includes('christian')) return 'worship';
+  if (text.includes('worship') || text.includes('praise') || text.includes('christian')) return 'faith based';
   if (text.includes('outdoor') || text.includes('park') || text.includes('plaza') || text.includes('waterfront')) return 'outdoor';
   return 'concert';
 }
@@ -367,7 +391,7 @@ function extractJsonLdEvents($) {
 }
 
 function parseJsonLdEvent(item, sourceId, scrapedAt) {
-  const title = cleanText(stripHtml(item.name || ''));
+  const title = cleanText(cleanDescription(item.name || ''));
   if (!title || title.length < 3) return null;
 
   const startRaw = item.startDate || '';
@@ -396,7 +420,7 @@ function parseJsonLdEvent(item, sourceId, scrapedAt) {
     state: addr.addressRegion || 'MI',
   };
 
-  const description = cleanText(stripHtml(item.description || ''));
+  const description = cleanDescription(item.description || '');
   const url = item.url || SOURCE_CONFIG[sourceId]?.url || '';
 
   return {
@@ -1060,7 +1084,7 @@ async function scrapeWorshipWaterfront() {
           location: DEFAULT_LOCATION,
           url: config.url,
           source: SOURCE,
-          category: 'worship',
+          category: 'faith based',
           isRecurring: false,
           isFree: true,
           scrapedAt,
@@ -1080,7 +1104,7 @@ async function scrapeWorshipWaterfront() {
         location: DEFAULT_LOCATION,
         url: config.url,
         source: SOURCE,
-        category: 'worship',
+        category: 'faith based',
         isRecurring: false,
         isFree: true,
         scrapedAt,
@@ -1120,6 +1144,8 @@ async function scrapeMaranatha() {
       const ev = parseJsonLdEvent(item, SOURCE, scrapedAt);
       if (ev && !seen.has(ev.id)) {
         ev.location = { ...DEFAULT_LOCATION };
+        ev.description = cleanDescription(item.description || ev.description);
+        ev.category = 'faith based';
         seen.add(ev.id);
         events.push(ev);
       }
@@ -1130,7 +1156,11 @@ async function scrapeMaranatha() {
       events.push(...generic.filter(e => {
         const d = new Date(e.date);
         return d >= today && isSummerDate(e.date);
-      }));
+      }).map(e => ({
+        ...e,
+        description: cleanDescription(e.description),
+        category: 'faith based',
+      })));
     }
 
     // Try finding concert entries in the page
@@ -1154,14 +1184,14 @@ async function scrapeMaranatha() {
         events.push({
           id,
           title,
-          description: context.substring(0, 400),
+          description: cleanDescription(context).substring(0, 400),
           date,
           time,
           startDateTime: toISODateTime(date, time),
           location: DEFAULT_LOCATION,
           url: config.url,
           source: SOURCE,
-          category: 'concert',
+          category: 'faith based',
           isRecurring: false,
           isFree: true,
           scrapedAt,
@@ -1181,7 +1211,7 @@ async function scrapeMaranatha() {
         location: DEFAULT_LOCATION,
         url: config.url,
         source: SOURCE,
-        category: 'concert',
+        category: 'faith based',
         isRecurring: false,
         isFree: true,
         scrapedAt,
