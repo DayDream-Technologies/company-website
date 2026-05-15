@@ -1,0 +1,56 @@
+name: Scrape GR Summer Music
+
+on:
+  # Run every Sunday at 12:00 UTC (8:00 AM EDT), May through September only.
+  # GitHub Actions cron does not natively support month ranges, so month
+  # filtering is handled inside the scraper (isSummerDate). The workflow itself
+  # fires year-round on Sundays, but only commits when new data is found —
+  # outside of summer the scraper will return empty results and skip the commit.
+  schedule:
+    - cron: '0 12 * * 0'
+
+  # Allow manual trigger from GitHub Actions UI at any time
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run scraper
+        run: node scripts/scrape-summer-music.js --force
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet src/data/summer-music-events.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/data/summer-music-events.json src/data/geocache.json
+          git commit -m "chore: update summer music events data [automated]"
+          git push

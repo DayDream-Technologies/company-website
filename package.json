@@ -2,7 +2,8 @@
   "scripts": {
     "scrape": "node scripts/scrape-events.js",
     "scrape:ada": "node scripts/scrape-ada-events.js",
-    "scrape:all": "node scripts/scrape-events.js && node scripts/scrape-ada-events.js"
+    "scrape:summer-music": "node scripts/scrape-summer-music.js",
+    "scrape:all": "node scripts/scrape-events.js && node scripts/scrape-ada-events.js && node scripts/scrape-summer-music.js"
   },
   "dependencies": {
     "cheerio": "^1.2.0",
