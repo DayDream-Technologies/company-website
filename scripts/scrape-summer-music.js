@@ -538,177 +538,6 @@ function scrapeGenericEvents($, sourceId, defaultLocation, scrapedAt) {
 // Scrapers
 // =============================================================================
 
-async function scrapeLocalSpins() {
-  const SOURCE = 'local-spins';
-  const config = SOURCE_CONFIG[SOURCE];
-  const scrapedAt = new Date().toISOString();
-
-  try {
-    const html = await fetchHtml(config.url);
-    const $ = loadHtml(html);
-    const events = [];
-    const seen = new Set();
-
-    // Local Spins publishes a listicle-style article with concert series entries.
-    // Each entry has a bolded series name, venue, and schedule details in <p> tags.
-    // Strategy: pull all <p> and <li> text blocks, look for date patterns.
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-
-    // Collect all text blocks from article body
-    const articleText = $('article, .entry-content, .post-content, main').first().text();
-
-    // Look for lines that describe a concert series with a day-of-week schedule
-    // e.g. "Tuesdays, June 3 – August 26" or "Every Friday beginning June 6"
-    const dayOfWeekPatterns = [
-      { re: /Tuesdays?[,\s]+(.*?(?:through|through|–|-)\s*[\w\s,]+\d{4})/gi, day: 2 },
-      { re: /Wednesdays?[,\s]+(.*?(?:through|–|-)\s*[\w\s,]+\d{4})/gi, day: 3 },
-      { re: /Thursdays?[,\s]+(.*?(?:through|–|-)\s*[\w\s,]+\d{4})/gi, day: 4 },
-      { re: /Fridays?[,\s]+(.*?(?:through|–|-)\s*[\w\s,]+\d{4})/gi, day: 5 },
-      { re: /Saturdays?[,\s]+(.*?(?:through|–|-)\s*[\w\s,]+\d{4})/gi, day: 6 },
-      { re: /Sundays?[,\s]+(.*?(?:through|–|-)\s*[\w\s,]+\d{4})/gi, day: 0 },
-    ];
-
-    // Walk the article headings / paragraphs looking for series entries
-    $('h2, h3, h4, strong, b').each((_, el) => {
-      const $el = $(el);
-      const seriesName = cleanText($el.text());
-      if (!seriesName || seriesName.length < 5 || seriesName.length > 200) return;
-
-      // Get surrounding context (next few siblings)
-      let context = '';
-      let $curr = $el.parent();
-      if ($curr.is('p, li')) {
-        context = cleanText($curr.text());
-        $curr = $curr.next();
-        for (let i = 0; i < 4; i++) {
-          if (!$curr.length) break;
-          context += ' ' + cleanText($curr.text());
-          $curr = $curr.next();
-        }
-      }
-
-      if (!context) return;
-
-      // Look for a date range in context
-      const dateRangeMatch = context.match(
-        /(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*(?:through|–|-|to)\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})/i
-      );
-
-      if (dateRangeMatch) {
-        const startMonth = MONTHS[dateRangeMatch[1].toLowerCase()];
-        const startDay = dateRangeMatch[2].padStart(2, '0');
-        const endMonth = MONTHS[dateRangeMatch[3].toLowerCase()];
-        const endDay = dateRangeMatch[4].padStart(2, '0');
-        const year = new Date().getFullYear();
-
-        if (!startMonth || !endMonth) return;
-
-        const startDate = `${year}-${startMonth}-${startDay}`;
-        const endDate = `${year}-${endMonth}-${endDay}`;
-
-        // Detect day of week from context
-        let concertDay = -1;
-        if (/tuesday/i.test(context)) concertDay = 2;
-        else if (/wednesday/i.test(context)) concertDay = 3;
-        else if (/thursday/i.test(context)) concertDay = 4;
-        else if (/friday/i.test(context)) concertDay = 5;
-        else if (/saturday/i.test(context)) concertDay = 6;
-        else if (/sunday/i.test(context)) concertDay = 0;
-        else if (/monday/i.test(context)) concertDay = 1;
-
-        // Extract time from context
-        const timeMatch = context.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
-        const time = timeMatch ? parseTime(timeMatch[1]) : 'TBD';
-
-        // Extract venue from context
-        const venueMatch = context.match(/(?:at|@)\s+([A-Z][^,.]+(?:Park|Center|Plaza|Garden|Amphitheater|Amphitheatre|Stage|Grounds|Lawn|Common|Square)?)/);
-        const venueName = venueMatch ? cleanText(venueMatch[1]) : 'Grand Rapids';
-
-        // Determine link from parent <a> or nearby links
-        let url = config.url;
-        const $link = $el.closest('a').first();
-        if ($link.length && $link.attr('href')) {
-          url = $link.attr('href');
-        }
-
-        // If we have a valid start date, create a representative event for the series
-        const id = generateEventId(SOURCE, seriesName, startDate);
-        if (!seen.has(id)) {
-          seen.add(id);
-          events.push({
-            id,
-            title: seriesName,
-            description: cleanText(context).substring(0, 500) || `Outdoor concert series running ${startDate} to ${endDate}.`,
-            date: startDate,
-            time,
-            startDateTime: toISODateTime(startDate, time),
-            location: {
-              name: venueName,
-              address: '',
-              city: 'Grand Rapids',
-              state: 'MI',
-            },
-            url,
-            source: SOURCE,
-            category: categorizeMusicEvent(seriesName, context),
-            isRecurring: true,
-            isFree: detectFreeEvent(seriesName, context),
-            scrapedAt,
-            seriesEndDate: endDate,
-            ...(concertDay >= 0 ? { recurringDayOfWeek: concertDay } : {}),
-          });
-        }
-      } else {
-        // Try single-date entry
-        const singleDate = parseDate(context);
-        if (singleDate) {
-          const d = new Date(singleDate);
-          if (d < today) return;
-
-          const timeMatch = context.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
-          const time = timeMatch ? parseTime(timeMatch[1]) : 'TBD';
-          const id = generateEventId(SOURCE, seriesName, singleDate);
-          if (!seen.has(id)) {
-            seen.add(id);
-            events.push({
-              id,
-              title: seriesName,
-              description: cleanText(context).substring(0, 500),
-              date: singleDate,
-              time,
-              startDateTime: toISODateTime(singleDate, time),
-              location: {
-                name: 'Grand Rapids',
-                address: '',
-                city: 'Grand Rapids',
-                state: 'MI',
-              },
-              url: config.url,
-              source: SOURCE,
-              category: categorizeMusicEvent(seriesName, context),
-              isRecurring: false,
-              isFree: true,
-              scrapedAt,
-            });
-          }
-        }
-      }
-    });
-
-    // Fallback to generic if nothing found
-    if (events.length === 0) {
-      const generic = scrapeGenericEvents($, SOURCE, { name: 'Grand Rapids', city: 'Grand Rapids', state: 'MI' }, scrapedAt);
-      events.push(...generic);
-    }
-
-    console.log(`    Found ${events.length} events from Local Spins`);
-    return createScrapeResult(SOURCE, events);
-  } catch (error) {
-    return createScrapeResult(SOURCE, [], error.message);
-  }
-}
-
 async function scrapeDowntownGR() {
   const SOURCE = 'downtown-gr';
   const config = SOURCE_CONFIG[SOURCE];
@@ -2196,7 +2025,6 @@ async function scrapeScoreGR() {
 
 async function runFullScrape() {
   const scrapers = [
-    { name: 'Local Spins', fn: scrapeLocalSpins },
     { name: 'Downtown GR', fn: scrapeDowntownGR },
     { name: 'Meijer Gardens', fn: scrapeMeijerGardens },
     { name: 'Coopersville Farm Museum', fn: scrapeCoopersvilleFarm },
@@ -2295,10 +2123,38 @@ async function main() {
     console.log('Starting scrape...');
     console.log('');
 
-    const { events, sources, results } = await runFullScrape();
+    const { events, sources } = await runFullScrape();
+
+    let preservedLocalSpins = [];
+    try {
+      const existingRaw = await fs.readFile(DATA_FILE, 'utf-8');
+      const existing = JSON.parse(existingRaw);
+      preservedLocalSpins = (existing.events || []).filter((e) => e.source === 'local-spins');
+    } catch {
+      // no prior file
+    }
+
+    const seenIds = new Set(events.map((e) => e.id));
+    for (const e of preservedLocalSpins) {
+      if (!seenIds.has(e.id)) {
+        seenIds.add(e.id);
+        events.push(e);
+      }
+    }
+
+    if (preservedLocalSpins.length > 0) {
+      sources['local-spins'] = {
+        ...SOURCE_CONFIG['local-spins'],
+        eventCount: preservedLocalSpins.length,
+        lastScraped: new Date().toISOString(),
+        note: 'Imported from docs/local-spins guide via merge-local-spins-guide.mjs; preserved across scrapes.',
+      };
+    }
+
+    events.sort((a, b) => new Date(a.startDateTime).getTime() - new Date(b.startDateTime).getTime());
 
     console.log('');
-    console.log(`Total: ${events.length} unique events from ${Object.keys(sources).length} sources`);
+    console.log(`Total: ${events.length} unique events from ${Object.keys(sources).length} sources (${preservedLocalSpins.length} Local Spins manual rows preserved)`);
     console.log('');
 
     console.log('Geocoding events...');

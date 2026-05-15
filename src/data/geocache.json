@@ -32,5 +32,214 @@
   "708 wealthy st se|grand rapids|mi": {
     "lat": 42.9555402,
     "lng": -85.6513897
-  }
+  },
+  "allegan riverfront stage, riverfront plaza, allegan|allegan|mi": null,
+  "|allegan|mi": {
+    "lat": 42.5867203,
+    "lng": -85.8861492
+  },
+  "rogers park, 152 n state st., and town square, 177 e. division, sparta|sparta|mi": null,
+  "|sparta|mi": {
+    "lat": 43.160858,
+    "lng": -85.710039
+  },
+  "ingham county courthouse lawn, downtown mason, 315 s jefferson, mason|mason|mi": null,
+  "|mason|mi": {
+    "lat": 43.9778831,
+    "lng": -86.246291
+  },
+  "legacy plaza, 112 n. james st.|legacy plaza|mi": null,
+  "|legacy plaza|mi": {
+    "lat": 43.9561253,
+    "lng": -86.4478126
+  },
+  "5301 lake street, bridgman|bridgman|mi": {
+    "lat": 41.9425907,
+    "lng": -86.5727593
+  },
+  "122 days ave., buchanan|buchanan|mi": {
+    "lat": 41.8269768,
+    "lng": -86.359681
+  },
+  "downtown big rapids|downtown big rapids|mi": null,
+  "|downtown big rapids|mi": {
+    "lat": 43.7001767,
+    "lng": -85.4817572
+  },
+  "lake lansing park south, 1621 pike st., haslett|haslett|mi": null,
+  "|haslett|mi": {
+    "lat": 42.7468204,
+    "lng": -84.4011363
+  },
+  "millennium park meadows, 1415 maynard ave. sw, walker|walker|mi": null,
+  "|walker|mi": {
+    "lat": 43.005597,
+    "lng": -85.7741906
+  },
+  "bates alley between pitcher and portage streets, kalamazoo|kalamazoo|mi": null,
+  "|kalamazoo|mi": {
+    "lat": 42.291707,
+    "lng": -85.5872286
+  },
+  "marketplace on the green, 1995 central park drive, okemos|okemos|mi": null,
+  "|okemos|mi": {
+    "lat": 42.7221021,
+    "lng": -84.4275259
+  },
+  "lynne sherwood waterfront stadium, downtown grand haven|downtown grand haven|mi": null,
+  "|downtown grand haven|mi": null,
+  "island park arts pavilion, 331 main st., mt. pleasant|mt. pleasant|mi": null,
+  "|mt. pleasant|mi": {
+    "lat": 43.597646,
+    "lng": -84.7668495
+  },
+  "downtown zeeland, main avenue|main avenue|mi": null,
+  "|main avenue|mi": {
+    "lat": 43.2032816,
+    "lng": -86.2206211
+  },
+  "walker community park, 700 cummings ave., walker|walker|mi": null,
+  "bicentennial park, 8085 byron center ave., byron center|byron center|mi": null,
+  "|byron center|mi": {
+    "lat": 42.8143115,
+    "lng": -85.7279047
+  },
+  "wildwood amphitheater, 2700 joslyn ct.|wildwood amphitheater|mi": null,
+  "|wildwood amphitheater|mi": null,
+  "texas drive park, 6603 texas corners|texas drive park|mi": null,
+  "|texas drive park|mi": {
+    "lat": 42.207421,
+    "lng": -85.678188
+  },
+  "garden park stage along white pine trail, downtown rockford|downtown rockford|mi": null,
+  "|downtown rockford|mi": null,
+  "various park locations in lansing|various park locations in lansing|mi": null,
+  "|various park locations in lansing|mi": null,
+  "behind kentwood city hall, 4900 breton ave. se, kentwood|kentwood|mi": null,
+  "|kentwood|mi": {
+    "lat": 42.8694731,
+    "lng": -85.6447492
+  },
+  "riverwalk plaza, 113 riverwalk plaza, lowell|lowell|mi": null,
+  "|lowell|mi": {
+    "lat": 42.933601,
+    "lng": -85.3418551
+  },
+  "dewey cannon park, east of elm street at railroad tracks, three oaks|three oaks|mi": null,
+  "|three oaks|mi": {
+    "lat": 41.7986545,
+    "lng": -86.6105778
+  },
+  "georgetown farmer's market, 1525 baldwin st., jenison|jenison|mi": null,
+  "|jenison|mi": {
+    "lat": 42.906688,
+    "lng": -85.8201278
+  },
+  "lamar park, 2561 porter st. sw., wyoming|wyoming|mi": null,
+  "montague bandshell, 8636 water st., montague|montague|mi": null,
+  "|montague|mi": {
+    "lat": 43.416677,
+    "lng": -86.357013
+  },
+  "hemlock park, 398 hemlock st., big rapids|big rapids|mi": null,
+  "|big rapids|mi": {
+    "lat": 43.698078,
+    "lng": -85.483656
+  },
+  "lakeside park, 633 south lincoln, lakeview|lakeview|mi": null,
+  "|lakeview|mi": {
+    "lat": 43.442302,
+    "lng": -85.27913
+  },
+  "performance shell in st. johns city park, 805 w. park st., st. johns|st. johns|mi": null,
+  "|st. johns|mi": {
+    "lat": 43.000928,
+    "lng": -84.5585098
+  },
+  "wicks park, 452 water st., saugatuck|saugatuck|mi": null,
+  "|saugatuck|mi": {
+    "lat": 42.6549244,
+    "lng": -86.2040552
+  },
+  "grand traverse county civic center amphitheatre, 1213 w. civic center dr., traverse city|traverse city|mi": null,
+  "|traverse city|mi": {
+    "lat": 44.7606481,
+    "lng": -85.6165976
+  },
+  "1st street beach rotary gazebo, manistee|manistee|mi": null,
+  "|manistee|mi": {
+    "lat": 44.3308044,
+    "lng": -86.0262043
+  },
+  "lawn of the old art building, 111 south main st. leland|lawn of the old art building|mi": null,
+  "|lawn of the old art building|mi": null,
+  "friendship park, 2870 jacksmith ave. se, grand rapids|grand rapids|mi": null,
+  "100 w. lawrence ave., charlotte|charlotte|mi": {
+    "lat": 42.5644825,
+    "lng": -84.8365718
+  },
+  "trestle park, 2378 gladwin rd., prudenville|prudenville|mi": null,
+  "|prudenville|mi": {
+    "lat": 44.2983513,
+    "lng": -84.6519671
+  },
+  "stearns beach park, stearns outer drive, ludington|ludington|mi": null,
+  "|ludington|mi": {
+    "lat": 43.9555406,
+    "lng": -86.4477416
+  },
+  "flesher field, 3664 south 9th st., oshtemo|oshtemo|mi": null,
+  "|oshtemo|mi": {
+    "lat": 42.2589164,
+    "lng": -85.6772419
+  },
+  "river street, elk rapids|elk rapids|mi": {
+    "lat": 44.8974715,
+    "lng": -85.4171105
+  },
+  "cutler park, 6701 cutler park drive|cutler park|mi": null,
+  "|cutler park|mi": {
+    "lat": 42.8422976,
+    "lng": -85.6673116
+  },
+  "felt mansion, 6597 138th ave., holland|holland|mi": null,
+  "|holland|mi": {
+    "lat": 42.7876022,
+    "lng": -86.1090828
+  },
+  "veterans memorial gardens, 2074 n aurelius rd., holt,|holt|mi": null,
+  "|holt|mi": {
+    "lat": 42.6365611,
+    "lng": -84.5225315
+  },
+  "heritage park, 1776 heritage park dr., coldwater|coldwater|mi": null,
+  "|coldwater|mi": {
+    "lat": 41.941091,
+    "lng": -85.0030617
+  },
+  "mcgraft park, 2204 glen ave., muskegon|muskegon|mi": null,
+  "|muskegon|mi": {
+    "lat": 43.2341813,
+    "lng": -86.2483921
+  },
+  "100-199 memorial dr., manistee|manistee|mi": {
+    "lat": 44.2496067,
+    "lng": -86.3215599
+  },
+  "kindleberger park, 650 s. riverview dr., parchment|parchment|mi": null,
+  "|parchment|mi": {
+    "lat": 42.3280952,
+    "lng": -85.5697296
+  },
+  "central park, 7999 s. westnedge, portage|portage|mi": null,
+  "|portage|mi": {
+    "lat": 42.2011538,
+    "lng": -85.5800022
+  },
+  "waterfront park pavilion, 391 s. william st., ludington|ludington|mi": null,
+  "|kaleva|mi": {
+    "lat": 44.373337,
+    "lng": -86.01036
+  },
+  "log cabin theater, walter & panu streets, kaleva|kaleva|mi": null
 }
