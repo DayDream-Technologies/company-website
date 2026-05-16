@@ -119,6 +119,54 @@ const SOURCE_CONFIG = {
     url: 'https://www.thescoregr.com/event-calendar/',
     color: '#FF6F00',
   },
+  'saugatuck-mitp': {
+    id: 'saugatuck-mitp',
+    name: 'Saugatuck — Music in the Park',
+    url: 'https://saugatuck.com/event/music-in-the-park/',
+    color: '#00897B',
+  },
+  'sparta-park-concerts': {
+    id: 'sparta-park-concerts',
+    name: 'Sparta Summer Concerts (Chamber)',
+    url: 'https://www.spartachamber.com/sparta-park-concerts',
+    color: '#5D4037',
+  },
+  'kentwood-summer-concerts': {
+    id: 'kentwood-summer-concerts',
+    name: 'Kentwood Summer Concert Series',
+    url: 'https://www.kentwood.us/events_detail_T53_R64.php',
+    color: '#455A64',
+  },
+  'eastgr-concerts-park': {
+    id: 'eastgr-concerts-park',
+    name: 'East GR — Concerts in the Park',
+    url: 'https://www.eastgrmi.gov/181/Concerts-In-The-Park',
+    color: '#00695C',
+  },
+  'lowell-sizzlin': {
+    id: 'lowell-sizzlin',
+    name: 'Lowell — Sizzlin’ Summer Concerts',
+    url: 'https://www.discoverlowell.org/sizzlin-summer-concerts/',
+    color: '#C62828',
+  },
+  'grandhaven-free-fridays': {
+    id: 'grandhaven-free-fridays',
+    name: 'Grand Haven Free Fridays',
+    url: 'https://www.grandhavenfreefridays.com/events',
+    color: '#0277BD',
+  },
+  'muskegon-city-tagged': {
+    id: 'muskegon-city-tagged',
+    name: 'City of Muskegon (tagged events)',
+    url: 'https://muskegon-mi.gov/events/list/?tribe-bar-date=2026-06-01&tribe_tags%5B0%5D=702',
+    color: '#1565C0',
+  },
+  'visit-muskegon-concerts': {
+    id: 'visit-muskegon-concerts',
+    name: 'Visit Muskegon — Concerts & Live Music',
+    url: 'https://www.visitmuskegon.org/events/concerts-live-music/',
+    color: '#4527A0',
+  },
 };
 
 const DATA_FILE = path.join(__dirname, '..', 'src', 'data', 'summer-music-events.json');
@@ -2019,6 +2067,595 @@ async function scrapeScoreGR() {
   }
 }
 
+/** Tribe Events Calendar list view: "July 7 @ 7:00 pm" */
+function parseTribeListDateTimeSpan(text, year) {
+  const m = cleanText(text).match(
+    /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+(\d{1,2})\s*@\s*(\d{1,2}:\d{2}\s*(?:am|pm))/i
+  );
+  if (!m) return null;
+  const month = MONTHS[m[1].toLowerCase()];
+  if (!month) return null;
+  const day = m[2].padStart(2, '0');
+  return { date: `${year}-${month}-${day}`, time: parseTime(m[3]) };
+}
+
+function addWednesdaySeries(events, SOURCE, scrapedAt, startDateStr, endDateStr, titleBase, description, location, url, timeStr) {
+  const seen = new Set(events.map((e) => e.id));
+  const time = parseTime(timeStr);
+  let d = new Date(startDateStr + 'T12:00:00');
+  const end = new Date(endDateStr + 'T12:00:00');
+  while (d <= end) {
+    if (d.getDay() === 3) {
+      const y = d.getFullYear();
+      const mo = String(d.getMonth() + 1).padStart(2, '0');
+      const da = String(d.getDate()).padStart(2, '0');
+      const date = `${y}-${mo}-${da}`;
+      const id = generateEventId(SOURCE, titleBase, date);
+      if (!seen.has(id)) {
+        seen.add(id);
+        events.push({
+          id,
+          title: titleBase,
+          description,
+          date,
+          time,
+          startDateTime: toISODateTime(date, time),
+          location: { ...location },
+          url,
+          source: SOURCE,
+          category: 'outdoor',
+          isRecurring: false,
+          isFree: true,
+          scrapedAt,
+        });
+      }
+    }
+    d.setDate(d.getDate() + 1);
+  }
+}
+
+async function scrapeSaugatuckMusicPark() {
+  const SOURCE = 'saugatuck-mitp';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const LOC = {
+    name: 'Wicks Park',
+    address: '452 Water St',
+    city: 'Saugatuck',
+    state: 'MI',
+    zip: '49453',
+  };
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  try {
+    const html = await fetchHtml(config.url);
+    if (/blocked|cf-error-details/i.test(html)) {
+      throw new Error('blocked');
+    }
+    const $ = loadHtml(html);
+    const events = [];
+    const seen = new Set();
+    for (const item of extractJsonLdEvents($)) {
+      const ev = parseJsonLdEvent(item, SOURCE, scrapedAt);
+      if (ev && new Date(ev.date) >= today && isSummerDate(ev.date)) {
+        ev.location = { ...LOC, ...ev.location, city: 'Saugatuck' };
+        if (!seen.has(ev.id)) {
+          seen.add(ev.id);
+          events.push(ev);
+        }
+      }
+    }
+    if (events.length === 0) {
+      const gen = scrapeGenericEvents($, SOURCE, LOC, scrapedAt).filter((e) => new Date(e.date) >= today);
+      for (const ev of gen) {
+        if (!seen.has(ev.id)) {
+          seen.add(ev.id);
+          events.push(ev);
+        }
+      }
+    }
+    if (events.length === 0) {
+      addWednesdaySeries(
+        events,
+        SOURCE,
+        scrapedAt,
+        '2026-06-17',
+        '2026-08-26',
+        'Music in the Park',
+        'Free Wednesday concerts at Wicks Park. Visit the event page for the weekly lineup.',
+        LOC,
+        config.url,
+        '7:00 PM'
+      );
+    }
+    console.log(`    Saugatuck Music in the Park: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (e) {
+    const events = [];
+    addWednesdaySeries(
+      events,
+      SOURCE,
+      scrapedAt,
+      '2026-06-17',
+      '2026-08-26',
+      'Music in the Park',
+      `Could not fetch live page (${e.message}). Placeholder Wednesdays; confirm lineup at ${config.url}`,
+      LOC,
+      config.url,
+      '7:00 PM'
+    );
+    console.log(`    Saugatuck Music in the Park: ${events.length} (fallback)`);
+    return createScrapeResult(SOURCE, events);
+  }
+}
+
+async function scrapeSpartaParkConcerts() {
+  const SOURCE = 'sparta-park-concerts';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const year = 2026;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  try {
+    const html = await fetchHtml(config.url);
+    const stripped = html
+      .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&amp;/g, '&')
+      .replace(/&#0*39;/g, "'")
+      .replace(/\s+/g, ' ');
+
+    const re = /(May|June|July|August|Aug)\s+(\d{1,2})\s+(.+?)(?=(?:May|June|July|August|Aug)\s+\d{1,2}|Sparta's Social|Sparta Eateries|$)/gi;
+    const events = [];
+    const seen = new Set();
+    let m;
+    while ((m = re.exec(stripped)) !== null) {
+      const monRaw = m[1].toLowerCase() === 'aug' ? 'august' : m[1].toLowerCase();
+      const month = MONTHS[monRaw];
+      const dayNum = parseInt(m[2], 10);
+      let rest = cleanText(decodeHtmlEntities(m[3]));
+      if (!month || !rest || rest.length < 8) continue;
+      if (/through\s+august/i.test(rest)) continue;
+
+      const date = `${year}-${month}-${String(dayNum).padStart(2, '0')}`;
+      if (new Date(date) < today) continue;
+
+      const title = rest
+        .replace(/\s+in\s+Rogers Park.*$/i, '')
+        .replace(/\s+in\s+Town Square.*$/i, '')
+        .replace(/\s*&\s*Kid.*$/i, '')
+        .replace(/\s*&\s*Specialty.*$/i, '')
+        .replace(/\s*&\s*Specialt.*$/i, '')
+        .trim();
+
+      if (!title || /NO CONCERT/i.test(title)) continue;
+
+      const loc = /Rogers Park/i.test(rest)
+        ? { name: 'Rogers Park', address: '152 N State St', city: 'Sparta', state: 'MI', zip: '49345' }
+        : { name: 'Sparta Town Square', address: '177 E. Division St', city: 'Sparta', state: 'MI', zip: '49345' };
+
+      const id = generateEventId(SOURCE, title, date);
+      if (seen.has(id)) continue;
+      seen.add(id);
+
+      events.push({
+        id,
+        title,
+        description: `Sparta summer concert series. ${cleanText(rest)}`,
+        date,
+        time: '6:30 PM',
+        startDateTime: toISODateTime(date, '6:30 PM'),
+        location: loc,
+        url: config.url,
+        source: SOURCE,
+        category: 'outdoor',
+        isRecurring: false,
+        isFree: true,
+        scrapedAt,
+      });
+    }
+
+    console.log(`    Sparta park concerts: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeKentwoodSummerConcerts() {
+  const SOURCE = 'kentwood-summer-concerts';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const LOC = {
+    name: 'Kentwood City Hall lawn',
+    address: '4900 Breton Ave SE',
+    city: 'Kentwood',
+    state: 'MI',
+    zip: '49508',
+  };
+  const year = 2026;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  try {
+    const html = await fetchHtml(config.url);
+    const text = cleanText(
+      loadHtml(html)('body').text().replace(/\u00a0/g, ' ')
+    );
+
+    const monthMap = { JUNE: '06', JULY: '07', AUGUST: '08' };
+    const events = [];
+    const seen = new Set();
+
+    const re = /(JUNE|JULY|AUGUST)\s+(\d{1,2})\s*.*?Concert:\s*(.+?)\s*[–\-]\s*6:30-8/gi;
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      const month = monthMap[m[1].toUpperCase()];
+      const day = m[2].padStart(2, '0');
+      if (!month) continue;
+      const date = `${year}-${month}-${day}`;
+      if (new Date(date) < today) continue;
+
+      const title = cleanText(m[3])
+        .replace(/\s+Food Trucks.*$/i, '')
+        .replace(/\s*-\s*Hippest.*$/i, '')
+        .replace(/\s*-\s*Reggae.*$/i, '')
+        .replace(/\s*-\s*Folk.*$/i, '')
+        .replace(/\s*-\s*80s.*$/i, '')
+        .replace(/\s*-\s*Classic big band.*$/i, '')
+        .replace(/\s*-\s*Funk.*$/i, '')
+        .replace(/\s*-\s*Energetic Latin.*$/i, '')
+        .replace(/\s*-\s*Party hits.*$/i, '')
+        .replace(/\s*-\s*Traditional and contemporary blues.*$/i, '')
+        .replace(/\s*-\s*Variety of high energy.*$/i, '')
+        .trim();
+
+      if (!title) continue;
+
+      const id = generateEventId(SOURCE, title, date);
+      if (seen.has(id)) continue;
+      seen.add(id);
+
+      events.push({
+        id,
+        title,
+        description: 'Kentwood Summer Concert Series — free Thursday concerts on the lawn behind City Hall. BYO beer/wine; dogs on leash welcome.',
+        date,
+        time: '6:30 PM',
+        startDateTime: toISODateTime(date, '6:30 PM'),
+        location: { ...LOC },
+        url: config.url,
+        source: SOURCE,
+        category: 'outdoor',
+        isRecurring: false,
+        isFree: true,
+        scrapedAt,
+      });
+    }
+
+    console.log(`    Kentwood summer concerts: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeEastGRConcertsPark() {
+  const SOURCE = 'eastgr-concerts-park';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const LOC = {
+    name: 'John Collins Park',
+    address: '650 Lakeside Dr SE',
+    city: 'East Grand Rapids',
+    state: 'MI',
+    zip: '49506',
+  };
+
+  try {
+    const html = await fetchHtml(config.url);
+    const $ = loadHtml(html);
+    const events = [];
+    const body = cleanText($('body').text());
+    if (/coming soon/i.test(body)) {
+      const id = generateEventId(SOURCE, 'Concerts in the Park 2026 schedule TBD', '2026-06-01');
+      events.push({
+        id,
+        title: 'Concerts in the Park — 2026 schedule TBD',
+        description: 'The city site lists the 2026 lineup as coming soon. Free Monday concerts at 7 p.m. in John Collins Park when posted.',
+        date: '2026-06-01',
+        time: '7:00 PM',
+        startDateTime: toISODateTime('2026-06-01', '7:00 PM'),
+        location: LOC,
+        url: config.url,
+        source: SOURCE,
+        category: 'outdoor',
+        isRecurring: false,
+        isFree: true,
+        scrapedAt,
+      });
+    } else {
+      const gen = scrapeGenericEvents($, SOURCE, LOC, scrapedAt);
+      events.push(...gen);
+    }
+
+    console.log(`    East GR Concerts in the Park: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeLowellSizzlin() {
+  const SOURCE = 'lowell-sizzlin';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const LOC = {
+    name: 'Lowell Showboat / Riverwalk (near KDL Englehardt Library)',
+    address: '200 N Monroe St',
+    city: 'Lowell',
+    state: 'MI',
+    zip: '49331',
+  };
+  const year = 2026;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  try {
+    const html = await fetchHtml(config.url);
+    const $ = loadHtml(html);
+    const events = [];
+    const seen = new Set();
+
+    $('h4[class*="iconlist_title"]').each((_, el) => {
+      const raw = cleanText($(el).text());
+      if (!raw) return;
+
+      let date = null;
+      let time = '7:00 PM';
+      let title = '';
+
+      const rf = raw.match(/Riverwalk Festival:.*?(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s*(\d{1,2})\s*(AM|PM)\s*-\s*(.+)$/i);
+      if (rf) {
+        const mo = MONTHS[rf[1].toLowerCase()];
+        if (!mo) return;
+        date = `${year}-${mo}-${rf[2].padStart(2, '0')}`;
+        time = parseTime(`${rf[3]}:00 ${rf[4].toUpperCase()}`);
+        title = cleanText(rf[5]);
+      } else {
+        const rfFri = raw.match(/Riverwalk Festival:\s*(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*-\s*(.+)$/i);
+        if (rfFri) {
+          const mo = MONTHS[rfFri[1].toLowerCase()];
+          if (!mo) return;
+          date = `${year}-${mo}-${rfFri[2].padStart(2, '0')}`;
+          title = cleanText(rfFri[3]);
+          time = '7:00 PM';
+        } else {
+        const rf2 = raw.match(/Riverwalk Festival:.*?(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*-\s*(.+)$/i);
+        if (rf2) {
+          const mo = MONTHS[rf2[1].toLowerCase()];
+          if (!mo) return;
+          date = `${year}-${mo}-${rf2[2].padStart(2, '0')}`;
+          title = cleanText(rf2[3]);
+          if (/Ultrasonik/i.test(raw)) time = '7:00 PM';
+          else if (/5\s*PM/i.test(raw)) time = '5:00 PM';
+        } else {
+          const std = raw.match(/^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*-\s*(.+)$/i);
+          if (!std) return;
+          const mo = MONTHS[std[1].toLowerCase()];
+          if (!mo) return;
+          date = `${year}-${mo}-${std[2].padStart(2, '0')}`;
+          title = cleanText(std[3]);
+        }
+        }
+      }
+
+      if (!date || !title) return;
+      if (/NO CONCERT/i.test(title)) return;
+      if (new Date(date) < today) return;
+
+      const id = generateEventId(SOURCE, title, date);
+      if (seen.has(id)) return;
+      seen.add(id);
+
+      events.push({
+        id,
+        title,
+        description: 'Sizzlin’ Summer Concerts — free Thursday series on the Lowell riverwalk.',
+        date,
+        time,
+        startDateTime: toISODateTime(date, time),
+        location: { ...LOC },
+        url: config.url,
+        source: SOURCE,
+        category: 'outdoor',
+        isRecurring: false,
+        isFree: true,
+        scrapedAt,
+      });
+    });
+
+    console.log(`    Lowell Sizzlin: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeGrandHavenFreeFridays() {
+  const SOURCE = 'grandhaven-free-fridays';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const LOC = {
+    name: 'Lynne Sherwood Waterfront Stadium',
+    address: '1 N Harbor Dr',
+    city: 'Grand Haven',
+    state: 'MI',
+    zip: '49417',
+  };
+  const year = 2026;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  try {
+    const html = await fetchHtml(config.url);
+    const $ = loadHtml(html);
+    const events = [];
+    const seen = new Set();
+
+    const pairs = [
+      [7, 3], [7, 10], [7, 17], [8, 7], [8, 14], [8, 21],
+    ];
+    for (const [mo, da] of pairs) {
+      const date = `${year}-${String(mo).padStart(2, '0')}-${String(da).padStart(2, '0')}`;
+      if (new Date(date) < today) continue;
+      const id = generateEventId(SOURCE, 'Grand Haven Free Fridays', date);
+      if (seen.has(id)) continue;
+      seen.add(id);
+      events.push({
+        id,
+        title: 'Grand Haven Free Fridays',
+        description: 'Free Friday concert at Lynne Sherwood Waterfront Stadium. Check grandhavenfreefridays.com for performer announcements.',
+        date,
+        time: '6:00 PM',
+        startDateTime: toISODateTime(date, '6:00 PM'),
+        location: { ...LOC },
+        url: config.url,
+        source: SOURCE,
+        category: 'outdoor',
+        isRecurring: false,
+        isFree: true,
+        scrapedAt,
+      });
+    }
+
+    for (const item of extractJsonLdEvents($)) {
+      const ev = parseJsonLdEvent(item, SOURCE, scrapedAt);
+      if (ev && String(ev.date).startsWith(String(year)) && new Date(ev.date) >= today) {
+        ev.location = { ...LOC, ...ev.location };
+        if (!seen.has(ev.id)) {
+          seen.add(ev.id);
+          events.push(ev);
+        }
+      }
+    }
+
+    console.log(`    Grand Haven Free Fridays: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeMuskegonCityTagged() {
+  const SOURCE = 'muskegon-city-tagged';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const year = 2026;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const defaultLoc = {
+    name: 'Muskegon (see event)',
+    address: '',
+    city: 'Muskegon',
+    state: 'MI',
+    zip: '49440',
+  };
+
+  try {
+    const events = [];
+    const seen = new Set();
+
+    for (let month = 5; month <= 9; month++) {
+      const mm = String(month).padStart(2, '0');
+      let listUrl = `https://muskegon-mi.gov/events/list/?tribe-bar-date=${year}-${mm}-01&tribe_tags%5B0%5D=702`;
+
+      while (listUrl) {
+        const html = await fetchHtml(listUrl);
+        const $ = loadHtml(html);
+
+        $('li.tribe-events-calendar-list__event-row').each((_, el) => {
+          const $el = $(el);
+          const title = cleanText(
+            $el.find('.tribe-events-calendar-list__event-title-link').first().text()
+          );
+          if (!title) return;
+
+          const href = $el.find('a.tribe-events-calendar-list__event-title-link').first().attr('href') || '';
+          const slug = (href.match(/\/(\d{4}-\d{2}-\d{2})\/?$/) || [])[1] || date;
+          const dtSpan = cleanText($el.find('.tribe-event-date-start').first().text());
+          const parsed = parseTribeListDateTimeSpan(dtSpan, year);
+          if (!parsed) return;
+          const { date, time } = parsed;
+          if (new Date(date) < today) return;
+
+          const id = `${SOURCE}-${slug}`.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+          if (seen.has(id)) return;
+          seen.add(id);
+
+          events.push({
+            id,
+            title,
+            description: cleanText($el.find('.tribe-events-calendar-list__event-description').first().text()).slice(0, 400),
+            date,
+            time,
+            startDateTime: toISODateTime(date, time),
+            location: { ...defaultLoc },
+            url: href || listUrl,
+            source: SOURCE,
+            category: categorizeMusicEvent(title, ''),
+            isRecurring: false,
+            isFree: detectFreeEvent(title, $el.text()),
+            scrapedAt,
+          });
+        });
+
+        const nextHref = $('a[rel="next"]').attr('href') || $('a.tribe-events-nav-next').attr('href');
+        listUrl = nextHref
+          ? (nextHref.startsWith('http') ? nextHref : `https://muskegon-mi.gov${nextHref.startsWith('/') ? '' : '/'}${nextHref}`)
+          : null;
+        if (listUrl) await delay(500);
+      }
+      await delay(800);
+    }
+
+    console.log(`    Muskegon city tagged: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeVisitMuskegonConcerts() {
+  const SOURCE = 'visit-muskegon-concerts';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const LOC = {
+    name: 'Muskegon County',
+    address: '610 W Western Ave',
+    city: 'Muskegon',
+    state: 'MI',
+    zip: '49440',
+  };
+
+  try {
+    const html = await fetchHtml(config.url);
+    const $ = loadHtml(html);
+    const events = scrapeGenericEvents($, SOURCE, LOC, scrapedAt).filter((e) => {
+      const d = new Date(e.date);
+      return !isNaN(d.getTime()) && d >= new Date(new Date().toISOString().split('T')[0]);
+    });
+    console.log(`    Visit Muskegon concerts page: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
 // =============================================================================
 // Main Scrape Function
 // =============================================================================
@@ -2039,6 +2676,14 @@ async function runFullScrape() {
     { name: 'Gilmore Bluewater', fn: scrapeGilmoreBluewater },
     { name: 'WM Jazz in the Park', fn: scrapeWmJazzPark },
     { name: 'Cork Wine & Grille', fn: scrapeCorkWine },
+    { name: 'Saugatuck Music in the Park', fn: scrapeSaugatuckMusicPark },
+    { name: 'Sparta Summer Concerts', fn: scrapeSpartaParkConcerts },
+    { name: 'Kentwood Summer Concerts', fn: scrapeKentwoodSummerConcerts },
+    { name: 'East GR Concerts in the Park', fn: scrapeEastGRConcertsPark },
+    { name: 'Lowell Sizzlin Summer Concerts', fn: scrapeLowellSizzlin },
+    { name: 'Grand Haven Free Fridays', fn: scrapeGrandHavenFreeFridays },
+    { name: 'Muskegon City (tagged)', fn: scrapeMuskegonCityTagged },
+    { name: 'Visit Muskegon concerts', fn: scrapeVisitMuskegonConcerts },
     { name: 'The Score GR', fn: scrapeScoreGR },
   ];
 

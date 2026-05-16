@@ -258,10 +258,12 @@
   }
 
   function renderFooterSources() {
-    const sourceLinks = getAllSourceIds().map((sourceId, i, arr) => {
-      const source = SOURCE_CONFIG[sourceId];
-      return `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name}</a>${i < arr.length - 1 ? ', ' : ''}`;
-    }).join('');
+    const sourceLinks = getAllSourceIds()
+      .filter((sourceId) => sourceId !== 'local-spins')
+      .map((sourceId, i, arr) => {
+        const source = SOURCE_CONFIG[sourceId];
+        return `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name}</a>${i < arr.length - 1 ? ', ' : ''}`;
+      }).join('');
 
     elements.footerSources.innerHTML = `<span>Aggregating events from </span>${sourceLinks}`;
   }

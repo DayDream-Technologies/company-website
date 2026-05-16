@@ -103,6 +103,54 @@ const SOURCE_CONFIG = {
     url: 'https://www.thescoregr.com/event-calendar/',
     color: '#FF6F00',
   },
+  'saugatuck-mitp': {
+    id: 'saugatuck-mitp',
+    name: 'Saugatuck — Music in the Park',
+    url: 'https://saugatuck.com/event/music-in-the-park/',
+    color: '#00897B',
+  },
+  'sparta-park-concerts': {
+    id: 'sparta-park-concerts',
+    name: 'Sparta Summer Concerts (Chamber)',
+    url: 'https://www.spartachamber.com/sparta-park-concerts',
+    color: '#5D4037',
+  },
+  'kentwood-summer-concerts': {
+    id: 'kentwood-summer-concerts',
+    name: 'Kentwood Summer Concert Series',
+    url: 'https://www.kentwood.us/events_detail_T53_R64.php',
+    color: '#455A64',
+  },
+  'eastgr-concerts-park': {
+    id: 'eastgr-concerts-park',
+    name: 'East GR — Concerts in the Park',
+    url: 'https://www.eastgrmi.gov/181/Concerts-In-The-Park',
+    color: '#00695C',
+  },
+  'lowell-sizzlin': {
+    id: 'lowell-sizzlin',
+    name: 'Lowell — Sizzlin’ Summer Concerts',
+    url: 'https://www.discoverlowell.org/sizzlin-summer-concerts/',
+    color: '#C62828',
+  },
+  'grandhaven-free-fridays': {
+    id: 'grandhaven-free-fridays',
+    name: 'Grand Haven Free Fridays',
+    url: 'https://www.grandhavenfreefridays.com/events',
+    color: '#0277BD',
+  },
+  'muskegon-city-tagged': {
+    id: 'muskegon-city-tagged',
+    name: 'City of Muskegon (tagged events)',
+    url: 'https://muskegon-mi.gov/events/list/?tribe-bar-date=2026-06-01&tribe_tags%5B0%5D=702',
+    color: '#1565C0',
+  },
+  'visit-muskegon-concerts': {
+    id: 'visit-muskegon-concerts',
+    name: 'Visit Muskegon — Concerts & Live Music',
+    url: 'https://www.visitmuskegon.org/events/concerts-live-music/',
+    color: '#4527A0',
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)

@@ -241,5 +241,33 @@
     "lat": 44.373337,
     "lng": -86.01036
   },
-  "log cabin theater, walter & panu streets, kaleva|kaleva|mi": null
+  "log cabin theater, walter & panu streets, kaleva|kaleva|mi": null,
+  "177 e. division st|sparta|mi": {
+    "lat": 43.1608171,
+    "lng": -85.7056714
+  },
+  "650 lakeside dr se|east grand rapids|mi": {
+    "lat": 42.9508494,
+    "lng": -85.6120258
+  },
+  "152 n state st|sparta|mi": {
+    "lat": 43.1645511,
+    "lng": -85.7101806
+  },
+  "4900 breton ave se|kentwood|mi": {
+    "lat": 42.8746059,
+    "lng": -85.5966743
+  },
+  "200 n monroe st|lowell|mi": {
+    "lat": 42.9357677,
+    "lng": -85.3380312
+  },
+  "452 water st|saugatuck|mi": {
+    "lat": 42.6579514,
+    "lng": -86.2054964
+  },
+  "1 n harbor dr|grand haven|mi": {
+    "lat": 43.065065,
+    "lng": -86.234138
+  }
 }
