@@ -1,95 +1,6 @@
 {
   "events": [
     {
-      "id": "bamboo-film-screening-the-lost-dog-2026-05-14",
-      "title": "Film Screening: The Lost Dog",
-      "description": "Sometimes facing your fears can be a real nightmare",
-      "date": "2026-05-14",
-      "time": "5:30 PM",
-      "startDateTime": "2026-05-14T17:30:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/film-screening-the-lost-dog",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
-    },
-    {
-      "id": "gr-junior-chamber-may-monthly-leadership-exchange-with-guest-spe",
-      "title": "May Monthly Leadership Exchange with Guest Speaker, Michelle L. Steffes!",
-      "description": "Your monthly boost of inspiration, connection, and leadership growth! Every session delivers high-value insights, dynamic speakers, and actionable takeaways to help you lead with confidence. New topic, new energy, every month.",
-      "date": "2026-05-14",
-      "time": "5:30 PM",
-      "startDateTime": "2026-05-14T17:30:00",
-      "location": {
-        "name": "Grand Rapids Junior Chamber",
-        "address": "250 Monroe Ave NW Ste 150",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6681
-      },
-      "url": "https://www.grjuniorchamber.com/event-details-registration/may-monthly-leadership-exchange-with-guest-speaker-michelle-l-steffes",
-      "source": "gr-junior-chamber",
-      "category": "networking",
-      "isRecurring": true,
-      "isFree": false,
-      "scrapedAt": "2026-05-14T14:17:51.525Z"
-    },
-    {
-      "id": "grand-rapids-org-create-great-leaders-annual-party-2026-05-15",
-      "title": "Create Great Leaders Annual Party",
-      "description": "",
-      "date": "2026-05-15",
-      "time": "May 15 @ 4:00 pm - 6:00 pm",
-      "startDateTime": "2026-05-15T00:00:00",
-      "location": {
-        "name": "Grand Rapids",
-        "address": "",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://grandrapids.org/event/create-great-leaders-annual-party-5-15/",
-      "source": "grand-rapids-org",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
-    },
-    {
-      "id": "south-kent-chamber-3rd-friday-networking-luncheon-2026-05-15",
-      "title": "3rd Friday Networking Luncheon",
-      "description": "Looking for a place to meet and network with business owners and professionals? Where else can you exchange dozens of business cards in one place? Join us for our monthly networking luncheon for building relationships, having fun, and great food!",
-      "date": "2026-05-15",
-      "time": "11:30 AM",
-      "startDateTime": "2026-05-15T11:30:00",
-      "location": {
-        "name": "Beltline Bar 16 28th St SE Grand Rapids, MI 49548",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/3rd-friday-networking-luncheon-14030",
-      "source": "south-kent-chamber",
-      "category": "networking",
-      "isRecurring": true,
-      "isFree": false,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
-      "endDateTime": "2026-05-15T13:00:00"
-    },
-    {
       "id": "grand-rapids-org-grand-rapids-candidate-forum-2026-05-18",
       "title": "Grand Rapids Candidate Forum",
       "description": "",
@@ -109,7 +20,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "grand-rapids-org-talent-human-resources-workshop-inclusive-colla",
@@ -131,7 +42,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "msu-foundation-michigan-tech-week-2026-05-19",
@@ -153,7 +64,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:37.293Z"
+      "scrapedAt": "2026-05-18T11:43:31.592Z"
     },
     {
       "id": "right-place-supply-chain-management-council-itw-drawform-tour-co",
@@ -176,7 +87,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-05-20T09:30:00"
     },
     {
@@ -199,7 +110,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-05-20T11:30:00"
     },
     {
@@ -221,7 +132,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-river-city-ai-dev-user-group-2026-05-20",
@@ -242,7 +153,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-05-21",
@@ -264,7 +175,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "msu-foundation-multi-state-remote-teams-when-you-trigger-other-s",
@@ -286,7 +197,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:37.293Z"
+      "scrapedAt": "2026-05-18T11:43:31.592Z"
     },
     {
       "id": "msu-foundation-females-in-funding-2026-05-21",
@@ -308,7 +219,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:37.293Z"
+      "scrapedAt": "2026-05-18T11:43:31.592Z"
     },
     {
       "id": "south-kent-chamber-thirsty-thursday-2026-05-21",
@@ -330,7 +241,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-05-21T18:00:00"
     },
     {
@@ -353,7 +264,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-05-26T21:00:00"
     },
     {
@@ -375,7 +286,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-start-garden-5x5-night-2026-05-26",
@@ -396,7 +307,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-05-27",
@@ -418,7 +329,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "gr-junior-chamber-engaging-early-career-professionals-in-the-wor",
@@ -441,7 +352,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-05-14T14:17:51.525Z"
+      "scrapedAt": "2026-05-18T11:43:44.241Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-elevating-organic-social-media-with-t",
@@ -462,7 +373,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-all-seasons-city-club-mahjong-an-intro-sesh-2026-05-27",
@@ -483,7 +394,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "right-place-connecting-entrepreneurial-communities-2026-2026-05-",
@@ -506,7 +417,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-05-28T12:00:00"
     },
     {
@@ -530,7 +441,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:52.539Z"
+      "scrapedAt": "2026-05-18T11:43:45.246Z"
     },
     {
       "id": "grand-rapids-org-west-michigan-ceo-summit-2026-06-02",
@@ -552,7 +463,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "msu-foundation-scale-up-networking-mixer-2026-06-02",
@@ -574,7 +485,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:37.293Z"
+      "scrapedAt": "2026-05-18T11:43:31.592Z"
     },
     {
       "id": "startup-garage-coffee-connections-startup-garage-office-hours-20",
@@ -597,7 +508,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:52.539Z"
+      "scrapedAt": "2026-05-18T11:43:45.246Z"
     },
     {
       "id": "south-kent-chamber-b-o-b-business-owners-breakfast-2026-06-03",
@@ -619,7 +530,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-06-03T09:00:00"
     },
     {
@@ -641,7 +552,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "south-kent-chamber-multi-chamber-speed-networking-event-2026-06-",
@@ -663,7 +574,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-06-04T09:00:00"
     },
     {
@@ -686,7 +597,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "bamboo-founders-first-fridays-2026-06-05",
@@ -707,7 +618,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-start-garden-first-fridays-2026-06-05",
@@ -728,7 +639,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "south-kent-chamber-government-matters-2026-06-08",
@@ -750,7 +661,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-06-08T21:30:00"
     },
     {
@@ -773,7 +684,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:37.293Z"
+      "scrapedAt": "2026-05-18T11:43:31.592Z"
     },
     {
       "id": "right-place-developer-day-2026-2026-06-09",
@@ -796,7 +707,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-06-09T17:00:00"
     },
     {
@@ -819,7 +730,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-06-10T09:00:00"
     },
     {
@@ -841,7 +752,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "right-place-west-michigan-intern-connect-2026-06-10",
@@ -864,7 +775,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-06-10T17:00:00"
     },
     {
@@ -887,7 +798,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-06-11T09:00:00"
     },
     {
@@ -910,8 +821,31 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:42.834Z",
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
       "endDateTime": "2026-06-11T13:30:00"
+    },
+    {
+      "id": "south-kent-chamber-ribbon-cutting-grand-opening-of-lonia-s-world",
+      "title": "Ribbon Cutting Grand Opening of LoNia's World Center",
+      "description": "From 1:00–4:00 PM, enjoy an afternoon filled with uplifting music, delicious refreshments, interactive games, and exciting prize giveaways. Explore our beautiful new center, meet the passionate team behind the mission, and experience firsthand the warmth and joy that define LoNia’s World. Whether you’re a community partner, a family member, a supporter, or a curious neighbor, you’ll feel right at home the moment you walk in.",
+      "date": "2026-06-11",
+      "time": "1:00 PM",
+      "startDateTime": "2026-06-11T13:00:00",
+      "location": {
+        "name": "3305 East Paris Ave SE Kentwood, MI 49512",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/ribbon-cutting-grand-opening-of-lonia-s-world-center-14046",
+      "source": "south-kent-chamber",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-05-18T11:43:37.065Z",
+      "endDateTime": "2026-06-11T16:00:00"
     },
     {
       "id": "gr-junior-chamber-june-monthly-leadership-exchange-save-the-date",
@@ -934,15 +868,39 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-05-14T14:17:51.525Z"
+      "scrapedAt": "2026-05-18T11:43:44.241Z"
+    },
+    {
+      "id": "right-place-radical-hospitality-connect-dine-explore-ada-friday-",
+      "title": "Radical Hospitality: Connect, Dine & Explore Ada | Friday, June 12",
+      "description": "Come early, connect over a meal, and head out to Beers at the Bridge together!",
+      "date": "2026-06-12",
+      "time": "4:00 PM – 9:00 PM",
+      "startDateTime": "2026-06-12T16:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/radical-hospitality-connect-dine-explore-ada-friday-june-12",
+      "source": "right-place",
+      "category": "meetup",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
+      "endDateTime": "2026-06-12T21:00:00"
     },
     {
       "id": "springgr-bootcamp-de-marketing-digital-2026-06-15",
       "title": "Bootcamp de Marketing Digital",
       "description": "de 6 semanas – Cupos limitados ¿Sientes que tu negocio tiene potencial pero no sabes cómo organizar tu marketing, atraer más clientes o usar herramientas digitales sin sentirte abrumado(a)? Este […]",
       "date": "2026-06-15",
-      "time": "TBD",
-      "startDateTime": "2026-06-15T00:00:00",
+      "time": "4:00 AM",
+      "startDateTime": "2026-06-15T04:00:00",
       "location": {
         "name": "SpringGR",
         "address": "818 Butterworth St SW",
@@ -957,7 +915,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:57.368Z"
+      "scrapedAt": "2026-05-18T11:43:50.382Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-sawdust-soldering-irons-community-les",
@@ -978,7 +936,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-06-18",
@@ -1000,7 +958,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "grand-rapids-org-ending-homelessness-a-celebration-of-impact-202",
@@ -1022,7 +980,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "right-place-candid-conversations-june-18-2026-06-18",
@@ -1045,7 +1003,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-06-18T15:00:00"
     },
     {
@@ -1068,7 +1026,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-06-24",
@@ -1090,7 +1048,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-06-24",
@@ -1111,7 +1069,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-what-if-your-work-felt-more-like-you-",
@@ -1132,7 +1090,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "grand-rapids-org-chamber-issues-forum-childcare-public-spaces-fo",
@@ -1154,7 +1112,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:41.796Z"
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-demystify-ai-buzzwords-to-business-va",
@@ -1175,7 +1133,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-building-effective-nonprofit-boards-2",
@@ -1196,7 +1154,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "right-place-2026-q3-technology-exchange-july-8-2026-07-08",
@@ -1219,7 +1177,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-07-08T17:00:00"
     },
     {
@@ -1243,7 +1201,30 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:52.539Z"
+      "scrapedAt": "2026-05-18T11:43:45.246Z"
+    },
+    {
+      "id": "gr-junior-chamber-july-monthly-leadership-exchange-save-the-date",
+      "title": "July Monthly Leadership Exchange - Save the Date!",
+      "description": "Your monthly boost of inspiration, connection, and leadership growth! Every session delivers high-value insights, dynamic speakers, and actionable takeaways to help you lead with confidence. New topic, new energy, every month.",
+      "date": "2026-07-09",
+      "time": "5:30 PM",
+      "startDateTime": "2026-07-09T17:30:00",
+      "location": {
+        "name": "Grand Rapids Junior Chamber",
+        "address": "250 Monroe Ave NW Ste 150",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6681
+      },
+      "url": "https://www.grjuniorchamber.com/event-details-registration/july-monthly-leadership-exchange-save-the-date",
+      "source": "gr-junior-chamber",
+      "category": "networking",
+      "isRecurring": true,
+      "isFree": false,
+      "scrapedAt": "2026-05-18T11:43:44.241Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-clarify-your-message-create-a-one-lin",
@@ -1264,7 +1245,29 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
+    },
+    {
+      "id": "grand-rapids-org-business-exchange-luncheon-2026-07-16",
+      "title": "Business Exchange Luncheon",
+      "description": "",
+      "date": "2026-07-16",
+      "time": "July 16 @ 11:30 am - 1:30 pm Business Exchange Series",
+      "startDateTime": "2026-07-16T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/business-exchange-luncheon-7-16/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-05-18T11:43:36.013Z"
     },
     {
       "id": "startup-garage-marketing-branding-masterclass-2026-07-16",
@@ -1287,7 +1290,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:52.539Z"
+      "scrapedAt": "2026-05-18T11:43:45.246Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-07-23",
@@ -1308,7 +1311,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-is-your-business-a-machine-or-job-how",
@@ -1329,7 +1332,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "right-place-candid-conversations-august-6-2026-08-06",
@@ -1352,7 +1355,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-08-06T17:00:00"
     },
     {
@@ -1375,7 +1378,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:37.293Z"
+      "scrapedAt": "2026-05-18T11:43:31.592Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-08-18",
@@ -1396,7 +1399,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-08-25",
@@ -1417,7 +1420,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:39.682Z"
+      "scrapedAt": "2026-05-18T11:43:33.959Z"
     },
     {
       "id": "msu-foundation-data-science-ai-summit-2026-10-06",
@@ -1439,7 +1442,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:37.293Z"
+      "scrapedAt": "2026-05-18T11:43:31.592Z"
     },
     {
       "id": "right-place-2026-q4-technology-exchange-october-14-2026-10-14",
@@ -1462,7 +1465,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-10-14T17:00:00"
     },
     {
@@ -1486,35 +1489,11 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
+      "scrapedAt": "2026-05-18T11:43:48.668Z",
       "endDateTime": "2026-11-12T17:00:00"
-    },
-    {
-      "id": "right-place-economic-outlook-for-2027-2026-12-03",
-      "title": "Economic Outlook for 2027",
-      "description": "Stay ahead of the curve with expert forecasts shaping the year to come.",
-      "date": "2026-12-03",
-      "time": "12:00 AM – 12:00 AM",
-      "startDateTime": "2026-12-03T00:00:00",
-      "location": {
-        "name": "JW Marriott Grand Rapids",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9679,
-        "lng": -85.6766
-      },
-      "url": "https://www.rightplace.org/events/economic-outlook-for-2027",
-      "source": "right-place",
-      "category": "conference",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-05-14T14:17:55.820Z",
-      "endDateTime": "2026-12-03T00:00:00"
     }
   ],
-  "lastScraped": "2026-05-14T14:18:30.682Z",
+  "lastScraped": "2026-05-18T11:44:22.945Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -1522,7 +1501,7 @@
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
       "eventCount": 7,
-      "lastScraped": "2026-05-14T14:17:37.296Z"
+      "lastScraped": "2026-05-18T11:43:31.594Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -1530,15 +1509,15 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-05-14T14:17:38.431Z"
+      "lastScraped": "2026-05-18T11:43:32.702Z"
     },
     "bamboo": {
       "id": "bamboo",
       "name": "Bamboo Cowork",
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
-      "eventCount": 21,
-      "lastScraped": "2026-05-14T14:17:39.733Z"
+      "eventCount": 20,
+      "lastScraped": "2026-05-18T11:43:34.016Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -1546,7 +1525,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 48,
-      "lastScraped": "2026-05-14T14:17:41.828Z"
+      "lastScraped": "2026-05-18T11:43:36.064Z"
     },
     "south-kent-chamber": {
       "id": "south-kent-chamber",
@@ -1554,7 +1533,7 @@
       "url": "https://business.southkent.org/events/",
       "color": "#00695C",
       "eventCount": 10,
-      "lastScraped": "2026-05-14T14:17:49.959Z"
+      "lastScraped": "2026-05-18T11:43:42.896Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -1562,7 +1541,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-05-14T14:17:51.527Z"
+      "lastScraped": "2026-05-18T11:43:44.243Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -1570,7 +1549,7 @@
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
       "eventCount": 5,
-      "lastScraped": "2026-05-14T14:17:52.740Z"
+      "lastScraped": "2026-05-18T11:43:45.520Z"
     },
     "right-place": {
       "id": "right-place",
@@ -1578,7 +1557,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-05-14T14:17:55.823Z"
+      "lastScraped": "2026-05-18T11:43:48.672Z"
     },
     "springgr": {
       "id": "springgr",
@@ -1586,7 +1565,7 @@
       "url": "https://www.springgr.com/events-page/",
       "color": "#2E7D32",
       "eventCount": 1,
-      "lastScraped": "2026-05-14T14:17:57.371Z"
+      "lastScraped": "2026-05-18T11:43:50.396Z"
     }
   }
 }
