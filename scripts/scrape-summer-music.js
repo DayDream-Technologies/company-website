@@ -167,7 +167,34 @@ const SOURCE_CONFIG = {
     url: 'https://www.visitmuskegon.org/events/concerts-live-music/',
     color: '#4527A0',
   },
+  'ada-parks-summer-concerts': {
+    id: 'ada-parks-summer-concerts',
+    name: 'Ada Township — Summer Concerts (Legacy Park)',
+    url:
+      'https://www.adamichigan.org/departments/parks_recreation_land_preservation/community___special_events.php',
+    color: '#558B2F',
+  },
+  'caledonia-concert-series': {
+    id: 'caledonia-concert-series',
+    name: 'Caledonia Community Green Park',
+    url: 'https://www.instagram.com/p/DX8B2FERAbM/',
+    color: '#6A1B9A',
+  },
+  'wyoming-concerts-park': {
+    id: 'wyoming-concerts-park',
+    name: 'Wyoming — Concerts in the Park',
+    url: 'https://www.wyomingmi.gov/concerts',
+    color: '#283593',
+  },
+  'rockford-rogue-blues': {
+    id: 'rockford-rogue-blues',
+    name: 'Rockford — Rogue River Blues Series',
+    url: 'https://www.rockford.mi.us/news_detail_T7_R459.php',
+    color: '#4E342E',
+  },
 };
+
+const LOCAL_SPINS_2026_GUIDE_URL = 'https://localspins.com/free-outdoor-community-concerts-2026/';
 
 const DATA_FILE = path.join(__dirname, '..', 'src', 'data', 'summer-music-events.json');
 const CACHE_FILE = path.join(__dirname, '..', 'src', 'data', 'geocache.json');
@@ -409,6 +436,139 @@ function categorizeMusicEvent(title, description) {
   if (text.includes('worship') || text.includes('praise') || text.includes('christian')) return 'faith based';
   if (text.includes('outdoor') || text.includes('park') || text.includes('plaza') || text.includes('waterfront')) return 'outdoor';
   return 'concert';
+}
+
+/** Parse "June 16 – Artist Name" / "June 16 - Artist" blocks (Local Spins style). */
+function parseMonthDayArtistLineup(text, year) {
+  const events = [];
+  const trimmed = trimLocalSpinsLineupBlock(text);
+  const re =
+    /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*[–\-]\s*([^]+?)(?=\s*(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}\s*[–\-]|$)/gi;
+  let m;
+  while ((m = re.exec(trimmed)) !== null) {
+    const month = MONTHS[m[1].toLowerCase()];
+    if (!month) continue;
+    const day = m[2].padStart(2, '0');
+    const date = `${year}-${month}-${day}`;
+    let title = cleanText(m[3]);
+    if (!title || title.length < 2 || title.length > 80) continue;
+    if (/^when:\s*/i.test(title) || /where:\s*/i.test(title)) continue;
+    events.push({ date, title });
+  }
+  return events;
+}
+
+/** Stop lineup text before the next all-caps series header in the Local Spins guide. */
+function trimLocalSpinsLineupBlock(lineup) {
+  const nextSeries = lineup.match(/\s+[A-Z][A-Z0-9\s&'’]+:\s+[A-Z]/);
+  if (nextSeries && nextSeries.index > 15) {
+    return lineup.slice(0, nextSeries.index);
+  }
+  const dashBreak = lineup.search(/\s+---\s+/);
+  if (dashBreak > 15) return lineup.slice(0, dashBreak);
+  return lineup.slice(0, 700);
+}
+
+/** Extract a Local Spins 2026 guide section (e.g. "CALEDONIA CONCERT SERIES"). */
+async function fetchLocalSpins2026Section(sectionMarker) {
+  const html = await fetchHtml(LOCAL_SPINS_2026_GUIDE_URL);
+  const text = cleanText(loadHtml(html)('body').text());
+  const idx = text.indexOf(sectionMarker);
+  if (idx < 0) return null;
+  const chunk = text.slice(idx, idx + 2500);
+  const lineupIdx = chunk.search(/LINEUP:?\s*/i);
+  if (lineupIdx < 0) return null;
+  const lineup = chunk.slice(lineupIdx).replace(/^LINEUP:?\s*/i, '');
+  return trimLocalSpinsLineupBlock(lineup);
+}
+
+function buildMusicEvent({
+  sourceId,
+  title,
+  date,
+  time,
+  description,
+  location,
+  url,
+  scrapedAt,
+  isRecurring = false,
+}) {
+  return {
+    id: generateEventId(sourceId, title, date),
+    title,
+    description,
+    date,
+    time,
+    startDateTime: toISODateTime(date, time),
+    location,
+    url,
+    source: sourceId,
+    category: categorizeMusicEvent(title, description),
+    isRecurring,
+    isFree: detectFreeEvent(title, description, ''),
+    scrapedAt,
+  };
+}
+
+function extractAdaCommunityMusicBlocks($) {
+  const blocks = [];
+  $('h2').each((_, el) => {
+    const title = cleanText($(el).text());
+    if (!title || title.length < 3) return;
+    if (!/music on the lawn|beers at the bridge|4th of july/i.test(title)) return;
+    const $block = $(el).nextUntil('h2');
+    const blockText = cleanText($block.text());
+    let eventUrl = 'https://www.adamichigan.org/community/events.php';
+    $block.find('a[href]').each((__, a) => {
+      const href = $(a).attr('href') || '';
+      if (!href || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+      if (/\.pdf$/i.test(href) || /read more|click here/i.test(cleanText($(a).text()))) {
+        eventUrl = href.startsWith('http')
+          ? href
+          : `https://www.adamichigan.org${href.startsWith('/') ? '' : '/'}${href}`;
+      }
+    });
+    blocks.push({ title, blockText, eventUrl });
+  });
+  return blocks;
+}
+
+function parseAdaMusicOnTheLawnDates(blockText, year) {
+  const concertDates = blockText.match(/Concert\s+Dates:\s*([^.]+)/i);
+  if (!concertDates) return [];
+  const rawParts = concertDates[1].split(/,\s*/).map((s) => s.trim()).filter(Boolean);
+  const dates = [];
+  let lastMonth = '';
+  for (const part of rawParts) {
+    const monthMatch = part.match(
+      /^(January|February|March|April|May|June|July|August|September|October|November|December)/i
+    );
+    if (monthMatch) lastMonth = monthMatch[1];
+    const dayOnly = part.match(/^(\d{1,2})$/);
+    const candidate =
+      dayOnly && lastMonth ? `${lastMonth} ${dayOnly[1]}, ${year}` : `${part}, ${year}`;
+    const parsed = parseDate(candidate);
+    if (parsed) dates.push(parsed);
+  }
+  return dates;
+}
+
+function extractTownshipDatesFromText(text, year) {
+  const dates = new Set();
+  const explicitRe =
+    /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s*(\d{4})(?!\d)/gi;
+  let em;
+  while ((em = explicitRe.exec(text)) !== null) {
+    const m = MONTHS[em[1].toLowerCase()];
+    if (m) dates.add(`${em[3]}-${m}-${em[2].padStart(2, '0')}`);
+  }
+  const ordinalRe =
+    /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)\b/gi;
+  while ((em = ordinalRe.exec(text)) !== null) {
+    const m = MONTHS[em[1].toLowerCase()];
+    if (m) dates.add(`${year}-${m}-${em[2].padStart(2, '0')}`);
+  }
+  return [...dates];
 }
 
 // =============================================================================
@@ -2657,6 +2817,327 @@ async function scrapeVisitMuskegonConcerts() {
 }
 
 // =============================================================================
+// Ada / Caledonia / Wyoming / Rockford community concert scrapers
+// =============================================================================
+
+async function scrapeAdaParksSummerConcerts() {
+  const SOURCE = 'ada-parks-summer-concerts';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const year = new Date().getFullYear();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const LOC = {
+    name: 'Legacy Park',
+    address: '7430 River St SE',
+    city: 'Ada',
+    state: 'MI',
+    zip: '49301',
+  };
+
+  try {
+    const events = [];
+    const seen = new Set();
+
+    const communityHtml = await fetchHtml('https://www.adamichigan.org/community/events.php');
+    const $community = loadHtml(communityHtml);
+
+    for (const block of extractAdaCommunityMusicBlocks($community)) {
+      const { title, blockText, eventUrl } = block;
+      const baseDesc =
+        cleanText(blockText).slice(0, 500) ||
+        'Summer concert at Legacy Park (Ada Township Parks & Recreation).';
+
+      if (/music on the lawn/i.test(title)) {
+        for (const date of parseAdaMusicOnTheLawnDates(blockText, year)) {
+          if (new Date(`${date}T12:00:00`) < today) continue;
+          const ev = buildMusicEvent({
+            sourceId: SOURCE,
+            title: 'Music on the Lawn',
+            date,
+            time: '7:00 PM',
+            description: baseDesc,
+            location: LOC,
+            url: eventUrl || config.url,
+            scrapedAt,
+            isRecurring: true,
+          });
+          if (!seen.has(ev.id)) {
+            seen.add(ev.id);
+            events.push(ev);
+          }
+        }
+        continue;
+      }
+
+      if (/beers at the bridge/i.test(title)) {
+        for (const date of extractTownshipDatesFromText(blockText, year)) {
+          if (new Date(`${date}T12:00:00`) < today) continue;
+          const ev = buildMusicEvent({
+            sourceId: SOURCE,
+            title: 'Beers at the Bridge',
+            date,
+            time: '6:00 PM',
+            description: baseDesc,
+            location: LOC,
+            url: eventUrl || config.url,
+            scrapedAt,
+          });
+          if (!seen.has(ev.id)) {
+            seen.add(ev.id);
+            events.push(ev);
+          }
+        }
+        continue;
+      }
+
+      if (/4th of july/i.test(title)) {
+        const date = `${year}-07-04`;
+        if (new Date(`${date}T12:00:00`) >= today) {
+          const ev = buildMusicEvent({
+            sourceId: SOURCE,
+            title: '4th of July Celebration Concert',
+            date,
+            time: '2:00 PM',
+            description: baseDesc,
+            location: LOC,
+            url: eventUrl || config.url,
+            scrapedAt,
+          });
+          if (!seen.has(ev.id)) {
+            seen.add(ev.id);
+            events.push(ev);
+          }
+        }
+      }
+    }
+
+    console.log(`    Ada Parks summer concerts: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeWyomingConcertsPark() {
+  const SOURCE = 'wyoming-concerts-park';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const year = new Date().getFullYear();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const LOC = {
+    name: 'Lamar Park',
+    address: '2561 Porter St SW',
+    city: 'Wyoming',
+    state: 'MI',
+    zip: '49519',
+  };
+
+  try {
+    const html = await fetchHtml(config.url);
+    const text = cleanText(loadHtml(html)('body').text());
+    const events = [];
+    const seen = new Set();
+
+    const intro =
+      'Concerts in the Park at Lamar Park, 6 p.m. Food trucks on site. Bring a lawn chair.';
+
+    const re =
+      /\b(June|July)\s+(\d{1,2})\s*-\s*([^:]+?)(?::\s*([^]+?))?(?=\s*(?:June|July)\s+\d{1,2}\s*-|$)/gi;
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      const month = MONTHS[m[1].toLowerCase()];
+      if (!month) continue;
+      const date = `${year}-${month}-${m[2].padStart(2, '0')}`;
+      if (new Date(`${date}T12:00:00`) < today) continue;
+
+      const artist = cleanText(m[3]);
+      const style = m[4] ? cleanText(m[4]) : '';
+      const title = artist;
+      const description = style
+        ? `${intro} ${style}`
+        : `${intro} Featuring ${artist}.`;
+
+      const ev = buildMusicEvent({
+        sourceId: SOURCE,
+        title,
+        date,
+        time: '6:00 PM',
+        description,
+        location: LOC,
+        url: config.url,
+        scrapedAt,
+      });
+      if (!seen.has(ev.id)) {
+        seen.add(ev.id);
+        events.push(ev);
+      }
+    }
+
+    console.log(`    Wyoming Concerts in the Park: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeCaledoniaConcertSeries() {
+  const SOURCE = 'caledonia-concert-series';
+  const config = SOURCE_CONFIG[SOURCE];
+  const scrapedAt = new Date().toISOString();
+  const year = new Date().getFullYear();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const LOC = {
+    name: 'Caledonia Community Green Park',
+    address: '9309 Dobber Wenger Memorial Dr',
+    city: 'Caledonia',
+    state: 'MI',
+  };
+  const baseDesc =
+    'Caledonia Community Green Park summer concert series (Tuesdays, 6 p.m. opening act / 7 p.m. headliners).';
+
+  try {
+    let lineup = null;
+    let lineupSource = '';
+
+    try {
+      const embedHtml = await fetchHtml('https://www.instagram.com/p/DX8B2FERAbM/embed/captioned/');
+      const captionMatch = embedHtml.match(/"caption":"((?:\\.|[^"\\])*)"/);
+      if (captionMatch) {
+        const caption = captionMatch[1]
+          .replace(/\\n/g, '\n')
+          .replace(/\\u([\dA-Fa-f]{4})/g, (_, c) => String.fromCharCode(parseInt(c, 16)))
+          .replace(/\\"/g, '"');
+        const parsed = parseMonthDayArtistLineup(caption, year);
+        if (parsed.length) {
+          lineup = parsed;
+          lineupSource = 'Instagram post caption';
+        }
+      }
+    } catch (e) {
+      console.log(`    Caledonia Instagram: ${e.message}`);
+    }
+
+    if (!lineup || lineup.length === 0) {
+      const section = await fetchLocalSpins2026Section('CALEDONIA CONCERT SERIES');
+      if (section) {
+        lineup = parseMonthDayArtistLineup(section, year);
+        lineupSource = 'Local Spins 2026 community concerts guide (fallback)';
+      }
+    }
+
+    if (!lineup || lineup.length === 0) {
+      return createScrapeResult(SOURCE, [], 'No Caledonia concert lineup found');
+    }
+
+    const events = [];
+    for (const row of lineup) {
+      if (new Date(`${row.date}T12:00:00`) < today) continue;
+      events.push(
+        buildMusicEvent({
+          sourceId: SOURCE,
+          title: row.title,
+          date: row.date,
+          time: '7:00 PM',
+          description: `${baseDesc} (${lineupSource}).`,
+          location: LOC,
+          url: config.url,
+          scrapedAt,
+        })
+      );
+    }
+
+    console.log(`    Caledonia concert series: ${events.length} events (${lineupSource})`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+async function scrapeRockfordRogueBlues() {
+  const SOURCE = 'rockford-rogue-blues';
+  const config = SOURCE_CONFIG[SOURCE];
+  const newsUrl = config.url;
+  const scrapedAt = new Date().toISOString();
+  const year = new Date().getFullYear();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const gardenLoc = {
+    name: 'Garden Club Park — Rogue River stage',
+    address: 'White Pine Trail, downtown Rockford',
+    city: 'Rockford',
+    state: 'MI',
+  };
+  const rotaryLoc = {
+    name: 'Rotary Pavilion',
+    address: 'Squires Street area (downtown Rockford)',
+    city: 'Rockford',
+    state: 'MI',
+  };
+
+  const dateShift = {
+    '2026-06-09': '2026-06-10',
+    '2026-06-16': '2026-06-17',
+  };
+  const rotaryDates = new Set(['2026-06-10', '2026-06-17']);
+
+  try {
+    const section = await fetchLocalSpins2026Section('ROCKFORD: ROGUE RIVER BLUES SERIES');
+    if (!section) {
+      return createScrapeResult(SOURCE, [], 'Rockford blues lineup not found in Local Spins 2026 guide');
+    }
+
+    const lineup = parseMonthDayArtistLineup(section, year);
+    const events = [];
+    const seen = new Set();
+
+    let relocationNote = '';
+    try {
+      const newsHtml = await fetchHtml(newsUrl);
+      const newsText = cleanText(loadHtml(newsHtml)('body').text());
+      if (/rotary pavilion/i.test(newsText)) {
+        relocationNote =
+          ' June 10 & 17 performances at Rotary Pavilion while Garden Club Park construction continues (per City of Rockford).';
+      }
+    } catch {
+      // optional news fetch
+    }
+
+    for (const row of lineup) {
+      let date = row.date;
+      if (dateShift[date]) date = dateShift[date];
+      if (new Date(`${date}T12:00:00`) < today) continue;
+
+      const location = rotaryDates.has(date) ? { ...rotaryLoc } : { ...gardenLoc };
+      const description = `Rogue River Blues Series — free Tuesday blues in downtown Rockford, 7 p.m.${relocationNote}`;
+
+      const ev = buildMusicEvent({
+        sourceId: SOURCE,
+        title: row.title,
+        date,
+        time: '7:00 PM',
+        description,
+        location,
+        url: rotaryDates.has(date) ? newsUrl : 'https://www.rockford.mi.us/concerts',
+        scrapedAt,
+      });
+      if (!seen.has(ev.id)) {
+        seen.add(ev.id);
+        events.push(ev);
+      }
+    }
+
+    console.log(`    Rockford Rogue River Blues: ${events.length} events`);
+    return createScrapeResult(SOURCE, events);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
+// =============================================================================
 // Main Scrape Function
 // =============================================================================
 
@@ -2685,6 +3166,10 @@ async function runFullScrape() {
     { name: 'Muskegon City (tagged)', fn: scrapeMuskegonCityTagged },
     { name: 'Visit Muskegon concerts', fn: scrapeVisitMuskegonConcerts },
     { name: 'The Score GR', fn: scrapeScoreGR },
+    { name: 'Ada Parks Summer Concerts', fn: scrapeAdaParksSummerConcerts },
+    { name: 'Caledonia Concert Series', fn: scrapeCaledoniaConcertSeries },
+    { name: 'Wyoming Concerts in the Park', fn: scrapeWyomingConcertsPark },
+    { name: 'Rockford Rogue River Blues', fn: scrapeRockfordRogueBlues },
   ];
 
   const results = [];

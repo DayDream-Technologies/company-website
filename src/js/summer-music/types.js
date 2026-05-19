@@ -151,6 +151,31 @@ const SOURCE_CONFIG = {
     url: 'https://www.visitmuskegon.org/events/concerts-live-music/',
     color: '#4527A0',
   },
+  'ada-parks-summer-concerts': {
+    id: 'ada-parks-summer-concerts',
+    name: 'Ada Township — Summer Concerts (Legacy Park)',
+    url:
+      'https://www.adamichigan.org/departments/parks_recreation_land_preservation/community___special_events.php',
+    color: '#558B2F',
+  },
+  'caledonia-concert-series': {
+    id: 'caledonia-concert-series',
+    name: 'Caledonia Community Green Park',
+    url: 'https://www.instagram.com/p/DX8B2FERAbM/',
+    color: '#6A1B9A',
+  },
+  'wyoming-concerts-park': {
+    id: 'wyoming-concerts-park',
+    name: 'Wyoming — Concerts in the Park',
+    url: 'https://www.wyomingmi.gov/concerts',
+    color: '#283593',
+  },
+  'rockford-rogue-blues': {
+    id: 'rockford-rogue-blues',
+    name: 'Rockford — Rogue River Blues Series',
+    url: 'https://www.rockford.mi.us/news_detail_T7_R459.php',
+    color: '#4E342E',
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)

@@ -269,5 +269,24 @@
   "1 n harbor dr|grand haven|mi": {
     "lat": 43.065065,
     "lng": -86.234138
+  },
+  "white pine trail, downtown rockford|rockford|mi": null,
+  "|rockford|mi": {
+    "lat": 43.119721,
+    "lng": -85.559604
+  },
+  "7430 river st se|ada|mi": {
+    "lat": 42.9543578,
+    "lng": -85.4846228
+  },
+  "9309 dobber wenger memorial dr|caledonia|mi": null,
+  "|caledonia|mi": {
+    "lat": 42.7891193,
+    "lng": -85.5163391
+  },
+  "squires street area (downtown rockford)|rockford|mi": null,
+  "2561 porter st sw|wyoming|mi": {
+    "lat": 42.9212516,
+    "lng": -85.7295223
   }
 }
