@@ -851,6 +851,202 @@ async function scrapeDowntownGR() {
   }
 }
 
+const MONTH_ABBR = {
+  jan: '01',
+  feb: '02',
+  mar: '03',
+  apr: '04',
+  may: '05',
+  jun: '06',
+  jul: '07',
+  aug: '08',
+  sep: '09',
+  sept: '09',
+  oct: '10',
+  nov: '11',
+  dec: '12',
+};
+
+function parseMecOccurrenceParam(url) {
+  if (!url) return null;
+  const m = url.match(/[?&]occurrence=([^&]+)/i);
+  if (!m) return null;
+  const raw = decodeURIComponent(m[1]);
+  const dateMatch = raw.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!dateMatch) return null;
+  const date = `${dateMatch[1]}-${dateMatch[2]}-${dateMatch[3]}`;
+  let time = '7:00 PM';
+  const timeMatch = raw.match(/T(\d{2}):(\d{2})/);
+  if (timeMatch) {
+    const h = parseInt(timeMatch[1], 10);
+    const min = timeMatch[2];
+    const period = h >= 12 ? 'PM' : 'AM';
+    const h12 = h % 12 || 12;
+    time = `${h12}:${min} ${period}`;
+  }
+  return { date, time };
+}
+
+function parseMecDateFromElement($, $el) {
+  const occUrl =
+    $el.find('a[href*="occurrence="]').first().attr('href') ||
+    $el.attr('href') ||
+    '';
+  const fromOcc = parseMecOccurrenceParam(occUrl);
+  if (fromOcc) return fromOcc;
+
+  const datetime = $el.find('[datetime]').first().attr('datetime');
+  if (datetime) {
+    const date = parseDate(datetime.split('T')[0] || datetime);
+    if (date) {
+      let time = '7:00 PM';
+      if (datetime.includes('T')) {
+        const tm = datetime.match(/T(\d{2}):(\d{2})/);
+        if (tm) {
+          const h = parseInt(tm[1], 10);
+          const period = h >= 12 ? 'PM' : 'AM';
+          const h12 = h % 12 || 12;
+          time = `${h12}:${tm[2]} ${period}`;
+        }
+      }
+      return { date, time };
+    }
+  }
+
+  const dateBlock = cleanText($el.find('.mec-event-date, .mec-date-details, .mec-event-detail').first().text()) ||
+    cleanText($el.text());
+  const longMatch = dateBlock.match(
+    /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})/i
+  );
+  if (longMatch) {
+    const month = MONTHS[longMatch[1].toLowerCase()];
+    if (month) {
+      return {
+        date: `${longMatch[3]}-${month}-${longMatch[2].padStart(2, '0')}`,
+        time: '7:00 PM',
+      };
+    }
+  }
+
+  const abbrMatch = dateBlock.match(/\b(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b/i);
+  if (abbrMatch) {
+    const month = MONTH_ABBR[abbrMatch[2].toLowerCase()];
+    if (month) {
+      const year = new Date().getFullYear();
+      return {
+        date: `${year}-${month}-${abbrMatch[1].padStart(2, '0')}`,
+        time: '7:00 PM',
+      };
+    }
+  }
+
+  return null;
+}
+
+function isMecEventExpired($, $el) {
+  if ($el.hasClass('mec-past') || $el.hasClass('mec-event-expired')) return true;
+  if ($el.closest('.mec-past-wrap, .mec-past-event').length) return true;
+  const label = cleanText($el.find('.mec-event-status, .mec-label').text());
+  if (/expired|cancelled|canceled/i.test(label)) return true;
+  if (/\bexpired\b/i.test(cleanText($el.find('.mec-event-title').text()))) return true;
+  return false;
+}
+
+function parseMeijerMecEventArticle($, el, sourceId, defaultLocation, scrapedAt, pageUrl) {
+  const $el = $(el);
+  if (isMecEventExpired($, $el)) return null;
+
+  const title = cleanText(
+    $el.find('h4.mec-event-title a, h3.mec-event-title a, .mec-event-title a').first().text() ||
+      $el.find('h4.mec-event-title, .mec-event-title').first().text()
+  );
+  if (!title || title.length < 2 || /^expired$/i.test(title)) return null;
+
+  let url =
+    $el.find('h4.mec-event-title a, .mec-event-title a, a[href*="/events/"]').first().attr('href') ||
+    pageUrl;
+  if (url && !url.startsWith('http')) {
+    url = `https://www.meijergardens.org${url.startsWith('/') ? '' : '/'}${url}`;
+  }
+
+  const parsed = parseMecDateFromElement($, $el);
+  if (!parsed) return null;
+
+  let time = parsed.time;
+  const timeText = cleanText($el.find('.mec-time-details, .mec-event-time, .mec-event-detail').text());
+  const timeMatch = timeText.match(/(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))/);
+  if (timeMatch) time = parseTime(timeMatch[1]);
+
+  const description =
+    'Tuesday Evening Music Club at Frederik Meijer Gardens Amphitheater. Gates open at 5 p.m.; performance at 7 p.m. Free for members, included with admission for guests.';
+
+  return buildMusicEvent({
+    sourceId,
+    title,
+    date: parsed.date,
+    time,
+    description,
+    location: { ...defaultLocation },
+    url,
+    scrapedAt,
+  });
+}
+
+/**
+ * Modern Events Calendar (MEC) list on the Tuesday Evening Music Club page.
+ * The featured/next show lives in .mec-topsec and must stay first in the results.
+ */
+function parseMeijerGardensMecEvents($, sourceId, defaultLocation, scrapedAt, pageUrl) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const events = [];
+  const seen = new Set();
+
+  function tryPush(el, fromTopsec) {
+    const ev = parseMeijerMecEventArticle($, el, sourceId, defaultLocation, scrapedAt, pageUrl);
+    if (!ev || seen.has(ev.id)) return;
+    const eventDate = new Date(`${ev.date}T12:00:00`);
+    if (eventDate < today) return;
+    if (!isSummerDate(ev.date)) return;
+    seen.add(ev.id);
+    events.push({ ...ev, _fromTopsec: fromTopsec });
+  }
+
+  $('.mec-topsec .mec-event-article, .mec-topsec article.mec-event-article').each((_, el) => {
+    tryPush(el, true);
+  });
+
+  if (events.length === 0) {
+    $('.mec-topsec')
+      .find('a[href*="occurrence="]')
+      .each((_, a) => {
+        const $a = $(a);
+        const $article = $a.closest('article.mec-event-article, .mec-event-article');
+        tryPush($article.length ? $article[0] : a, true);
+      });
+  }
+
+  $('.mec-event-article, article.mec-event-article').each((_, el) => {
+    if ($(el).closest('.mec-topsec').length) return;
+    tryPush(el, false);
+  });
+
+  $('a[href*="/events/"][href*="occurrence="]').each((_, a) => {
+    const $a = $(a);
+    if ($a.closest('.mec-topsec').length) return;
+    const $article = $a.closest('article.mec-event-article, .mec-event-article');
+    if ($article.length) return;
+    tryPush(a, false);
+  });
+
+  const topsec = events.filter((e) => e._fromTopsec);
+  const rest = events
+    .filter((e) => !e._fromTopsec)
+    .sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
+
+  return [...topsec, ...rest].map(({ _fromTopsec, ...ev }) => ev);
+}
+
 async function scrapeMeijerGardens() {
   const SOURCE = 'meijer-gardens';
   const config = SOURCE_CONFIG[SOURCE];
@@ -864,56 +1060,73 @@ async function scrapeMeijerGardens() {
     zip: '49525',
   };
 
+  const SERIES_DESCRIPTION =
+    'Tuesday Evening Music Club at Frederik Meijer Gardens Amphitheater. Gates open at 5 p.m.; performances at 7 p.m.';
+
   try {
     const html = await fetchHtml(config.url);
     const $ = loadHtml(html);
-    const events = [];
-    const seen = new Set();
     const today = new Date();
     today.setHours(0, 0, 0, 0);
+    const seen = new Set();
+    let events = [];
 
-    // Try JSON-LD first
-    const jsonLdItems = extractJsonLdEvents($);
-    for (const item of jsonLdItems) {
-      const ev = parseJsonLdEvent(item, SOURCE, scrapedAt);
-      if (ev && !seen.has(ev.id)) {
-        ev.location = { ...DEFAULT_LOCATION };
+    const mecEvents = parseMeijerGardensMecEvents($, SOURCE, DEFAULT_LOCATION, scrapedAt, config.url);
+    for (const ev of mecEvents) {
+      if (!seen.has(ev.id)) {
         seen.add(ev.id);
         events.push(ev);
       }
     }
 
-    if (events.length > 0) {
-      console.log(`    Found ${events.length} Meijer Gardens events from JSON-LD`);
-      return createScrapeResult(SOURCE, events);
+    if (mecEvents.length > 0) {
+      console.log(
+        `    Meijer Gardens: ${mecEvents.length} events from MEC calendar (.mec-topsec first: "${mecEvents[0].title}")`
+      );
     }
 
-    // Generic selectors
-    const generic = scrapeGenericEvents($, SOURCE, DEFAULT_LOCATION, scrapedAt);
-    events.push(...generic.filter(e => {
-      const d = new Date(e.date);
-      return d >= today && isSummerDate(e.date);
-    }));
+    const jsonLdItems = extractJsonLdEvents($);
+    for (const item of jsonLdItems) {
+      const ev = parseJsonLdEvent(item, SOURCE, scrapedAt);
+      if (ev && !seen.has(ev.id)) {
+        ev.location = { ...DEFAULT_LOCATION };
+        if (!ev.description) ev.description = SERIES_DESCRIPTION;
+        const eventDate = new Date(`${ev.date}T12:00:00`);
+        if (eventDate >= today && isSummerDate(ev.date)) {
+          seen.add(ev.id);
+          events.push(ev);
+        }
+      }
+    }
 
-    // If no individual events, create a placeholder series
+    if (events.length === 0) {
+      const generic = scrapeGenericEvents($, SOURCE, DEFAULT_LOCATION, scrapedAt);
+      for (const ev of generic) {
+        if (!seen.has(ev.id)) {
+          const eventDate = new Date(`${ev.date}T12:00:00`);
+          if (eventDate >= today && isSummerDate(ev.date)) {
+            seen.add(ev.id);
+            events.push(ev);
+          }
+        }
+      }
+    }
+
     if (events.length === 0) {
       const seriesTitle = 'Tuesday Evening Music Club';
-      const id = generateEventId(SOURCE, seriesTitle, '2026-06-03');
-      events.push({
-        id,
-        title: seriesTitle,
-        description: 'Free outdoor concerts every Tuesday evening at Frederik Meijer Gardens & Sculpture Park. Bring a blanket or lawn chair.',
-        date: '2026-06-03',
-        time: '6:30 PM',
-        startDateTime: toISODateTime('2026-06-03', '6:30 PM'),
-        location: DEFAULT_LOCATION,
-        url: config.url,
-        source: SOURCE,
-        category: 'outdoor',
-        isRecurring: true,
-        isFree: true,
-        scrapedAt,
-      });
+      events.push(
+        buildMusicEvent({
+          sourceId: SOURCE,
+          title: seriesTitle,
+          date: '2026-06-02',
+          time: '7:00 PM',
+          description: SERIES_DESCRIPTION,
+          location: DEFAULT_LOCATION,
+          url: config.url,
+          scrapedAt,
+          isRecurring: true,
+        })
+      );
     }
 
     console.log(`    Found ${events.length} Meijer Gardens events`);
