@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free QR Code Generator | DayDream Technologies</title>
+    <meta name="description" content="Create and customize QR codes instantly. Supports URLs, text, contact info, WiFi, and more. Choose styles, colors, and download in multiple formats. 100% free." />
+    <meta name="keywords" content="QR code generator, free QR code, custom QR code, QR code maker, QR code creator, DayDream Technologies" />
+    <meta name="author" content="DayDream Technologies" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.daydreamtechnologies.net/qr-generator.html" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Free QR Code Generator | DayDream Technologies" />
+    <meta property="og:description" content="Create and customize QR codes instantly. Supports URLs, text, contact info, WiFi, and more. 100% free." />
+    <meta property="og:image" content="https://www.daydreamtechnologies.net/logos/star-moon-logo-right.png" />
+    <meta property="og:url" content="https://www.daydreamtechnologies.net/qr-generator.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DayDream Technologies" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free QR Code Generator | DayDream Technologies" />
+    <meta name="twitter:description" content="Create and customize QR codes instantly. Supports URLs, text, contact info, WiFi, and more. 100% free." />
+    <meta name="twitter:image" content="https://www.daydreamtechnologies.net/logos/star-moon-logo-right.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/qr-generator.css">
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <script src="./src/js/main.js" defer></script>
+    <link rel="icon" href="./src/images/favicon.ico" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://www.daydreamtechnologies.net/qr-generator.html",
+                "url": "https://www.daydreamtechnologies.net/qr-generator.html",
+                "name": "Free QR Code Generator | DayDream Technologies",
+                "description": "Create and customize QR codes instantly. Supports URLs, text, contact info, WiFi, and more. 100% free.",
+                "isPartOf": {
+                    "@id": "https://www.daydreamtechnologies.net/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.daydreamtechnologies.net/qr-generator.html#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.daydreamtechnologies.net/qr-generator.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.daydreamtechnologies.net/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Projects",
+                        "item": "https://www.daydreamtechnologies.net/projects.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "QR Code Generator",
+                        "item": "https://www.daydreamtechnologies.net/qr-generator.html"
+                    }
+                ]
+            },
+            {
+                "@type": "WebApplication",
+                "name": "Free QR Code Generator",
+                "description": "A free tool for creating fully customizable QR codes. Supports various data types, styles, colors, download formats, and custom image embedding.",
+                "url": "https://www.daydreamtechnologies.net/qr-generator.html",
+                "applicationCategory": "UtilityApplication",
+                "operatingSystem": "Web Browser",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "creator": {
+                    "@id": "https://www.daydreamtechnologies.net/#organization"
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li>
+                <a class="nav_logo" href="index.html">
+                    <img class="logo_img"
+                         src="./logos/star-moon-logo-right.png"
+                         alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <div class="nav_links">
+                <li><a class="nav_link" href="index.html" title="Daydream's homepage">Home</a></li>
+                <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
+                <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
+                <li><a class="nav_link" href="nonprofits.html" title="Nonprofit services">Nonprofits</a></li>
+                <li><a class="nav_link" id="contact_form" href="contact.html" title="Contact us">Contact</a></li>
+            </div>
+        </ul>
+        <ul class="respo_navbar">
+            <li>
+                <a class="nav_logo" href="index.html">
+                    <img class="logo_img"
+                         src="./logos/star-moon-logo-right.png"
+                         alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <li>
+                <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </li>
+        </ul>
+        <ul class="dropdown">
+            <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
+            <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
+            <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
+            <li><a class="nav_link" href="nonprofits.html" title="Nonprofit services">Nonprofits</a></li>
+            <li><a class="nav_link" id="contact_form" href="contact.html" title="Contact us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="qr-app">
+        <main class="app-layout">
+            <!-- LEFT SIDEBAR -->
+            <aside class="sidebar">
+                <!-- Content Type -->
+                <section class="panel">
+                    <div class="panel-label">CONTENT TYPE</div>
+                    <div class="content-type-grid" id="contentTypeGrid">
+                        <button class="type-btn active" data-type="url"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> URL</button>
+                        <button class="type-btn" data-type="text"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Text</button>
+                        <button class="type-btn" data-type="email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email</button>
+                        <button class="type-btn" data-type="phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Phone</button>
+                        <button class="type-btn" data-type="sms"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> SMS</button>
+                        <button class="type-btn" data-type="wifi"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg> WiFi</button>
+                        <button class="type-btn" data-type="contact"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Contact</button>
+                        <button class="type-btn" data-type="location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Location</button>
+                        <button class="type-btn" data-type="custom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Custom</button>
+                    </div>
+                </section>
+
+                <!-- Content Input -->
+                <section class="panel">
+                    <div class="panel-label">CONTENT</div>
+                    <div id="contentFields">
+                        <div class="field-group" data-field="url">
+                            <label class="field-label">Website URL</label>
+                            <input type="url" class="field-input" id="inputUrl" placeholder="https://example.com" value="https://daydreamtechnologies.net">
+                        </div>
+                        <div class="field-group hidden" data-field="text">
+                            <label class="field-label">Text Content</label>
+                            <textarea class="field-input field-textarea" id="inputText" placeholder="Enter your text..."></textarea>
+                        </div>
+                        <div class="field-group hidden" data-field="email">
+                            <label class="field-label">Email Address</label>
+                            <input type="email" class="field-input" id="inputEmailTo" placeholder="recipient@example.com">
+                            <label class="field-label">Subject</label>
+                            <input type="text" class="field-input" id="inputEmailSubject" placeholder="Subject line">
+                            <label class="field-label">Body</label>
+                            <textarea class="field-input field-textarea" id="inputEmailBody" placeholder="Email body..."></textarea>
+                        </div>
+                        <div class="field-group hidden" data-field="phone">
+                            <label class="field-label">Phone Number</label>
+                            <input type="tel" class="field-input" id="inputPhone" placeholder="+1234567890">
+                        </div>
+                        <div class="field-group hidden" data-field="sms">
+                            <label class="field-label">Phone Number</label>
+                            <input type="tel" class="field-input" id="inputSmsPhone" placeholder="+1234567890">
+                            <label class="field-label">Message</label>
+                            <textarea class="field-input field-textarea" id="inputSmsMessage" placeholder="Your message..."></textarea>
+                        </div>
+                        <div class="field-group hidden" data-field="wifi">
+                            <label class="field-label">Network Name (SSID)</label>
+                            <input type="text" class="field-input" id="inputWifiSsid" placeholder="MyNetwork">
+                            <label class="field-label">Password</label>
+                            <input type="text" class="field-input" id="inputWifiPassword" placeholder="Password">
+                            <label class="field-label">Encryption</label>
+                            <select class="field-input field-select" id="inputWifiEncryption">
+                                <option value="WPA">WPA/WPA2</option>
+                                <option value="WEP">WEP</option>
+                                <option value="nopass">None</option>
+                            </select>
+                        </div>
+                        <div class="field-group hidden" data-field="contact">
+                            <label class="field-label">Full Name</label>
+                            <input type="text" class="field-input" id="inputContactName" placeholder="John Doe">
+                            <label class="field-label">Phone</label>
+                            <input type="tel" class="field-input" id="inputContactPhone" placeholder="+1234567890">
+                            <label class="field-label">Email</label>
+                            <input type="email" class="field-input" id="inputContactEmail" placeholder="john@example.com">
+                            <label class="field-label">Organization</label>
+                            <input type="text" class="field-input" id="inputContactOrg" placeholder="Company Inc.">
+                            <label class="field-label">Website</label>
+                            <input type="url" class="field-input" id="inputContactUrl" placeholder="https://example.com">
+                        </div>
+                        <div class="field-group hidden" data-field="location">
+                            <label class="field-label">Latitude</label>
+                            <input type="number" step="any" class="field-input" id="inputLat" placeholder="40.7128">
+                            <label class="field-label">Longitude</label>
+                            <input type="number" step="any" class="field-input" id="inputLng" placeholder="-74.0060">
+                        </div>
+                        <div class="field-group hidden" data-field="custom">
+                            <label class="field-label">Custom Data</label>
+                            <textarea class="field-input field-textarea" id="inputCustom" placeholder="Enter raw data..."></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Colors -->
+                <section class="panel">
+                    <div class="panel-header" data-collapse="colors">
+                        <div class="panel-header-left">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 0 0 0 20 4 4 0 0 1 0-8 4 4 0 0 0 0-8"/></svg>
+                            <span class="panel-title">Colors</span>
+                        </div>
+                        <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+                    </div>
+                    <div class="panel-body" id="colorsBody">
+                        <div class="color-row">
+                            <div class="color-group">
+                                <label class="field-label">Foreground</label>
+                                <div class="color-picker-wrap">
+                                    <input type="color" id="colorFg" value="#000000" class="color-swatch">
+                                    <input type="text" id="colorFgHex" value="#000000" class="color-hex-input">
+                                </div>
+                            </div>
+                            <div class="color-group">
+                                <label class="field-label">Background</label>
+                                <div class="color-picker-wrap">
+                                    <input type="color" id="colorBg" value="#D95204" class="color-swatch">
+                                    <input type="text" id="colorBgHex" value="#D95204" class="color-hex-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gradient-row">
+                            <label class="field-label">Gradient</label>
+                            <span class="field-sublabel">Apply gradient to modules</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="gradientToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="gradient-options hidden" id="gradientOptions">
+                            <div class="color-row">
+                                <div class="color-group">
+                                    <label class="field-label">Gradient End</label>
+                                    <div class="color-picker-wrap">
+                                        <input type="color" id="gradientEnd" value="#ff6b1a" class="color-swatch">
+                                        <input type="text" id="gradientEndHex" value="#ff6b1a" class="color-hex-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-group">
+                                <label class="field-label">Direction</label>
+                                <select class="field-input field-select" id="gradientDirection">
+                                    <option value="diagonal">Diagonal</option>
+                                    <option value="vertical">Vertical</option>
+                                    <option value="horizontal">Horizontal</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Module Style -->
+                <section class="panel">
+                    <div class="panel-header" data-collapse="moduleStyle">
+                        <div class="panel-header-left">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                            <span class="panel-title">Module Style</span>
+                        </div>
+                        <svg class="collapse-icon collapsed" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="panel-body collapsed" id="moduleStyleBody">
+                        <div class="field-group">
+                            <label class="field-label">Dot Shape</label>
+                            <div class="style-options" id="dotShapeOptions">
+                                <button class="style-btn active" data-value="square" title="Square">
+                                    <svg width="20" height="20"><rect x="4" y="4" width="12" height="12" fill="currentColor"/></svg>
+                                </button>
+                                <button class="style-btn" data-value="rounded" title="Rounded">
+                                    <svg width="20" height="20"><rect x="4" y="4" width="12" height="12" rx="3" fill="currentColor"/></svg>
+                                </button>
+                                <button class="style-btn" data-value="dots" title="Dots">
+                                    <svg width="20" height="20"><circle cx="10" cy="10" r="6" fill="currentColor"/></svg>
+                                </button>
+                                <button class="style-btn" data-value="classy-rounded" title="Classy Rounded">
+                                    <svg width="20" height="20"><rect x="4" y="4" width="12" height="12" rx="6" fill="currentColor"/></svg>
+                                </button>
+                                <button class="style-btn" data-value="extra-rounded" title="Extra Rounded">
+                                    <svg width="20" height="20"><rect x="3" y="3" width="14" height="14" rx="7" fill="currentColor"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Corner Square Style</label>
+                            <div class="style-options" id="cornerSquareOptions">
+                                <button class="style-btn active" data-value="square" title="Square">
+                                    <svg width="20" height="20"><rect x="3" y="3" width="14" height="14" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+                                </button>
+                                <button class="style-btn" data-value="extra-rounded" title="Rounded">
+                                    <svg width="20" height="20"><rect x="3" y="3" width="14" height="14" rx="4" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+                                </button>
+                                <button class="style-btn" data-value="dot" title="Dot">
+                                    <svg width="20" height="20"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Corner Dot Style</label>
+                            <div class="style-options" id="cornerDotOptions">
+                                <button class="style-btn active" data-value="square" title="Square">
+                                    <svg width="20" height="20"><rect x="6" y="6" width="8" height="8" fill="currentColor"/></svg>
+                                </button>
+                                <button class="style-btn" data-value="dot" title="Dot">
+                                    <svg width="20" height="20"><circle cx="10" cy="10" r="4" fill="currentColor"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Logo / Icon -->
+                <section class="panel">
+                    <div class="panel-header" data-collapse="logo">
+                        <div class="panel-header-left">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            <span class="panel-title">Logo / Icon</span>
+                        </div>
+                        <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+                    </div>
+                    <div class="panel-body" id="logoBody">
+                        <div class="field-group">
+                            <label class="field-label">Preset logos</label>
+                            <div class="preset-logos">
+                                <button class="preset-logo-btn preset-logo-img-btn" id="presetLogo1" title="DayDream Logo">
+                                    <img src="logos/star-moon-logo-right.png" alt="DayDream logo" class="preset-logo-thumb">
+                                </button>
+                                <button class="preset-logo-btn upload-btn" id="uploadBtn" title="Upload Logo">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                    <span>Upload</span>
+                                </button>
+                            </div>
+                            <input type="file" id="logoFileInput" accept="image/*" class="hidden">
+                        </div>
+                        <div class="logo-loaded" id="logoLoaded">
+                            <div class="logo-loaded-info">
+                                <img id="logoPreviewThumb" src="logos/star-moon-logo-right.png" alt="Logo" class="logo-thumb">
+                                <div>
+                                    <div class="logo-loaded-title">Logo loaded</div>
+                                    <div class="logo-loaded-name" id="logoFileName">star-moon-logo-right.png</div>
+                                </div>
+                            </div>
+                            <button class="logo-remove-btn" id="logoRemoveBtn" title="Remove logo">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </button>
+                        </div>
+                        <div class="field-group" id="logoSizeGroup">
+                            <div class="slider-header">
+                                <label class="field-label">Logo Size</label>
+                                <span class="slider-value" id="logoSizeValue">25%</span>
+                            </div>
+                            <input type="range" id="logoSize" min="10" max="50" value="25" class="range-slider">
+                        </div>
+                        <div class="field-group" id="logoPaddingGroup">
+                            <div class="slider-header">
+                                <label class="field-label">Padding</label>
+                                <span class="slider-value" id="logoPaddingValue">5px</span>
+                            </div>
+                            <input type="range" id="logoPadding" min="0" max="20" value="5" class="range-slider">
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- RIGHT MAIN -->
+            <section class="main-content">
+                <!-- Live Preview -->
+                <div class="preview-section">
+                    <div class="section-label">LIVE PREVIEW</div>
+                    <div class="qr-preview-container">
+                        <div id="qrPreview" class="qr-preview"></div>
+                    </div>
+                    <p class="preview-url" id="previewUrl">https://daydreamtechnologies.net</p>
+                </div>
+
+                <!-- Readability Score -->
+                <div class="qr-card">
+                    <div class="qr-card-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        <span class="qr-card-title">Readability Score</span>
+                        <span class="score-badge" id="scoreBadge">Excellent</span>
+                    </div>
+                    <div class="score-bar">
+                        <div class="score-bar-fill" id="scoreBarFill"></div>
+                    </div>
+                </div>
+
+                <!-- Scan Simulation -->
+                <div class="qr-card">
+                    <div class="qr-card-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        <span class="qr-card-title">Scan Simulation</span>
+                    </div>
+                    <button class="scan-btn" id="scanBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        Test QR Code
+                    </button>
+                </div>
+
+                <!-- Download -->
+                <div class="qr-card">
+                    <div class="qr-card-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        <span class="qr-card-title">Download</span>
+                        <div class="download-size">
+                            <select id="downloadSize" class="size-select">
+                                <option value="256">256&times;256px</option>
+                                <option value="512" selected>512&times;512px</option>
+                                <option value="1024">1024&times;1024px</option>
+                                <option value="2048">2048&times;2048px</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="download-grid">
+                        <button class="download-btn" data-format="png">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            PNG
+                        </button>
+                        <button class="download-btn" data-format="svg">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            SVG
+                        </button>
+                        <button class="download-btn" data-format="jpeg">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            JPG
+                        </button>
+                        <button class="download-btn" data-format="webp">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 12l3-3 3 3 4-4"/></svg>
+                            WebP
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer_left">
+            <a class="footer_link" href="index.html">
+                <img class="linkdn" src="./logos/star-moon-logo-right.png" alt="Daydream Technologies" />
+                DayDream Technologies LLC
+            </a>
+            <p class="footer_copyright">© 2026 DayDream Technologies LLC. All rights reserved.</p>
+        </div>
+        <div class="footer_links">
+            <a class="footer_link footer_social" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/" title="Follow us on LinkedIn">
+                <img src="./src/images/alt-linkedin.jpg" alt="LinkedIn" class="social-icon" />
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/qr-code-styling@1.6.0-rc.1/lib/qr-code-styling.js"></script>
+    <script src="./src/js/qr-generator/app.js"></script>
+</body>
+</html>
