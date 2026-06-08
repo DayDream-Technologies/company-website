@@ -288,5 +288,9 @@
   "2561 porter st sw|wyoming|mi": {
     "lat": 42.9212516,
     "lng": -85.7295223
+  },
+  "3520 palmer drive|saugatuck|mi": {
+    "lat": 42.6714324,
+    "lng": -86.1482708
   }
 }
