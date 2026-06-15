@@ -1,372 +1,6 @@
 {
   "events": [
     {
-      "id": "south-kent-chamber-government-matters-2026-06-08",
-      "title": "Government Matters",
-      "description": "Enter your email address below to receive a reminder message.",
-      "date": "2026-06-08",
-      "time": "7:45 AM",
-      "startDateTime": "2026-06-08T07:45:00",
-      "location": {
-        "name": "Monthly meeting rotate from Wyoming City Hall and Kentwood City Hall See monthly agenda for meeting locations. Kentwood City Hall, 4900 Breton Rd SE Kentwood, MI (1/2 mi. South of 44th St; 1/2 mi North of 54th St.) in April, May, June, October, November, & December Wyoming City Hall Wyoming City Hall, 1155 28th St SW, Wyoming Mi (Corner of 28th and Michael) in January, February, March, July, August, & September 4900 Breton Road Kentwood MI 49508",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/government-matters-06-08-2026-13831",
-      "source": "south-kent-chamber",
-      "category": "other",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
-      "endDateTime": "2026-06-08T21:30:00"
-    },
-    {
-      "id": "msu-foundation-capital-area-manufacturing-council-visits-the-van",
-      "title": "Capital Area Manufacturing Council visits the VanCamp Incubator",
-      "description": "MSU Research Foundation's Research Parks team will give a behind-the-scenes tour to Capital Area Manufacturing Council (CAMC)'s members. CAMC is a membership association that champions activities and creates an environment to build upon Mid-Michigan's manufacturing competitiveness.",
-      "date": "2026-06-09",
-      "time": "9:00 AM",
-      "startDateTime": "2026-06-09T09:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://msufoundation.org/mobility-summit-2026/",
-      "source": "msu-foundation",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:28.850Z"
-    },
-    {
-      "id": "right-place-developer-day-2026-2026-06-09",
-      "title": "Developer Day 2026",
-      "description": "Developer Day brings the full development ecosystem to the table for a day of networking, education, and opportunity site visits throughout Kent County. Whether you're focused on residential, commercial, or industrial development, this is your chance to see the region's potential up close.",
-      "date": "2026-06-09",
-      "time": "11:30 AM – 5:00 PM",
-      "startDateTime": "2026-06-09T11:30:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/developer-day-2026",
-      "source": "right-place",
-      "category": "networking",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
-      "endDateTime": "2026-06-09T17:00:00"
-    },
-    {
-      "id": "right-place-council-connections-2026-06-09",
-      "title": "Council Connections",
-      "description": "This is a RPI council member-exclusive event.",
-      "date": "2026-06-09",
-      "time": "2:00 PM – 5:00 PM",
-      "startDateTime": "2026-06-09T14:00:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/council-connections",
-      "source": "right-place",
-      "category": "meetup",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
-      "endDateTime": "2026-06-09T17:00:00"
-    },
-    {
-      "id": "south-kent-chamber-connect-over-coffee-2026-06-10",
-      "title": "Connect Over Coffee",
-      "description": "Enter your email address below to receive a reminder message.",
-      "date": "2026-06-10",
-      "time": "8:00 AM",
-      "startDateTime": "2026-06-10T08:00:00",
-      "location": {
-        "name": "The Stray 4253 Division Ave South Grand Rapids MI 49548",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/connect-over-coffee-06-10-2026-13870",
-      "source": "south-kent-chamber",
-      "category": "other",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
-      "endDateTime": "2026-06-10T09:00:00"
-    },
-    {
-      "id": "bamboo-heartside-business-association-vision-session-2026-06-10",
-      "title": "Heartside Business Association: Vision Session",
-      "description": "Business owners, city officials, NGO leaders and others with a stake in Heartside's economic growth: Let's plot the future together!",
-      "date": "2026-06-10",
-      "time": "9:00 AM",
-      "startDateTime": "2026-06-10T09:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/heartside-business-association-vision-session",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
-    },
-    {
-      "id": "south-kent-chamber-the-60-second-edge-2026-06-10",
-      "title": "The 60 Second Edge",
-      "description": "In today’s fast-paced corporate environment, expertise is the baseline, and visibility is the catalyst. Research shows you have less than a minute to establish authority before an audience (or a room of peers) decides if you are a leader to follow or a voice to talk over.",
-      "date": "2026-06-10",
-      "time": "11:30 AM",
-      "startDateTime": "2026-06-10T11:30:00",
-      "location": {
-        "name": "Gypsum Grill & Event Center 330 Covell Ave. SW Grand Rapids, MI 49534 United States",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/the-60-second-edge-14048",
-      "source": "south-kent-chamber",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
-      "endDateTime": "2026-06-10T14:00:00"
-    },
-    {
-      "id": "bamboo-workshop-wednesdays-your-24-7-ai-staff-inside-a-working-m",
-      "title": "Workshop Wednesdays: Your 24/7 AI Staff: Inside A Working Multi-Agent System",
-      "description": "Most people use AI as a single tool — one chat, one question, one answer. But what happens when you give AI agents distinct roles, specialties, and the ability to hand work off to each other?",
-      "date": "2026-06-10",
-      "time": "12:00 PM",
-      "startDateTime": "2026-06-10T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/workshop-wednesdays-your-24-7-ai-staff-inside-a-working-multi-agent-system",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
-    },
-    {
-      "id": "right-place-west-michigan-intern-connect-2026-06-10",
-      "title": "West Michigan Intern Connect",
-      "description": "Business and economic development event hosted by The Right Place.",
-      "date": "2026-06-10",
-      "time": "1:00 PM – 5:00 PM",
-      "startDateTime": "2026-06-10T13:00:00",
-      "location": {
-        "name": "Amway Grand Plaza",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9689,
-        "lng": -85.6772
-      },
-      "url": "https://www.rightplace.org/events/west-michigan-intern-connect",
-      "source": "right-place",
-      "category": "meetup",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
-      "endDateTime": "2026-06-10T17:00:00"
-    },
-    {
-      "id": "msu-foundation-scale-up-session-pitch-practice-2026-06-10",
-      "title": "Scale Up! Session: Pitch Practice",
-      "description": "A successful pitch presentation should evolve as your startup grows. Developing this skill is essential for communicating your value proposition, building credibility, securing partnerships, and attracting investors. Join us to practice your pitch and receive expert feedback from the MSU Research Foundation venture team and fellow founders.",
-      "date": "2026-06-10",
-      "time": "4:30 PM",
-      "startDateTime": "2026-06-10T16:30:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7320307,
-        "lng": -84.4721678
-      },
-      "url": "https://www.eventbrite.com/e/pitch-practice-tickets-1989234277272?aff=oddtdtcreator&keep_tld=true",
-      "source": "msu-foundation",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:28.850Z"
-    },
-    {
-      "id": "south-kent-chamber-division-avenue-business-association-2026-06-",
-      "title": "Division Avenue Business Association",
-      "description": "Join us at The Stray on the second Thursday of every month to meet as a community of businesses and discuss topics of importance to the businesses along the Division Avenue business district.",
-      "date": "2026-06-11",
-      "time": "8:00 AM",
-      "startDateTime": "2026-06-11T08:00:00",
-      "location": {
-        "name": "The Stray 4253 Division Ave S Suite A, Grand Rapids, MI 49548",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/division-avenue-business-association-06-11-2026-13206",
-      "source": "south-kent-chamber",
-      "category": "other",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
-      "endDateTime": "2026-06-11T09:00:00"
-    },
-    {
-      "id": "south-kent-chamber-west-michigan-m365-user-group-2026-q2-meetup-",
-      "title": "West Michigan M365 User Group 2026 Q2 Meetup",
-      "description": "Date: Thursday, June 11, 2026 Time: 11:00am – 1:30pm (includes Q&A time) Cost: Free + Lunch included Location: In Person @ Grand Rapids Chamber of Commerce Address: 250 Monroe Ave NW, Grand Rapids, MI 49503",
-      "date": "2026-06-11",
-      "time": "11:00 AM",
-      "startDateTime": "2026-06-11T11:00:00",
-      "location": {
-        "name": "250 Monroe Ave NW Grand Rapids MI 49503",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/west-michigan-m365-user-group-2026-q2-meetup-14022",
-      "source": "south-kent-chamber",
-      "category": "meetup",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
-      "endDateTime": "2026-06-11T13:30:00"
-    },
-    {
-      "id": "south-kent-chamber-ribbon-cutting-grand-opening-of-lonia-s-world",
-      "title": "Ribbon Cutting Grand Opening of LoNia's World Center",
-      "description": "From 1:00–4:00 PM, enjoy an afternoon filled with uplifting music, delicious refreshments, interactive games, and exciting prize giveaways. Explore our beautiful new center, meet the passionate team behind the mission, and experience firsthand the warmth and joy that define LoNia’s World. Whether you’re a community partner, a family member, a supporter, or a curious neighbor, you’ll feel right at home the moment you walk in.",
-      "date": "2026-06-11",
-      "time": "1:00 PM",
-      "startDateTime": "2026-06-11T13:00:00",
-      "location": {
-        "name": "3305 East Paris Ave SE Kentwood, MI 49512",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/ribbon-cutting-grand-opening-of-lonia-s-world-center-14046",
-      "source": "south-kent-chamber",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
-      "endDateTime": "2026-06-11T16:00:00"
-    },
-    {
-      "id": "south-kent-chamber-multi-chamber-after-hours-event-bay-pointe-la",
-      "title": "Multi Chamber After Hours Event - Bay Pointe Lakefront Pavilion",
-      "description": "Enter your email address below to receive a reminder message.",
-      "date": "2026-06-11",
-      "time": "5:00 PM",
-      "startDateTime": "2026-06-11T17:00:00",
-      "location": {
-        "name": "About Bay Pointe Bay Pointe Inn is a family-owned, award-winning full-service resort nestled along the south shore of Gun Lake. Offering state-of-the-art meeting facilities, flexible event spaces, and relaxing outdoor settings, Bay Pointe creates a unique experience for everything from executive retreats to social celebrations. With five versatile venues, including lakefront spaces and a wooded ballroom accommodating up to 300 guests, the property is designed to host groups of all sizes. Guests can enjoy boutique-style hotel rooms, spacious two-bedroom cottages, and unique larger accommodations like the BoatHouse Villa overlooking the lake. An experienced hospitality team specializes in seamless planning and execution for meetings, retreats, weddings, and events from 10 to 300 guests. The onsite Bay Pointe Bar & Grille features stunning lake views, handcrafted cocktails, and seasonal cuisine year-round. Bay Pointe also proudly offers offsite catering services within a 25-mile radius, bringing the same exceptional food and hospitality directly to your venue or event location. Bay Pointe is truly one of Michigan’s most distinctive resort destinations. About the Lakefront Pavilion: A perfect setting for a unique waterfront open-air meeting space, luncheon, group outing, group cookout, etc. available for groups up to 200 May-October. Located literally just steps away from the lake, this space features glorious lawn and gardens, serene waterfall with koi pond, outdoor patio with gas fire pit and torches, ceiling fans, clear roll-down sides and amazing panoramic views of Gun Lake. Additional information can be viewed at www.baypointeinn.com 11456 Marsh Road Shelbyville MI 49344",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/multi-chamber-after-hours-event-bay-pointe-lakefront-pavilion-14033",
-      "source": "south-kent-chamber",
-      "category": "other",
-      "isRecurring": true,
-      "isFree": false,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
-      "endDateTime": "2026-06-11T19:00:00"
-    },
-    {
-      "id": "gr-junior-chamber-june-monthly-leadership-exchange-save-the-date",
-      "title": "June Monthly Leadership Exchange - Save the Date!",
-      "description": "Your monthly boost of inspiration, connection, and leadership growth! Every session delivers high-value insights, dynamic speakers, and actionable takeaways to help you lead with confidence. New topic, new energy, every month.",
-      "date": "2026-06-11",
-      "time": "5:30 PM",
-      "startDateTime": "2026-06-11T17:30:00",
-      "location": {
-        "name": "Grand Rapids Junior Chamber",
-        "address": "250 Monroe Ave NW Ste 150",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6681
-      },
-      "url": "https://www.grjuniorchamber.com/event-details-registration/june-monthly-leadership-exchange-save-the-date",
-      "source": "gr-junior-chamber",
-      "category": "networking",
-      "isRecurring": true,
-      "isFree": false,
-      "scrapedAt": "2026-06-08T12:27:42.972Z"
-    },
-    {
-      "id": "right-place-radical-hospitality-connect-sip-explore-ada-friday-j",
-      "title": "Radical Hospitality: Connect, Sip, & Explore Ada | Friday, June 12",
-      "description": "Come early, connect over drinks and bites, and head out to Beers at the Bridge together!",
-      "date": "2026-06-12",
-      "time": "4:00 PM – 9:00 PM",
-      "startDateTime": "2026-06-12T16:00:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/radical-hospitality-connect-dine-explore-ada-friday-june-12",
-      "source": "right-place",
-      "category": "meetup",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
-      "endDateTime": "2026-06-12T21:00:00"
-    },
-    {
       "id": "springgr-bootcamp-de-marketing-digital-2026-06-15",
       "title": "Bootcamp de Marketing Digital",
       "description": "de 6 semanas – Cupos limitados ¿Sientes que tu negocio tiene potencial pero no sabes cómo organizar tu marketing, atraer más clientes o usar herramientas digitales sin sentirte abrumado(a)? Este […]",
@@ -387,7 +21,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:49.288Z"
+      "scrapedAt": "2026-06-15T13:54:42.495Z"
     },
     {
       "id": "south-kent-chamber-speak-with-authority-networking-that-clicks-2",
@@ -409,7 +43,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
       "endDateTime": "2026-06-16T12:00:00"
     },
     {
@@ -431,7 +65,29 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "msu-foundation-summer-networking-nights-2026-06-17",
+      "title": "Summer Networking Nights",
+      "description": "Connect with founders on the rooftop deck to share updates and build your network within the entrepreneurial community. HOSTED BY: MSU Research Foundation",
+      "date": "2026-06-17",
+      "time": "4:30 PM",
+      "startDateTime": "2026-06-17T16:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/summer-networking-nights-tickets-1990574030510?aff=oddtdtcreator&keep_tld=true",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:24.287Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-06-18",
@@ -453,7 +109,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "grand-rapids-org-ending-homelessness-a-celebration-of-impact-202",
@@ -475,7 +131,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "startup-garage-founder-invitational-golf-outing-2026-06-18",
@@ -498,7 +154,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:43.975Z"
+      "scrapedAt": "2026-06-15T13:54:38.208Z"
     },
     {
       "id": "right-place-candid-conversations-june-18-2026-06-18",
@@ -521,7 +177,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
       "endDateTime": "2026-06-18T15:00:00"
     },
     {
@@ -543,7 +199,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "south-kent-chamber-3rd-friday-networking-luncheon-south-kent-cha",
@@ -565,7 +221,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
       "endDateTime": "2026-06-19T13:00:00"
     },
     {
@@ -587,7 +243,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "bamboo-power-on-the-rooftop-sculpt-108-2026-06-21",
@@ -608,7 +264,30 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "south-kent-chamber-fathers-day-dogs-and-brews-2026-06-22",
+      "title": "Fathers Day Dogs and Brews",
+      "description": "Hot dogs from Yesterdog, cold drinks, and real talk about dementia? That’s one Father’s Day worth showing up for, and the Courtyard at Wyoming is hosting it. The senior living community is holding a Father’s Day Dogs and Brews event on Monday, June 22, at noon, and families are invited to pull up a seat.",
+      "date": "2026-06-22",
+      "time": "12:00 PM",
+      "startDateTime": "2026-06-22T12:00:00",
+      "location": {
+        "name": "4763 Wilson Ave Suite C Grandville MI 49418",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/fathers-day-dogs-and-brews-14055",
+      "source": "south-kent-chamber",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
+      "endDateTime": "2026-06-22T14:00:00"
     },
     {
       "id": "grand-rapids-org-making-it-work-the-essentials-for-professional-",
@@ -630,7 +309,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "south-kent-chamber-why-are-michigan-s-energy-prices-so-high-2026",
@@ -652,7 +331,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:34.355Z",
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
       "endDateTime": "2026-06-23T11:00:00"
     },
     {
@@ -674,7 +353,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-06-24",
@@ -696,7 +375,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-06-24",
@@ -717,7 +396,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-what-if-your-work-felt-more-like-you-",
@@ -738,7 +417,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "grand-rapids-org-chamber-issues-forum-childcare-public-spaces-fo",
@@ -760,7 +439,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "bamboo-don-t-quit-do-it-in-both-life-business-2026-06-25",
@@ -781,7 +460,76 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "south-kent-chamber-thirsty-thursday-2026-06-25",
+      "title": "Thirsty Thursday",
+      "description": "Make meaningful connections, spark new ideas, and unwind with fellow professionals at Thirsty Thursday, one of our most popular networking events!",
+      "date": "2026-06-25",
+      "time": "4:30 PM",
+      "startDateTime": "2026-06-25T16:30:00",
+      "location": {
+        "name": "Location tbd",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/thirsty-thursday-14054",
+      "source": "south-kent-chamber",
+      "category": "networking",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
+      "endDateTime": "2026-06-25T18:00:00"
+    },
+    {
+      "id": "south-kent-chamber-wyoming-business-leaders-2026-06-30",
+      "title": "Wyoming Business Leaders",
+      "description": "Wyoming Business Leaders Meets the 4th Tuesday of every month",
+      "date": "2026-06-30",
+      "time": "8:00 AM",
+      "startDateTime": "2026-06-30T08:00:00",
+      "location": {
+        "name": "Marge's Donut Den 1751 28th St. SW Wyoming",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/wyoming-business-leaders-06-30-2026-13901",
+      "source": "south-kent-chamber",
+      "category": "other",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
+      "endDateTime": "2026-06-30T21:00:00"
+    },
+    {
+      "id": "south-kent-chamber-b-o-b-business-owners-breakfast-2026-07-01",
+      "title": "B.O.B. Business Owners Breakfast",
+      "description": "Enter your email address below to receive a reminder message.",
+      "date": "2026-07-01",
+      "time": "7:30 AM",
+      "startDateTime": "2026-07-01T07:30:00",
+      "location": {
+        "name": "South Kent Chamber Office 4415 Byron Center Ave Wyoming MII 49519",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/b-o-b-business-owners-breakfast-07-01-2026-13858",
+      "source": "south-kent-chamber",
+      "category": "other",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
+      "endDateTime": "2026-07-01T09:00:00"
     },
     {
       "id": "bamboo-workshop-wednesdays-demystify-ai-buzzwords-to-business-va",
@@ -802,7 +550,51 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "bamboo-start-garden-first-fridays-2026-07-03",
+      "title": "Start Garden First Fridays",
+      "description": "Where ideas, people and momentum come together for one night.",
+      "date": "2026-07-03",
+      "time": "5:00 PM",
+      "startDateTime": "2026-07-03T17:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/start-garden-first-fridays-3",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "south-kent-chamber-connect-over-coffee-2026-07-08",
+      "title": "Connect Over Coffee",
+      "description": "Enter your email address below to receive a reminder message.",
+      "date": "2026-07-08",
+      "time": "8:00 AM",
+      "startDateTime": "2026-07-08T08:00:00",
+      "location": {
+        "name": "South Kent Chamber Office",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/connect-over-coffee-07-08-2026-13871",
+      "source": "south-kent-chamber",
+      "category": "other",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
+      "endDateTime": "2026-07-08T09:00:00"
     },
     {
       "id": "bamboo-workshop-wednesdays-building-effective-nonprofit-boards-2",
@@ -823,7 +615,51 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "south-kent-chamber-division-avenue-business-association-2026-07-",
+      "title": "Division Avenue Business Association",
+      "description": "Join us at The Stray on the second Thursday of every month to meet as a community of businesses and discuss topics of importance to the businesses along the Division Avenue business district.",
+      "date": "2026-07-09",
+      "time": "8:00 AM",
+      "startDateTime": "2026-07-09T08:00:00",
+      "location": {
+        "name": "The Stray 4253 Division Ave S Suite A, Grand Rapids, MI 49548",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/division-avenue-business-association-07-09-2026-13207",
+      "source": "south-kent-chamber",
+      "category": "other",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
+      "endDateTime": "2026-07-09T09:00:00"
+    },
+    {
+      "id": "bamboo-lunch-learn-make-your-core-values-count-2026-07-09",
+      "title": "Lunch & Learn: Make Your Core Values Count",
+      "description": "Free workshop with Greg Giniel: define core values, build hiring tools, and align your team to grow your startup with confidence.",
+      "date": "2026-07-09",
+      "time": "11:30 AM",
+      "startDateTime": "2026-07-09T11:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/lunch-learn-make-your-core-values-count",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "startup-garage-lunch-learn-make-your-core-values-count-2026-07-0",
@@ -846,7 +682,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:43.975Z"
+      "scrapedAt": "2026-06-15T13:54:38.208Z"
     },
     {
       "id": "gr-junior-chamber-july-monthly-leadership-exchange-save-the-date",
@@ -869,7 +705,52 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-06-08T12:27:42.972Z"
+      "scrapedAt": "2026-06-15T13:54:37.204Z"
+    },
+    {
+      "id": "south-kent-chamber-government-matters-2026-07-13",
+      "title": "Government Matters",
+      "description": "Enter your email address below to receive a reminder message.",
+      "date": "2026-07-13",
+      "time": "7:45 AM",
+      "startDateTime": "2026-07-13T07:45:00",
+      "location": {
+        "name": "Monthly meeting rotate from Wyoming City Hall and Kentwood City Hall See monthly agenda for meeting locations. Kentwood City Hall, 4900 Breton Rd SE Kentwood, MI (1/2 mi. South of 44th St; 1/2 mi North of 54th St.) in April, May, June, October, November, & December Wyoming City Hall Wyoming City Hall, 1155 28th St SW, Wyoming Mi (Corner of 28th and Michael) in January, February, March, July, August, & September 4900 Breton Road Kentwood MI 49508",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/government-matters-07-13-2026-13832",
+      "source": "south-kent-chamber",
+      "category": "other",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:29.725Z",
+      "endDateTime": "2026-07-13T21:30:00"
+    },
+    {
+      "id": "msu-foundation-summer-networking-nights-2026-07-14",
+      "title": "Summer Networking Nights",
+      "description": "Connect with founders on the rooftop deck to share updates and build your network within the entrepreneurial community. HOSTED BY: MSU Research Foundation",
+      "date": "2026-07-14",
+      "time": "5:00 PM",
+      "startDateTime": "2026-07-14T17:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/summer-networking-nights-tickets-1990574030510?aff=oddtdtcreator&keep_tld=true",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:24.287Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-clarify-your-message-create-a-one-lin",
@@ -890,7 +771,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "grand-rapids-org-business-exchange-luncheon-2026-07-16",
@@ -912,7 +793,28 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
+    },
+    {
+      "id": "bamboo-marketing-branding-masterclass-2026-07-16",
+      "title": "Marketing & Branding Masterclass",
+      "description": "A hands‑on marketing and branding masterclass with proven strategies and a clear plan you can implement immediately.",
+      "date": "2026-07-16",
+      "time": "12:00 PM",
+      "startDateTime": "2026-07-16T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/marketing-branding-masterclass",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "startup-garage-marketing-branding-masterclass-2026-07-16",
@@ -935,7 +837,28 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:43.975Z"
+      "scrapedAt": "2026-06-15T13:54:38.208Z"
+    },
+    {
+      "id": "bamboo-members-coffee-hour-with-otono-2026-07-17",
+      "title": "Members Coffee Hour with Otono",
+      "description": "Join us for a Members-Only Coffee Hour. Connect with the community before the day gets going. Our neighbors from Otono will be on-site slinging the coffee and hanging out with us. If you've been curious about what they do, this is a great chance to chat with them.",
+      "date": "2026-07-17",
+      "time": "9:30 AM",
+      "startDateTime": "2026-07-17T09:30:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/members-coffee-hour-with-otono",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "grand-rapids-org-the-chamber-open-2026-07-20",
@@ -957,7 +880,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "msu-foundation-street-food-connect-2026-07-21",
@@ -979,7 +902,52 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:28.850Z"
+      "scrapedAt": "2026-06-15T13:54:24.287Z"
+    },
+    {
+      "id": "bamboo-grove-2026-07-23",
+      "title": "Grove",
+      "description": "​Grove is a two-day retreat where founders, creators, and operators step away from the day-to-day grind to work on their businesses — together.",
+      "date": "2026-07-23",
+      "time": "9:00 AM",
+      "startDateTime": "2026-07-23T09:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/grove",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "right-place-best-practices-selling-marketing-on-value-not-price-",
+      "title": "Best Practices: Selling & Marketing on Value (Not Price) – Webinar #1",
+      "description": "In this opening session, Doug Von Koenig explores the concept of value and what it means in a business context, how it is created, and how sales and marketing professionals can effectively communicate it to their clients.",
+      "date": "2026-07-23",
+      "time": "9:30 AM – 10:15 AM",
+      "startDateTime": "2026-07-23T09:30:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/best-practices-selling-marketing-on-value-not-price-webinar-1",
+      "source": "right-place",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
+      "endDateTime": "2026-07-23T10:15:00"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-07-23",
@@ -1000,7 +968,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "grand-rapids-org-talent-human-resources-workshop-2026-07-28",
@@ -1022,7 +990,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-07-29",
@@ -1044,7 +1012,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "right-place-q3-technology-exchange-defense-and-aerospace-breakfa",
@@ -1067,7 +1035,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
       "endDateTime": "2026-07-29T11:00:00"
     },
     {
@@ -1089,7 +1057,28 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "bamboo-workshop-strategic-vision-mapping-2026-08-05",
+      "title": "Workshop: Strategic Vision Mapping",
+      "description": "Build a clear, compelling vision map and elevator pitch to align your team, sharpen strategy, and communicate with confidence.",
+      "date": "2026-08-05",
+      "time": "12:00 PM",
+      "startDateTime": "2026-08-05T12:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/workshop-strategic-vision-mapping",
+      "source": "bamboo",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "startup-garage-workshop-strategic-vision-mapping-2026-08-05",
@@ -1112,7 +1101,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:43.975Z"
+      "scrapedAt": "2026-06-15T13:54:38.208Z"
     },
     {
       "id": "grand-rapids-org-west-michigan-housing-summit-2026-08-06",
@@ -1134,7 +1123,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "right-place-candid-conversations-august-6-2026-08-06",
@@ -1157,7 +1146,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
       "endDateTime": "2026-08-06T17:00:00"
     },
     {
@@ -1180,7 +1169,51 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
+    },
+    {
+      "id": "gr-junior-chamber-women-s-empowerment-summit-2026-08-07",
+      "title": "Women's Empowerment Summit",
+      "description": "The Women's Empowerment Summit brings together ambitious women for a transformative experience focused on leadership, confidence, wellness, financial empowerment, and meaningful connection.",
+      "date": "2026-08-07",
+      "time": "8:00 AM",
+      "startDateTime": "2026-08-07T08:00:00",
+      "location": {
+        "name": "Grand Rapids Junior Chamber",
+        "address": "250 Monroe Ave NW Ste 150",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6681
+      },
+      "url": "https://www.grjuniorchamber.com/event-details-registration/womens-empowerment-summit",
+      "source": "gr-junior-chamber",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-06-15T13:54:37.204Z"
+    },
+    {
+      "id": "bamboo-founders-first-fridays-2026-08-07",
+      "title": "Founders First Fridays",
+      "description": "​The first Friday of each month, founders get together to connect, share their challenges, and be resources for each other. This is a casual meetup with no set agenda, just Founders helping Founders.",
+      "date": "2026-08-07",
+      "time": "10:00 AM",
+      "startDateTime": "2026-08-07T10:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/founders-first-fridays-23-copy",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "msu-foundation-mobility-summit-2026-08-11",
@@ -1202,7 +1235,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:28.850Z"
+      "scrapedAt": "2026-06-15T13:54:24.287Z"
     },
     {
       "id": "grand-rapids-org-chamber-101-2026-08-12",
@@ -1224,7 +1257,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:33.301Z"
+      "scrapedAt": "2026-06-15T13:54:28.677Z"
     },
     {
       "id": "right-place-manufacturers-council-tour-of-best-practice-bissell-",
@@ -1247,8 +1280,54 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
       "endDateTime": "2026-08-12T10:00:00"
+    },
+    {
+      "id": "right-place-radical-hospitality-tacos-connections-community-wedn",
+      "title": "Radical Hospitality: Tacos, Connections, & Community | Wednesday, August 12",
+      "description": "Join us for an evening of great food, meaningful connections, and opportunities to engage with the people and resources that make Grand Rapids a welcoming place to call home.",
+      "date": "2026-08-12",
+      "time": "4:00 PM – 6:00 PM",
+      "startDateTime": "2026-08-12T16:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/radical-hospitality-tacos-connections-community-wednesday-august-12",
+      "source": "right-place",
+      "category": "meetup",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
+      "endDateTime": "2026-08-12T18:00:00"
+    },
+    {
+      "id": "msu-foundation-summer-networking-nights-2026-08-12",
+      "title": "Summer Networking Nights",
+      "description": "Connect with founders on the rooftop deck to share updates and build your network within the entrepreneurial community. HOSTED BY: MSU Research Foundation",
+      "date": "2026-08-12",
+      "time": "5:00 PM",
+      "startDateTime": "2026-08-12T17:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7320307,
+        "lng": -84.4721678
+      },
+      "url": "https://www.eventbrite.com/e/summer-networking-nights-tickets-1990574030510?aff=oddtdtcreator&keep_tld=true",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:24.287Z"
     },
     {
       "id": "right-place-place-matters-summit-2026-2026-08-13",
@@ -1271,7 +1350,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
       "endDateTime": "2026-08-13T17:30:00"
     },
     {
@@ -1295,7 +1374,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-06-08T12:27:42.972Z"
+      "scrapedAt": "2026-06-15T13:54:37.204Z"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-08-18",
@@ -1316,7 +1395,31 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "right-place-best-practices-build-client-agreement-around-the-pro",
+      "title": "Best Practices: Build Client Agreement Around the Problems You Solve – Webinar #2",
+      "description": "This session examines how the right questions can shape a client's perception of your solution and build genuine agreement around the problems you solve.",
+      "date": "2026-08-20",
+      "time": "9:30 AM – 10:15 AM",
+      "startDateTime": "2026-08-20T09:30:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/best-practices-selling-marketing-on-value-not-price-webinar-1-2",
+      "source": "right-place",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
+      "endDateTime": "2026-08-20T10:15:00"
     },
     {
       "id": "bamboo-crashthatcourse-show-tell-2026-08-25",
@@ -1337,7 +1440,52 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:31.209Z"
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "bamboo-founders-first-fridays-2026-09-04",
+      "title": "Founders First Fridays",
+      "description": "​The first Friday of each month, founders get together to connect, share their challenges, and be resources for each other. This is a casual meetup with no set agenda, just Founders helping Founders.",
+      "date": "2026-09-04",
+      "time": "10:00 AM",
+      "startDateTime": "2026-09-04T10:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/founders-first-fridays-25",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
+    },
+    {
+      "id": "right-place-best-practices-getting-clients-to-focus-on-value-not",
+      "title": "Best Practices: Getting Clients to Focus On Value, Not Price – Webinar #3",
+      "description": "The final session addresses one of the most persistent challenges in sales: maintaining price integrity in competitive markets.",
+      "date": "2026-09-24",
+      "time": "9:30 AM – 10:15 AM",
+      "startDateTime": "2026-09-24T09:30:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/best-practices-selling-marketing-on-value-not-price-webinar-1-2-2",
+      "source": "right-place",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
+      "endDateTime": "2026-09-24T10:15:00"
     },
     {
       "id": "startup-garage-workshop-the-world-of-psychometrics-2026-09-30",
@@ -1360,7 +1508,28 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:43.975Z"
+      "scrapedAt": "2026-06-15T13:54:38.208Z"
+    },
+    {
+      "id": "bamboo-founders-first-fridays-2026-10-02",
+      "title": "Founders First Fridays",
+      "description": "​The first Friday of each month, founders get together to connect, share their challenges, and be resources for each other. This is a casual meetup with no set agenda, just Founders helping Founders.",
+      "date": "2026-10-02",
+      "time": "10:00 AM",
+      "startDateTime": "2026-10-02T10:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/founders-first-fridays-26",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     },
     {
       "id": "msu-foundation-data-science-ai-summit-2026-10-06",
@@ -1382,7 +1551,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:28.850Z"
+      "scrapedAt": "2026-06-15T13:54:24.287Z"
     },
     {
       "id": "right-place-2026-q4-technology-exchange-october-14-2026-10-14",
@@ -1405,19 +1574,40 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-06-08T12:27:47.270Z",
+      "scrapedAt": "2026-06-15T13:54:41.141Z",
       "endDateTime": "2026-10-14T17:00:00"
+    },
+    {
+      "id": "bamboo-founders-first-fridays-2026-11-06",
+      "title": "Founders First Fridays",
+      "description": "​The first Friday of each month, founders get together to connect, share their challenges, and be resources for each other. This is a casual meetup with no set agenda, just Founders helping Founders.",
+      "date": "2026-11-06",
+      "time": "10:00 AM",
+      "startDateTime": "2026-11-06T10:00:00",
+      "location": {
+        "name": "Bamboo Grand Rapids",
+        "address": "38 Commerce Ave SW",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://www.bamboocowork.com/events-at-bamboo/founders-first-fridays-27",
+      "source": "bamboo",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-06-15T13:54:26.598Z"
     }
   ],
-  "lastScraped": "2026-06-08T12:28:16.342Z",
+  "lastScraped": "2026-06-15T13:55:12.044Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
       "name": "MSU Foundation",
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
-      "eventCount": 5,
-      "lastScraped": "2026-06-08T12:27:28.851Z"
+      "eventCount": 6,
+      "lastScraped": "2026-06-15T13:54:24.289Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -1425,15 +1615,15 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-06-08T12:27:29.983Z"
+      "lastScraped": "2026-06-15T13:54:25.406Z"
     },
     "bamboo": {
       "id": "bamboo",
       "name": "Bamboo Cowork",
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
-      "eventCount": 17,
-      "lastScraped": "2026-06-08T12:27:31.266Z"
+      "eventCount": 25,
+      "lastScraped": "2026-06-15T13:54:26.648Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -1441,7 +1631,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 48,
-      "lastScraped": "2026-06-08T12:27:33.354Z"
+      "lastScraped": "2026-06-15T13:54:28.724Z"
     },
     "south-kent-chamber": {
       "id": "south-kent-chamber",
@@ -1449,7 +1639,7 @@
       "url": "https://business.southkent.org/events/",
       "color": "#00695C",
       "eventCount": 10,
-      "lastScraped": "2026-06-08T12:27:41.485Z"
+      "lastScraped": "2026-06-15T13:54:35.845Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -1457,7 +1647,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-06-08T12:27:42.974Z"
+      "lastScraped": "2026-06-15T13:54:37.206Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -1465,7 +1655,7 @@
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
       "eventCount": 5,
-      "lastScraped": "2026-06-08T12:27:44.664Z"
+      "lastScraped": "2026-06-15T13:54:38.794Z"
     },
     "right-place": {
       "id": "right-place",
@@ -1473,7 +1663,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-06-08T12:27:47.274Z"
+      "lastScraped": "2026-06-15T13:54:41.145Z"
     },
     "springgr": {
       "id": "springgr",
@@ -1481,7 +1671,7 @@
       "url": "https://www.springgr.com/events-page/",
       "color": "#2E7D32",
       "eventCount": 1,
-      "lastScraped": "2026-06-08T12:27:49.303Z"
+      "lastScraped": "2026-06-15T13:54:42.498Z"
     }
   }
 }
