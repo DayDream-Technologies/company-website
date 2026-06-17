@@ -8,7 +8,10 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { parseChamberMasterEventDetail } = require('./lib/parse-chambermaster-event-detail');
+const {
+  parseChamberMasterEventDetail,
+  parseGrowthZoneEventCalendarDetail,
+} = require('./lib/parse-chambermaster-event-detail');
 
 // Try to import cheerio (for HTML parsing)
 let cheerio;
@@ -77,6 +80,12 @@ const SOURCE_CONFIG = {
     name: 'South Kent Area Chamber',
     url: 'https://business.southkent.org/events/',
     color: '#00695C',
+  },
+  'west-coast-chamber': {
+    id: 'west-coast-chamber',
+    name: 'West Coast Chamber',
+    url: 'https://business.westcoastchamber.org/event-calendar',
+    color: '#1565C0',
   },
 };
 
@@ -1148,6 +1157,92 @@ async function scrapeSouthKentChamber() {
   }
 }
 
+async function scrapeWestCoastChamber() {
+  const SOURCE = 'west-coast-chamber';
+  const config = SOURCE_CONFIG[SOURCE];
+  const BASE = 'https://business.westcoastchamber.org';
+
+  function categorizeEvent(title, description) {
+    const text = `${title} ${description}`.toLowerCase();
+    if (text.includes('network') || text.includes('mixer') || text.includes('social') || text.includes('happy hour')) return 'networking';
+    if (text.includes('workshop') || text.includes('training')) return 'workshop';
+    if (text.includes('conference') || text.includes('summit') || text.includes('awards') || text.includes('golf')) return 'conference';
+    if (text.includes('meetup') || text.includes('netwalk')) return 'meetup';
+    if (text.includes('ribbon cutting') || text.includes('ribbon-cutting')) return 'other';
+    return 'other';
+  }
+
+  try {
+    const scrapedAt = new Date().toISOString();
+    const listHtml = await fetchHtml(config.url);
+    const $list = loadHtml(listHtml);
+    const seen = new Set();
+    const detailUrls = [];
+
+    $list('a[href*="/event-calendar/Details/"]').each((_, a) => {
+      let href = $list(a).attr('href') || '';
+      if (!href) return;
+      if (!href.startsWith('http')) {
+        href = href.startsWith('/') ? `${BASE}${href}` : `${BASE}/${href}`;
+      }
+      if (!/\/event-calendar\/Details\//i.test(href)) return;
+      try {
+        const url = new URL(href);
+        url.search = '';
+        href = url.toString();
+      } catch {
+        // keep original href
+      }
+      if (seen.has(href)) return;
+      seen.add(href);
+      detailUrls.push(href);
+    });
+
+    console.log(`    West Coast Chamber: ${detailUrls.length} detail URLs from listing`);
+
+    const events = [];
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    for (const pageUrl of detailUrls) {
+      try {
+        const html = await fetchHtml(pageUrl);
+        const $ = loadHtml(html);
+        const ev = parseGrowthZoneEventCalendarDetail($, pageUrl, {
+          sourceId: SOURCE,
+          scrapedAt,
+          parseTime,
+          toISODateTime,
+          generateEventId,
+          detectRecurringEvent,
+          detectFreeEvent,
+          categorizeEvent,
+          defaultDescription: 'West Coast Chamber community event.',
+          defaultLocation: {
+            name: 'Michigan West Coast Chamber of Commerce',
+            address: '65 E 7th St Suite 300',
+            city: 'Holland',
+            state: 'MI',
+          },
+        });
+        if (ev) {
+          const eventDate = new Date(`${ev.date}T12:00:00`);
+          const endDate = ev.endDate ? new Date(`${ev.endDate}T12:00:00`) : eventDate;
+          if (endDate >= today) events.push(ev);
+        }
+        await delay(500);
+      } catch (e) {
+        console.log(`      West Coast Chamber skip ${pageUrl}: ${e.message}`);
+      }
+    }
+
+    const unique = Array.from(new Map(events.map(e => [e.id, e])).values());
+    return createScrapeResult(SOURCE, unique);
+  } catch (error) {
+    return createScrapeResult(SOURCE, [], error.message);
+  }
+}
+
 async function scrapeGrJuniorChamber() {
   const SOURCE = 'gr-junior-chamber';
   const config = SOURCE_CONFIG[SOURCE];
@@ -1951,6 +2046,11 @@ const KNOWN_VENUES = {
   'gravel bottom': { lat: 42.9522, lng: -85.4889 },
   'bgr event center': { lat: 43.0386, lng: -85.6700 },
   'aba office': { lat: 42.9522, lng: -85.4889 },
+  'west coast chamber': { lat: 42.7875, lng: -86.1089 },
+  'michigan west coast chamber': { lat: 42.7875, lng: -86.1089 },
+  'holland farmers market': { lat: 42.7872, lng: -86.1069 },
+  'nelis dutch village': { lat: 42.7678, lng: -86.0986 },
+  'saugatuck center for the arts': { lat: 42.6556, lng: -86.2036 },
 };
 
 function getKnownVenueCoords(venueName) {
@@ -2105,6 +2205,7 @@ async function runFullScrape() {
     { name: 'Bamboo', fn: scrapeBamboo },
     { name: 'Grand Rapids Org', fn: scrapeGrandRapidsOrg },
     { name: 'South Kent Chamber', fn: scrapeSouthKentChamber },
+    { name: 'West Coast Chamber', fn: scrapeWestCoastChamber },
     { name: 'GR Junior Chamber', fn: scrapeGrJuniorChamber },
     { name: 'Startup Garage', fn: scrapeStartupGarage },
     { name: 'The Right Place', fn: scrapeRightPlace },

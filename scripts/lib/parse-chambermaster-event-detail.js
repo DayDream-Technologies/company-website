@@ -1,6 +1,6 @@
 /**
  * GrowthZone / ChamberMaster public event detail page parser.
- * Shared by GR events (South Kent) and Ada events scrapers.
+ * Shared by GR events (South Kent, West Coast) and Ada events scrapers.
  */
 
 const MONTHS = {
@@ -163,4 +163,119 @@ function parseChamberMasterEventDetail($, pageUrl, ctx) {
   return event;
 }
 
-module.exports = { parseChamberMasterEventDetail, MONTHS };
+/**
+ * GrowthZone event-calendar detail pages (e.g. business.westcoastchamber.org/event-calendar/Details/...).
+ * Layout differs from ChamberMaster /events/details/ pages.
+ */
+function parseGrowthZoneEventCalendarDetail($, pageUrl, ctx) {
+  if ($('.gz-event-details').length === 0) return null;
+
+  const {
+    sourceId,
+    scrapedAt,
+    parseTime,
+    toISODateTime,
+    generateEventId,
+    detectRecurringEvent,
+    detectFreeEvent,
+    categorizeEvent,
+    defaultDescription,
+    defaultLocation,
+  } = ctx;
+
+  const title =
+    cleanText($('.gz-event-details-header h1').first().text()) ||
+    cleanText($('h1').not(':contains("EVENTS")').first().text()) ||
+    '';
+  if (!title || title.length < 3) return null;
+  if (/^cancelled:/i.test(title)) return null;
+
+  const dateTimeText =
+    cleanText($('.gz-event-time').first().text()) ||
+    cleanText($('.gz-event-details-header').text()) ||
+    '';
+
+  const dateMatch = dateTimeText.match(/([A-Za-z]+),\s+([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(\d{4})/);
+  if (!dateMatch) return null;
+  const month = MONTHS[dateMatch[2].toLowerCase()];
+  if (!month) return null;
+  const day = dateMatch[3].padStart(2, '0');
+  const date = `${dateMatch[4]}-${month}-${day}`;
+
+  const timeMatch = dateTimeText.match(
+    /\((\d{1,2}:\d{2}\s*(?:AM|PM))\s*-\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/i
+  );
+  const singleTimeMatch = dateTimeText.match(/\((\d{1,2}:\d{2}\s*(?:AM|PM))/i);
+  let time = 'TBD';
+  let endTime = null;
+  if (timeMatch) {
+    time = parseTime(timeMatch[1]);
+    endTime = parseTime(timeMatch[2]);
+  } else if (singleTimeMatch) {
+    time = parseTime(singleTimeMatch[1]);
+  }
+
+  let locationName = defaultLocation.name;
+  let address = defaultLocation.address || '';
+  let city = defaultLocation.city;
+  const state = defaultLocation.state || 'MI';
+
+  const addressBlock = cleanText($('.gz-event-address').text());
+  if (addressBlock) {
+    const cityStateMatch = addressBlock.match(/\b([A-Za-z][A-Za-z\s]+?),\s*MI(?:\s+(\d{5}))?/);
+    if (cityStateMatch) {
+      city = cityStateMatch[1].trim();
+      const beforeCity = addressBlock.slice(0, cityStateMatch.index).trim();
+      const streetMatch = beforeCity.match(/^(.+?)\s+(\d+\s+.+)$/);
+      if (streetMatch) {
+        locationName = streetMatch[1].trim();
+        address = streetMatch[2].trim();
+        if (cityStateMatch[2]) {
+          address = `${address}, ${city}, MI ${cityStateMatch[2]}`;
+        }
+      } else {
+        locationName = beforeCity || addressBlock;
+      }
+    } else {
+      locationName = addressBlock;
+    }
+  }
+
+  let description = cleanText($('.gz-event-description').text());
+  if (description.toLowerCase().startsWith('description')) {
+    description = description.slice('description'.length).trim();
+  }
+  if (description.length > 600) {
+    description = description.slice(0, 597) + '...';
+  }
+
+  const pricingText = cleanText($('.gz-event-pricing-info, .gz-event-pricing').text()).toLowerCase();
+  const bodyText = cleanText($('.gz-event-details').text());
+  const isFree =
+    /free to attend|no admission|free\b/.test(pricingText) ||
+    detectFreeEvent(title, description, pricingText);
+
+  const event = {
+    id: generateEventId(sourceId, title, date),
+    title,
+    description: description || defaultDescription,
+    date,
+    time,
+    startDateTime: toISODateTime(date, time),
+    location: { name: locationName, address, city, state },
+    url: pageUrl,
+    source: sourceId,
+    category: categorizeEvent(title, description),
+    isRecurring: detectRecurringEvent(title, description, bodyText),
+    isFree,
+    scrapedAt,
+  };
+  if (endTime) event.endDateTime = toISODateTime(date, endTime);
+  return event;
+}
+
+module.exports = {
+  parseChamberMasterEventDetail,
+  parseGrowthZoneEventCalendarDetail,
+  MONTHS,
+};

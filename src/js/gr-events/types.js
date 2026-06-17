@@ -58,6 +58,12 @@ const SOURCE_CONFIG = {
     url: 'https://business.southkent.org/events/',
     color: '#00695C',
   },
+  'west-coast-chamber': {
+    id: 'west-coast-chamber',
+    name: 'West Coast Chamber',
+    url: 'https://business.westcoastchamber.org/event-calendar',
+    color: '#1565C0',
+  },
 };
 
 // Grand Rapids area coordinates (for map centering)
