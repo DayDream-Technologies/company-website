@@ -292,5 +292,54 @@
   "3520 palmer drive|saugatuck|mi": {
     "lat": 42.6714324,
     "lng": -86.1482708
+  },
+  "85 e 8th st ste 310, holland, mi 49423|holland|mi": {
+    "lat": 42.7910955,
+    "lng": -86.0964514
+  },
+  "65 e 7th st suite 300|riley st holland|mi": null,
+  "|riley st holland|mi": {
+    "lat": 42.8265854,
+    "lng": -86.0835386
+  },
+  "405 centerstone ct., zeeland, mi 49464|zeeland|mi": {
+    "lat": 42.8049378,
+    "lng": -86.0240403
+  },
+  "65 e 7th st suite 300|van raalte ave holland|mi": null,
+  "|van raalte ave holland|mi": {
+    "lat": 42.7748118,
+    "lng": -86.120248
+  },
+  "71 e. 6th, st holland, mi 49423|st holland|mi": null,
+  "|st holland|mi": {
+    "lat": 43.425196,
+    "lng": -83.9576717
+  },
+  "65 e 7th st suite 300|lakeshore drive n holland|mi": null,
+  "|lakeshore drive n holland|mi": null,
+  "4600 macatawa legends blvd., holland, mi 49424|holland|mi": {
+    "lat": 42.853409,
+    "lng": -86.131528
+  },
+  "65 e 7th st suite 300|james st holland|mi": null,
+  "|james st holland|mi": {
+    "lat": 42.8121248,
+    "lng": -86.1052412
+  },
+  "65 e 7th st suite 300|riley street holland|mi": null,
+  "|riley street holland|mi": {
+    "lat": 42.8265854,
+    "lng": -86.0835386
+  },
+  "61 e 7th, st holland, mi 49423|st holland|mi": null,
+  "150 w 8th, street holland, mi 49423|street holland|mi": null,
+  "|street holland|mi": {
+    "lat": 43.425196,
+    "lng": -83.9576717
+  },
+  "710 chicago drive|holland|mi": {
+    "lat": 42.7976739,
+    "lng": -86.0773813
   }
 }
