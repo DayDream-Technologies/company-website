@@ -29,7 +29,7 @@ try {
 const SOURCE_CONFIG = {
   'msu-foundation': {
     id: 'msu-foundation',
-    name: 'MSU Foundation',
+    name: 'MSU Research Foundation',
     url: 'https://msufoundation.org/events/',
     color: '#18453B',
   },
@@ -413,11 +413,11 @@ async function scrapeMsuFoundation() {
   const SOURCE = 'msu-foundation';
   const config = SOURCE_CONFIG[SOURCE];
   
-  // Elfsight widget ID for MSU Foundation events calendar
+  // Elfsight widget ID for MSU Research Foundation events calendar
   const ELFSIGHT_WIDGET_ID = 'b3ad2fe6-b56f-4b93-a321-654a85c4427b';
   const ELFSIGHT_API_URL = `https://core.service.elfsight.com/p/boot/?page=${encodeURIComponent(config.url)}&w=${ELFSIGHT_WIDGET_ID}`;
   
-  // MSU Foundation location mapping based on location ID or name
+  // MSU Research Foundation location mapping based on location ID or name
   function getLocationFromId(locationIds, locationSettings) {
     // Default location
     const defaultLocation = {
@@ -454,7 +454,7 @@ async function scrapeMsuFoundation() {
       }
       if (idLower.includes('traverse')) {
         return {
-          name: 'MSU Foundation - Traverse City',
+          name: 'MSU Research Foundation - Traverse City',
           address: '',
           city: 'Traverse City',
           state: 'MI',
@@ -486,7 +486,7 @@ async function scrapeMsuFoundation() {
     
     if (venueName.includes('traverse')) {
       return {
-        name: locationData.name || locationData.value || 'MSU Foundation - Traverse City',
+        name: locationData.name || locationData.value || 'MSU Research Foundation - Traverse City',
         address: locationData.address || '',
         city: 'Traverse City',
         state: 'MI',
@@ -1951,7 +1951,7 @@ async function scrapeSpringGr() {
 
         let description = '';
         if (event.description) {
-          // JSON-LD may include literal or entity-encoded <p>, <br>, etc.; strip tags after decode (same idea as MSU Foundation).
+          // JSON-LD may include literal or entity-encoded <p>, <br>, etc.; strip tags after decode (same idea as MSU Research Foundation).
           description = cleanText(
             stripHtml(decodeHtmlEntities(event.description)).replace(/\\n/g, ' ')
           );
@@ -2025,7 +2025,7 @@ const KNOWN_VENUES = {
   'grand rapids downtown market': { lat: 42.9679, lng: -85.6731 },
   'devos place': { lat: 42.9692, lng: -85.6772 },
   'jw marriott grand rapids': { lat: 42.9679, lng: -85.6766 },
-  'msu foundation': { lat: 42.7323, lng: -84.5555 },
+  'msu research foundation': { lat: 42.7323, lng: -84.5555 },
   'bamboo ann arbor': { lat: 42.2776, lng: -83.7409 },
   'bamboo royal oak': { lat: 42.4895, lng: -83.1446 },
   'gr junior chamber': { lat: 42.9634, lng: -85.6681 },
@@ -2200,7 +2200,7 @@ async function geocodeEvents(events, onProgress) {
 
 async function runFullScrape() {
   const scrapers = [
-    { name: 'MSU Foundation', fn: scrapeMsuFoundation },
+    { name: 'MSU Research Foundation', fn: scrapeMsuFoundation },
     { name: 'Start Garden', fn: scrapeStartGarden },
     { name: 'Bamboo', fn: scrapeBamboo },
     { name: 'Grand Rapids Org', fn: scrapeGrandRapidsOrg },

@@ -6,7 +6,7 @@
 const SOURCE_CONFIG = {
   'msu-foundation': {
     id: 'msu-foundation',
-    name: 'MSU Foundation',
+    name: 'MSU Research Foundation',
     url: 'https://msufoundation.org/events/',
     color: '#18453B', // MSU Green
   },
