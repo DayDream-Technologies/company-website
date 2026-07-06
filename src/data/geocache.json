@@ -341,5 +341,19 @@
   "710 chicago drive|holland|mi": {
     "lat": 42.7976739,
     "lng": -86.0773813
+  },
+  "65 e 7th st suite 300|clover st holland|mi": null,
+  "|clover st holland|mi": {
+    "lat": 42.7947411,
+    "lng": -86.084308
+  },
+  "65 e 7th st suite 300|heritage ct holland|mi": null,
+  "|heritage ct holland|mi": {
+    "lat": 42.7749068,
+    "lng": -86.0823872
+  },
+  "4035 chicago drive southwest|grandville|mi": {
+    "lat": 42.9094967,
+    "lng": -85.7638504
   }
 }
