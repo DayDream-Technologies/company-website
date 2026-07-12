@@ -218,7 +218,7 @@
       "category": "jazz",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:39.071Z"
+      "scrapedAt": "2026-07-12T13:01:50.760Z"
     },
     {
       "id": "dunnebackgirls-dunneback-summer-music-2026-06-01",
@@ -241,7 +241,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-05T13:14:45.711Z"
+      "scrapedAt": "2026-07-12T13:01:58.592Z"
     },
     {
       "id": "stray-cafe-the-stray-cafe-live-music-2026-06-01",
@@ -264,7 +264,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:49.180Z"
+      "scrapedAt": "2026-07-12T13:02:02.234Z"
     },
     {
       "id": "founders-brewing-founders-brewing-live-music-2026-06-01",
@@ -287,7 +287,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-05T13:14:50.370Z"
+      "scrapedAt": "2026-07-12T13:02:03.502Z"
     },
     {
       "id": "local-spins-east-kentwood-msboa-all-stars-west-michigan-jazz-soc",
@@ -332,7 +332,7 @@
       "category": "outdoor",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:46.909Z"
+      "scrapedAt": "2026-07-12T13:01:59.833Z"
     },
     {
       "id": "local-spins-dj-no-limit-beats-on-bates-kalamazoo-2026-06-03",
@@ -1375,7 +1375,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-ferris-community-summer-band-hemlock-park-bandshell-",
@@ -2050,7 +2050,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-rock-shop-band-music-on-the-grand-downtown-grand-hav",
@@ -2767,7 +2767,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-whiskey-bound-music-on-the-grand-downtown-grand-have",
@@ -3118,52 +3118,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-joni-2026-07-05",
-      "title": "Joni",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-05",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-05T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/joni/?instance_id=7293",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
-    },
-    {
-      "id": "score-gr-eli-roe-2026-07-06",
-      "title": "Eli Roe",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-06",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-06T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/eli-roe/?instance_id=7223",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
-    },
-    {
       "id": "local-spins-tom-allport-band-west-michigan-jazz-society-walker-2",
       "title": "Tom Allport Band",
       "description": "WALKER: WEST MICHIGAN JAZZ SOCIETY. Millennium Park Meadows, 1415 Maynard Ave. SW, Walker. 6:30 p.m. Mondays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -3186,29 +3140,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "wyoming-concerts-park-molly-soul-music-2026-07-07",
-      "title": "Molly (soul music)",
-      "description": "Concerts in the Park at Lamar Park, 6 p.m. Food trucks on site. Bring a lawn chair. Featuring Molly (soul music).",
-      "date": "2026-07-07",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-07T18:00:00",
-      "location": {
-        "name": "Lamar Park",
-        "address": "2561 Porter St SW",
-        "city": "Wyoming",
-        "state": "MI",
-        "zip": "49519",
-        "lat": 42.9212516,
-        "lng": -85.7295223
-      },
-      "url": "https://www.wyomingmi.gov/concerts",
-      "source": "wyoming-concerts-park",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:34.308Z"
-    },
-    {
       "id": "local-spins-molly-soul-music-concerts-in-the-park-wyoming-2026-0",
       "title": "Molly (soul music)",
       "description": "WYOMING: CONCERTS IN THE PARK. Lamar Park, 2561 Porter St. Sw., Wyoming. 6 p.m. Tuesdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -3229,73 +3160,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "muskegon-city-tagged-2026-07-07",
-      "title": "McGraft Park Summer Concert Series",
-      "description": "Join us for another summer of fantastic live music at the McGraft Park Summer Concert Series! Enjoy free concerts under the open sky, featuring an incredible lineup of talented performers […]",
-      "date": "2026-07-07",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-07T19:00:00",
-      "location": {
-        "name": "Muskegon (see event)",
-        "address": "",
-        "city": "Muskegon",
-        "state": "MI",
-        "zip": "49440",
-        "lat": 43.2341813,
-        "lng": -86.2483921
-      },
-      "url": "https://muskegon-mi.gov/event/mcgraft-park-summer-concert-series/2026-07-07/",
-      "source": "muskegon-city-tagged",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:06.754Z"
-    },
-    {
-      "id": "caledonia-concert-series-often-herd-2026-07-07",
-      "title": "Often Herd",
-      "description": "Caledonia Community Green Park summer concert series (Tuesdays, 6 p.m. opening act / 7 p.m. headliners). (Local Spins 2026 community concerts guide (fallback)).",
-      "date": "2026-07-07",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-07T19:00:00",
-      "location": {
-        "name": "Caledonia Community Green Park",
-        "address": "9309 Dobber Wenger Memorial Dr",
-        "city": "Caledonia",
-        "state": "MI",
-        "lat": 42.7891193,
-        "lng": -85.5163391
-      },
-      "url": "https://www.instagram.com/p/DX8B2FERAbM/",
-      "source": "caledonia-concert-series",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:32.690Z"
-    },
-    {
-      "id": "rockford-rogue-blues-greg-nagy-band-2026-07-07",
-      "title": "Greg Nagy Band",
-      "description": "Rogue River Blues Series — free Tuesday blues in downtown Rockford, 7 p.m. June 10 & 17 performances at Rotary Pavilion while Garden Club Park construction continues (per City of Rockford).",
-      "date": "2026-07-07",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-07T19:00:00",
-      "location": {
-        "name": "Garden Club Park — Rogue River stage",
-        "address": "White Pine Trail, downtown Rockford",
-        "city": "Rockford",
-        "state": "MI",
-        "lat": 43.119721,
-        "lng": -85.559604
-      },
-      "url": "https://www.rockford.mi.us/concerts",
-      "source": "rockford-rogue-blues",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:36.073Z"
     },
     {
       "id": "local-spins-delbert-walling-group-entertainment-under-the-stars-",
@@ -3428,29 +3292,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-trilogy-2026-07-08",
-      "title": "Trilogy",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-08",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-08T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/trilogy-2/?instance_id=7127",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
-    },
-    {
       "id": "local-spins-little-dippers-evening-on-river-street-elk-rapids-20",
       "title": "Little Dippers",
       "description": "ELK RAPIDS: EVENING ON RIVER STREET. River Street, Elk Rapids. 6 p.m. Wednesdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -3471,29 +3312,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "sparta-park-concerts-dennie-middleton-presents-the-captain-and-t",
-      "title": "Dennie Middleton Presents The Captain and the Kid",
-      "description": "Sparta summer concert series. Dennie Middleton Presents The Captain and the Kid in Town Square (177 E. Division, Sparta) & Kid’s Market (5-8pm)",
-      "date": "2026-07-08",
-      "time": "6:30 PM",
-      "startDateTime": "2026-07-08T18:30:00",
-      "location": {
-        "name": "Sparta Town Square",
-        "address": "177 E. Division St",
-        "city": "Sparta",
-        "state": "MI",
-        "zip": "49345",
-        "lat": 43.1608171,
-        "lng": -85.7056714
-      },
-      "url": "https://www.spartachamber.com/sparta-park-concerts",
-      "source": "sparta-park-concerts",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:58.467Z"
     },
     {
       "id": "local-spins-elements-of-soul-featuring-lanette-lyn-elements-of-s",
@@ -3560,30 +3378,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
-    },
-    {
-      "id": "ada-parks-summer-concerts-music-on-the-lawn-2026-07-08",
-      "title": "Music on the Lawn",
-      "description": "Come out for another fun summer concert series! Wednesday nights starting at 7 pm at Legacy Park! Concert Dates: June 3, 17, 24, July 8, 15, 22, 29Read More",
-      "date": "2026-07-08",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-08T19:00:00",
-      "location": {
-        "name": "Legacy Park",
-        "address": "7430 River St SE",
-        "city": "Ada",
-        "state": "MI",
-        "zip": "49301",
-        "lat": 42.9543578,
-        "lng": -85.4846228
-      },
-      "url": "https://www.adamichigan.org/community/events.php",
-      "source": "ada-parks-summer-concerts",
-      "category": "outdoor",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:31.265Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-jessie-james-deconto-hemlock-park-bandshell-summer-c",
@@ -3734,29 +3529,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "lowell-sizzlin-the-nuance-2026-07-09",
-      "title": "The Nuance",
-      "description": "Sizzlin’ Summer Concerts — free Thursday series on the Lowell riverwalk.",
-      "date": "2026-07-09",
-      "time": "5:00 PM",
-      "startDateTime": "2026-07-09T17:00:00",
-      "location": {
-        "name": "Lowell Showboat / Riverwalk (near KDL Englehardt Library)",
-        "address": "200 N Monroe St",
-        "city": "Lowell",
-        "state": "MI",
-        "zip": "49331",
-        "lat": 42.9357677,
-        "lng": -85.3380312
-      },
-      "url": "https://www.discoverlowell.org/sizzlin-summer-concerts/",
-      "source": "lowell-sizzlin",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:03.956Z"
-    },
-    {
       "id": "local-spins-crazy-chestur-music-in-the-park-mt-pleasant-2026-07-",
       "title": "Crazy Chestur",
       "description": "MOUNT PLEASANT: MUSIC IN THE PARK. Island Park Arts Pavilion, 331 Main St., Mt. Pleasant. 5:30 p.m. Thursdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -3777,29 +3549,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "score-gr-the-covering-band-2026-07-09",
-      "title": "The Covering Band",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-09",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-09T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/the-covering-band/?instance_id=7225",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
     },
     {
       "id": "local-spins-tim-krause-live-in-the-plaza-legacy-plaza-2026-07-09",
@@ -3844,29 +3593,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "kentwood-summer-concerts-tommy-b-band-2026-07-09",
-      "title": "Tommy B Band",
-      "description": "Kentwood Summer Concert Series — free Thursday concerts on the lawn behind City Hall. BYO beer/wine; dogs on leash welcome.",
-      "date": "2026-07-09",
-      "time": "6:30 PM",
-      "startDateTime": "2026-07-09T18:30:00",
-      "location": {
-        "name": "Kentwood City Hall lawn",
-        "address": "4900 Breton Ave SE",
-        "city": "Kentwood",
-        "state": "MI",
-        "zip": "49508",
-        "lat": 42.8746059,
-        "lng": -85.5966743
-      },
-      "url": "https://www.kentwood.us/events_detail_T53_R64.php",
-      "source": "kentwood-summer-concerts",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:01.520Z"
     },
     {
       "id": "local-spins-homespun-country-summer-concerts-on-the-square-charl",
@@ -3933,29 +3659,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "lowell-sizzlin-simply-in-time-2026-07-09",
-      "title": "Simply In Time",
-      "description": "Sizzlin’ Summer Concerts — free Thursday series on the Lowell riverwalk.",
-      "date": "2026-07-09",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-09T19:00:00",
-      "location": {
-        "name": "Lowell Showboat / Riverwalk (near KDL Englehardt Library)",
-        "address": "200 N Monroe St",
-        "city": "Lowell",
-        "state": "MI",
-        "zip": "49331",
-        "lat": 42.9357677,
-        "lng": -85.3380312
-      },
-      "url": "https://www.discoverlowell.org/sizzlin-summer-concerts/",
-      "source": "lowell-sizzlin",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:03.956Z"
     },
     {
       "id": "local-spins-paul-hoffman-of-greensky-bluegrass-bluegrass-summer-",
@@ -4154,52 +3857,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-oxymorons-duo-2026-07-10",
-      "title": "☀️ Oxymorons Duo",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-10",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-10T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/%e2%98%80%ef%b8%8f-oxymorons-duo/?instance_id=7269",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
-    },
-    {
-      "id": "score-gr-mr-smith-the-jones-2026-07-10",
-      "title": "Mr. Smith & The Jones",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-10",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-10T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/mr-smith-the-jones/?instance_id=7297",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
-    },
-    {
       "id": "local-spins-lisa-carol-folk-rock-pocket-park-music-series-downto",
       "title": "Lisa Carol (Folk Rock)",
       "description": "BIG RAPIDS: POCKET PARK MUSIC SERIES. Downtown Big Rapids. Noon Fridays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -4222,29 +3879,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "grandhaven-free-fridays-grand-haven-free-fridays-2026-07-10",
-      "title": "Grand Haven Free Fridays",
-      "description": "Free Friday concert at Lynne Sherwood Waterfront Stadium. Check grandhavenfreefridays.com for performer announcements.",
-      "date": "2026-07-10",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-10T18:00:00",
-      "location": {
-        "name": "Lynne Sherwood Waterfront Stadium",
-        "address": "1 N Harbor Dr",
-        "city": "Grand Haven",
-        "state": "MI",
-        "zip": "49417",
-        "lat": 43.065065,
-        "lng": -86.234138
-      },
-      "url": "https://www.grandhavenfreefridays.com/events",
-      "source": "grandhaven-free-fridays",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:05.493Z"
-    },
-    {
       "id": "local-spins-justin-wierenga-live-in-the-plaza-legacy-plaza-2026-",
       "title": "Justin Wierenga",
       "description": "LUDINGTON: LIVE IN THE PLAZA. Legacy Plaza, 112 N. James St.. 6 p.m. Fridays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -4265,29 +3899,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "lowell-sizzlin-ultrasonik-2026-07-10",
-      "title": "Ultrasonik",
-      "description": "Sizzlin’ Summer Concerts — free Thursday series on the Lowell riverwalk.",
-      "date": "2026-07-10",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-10T19:00:00",
-      "location": {
-        "name": "Lowell Showboat / Riverwalk (near KDL Englehardt Library)",
-        "address": "200 N Monroe St",
-        "city": "Lowell",
-        "state": "MI",
-        "zip": "49331",
-        "lat": 42.9357677,
-        "lng": -85.3380312
-      },
-      "url": "https://www.discoverlowell.org/sizzlin-summer-concerts/",
-      "source": "lowell-sizzlin",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:03.956Z"
     },
     {
       "id": "local-spins-king-ink-alternative-rollin-on-the-river-allegan-202",
@@ -4356,52 +3967,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-sam-martin-2026-07-11",
-      "title": "☀️ Sam Martin",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-11",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-11T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/%e2%98%80%ef%b8%8f-sam-martin/?instance_id=7271",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
-    },
-    {
-      "id": "score-gr-chicken-dolphin-band-2026-07-11",
-      "title": "Chicken Dolphin Band",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-11",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-11T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/chicken-dolphin-band/?instance_id=7299",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
-    },
-    {
       "id": "local-spins-bobby-hunt-and-the-day-drinkers-music-in-the-park-th",
       "title": "Bobby Hunt and the Day Drinkers",
       "description": "THREE OAKS: MUSIC IN THE PARK. Dewey Cannon Park, East of Elm Street at railroad tracks, Three Oaks. 6:30 p.m. Saturdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -4422,29 +3987,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "maranatha-brandon-heath-2026-07-11",
-      "title": "Brandon Heath",
-      "description": "Brandon Heath is a Grammy-nominated, Dove Award-winning singer-songwriter known for honest storytelling and faith-filled, relatable lyrics. A Nashville native, he broke onto the national scene with “I’m Not Who I Was” and later the smash hit “Give Me Your Eyes,” earning two Dove Awards and a Grammy nomination. His albums—including Leaving...",
-      "date": "2026-07-11",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-11T19:00:00",
-      "location": {
-        "name": "Maranatha Bible & Missionary Conference",
-        "address": "4759 Lake Harbor Rd",
-        "city": "Norton Shores",
-        "state": "MI",
-        "zip": "49441",
-        "lat": 43.1753,
-        "lng": -86.2717
-      },
-      "url": "https://maranathamichigan.org/event/brandon-heath/",
-      "source": "maranatha",
-      "category": "faith based",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:42.084Z"
     },
     {
       "id": "local-spins-east-bay-drive-saturdays-in-the-park-traverse-city-2",
@@ -4489,7 +4031,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-sierra-shame-concerts-in-the-corners-texas-drive-par",
@@ -4534,7 +4076,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-jeremy-verwys-georgetown-township-farmers-market-jen",
@@ -4623,7 +4165,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "wyoming-concerts-park-brena-popular-covers-2026-07-14",
@@ -4646,7 +4188,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:34.308Z"
+      "scrapedAt": "2026-07-12T13:02:45.607Z"
     },
     {
       "id": "local-spins-brena-popular-covers-concerts-in-the-park-wyoming-20",
@@ -4691,7 +4233,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:06.754Z"
+      "scrapedAt": "2026-07-12T13:02:18.253Z"
     },
     {
       "id": "caledonia-concert-series-shelby-means-2026-07-14",
@@ -4713,7 +4255,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:32.690Z"
+      "scrapedAt": "2026-07-12T13:02:44.130Z"
     },
     {
       "id": "rockford-rogue-blues-jake-kershaw-2026-07-14",
@@ -4735,7 +4277,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:36.073Z"
+      "scrapedAt": "2026-07-12T13:02:47.206Z"
     },
     {
       "id": "local-spins-vandyke-revue-entertainment-under-the-stars-coldwate",
@@ -4865,7 +4407,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:54.074Z"
+      "scrapedAt": "2026-07-12T13:02:07.190Z"
     },
     {
       "id": "local-spins-asamu-johnson-the-associates-dj-playhouse-beats-on-b",
@@ -4910,7 +4452,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-nick-vasquez-evening-on-river-street-elk-rapids-2026",
@@ -4955,7 +4497,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:58.467Z"
+      "scrapedAt": "2026-07-12T13:02:11.547Z"
     },
     {
       "id": "local-spins-garage-sale-band-rock-and-roll-songs-from-the-80s-90",
@@ -5022,7 +4564,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "ada-parks-summer-concerts-music-on-the-lawn-2026-07-15",
@@ -5045,7 +4587,7 @@
       "category": "outdoor",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:31.265Z"
+      "scrapedAt": "2026-07-12T13:02:42.704Z"
     },
     {
       "id": "local-spins-blue-water-ramblers-hemlock-park-bandshell-summer-co",
@@ -5218,7 +4760,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-meg-gunia-live-in-the-plaza-legacy-plaza-2026-07-16",
@@ -5263,7 +4805,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:01.520Z"
+      "scrapedAt": "2026-07-12T13:02:12.843Z"
     },
     {
       "id": "local-spins-northside-rhythm-kings-surprise-band-summer-concerts",
@@ -5308,7 +4850,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:03.956Z"
+      "scrapedAt": "2026-07-12T13:02:15.299Z"
     },
     {
       "id": "local-spins-vandyke-revue-beatles-tribute-summer-concerts-buchan",
@@ -5461,7 +5003,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-harry-dean-the-dusty-boys-2026-07-17",
@@ -5484,7 +5026,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-j-h-patton-the-good-companions-rock-americana-pocket",
@@ -5529,7 +5071,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:05.493Z"
+      "scrapedAt": "2026-07-12T13:02:16.978Z"
     },
     {
       "id": "local-spins-twyce-the-band-live-in-the-plaza-legacy-plaza-2026-0",
@@ -5618,7 +5160,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-pop2k-2026-07-18",
@@ -5641,7 +5183,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-pt-and-the-cruisers-music-in-the-park-three-oaks-202",
@@ -5686,7 +5228,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:42.084Z"
+      "scrapedAt": "2026-07-12T13:01:53.464Z"
     },
     {
       "id": "local-spins-the-seth-bernard-quartet-saturdays-in-the-park-trave",
@@ -5731,7 +5273,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-oxymorons-2026-07-19",
@@ -5754,7 +5296,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-blueback-music-in-the-park-oshtemo-2026-07-19",
@@ -5843,7 +5385,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-third-coast-swing-west-michigan-jazz-society-walker-",
@@ -5888,7 +5430,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "wyoming-concerts-park-mexicuba-latin-music-2026-07-21",
@@ -5911,7 +5453,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:34.308Z"
+      "scrapedAt": "2026-07-12T13:02:45.607Z"
     },
     {
       "id": "local-spins-mexicuba-latin-music-concerts-in-the-park-wyoming-20",
@@ -5956,7 +5498,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:06.754Z"
+      "scrapedAt": "2026-07-12T13:02:18.253Z"
     },
     {
       "id": "caledonia-concert-series-grayson-jenkins-2026-07-21",
@@ -5978,7 +5520,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:32.690Z"
+      "scrapedAt": "2026-07-12T13:02:44.130Z"
     },
     {
       "id": "rockford-rogue-blues-the-schrock-bros-band-feat-peter-madcat-rut",
@@ -6000,7 +5542,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:36.073Z"
+      "scrapedAt": "2026-07-12T13:02:47.206Z"
     },
     {
       "id": "local-spins-laditude-entertainment-under-the-stars-coldwater-202",
@@ -6153,7 +5695,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-dags-und-timmah-evening-on-river-street-elk-rapids-2",
@@ -6220,7 +5762,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:58.467Z"
+      "scrapedAt": "2026-07-12T13:02:11.547Z"
     },
     {
       "id": "local-spins-slick-jimmy-80-s-rock-bands-okemos-summer-concert-se",
@@ -6287,7 +5829,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "ada-parks-summer-concerts-music-on-the-lawn-2026-07-22",
@@ -6310,7 +5852,7 @@
       "category": "outdoor",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:31.265Z"
+      "scrapedAt": "2026-07-12T13:02:42.704Z"
     },
     {
       "id": "local-spins-genna-jessie-hemlock-park-bandshell-summer-concert-s",
@@ -6483,7 +6025,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-jimmy-dodson-live-in-the-plaza-legacy-plaza-2026-07-",
@@ -6528,7 +6070,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:01.520Z"
+      "scrapedAt": "2026-07-12T13:02:12.843Z"
     },
     {
       "id": "local-spins-rin-tarnsy-and-madrin-singer-songwriter-concerts-in-",
@@ -6617,7 +6159,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:03.956Z"
+      "scrapedAt": "2026-07-12T13:02:15.299Z"
     },
     {
       "id": "local-spins-hey-annie-rock-summer-concerts-buchanan-2026-07-23",
@@ -6880,7 +6422,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-innuendo-2026-07-24",
@@ -6903,7 +6445,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-wyatt-and-shari-pocket-park-music-series-downtown-bi",
@@ -7036,7 +6578,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-dolly-dagger-2026-07-25",
@@ -7059,7 +6601,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-mark-blomsteel-the-motor-city-drive-rhythm-and-dunes",
@@ -7126,7 +6668,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:42.084Z"
+      "scrapedAt": "2026-07-12T13:01:53.464Z"
     },
     {
       "id": "local-spins-shady-grove-bluegrass-festival-summer-concerts-bucha",
@@ -7193,7 +6735,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:40.861Z"
+      "scrapedAt": "2026-07-12T13:01:52.228Z"
     },
     {
       "id": "score-gr-james-littell-2026-07-26",
@@ -7216,7 +6758,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-livin-the-dream-2026-07-26",
@@ -7239,7 +6781,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-zion-lion-reggae-band-summer-concert-series-parchmen",
@@ -7284,7 +6826,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-sunny-wilkinson-quartet-west-michigan-jazz-society-w",
@@ -7329,12 +6871,12 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "wyoming-concerts-park-on-the-lash-irish-traditional-music-about-",
-      "title": "On the Lash (Irish traditional music) About Wyoming City Departments 62A District Court Pay A Fine Case Search FAQs MiFILE - Electronic Filing System Civil Division Traffic & Criminal Division Kent County Veterans Treatment Court Jury Duty Probation Department Helpful Links Court Forms Application for Attorney Traffic Ticket Form Mediation Services Transcript Order/Request Motor Vehicle & Motor Carrier Information Wyoming City Ordinances MI State Court Administrative Office Assessor's Office Special Assessment Rolls Annual Assessment Roll Reports Forms Assessment Dates Real Property Real Property Tax Exemptions Business Personal Property Taxes Land & ECF Studies City Clerk Boards, Commissions, & Committees Boards and Commissions Application Board of Review Community Development Committee Construction Board of Appeals Downtown Development Authority Economic Development Corporation & Brownfield Redevelopment Authority Election Commission Greater Wyoming Community Resource Alliance Historical Commission Housing Commission Officers’ Compensation Commission Parks and Recreation Commission Planning Commission Retirement System Board Tree Commission WKTV (South Kent Cable TV) Commission Zoning Board of Appeals Elections & Voting Register to Vote Voter ID Requirements Absentee Ballots Precinct Map Change to Voting Precincts Where and when can I vote? Election Workers Business Licensing Information Technology Finance Financial Reports Wyoming Housing Commission Public Housing Rental Assistance (Section 8) Housing Choice Voucher Briefing (Section 8) Human Resources Contracts and Wages Employment Opportunities Police Officer Hiring Procedures Benefits City Organizational Chart Job Descriptions Transparency Reporting Why Wyoming? Treasurer Make Payments Start Water/Sewer Service Stop Water/Sewer Service Mortgage Lender Update Utilities Watersmart Customer Portal Utility Bill Lookup & Payment Fee Schedule & Charges Tax Bill Lookup Instructions Tax Estimator Tax Rates Paperless Billing Parks and Recreation Recreation Adult Sports Scholarships Parks & Facilities Parks Wyoming Dog Park Reservation Information Rules & Regulations Online Registration Annual Report 5-Year Master Plan Plan A Special Event Athletic Event Form Volunteer & Employment Wyoming Senior Center Concerts in the Park Public Works All About Leaves All About Snow Engineering Burton Street 2026 Construction Construction Projects Weekly Update Construction Requirements Construction Specifications Map Your Property Fleet Services Permit Information Recycling Information Stormwater Streets Traffic Trees Water Infrastructure Improvements Inspecting Water Service Lines Advanced Metering Infrastructure Meter Installation Water/Sewer Leaks Community & Economic Development Building Inspections Rental Property Registration City Center Pedestrian Bridge Trail Network Community Development Downtown Development Authority Economic Development & Brownfield Redevelopment Reporting Planning & Zoning Wyoming [re]Imagined Division United R-2 & R-3 Zoning Changes Utilities All About Water Billing and Payments Clean Water Plant Environmental Services Industrial Pretreatment Program Household Hazardous Waste Biosolids Management Program Cross Connection Control Program Environmental Services Laboratory Services Request A Plant Tour Water Treatment Plant Purchasing Public Safety - Police Patrol Unit Special Police Units Accreditation Crime Mapping Department Survey Hiring & Internships Records Unit Found Bicycle Report Investigative Division Forensic Science Unit Community Services Unit Crime Mapping Crime Prevention Crime Trends/Fraud Alerts Resources For Victims Internal Affairs Online Police Reporting Community Resources Guide Join WYPD Public Safety - Fire Chemical Survey Community Outreach Community Education Public Events Fire & Rescue Water/Ice Rescue Honor Guard EMS Division Inspections & Investigations Outdoor Burning City Government Mayor & City Council Mayor's Office Voting & Elections Code of Ordinances Michigan Freedom of Information Act Boards and Commissions Transparency Reporting City Manager Public Meetings and Events Watch Meetings News E-Notifications Press & Media Events Minutes & Agendas Video Archive Employment City of Wyoming, Michigan | 1155 28th St SW, Wyoming, MI 49509 | 616-530-7226 | Fax 616-530-7200Hours of Operation",
-      "description": "Concerts in the Park at Lamar Park, 6 p.m. Food trucks on site. Bring a lawn chair. Monday - Thursday, 7:00 A.M. to 5:00 P.M. | Closed Friday - Sunday City of Wyoming team members are dedicated to creating an attractive, comfortable and engaged community. How can we help you today? Home About Wyoming City Departments 62A District Court Pay A Fine Case Search FAQs MiFILE - Electronic Filing System Civil Division Traffic & Criminal Division Kent County Veterans Treatment Court Jury Duty Probation Department Helpful Links Court Forms Application for Attorney Traffic Ticket Form Mediation Services Transcript Order/Request Motor Vehicle & Motor Carrier Information Wyoming City Ordinances MI State Court Administrative Office Assessor's Office Special Assessment Rolls Annual Assessment Roll Reports Forms Assessment Dates Real Property Real Property Tax Exemptions Business Personal Property Taxes Land & ECF Studies City Clerk Boards, Commissions, & Committees Boards and Commissions Application Board of Review Community Development Committee Construction Board of Appeals Downtown Development Authority Economic Development Corporation & Brownfield Redevelopment Authority Election Commission Greater Wyoming Community Resource Alliance Historical Commission Housing Commission Officers’ Compensation Commission Parks and Recreation Commission Planning Commission Retirement System Board Tree Commission WKTV (South Kent Cable TV) Commission Zoning Board of Appeals Elections & Voting Register to Vote Voter ID Requirements Absentee Ballots Precinct Map Change to Voting Precincts Where and when can I vote? Election Workers Business Licensing Information Technology Finance Financial Reports Wyoming Housing Commission Public Housing Rental Assistance (Section 8) Housing Choice Voucher Briefing (Section 8) Human Resources Contracts and Wages Employment Opportunities Police Officer Hiring Procedures Benefits City Organizational Chart Job Descriptions Transparency Reporting Why Wyoming? Treasurer Make Payments Start Water/Sewer Service Stop Water/Sewer Service Mortgage Lender Update Utilities Watersmart Customer Portal Utility Bill Lookup & Payment Fee Schedule & Charges Tax Bill Lookup Instructions Tax Estimator Tax Rates Paperless Billing Parks and Recreation Recreation Adult Sports Scholarships Parks & Facilities Parks Wyoming Dog Park Reservation Information Rules & Regulations Online Registration Annual Report 5-Year Master Plan Plan A Special Event Athletic Event Form Volunteer & Employment Wyoming Senior Center Concerts in the Park Public Works All About Leaves All About Snow Engineering Burton Street 2026 Construction Construction Projects Weekly Update Construction Requirements Construction Specifications Map Your Property Fleet Services Permit Information Recycling Information Stormwater Streets Traffic Trees Water Infrastructure Improvements Inspecting Water Service Lines Advanced Metering Infrastructure Meter Installation Water/Sewer Leaks Community & Economic Development Building Inspections Rental Property Registration City Center Pedestrian Bridge Trail Network Community Development Downtown Development Authority Economic Development & Brownfield Redevelopment Reporting Planning & Zoning Wyoming [re]Imagined Division United R-2 & R-3 Zoning Changes Utilities All About Water Billing and Payments Clean Water Plant Environmental Services Industrial Pretreatment Program Household Hazardous Waste Biosolids Management Program Cross Connection Control Program Environmental Services Laboratory Services Request A Plant Tour Water Treatment Plant Purchasing Public Safety - Police Patrol Unit Special Police Units Accreditation Crime Mapping Department Survey Hiring & Internships Records Unit Found Bicycle Report Investigative Division Forensic Science Unit Community Services Unit Crime Mapping Crime Prevention Crime Trends/Fraud Alerts Resources For Victims Internal Affairs Online Police Reporting Community Resources Guide Join WYPD Public Safety - Fire Chemical Survey Community Outreach Community Education Public Events Fire & Rescue Water/Ice Rescue Honor Guard EMS Division Inspections & Investigations Outdoor Burning City Government Mayor & City Council Mayor's Office Voting & Elections Code of Ordinances Michigan Freedom of Information Act Boards and Commissions Transparency Reporting City Manager Public Meetings and Events Watch Meetings News E-Notifications Press & Media Events Minutes & Agendas Video Archive Employment Living in Wyoming About Wyoming The Alliance About the Alliance Give to the Alliance Apply for Funding Apply for Scholarships Your Home All About Taxes All About Water Odd/Even Outdoor Water Restrictions Housing Assistance Trash & Rubbish Wyoming Counts - 2020 Census Your Yard All About Leaves Spongy Moths Program All About Snow Odd-Even Parking Complaint SafeMeds Your Street Recreation Activities Park Reservations Wyoming Senior Center WSC Walk Club Kent District Library #WeCare Community Clean-Up Day Wyoming Employee Community Outreach - WECO Maps Plan A Special Event Wrap Up Wyoming Doing Business in Wyoming Starting A New Business Business Licenses Food Trucks Sewer Use Permit Application/Renewal Business License App Fee Schedules Small Business Tax Exemption Purchasing Bid Opportunities Alcohol and Liquor Licensing Application Online Services Make A Payment Request a Repair Contact City Directory Report A Problem Site map Disclaimer Privacy Policy Terms Security All contents and materials © copyright 2026 City of Wyoming | Login Home About Wyoming City Departments 62A District Court Pay A Fine Case Search FAQs MiFILE - Electronic Filing System Civil Division Traffic & Criminal Division Kent County Veterans Treatment Court Jury Duty Probation Department Helpful Links Court Forms Application for Attorney Traffic Ticket Form Mediation Services Transcript Order/Request Motor Vehicle & Motor Carrier Information Wyoming City Ordinances MI State Court Administrative Office Assessor's Office Special Assessment Rolls Annual Assessment Roll Reports Forms Assessment Dates Real Property Real Property Tax Exemptions Business Personal Property Taxes Land & ECF Studies City Clerk Boards, Commissions, & Committees Boards and Commissions Application Board of Review Community Development Committee Construction Board of Appeals Downtown Development Authority Economic Development Corporation & Brownfield Redevelopment Authority Election Commission Greater Wyoming Community Resource Alliance Historical Commission Housing Commission Officers’ Compensation Commission Parks and Recreation Commission Planning Commission Retirement System Board Tree Commission WKTV (South Kent Cable TV) Commission Zoning Board of Appeals Elections & Voting Register to Vote Voter ID Requirements Absentee Ballots Precinct Map Change to Voting Precincts Where and when can I vote? Election Workers Business Licensing Information Technology Finance Financial Reports Wyoming Housing Commission Public Housing Rental Assistance (Section 8) Housing Choice Voucher Briefing (Section 8) Human Resources Contracts and Wages Employment Opportunities Police Officer Hiring Procedures Benefits City Organizational Chart Job Descriptions Transparency Reporting Why Wyoming? Treasurer Make Payments Start Water/Sewer Service Stop Water/Sewer Service Mortgage Lender Update Utilities Watersmart Customer Portal Utility Bill Lookup & Payment Fee Schedule & Charges Tax Bill Lookup Instructions Tax Estimator Tax Rates Paperless Billing Parks and Recreation Recreation Adult Sports Scholarships Parks & Facilities Parks Wyoming Dog Park Reservation Information Rules & Regulations Online Registration Annual Report 5-Year Master Plan Plan A Special Event Athletic Event Form Volunteer & Employment Wyoming Senior Center Concerts in the Park Public Works All About Leaves All About Snow Engineering Burton Street 2026 Construction Construction Projects Weekly Update Construction Requirements Construction Specifications Map Your Property Fleet Services Permit Information Recycling Information Stormwater Streets Traffic Trees Water Infrastructure Improvements Inspecting Water Service Lines Advanced Metering Infrastructure Meter Installation Water/Sewer Leaks Community & Economic Development Building Inspections Rental Property Registration City Center Pedestrian Bridge Trail Network Community Development Downtown Development Authority Economic Development & Brownfield Redevelopment Reporting Planning & Zoning Wyoming [re]Imagined Division United R-2 & R-3 Zoning Changes Utilities All About Water Billing and Payments Clean Water Plant Environmental Services Industrial Pretreatment Program Household Hazardous Waste Biosolids Management Program Cross Connection Control Program Environmental Services Laboratory Services Request A Plant Tour Water Treatment Plant Purchasing Public Safety - Police Patrol Unit Special Police Units Accreditation Crime Mapping Department Survey Hiring & Internships Records Unit Found Bicycle Report Investigative Division Forensic Science Unit Community Services Unit Crime Mapping Crime Prevention Crime Trends/Fraud Alerts Resources For Victims Internal Affairs Online Police Reporting Community Resources Guide Join WYPD Public Safety - Fire Chemical Survey Community Outreach Community Education Public Events Fire & Rescue Water/Ice Rescue Honor Guard EMS Division Inspections & Investigations Outdoor Burning City Government Mayor & City Council Mayor's Office Voting & Elections Code of Ordinances Michigan Freedom of Information Act Boards and Commissions Transparency Reporting City Manager Public Meetings and Events Watch Meetings News E-Notifications Press & Media Events Minutes & Agendas Video Archive Employment Living in Wyoming About Wyoming The Alliance About the Alliance Give to the Alliance Apply for Funding Apply for Scholarships Your Home All About Taxes All About Water Odd/Even Outdoor Water Restrictions Housing Assistance Trash & Rubbish Wyoming Counts - 2020 Census Your Yard All About Leaves Spongy Moths Program All About Snow Odd-Even Parking Complaint SafeMeds Your Street Recreation Activities Park Reservations Wyoming Senior Center WSC Walk Club Kent District Library #WeCare Community Clean-Up Day Wyoming Employee Community Outreach - WECO Maps Plan A Special Event Wrap Up Wyoming Doing Business in Wyoming Starting A New Business Business Licenses Food Trucks Sewer Use Permit Application/Renewal Business License App Fee Schedules Small Business Tax Exemption Purchasing Bid Opportunities Alcohol and Liquor Licensing Application Online Services Make A Payment Request a Repair Contact City Directory Report A Problem Enter Search Query $(function() { if (typeof dnn != \"undefined\" && typeof dnn.searchSkinObject != \"undefined\") { var searchSkinObject = new dnn.searchSkinObject({ delayTriggerAutoSearch : 400, minCharRequiredTriggerAutoSearch : 2, searchType: 'S', enableWildSearch: true, cultureCode: 'en-US', portalId: -1 } ); searchSkinObject.init(); // attach classic search var siteBtn = $('#dnn_dnnSEARCH_SiteRadioButton'); var webBtn = $('#dnn_dnnSEARCH_WebRadioButton'); var clickHandler = function() { if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S'; else searchSkinObject.settings.searchType = 'W'; }; siteBtn.on('change', clickHandler); webBtn.on('change', clickHandler); } }); jQuery(document).ready(function(){ jQuery(\".tbd\").each(function(){ if(jQuery(this).text() != \"\") { jQuery(this).siblings(\".endtime\").remove(); var textToReplace = jQuery(this).parents(\".event_date_time\").html(); var parent = jQuery(this).parents(\".event_date_time\") parent.html(textToReplace.replace(/-/g, \"\")); parent.find(\".tbd\").remove(); } }); });",
+      "title": "On the Lash (Irish traditional music) About Wyoming City Departments 62A District Court Pay A Fine Case Search FAQs MiFILE - Electronic Filing System Civil Division Traffic & Criminal Division Kent County Veterans Treatment Court Jury Duty Probation Department Helpful Links Court Forms Application for Attorney Traffic Ticket Form Mediation Services Transcript Order/Request Motor Vehicle & Motor Carrier Information Wyoming City Ordinances MI State Court Administrative Office Assessor's Office Special Assessment Rolls Annual Assessment Roll Reports Forms Assessment Dates Real Property Real Property Tax Exemptions Business Personal Property Taxes Land & ECF Studies City Clerk Boards, Commissions, & Committees Boards and Commissions Application Board of Review Community Development Committee Construction Board of Appeals Downtown Development Authority Economic Development Corporation & Brownfield Redevelopment Authority Election Commission Greater Wyoming Community Resource Alliance Historical Commission Housing Commission Officers’ Compensation Commission Parks and Recreation Commission Planning Commission Retirement System Board Tree Commission WKTV (South Kent Cable TV) Commission Zoning Board of Appeals Elections & Voting Register to Vote Voter ID Requirements Absentee Ballots Precinct Map Change to Voting Precincts Where and when can I vote? Election Workers Business Licensing Information Technology Finance Financial Reports Wyoming Housing Commission Public Housing Rental Assistance (Section 8) Housing Choice Voucher Briefing (Section 8) Human Resources Contracts and Wages Employment Opportunities Police Officer Hiring Procedures Benefits City Organizational Chart Job Descriptions Transparency Reporting Why Wyoming? Treasurer Make Payments Start Water/Sewer Service Stop Water/Sewer Service Mortgage Lender Update Utilities Watersmart Customer Portal Utility Bill Lookup & Payment Fee Schedule & Charges Tax Bill Lookup Instructions Tax Estimator Tax Rates Paperless Billing Parks and Recreation Recreation Adult Sports Scholarships Parks & Facilities Parks Wyoming Dog Park Reservation Information Rules & Regulations Online Registration Annual Report 5-Year Master Plan Plan A Special Event Athletic Event Form Volunteer & Employment Wyoming Senior Center Concerts in the Park Public Works All About Leaves All About Snow Engineering Burton Street 2026 Construction Prairie Parkway 2026 Project Construction Projects Weekly Update Construction Requirements Construction Specifications Map Your Property Fleet Services Permit Information Recycling Information Stormwater Streets Traffic Trees Water Infrastructure Improvements Inspecting Water Service Lines Advanced Metering Infrastructure Meter Installation Water/Sewer Leaks Community & Economic Development Building Inspections Rental Property Registration City Center Pedestrian Bridge Trail Network Community Development Downtown Development Authority Economic Development & Brownfield Redevelopment Reporting Planning & Zoning Wyoming [re]Imagined Division United R-2 & R-3 Zoning Changes Utilities All About Water Billing and Payments Clean Water Plant Environmental Services Industrial Pretreatment Program Household Hazardous Waste Biosolids Management Program Cross Connection Control Program Environmental Services Laboratory Services Request A Plant Tour Water Treatment Plant Purchasing Public Safety - Police Patrol Unit Special Police Units Accreditation Crime Mapping Department Survey Hiring & Internships Records Unit Found Bicycle Report Investigative Division Forensic Science Unit Community Services Unit Crime Mapping Crime Prevention Crime Trends/Fraud Alerts Resources For Victims Internal Affairs Online Police Reporting Community Resources Guide Join WYPD Public Safety - Fire Chemical Survey Community Outreach Community Education Public Events Fire & Rescue Water/Ice Rescue Honor Guard EMS Division Inspections & Investigations Outdoor Burning City Government Mayor & City Council Mayor's Office Voting & Elections Code of Ordinances Michigan Freedom of Information Act Boards and Commissions Transparency Reporting City Manager Public Meetings and Events Watch Meetings News E-Notifications Press & Media Events Minutes & Agendas Video Archive Employment City of Wyoming, Michigan | 1155 28th St SW, Wyoming, MI 49509 | 616-530-7226 | Fax 616-530-7200Hours of Operation",
+      "description": "Concerts in the Park at Lamar Park, 6 p.m. Food trucks on site. Bring a lawn chair. Monday - Thursday, 7:00 A.M. to 5:00 P.M. | Closed Friday - Sunday City of Wyoming team members are dedicated to creating an attractive, comfortable and engaged community. How can we help you today? Home About Wyoming City Departments 62A District Court Pay A Fine Case Search FAQs MiFILE - Electronic Filing System Civil Division Traffic & Criminal Division Kent County Veterans Treatment Court Jury Duty Probation Department Helpful Links Court Forms Application for Attorney Traffic Ticket Form Mediation Services Transcript Order/Request Motor Vehicle & Motor Carrier Information Wyoming City Ordinances MI State Court Administrative Office Assessor's Office Special Assessment Rolls Annual Assessment Roll Reports Forms Assessment Dates Real Property Real Property Tax Exemptions Business Personal Property Taxes Land & ECF Studies City Clerk Boards, Commissions, & Committees Boards and Commissions Application Board of Review Community Development Committee Construction Board of Appeals Downtown Development Authority Economic Development Corporation & Brownfield Redevelopment Authority Election Commission Greater Wyoming Community Resource Alliance Historical Commission Housing Commission Officers’ Compensation Commission Parks and Recreation Commission Planning Commission Retirement System Board Tree Commission WKTV (South Kent Cable TV) Commission Zoning Board of Appeals Elections & Voting Register to Vote Voter ID Requirements Absentee Ballots Precinct Map Change to Voting Precincts Where and when can I vote? Election Workers Business Licensing Information Technology Finance Financial Reports Wyoming Housing Commission Public Housing Rental Assistance (Section 8) Housing Choice Voucher Briefing (Section 8) Human Resources Contracts and Wages Employment Opportunities Police Officer Hiring Procedures Benefits City Organizational Chart Job Descriptions Transparency Reporting Why Wyoming? Treasurer Make Payments Start Water/Sewer Service Stop Water/Sewer Service Mortgage Lender Update Utilities Watersmart Customer Portal Utility Bill Lookup & Payment Fee Schedule & Charges Tax Bill Lookup Instructions Tax Estimator Tax Rates Paperless Billing Parks and Recreation Recreation Adult Sports Scholarships Parks & Facilities Parks Wyoming Dog Park Reservation Information Rules & Regulations Online Registration Annual Report 5-Year Master Plan Plan A Special Event Athletic Event Form Volunteer & Employment Wyoming Senior Center Concerts in the Park Public Works All About Leaves All About Snow Engineering Burton Street 2026 Construction Prairie Parkway 2026 Project Construction Projects Weekly Update Construction Requirements Construction Specifications Map Your Property Fleet Services Permit Information Recycling Information Stormwater Streets Traffic Trees Water Infrastructure Improvements Inspecting Water Service Lines Advanced Metering Infrastructure Meter Installation Water/Sewer Leaks Community & Economic Development Building Inspections Rental Property Registration City Center Pedestrian Bridge Trail Network Community Development Downtown Development Authority Economic Development & Brownfield Redevelopment Reporting Planning & Zoning Wyoming [re]Imagined Division United R-2 & R-3 Zoning Changes Utilities All About Water Billing and Payments Clean Water Plant Environmental Services Industrial Pretreatment Program Household Hazardous Waste Biosolids Management Program Cross Connection Control Program Environmental Services Laboratory Services Request A Plant Tour Water Treatment Plant Purchasing Public Safety - Police Patrol Unit Special Police Units Accreditation Crime Mapping Department Survey Hiring & Internships Records Unit Found Bicycle Report Investigative Division Forensic Science Unit Community Services Unit Crime Mapping Crime Prevention Crime Trends/Fraud Alerts Resources For Victims Internal Affairs Online Police Reporting Community Resources Guide Join WYPD Public Safety - Fire Chemical Survey Community Outreach Community Education Public Events Fire & Rescue Water/Ice Rescue Honor Guard EMS Division Inspections & Investigations Outdoor Burning City Government Mayor & City Council Mayor's Office Voting & Elections Code of Ordinances Michigan Freedom of Information Act Boards and Commissions Transparency Reporting City Manager Public Meetings and Events Watch Meetings News E-Notifications Press & Media Events Minutes & Agendas Video Archive Employment Living in Wyoming About Wyoming The Alliance About the Alliance Give to the Alliance Apply for Funding Apply for Scholarships Your Home All About Taxes All About Water Odd/Even Outdoor Water Restrictions Housing Assistance Trash & Rubbish Wyoming Counts - 2020 Census Your Yard All About Leaves Spongy Moths Program All About Snow Odd-Even Parking Complaint SafeMeds Your Street Recreation Activities Park Reservations Wyoming Senior Center WSC Walk Club Kent District Library #WeCare Community Clean-Up Day Wyoming Employee Community Outreach - WECO Maps Plan A Special Event Wrap Up Wyoming Doing Business in Wyoming Starting A New Business Business Licenses Food Trucks Sewer Use Permit Application/Renewal Business License App Fee Schedules Small Business Tax Exemption Purchasing Bid Opportunities Alcohol and Liquor Licensing Application Online Services Make A Payment Request a Repair Contact City Directory Report A Problem Site map Disclaimer Privacy Policy Terms Security All contents and materials © copyright 2026 City of Wyoming | Login Home About Wyoming City Departments 62A District Court Pay A Fine Case Search FAQs MiFILE - Electronic Filing System Civil Division Traffic & Criminal Division Kent County Veterans Treatment Court Jury Duty Probation Department Helpful Links Court Forms Application for Attorney Traffic Ticket Form Mediation Services Transcript Order/Request Motor Vehicle & Motor Carrier Information Wyoming City Ordinances MI State Court Administrative Office Assessor's Office Special Assessment Rolls Annual Assessment Roll Reports Forms Assessment Dates Real Property Real Property Tax Exemptions Business Personal Property Taxes Land & ECF Studies City Clerk Boards, Commissions, & Committees Boards and Commissions Application Board of Review Community Development Committee Construction Board of Appeals Downtown Development Authority Economic Development Corporation & Brownfield Redevelopment Authority Election Commission Greater Wyoming Community Resource Alliance Historical Commission Housing Commission Officers’ Compensation Commission Parks and Recreation Commission Planning Commission Retirement System Board Tree Commission WKTV (South Kent Cable TV) Commission Zoning Board of Appeals Elections & Voting Register to Vote Voter ID Requirements Absentee Ballots Precinct Map Change to Voting Precincts Where and when can I vote? Election Workers Business Licensing Information Technology Finance Financial Reports Wyoming Housing Commission Public Housing Rental Assistance (Section 8) Housing Choice Voucher Briefing (Section 8) Human Resources Contracts and Wages Employment Opportunities Police Officer Hiring Procedures Benefits City Organizational Chart Job Descriptions Transparency Reporting Why Wyoming? Treasurer Make Payments Start Water/Sewer Service Stop Water/Sewer Service Mortgage Lender Update Utilities Watersmart Customer Portal Utility Bill Lookup & Payment Fee Schedule & Charges Tax Bill Lookup Instructions Tax Estimator Tax Rates Paperless Billing Parks and Recreation Recreation Adult Sports Scholarships Parks & Facilities Parks Wyoming Dog Park Reservation Information Rules & Regulations Online Registration Annual Report 5-Year Master Plan Plan A Special Event Athletic Event Form Volunteer & Employment Wyoming Senior Center Concerts in the Park Public Works All About Leaves All About Snow Engineering Burton Street 2026 Construction Prairie Parkway 2026 Project Construction Projects Weekly Update Construction Requirements Construction Specifications Map Your Property Fleet Services Permit Information Recycling Information Stormwater Streets Traffic Trees Water Infrastructure Improvements Inspecting Water Service Lines Advanced Metering Infrastructure Meter Installation Water/Sewer Leaks Community & Economic Development Building Inspections Rental Property Registration City Center Pedestrian Bridge Trail Network Community Development Downtown Development Authority Economic Development & Brownfield Redevelopment Reporting Planning & Zoning Wyoming [re]Imagined Division United R-2 & R-3 Zoning Changes Utilities All About Water Billing and Payments Clean Water Plant Environmental Services Industrial Pretreatment Program Household Hazardous Waste Biosolids Management Program Cross Connection Control Program Environmental Services Laboratory Services Request A Plant Tour Water Treatment Plant Purchasing Public Safety - Police Patrol Unit Special Police Units Accreditation Crime Mapping Department Survey Hiring & Internships Records Unit Found Bicycle Report Investigative Division Forensic Science Unit Community Services Unit Crime Mapping Crime Prevention Crime Trends/Fraud Alerts Resources For Victims Internal Affairs Online Police Reporting Community Resources Guide Join WYPD Public Safety - Fire Chemical Survey Community Outreach Community Education Public Events Fire & Rescue Water/Ice Rescue Honor Guard EMS Division Inspections & Investigations Outdoor Burning City Government Mayor & City Council Mayor's Office Voting & Elections Code of Ordinances Michigan Freedom of Information Act Boards and Commissions Transparency Reporting City Manager Public Meetings and Events Watch Meetings News E-Notifications Press & Media Events Minutes & Agendas Video Archive Employment Living in Wyoming About Wyoming The Alliance About the Alliance Give to the Alliance Apply for Funding Apply for Scholarships Your Home All About Taxes All About Water Odd/Even Outdoor Water Restrictions Housing Assistance Trash & Rubbish Wyoming Counts - 2020 Census Your Yard All About Leaves Spongy Moths Program All About Snow Odd-Even Parking Complaint SafeMeds Your Street Recreation Activities Park Reservations Wyoming Senior Center WSC Walk Club Kent District Library #WeCare Community Clean-Up Day Wyoming Employee Community Outreach - WECO Maps Plan A Special Event Wrap Up Wyoming Doing Business in Wyoming Starting A New Business Business Licenses Food Trucks Sewer Use Permit Application/Renewal Business License App Fee Schedules Small Business Tax Exemption Purchasing Bid Opportunities Alcohol and Liquor Licensing Application Online Services Make A Payment Request a Repair Contact City Directory Report A Problem Enter Search Query $(function() { if (typeof dnn != \"undefined\" && typeof dnn.searchSkinObject != \"undefined\") { var searchSkinObject = new dnn.searchSkinObject({ delayTriggerAutoSearch : 400, minCharRequiredTriggerAutoSearch : 2, searchType: 'S', enableWildSearch: true, cultureCode: 'en-US', portalId: -1 } ); searchSkinObject.init(); // attach classic search var siteBtn = $('#dnn_dnnSEARCH_SiteRadioButton'); var webBtn = $('#dnn_dnnSEARCH_WebRadioButton'); var clickHandler = function() { if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S'; else searchSkinObject.settings.searchType = 'W'; }; siteBtn.on('change', clickHandler); webBtn.on('change', clickHandler); } }); jQuery(document).ready(function(){ jQuery(\".tbd\").each(function(){ if(jQuery(this).text() != \"\") { jQuery(this).siblings(\".endtime\").remove(); var textToReplace = jQuery(this).parents(\".event_date_time\").html(); var parent = jQuery(this).parents(\".event_date_time\") parent.html(textToReplace.replace(/-/g, \"\")); parent.find(\".tbd\").remove(); } }); });",
       "date": "2026-07-28",
       "time": "6:00 PM",
       "startDateTime": "2026-07-28T18:00:00",
@@ -7352,7 +6894,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:34.308Z"
+      "scrapedAt": "2026-07-12T13:02:45.607Z"
     },
     {
       "id": "local-spins-on-the-lash-irish-traditional-music-concerts-in-the-",
@@ -7397,7 +6939,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:06.754Z"
+      "scrapedAt": "2026-07-12T13:02:18.253Z"
     },
     {
       "id": "rockford-rogue-blues-nicholas-james-and-the-bandwagon-2026-07-28",
@@ -7419,7 +6961,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:36.073Z"
+      "scrapedAt": "2026-07-12T13:02:47.206Z"
     },
     {
       "id": "local-spins-island-vibe-entertainment-under-the-stars-coldwater-",
@@ -7572,7 +7114,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-sweetwater-blues-band-evening-on-river-street-elk-ra",
@@ -7617,7 +7159,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:58.467Z"
+      "scrapedAt": "2026-07-12T13:02:11.547Z"
     },
     {
       "id": "local-spins-geech-current-top-40-to-1960s-soul-rock-okemos-summe",
@@ -7684,7 +7226,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-the-steve-higler-blues-power-trio-hemlock-park-bands",
@@ -7857,7 +7399,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-third-coast-swing-live-in-the-plaza-legacy-plaza-202",
@@ -7902,7 +7444,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:01.520Z"
+      "scrapedAt": "2026-07-12T13:02:12.843Z"
     },
     {
       "id": "local-spins-frendz-swing-band-summer-concerts-on-the-square-char",
@@ -7947,7 +7489,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:03.956Z"
+      "scrapedAt": "2026-07-12T13:02:15.299Z"
     },
     {
       "id": "local-spins-david-mayfield-parade-sounds-of-summer-cutler-park-2",
@@ -8122,7 +7664,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-moxie-2026-07-31",
@@ -8145,7 +7687,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-all-that-jazz-jazz-pocket-park-music-series-downtown",
@@ -8256,7 +7798,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-gruv-n-2026-08-01",
@@ -8279,7 +7821,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-jedi-mind-trip-rhythm-and-dunes-concerts-ludington-2",
@@ -8346,7 +7888,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:42.084Z"
+      "scrapedAt": "2026-07-12T13:01:53.464Z"
     },
     {
       "id": "local-spins-da-veonce-and-da-funk-gang-saturdays-in-the-park-tra",
@@ -8391,7 +7933,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-the-king-of-mars-2026-08-02",
@@ -8414,7 +7956,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-sushi-roll-from-chicago-pop-rock-summer-concert-seri",
@@ -8481,7 +8023,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-grand-rapids-jazz-orchestra-west-michigan-jazz-socie",
@@ -8526,7 +8068,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "caledonia-concert-series-the-mighty-pines-2026-08-04",
@@ -8548,7 +8090,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:32.690Z"
+      "scrapedAt": "2026-07-12T13:02:44.130Z"
     },
     {
       "id": "rockford-rogue-blues-soul-syndicate-2026-08-04",
@@ -8570,7 +8112,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:36.073Z"
+      "scrapedAt": "2026-07-12T13:02:47.206Z"
     },
     {
       "id": "local-spins-scotty-butters-entertainment-under-the-stars-coldwat",
@@ -8701,7 +8243,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-the-covering-band-2026-08-05",
@@ -8724,7 +8266,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-jelly-roll-blues-band-evening-on-river-street-elk-ra",
@@ -8769,7 +8311,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:58.467Z"
+      "scrapedAt": "2026-07-12T13:02:11.547Z"
     },
     {
       "id": "local-spins-school-of-rock-east-lansing-kids-and-adults-rocking-",
@@ -8836,7 +8378,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-spuddies-hemlock-park-bandshell-summer-concert-serie",
@@ -9007,7 +8549,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-groovix-cube-live-in-the-plaza-legacy-plaza-2026-08-",
@@ -9074,7 +8616,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:01.520Z"
+      "scrapedAt": "2026-07-12T13:02:12.843Z"
     },
     {
       "id": "local-spins-sandra-faye-band-classic-rock-summer-concerts-on-the",
@@ -9163,7 +8705,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:06.754Z"
+      "scrapedAt": "2026-07-12T13:02:18.253Z"
     },
     {
       "id": "local-spins-on-the-fly-summer-concert-series-kentwood-2026-08-06",
@@ -9272,7 +8814,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-white-elephant-records-fam-jam-rock-mix-pocket-park-",
@@ -9317,7 +8859,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:05.493Z"
+      "scrapedAt": "2026-07-12T13:02:16.978Z"
     },
     {
       "id": "local-spins-blue-water-ramblers-live-in-the-plaza-legacy-plaza-2",
@@ -9428,7 +8970,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-harry-dean-the-dusty-boys-2026-08-08",
@@ -9451,7 +8993,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-the-scamp-band-music-in-the-park-three-oaks-2026-08-",
@@ -9496,7 +9038,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:42.084Z"
+      "scrapedAt": "2026-07-12T13:01:53.464Z"
     },
     {
       "id": "local-spins-shakedown-saturday-rock-grateful-dead-summer-concert",
@@ -9563,7 +9105,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-oxymorons-2026-08-09",
@@ -9586,7 +9128,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-the-scottish-pipes-and-selkie-2-hour-show-6-30-8-30-",
@@ -9631,7 +9173,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "muskegon-city-tagged-2026-08-11",
@@ -9654,7 +9196,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:06.754Z"
+      "scrapedAt": "2026-07-12T13:02:18.253Z"
     },
     {
       "id": "caledonia-concert-series-sam-morrow-2026-08-11",
@@ -9676,7 +9218,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:32.690Z"
+      "scrapedAt": "2026-07-12T13:02:44.130Z"
     },
     {
       "id": "rockford-rogue-blues-round-creek-string-band-2026-08-11",
@@ -9698,7 +9240,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:36.073Z"
+      "scrapedAt": "2026-07-12T13:02:47.206Z"
     },
     {
       "id": "local-spins-planet-d-nonet-manistee-shoreline-showcase-manistee-",
@@ -9829,7 +9371,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "sparta-park-concerts-city-church-worship-2026-08-12",
@@ -9852,7 +9394,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:58.467Z"
+      "scrapedAt": "2026-07-12T13:02:11.547Z"
     },
     {
       "id": "local-spins-generator-blues-funk-rock-and-soul-okemos-summer-con",
@@ -9919,7 +9461,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-luke-woltanski-hemlock-park-bandshell-summer-concert",
@@ -10070,7 +9612,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-cheryl-wolfram-live-in-the-plaza-legacy-plaza-2026-0",
@@ -10115,7 +9657,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:01.520Z"
+      "scrapedAt": "2026-07-12T13:02:12.843Z"
     },
     {
       "id": "local-spins-sunday-drive-variety-summer-concerts-on-the-square-c",
@@ -10182,7 +9724,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:03.956Z"
+      "scrapedAt": "2026-07-12T13:02:15.299Z"
     },
     {
       "id": "local-spins-reverend-jesse-ray-rock-summer-concerts-buchanan-202",
@@ -10269,7 +9811,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-simply-in-time-2026-08-14",
@@ -10292,7 +9834,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-raised-on-radio-rock-mix-pocket-park-music-series-do",
@@ -10337,7 +9879,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:05.493Z"
+      "scrapedAt": "2026-07-12T13:02:16.978Z"
     },
     {
       "id": "ada-parks-summer-concerts-beers-at-the-bridge-2026-08-14",
@@ -10360,7 +9902,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:31.265Z"
+      "scrapedAt": "2026-07-12T13:02:42.704Z"
     },
     {
       "id": "local-spins-80-cows-live-in-the-plaza-legacy-plaza-2026-08-14",
@@ -10471,7 +10013,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-five-becomes-west-2026-08-15",
@@ -10494,7 +10036,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-saraswathi-ranganathan-music-in-the-park-three-oaks-",
@@ -10539,7 +10081,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:42.084Z"
+      "scrapedAt": "2026-07-12T13:01:53.464Z"
     },
     {
       "id": "local-spins-midwest-hype-reggae-rock-summer-concerts-buchanan-20",
@@ -10606,7 +10148,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-oregon-dreamchild-2026-08-16",
@@ -10629,7 +10171,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-the-insiders-tom-petty-tribute-band-summer-concert-s",
@@ -10696,7 +10238,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-hattrick-band-2026-08-18",
@@ -10719,7 +10261,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "muskegon-city-tagged-2026-08-18",
@@ -10742,7 +10284,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:06.754Z"
+      "scrapedAt": "2026-07-12T13:02:18.253Z"
     },
     {
       "id": "local-spins-the-charlie-millard-band-manistee-shoreline-showcase",
@@ -10853,7 +10395,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-the-collective-motown-and-60-s-band-okemos-summer-co",
@@ -10898,7 +10440,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-two-dudes-in-flip-flops-music-on-the-grand-downtown-",
@@ -11005,7 +10547,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-mike-lenich-live-in-the-plaza-legacy-plaza-2026-08-2",
@@ -11072,7 +10614,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:01.520Z"
+      "scrapedAt": "2026-07-12T13:02:12.843Z"
     },
     {
       "id": "local-spins-blue-water-kings-band-12-person-band-concerts-in-cas",
@@ -11205,7 +10747,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-pop2k-2026-08-21",
@@ -11228,7 +10770,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-jon-hayes-acoustic-pocket-park-music-series-downtown",
@@ -11273,7 +10815,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:05.493Z"
+      "scrapedAt": "2026-07-12T13:02:16.978Z"
     },
     {
       "id": "local-spins-the-buffalo-ryders-rock-rollin-on-the-river-allegan-",
@@ -11362,7 +10904,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-moxie-2026-08-22",
@@ -11385,7 +10927,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-chicken-dolphin-band-music-in-the-park-three-oaks-20",
@@ -11474,7 +11016,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-edge-of-midnight-2026-08-23",
@@ -11497,7 +11039,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-zion-lion-music-in-the-park-oshtemo-2026-08-23",
@@ -11564,7 +11106,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-sophia-the-sages-2026-08-25",
@@ -11587,7 +11129,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "caledonia-concert-series-rick-estrin-the-nightcats-2026-08-25",
@@ -11609,7 +11151,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:32.690Z"
+      "scrapedAt": "2026-07-12T13:02:44.130Z"
     },
     {
       "id": "local-spins-metro-soul-band-manistee-shoreline-showcase-manistee",
@@ -11676,7 +11218,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-sandra-faye-band-classic-70s-rock-and-blues-okemos-s",
@@ -11721,7 +11263,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:14:56.727Z"
+      "scrapedAt": "2026-07-12T13:02:09.819Z"
     },
     {
       "id": "local-spins-johnny-park-band-music-on-the-grand-downtown-grand-h",
@@ -11808,7 +11350,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-mixed-flavors-thursday-night-live-mason-2026-08-27",
@@ -11853,7 +11395,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-innuendo-2026-08-28",
@@ -11876,7 +11418,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-balsam-brothers-progressive-rock-pocket-park-music-s",
@@ -11987,7 +11529,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-decades-2026-08-29",
@@ -12010,7 +11552,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-kennedy-s-kitchen-music-in-the-park-three-oaks-2026-",
@@ -12077,7 +11619,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-joni-2026-08-30",
@@ -12100,7 +11642,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-run-for-cover-80-s-and-90-s-hits-summer-concert-seri",
@@ -12167,7 +11709,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-livin-the-dream-2026-09-01",
@@ -12190,7 +11732,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-manitou-trucking-company-manistee-shoreline-showcase",
@@ -12257,7 +11799,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-classic-women-of-country-okemos-summer-concert-serie",
@@ -12346,7 +11888,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-rebekkah-rhys-2026-09-04",
@@ -12369,7 +11911,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-dolly-dagger-2026-09-04",
@@ -12392,7 +11934,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-tony-halchak-acoustic-rock-pocket-park-music-series-",
@@ -12459,7 +12001,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-azz-izz-2026-09-05",
@@ -12482,7 +12024,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-newport-blues-project-music-in-the-park-three-oaks-2",
@@ -12507,6 +12049,29 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
+      "id": "maranatha-unspoken-2026-09-05",
+      "title": "Unspoken",
+      "description": "Since their self-titled debut in 2014, this Contemporary Christian group has charted a parade of hits led by Chad Mattson\\'s unmistakable vocal, including \"Who You Are,\" \"Lift My Life Up,\" \"Good Fight\" and \"Start A Fire,\" which became the collective\\'s first No. 1. This band loves coming to our area...",
+      "date": "2026-09-05",
+      "time": "7:00 PM",
+      "startDateTime": "2026-09-05T19:00:00",
+      "location": {
+        "name": "Maranatha Bible & Missionary Conference",
+        "address": "4759 Lake Harbor Rd",
+        "city": "Norton Shores",
+        "state": "MI",
+        "zip": "49441",
+        "lat": 43.1753,
+        "lng": -86.2717
+      },
+      "url": "https://maranathamichigan.org/event/unspoken/",
+      "source": "maranatha",
+      "category": "faith based",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-12T13:01:53.464Z"
+    },
+    {
       "id": "score-gr-sophia-mckintosh-2026-09-06",
       "title": "☀️ Sophia McKintosh",
       "description": "Free live music at The Score Restaurant & Sports Bar.",
@@ -12527,7 +12092,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-crewneck-2026-09-06",
@@ -12550,7 +12115,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-david-cisco-2026-09-07",
@@ -12573,7 +12138,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-the-cheap-dates-2026-09-07",
@@ -12596,7 +12161,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-brena-2026-09-08",
@@ -12619,7 +12184,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-saxfifth-music-dj-conscious-beats-on-bates-kalamazoo",
@@ -12664,7 +12229,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-northside-rhythm-kings-okemos-summer-concert-series-",
@@ -12709,7 +12274,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-rebekkah-rhys-2026-09-11",
@@ -12732,7 +12297,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-innuendo-2026-09-11",
@@ -12755,7 +12320,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-whisky-river-rats-live-in-the-plaza-legacy-plaza-202",
@@ -12800,7 +12365,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-trapped-on-mars-2026-09-12",
@@ -12823,7 +12388,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-chris-karl-2026-09-13",
@@ -12846,7 +12411,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-sophia-the-sages-2026-09-13",
@@ -12869,7 +12434,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-eli-roe-2026-09-14",
@@ -12892,7 +12457,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-rusty-the-razorblades-2026-09-15",
@@ -12915,7 +12480,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-mexicuba-dj-ivan-beats-on-bates-kalamazoo-2026-09-16",
@@ -12960,7 +12525,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-laurie-tini-glossi-rossi-okemos-summer-concert-serie",
@@ -13005,7 +12570,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-mason-high-school-marching-band-thursday-night-live-",
@@ -13050,7 +12615,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-moxie-2026-09-18",
@@ -13073,7 +12638,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-tom-zatarga-live-in-the-plaza-legacy-plaza-2026-09-1",
@@ -13118,7 +12683,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-harry-dean-the-dusty-boys-2026-09-19",
@@ -13141,7 +12706,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-rebekkah-rhys-2026-09-20",
@@ -13164,7 +12729,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-oregon-dreamchild-2026-09-20",
@@ -13187,7 +12752,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-solvibe-2026-09-21",
@@ -13210,7 +12775,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-moonshot-2026-09-22",
@@ -13233,7 +12798,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-out-of-favor-ron-e-roc-beats-on-bates-kalamazoo-2026",
@@ -13278,7 +12843,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-rear-view-mirror-pop-and-classic-rock-from-the-60-s-",
@@ -13323,7 +12888,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-dave-burel-2026-09-25",
@@ -13346,7 +12911,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-simply-in-time-2026-09-25",
@@ -13369,7 +12934,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-downtowners-live-in-the-plaza-legacy-plaza-2026-09-2",
@@ -13414,7 +12979,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-five-becomes-west-2026-09-26",
@@ -13437,7 +13002,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-matt-welch-2026-09-27",
@@ -13460,7 +13025,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-glad-all-over-2026-09-27",
@@ -13483,7 +13048,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-jp-the-energy-2026-09-28",
@@ -13506,7 +13071,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "score-gr-mr-smith-the-jones-2026-09-29",
@@ -13529,7 +13094,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-the-skeletones-dj-chuck-beats-on-bates-kalamazoo-202",
@@ -13574,7 +13139,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-05T13:15:22.022Z"
+      "scrapedAt": "2026-07-12T13:02:33.719Z"
     },
     {
       "id": "local-spins-bachelors-since-breakfast-70s-80s-90s-party-rock-oke",
@@ -13599,7 +13164,7 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     }
   ],
-  "lastScraped": "2026-07-05T13:18:25.877Z",
+  "lastScraped": "2026-07-12T13:05:20.344Z",
   "sources": {
     "downtown-gr": {
       "id": "downtown-gr",
@@ -13607,7 +13172,7 @@
       "url": "https://downtowngr.org/announcements/2025/04/relax-at-rosa-2025",
       "color": "#1565C0",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:14:35.894Z"
+      "lastScraped": "2026-07-12T13:01:47.397Z"
     },
     "meijer-gardens": {
       "id": "meijer-gardens",
@@ -13615,7 +13180,7 @@
       "url": "https://www.meijergardens.org/calendar/tuesday-evening-music-club/",
       "color": "#2E7D32",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:14:36.934Z"
+      "lastScraped": "2026-07-12T13:01:48.523Z"
     },
     "coopersville-farm": {
       "id": "coopersville-farm",
@@ -13623,7 +13188,7 @@
       "url": "https://www.coopersvillefarmmuseum.org/",
       "color": "#795548",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:14:38.070Z"
+      "lastScraped": "2026-07-12T13:01:49.759Z"
     },
     "wm-jazz": {
       "id": "wm-jazz",
@@ -13631,7 +13196,7 @@
       "url": "https://wmichjazz.org/jazz-around-west-michigan",
       "color": "#6A1B9A",
       "eventCount": 1,
-      "lastScraped": "2026-07-05T13:14:39.860Z"
+      "lastScraped": "2026-07-12T13:01:51.227Z"
     },
     "worship-waterfront": {
       "id": "worship-waterfront",
@@ -13639,7 +13204,7 @@
       "url": "https://worshiponthewaterfront.com/",
       "color": "#1976D2",
       "eventCount": 1,
-      "lastScraped": "2026-07-05T13:14:41.083Z"
+      "lastScraped": "2026-07-12T13:01:52.463Z"
     },
     "maranatha": {
       "id": "maranatha",
@@ -13647,7 +13212,7 @@
       "url": "https://maranathamichigan.org/summer-concert-series/",
       "color": "#F57C00",
       "eventCount": 6,
-      "lastScraped": "2026-07-05T13:14:42.360Z"
+      "lastScraped": "2026-07-12T13:01:53.694Z"
     },
     "sandy-pines": {
       "id": "sandy-pines",
@@ -13655,7 +13220,7 @@
       "url": "https://sandypines.com/event/chapel-pm-concerts/",
       "color": "#00695C",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:14:44.710Z"
+      "lastScraped": "2026-07-12T13:01:57.591Z"
     },
     "dunnebackgirls": {
       "id": "dunnebackgirls",
@@ -13663,7 +13228,7 @@
       "url": "https://www.dunnebackgirls.com/eventsandmusic",
       "color": "#AD1457",
       "eventCount": 1,
-      "lastScraped": "2026-07-05T13:14:45.908Z"
+      "lastScraped": "2026-07-12T13:01:58.833Z"
     },
     "beacon-hill": {
       "id": "beacon-hill",
@@ -13671,7 +13236,7 @@
       "url": "https://beaconhillgr.org/concerts26/",
       "color": "#37474F",
       "eventCount": 1,
-      "lastScraped": "2026-07-05T13:14:48.180Z"
+      "lastScraped": "2026-07-12T13:02:01.234Z"
     },
     "stray-cafe": {
       "id": "stray-cafe",
@@ -13679,7 +13244,7 @@
       "url": "https://www.thestraycafe.com/events",
       "color": "#BF360C",
       "eventCount": 1,
-      "lastScraped": "2026-07-05T13:14:49.369Z"
+      "lastScraped": "2026-07-12T13:02:02.501Z"
     },
     "founders-brewing": {
       "id": "founders-brewing",
@@ -13687,7 +13252,7 @@
       "url": "https://foundersbrewing.com/visit-connect/grand-rapids-taproom/",
       "color": "#1B5E20",
       "eventCount": 1,
-      "lastScraped": "2026-07-05T13:14:50.483Z"
+      "lastScraped": "2026-07-12T13:02:03.611Z"
     },
     "gilmore-bluewater": {
       "id": "gilmore-bluewater",
@@ -13695,7 +13260,7 @@
       "url": "https://www.thegilmorecollection.com/bluewater/entertainment/",
       "color": "#0277BD",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:14:51.685Z"
+      "lastScraped": "2026-07-12T13:02:04.870Z"
     },
     "wm-jazz-park": {
       "id": "wm-jazz-park",
@@ -13703,7 +13268,7 @@
       "url": "https://wmichjazz.org/jazz-in-the-park",
       "color": "#4A148C",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:14:53.074Z"
+      "lastScraped": "2026-07-12T13:02:06.189Z"
     },
     "cork-wine": {
       "id": "cork-wine",
@@ -13711,7 +13276,7 @@
       "url": "https://corkwineandgrille.com/happenings/",
       "color": "#880E4F",
       "eventCount": 1,
-      "lastScraped": "2026-07-05T13:14:55.725Z"
+      "lastScraped": "2026-07-12T13:02:08.818Z"
     },
     "saugatuck-mitp": {
       "id": "saugatuck-mitp",
@@ -13719,23 +13284,23 @@
       "url": "https://saugatuck.com/event/music-in-the-park/",
       "color": "#00897B",
       "eventCount": 11,
-      "lastScraped": "2026-07-05T13:14:57.465Z"
+      "lastScraped": "2026-07-12T13:02:10.546Z"
     },
     "sparta-park-concerts": {
       "id": "sparta-park-concerts",
       "name": "Sparta Summer Concerts (Chamber)",
       "url": "https://www.spartachamber.com/sparta-park-concerts",
       "color": "#5D4037",
-      "eventCount": 6,
-      "lastScraped": "2026-07-05T13:15:00.518Z"
+      "eventCount": 5,
+      "lastScraped": "2026-07-12T13:02:11.843Z"
     },
     "kentwood-summer-concerts": {
       "id": "kentwood-summer-concerts",
       "name": "Kentwood Summer Concert Series",
       "url": "https://www.kentwood.us/events_detail_T53_R64.php",
       "color": "#455A64",
-      "eventCount": 7,
-      "lastScraped": "2026-07-05T13:15:01.623Z"
+      "eventCount": 6,
+      "lastScraped": "2026-07-12T13:02:12.944Z"
     },
     "eastgr-concerts-park": {
       "id": "eastgr-concerts-park",
@@ -13743,31 +13308,31 @@
       "url": "https://www.eastgrmi.gov/181/Concerts-In-The-Park",
       "color": "#00695C",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:15:02.954Z"
+      "lastScraped": "2026-07-12T13:02:14.298Z"
     },
     "lowell-sizzlin": {
       "id": "lowell-sizzlin",
       "name": "Lowell — Sizzlin’ Summer Concerts",
       "url": "https://www.discoverlowell.org/sizzlin-summer-concerts/",
       "color": "#C62828",
-      "eventCount": 7,
-      "lastScraped": "2026-07-05T13:15:04.492Z"
+      "eventCount": 4,
+      "lastScraped": "2026-07-12T13:02:15.978Z"
     },
     "grandhaven-free-fridays": {
       "id": "grandhaven-free-fridays",
       "name": "Grand Haven Free Fridays",
       "url": "https://www.grandhavenfreefridays.com/events",
       "color": "#0277BD",
-      "eventCount": 5,
-      "lastScraped": "2026-07-05T13:15:05.752Z"
+      "eventCount": 4,
+      "lastScraped": "2026-07-12T13:02:17.252Z"
     },
     "muskegon-city-tagged": {
       "id": "muskegon-city-tagged",
       "name": "City of Muskegon (tagged events)",
       "url": "https://muskegon-mi.gov/events/list/?tribe-bar-date=2026-06-01&tribe_tags%5B0%5D=702",
       "color": "#1565C0",
-      "eventCount": 7,
-      "lastScraped": "2026-07-05T13:15:19.661Z"
+      "eventCount": 6,
+      "lastScraped": "2026-07-12T13:02:31.487Z"
     },
     "visit-muskegon-concerts": {
       "id": "visit-muskegon-concerts",
@@ -13775,47 +13340,47 @@
       "url": "https://www.visitmuskegon.org/events/concerts-live-music/",
       "color": "#4527A0",
       "eventCount": 0,
-      "lastScraped": "2026-07-05T13:15:21.021Z"
+      "lastScraped": "2026-07-12T13:02:32.717Z"
     },
     "score-gr": {
       "id": "score-gr",
       "name": "The Score GR",
       "url": "https://www.thescoregr.com/event-calendar/",
       "color": "#FF6F00",
-      "eventCount": 122,
-      "lastScraped": "2026-07-05T13:15:30.264Z"
+      "eventCount": 114,
+      "lastScraped": "2026-07-12T13:02:41.703Z"
     },
     "ada-parks-summer-concerts": {
       "id": "ada-parks-summer-concerts",
       "name": "Ada Township — Summer Concerts (Legacy Park)",
       "url": "https://www.adamichigan.org/departments/parks_recreation_land_preservation/community___special_events.php",
       "color": "#558B2F",
-      "eventCount": 4,
-      "lastScraped": "2026-07-05T13:15:31.689Z"
+      "eventCount": 3,
+      "lastScraped": "2026-07-12T13:02:43.128Z"
     },
     "caledonia-concert-series": {
       "id": "caledonia-concert-series",
       "name": "Caledonia Community Green Park",
       "url": "https://www.instagram.com/p/DX8B2FERAbM/",
       "color": "#6A1B9A",
-      "eventCount": 6,
-      "lastScraped": "2026-07-05T13:15:33.308Z"
+      "eventCount": 5,
+      "lastScraped": "2026-07-12T13:02:44.605Z"
     },
     "wyoming-concerts-park": {
       "id": "wyoming-concerts-park",
       "name": "Wyoming — Concerts in the Park",
       "url": "https://www.wyomingmi.gov/concerts",
       "color": "#283593",
-      "eventCount": 4,
-      "lastScraped": "2026-07-05T13:15:35.073Z"
+      "eventCount": 3,
+      "lastScraped": "2026-07-12T13:02:46.206Z"
     },
     "rockford-rogue-blues": {
       "id": "rockford-rogue-blues",
       "name": "Rockford — Rogue River Blues Series",
       "url": "https://www.rockford.mi.us/news_detail_T7_R459.php",
       "color": "#4E342E",
-      "eventCount": 6,
-      "lastScraped": "2026-07-05T13:15:36.593Z"
+      "eventCount": 5,
+      "lastScraped": "2026-07-12T13:02:47.612Z"
     },
     "local-spins": {
       "id": "local-spins",
@@ -13823,7 +13388,7 @@
       "url": "https://localspins.com/free-outdoor-community-concerts-2026/",
       "color": "#E91E63",
       "eventCount": 416,
-      "lastScraped": "2026-07-05T13:15:37.600Z",
+      "lastScraped": "2026-07-12T13:02:48.617Z",
       "note": "Imported from docs/local-spins guide via merge-local-spins-guide.mjs; preserved across scrapes."
     }
   }
