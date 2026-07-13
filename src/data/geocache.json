@@ -355,5 +355,17 @@
   "4035 chicago drive southwest|grandville|mi": {
     "lat": 42.9094967,
     "lng": -85.7638504
-  }
+  },
+  "65 e 7th st suite 300|s river ave holland|mi": null,
+  "|s river ave holland|mi": {
+    "lat": 42.7848299,
+    "lng": -86.1089707
+  },
+  "151 central ave ste 100, holland, mi 49423|holland|mi": null,
+  "65 e 7th st suite 300|blue star hwy saugatuck|mi": null,
+  "|blue star hwy saugatuck|mi": {
+    "lat": 42.6503458,
+    "lng": -86.1943266
+  },
+  "1795 knollcrest circle southeast|grand rapids|mi": null
 }
