@@ -367,5 +367,10 @@
     "lat": 42.6503458,
     "lng": -86.1943266
   },
-  "1795 knollcrest circle southeast|grand rapids|mi": null
+  "1795 knollcrest circle southeast|grand rapids|mi": null,
+  "65 e 7th st suite 300|clover street holland|mi": null,
+  "|clover street holland|mi": {
+    "lat": 42.79176,
+    "lng": -86.0842477
+  }
 }
