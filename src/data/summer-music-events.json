@@ -218,7 +218,7 @@
       "category": "jazz",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:02.774Z"
+      "scrapedAt": "2026-07-26T13:03:18.869Z"
     },
     {
       "id": "dunnebackgirls-dunneback-summer-music-2026-06-01",
@@ -241,7 +241,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-19T12:59:11.069Z"
+      "scrapedAt": "2026-07-26T13:04:18.101Z"
     },
     {
       "id": "stray-cafe-the-stray-cafe-live-music-2026-06-01",
@@ -264,7 +264,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:14.826Z"
+      "scrapedAt": "2026-07-26T13:04:22.043Z"
     },
     {
       "id": "founders-brewing-founders-brewing-live-music-2026-06-01",
@@ -287,7 +287,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-19T12:59:16.115Z"
+      "scrapedAt": "2026-07-26T13:04:23.252Z"
     },
     {
       "id": "local-spins-east-kentwood-msboa-all-stars-west-michigan-jazz-soc",
@@ -332,7 +332,7 @@
       "category": "outdoor",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:12.386Z"
+      "scrapedAt": "2026-07-26T13:04:19.578Z"
     },
     {
       "id": "local-spins-dj-no-limit-beats-on-bates-kalamazoo-2026-06-03",
@@ -1375,7 +1375,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-ferris-community-summer-band-hemlock-park-bandshell-",
@@ -2050,7 +2050,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-rock-shop-band-music-on-the-grand-downtown-grand-hav",
@@ -2767,7 +2767,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-whiskey-bound-music-on-the-grand-downtown-grand-have",
@@ -3378,7 +3378,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-jessie-james-deconto-hemlock-park-bandshell-summer-c",
@@ -4337,7 +4337,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-blue-water-ramblers-hemlock-park-bandshell-summer-co",
@@ -4796,52 +4796,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-rob-leonard-2026-07-19",
-      "title": "☀️ Rob Leonard",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-19",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-19T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/%e2%98%80%ef%b8%8f-rob-leonard/?instance_id=7262",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
-      "id": "score-gr-oxymorons-2026-07-19",
-      "title": "Oxymorons",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-19",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-19T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/oxymorons/?instance_id=7205",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
       "id": "local-spins-blueback-music-in-the-park-oshtemo-2026-07-19",
       "title": "Blueback",
       "description": "OSHTEMO: MUSIC IN THE PARK. Flesher Field, 3664 South 9th St., Oshtemo. 6 p.m. Sundays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -4908,29 +4862,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-two-beers-in-2026-07-20",
-      "title": "Two Beers In",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-20",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-20T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/two-beers-in/?instance_id=7164",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
       "id": "local-spins-third-coast-swing-west-michigan-jazz-society-walker-",
       "title": "Third Coast Swing",
       "description": "WALKER: WEST MICHIGAN JAZZ SOCIETY. Millennium Park Meadows, 1415 Maynard Ave. SW, Walker. 6:30 p.m. Mondays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -4953,52 +4884,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-moonshot-2026-07-21",
-      "title": "Moonshot",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-21",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-21T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/moonshot/?instance_id=7142",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
-      "id": "wyoming-concerts-park-mexicuba-latin-music-2026-07-21",
-      "title": "MexiCuba (Latin music)",
-      "description": "Concerts in the Park at Lamar Park, 6 p.m. Food trucks on site. Bring a lawn chair. Featuring MexiCuba (Latin music).",
-      "date": "2026-07-21",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-21T18:00:00",
-      "location": {
-        "name": "Lamar Park",
-        "address": "2561 Porter St SW",
-        "city": "Wyoming",
-        "state": "MI",
-        "zip": "49519",
-        "lat": 42.9212516,
-        "lng": -85.7295223
-      },
-      "url": "https://www.wyomingmi.gov/concerts",
-      "source": "wyoming-concerts-park",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:58.308Z"
-    },
-    {
       "id": "local-spins-mexicuba-latin-music-concerts-in-the-park-wyoming-20",
       "title": "MexiCuba (Latin music)",
       "description": "WYOMING: CONCERTS IN THE PARK. Lamar Park, 2561 Porter St. Sw., Wyoming. 6 p.m. Tuesdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -5019,73 +4904,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "muskegon-city-tagged-2026-07-21",
-      "title": "McGraft Park Summer Concert Series",
-      "description": "Join us for another summer of fantastic live music at the McGraft Park Summer Concert Series! Enjoy free concerts under the open sky, featuring an incredible lineup of talented performers […]",
-      "date": "2026-07-21",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-21T19:00:00",
-      "location": {
-        "name": "Muskegon (see event)",
-        "address": "",
-        "city": "Muskegon",
-        "state": "MI",
-        "zip": "49440",
-        "lat": 43.2341813,
-        "lng": -86.2483921
-      },
-      "url": "https://muskegon-mi.gov/event/mcgraft-park-summer-concert-series/2026-07-21/",
-      "source": "muskegon-city-tagged",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:30.772Z"
-    },
-    {
-      "id": "caledonia-concert-series-grayson-jenkins-2026-07-21",
-      "title": "Grayson Jenkins",
-      "description": "Caledonia Community Green Park summer concert series (Tuesdays, 6 p.m. opening act / 7 p.m. headliners). (Local Spins 2026 community concerts guide (fallback)).",
-      "date": "2026-07-21",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-21T19:00:00",
-      "location": {
-        "name": "Caledonia Community Green Park",
-        "address": "9309 Dobber Wenger Memorial Dr",
-        "city": "Caledonia",
-        "state": "MI",
-        "lat": 42.7891193,
-        "lng": -85.5163391
-      },
-      "url": "https://www.instagram.com/p/DX8B2FERAbM/",
-      "source": "caledonia-concert-series",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:56.726Z"
-    },
-    {
-      "id": "rockford-rogue-blues-the-schrock-bros-band-feat-peter-madcat-rut",
-      "title": "The Schrock Bros Band feat. Peter Madcat Ruth",
-      "description": "Rogue River Blues Series — free Tuesday blues in downtown Rockford, 7 p.m. June 10 & 17 performances at Rotary Pavilion while Garden Club Park construction continues (per City of Rockford).",
-      "date": "2026-07-21",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-21T19:00:00",
-      "location": {
-        "name": "Garden Club Park — Rogue River stage",
-        "address": "White Pine Trail, downtown Rockford",
-        "city": "Rockford",
-        "state": "MI",
-        "lat": 43.119721,
-        "lng": -85.559604
-      },
-      "url": "https://www.rockford.mi.us/concerts",
-      "source": "rockford-rogue-blues",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:59.958Z"
     },
     {
       "id": "local-spins-laditude-entertainment-under-the-stars-coldwater-202",
@@ -5218,29 +5036,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-rocketfuel-haulers-2026-07-22",
-      "title": "Rocketfuel Haulers",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-22",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-22T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/rocketfuel-haulers/?instance_id=7198",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
       "id": "local-spins-dags-und-timmah-evening-on-river-street-elk-rapids-2",
       "title": "Dags und Timmah",
       "description": "ELK RAPIDS: EVENING ON RIVER STREET. River Street, Elk Rapids. 6 p.m. Wednesdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -5283,29 +5078,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "sparta-park-concerts-bronk-bros-duo-2026-07-22",
-      "title": "Bronk Bros Duo",
-      "description": "Sparta summer concert series. Bronk Bros Duo in Town Square (177 E. Division, Sparta) & Specialty Craft Market (5-8pm)",
-      "date": "2026-07-22",
-      "time": "6:30 PM",
-      "startDateTime": "2026-07-22T18:30:00",
-      "location": {
-        "name": "Sparta Town Square",
-        "address": "177 E. Division St",
-        "city": "Sparta",
-        "state": "MI",
-        "zip": "49345",
-        "lat": 43.1608171,
-        "lng": -85.7056714
-      },
-      "url": "https://www.spartachamber.com/sparta-park-concerts",
-      "source": "sparta-park-concerts",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:24.264Z"
     },
     {
       "id": "local-spins-slick-jimmy-80-s-rock-bands-okemos-summer-concert-se",
@@ -5372,30 +5144,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
-    },
-    {
-      "id": "ada-parks-summer-concerts-music-on-the-lawn-2026-07-22",
-      "title": "Music on the Lawn",
-      "description": "Come out for another fun summer concert series! Wednesday nights starting at 7 pm at Legacy Park! Concert Dates: June 3, 17, 24, July 8, 15, 22, 29Read More",
-      "date": "2026-07-22",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-22T19:00:00",
-      "location": {
-        "name": "Legacy Park",
-        "address": "7430 River St SE",
-        "city": "Ada",
-        "state": "MI",
-        "zip": "49301",
-        "lat": 42.9543578,
-        "lng": -85.4846228
-      },
-      "url": "https://www.adamichigan.org/community/events.php",
-      "source": "ada-parks-summer-concerts",
-      "category": "outdoor",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:55.369Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-genna-jessie-hemlock-park-bandshell-summer-concert-s",
@@ -5548,29 +5297,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-sophia-the-sages-2026-07-23",
-      "title": "Sophia & The Sages",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-23",
-      "time": "6:00 PM",
-      "startDateTime": "2026-07-23T18:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/sophia-the-sages/?instance_id=7208",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
       "id": "local-spins-jimmy-dodson-live-in-the-plaza-legacy-plaza-2026-07-",
       "title": "Jimmy Dodson",
       "description": "LUDINGTON: LIVE IN THE PLAZA. Legacy Plaza, 112 N. James St.. 6 p.m. Thursdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -5591,29 +5317,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "kentwood-summer-concerts-the-soul-syndicate-2026-07-23",
-      "title": "The Soul Syndicate",
-      "description": "Kentwood Summer Concert Series — free Thursday concerts on the lawn behind City Hall. BYO beer/wine; dogs on leash welcome.",
-      "date": "2026-07-23",
-      "time": "6:30 PM",
-      "startDateTime": "2026-07-23T18:30:00",
-      "location": {
-        "name": "Kentwood City Hall lawn",
-        "address": "4900 Breton Ave SE",
-        "city": "Kentwood",
-        "state": "MI",
-        "zip": "49508",
-        "lat": 42.8746059,
-        "lng": -85.5966743
-      },
-      "url": "https://www.kentwood.us/events_detail_T53_R64.php",
-      "source": "kentwood-summer-concerts",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:25.623Z"
     },
     {
       "id": "local-spins-rin-tarnsy-and-madrin-singer-songwriter-concerts-in-",
@@ -5680,29 +5383,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "lowell-sizzlin-kari-lynch-band-2026-07-23",
-      "title": "Kari Lynch Band",
-      "description": "Sizzlin’ Summer Concerts — free Thursday series on the Lowell riverwalk.",
-      "date": "2026-07-23",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-23T19:00:00",
-      "location": {
-        "name": "Lowell Showboat / Riverwalk (near KDL Englehardt Library)",
-        "address": "200 N Monroe St",
-        "city": "Lowell",
-        "state": "MI",
-        "zip": "49331",
-        "lat": 42.9357677,
-        "lng": -85.3380312
-      },
-      "url": "https://www.discoverlowell.org/sizzlin-summer-concerts/",
-      "source": "lowell-sizzlin",
-      "category": "outdoor",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:28.056Z"
     },
     {
       "id": "local-spins-hey-annie-rock-summer-concerts-buchanan-2026-07-23",
@@ -5945,52 +5625,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-sophia-mckintosh-2026-07-24",
-      "title": "☀️ Sophia McKintosh",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-24",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-24T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/%e2%98%80%ef%b8%8f-sophia-mckintosh/?instance_id=7248",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
-      "id": "score-gr-innuendo-2026-07-24",
-      "title": "Innuendo",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-24",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-24T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/innuendo/?instance_id=7230",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
       "id": "local-spins-wyatt-and-shari-pocket-park-music-series-downtown-bi",
       "title": "Wyatt and Shari",
       "description": "BIG RAPIDS: POCKET PARK MUSIC SERIES. Downtown Big Rapids. Noon Fridays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -6101,52 +5735,6 @@
       "scrapedAt": "2026-05-15T17:54:13.874Z"
     },
     {
-      "id": "score-gr-angie-delight-2026-07-25",
-      "title": "☀️ Angie Delight",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-25",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-25T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/%e2%98%80%ef%b8%8f-angie-delight/?instance_id=7253",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
-      "id": "score-gr-dolly-dagger-2026-07-25",
-      "title": "Dolly Dagger",
-      "description": "Free live music at The Score Restaurant & Sports Bar.",
-      "date": "2026-07-25",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-25T12:00:00",
-      "location": {
-        "name": "The Score Restaurant & Sports Bar",
-        "address": "5301 Northland Dr NE",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49525",
-        "lat": 43.0142,
-        "lng": -85.6462
-      },
-      "url": "https://www.thescoregr.com/event/dolly-dagger/?instance_id=7307",
-      "source": "score-gr",
-      "category": "concert",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
-    },
-    {
       "id": "local-spins-mark-blomsteel-the-motor-city-drive-rhythm-and-dunes",
       "title": "Mark Blomsteel & The Motor City Drive",
       "description": "LUDINGTON: RHYTHM AND DUNES CONCERTS. Waterfront Park Pavilion, 391 S. William St., Ludington. 6 p.m. Saturdays. Listed in Local Spins \"2026\" outdoor community concerts guide.",
@@ -6189,29 +5777,6 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
-    },
-    {
-      "id": "maranatha-natalie-layne-2026-07-25",
-      "title": "Natalie Layne",
-      "description": "Natalie Layne is a pop singer-songwriter, pianist, worship leader, and producer whose music radiates joy and spiritual depth. A Colorado native now in Nashville, she blends pop, jazz, and soulful piano-driven styles shaped by classical training and mentorship under GRAMMY® winner Bernie Herms. Her Centricity Music debut album, All Joy (2025), reflects...",
-      "date": "2026-07-25",
-      "time": "7:00 PM",
-      "startDateTime": "2026-07-25T19:00:00",
-      "location": {
-        "name": "Maranatha Bible & Missionary Conference",
-        "address": "4759 Lake Harbor Rd",
-        "city": "Norton Shores",
-        "state": "MI",
-        "zip": "49441",
-        "lat": 43.1753,
-        "lng": -86.2717
-      },
-      "url": "https://maranathamichigan.org/event/natalie-layne/",
-      "source": "maranatha",
-      "category": "faith based",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:05.848Z"
     },
     {
       "id": "local-spins-shady-grove-bluegrass-festival-summer-concerts-bucha",
@@ -6278,7 +5843,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:04.599Z"
+      "scrapedAt": "2026-07-26T13:03:20.630Z"
     },
     {
       "id": "score-gr-james-littell-2026-07-26",
@@ -6301,7 +5866,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-livin-the-dream-2026-07-26",
@@ -6324,7 +5889,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-zion-lion-reggae-band-summer-concert-series-parchmen",
@@ -6369,7 +5934,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-sunny-wilkinson-quartet-west-michigan-jazz-society-w",
@@ -6414,7 +5979,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "wyoming-concerts-park-on-the-lash-irish-traditional-music-about-",
@@ -6437,7 +6002,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:58.308Z"
+      "scrapedAt": "2026-07-26T13:05:38.149Z"
     },
     {
       "id": "local-spins-on-the-lash-irish-traditional-music-concerts-in-the-",
@@ -6482,7 +6047,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:30.772Z"
+      "scrapedAt": "2026-07-26T13:04:50.813Z"
     },
     {
       "id": "rockford-rogue-blues-nicholas-james-and-the-bandwagon-2026-07-28",
@@ -6504,7 +6069,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:59.958Z"
+      "scrapedAt": "2026-07-26T13:05:40.339Z"
     },
     {
       "id": "local-spins-island-vibe-entertainment-under-the-stars-coldwater-",
@@ -6657,7 +6222,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-sweetwater-blues-band-evening-on-river-street-elk-ra",
@@ -6702,7 +6267,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:24.264Z"
+      "scrapedAt": "2026-07-26T13:04:42.441Z"
     },
     {
       "id": "local-spins-geech-current-top-40-to-1960s-soul-rock-okemos-summe",
@@ -6769,7 +6334,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-the-steve-higler-blues-power-trio-hemlock-park-bands",
@@ -6942,7 +6507,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-third-coast-swing-live-in-the-plaza-legacy-plaza-202",
@@ -6987,7 +6552,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:25.623Z"
+      "scrapedAt": "2026-07-26T13:04:45.449Z"
     },
     {
       "id": "local-spins-frendz-swing-band-summer-concerts-on-the-square-char",
@@ -7032,7 +6597,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:28.056Z"
+      "scrapedAt": "2026-07-26T13:04:48.336Z"
     },
     {
       "id": "local-spins-david-mayfield-parade-sounds-of-summer-cutler-park-2",
@@ -7207,7 +6772,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-moxie-2026-07-31",
@@ -7230,7 +6795,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-all-that-jazz-jazz-pocket-park-music-series-downtown",
@@ -7341,7 +6906,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-gruv-n-2026-08-01",
@@ -7364,7 +6929,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-jedi-mind-trip-rhythm-and-dunes-concerts-ludington-2",
@@ -7431,7 +6996,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:05.848Z"
+      "scrapedAt": "2026-07-26T13:03:22.082Z"
     },
     {
       "id": "local-spins-da-veonce-and-da-funk-gang-saturdays-in-the-park-tra",
@@ -7476,7 +7041,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-the-king-of-mars-2026-08-02",
@@ -7499,7 +7064,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-sushi-roll-from-chicago-pop-rock-summer-concert-seri",
@@ -7566,7 +7131,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-grand-rapids-jazz-orchestra-west-michigan-jazz-socie",
@@ -7611,7 +7176,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "caledonia-concert-series-the-mighty-pines-2026-08-04",
@@ -7633,7 +7198,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:56.726Z"
+      "scrapedAt": "2026-07-26T13:05:36.371Z"
     },
     {
       "id": "rockford-rogue-blues-soul-syndicate-2026-08-04",
@@ -7655,7 +7220,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:59.958Z"
+      "scrapedAt": "2026-07-26T13:05:40.339Z"
     },
     {
       "id": "local-spins-scotty-butters-entertainment-under-the-stars-coldwat",
@@ -7786,7 +7351,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-the-covering-band-2026-08-05",
@@ -7809,7 +7374,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-jelly-roll-blues-band-evening-on-river-street-elk-ra",
@@ -7854,7 +7419,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:24.264Z"
+      "scrapedAt": "2026-07-26T13:04:42.441Z"
     },
     {
       "id": "local-spins-school-of-rock-east-lansing-kids-and-adults-rocking-",
@@ -7921,7 +7486,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-spuddies-hemlock-park-bandshell-summer-concert-serie",
@@ -8092,7 +7657,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-groovix-cube-live-in-the-plaza-legacy-plaza-2026-08-",
@@ -8159,7 +7724,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:25.623Z"
+      "scrapedAt": "2026-07-26T13:04:45.449Z"
     },
     {
       "id": "local-spins-sandra-faye-band-classic-rock-summer-concerts-on-the",
@@ -8248,7 +7813,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:30.772Z"
+      "scrapedAt": "2026-07-26T13:04:50.813Z"
     },
     {
       "id": "local-spins-on-the-fly-summer-concert-series-kentwood-2026-08-06",
@@ -8357,7 +7922,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-white-elephant-records-fam-jam-rock-mix-pocket-park-",
@@ -8402,7 +7967,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:29.500Z"
+      "scrapedAt": "2026-07-26T13:04:49.481Z"
     },
     {
       "id": "local-spins-blue-water-ramblers-live-in-the-plaza-legacy-plaza-2",
@@ -8513,7 +8078,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-harry-dean-the-dusty-boys-2026-08-08",
@@ -8536,7 +8101,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-the-scamp-band-music-in-the-park-three-oaks-2026-08-",
@@ -8581,7 +8146,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:05.848Z"
+      "scrapedAt": "2026-07-26T13:03:22.082Z"
     },
     {
       "id": "local-spins-shakedown-saturday-rock-grateful-dead-summer-concert",
@@ -8648,7 +8213,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-oxymorons-2026-08-09",
@@ -8671,7 +8236,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-the-scottish-pipes-and-selkie-2-hour-show-6-30-8-30-",
@@ -8716,7 +8281,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "muskegon-city-tagged-2026-08-11",
@@ -8739,7 +8304,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:30.772Z"
+      "scrapedAt": "2026-07-26T13:04:50.813Z"
     },
     {
       "id": "caledonia-concert-series-sam-morrow-2026-08-11",
@@ -8761,7 +8326,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:56.726Z"
+      "scrapedAt": "2026-07-26T13:05:36.371Z"
     },
     {
       "id": "rockford-rogue-blues-round-creek-string-band-2026-08-11",
@@ -8783,7 +8348,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:59.958Z"
+      "scrapedAt": "2026-07-26T13:05:40.339Z"
     },
     {
       "id": "local-spins-planet-d-nonet-manistee-shoreline-showcase-manistee-",
@@ -8914,7 +8479,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "sparta-park-concerts-city-church-worship-2026-08-12",
@@ -8937,7 +8502,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:24.264Z"
+      "scrapedAt": "2026-07-26T13:04:42.441Z"
     },
     {
       "id": "local-spins-generator-blues-funk-rock-and-soul-okemos-summer-con",
@@ -9004,7 +8569,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-luke-woltanski-hemlock-park-bandshell-summer-concert",
@@ -9155,7 +8720,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-cheryl-wolfram-live-in-the-plaza-legacy-plaza-2026-0",
@@ -9200,7 +8765,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:25.623Z"
+      "scrapedAt": "2026-07-26T13:04:45.449Z"
     },
     {
       "id": "local-spins-sunday-drive-variety-summer-concerts-on-the-square-c",
@@ -9267,7 +8832,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:28.056Z"
+      "scrapedAt": "2026-07-26T13:04:48.336Z"
     },
     {
       "id": "local-spins-reverend-jesse-ray-rock-summer-concerts-buchanan-202",
@@ -9354,7 +8919,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-simply-in-time-2026-08-14",
@@ -9377,7 +8942,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-raised-on-radio-rock-mix-pocket-park-music-series-do",
@@ -9422,7 +8987,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:29.500Z"
+      "scrapedAt": "2026-07-26T13:04:49.481Z"
     },
     {
       "id": "ada-parks-summer-concerts-beers-at-the-bridge-2026-08-14",
@@ -9445,7 +9010,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:55.369Z"
+      "scrapedAt": "2026-07-26T13:05:34.952Z"
     },
     {
       "id": "local-spins-80-cows-live-in-the-plaza-legacy-plaza-2026-08-14",
@@ -9556,7 +9121,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-five-becomes-west-2026-08-15",
@@ -9579,7 +9144,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-saraswathi-ranganathan-music-in-the-park-three-oaks-",
@@ -9624,7 +9189,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:05.848Z"
+      "scrapedAt": "2026-07-26T13:03:22.082Z"
     },
     {
       "id": "local-spins-midwest-hype-reggae-rock-summer-concerts-buchanan-20",
@@ -9691,7 +9256,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-oregon-dreamchild-2026-08-16",
@@ -9714,7 +9279,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-the-insiders-tom-petty-tribute-band-summer-concert-s",
@@ -9781,7 +9346,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-hattrick-band-2026-08-18",
@@ -9804,7 +9369,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "muskegon-city-tagged-2026-08-18",
@@ -9827,7 +9392,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:30.772Z"
+      "scrapedAt": "2026-07-26T13:04:50.813Z"
     },
     {
       "id": "local-spins-the-charlie-millard-band-manistee-shoreline-showcase",
@@ -9938,7 +9503,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-the-collective-motown-and-60-s-band-okemos-summer-co",
@@ -9983,7 +9548,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-two-dudes-in-flip-flops-music-on-the-grand-downtown-",
@@ -10090,7 +9655,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-mike-lenich-live-in-the-plaza-legacy-plaza-2026-08-2",
@@ -10157,7 +9722,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:25.623Z"
+      "scrapedAt": "2026-07-26T13:04:45.449Z"
     },
     {
       "id": "local-spins-blue-water-kings-band-12-person-band-concerts-in-cas",
@@ -10290,7 +9855,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-pop2k-2026-08-21",
@@ -10313,7 +9878,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-jon-hayes-acoustic-pocket-park-music-series-downtown",
@@ -10358,7 +9923,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:29.500Z"
+      "scrapedAt": "2026-07-26T13:04:49.481Z"
     },
     {
       "id": "local-spins-the-buffalo-ryders-rock-rollin-on-the-river-allegan-",
@@ -10447,7 +10012,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-moxie-2026-08-22",
@@ -10470,7 +10035,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-chicken-dolphin-band-music-in-the-park-three-oaks-20",
@@ -10559,7 +10124,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-edge-of-midnight-2026-08-23",
@@ -10582,7 +10147,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-zion-lion-music-in-the-park-oshtemo-2026-08-23",
@@ -10649,7 +10214,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-sophia-the-sages-2026-08-25",
@@ -10672,7 +10237,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "caledonia-concert-series-rick-estrin-the-nightcats-2026-08-25",
@@ -10694,7 +10259,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:56.726Z"
+      "scrapedAt": "2026-07-26T13:05:36.371Z"
     },
     {
       "id": "local-spins-metro-soul-band-manistee-shoreline-showcase-manistee",
@@ -10761,7 +10326,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-sandra-faye-band-classic-70s-rock-and-blues-okemos-s",
@@ -10806,7 +10371,7 @@
       "category": "outdoor",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:22.523Z"
+      "scrapedAt": "2026-07-26T13:04:40.518Z"
     },
     {
       "id": "local-spins-johnny-park-band-music-on-the-grand-downtown-grand-h",
@@ -10893,7 +10458,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-mixed-flavors-thursday-night-live-mason-2026-08-27",
@@ -10938,7 +10503,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-innuendo-2026-08-28",
@@ -10961,7 +10526,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-balsam-brothers-progressive-rock-pocket-park-music-s",
@@ -11072,7 +10637,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-decades-2026-08-29",
@@ -11095,7 +10660,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-kennedy-s-kitchen-music-in-the-park-three-oaks-2026-",
@@ -11162,7 +10727,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-joni-2026-08-30",
@@ -11185,7 +10750,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-run-for-cover-80-s-and-90-s-hits-summer-concert-seri",
@@ -11252,7 +10817,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-livin-the-dream-2026-09-01",
@@ -11275,7 +10840,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-manitou-trucking-company-manistee-shoreline-showcase",
@@ -11342,7 +10907,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-classic-women-of-country-okemos-summer-concert-serie",
@@ -11431,7 +10996,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-rebekkah-rhys-2026-09-04",
@@ -11454,7 +11019,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-dolly-dagger-2026-09-04",
@@ -11477,7 +11042,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-tony-halchak-acoustic-rock-pocket-park-music-series-",
@@ -11544,7 +11109,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-azz-izz-2026-09-05",
@@ -11567,7 +11132,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-newport-blues-project-music-in-the-park-three-oaks-2",
@@ -11612,7 +11177,7 @@
       "category": "faith based",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:05.848Z"
+      "scrapedAt": "2026-07-26T13:03:22.082Z"
     },
     {
       "id": "score-gr-sophia-mckintosh-2026-09-06",
@@ -11635,7 +11200,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-crewneck-2026-09-06",
@@ -11658,7 +11223,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-david-cisco-2026-09-07",
@@ -11681,7 +11246,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-the-cheap-dates-2026-09-07",
@@ -11704,7 +11269,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-brena-2026-09-08",
@@ -11727,7 +11292,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-saxfifth-music-dj-conscious-beats-on-bates-kalamazoo",
@@ -11772,7 +11337,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-northside-rhythm-kings-okemos-summer-concert-series-",
@@ -11817,7 +11382,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-rebekkah-rhys-2026-09-11",
@@ -11840,7 +11405,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-innuendo-2026-09-11",
@@ -11863,7 +11428,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-whisky-river-rats-live-in-the-plaza-legacy-plaza-202",
@@ -11908,7 +11473,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-trapped-on-mars-2026-09-12",
@@ -11931,7 +11496,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-chris-karl-2026-09-13",
@@ -11954,7 +11519,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-sophia-the-sages-2026-09-13",
@@ -11977,7 +11542,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-eli-roe-2026-09-14",
@@ -12000,7 +11565,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-rusty-the-razorblades-2026-09-15",
@@ -12023,7 +11588,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-mexicuba-dj-ivan-beats-on-bates-kalamazoo-2026-09-16",
@@ -12068,7 +11633,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-laurie-tini-glossi-rossi-okemos-summer-concert-serie",
@@ -12113,7 +11678,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-mason-high-school-marching-band-thursday-night-live-",
@@ -12158,7 +11723,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-moxie-2026-09-18",
@@ -12181,7 +11746,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-tom-zatarga-live-in-the-plaza-legacy-plaza-2026-09-1",
@@ -12226,7 +11791,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-harry-dean-the-dusty-boys-2026-09-19",
@@ -12249,7 +11814,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-rebekkah-rhys-2026-09-20",
@@ -12272,7 +11837,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-oregon-dreamchild-2026-09-20",
@@ -12295,7 +11860,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-solvibe-2026-09-21",
@@ -12318,7 +11883,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-moonshot-2026-09-22",
@@ -12341,7 +11906,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-out-of-favor-ron-e-roc-beats-on-bates-kalamazoo-2026",
@@ -12386,7 +11951,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-rear-view-mirror-pop-and-classic-rock-from-the-60-s-",
@@ -12431,7 +11996,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-dave-burel-2026-09-25",
@@ -12454,7 +12019,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-simply-in-time-2026-09-25",
@@ -12477,7 +12042,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-downtowners-live-in-the-plaza-legacy-plaza-2026-09-2",
@@ -12522,7 +12087,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-five-becomes-west-2026-09-26",
@@ -12545,7 +12110,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-matt-welch-2026-09-27",
@@ -12568,7 +12133,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-glad-all-over-2026-09-27",
@@ -12591,7 +12156,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-jp-the-energy-2026-09-28",
@@ -12614,7 +12179,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "score-gr-mr-smith-the-jones-2026-09-29",
@@ -12637,7 +12202,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-the-skeletones-dj-chuck-beats-on-bates-kalamazoo-202",
@@ -12682,7 +12247,7 @@
       "category": "concert",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-19T12:59:46.138Z"
+      "scrapedAt": "2026-07-26T13:05:25.826Z"
     },
     {
       "id": "local-spins-bachelors-since-breakfast-70s-80s-90s-party-rock-oke",
@@ -12705,9 +12270,55 @@
       "isRecurring": false,
       "isFree": true,
       "scrapedAt": "2026-05-15T17:54:13.874Z"
+    },
+    {
+      "id": "maranatha-rhett-walker-family-christmas-concert-2026-12-04",
+      "title": "Rhett Walker Family Christmas Concert",
+      "description": "Rhett Walker Family Christmas Presented by Unity Christian Events & Maranatha Bible and Missionary Conference. When: Friday, December 4th, 2026 Where: Maranatha\\'s Tabernacle Time Concert Starts at 7pm. Join Us for an Unforgettable Christmas Concert Getaway Experience! Details: December 4th, 2026: Room check in is 4pm. Dinner will be served in...",
+      "date": "2026-12-04",
+      "time": "5:00 PM",
+      "startDateTime": "2026-12-04T17:00:00",
+      "location": {
+        "name": "Maranatha Bible & Missionary Conference",
+        "address": "4759 Lake Harbor Rd",
+        "city": "Norton Shores",
+        "state": "MI",
+        "zip": "49441",
+        "lat": 43.1753,
+        "lng": -86.2717
+      },
+      "url": "https://maranathamichigan.org/event/rhettwalker/",
+      "source": "maranatha",
+      "category": "faith based",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-26T13:03:22.082Z"
+    },
+    {
+      "id": "maranatha-cochren-co-concert-2026-12-11",
+      "title": "Cochren & Co. Concert",
+      "description": "Cochren & Co. Concert Presented by Unity Christian Events & Maranatha Bible and Missionary Conference. When: Friday, December 11th, 2026 Where: Maranatha\\'s Tabernacle Time Concert Starts at 7pm. Join Us for an Unforgettable Christmas Concert Getaway Experience! Concert Getaway Package Includes: Lodging on Dec 11th, 2026 (Room sleeps up to 4...",
+      "date": "2026-12-11",
+      "time": "5:00 PM",
+      "startDateTime": "2026-12-11T17:00:00",
+      "location": {
+        "name": "Maranatha Bible & Missionary Conference",
+        "address": "4759 Lake Harbor Rd",
+        "city": "Norton Shores",
+        "state": "MI",
+        "zip": "49441",
+        "lat": 43.1753,
+        "lng": -86.2717
+      },
+      "url": "https://maranathamichigan.org/event/cochren_co/",
+      "source": "maranatha",
+      "category": "faith based",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-26T13:03:22.082Z"
     }
   ],
-  "lastScraped": "2026-07-19T13:02:18.052Z",
+  "lastScraped": "2026-07-26T13:07:46.353Z",
   "sources": {
     "downtown-gr": {
       "id": "downtown-gr",
@@ -12715,7 +12326,7 @@
       "url": "https://downtowngr.org/announcements/2025/04/relax-at-rosa-2025",
       "color": "#1565C0",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:58:59.108Z"
+      "lastScraped": "2026-07-26T13:03:15.184Z"
     },
     "meijer-gardens": {
       "id": "meijer-gardens",
@@ -12723,7 +12334,7 @@
       "url": "https://www.meijergardens.org/calendar/tuesday-evening-music-club/",
       "color": "#2E7D32",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:00.278Z"
+      "lastScraped": "2026-07-26T13:03:16.361Z"
     },
     "coopersville-farm": {
       "id": "coopersville-farm",
@@ -12731,7 +12342,7 @@
       "url": "https://www.coopersvillefarmmuseum.org/",
       "color": "#795548",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:01.773Z"
+      "lastScraped": "2026-07-26T13:03:17.868Z"
     },
     "wm-jazz": {
       "id": "wm-jazz",
@@ -12739,7 +12350,7 @@
       "url": "https://wmichjazz.org/jazz-around-west-michigan",
       "color": "#6A1B9A",
       "eventCount": 1,
-      "lastScraped": "2026-07-19T12:59:03.598Z"
+      "lastScraped": "2026-07-26T13:03:19.629Z"
     },
     "worship-waterfront": {
       "id": "worship-waterfront",
@@ -12747,15 +12358,15 @@
       "url": "https://worshiponthewaterfront.com/",
       "color": "#1976D2",
       "eventCount": 1,
-      "lastScraped": "2026-07-19T12:59:04.847Z"
+      "lastScraped": "2026-07-26T13:03:21.081Z"
     },
     "maranatha": {
       "id": "maranatha",
       "name": "Maranatha Michigan",
       "url": "https://maranathamichigan.org/summer-concert-series/",
       "color": "#F57C00",
-      "eventCount": 5,
-      "lastScraped": "2026-07-19T12:59:06.033Z"
+      "eventCount": 6,
+      "lastScraped": "2026-07-26T13:03:23.165Z"
     },
     "sandy-pines": {
       "id": "sandy-pines",
@@ -12763,7 +12374,7 @@
       "url": "https://sandypines.com/event/chapel-pm-concerts/",
       "color": "#00695C",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:10.068Z"
+      "lastScraped": "2026-07-26T13:04:17.101Z"
     },
     "dunnebackgirls": {
       "id": "dunnebackgirls",
@@ -12771,7 +12382,7 @@
       "url": "https://www.dunnebackgirls.com/eventsandmusic",
       "color": "#AD1457",
       "eventCount": 1,
-      "lastScraped": "2026-07-19T12:59:11.385Z"
+      "lastScraped": "2026-07-26T13:04:18.576Z"
     },
     "beacon-hill": {
       "id": "beacon-hill",
@@ -12779,7 +12390,7 @@
       "url": "https://beaconhillgr.org/concerts26/",
       "color": "#37474F",
       "eventCount": 1,
-      "lastScraped": "2026-07-19T12:59:13.825Z"
+      "lastScraped": "2026-07-26T13:04:21.042Z"
     },
     "stray-cafe": {
       "id": "stray-cafe",
@@ -12787,7 +12398,7 @@
       "url": "https://www.thestraycafe.com/events",
       "color": "#BF360C",
       "eventCount": 1,
-      "lastScraped": "2026-07-19T12:59:15.113Z"
+      "lastScraped": "2026-07-26T13:04:22.250Z"
     },
     "founders-brewing": {
       "id": "founders-brewing",
@@ -12795,7 +12406,7 @@
       "url": "https://foundersbrewing.com/visit-connect/grand-rapids-taproom/",
       "color": "#1B5E20",
       "eventCount": 1,
-      "lastScraped": "2026-07-19T12:59:16.212Z"
+      "lastScraped": "2026-07-26T13:04:24.839Z"
     },
     "gilmore-bluewater": {
       "id": "gilmore-bluewater",
@@ -12803,7 +12414,7 @@
       "url": "https://www.thegilmorecollection.com/bluewater/entertainment/",
       "color": "#0277BD",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:17.515Z"
+      "lastScraped": "2026-07-26T13:04:26.231Z"
     },
     "wm-jazz-park": {
       "id": "wm-jazz-park",
@@ -12811,7 +12422,7 @@
       "url": "https://wmichjazz.org/jazz-in-the-park",
       "color": "#4A148C",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:18.866Z"
+      "lastScraped": "2026-07-26T13:04:28.021Z"
     },
     "cork-wine": {
       "id": "cork-wine",
@@ -12819,7 +12430,7 @@
       "url": "https://corkwineandgrille.com/happenings/",
       "color": "#880E4F",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:21.522Z"
+      "lastScraped": "2026-07-26T13:04:39.516Z"
     },
     "saugatuck-mitp": {
       "id": "saugatuck-mitp",
@@ -12827,23 +12438,23 @@
       "url": "https://saugatuck.com/event/music-in-the-park/",
       "color": "#00897B",
       "eventCount": 11,
-      "lastScraped": "2026-07-19T12:59:23.263Z"
+      "lastScraped": "2026-07-26T13:04:41.439Z"
     },
     "sparta-park-concerts": {
       "id": "sparta-park-concerts",
       "name": "Sparta Summer Concerts (Chamber)",
       "url": "https://www.spartachamber.com/sparta-park-concerts",
       "color": "#5D4037",
-      "eventCount": 4,
-      "lastScraped": "2026-07-19T12:59:24.622Z"
+      "eventCount": 3,
+      "lastScraped": "2026-07-26T13:04:44.449Z"
     },
     "kentwood-summer-concerts": {
       "id": "kentwood-summer-concerts",
       "name": "Kentwood Summer Concert Series",
       "url": "https://www.kentwood.us/events_detail_T53_R64.php",
       "color": "#455A64",
-      "eventCount": 5,
-      "lastScraped": "2026-07-19T12:59:25.735Z"
+      "eventCount": 4,
+      "lastScraped": "2026-07-26T13:04:45.830Z"
     },
     "eastgr-concerts-park": {
       "id": "eastgr-concerts-park",
@@ -12851,15 +12462,15 @@
       "url": "https://www.eastgrmi.gov/181/Concerts-In-The-Park",
       "color": "#00695C",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:27.054Z"
+      "lastScraped": "2026-07-26T13:04:47.334Z"
     },
     "lowell-sizzlin": {
       "id": "lowell-sizzlin",
       "name": "Lowell — Sizzlin’ Summer Concerts",
       "url": "https://www.discoverlowell.org/sizzlin-summer-concerts/",
       "color": "#C62828",
-      "eventCount": 3,
-      "lastScraped": "2026-07-19T12:59:28.499Z"
+      "eventCount": 2,
+      "lastScraped": "2026-07-26T13:04:48.480Z"
     },
     "grandhaven-free-fridays": {
       "id": "grandhaven-free-fridays",
@@ -12867,15 +12478,15 @@
       "url": "https://www.grandhavenfreefridays.com/events",
       "color": "#0277BD",
       "eventCount": 3,
-      "lastScraped": "2026-07-19T12:59:29.771Z"
+      "lastScraped": "2026-07-26T13:04:49.812Z"
     },
     "muskegon-city-tagged": {
       "id": "muskegon-city-tagged",
       "name": "City of Muskegon (tagged events)",
       "url": "https://muskegon-mi.gov/events/list/?tribe-bar-date=2026-06-01&tribe_tags%5B0%5D=702",
       "color": "#1565C0",
-      "eventCount": 5,
-      "lastScraped": "2026-07-19T12:59:43.630Z"
+      "eventCount": 4,
+      "lastScraped": "2026-07-26T13:05:23.317Z"
     },
     "visit-muskegon-concerts": {
       "id": "visit-muskegon-concerts",
@@ -12883,47 +12494,47 @@
       "url": "https://www.visitmuskegon.org/events/concerts-live-music/",
       "color": "#4527A0",
       "eventCount": 0,
-      "lastScraped": "2026-07-19T12:59:45.137Z"
+      "lastScraped": "2026-07-26T13:05:24.824Z"
     },
     "score-gr": {
       "id": "score-gr",
       "name": "The Score GR",
       "url": "https://www.thescoregr.com/event-calendar/",
       "color": "#FF6F00",
-      "eventCount": 105,
-      "lastScraped": "2026-07-19T12:59:54.368Z"
+      "eventCount": 95,
+      "lastScraped": "2026-07-26T13:05:33.950Z"
     },
     "ada-parks-summer-concerts": {
       "id": "ada-parks-summer-concerts",
       "name": "Ada Township — Summer Concerts (Legacy Park)",
       "url": "https://www.adamichigan.org/departments/parks_recreation_land_preservation/community___special_events.php",
       "color": "#558B2F",
-      "eventCount": 2,
-      "lastScraped": "2026-07-19T12:59:55.725Z"
+      "eventCount": 1,
+      "lastScraped": "2026-07-26T13:05:35.370Z"
     },
     "caledonia-concert-series": {
       "id": "caledonia-concert-series",
       "name": "Caledonia Community Green Park",
       "url": "https://www.instagram.com/p/DX8B2FERAbM/",
       "color": "#6A1B9A",
-      "eventCount": 4,
-      "lastScraped": "2026-07-19T12:59:57.307Z"
+      "eventCount": 3,
+      "lastScraped": "2026-07-26T13:05:37.147Z"
     },
     "wyoming-concerts-park": {
       "id": "wyoming-concerts-park",
       "name": "Wyoming — Concerts in the Park",
       "url": "https://www.wyomingmi.gov/concerts",
       "color": "#283593",
-      "eventCount": 2,
-      "lastScraped": "2026-07-19T12:59:58.957Z"
+      "eventCount": 1,
+      "lastScraped": "2026-07-26T13:05:39.338Z"
     },
     "rockford-rogue-blues": {
       "id": "rockford-rogue-blues",
       "name": "Rockford — Rogue River Blues Series",
       "url": "https://www.rockford.mi.us/news_detail_T7_R459.php",
       "color": "#4E342E",
-      "eventCount": 4,
-      "lastScraped": "2026-07-19T13:00:00.301Z"
+      "eventCount": 3,
+      "lastScraped": "2026-07-26T13:05:40.646Z"
     },
     "local-spins": {
       "id": "local-spins",
@@ -12931,7 +12542,7 @@
       "url": "https://localspins.com/free-outdoor-community-concerts-2026/",
       "color": "#E91E63",
       "eventCount": 416,
-      "lastScraped": "2026-07-19T13:00:01.307Z",
+      "lastScraped": "2026-07-26T13:05:41.652Z",
       "note": "Imported from docs/local-spins guide via merge-local-spins-guide.mjs; preserved across scrapes."
     }
   }
