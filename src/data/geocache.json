@@ -372,5 +372,10 @@
   "|clover street holland|mi": {
     "lat": 42.79176,
     "lng": -86.0842477
+  },
+  "65 e 7th st suite 300|college ave holland|mi": null,
+  "|college ave holland|mi": {
+    "lat": 42.7898668,
+    "lng": -86.1044006
   }
 }

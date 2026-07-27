@@ -1,251 +1,6 @@
 {
   "events": [
     {
-      "id": "grand-rapids-org-the-chamber-open-2026-07-20",
-      "title": "The Chamber Open",
-      "description": "",
-      "date": "2026-07-20",
-      "time": "July 20 @ 7:00 am - 6:30 pm",
-      "startDateTime": "2026-07-20T00:00:00",
-      "location": {
-        "name": "Grand Rapids",
-        "address": "",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://grandrapids.org/event/the-chamber-open-2026/",
-      "source": "grand-rapids-org",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
-    },
-    {
-      "id": "west-coast-chamber-summer-intern-series-beach-bash-2026-07-20",
-      "title": "Summer Intern Series: Beach Bash",
-      "description": "Beach BashFuel Your Summer with Connection and PurposeJoin us for a Summer Intern July Social!You will get to build connections and community with fellow Summer Interns in West Michigan. Get ready to explore and connect through a fun lakefront park social!What to ExpectMeet at Tunnel ParkEnjoy the company of fellow Summer InternsHang out, play games, social, and eat great snacks!Who Should AttendSummer interns from any industryHigh School, College, or recent grads in an internship who are eager to build connections and grow professionallyInterns who want to explore the community, meet peers...",
-      "date": "2026-07-20",
-      "time": "4:30 PM",
-      "startDateTime": "2026-07-20T16:30:00",
-      "location": {
-        "name": "Tunnel Park 66",
-        "address": "65 E 7th St Suite 300",
-        "city": "Lakeshore Drive N Holland",
-        "state": "MI"
-      },
-      "url": "https://business.westcoastchamber.org/event-calendar/Details/summer-intern-series-beach-bash-1755770",
-      "source": "west-coast-chamber",
-      "category": "networking",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
-      "endDateTime": "2026-07-20T18:00:00"
-    },
-    {
-      "id": "msu-foundation-street-food-connect-2026-07-21",
-      "title": "Street Food Connect",
-      "description": "Connect with startups, industry professionals, MSU affiliates, and student entrepreneurs while enjoying food from local vendors. Whether you're catching up with colleagues, meeting new people, or sharing updates on your latest projects, Street Food Connect offers a casual setting to build relationships and strengthen connections across the innovation ecosystem. HOSTED BY: MSU Research Foundation",
-      "date": "2026-07-21",
-      "time": "4:00 PM",
-      "startDateTime": "2026-07-21T16:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7323,
-        "lng": -84.5555
-      },
-      "url": "https://msufoundation.org/events/",
-      "source": "msu-foundation",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
-    },
-    {
-      "id": "msu-foundation-how-health-plans-think-a-startup-guide-to-payer-d",
-      "title": "How Health Plans Think: A Startup Guide to Payer Decision-Making",
-      "description": "Learn how health plans evaluate new technologies and position your startup for successful healthcare partnerships. Understanding how health plans evaluate new solutions is essential for healthcare startups. Join the Henry Ford Health + MSU Innovation Hub for a practical look at how payers evaluate new technologies and potential partners. We'll explore what drives payer decision-making and how founders can better prepare for conversations with healthcare organizations.",
-      "date": "2026-07-22",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-22T12:00:00",
-      "location": {
-        "name": "MSU Research Foundation",
-        "address": "325 E. Grand River Ave., Suite 275",
-        "city": "East Lansing",
-        "state": "MI",
-        "lat": 42.7323,
-        "lng": -84.5555
-      },
-      "url": "https://msufoundation.org/events/",
-      "source": "msu-foundation",
-      "category": "pitch",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
-    },
-    {
-      "id": "right-place-coffee-circle-people-driven-technology-2026-07-23",
-      "title": "Coffee Circle: People Driven Technology",
-      "description": "Join us for our monthly Coffee Circle meetup hosted by People Driven Technology.",
-      "date": "2026-07-23",
-      "time": "8:30 AM – 9:30 AM",
-      "startDateTime": "2026-07-23T08:30:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/coffee-circle-people-driven-technology",
-      "source": "right-place",
-      "category": "networking",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
-      "endDateTime": "2026-07-23T09:30:00"
-    },
-    {
-      "id": "bamboo-grove-2026-07-23",
-      "title": "Grove",
-      "description": "​Grove is a two-day retreat where founders, creators, and operators step away from the day-to-day grind to work on their businesses — together.",
-      "date": "2026-07-23",
-      "time": "9:00 AM",
-      "startDateTime": "2026-07-23T09:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/grove",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
-    },
-    {
-      "id": "right-place-best-practices-selling-marketing-on-value-not-price-",
-      "title": "Best Practices: Selling & Marketing on Value (Not Price) – Webinar #1",
-      "description": "In this opening session, Doug Von Koenig explores the concept of value and what it means in a business context, how it is created, and how sales and marketing professionals can effectively communicate it to their clients.",
-      "date": "2026-07-23",
-      "time": "9:30 AM – 10:15 AM",
-      "startDateTime": "2026-07-23T09:30:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/best-practices-valueselling-webinar-1",
-      "source": "right-place",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
-      "endDateTime": "2026-07-23T10:15:00"
-    },
-    {
-      "id": "south-kent-chamber-speak-with-authority-networking-that-clicks-2",
-      "title": "Speak with Authority Networking that Clicks",
-      "description": "Networking does not have to feel awkward, forced, or transactional. Yet, many business professionals struggle because their introductions feel unclear or they overthink conversations instead of building real connections. If you’ve ever found yourself relying on a your job title or a using industry buzz words that leave your listener confused this workshop is for you.",
-      "date": "2026-07-23",
-      "time": "10:00 AM",
-      "startDateTime": "2026-07-23T10:00:00",
-      "location": {
-        "name": "220 54th Street SW, Grand Rapids, MI 49548",
-        "address": "",
-        "city": "Wyoming",
-        "state": "MI",
-        "lat": 42.9132581,
-        "lng": -85.7057035
-      },
-      "url": "https://business.southkent.org/events/details/speak-with-authority-networking-that-clicks-06-16-2026-14047",
-      "source": "south-kent-chamber",
-      "category": "networking",
-      "isRecurring": false,
-      "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
-      "endDateTime": "2026-07-23T12:00:00"
-    },
-    {
-      "id": "bamboo-crashthatcourse-show-tell-2026-07-23",
-      "title": "CrashThatCourse Show & Tell",
-      "description": "CrashThatCourse Show & Tell is a free monthly series focused on Claude, Claude Code, Claude Cowork, and AI agents.",
-      "date": "2026-07-23",
-      "time": "12:00 PM",
-      "startDateTime": "2026-07-23T12:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/crashthatcourse-show-tell-4",
-      "source": "bamboo",
-      "isRecurring": true,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
-    },
-    {
-      "id": "right-place-bouldering-belonging-with-radical-hospitality-2026-0",
-      "title": "Bouldering & Belonging with Radical Hospitality",
-      "description": "​Join us at Terra Firma Bouldering Co. for an evening of bouldering, good conversation, and new connections!",
-      "date": "2026-07-24",
-      "time": "6:00 PM – 9:00 PM",
-      "startDateTime": "2026-07-24T18:00:00",
-      "location": {
-        "name": "The Right Place",
-        "address": "25 Ottawa Ave SW, Suite 400",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "zip": "49503",
-        "lat": 42.9634,
-        "lng": -85.6732
-      },
-      "url": "https://www.rightplace.org/events/bouldering-belonging-with-radical-hospitality",
-      "source": "right-place",
-      "category": "meetup",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
-      "endDateTime": "2026-07-24T21:00:00"
-    },
-    {
-      "id": "bamboo-black-tech-saturdays-grand-rapids-takeover-2026-07-25",
-      "title": "Black Tech Saturdays Grand Rapids Takeover",
-      "description": "BTS comes to Grand Rapids on July 25th at Bamboo—founders, innovators, and ecosystem builders connecting across East to West Michigan.",
-      "date": "2026-07-25",
-      "time": "1:00 PM",
-      "startDateTime": "2026-07-25T13:00:00",
-      "location": {
-        "name": "Bamboo Grand Rapids",
-        "address": "38 Commerce Ave SW",
-        "city": "Grand Rapids",
-        "state": "MI",
-        "lat": 42.9614,
-        "lng": -85.6726
-      },
-      "url": "https://www.bamboocowork.com/events-at-bamboo/black-tech-saturdays-grand-rapids-takeover",
-      "source": "bamboo",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
-    },
-    {
       "id": "grand-rapids-org-talent-human-resources-workshop-2026-07-28",
       "title": "Talent & Human Resources Workshop",
       "description": "",
@@ -265,7 +20,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "south-kent-chamber-wyoming-business-leaders-2026-07-28",
@@ -287,7 +42,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-07-28T09:00:00"
     },
     {
@@ -310,7 +65,7 @@
       "category": "conference",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-07-28T19:00:00"
     },
     {
@@ -332,7 +87,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-07-29",
@@ -354,7 +109,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "gr-junior-chamber-morning-momentum-2026-07-29",
@@ -377,7 +132,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:46.832Z"
+      "scrapedAt": "2026-07-27T11:20:18.205Z"
     },
     {
       "id": "right-place-q3-technology-exchange-defense-and-aerospace-breakfa",
@@ -400,8 +155,30 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
       "endDateTime": "2026-07-29T11:00:00"
+    },
+    {
+      "id": "msu-foundation-pitchmi-q-a-session-2026-07-29",
+      "title": "PitchMI Q&A Session",
+      "description": "Thinking about applying to PitchMI? Join this live Q&A to learn about the application process, judging criteria, timeline, prizes, and more. HOSTED BY: MSU Research Foundation",
+      "date": "2026-07-29",
+      "time": "12:00 PM",
+      "startDateTime": "2026-07-29T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
       "id": "bamboo-workshop-wednesdays-is-your-business-a-machine-or-job-how",
@@ -422,7 +199,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "west-coast-chamber-the-salvation-army-community-action-house-com",
@@ -444,7 +221,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-07-29T13:30:00"
     },
     {
@@ -467,7 +244,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-07-30T19:00:00"
     },
     {
@@ -490,7 +267,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-07-31T15:30:00"
     },
     {
@@ -513,7 +290,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-08-03T19:00:00"
     },
     {
@@ -536,7 +313,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-08-04T20:00:00"
     },
     {
@@ -559,7 +336,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-08-05T09:00:00"
     },
     {
@@ -581,7 +358,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "startup-garage-workshop-strategic-vision-mapping-2026-08-05",
@@ -604,7 +381,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "bamboo-hands-on-mushroom-workshop-grand-rapids-2026-08-05",
@@ -625,7 +402,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "grand-rapids-org-west-michigan-housing-summit-2026-08-06",
@@ -647,7 +424,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "bamboo-candid-conversations-2026-08-06",
@@ -668,7 +445,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "right-place-candid-conversations-august-6-2026-08-06",
@@ -691,7 +468,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
       "endDateTime": "2026-08-06T17:00:00"
     },
     {
@@ -714,7 +491,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "gr-junior-chamber-women-s-empowerment-summit-2026-08-07",
@@ -737,7 +514,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:46.832Z"
+      "scrapedAt": "2026-07-27T11:20:18.205Z"
     },
     {
       "id": "bamboo-founders-first-fridays-2026-08-07",
@@ -758,30 +535,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
-    },
-    {
-      "id": "west-coast-chamber-prestige-auto-sales-ribbon-cutting-celebratio",
-      "title": "Prestige Auto Sales Ribbon Cutting Celebration",
-      "description": "Prestige Auto Sales Ribbon CuttingPrestige Auto Sales is excited to announce their move to a new location!Join them in celebrating their ribbon cutting as they open the doors to their new building. As a growing used-car dealership, they are truly grateful for the incredible support they've received from the community and surrounding areas.They're excited for this next chapter and look forward to continuing to serve you in their expanded space. Thank you for being part of their journey!Please join us for a ribbon-cutting celebration on Friday, August 7 at 11:00 AM. You can expect local coffe...",
-      "date": "2026-08-07",
-      "time": "11:00 AM",
-      "startDateTime": "2026-08-07T11:00:00",
-      "location": {
-        "name": "Prestige Auto Sales 621",
-        "address": "65 E 7th St Suite 300",
-        "city": "Heritage Ct Holland",
-        "state": "MI",
-        "lat": 42.7749068,
-        "lng": -86.0823872
-      },
-      "url": "https://business.westcoastchamber.org/event-calendar/Details/prestige-auto-sales-ribbon-cutting-celebration-1753305",
-      "source": "west-coast-chamber",
-      "category": "other",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
-      "endDateTime": "2026-08-07T11:30:00"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "bamboo-start-garden-first-fridays-2026-08-07",
@@ -802,7 +556,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "south-kent-chamber-government-matters-2026-08-10",
@@ -824,7 +578,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-08-10T21:30:00"
     },
     {
@@ -847,7 +601,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-08-10T19:00:00"
     },
     {
@@ -870,7 +624,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
       "id": "west-coast-chamber-social-hour-with-the-chamber-nelis-dutch-vill",
@@ -892,7 +646,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-08-11T18:00:00"
     },
     {
@@ -915,7 +669,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "right-place-manufacturers-council-tour-of-best-practice-bissell-",
@@ -938,7 +692,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
       "endDateTime": "2026-08-12T10:00:00"
     },
     {
@@ -961,7 +715,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-08-12T09:00:00"
     },
     {
@@ -985,7 +739,29 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
+    },
+    {
+      "id": "msu-foundation-pitch-practice-2026-08-12",
+      "title": "Pitch Practice",
+      "description": "A successful pitch presentation should evolve as your startup grows. Developing this skill is essential for communicating your value proposition, building credibility, securing partnerships, and attracting investors. Join us to practice your pitch and receive expert feedback from the MSU Research Foundation venture team and fellow founders. HOSTED BY: MSU Research Foundation",
+      "date": "2026-08-12",
+      "time": "3:30 PM",
+      "startDateTime": "2026-08-12T15:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
       "id": "west-coast-chamber-edward-jones-ribbon-cutting-celebration-2026-",
@@ -1007,7 +783,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-08-12T16:30:00"
     },
     {
@@ -1031,7 +807,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
       "endDateTime": "2026-08-12T18:00:00"
     },
     {
@@ -1054,7 +830,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
       "id": "south-kent-chamber-division-avenue-business-association-2026-08-",
@@ -1076,7 +852,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-08-13T09:00:00"
     },
     {
@@ -1099,7 +875,31 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
+    },
+    {
+      "id": "right-place-find-your-first-ai-workflow-2026-08-13",
+      "title": "Find Your First AI Workflow",
+      "description": "AI and automation can deliver significant value, but only when they're applied to the right processes. Before choosing a tool or platform, manufacturers need a clear understanding of which workflows will have the greatest impact.",
+      "date": "2026-08-13",
+      "time": "9:15 AM – 10:00 AM",
+      "startDateTime": "2026-08-13T09:15:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/find-your-first-ai-workflow",
+      "source": "right-place",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
+      "endDateTime": "2026-08-13T10:00:00"
     },
     {
       "id": "right-place-place-matters-summit-2026-2026-08-13",
@@ -1122,7 +922,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
       "endDateTime": "2026-08-13T17:30:00"
     },
     {
@@ -1146,7 +946,7 @@
       "category": "networking",
       "isRecurring": true,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:46.832Z"
+      "scrapedAt": "2026-07-27T11:20:18.205Z"
     },
     {
       "id": "west-coast-chamber-intern-meet-up-group-hike-2026-08-17",
@@ -1168,8 +968,31 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-08-17T18:00:00"
+    },
+    {
+      "id": "south-kent-chamber-unlock-the-power-of-ai-for-your-business-join",
+      "title": "Unlock the Power of AI for Your Business – Join Our 3-Part Lunch & Learn Series",
+      "description": "We're excited to invite you to our AI Lunch & Learn Workshop Series, presented by West Michigan Technology Services. Artificial Intelligence is transforming the way businesses work, but knowing where to start and how to use it safely can be overwhelming.",
+      "date": "2026-08-18",
+      "time": "11:00 AM",
+      "startDateTime": "2026-08-18T11:00:00",
+      "location": {
+        "name": "284 Dodge NE Suite 100, Comstock Park, MI 49321",
+        "address": "",
+        "city": "Wyoming",
+        "state": "MI",
+        "lat": 42.9132581,
+        "lng": -85.7057035
+      },
+      "url": "https://business.southkent.org/events/details/unlock-the-power-of-ai-for-your-business-join-our-3-part-lunch-learn-series-14060",
+      "source": "south-kent-chamber",
+      "category": "workshop",
+      "isRecurring": true,
+      "isFree": false,
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
+      "endDateTime": "2026-08-18T13:30:00"
     },
     {
       "id": "bamboo-midwest-marketing-meetup-2026-08-18",
@@ -1190,7 +1013,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "grand-rapids-org-business-transition-from-value-building-to-exit",
@@ -1212,7 +1035,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "grand-rapids-org-outpro-forum-mental-health-workplace-wellness-f",
@@ -1234,7 +1057,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "west-coast-chamber-west-coast-yps-netwalking-holland-farmers-mar",
@@ -1256,7 +1079,7 @@
       "category": "meetup",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-08-19T13:15:00"
     },
     {
@@ -1279,7 +1102,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "right-place-best-practices-build-client-agreement-around-the-pro",
@@ -1302,7 +1125,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
       "endDateTime": "2026-08-20T10:15:00"
     },
     {
@@ -1324,7 +1147,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "south-kent-chamber-wyoming-business-leaders-2026-08-25",
@@ -1346,7 +1169,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:06.735Z",
+      "scrapedAt": "2026-07-27T11:19:45.966Z",
       "endDateTime": "2026-08-25T09:00:00"
     },
     {
@@ -1368,7 +1191,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "grand-rapids-org-business-acquisition-from-search-to-purchase-20",
@@ -1390,7 +1213,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "grand-rapids-org-chamber-happy-hour-2026-08-26",
@@ -1412,7 +1235,31 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
+    },
+    {
+      "id": "right-place-is-your-manufacturing-business-ready-for-digital-sal",
+      "title": "Is Your Manufacturing Business Ready for Digital Sales?",
+      "description": "Many manufacturers are feeling pressure to invest in digital sales, whether that's a new website, customer portal, quoting tool, marketplace strategy, or ecommerce platform. But before investing in technology, it's important to understand the business problem you're trying to solve.",
+      "date": "2026-08-26",
+      "time": "9:15 AM – 10:15 AM",
+      "startDateTime": "2026-08-26T09:15:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/is-your-manufacturing-business-ready-for-digital-sales",
+      "source": "right-place",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
+      "endDateTime": "2026-08-26T10:15:00"
     },
     {
       "id": "grand-rapids-org-chamber-issues-forum-the-future-of-michigan-s-t",
@@ -1434,7 +1281,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:05.689Z"
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "west-coast-chamber-west-coast-yps-rooftop-trivia-takeover-2026-0",
@@ -1456,8 +1303,30 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-08-31T20:30:00"
+    },
+    {
+      "id": "grand-rapids-org-business-exchange-breakfast-2026-09-03",
+      "title": "Business Exchange Breakfast",
+      "description": "",
+      "date": "2026-09-03",
+      "time": "September 3 @ 8:00 am - 10:00 am Business Exchange Series",
+      "startDateTime": "2026-09-03T00:00:00",
+      "location": {
+        "name": "Grand Rapids",
+        "address": "",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "lat": 42.9614,
+        "lng": -85.6726
+      },
+      "url": "https://grandrapids.org/event/business-exchange-breakfast-9-3/",
+      "source": "grand-rapids-org",
+      "category": "other",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-07-27T11:19:44.918Z"
     },
     {
       "id": "bamboo-founders-first-fridays-2026-09-04",
@@ -1478,7 +1347,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "west-coast-chamber-power-hour-2026-09-09",
@@ -1500,7 +1369,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-09-09T17:00:00"
     },
     {
@@ -1523,7 +1392,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
       "id": "bamboo-september-member-dinner-2026-09-10",
@@ -1544,7 +1413,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "right-place-tech-week-kick-off-2026-2026-09-14",
@@ -1567,8 +1436,55 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:51.343Z",
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
       "endDateTime": "2026-09-14T18:00:00"
+    },
+    {
+      "id": "west-coast-chamber-wake-up-west-coast-2026-09-15",
+      "title": "Wake Up West Coast",
+      "description": "Signature Breakfast SeriesWake Up West CoastBig Ideas. Strong Connections. Practical Takeaways.Join Chamber members, business leaders, and community influencers for a morning of meaningful connections and fresh perspectives.September ProgramStart Your Morning With Fresh Ideas and Meaningful ConnectionsWe're putting the finishing touches on our September Wake Up West Coast program. For now, know you'll be joining us for an energizing morning filled with timely timely insights, practical ideas, and conversations designed to help you lead, connect, and grow.What You Can Expect✓Relevant Insight...",
+      "date": "2026-09-15",
+      "time": "7:30 AM",
+      "startDateTime": "2026-09-15T07:30:00",
+      "location": {
+        "name": "Haworth Hotel 225",
+        "address": "65 E 7th St Suite 300",
+        "city": "College Ave Holland",
+        "state": "MI",
+        "lat": 42.7898668,
+        "lng": -86.1044006
+      },
+      "url": "https://business.westcoastchamber.org/event-calendar/Details/wake-up-west-coast-1870618",
+      "source": "west-coast-chamber",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
+      "endDateTime": "2026-09-15T09:00:00"
+    },
+    {
+      "id": "right-place-mipitch-2026-2026-09-17",
+      "title": "MIPitch 2026",
+      "description": "Annual pitch competition, MIPitch, is back for it's sixth year to spark change and entrepreneurial growth in some of West Michigan's more rural communities.",
+      "date": "2026-09-17",
+      "time": "4:00 PM – 8:00 PM",
+      "startDateTime": "2026-09-17T16:00:00",
+      "location": {
+        "name": "The Right Place",
+        "address": "25 Ottawa Ave SW, Suite 400",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9634,
+        "lng": -85.6732
+      },
+      "url": "https://www.rightplace.org/events/mipitch-2026",
+      "source": "right-place",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-07-27T11:20:23.211Z",
+      "endDateTime": "2026-09-17T20:00:00"
     },
     {
       "id": "startup-garage-workshop-turning-vision-into-venture-2026-09-23",
@@ -1591,7 +1507,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "west-coast-chamber-2026-annual-awards-celebration-an-evening-wit",
@@ -1613,7 +1529,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": false,
-      "scrapedAt": "2026-07-20T10:51:14.934Z",
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
       "endDateTime": "2026-09-24T21:00:00"
     },
     {
@@ -1637,7 +1553,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "startup-garage-anchor-point-leadership-be-the-one-conference-202",
@@ -1660,7 +1576,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "bamboo-founders-first-fridays-2026-10-02",
@@ -1681,7 +1597,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
     },
     {
       "id": "msu-foundation-data-science-ai-summit-2026-10-06",
@@ -1703,12 +1619,12 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
-      "id": "startup-garage-workshop-speed-dating-founder-hotseat-2026-10-07",
-      "title": "Workshop: Speed Dating & Founder Hotseat",
-      "description": "Startup Garage event: Workshop: Speed Dating & Founder Hotseat",
+      "id": "startup-garage-workshop-pitch-principles-2026-10-07",
+      "title": "Workshop: Pitch Principles",
+      "description": "Startup Garage event: Workshop: Pitch Principles",
       "date": "2026-10-07",
       "time": "6:30 PM",
       "startDateTime": "2026-10-07T18:30:00",
@@ -1721,12 +1637,12 @@
         "lat": 42.9242,
         "lng": -85.5875
       },
-      "url": "https://www.eventbrite.com/e/workshop-speed-dating-founder-hotseat-tickets-1993353696566",
+      "url": "https://www.eventbrite.com/e/workshop-pitch-principles-tickets-1993352892160",
       "source": "startup-garage",
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "msu-foundation-data-privacy-in-practice-what-actually-matters-fo",
@@ -1748,12 +1664,12 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
-      "id": "startup-garage-workshop-pitch-principles-2026-10-14",
-      "title": "Workshop: Pitch Principles",
-      "description": "Startup Garage event: Workshop: Pitch Principles",
+      "id": "startup-garage-workshop-speed-dating-founder-hotseat-2026-10-14",
+      "title": "Workshop: Speed Dating & Founder Hotseat",
+      "description": "Startup Garage event: Workshop: Speed Dating & Founder Hotseat",
       "date": "2026-10-14",
       "time": "6:30 PM",
       "startDateTime": "2026-10-14T18:30:00",
@@ -1766,12 +1682,12 @@
         "lat": 42.9242,
         "lng": -85.5875
       },
-      "url": "https://www.eventbrite.com/e/workshop-pitch-principles-tickets-1993352892160",
+      "url": "https://www.eventbrite.com/e/workshop-speed-dating-founder-hotseat-tickets-1993353696566",
       "source": "startup-garage",
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "startup-garage-speaker-series-teresa-graney-2026-10-28",
@@ -1794,7 +1710,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "startup-garage-pitchup-2026-2026-11-04",
@@ -1817,7 +1733,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "bamboo-founders-first-fridays-2026-11-06",
@@ -1838,7 +1754,30 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:03.607Z"
+      "scrapedAt": "2026-07-27T11:19:42.665Z"
+    },
+    {
+      "id": "west-coast-chamber-wake-up-west-coast-2026-11-10",
+      "title": "Wake Up West Coast",
+      "description": "Signature Breakfast SeriesWake Up West CoastBig Ideas. Strong Connections. Practical Takeaways.Join Chamber members, business leaders, and community influencers for a morning of meaningful connections and fresh perspectives.NOVEMBER ProgramStart Your Morning With Fresh Ideas and Meaningful ConnectionsWe're putting the finishing touches on our November Wake Up West Coast program. For now, know you'll be joining us for an energizing morning filled with timely timely insights, practical ideas, and conversations designed to help you lead, connect, and grow.What You Can Expect✓Relevant InsightsI...",
+      "date": "2026-11-10",
+      "time": "7:30 AM",
+      "startDateTime": "2026-11-10T07:30:00",
+      "location": {
+        "name": "Haworth Hotel 225",
+        "address": "65 E 7th St Suite 300",
+        "city": "College Ave Holland",
+        "state": "MI",
+        "lat": 42.7898668,
+        "lng": -86.1044006
+      },
+      "url": "https://business.westcoastchamber.org/event-calendar/Details/wake-up-west-coast-1870673",
+      "source": "west-coast-chamber",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
+      "endDateTime": "2026-11-10T09:00:00"
     },
     {
       "id": "startup-garage-speaker-series-david-wasilewski-2026-11-11",
@@ -1861,7 +1800,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "msu-foundation-when-things-go-wrong-founder-disputes-breakups-an",
@@ -1883,7 +1822,30 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
+    },
+    {
+      "id": "west-coast-chamber-power-hour-2026-11-17",
+      "title": "Power Hour",
+      "description": "Structured Networking ProgramPower HourFast-Paced Meaningful Conversations. Real Business Value.Polish your elevator pitch, pack your business cards, and get ready for high-energy networking — Power Hour style!This Month's ProgramStructured NetworkingNetworking Made SimpleBuild your network, one program and one conversation at a time.Networking doesn't have to be awkward! Power Hour combines open networking with structured, timed conversations, making it easy to meet dozens of professionals in one afternoon. Whether you're looking for clients, referrals, or new community connections, you'll...",
+      "date": "2026-11-17",
+      "time": "8:00 AM",
+      "startDateTime": "2026-11-17T08:00:00",
+      "location": {
+        "name": "Michigan West Coast Chamber of Commerce Office 65. E. 7th St. Suite 300",
+        "address": "65 E 7th St Suite 300",
+        "city": "Holland",
+        "state": "MI",
+        "lat": 42.7875,
+        "lng": -86.1089
+      },
+      "url": "https://business.westcoastchamber.org/event-calendar/Details/power-hour-1857715",
+      "source": "west-coast-chamber",
+      "category": "networking",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
+      "endDateTime": "2026-11-17T10:00:00"
     },
     {
       "id": "startup-garage-speaker-series-lacey-dixon-2026-11-18",
@@ -1906,7 +1868,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "startup-garage-speaker-series-jason-arntz-2026-12-02",
@@ -1929,7 +1891,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:47.838Z"
+      "scrapedAt": "2026-07-27T11:20:19.208Z"
     },
     {
       "id": "msu-foundation-hiring-gone-sideways-terminations-complaints-and-",
@@ -1951,7 +1913,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
       "id": "msu-foundation-mastering-customer-contracts-redlines-negotiation",
@@ -1973,7 +1935,7 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     },
     {
       "id": "msu-foundation-due-diligence-bootcamp-how-to-survive-investor-an",
@@ -1995,7 +1957,30 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
+    },
+    {
+      "id": "west-coast-chamber-wake-up-west-coast-2027-03-09",
+      "title": "Wake Up West Coast",
+      "description": "Signature Breakfast SeriesWake Up West CoastBig Ideas. Strong Connections. Practical Takeaways.Join Chamber members, business leaders, and community influencers for a morning of meaningful connections and fresh perspectives.march ProgramStart Your Morning With Fresh Ideas and Meaningful ConnectionsWe're putting the finishing touches on our March Wake Up West Coast program. For now, know you'll be joining us for an energizing morning filled with timely timely insights, practical ideas, and conversations designed to help you lead, connect, and grow.What You Can Expect✓Relevant InsightsIdeas d...",
+      "date": "2027-03-09",
+      "time": "7:30 AM",
+      "startDateTime": "2027-03-09T07:30:00",
+      "location": {
+        "name": "Haworth Hotel 225",
+        "address": "65 E 7th St Suite 300",
+        "city": "College Ave Holland",
+        "state": "MI",
+        "lat": 42.7898668,
+        "lng": -86.1044006
+      },
+      "url": "https://business.westcoastchamber.org/event-calendar/Details/wake-up-west-coast-1870704",
+      "source": "west-coast-chamber",
+      "category": "other",
+      "isRecurring": false,
+      "isFree": false,
+      "scrapedAt": "2026-07-27T11:19:54.890Z",
+      "endDateTime": "2027-03-09T09:00:00"
     },
     {
       "id": "msu-foundation-pricing-discounts-and-revenue-terms-the-legal-sid",
@@ -2017,10 +2002,10 @@
       "category": "pitch",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-07-20T10:51:01.058Z"
+      "scrapedAt": "2026-07-27T11:19:40.354Z"
     }
   ],
-  "lastScraped": "2026-07-20T10:52:33.038Z",
+  "lastScraped": "2026-07-27T11:21:05.313Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -2028,7 +2013,7 @@
       "url": "https://msufoundation.org/events/",
       "color": "#18453B",
       "eventCount": 13,
-      "lastScraped": "2026-07-20T10:51:01.060Z"
+      "lastScraped": "2026-07-27T11:19:40.356Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -2036,15 +2021,15 @@
       "url": "https://startgarden.com/events/",
       "color": "#FF6B35",
       "eventCount": 0,
-      "lastScraped": "2026-07-20T10:51:02.254Z"
+      "lastScraped": "2026-07-27T11:19:41.443Z"
     },
     "bamboo": {
       "id": "bamboo",
       "name": "Bamboo Cowork",
       "url": "https://www.bamboocowork.com/events-at-bamboo",
       "color": "#4CAF50",
-      "eventCount": 17,
-      "lastScraped": "2026-07-20T10:51:03.647Z"
+      "eventCount": 14,
+      "lastScraped": "2026-07-27T11:19:42.707Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -2052,7 +2037,7 @@
       "url": "https://grandrapids.org/events/",
       "color": "#2196F3",
       "eventCount": 48,
-      "lastScraped": "2026-07-20T10:51:05.734Z"
+      "lastScraped": "2026-07-27T11:19:44.965Z"
     },
     "south-kent-chamber": {
       "id": "south-kent-chamber",
@@ -2060,15 +2045,15 @@
       "url": "https://business.southkent.org/events/",
       "color": "#00695C",
       "eventCount": 10,
-      "lastScraped": "2026-07-20T10:51:13.932Z"
+      "lastScraped": "2026-07-27T11:19:53.888Z"
     },
     "west-coast-chamber": {
       "id": "west-coast-chamber",
       "name": "West Coast Chamber",
       "url": "https://business.westcoastchamber.org/event-calendar",
       "color": "#1565C0",
-      "eventCount": 13,
-      "lastScraped": "2026-07-20T10:51:45.380Z"
+      "eventCount": 15,
+      "lastScraped": "2026-07-27T11:20:16.619Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -2076,7 +2061,7 @@
       "url": "https://www.grjuniorchamber.com/",
       "color": "#9C27B0",
       "eventCount": 3,
-      "lastScraped": "2026-07-20T10:51:46.836Z"
+      "lastScraped": "2026-07-27T11:20:18.208Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -2084,7 +2069,7 @@
       "url": "https://www.startupgarage.org/events",
       "color": "#E65100",
       "eventCount": 12,
-      "lastScraped": "2026-07-20T10:51:48.600Z"
+      "lastScraped": "2026-07-27T11:20:20.408Z"
     },
     "right-place": {
       "id": "right-place",
@@ -2092,7 +2077,7 @@
       "url": "https://www.rightplace.org/events/",
       "color": "#1E3A5F",
       "eventCount": 10,
-      "lastScraped": "2026-07-20T10:51:51.347Z"
+      "lastScraped": "2026-07-27T11:20:23.215Z"
     },
     "springgr": {
       "id": "springgr",
@@ -2100,7 +2085,7 @@
       "url": "https://www.springgr.com/events-page/",
       "color": "#2E7D32",
       "eventCount": 0,
-      "lastScraped": "2026-07-20T10:51:53.620Z"
+      "lastScraped": "2026-07-27T11:20:24.849Z"
     }
   }
 }
