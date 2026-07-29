@@ -94,23 +94,23 @@
     <nav>
         <ul class="links">
             <li>
-                <a class="nav_logo" href="index.html">
+                <a class="nav_logo" href="/">
                     <img class="logo_img"
                          src="./logos/star-moon-logo-right.png"
                          alt="Day Dream Technologies" />
                 </a>
             </li>
             <div class="nav_links">
-                <li><a class="nav_link" href="index.html" title="Daydream's homepage">Home</a></li>
-                <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
-                <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
-                <li><a class="nav_link" href="nonprofits.html" title="Nonprofit services">Nonprofits</a></li>
-                <li><a class="nav_link" id="current_page" href="contact.html" title="Contact us">Contact</a></li>
+                <li><a class="nav_link" href="/" title="Daydream's homepage">Home</a></li>
+                <li><a class="nav_link" href="/services" title="Our services">Services</a></li>
+                <li><a class="nav_link" href="/projects" title="Our projects">Projects</a></li>
+                <li><a class="nav_link" href="/nonprofits" title="Nonprofit services">Nonprofits</a></li>
+                <li><a class="nav_link" id="current_page" href="/contact" title="Contact us">Contact</a></li>
             </div>
         </ul>
         <ul class="respo_navbar">
             <li>
-                <a class="nav_logo" href="index.html">
+                <a class="nav_logo" href="/">
                     <img class="logo_img"
                          src="./logos/star-moon-logo-right.png"
                          alt="Day Dream Technologies" />
@@ -127,11 +127,11 @@
             </li>
         </ul>
         <ul class="dropdown">
-            <li><a class="nav_link" href="index.html" title="DayDream's homepage">Home</a></li>
-            <li><a class="nav_link" href="services.html" title="Our services">Services</a></li>
-            <li><a class="nav_link" href="projects.html" title="Our projects">Projects</a></li>
-            <li><a class="nav_link" href="nonprofits.html" title="Nonprofit services">Nonprofits</a></li>
-            <li><a class="nav_link" href="contact.html" title="Contact us">Contact</a></li>
+            <li><a class="nav_link" href="/" title="DayDream's homepage">Home</a></li>
+            <li><a class="nav_link" href="/services" title="Our services">Services</a></li>
+            <li><a class="nav_link" href="/projects" title="Our projects">Projects</a></li>
+            <li><a class="nav_link" href="/nonprofits" title="Nonprofit services">Nonprofits</a></li>
+            <li><a class="nav_link" href="/contact" title="Contact us">Contact</a></li>
         </ul>
     </nav>
 
@@ -330,7 +330,7 @@
 
                     if (response.ok && result.success) {
                         // Redirect to thank you page on success
-                        window.location.href = 'thanks.html';
+                        window.location.href = '/thanks';
                     } else {
                         showMessage('error', 'Something went wrong. Please try again or email us directly at info@daydreamtechnologies.net');
                         submitBtn.disabled = false;
@@ -348,7 +348,7 @@
 
     <footer>
         <div class="footer_left">
-            <a class="footer_link" href="index.html">
+            <a class="footer_link" href="/">
                 <img class="linkdn" src="./logos/star-moon-logo-right.png" alt="Daydream Technologies" />
                 DayDream Technologies LLC
             </a>
