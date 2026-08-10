@@ -377,5 +377,15 @@
   "|college ave holland|mi": {
     "lat": 42.7898668,
     "lng": -86.1044006
+  },
+  "65 e 7th st suite 300|hedcor st holland|mi": null,
+  "|hedcor st holland|mi": {
+    "lat": 42.750927,
+    "lng": -86.0953736
+  },
+  "65 e 7th st suite 300|felch street holland|mi": null,
+  "|felch street holland|mi": {
+    "lat": 42.8193542,
+    "lng": -86.0820824
   }
 }
