@@ -387,5 +387,12 @@
   "|felch street holland|mi": {
     "lat": 42.8193542,
     "lng": -86.0820824
-  }
+  },
+  "65 e 7th st suite 300|e washington ave zeeland|mi": null,
+  "|e washington ave zeeland|mi": {
+    "lat": 42.8187295,
+    "lng": -85.9976052
+  },
+  "29 w. 16th, st holland, mi 49423|st holland|mi": null,
+  "710 chicago dr ste 300, holland, mi 49423|holland|mi": null
 }
