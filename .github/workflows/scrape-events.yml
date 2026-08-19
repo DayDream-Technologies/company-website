@@ -1,7 +1,8 @@
 name: Scrape GR Events
 
 on:
-  # Run weekly on Monday at 8:00 AM UTC (3:00 AM EST / 4:00 AM EDT)
+  # Run bi-weekly on Monday at 8:00 AM UTC (3:00 AM EST / 4:00 AM EDT).
+  # Cron fires weekly; the bi-weekly check below skips every other week.
   schedule:
     - cron: '0 8 * * 1'
   
@@ -16,24 +17,41 @@ jobs:
       contents: write
     
     steps:
+      - name: Check bi-weekly schedule
+        id: biweekly
+        if: github.event_name == 'schedule'
+        run: |
+          WEEK=$(date +%V)
+          if [ $((WEEK % 2)) -ne 0 ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Skipping — odd week ($WEEK), runs on even weeks only"
+          else
+            echo "Running — even week ($WEEK)"
+          fi
+
       - name: Checkout repository
+        if: steps.biweekly.outputs.skip != 'true'
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
+        if: steps.biweekly.outputs.skip != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
       
       - name: Install dependencies
+        if: steps.biweekly.outputs.skip != 'true'
         run: npm ci
       
       - name: Run scraper
+        if: steps.biweekly.outputs.skip != 'true'
         run: node scripts/scrape-events.js --force
       
       - name: Check for changes
+        if: steps.biweekly.outputs.skip != 'true'
         id: check_changes
         run: |
           if git diff --quiet src/data/events.json; then
@@ -43,7 +61,7 @@ jobs:
           fi
       
       - name: Commit and push changes
-        if: steps.check_changes.outputs.changed == 'true'
+        if: steps.biweekly.outputs.skip != 'true' && steps.check_changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"

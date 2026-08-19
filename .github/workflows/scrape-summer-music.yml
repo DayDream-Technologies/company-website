@@ -1,11 +1,10 @@
 name: Scrape GR Summer Music
 
 on:
-  # Run every Sunday at 12:00 UTC (8:00 AM EDT), May through September only.
-  # GitHub Actions cron does not natively support month ranges, so month
-  # filtering is handled inside the scraper (isSummerDate). The workflow itself
-  # fires year-round on Sundays, but only commits when new data is found —
-  # outside of summer the scraper will return empty results and skip the commit.
+  # Run bi-weekly on Sunday at 12:00 UTC (8:00 AM EDT).
+  # Cron fires weekly; the bi-weekly check below skips every other week.
+  # Month filtering (May–September) is handled inside the scraper via
+  # isSummerDate(). Outside of summer the scraper returns empty results.
   schedule:
     - cron: '0 12 * * 0'
 
@@ -20,24 +19,41 @@ jobs:
       contents: write
 
     steps:
+      - name: Check bi-weekly schedule
+        id: biweekly
+        if: github.event_name == 'schedule'
+        run: |
+          WEEK=$(date +%V)
+          if [ $((WEEK % 2)) -ne 0 ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Skipping — odd week ($WEEK), runs on even weeks only"
+          else
+            echo "Running — even week ($WEEK)"
+          fi
+
       - name: Checkout repository
+        if: steps.biweekly.outputs.skip != 'true'
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
+        if: steps.biweekly.outputs.skip != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
+        if: steps.biweekly.outputs.skip != 'true'
         run: npm ci
 
       - name: Run scraper
+        if: steps.biweekly.outputs.skip != 'true'
         run: node scripts/scrape-summer-music.js --force
 
       - name: Check for changes
+        if: steps.biweekly.outputs.skip != 'true'
         id: check_changes
         run: |
           if git diff --quiet src/data/summer-music-events.json; then
@@ -47,7 +63,7 @@ jobs:
           fi
 
       - name: Commit and push changes
-        if: steps.check_changes.outputs.changed == 'true'
+        if: steps.biweekly.outputs.skip != 'true' && steps.check_changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
