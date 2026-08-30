@@ -537,6 +537,54 @@ body {
     line-height: 1.6;
 }
 
+.impact-badge {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-orange);
+    background: rgba(217, 82, 4, 0.1);
+    border: 1px solid rgba(217, 82, 4, 0.3);
+    border-radius: 50px;
+    padding: 4px 14px;
+    margin-bottom: 16px;
+}
+
+.impact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-orange);
+    text-decoration: none;
+    padding: 12px 24px;
+    background: rgba(217, 82, 4, 0.1);
+    border: 1px solid rgba(217, 82, 4, 0.3);
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.impact-link:hover {
+    background: var(--primary-orange);
+    color: var(--text-white);
+    transform: translateX(4px);
+}
+
+.impact-link .link-arrow {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s var(--transition-smooth);
+}
+
+.impact-link:hover .link-arrow {
+    transform: translateX(4px);
+}
+
 /* ========================================
    PROCESS SECTION
    ======================================== */
