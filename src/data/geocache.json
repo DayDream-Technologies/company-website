@@ -394,5 +394,14 @@
     "lng": -85.9976052
   },
   "29 w. 16th, st holland, mi 49423|st holland|mi": null,
-  "710 chicago dr ste 300, holland, mi 49423|holland|mi": null
+  "710 chicago dr ste 300, holland, mi 49423|holland|mi": null,
+  "1534 kalamazoo avenue southeast|grand rapids|mi": {
+    "lat": 42.9356539,
+    "lng": -85.6391176
+  },
+  "201 w. washington ave., ste. 230, zeeland, mi 49464|zeeland|mi": null,
+  "|zeeland|mi": {
+    "lat": 42.8123375,
+    "lng": -86.0165267
+  }
 }
