@@ -403,5 +403,15 @@
   "|zeeland|mi": {
     "lat": 42.8123375,
     "lng": -86.0165267
+  },
+  "65 e 7th st suite 300|river ave holland|mi": null,
+  "|river ave holland|mi": {
+    "lat": 42.7825593,
+    "lng": -86.108957
+  },
+  "184 120th, ave holland, mi 49424|ave holland|mi": null,
+  "|ave holland|mi": {
+    "lat": 42.963915,
+    "lng": -85.6454316
   }
 }
