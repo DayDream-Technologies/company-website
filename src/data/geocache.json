@@ -413,5 +413,10 @@
   "|ave holland|mi": {
     "lat": 42.963915,
     "lng": -85.6454316
+  },
+  "65 e 7th st suite 300|butternut dr holland|mi": null,
+  "|butternut dr holland|mi": {
+    "lat": 42.8193117,
+    "lng": -86.127594
   }
 }
