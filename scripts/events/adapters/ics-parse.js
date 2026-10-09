@@ -49,28 +49,50 @@ function dateFromIcs(value) {
   return { date, time: `${display}:${minute} ${period}` };
 }
 
+function parseLocation(raw) {
+  if (!raw) return { locationName: '', address: '', city: '' };
+  // If LOCATION is just a URL, treat it as empty
+  if (/^https?:\/\//i.test(raw.trim())) return { locationName: '', address: '', city: '' };
+  const parts = raw.split(',').map((s) => s.trim());
+  // ", City, MI" or ", City, MI 49XXX" or ", City, Michigan"
+  const miMatch = raw.match(/,\s*([^,]+),\s*(?:MI|Michigan)\b/i);
+  // ", City, ST" (two-letter state)
+  const stateMatch = !miMatch && raw.match(/,\s*([^,]+),\s*[A-Z]{2}\b/);
+  const city = miMatch ? miMatch[1].trim() : (stateMatch ? stateMatch[1].trim() : '');
+  return { locationName: parts[0] || '', address: raw, city };
+}
+
 function eventsFromIcs(text, source) {
   const out = [];
   for (const vevent of parseIcs(text)) {
     const when = dateFromIcs(vevent.DTSTART);
     if (!when) continue;
-    const location = vevent.LOCATION || '';
-    const cityMatch = location.match(/,\s*([^,]+),\s*MI\b/i);
+    const raw = vevent.LOCATION || '';
+    const loc = parseLocation(raw);
+    // Only fall back to defaultCity when the ICS had no location at all.
+    // If there WAS a location string but no recognizable city, leave city
+    // empty so assignZone can drop events outside Michigan.
+    const hasLocation = raw && !/^https?:\/\//i.test(raw.trim());
+    const city = loc.city || (hasLocation ? '' : (source.options?.defaultCity || ''));
     const event = makeEvent({
       source: source.id,
       title: vevent.SUMMARY,
       description: vevent.DESCRIPTION,
       date: when.date,
       time: when.time,
-      locationName: location.split(',')[0] || '',
-      address: location,
-      city: cityMatch ? cityMatch[1].trim() : (source.options?.defaultCity || ''),
+      locationName: loc.locationName,
+      address: loc.address,
+      city,
       url: vevent.URL || source.url,
       isRecurring: Boolean(vevent.rrule),
       recurringKnown: Boolean(vevent.rrule),
-      isVirtual: /zoom|virtual|online/i.test(location),
+      isVirtual: /zoom|virtual|online/i.test(raw),
     });
-    if (event) out.push(event);
+    if (!event) continue;
+    // Flag events that had a physical location string but no recognized city,
+    // so assignZone can drop them instead of defaulting to the source zone.
+    if (hasLocation && !city) event._unknownCity = true;
+    out.push(event);
   }
   return out;
 }

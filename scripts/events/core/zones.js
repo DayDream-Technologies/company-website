@@ -433,6 +433,9 @@ function assignZone(event, source) {
   if (!sourceZone) return null;
 
   if (event.isVirtual || !normalizeCity(event.location?.city)) {
+    // If the event had a physical location but the city wasn't recognized
+    // (e.g. Mumbai from a Luma discover feed), drop it.
+    if (event._unknownCity) return null;
     return { ...event, zone: sourceZone.id, region: sourceZone.region };
   }
 
