@@ -1,0 +1,350 @@
+{
+  "region": {
+    "id": "south-central",
+    "name": "South Central",
+    "center": {
+      "lat": 42.73,
+      "lng": -84.55
+    },
+    "zoom": 9,
+    "zones": [
+      {
+        "id": "lansing",
+        "name": "Lansing/East Lansing",
+        "host": "LEAP",
+        "url": "https://www.purelansing.com/",
+        "center": {
+          "lat": 42.7325,
+          "lng": -84.5555
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "msu-foundation-data-science-ai-summit-2026-10-21",
+      "title": "Data Science + AI Summit",
+      "description": "Explore how data science and agentic AI are advancing human potential, shaping the future of work, and driving cross-sector innovation. Featuring keynotes, panels, case studies, interactive sessions, and networking to spark intentional partnerships. HOSTED BY: MSU Research Foundation",
+      "date": "2026-10-21",
+      "time": "8:00 AM",
+      "startDateTime": "2026-10-21T08:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "workshop",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-shape-seminar-series-advancing-circular-packaging",
+      "title": "SHAPE Seminar Series: Advancing Circular Packaging Systems Through Reuse and Refill Innovation",
+      "description": "Transitioning from single-use packaging to circular systems requires more than sustainable materials alone, it requires operationally viable reuse infrastructure, cross-sector collaboration, and scalable implementation models. This session will explore the role of refill technologies in advancing circular packaging systems, with particular attention to retailer adoption, consumer behavior, regulatory frameworks, and real-world operational considerations. PRESENTER: John Minagawa-Webster, Chief Commercial Offer and Co-Founder of Ecourage",
+      "date": "2026-11-04",
+      "time": "12:00 PM",
+      "startDateTime": "2026-11-04T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-when-things-go-wrong-founder-disputes-breakups-an",
+      "title": "When Things Go Wrong: Founder Disputes, Breakups, and Forced Exits",
+      "description": "Learn how to handle co-founder conflict, deadlock, and separation legally. Every month, skilled lawyer Joe Morrison serves up essential insight into legal issues to fuel your startup success. PRESENTER: Joe Morrison (Barnes & Thornburg LLP)",
+      "date": "2026-11-12",
+      "time": "8:30 AM",
+      "startDateTime": "2026-11-12T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-shape-seminar-series-how-the-policy-and-regulator",
+      "title": "SHAPE Seminar Series: How the Policy and Regulatory Landscape Shapes the Future of Advanced Recycling",
+      "description": "In her presentation, Jennifer Ronk will provide insights into emerging technologies driving sustainable packaging. Join to connect with SHAPE's network of more than 70 partners and be a part of a growing community committed to reducing packaging waste and advancing economic growth. PRESENTER: Jennifer Ronk, Sr. Manager Sustainability and External Engagement, Dow, Inc.",
+      "date": "2026-12-02",
+      "time": "12:00 PM",
+      "startDateTime": "2026-12-02T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "networking",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-hiring-gone-sideways-terminations-complaints-and-",
+      "title": "Hiring Gone Sideways: Terminations, Complaints, and Legal Risk",
+      "description": "Learn what to do when employees don't work out, and how to avoid lawsuits. Every month, skilled lawyer Joe Morrison serves up essential insight into legal issues to fuel your startup success. PRESENTER: Joe Morrison (Barnes & Thornburg LLP)",
+      "date": "2026-12-10",
+      "time": "8:30 AM",
+      "startDateTime": "2026-12-10T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-mastering-customer-contracts-redlines-negotiation",
+      "title": "Mastering Customer Contracts: Redlines, Negotiation, & \"Gotcha\" Clauses",
+      "description": "Learn how to confidently review and push back on MSAs, SaaS agreements, and procurement terms. Every month, skilled lawyer Joe Morrison serves up essential insight into legal issues to fuel your startup success. PRESENTER: Joe Morrison (Barnes & Thornburg LLP)",
+      "date": "2027-01-14",
+      "time": "8:30 AM",
+      "startDateTime": "2027-01-14T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-shape-seminar-series-advanced-recycling-dissoluti",
+      "title": "SHAPE Seminar Series: Advanced Recycling: Dissolution Technology",
+      "description": "In her presentation, Jill Martin will provide insights into emerging technologies driving sustainable packaging. Join to connect with SHAPE's network of more than 70 partners and be a part of a growing community committed to reducing packaging waste and advancing economic growth. PRESENTER: Jill Martin, Global Sustainability Fellow, Dow, Inc.",
+      "date": "2027-02-03",
+      "time": "12:00 PM",
+      "startDateTime": "2027-02-03T12:00:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "networking",
+      "isRecurring": false,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-due-diligence-bootcamp-how-to-survive-investor-an",
+      "title": "Due Diligence Bootcamp: How to Survive Investor and Buyer Scrutiny",
+      "description": "Learn what documents you'll need, how to organize them, and common gaps. Every month, skilled lawyer Joe Morrison serves up essential insight into legal issues to fuel your startup success. PRESENTER: Joe Morrison (Barnes & Thornburg LLP)",
+      "date": "2027-02-11",
+      "time": "8:30 AM",
+      "startDateTime": "2027-02-11T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    },
+    {
+      "id": "msu-foundation-pricing-discounts-and-revenue-terms-the-legal-sid",
+      "title": "Pricing, Discounts, and Revenue Terms: The Legal Side of Making Money",
+      "description": "Learn everything you need to know about auto-renewals, refunds, SLAs, and what your contracts should actually say. Every month, skilled lawyer Joe Morrison serves up essential insight into legal issues to fuel your startup success. PRESENTER: Joe Morrison (Barnes & Thornburg LLP)",
+      "date": "2027-03-11",
+      "time": "8:30 AM",
+      "startDateTime": "2027-03-11T08:30:00",
+      "location": {
+        "name": "MSU Research Foundation",
+        "address": "325 E. Grand River Ave., Suite 275",
+        "city": "East Lansing",
+        "state": "MI",
+        "lat": 42.7323,
+        "lng": -84.5555
+      },
+      "url": "https://msufoundation.org/events/",
+      "source": "msu-foundation",
+      "category": "pitch",
+      "isRecurring": true,
+      "isFree": true,
+      "scrapedAt": "2026-09-28T16:28:56.530Z",
+      "zone": "lansing",
+      "region": "south-central",
+      "isVirtual": false,
+      "alsoListedBy": []
+    }
+  ],
+  "sources": {
+    "msu-foundation": {
+      "id": "msu-foundation",
+      "name": "MSU Research Foundation",
+      "url": "https://msufoundation.org/events/",
+      "color": "#18453B",
+      "zone": "lansing",
+      "eventCount": 9,
+      "status": "carried",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "michigan-sbdc": {
+      "id": "michigan-sbdc",
+      "name": "Michigan SBDC",
+      "url": "https://michigansbdc.org/get-started/training-events/view/",
+      "color": "#1E3A5F",
+      "zone": "lansing",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "pure-lansing": {
+      "id": "pure-lansing",
+      "name": "LEAP / Pure Lansing",
+      "url": "https://www.purelansing.com/stay-connected/events-calendar/",
+      "color": "#4527A0",
+      "zone": "lansing",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "lansing-regional-chamber": {
+      "id": "lansing-regional-chamber",
+      "name": "Lansing Regional Chamber",
+      "url": "https://members.lansingchamber.org/event-calendar",
+      "color": "#18453B",
+      "zone": "lansing",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "lansing-chamber-community": {
+      "id": "lansing-chamber-community",
+      "name": "Lansing Chamber Community Calendar",
+      "url": "https://members.lansingchamber.org/communityeventcalendar",
+      "color": "#FF6B35",
+      "zone": "lansing",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "msu-burgess": {
+      "id": "msu-burgess",
+      "name": "MSU Burgess Institute",
+      "url": "https://www.eventbrite.com/o/burgess-institute-14747511979",
+      "color": "#4CAF50",
+      "zone": "lansing",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "catech": {
+      "id": "catech",
+      "name": "Capital Area Tech Hub",
+      "url": "https://www.meetup.com/catech/events/ical/",
+      "color": "#2196F3",
+      "zone": "lansing",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "lansing-ai-lab": {
+      "id": "lansing-ai-lab",
+      "name": "AI Lab Greater Lansing",
+      "url": "https://www.meetup.com/ai-lab-workshop-greater-lansing/events/ical/",
+      "color": "#9C27B0",
+      "zone": "lansing",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

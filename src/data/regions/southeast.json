@@ -1,0 +1,190 @@
+{
+  "region": {
+    "id": "southeast",
+    "name": "Southeast",
+    "center": {
+      "lat": 42.2,
+      "lng": -83.85
+    },
+    "zoom": 8,
+    "zones": [
+      {
+        "id": "ann-arbor",
+        "name": "Ann Arbor/Ypsilanti",
+        "host": "Ann Arbor SPARK",
+        "url": "https://annarborusa.org/",
+        "center": {
+          "lat": 42.2808,
+          "lng": -83.743
+        }
+      },
+      {
+        "id": "jackson",
+        "name": "Jackson",
+        "host": "Lean Rocket Lab",
+        "url": "https://www.leanrocketlab.org/",
+        "center": {
+          "lat": 42.2459,
+          "lng": -84.4013
+        }
+      },
+      {
+        "id": "adrian-tecumseh",
+        "name": "Adrian-Tecumseh",
+        "host": "Lenawee Now",
+        "url": "https://www.lenaweenow.org/",
+        "center": {
+          "lat": 41.8975,
+          "lng": -84.0372
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "ann-arbor-spark": {
+      "id": "ann-arbor-spark",
+      "name": "Ann Arbor SPARK",
+      "url": "https://annarborusa.org/events/",
+      "color": "#455A64",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "a2y-chamber": {
+      "id": "a2y-chamber",
+      "name": "A2Y Regional Chamber",
+      "url": "https://business.a2ychamber.org/events",
+      "color": "#AD1457",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "umich-happening": {
+      "id": "umich-happening",
+      "name": "U-M Happening",
+      "url": "https://events.umich.edu/list?filter=sponsors:3525,4822",
+      "color": "#37474F",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "zell-lurie": {
+      "id": "zell-lurie",
+      "name": "Zell Lurie Institute",
+      "url": "https://luma.com/zli",
+      "color": "#0277BD",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "ann-arbor-new-tech": {
+      "id": "ann-arbor-new-tech",
+      "name": "Ann Arbor New Tech",
+      "url": "https://www.meetup.com/a2newtech/events/ical/",
+      "color": "#5D4037",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "ann-arbor-ai": {
+      "id": "ann-arbor-ai",
+      "name": "Ann Arbor AI/ML Meetup",
+      "url": "https://www.meetup.com/ann-arbor-machine-learning-meetup/events/ical/",
+      "color": "#F57C00",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "tech-inclusive": {
+      "id": "tech-inclusive",
+      "name": "tech[inclusive]",
+      "url": "https://www.meetup.com/tech-inclusive/events/ical/",
+      "color": "#4527A0",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "new-enterprise-forum": {
+      "id": "new-enterprise-forum",
+      "name": "New Enterprise Forum",
+      "url": "https://newenterpriseforum.org/events",
+      "color": "#18453B",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "cahoots": {
+      "id": "cahoots",
+      "name": "Cahoots",
+      "url": "https://cahoots.com/upcoming-events",
+      "color": "#FF6B35",
+      "zone": "ann-arbor",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "jackson-chamber": {
+      "id": "jackson-chamber",
+      "name": "Jackson County Chamber",
+      "url": "https://business.jacksonchamber.org/events",
+      "color": "#4CAF50",
+      "zone": "jackson",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "lean-rocket-lab": {
+      "id": "lean-rocket-lab",
+      "name": "Lean Rocket Lab",
+      "url": "https://www.leanrocketlab.org/event-list",
+      "color": "#2196F3",
+      "zone": "jackson",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "jackson-young-professionals": {
+      "id": "jackson-young-professionals",
+      "name": "Jackson Young Professionals",
+      "url": "https://www.jxnyp.com/events",
+      "color": "#9C27B0",
+      "zone": "jackson",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "greater-lenawee-chamber": {
+      "id": "greater-lenawee-chamber",
+      "name": "Greater Lenawee Chamber",
+      "url": "https://www.chamberdata.net/webforms/EvtListingMainSearch.aspx?dbid2=milena",
+      "color": "#1E3A5F",
+      "zone": "adrian-tecumseh",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

@@ -32,12 +32,72 @@
         <priority>0.8</priority>
     </url>
     
-    <!-- GR Events Calendar -->
+    <!-- Michigan SmartZone events -->
     <url>
-        <loc>https://www.daydreamtechnologies.net/gr-events.html</loc>
-        <lastmod>2026-01-19</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://www.daydreamtechnologies.net/michigan-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/upper-peninsula-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/west-michigan-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/east-central-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/east-michigan-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/south-central-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/southwest-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/southeast-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/detroit-metro-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/northwest-michigan-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daydreamtechnologies.net/northeast-michigan-events.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
     </url>
 
     <!-- Ada Events Calendar -->

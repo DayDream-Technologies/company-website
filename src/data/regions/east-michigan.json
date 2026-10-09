@@ -1,0 +1,82 @@
+{
+  "region": {
+    "id": "east-michigan",
+    "name": "East Michigan",
+    "center": {
+      "lat": 43,
+      "lng": -82.45
+    },
+    "zoom": 9,
+    "zones": [
+      {
+        "id": "port-huron",
+        "name": "Port Huron",
+        "host": "St. Clair County EDA",
+        "url": "https://edascc.com/",
+        "center": {
+          "lat": 42.9709,
+          "lng": -82.4249
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "blue-water-chamber": {
+      "id": "blue-water-chamber",
+      "name": "Blue Water Area Chamber",
+      "url": "https://web.bluewaterchamber.com/atlas/calendar",
+      "color": "#AD1457",
+      "zone": "port-huron",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "propeller-6": {
+      "id": "propeller-6",
+      "name": "Propeller 6",
+      "url": "https://propeller6.com/events",
+      "color": "#37474F",
+      "zone": "port-huron",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "eastern-michigan-sbn": {
+      "id": "eastern-michigan-sbn",
+      "name": "Eastern Michigan Small Business Network",
+      "url": "https://www.easternmichigansmallbusinessnetwork.com/eventsandtraining",
+      "color": "#0277BD",
+      "zone": "port-huron",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "eda-st-clair": {
+      "id": "eda-st-clair",
+      "name": "St. Clair County EDA",
+      "url": "https://edascc.com/calendar/2026/10",
+      "color": "#5D4037",
+      "zone": "port-huron",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "mi-real-estate-mastermind": {
+      "id": "mi-real-estate-mastermind",
+      "name": "Michigan Real Estate Mastermind",
+      "url": "https://michiganrealestatemastermindsllc.com/events/",
+      "color": "#F57C00",
+      "zone": "port-huron",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

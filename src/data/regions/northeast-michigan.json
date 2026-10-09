@@ -1,0 +1,177 @@
+{
+  "region": {
+    "id": "northeast-michigan",
+    "name": "Northeast Michigan",
+    "center": {
+      "lat": 44.95,
+      "lng": -84.1
+    },
+    "zoom": 7,
+    "zones": [
+      {
+        "id": "alpena",
+        "name": "Alpena",
+        "host": "Alpena Area Chamber",
+        "url": "https://alpenachamber.com/",
+        "center": {
+          "lat": 45.0617,
+          "lng": -83.4327
+        }
+      },
+      {
+        "id": "gaylord",
+        "name": "Gaylord",
+        "host": "Otsego County Economic Alliance",
+        "url": "https://www.gaylord-otsego.com/",
+        "center": {
+          "lat": 45.0275,
+          "lng": -84.6747
+        }
+      },
+      {
+        "id": "cheboygan",
+        "name": "Cheboygan",
+        "host": "Cheboygan Area Chamber",
+        "url": "https://www.cheboygan.com/",
+        "center": {
+          "lat": 45.6469,
+          "lng": -84.4745
+        }
+      },
+      {
+        "id": "grayling",
+        "name": "Grayling",
+        "host": "Grayling Regional Chamber",
+        "url": "https://www.graylingchamber.com/",
+        "center": {
+          "lat": 44.6614,
+          "lng": -84.7147
+        }
+      },
+      {
+        "id": "oscoda-tawas",
+        "name": "Oscoda/Tawas",
+        "host": "Tawas Area Chamber",
+        "url": "https://tawas.com/",
+        "center": {
+          "lat": 44.42,
+          "lng": -83.49
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "ocea-gaylord": {
+      "id": "ocea-gaylord",
+      "name": "Otsego County Economic Alliance",
+      "url": "https://www.gaylord-otsego.com/event-list",
+      "color": "#C62828",
+      "zone": "gaylord",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "gaylord-chamber": {
+      "id": "gaylord-chamber",
+      "name": "Gaylord Area Chamber",
+      "url": "https://www.gaylordchamber.com/events/calendar",
+      "color": "#00897B",
+      "zone": "gaylord",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "nmi-remote-workers": {
+      "id": "nmi-remote-workers",
+      "name": "Northern Michigan Remote Workers",
+      "url": "https://www.meetup.com/nmiremote/events/ical/",
+      "color": "#455A64",
+      "zone": "gaylord",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "tawas-chamber": {
+      "id": "tawas-chamber",
+      "name": "Tawas Area Chamber",
+      "url": "https://tawas.com/events/",
+      "color": "#AD1457",
+      "zone": "oscoda-tawas",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "cheboygan-main-street": {
+      "id": "cheboygan-main-street",
+      "name": "Cheboygan Main Street DDA",
+      "url": "https://www.cheboyganmainstreet.org/events/",
+      "color": "#37474F",
+      "zone": "cheboygan",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "cheboygan-chamber": {
+      "id": "cheboygan-chamber",
+      "name": "Cheboygan Area Chamber",
+      "url": "https://www.cheboygan.com/events/calendar/",
+      "color": "#0277BD",
+      "zone": "cheboygan",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "grayling-chamber": {
+      "id": "grayling-chamber",
+      "name": "Grayling Regional Chamber",
+      "url": "https://www.graylingchamber.com/events/",
+      "color": "#5D4037",
+      "zone": "grayling",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "alpena-chamber": {
+      "id": "alpena-chamber",
+      "name": "Alpena Area Chamber",
+      "url": "https://alpenachamber.com/",
+      "color": "#F57C00",
+      "zone": "alpena",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "destination-oscoda": {
+      "id": "destination-oscoda",
+      "name": "Destination Oscoda",
+      "url": "https://destinationoscoda.com/events",
+      "color": "#4527A0",
+      "zone": "oscoda-tawas",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "oscoda-ausable-chamber": {
+      "id": "oscoda-ausable-chamber",
+      "name": "Oscoda AuSable Chamber",
+      "url": "https://oscodachamber.com/events/",
+      "color": "#18453B",
+      "zone": "oscoda-tawas",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

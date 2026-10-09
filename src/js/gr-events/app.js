@@ -48,8 +48,10 @@
     freeOnlyCheckbox: document.getElementById('freeOnlyCheckbox'),
   };
   
-  // Preferences key for localStorage
-  const PREFS_KEY = 'gr-events-prefs';
+  const REGION_ID = document.body.dataset.region || 'west-michigan';
+  const PREFS_KEY = `mi-events-${REGION_ID}-prefs`;
+  const CACHE_KEY = `mi-events-${REGION_ID}-cache`;
+  const DATA_URL = `src/data/regions/${REGION_ID}.json`;
   
   /**
    * Initialize the application
@@ -58,6 +60,8 @@
     loadPreferences();
     setupEventListeners();
     renderFooterSources();
+    const zoneParam = new URLSearchParams(window.location.search).get('zone');
+    if (zoneParam) window.GREvents.INITIAL_ZONE = zoneParam;
     loadEvents();
   }
   
@@ -153,9 +157,6 @@
     return events;
   }
   
-  // Cache key for localStorage
-  const CACHE_KEY = 'gr-events-cache';
-  
   /**
    * Load events - always checks server for fresh data
    * Compares server's lastScraped with cached lastScraped to determine if cache is valid
@@ -179,7 +180,7 @@
     
     // Always fetch from server to check for updates
     try {
-      const response = await fetch('src/data/events.json', {
+      const response = await fetch(DATA_URL, {
         // Add cache-busting to ensure we get the latest file
         cache: 'no-cache'
       });
@@ -196,7 +197,7 @@
       const cachedDate = cachedLastScraped ? new Date(cachedLastScraped).getTime() : 0;
       
       if (cachedData && serverDate <= cachedDate) {
-        // Cache is still valid - server hasn't updated
+        window.GREvents.applyRegionData(cachedData);
         state.events = cachedData.events || [];
         state.lastScraped = cachedData.lastScraped;
         state.sources = cachedData.sources || {};
@@ -218,6 +219,7 @@
         console.warn('Cache write failed:', e);
       }
       
+      window.GREvents.applyRegionData(serverData);
       state.events = serverData.events || [];
       state.lastScraped = serverData.lastScraped;
       state.sources = serverData.sources || {};
@@ -234,6 +236,7 @@
       
       // If fetch failed but we have cached data, use it
       if (cachedData) {
+        window.GREvents.applyRegionData(cachedData);
         state.events = cachedData.events || [];
         state.lastScraped = cachedData.lastScraped;
         state.sources = cachedData.sources || {};
@@ -258,6 +261,7 @@
    * Update the UI based on current state
    */
   function updateUI() {
+    renderFooterSources();
     const filteredEvents = getFilteredEvents();
     
     // Update stats - show filtered count and total when any filter is active
@@ -313,7 +317,7 @@
     
     // Additional resource links (not event sources)
     const resourceLinks = [
-      { name: 'GR SmartZone', url: 'https://smartzonegr.com/' },
+      { name: 'Michigan SmartZones', url: '/michigan-events.html' },
     ];
     
     const resourcesHtml = resourceLinks.length > 0 

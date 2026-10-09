@@ -1,76 +1,12 @@
 /**
- * GR Events Calendar - Types and Constants
+ * Michigan SmartZone events - shared types.
+ * SOURCE_CONFIG is filled from the region JSON at runtime.
  */
 
-// Source configuration
-const SOURCE_CONFIG = {
-  'msu-foundation': {
-    id: 'msu-foundation',
-    name: 'MSU Research Foundation',
-    url: 'https://msufoundation.org/events/',
-    color: '#18453B', // MSU Green
-  },
-  'start-garden': {
-    id: 'start-garden',
-    name: 'Start Garden',
-    url: 'https://startgarden.com/events/',
-    color: '#FF6B35', // Orange
-  },
-  'bamboo': {
-    id: 'bamboo',
-    name: 'Bamboo Cowork',
-    url: 'https://www.bamboocowork.com/events-at-bamboo',
-    color: '#4CAF50', // Green
-  },
-  'grand-rapids-org': {
-    id: 'grand-rapids-org',
-    name: 'GR Chamber of Commerce',
-    url: 'https://grandrapids.org/events/',
-    color: '#2196F3', // Blue
-  },
-  'gr-junior-chamber': {
-    id: 'gr-junior-chamber',
-    name: 'GR Junior Chamber',
-    url: 'https://www.grjuniorchamber.com/',
-    color: '#9C27B0', // Purple
-  },
-  'right-place': {
-    id: 'right-place',
-    name: 'The Right Place',
-    url: 'https://www.rightplace.org/events/',
-    color: '#1E3A5F', // Dark blue
-  },
-  'startup-garage': {
-    id: 'startup-garage',
-    name: 'Startup Garage',
-    url: 'https://www.startupgarage.org/events',
-    color: '#E65100', // Orange
-  },
-  'springgr': {
-    id: 'springgr',
-    name: 'SpringGR',
-    url: 'https://www.springgr.com/events-page/',
-    color: '#2E7D32',
-  },
-  'south-kent-chamber': {
-    id: 'south-kent-chamber',
-    name: 'South Kent Area Chamber',
-    url: 'https://business.southkent.org/events/',
-    color: '#00695C',
-  },
-  'west-coast-chamber': {
-    id: 'west-coast-chamber',
-    name: 'West Coast Chamber',
-    url: 'https://business.westcoastchamber.org/event-calendar',
-    color: '#1565C0',
-  },
-};
-
-// Grand Rapids area coordinates (for map centering)
-const GRAND_RAPIDS_CENTER = {
-  lat: 42.9634,
-  lng: -85.6681,
-};
+const SOURCE_CONFIG = {};
+const MAP_VIEW = { lat: 42.9634, lng: -85.6681, zoom: 11 };
+const GRAND_RAPIDS_CENTER = MAP_VIEW;
+const REGION_ZONES = [];
 
 // View types
 const VIEW_TYPES = {
@@ -111,6 +47,28 @@ function getAllSourceIds() {
 window.GREvents = window.GREvents || {};
 window.GREvents.SOURCE_CONFIG = SOURCE_CONFIG;
 window.GREvents.GRAND_RAPIDS_CENTER = GRAND_RAPIDS_CENTER;
+window.GREvents.MAP_VIEW = MAP_VIEW;
+window.GREvents.REGION_ZONES = REGION_ZONES;
+
+function applyRegionData(data) {
+  Object.keys(SOURCE_CONFIG).forEach((key) => delete SOURCE_CONFIG[key]);
+  Object.entries(data.sources || {}).forEach(([id, source]) => {
+    SOURCE_CONFIG[id] = {
+      id,
+      name: source.name,
+      url: source.url,
+      color: source.color || '#10b981',
+    };
+  });
+  if (data.region?.center) {
+    MAP_VIEW.lat = data.region.center.lat;
+    MAP_VIEW.lng = data.region.center.lng;
+    MAP_VIEW.zoom = data.region.zoom || 8;
+  }
+  REGION_ZONES.splice(0, REGION_ZONES.length, ...(data.region?.zones || []));
+}
+
+window.GREvents.applyRegionData = applyRegionData;
 window.GREvents.VIEW_TYPES = VIEW_TYPES;
 window.GREvents.SORT_OPTIONS = SORT_OPTIONS;
 window.GREvents.EVENT_CATEGORIES = EVENT_CATEGORIES;

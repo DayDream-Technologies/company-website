@@ -23,7 +23,7 @@ function escapeICS(text) {
  * Generate a unique ID for the event
  */
 function generateUID(event) {
-  return `${event.id}@gr-events-calendar`;
+  return `${event.id}@michigan-smartzone-events`;
 }
 
 /**

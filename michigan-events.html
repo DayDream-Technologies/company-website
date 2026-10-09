@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michigan SmartZone Events | Entrepreneurship and Networking</title>
+    <meta name="description" content="Entrepreneurship and networking events across Michigan's SmartZone regions. Pick a region to open its calendar." />
+    <link rel="canonical" href="https://www.daydreamtechnologies.net/michigan-events.html" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="icon" href="./src/images/favicon.ico" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./src/js/main.js" defer></script>
+    <style>
+        .sz-wrap { max-width: 1100px; margin: 96px auto 48px; padding: 0 1rem; }
+        .sz-wrap h1 { margin-bottom: 0.25rem; }
+        .sz-lead { color: #4b5563; margin-bottom: 1rem; }
+        #sz-map { height: 420px; border-radius: 12px; margin-bottom: 1.5rem; }
+        .sz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+        .sz-card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; background: #fff; }
+        .sz-card h2 { font-size: 1.1rem; margin: 0 0 0.35rem; }
+        .sz-card a { color: #4f46e5; }
+        .sz-count { font-weight: 600; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li><a class="nav_logo" href="/"><img class="logo_img" src="./logos/star-moon-logo-right.png" alt="Day Dream Technologies" /></a></li>
+            <div class="nav_links">
+                <li><a class="nav_link" href="/">Home</a></li>
+                <li><a class="nav_link" href="/services">Services</a></li>
+                <li><a class="nav_link" href="/projects">Projects</a></li>
+                <li><a class="nav_link" href="/nonprofits">Nonprofits</a></li>
+                <li><a class="nav_link" href="/contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <main class="sz-wrap">
+        <h1>Michigan SmartZone events</h1>
+        <p class="sz-lead">Entrepreneurship and networking calendars for the state's SmartZone regions. Updated every other Monday.</p>
+        <div id="sz-map"></div>
+        <div class="sz-grid" id="sz-cards"></div>
+    </main>
+    <script>
+        const map = L.map('sz-map').setView([44.3, -85.5], 6);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap &copy; CARTO'
+        }).addTo(map);
+
+        fetch('src/data/regions/index.json', { cache: 'no-cache' })
+            .then((response) => response.json())
+            .then((data) => {
+                const cards = document.getElementById('sz-cards');
+                (data.regions || []).forEach((region) => {
+                    const card = document.createElement('article');
+                    card.className = 'sz-card';
+                    const next = (region.nextEvents || []).map((event) => `<li>${event.date}: ${event.title}</li>`).join('');
+                    card.innerHTML = `<h2><a href="/${region.id}-events.html">${region.name}</a></h2>
+                        <p class="sz-count">${region.eventCount} upcoming events</p>
+                        <ul>${next}</ul>`;
+                    cards.appendChild(card);
+                    (region.zones || []).forEach((zone) => {
+                        if (!zone.center) return;
+                        L.marker([zone.center.lat, zone.center.lng])
+                            .addTo(map)
+                            .bindPopup(`<strong>${zone.name}</strong><br>${zone.host || ''}<br><a href="/${region.id}-events.html?zone=${zone.id}">View events</a>`);
+                    });
+                });
+            })
+            .catch(() => {
+                document.getElementById('sz-cards').textContent = 'Event index is not available yet.';
+            });
+    </script>
+</body>
+</html>

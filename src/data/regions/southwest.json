@@ -1,0 +1,125 @@
+{
+  "region": {
+    "id": "southwest",
+    "name": "Southwest",
+    "center": {
+      "lat": 42.29,
+      "lng": -85.4
+    },
+    "zoom": 8,
+    "zones": [
+      {
+        "id": "battle-creek",
+        "name": "Battle Creek",
+        "host": "Battle Creek Unlimited",
+        "url": "https://www.bcunlimited.org/",
+        "center": {
+          "lat": 42.3212,
+          "lng": -85.1797
+        }
+      },
+      {
+        "id": "kalamazoo",
+        "name": "Kalamazoo",
+        "host": "WMed Innovation Center",
+        "url": "https://wmed.edu/innovationcenter",
+        "center": {
+          "lat": 42.2917,
+          "lng": -85.5872
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "southwest-michigan-first": {
+      "id": "southwest-michigan-first",
+      "name": "Southwest Michigan First",
+      "url": "https://www.eventbrite.com/o/southwest-michigan-first-and-the-chamber-6511647681",
+      "color": "#1E3A5F",
+      "zone": "kalamazoo",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "now-kalamazoo": {
+      "id": "now-kalamazoo",
+      "name": "NowKalamazoo",
+      "url": "https://nowkalamazoo.org/events/",
+      "color": "#E65100",
+      "zone": "kalamazoo",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "one-million-cups-kalamazoo": {
+      "id": "one-million-cups-kalamazoo",
+      "name": "1 Million Cups Kalamazoo",
+      "url": "https://www.eventbrite.com/o/1-million-cups-kalamazoo-121560899216",
+      "color": "#2E7D32",
+      "zone": "kalamazoo",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "wmu-haworth": {
+      "id": "wmu-haworth",
+      "name": "WMU Haworth College of Business",
+      "url": "https://wmich.edu/business/events",
+      "color": "#00695C",
+      "zone": "kalamazoo",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "wmed-innovation-center": {
+      "id": "wmed-innovation-center",
+      "name": "WMed Innovation Center",
+      "url": "https://wmed.edu/innovationcenter/calendar",
+      "color": "#1565C0",
+      "zone": "kalamazoo",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "kalamazoo-software-developers": {
+      "id": "kalamazoo-software-developers",
+      "name": "Kalamazoo Software Developers",
+      "url": "https://www.meetup.com/kalamazoo-software-developers-meetup/events/ical/",
+      "color": "#6A1B9A",
+      "zone": "kalamazoo",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "battle-creek-chamber": {
+      "id": "battle-creek-chamber",
+      "name": "Battle Creek Area Chamber",
+      "url": "https://battlecreek.org/upcoming-events/",
+      "color": "#C62828",
+      "zone": "battle-creek",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "small-business-battle-creek": {
+      "id": "small-business-battle-creek",
+      "name": "Small Business Battle Creek",
+      "url": "https://smallbusinessbattlecreek.com/events/",
+      "color": "#00897B",
+      "zone": "battle-creek",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

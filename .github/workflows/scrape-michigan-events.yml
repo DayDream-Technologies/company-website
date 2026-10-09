@@ -1,0 +1,136 @@
+name: Scrape Michigan SmartZone Events
+
+on:
+  # Bi-weekly Monday 08:00 UTC. Cron fires weekly; the gate job skips odd ISO weeks.
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: michigan-events
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.biweekly.outputs.skip }}
+    steps:
+      - name: Check bi-weekly schedule
+        id: biweekly
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          WEEK=$(date +%V)
+          if [ $((10#$WEEK % 2)) -ne 0 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Skipping odd ISO week $WEEK"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "Running even ISO week $WEEK"
+          fi
+
+  scrape:
+    needs: gate
+    if: needs.gate.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        group:
+          - upper-peninsula
+          - west-michigan
+          - east-central
+          - east-michigan
+          - south-central
+          - southwest
+          - southeast
+          - detroit-metro
+          - northwest-michigan
+          - northeast-michigan
+          - shared
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - name: Scrape group
+        run: node scripts/events/run.js --group ${{ matrix.group }} --out raw/${{ matrix.group }}.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: raw-${{ matrix.group }}
+          path: raw/${{ matrix.group }}.json
+          if-no-files-found: error
+
+  headless:
+    needs: gate
+    if: needs.gate.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm install --no-save playwright && npx playwright install --with-deps chromium
+      - name: Scrape headless sources
+        run: node scripts/events/run.js --headless --out raw/headless.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raw-headless
+          path: raw/headless.json
+          if-no-files-found: warn
+
+  build:
+    needs: [gate, scrape, headless]
+    if: always() && needs.gate.outputs.skip != 'true' && needs.scrape.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: raw-*
+          path: raw
+          merge-multiple: true
+      - name: Build region JSON
+        run: node scripts/events/build.js --raw-dir raw
+      - name: Refresh region pages
+        run: node scripts/events/build-pages.js
+      - name: Write health summary
+        run: |
+          node -e "
+            const health = require('./src/data/regions/health.json');
+            const lines = ['| Source | Status | Events | Error |', '| --- | --- | ---: | --- |'];
+            for (const [id, source] of Object.entries(health.sources)) {
+              const error = (source.error || '').replace(/\|/g, '/').slice(0, 120);
+              lines.push('| ' + id + ' | ' + source.status + ' | ' + source.eventCount + ' | ' + error + ' |');
+            }
+            require('fs').appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n'));
+          "
+      - name: Commit data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/data/regions src/data/geocache.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "chore: update Michigan SmartZone events [automated]"
+            git push
+          fi

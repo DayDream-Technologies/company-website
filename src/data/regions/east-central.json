@@ -1,0 +1,92 @@
+{
+  "region": {
+    "id": "east-central",
+    "name": "East Central",
+    "center": {
+      "lat": 43.6,
+      "lng": -84.5
+    },
+    "zoom": 8,
+    "zones": [
+      {
+        "id": "midland",
+        "name": "Midland",
+        "host": "Midland Business Alliance",
+        "url": "https://www.mbami.org/",
+        "center": {
+          "lat": 43.6156,
+          "lng": -84.2472
+        }
+      },
+      {
+        "id": "mount-pleasant",
+        "name": "Mount Pleasant",
+        "host": "CMURC",
+        "url": "https://www.cmurc.com/",
+        "center": {
+          "lat": 43.5978,
+          "lng": -84.7675
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "cmurc": {
+      "id": "cmurc",
+      "name": "CMURC",
+      "url": "https://www.cmurc.com/events",
+      "color": "#1565C0",
+      "zone": "mount-pleasant",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "midland-business-alliance": {
+      "id": "midland-business-alliance",
+      "name": "Midland Business Alliance",
+      "url": "https://business.mbami.org/events",
+      "color": "#6A1B9A",
+      "zone": "midland",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "mt-pleasant-chamber": {
+      "id": "mt-pleasant-chamber",
+      "name": "Mt. Pleasant Area Chamber",
+      "url": "https://business.mt-pleasant.net/events/search",
+      "color": "#C62828",
+      "zone": "mount-pleasant",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "saginaw-chamber": {
+      "id": "saginaw-chamber",
+      "name": "Saginaw County Chamber",
+      "url": "https://web.saginawchamber.org/atlas/calendar",
+      "color": "#00897B",
+      "zone": "midland",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "bay-area-chamber": {
+      "id": "bay-area-chamber",
+      "name": "Bay Area Chamber of Commerce",
+      "url": "https://www.baycityarea.com/events/chamber-events",
+      "color": "#455A64",
+      "zone": "midland",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

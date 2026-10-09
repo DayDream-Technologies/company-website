@@ -11,7 +11,7 @@ const path = require('path');
 const {
   parseChamberMasterEventDetail,
   parseGrowthZoneEventCalendarDetail,
-} = require('./lib/parse-chambermaster-event-detail');
+} = require('../../../lib/parse-chambermaster-event-detail');
 
 // Try to import cheerio (for HTML parsing)
 let cheerio;
@@ -976,10 +976,9 @@ async function scrapeBamboo() {
       });
     });
 
-    // Filter to only include Grand Rapids events
-    const grEvents = events.filter(e => {
-      return e.location.city.toLowerCase() === 'grand rapids';
-    });
+    // City assignment happens later in zones.js so Ann Arbor, Royal Oak, and
+    // Grand Rapids events from this shared calendar all stay in the feed.
+    const grEvents = events;
     
     console.log(`    Total events found: ${events.length}, Grand Rapids events: ${grEvents.length}`);
 
@@ -2346,5 +2345,15 @@ async function main() {
   }
 }
 
-// Run if called directly
-main();
+module.exports = {
+  scrapeMsuFoundation,
+  scrapeStartGarden,
+  scrapeBamboo,
+  scrapeGrandRapidsOrg,
+  scrapeSouthKentChamber,
+  scrapeWestCoastChamber,
+  scrapeGrJuniorChamber,
+  scrapeStartupGarage,
+  scrapeRightPlace,
+  scrapeSpringGr,
+};

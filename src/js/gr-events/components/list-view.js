@@ -18,6 +18,7 @@ function initListView(container, events) {
   const state = {
     searchQuery: '',
     selectedSources: [],
+    selectedZones: window.GREvents.INITIAL_ZONE ? [window.GREvents.INITIAL_ZONE] : [],
     selectedCategories: [],
     sortBy: 'date-asc',
     showPastEvents: false,
@@ -68,6 +69,18 @@ function initListView(container, events) {
             ` : ''}
           </div>
           
+          ${(window.GREvents.REGION_ZONES || []).length > 1 ? `
+            <div class="filter-chips">
+              ${(window.GREvents.REGION_ZONES || []).map(zone => {
+                const isActive = state.selectedZones.includes(zone.id);
+                return `
+                  <button class="filter-chip ${isActive ? 'active' : ''}" data-zone="${zone.id}"
+                    ${isActive ? 'style="background-color: var(--gr-secondary); border-color: transparent;"' : ''}>
+                    ${zone.name}
+                  </button>`;
+              }).join('')}
+            </div>
+          ` : ''}
           <!-- Filter chips -->
           <div class="filter-chips">
             ${getAllSourceIds().map(sourceId => {
@@ -249,8 +262,11 @@ function initListView(container, events) {
           if (!matchesSearch) return false;
         }
         
-        // Source filter
         if (state.selectedSources.length > 0 && !state.selectedSources.includes(event.source)) {
+          return false;
+        }
+
+        if (state.selectedZones.length > 0 && !state.selectedZones.includes(event.zone)) {
           return false;
         }
         
@@ -301,7 +317,7 @@ function initListView(container, events) {
    * Check if any filters are active
    */
   function hasActiveFilters() {
-    return state.searchQuery || state.selectedSources.length > 0 || state.selectedCategories.length > 0;
+    return state.searchQuery || state.selectedSources.length > 0 || state.selectedCategories.length > 0 || state.selectedZones.length > 0;
   }
   
   /**
@@ -385,6 +401,21 @@ function initListView(container, events) {
     }
     
     // Source filter chips
+    container.querySelectorAll('[data-zone]').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const zone = chip.dataset.zone;
+        const index = state.selectedZones.indexOf(zone);
+        if (index > -1) state.selectedZones.splice(index, 1);
+        else state.selectedZones.push(zone);
+        const params = new URLSearchParams(window.location.search);
+        if (state.selectedZones.length === 1) params.set('zone', state.selectedZones[0]);
+        else params.delete('zone');
+        const next = `${window.location.pathname}${params.toString() ? `?${params}` : ''}`;
+        window.history.replaceState({}, '', next);
+        render();
+      });
+    });
+
     container.querySelectorAll('[data-source]').forEach(chip => {
       chip.addEventListener('click', () => {
         const source = chip.dataset.source;
@@ -436,7 +467,9 @@ function initListView(container, events) {
       clearFiltersBtn.addEventListener('click', () => {
         state.searchQuery = '';
         state.selectedSources = [];
+        state.selectedZones = [];
         state.selectedCategories = [];
+        window.history.replaceState({}, '', window.location.pathname);
         render();
       });
     }

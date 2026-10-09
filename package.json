@@ -1,9 +1,13 @@
 {
   "scripts": {
-    "scrape": "node scripts/scrape-events.js",
+    "scrape": "node scripts/events/run.js --group west-michigan --out raw/west-michigan.json && node scripts/events/build.js --raw-dir raw",
+    "scrape:mi": "node scripts/events/run.js --all",
+    "build:mi": "node scripts/events/build.js",
+    "build:pages": "node scripts/events/build-pages.js",
+    "test": "node --test scripts/events/__tests__/core.test.js",
     "scrape:summer-music": "node scripts/scrape-summer-music.js",
     "merge:local-spins": "node scripts/merge-local-spins-guide.mjs",
-    "scrape:all": "node scripts/scrape-events.js && node scripts/scrape-summer-music.js"
+    "scrape:all": "node scripts/events/run.js --group west-michigan --out raw/west-michigan.json && node scripts/scrape-summer-music.js"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

@@ -65,7 +65,7 @@ function initMapView(container, events) {
   
   mapInstance = L.map(mapEl).setView(
     [GRAND_RAPIDS_CENTER.lat, GRAND_RAPIDS_CENTER.lng],
-    11
+    GRAND_RAPIDS_CENTER.zoom || 11
   );
   
   // Add dark tile layer

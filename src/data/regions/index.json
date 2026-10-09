@@ -1,0 +1,463 @@
+{
+  "lastScraped": "2026-10-09T18:19:32.717Z",
+  "regions": [
+    {
+      "id": "upper-peninsula",
+      "name": "Upper Peninsula",
+      "center": {
+        "lat": 46.55,
+        "lng": -87.4
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "houghton-hancock",
+          "name": "Houghton/Hancock",
+          "host": "MTEC SmartZone",
+          "url": "https://www.mtecsz.com/",
+          "center": {
+            "lat": 47.121,
+            "lng": -88.569
+          }
+        },
+        {
+          "id": "marquette",
+          "name": "Marquette",
+          "host": "Innovate Marquette",
+          "url": "https://www.innovatemarquette.org/",
+          "center": {
+            "lat": 46.548,
+            "lng": -87.395
+          }
+        },
+        {
+          "id": "sault-ste-marie",
+          "name": "Sault Ste. Marie",
+          "host": "Headwaters North",
+          "url": "https://www.headwatersnorth.org/",
+          "center": {
+            "lat": 46.495,
+            "lng": -84.345
+          }
+        }
+      ],
+      "nextEvents": []
+    },
+    {
+      "id": "west-michigan",
+      "name": "West Michigan",
+      "center": {
+        "lat": 43,
+        "lng": -86
+      },
+      "eventCount": 44,
+      "zones": [
+        {
+          "id": "muskegon",
+          "name": "Muskegon",
+          "host": "Muskegon Innovation Hub",
+          "url": "https://www.gvsu.edu/mihub/",
+          "center": {
+            "lat": 43.234,
+            "lng": -86.248
+          }
+        },
+        {
+          "id": "grand-rapids",
+          "name": "Grand Rapids",
+          "host": "Spartan Innovations / Start Garden",
+          "url": "https://startgarden.com/",
+          "center": {
+            "lat": 42.9634,
+            "lng": -85.6681
+          }
+        },
+        {
+          "id": "holland",
+          "name": "Holland",
+          "host": "Lakeshore Advantage",
+          "url": "https://www.lakeshoreadvantage.com/",
+          "center": {
+            "lat": 42.7875,
+            "lng": -86.1089
+          }
+        }
+      ],
+      "nextEvents": [
+        {
+          "title": "Government Matters",
+          "date": "2026-10-12",
+          "zone": "grand-rapids",
+          "url": "/west-michigan-events.html"
+        },
+        {
+          "title": "Zeeland Network",
+          "date": "2026-10-13",
+          "zone": "holland",
+          "url": "/west-michigan-events.html"
+        },
+        {
+          "title": "West Michigan Azure User Group Meetup - Hosted Agents in Microsoft Foundry",
+          "date": "2026-10-13",
+          "zone": "grand-rapids",
+          "url": "/west-michigan-events.html"
+        }
+      ]
+    },
+    {
+      "id": "east-central",
+      "name": "East Central",
+      "center": {
+        "lat": 43.6,
+        "lng": -84.5
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "midland",
+          "name": "Midland",
+          "host": "Midland Business Alliance",
+          "url": "https://www.mbami.org/",
+          "center": {
+            "lat": 43.6156,
+            "lng": -84.2472
+          }
+        },
+        {
+          "id": "mount-pleasant",
+          "name": "Mount Pleasant",
+          "host": "CMURC",
+          "url": "https://www.cmurc.com/",
+          "center": {
+            "lat": 43.5978,
+            "lng": -84.7675
+          }
+        }
+      ],
+      "nextEvents": []
+    },
+    {
+      "id": "east-michigan",
+      "name": "East Michigan",
+      "center": {
+        "lat": 43,
+        "lng": -82.45
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "port-huron",
+          "name": "Port Huron",
+          "host": "St. Clair County EDA",
+          "url": "https://edascc.com/",
+          "center": {
+            "lat": 42.9709,
+            "lng": -82.4249
+          }
+        }
+      ],
+      "nextEvents": []
+    },
+    {
+      "id": "south-central",
+      "name": "South Central",
+      "center": {
+        "lat": 42.73,
+        "lng": -84.55
+      },
+      "eventCount": 9,
+      "zones": [
+        {
+          "id": "lansing",
+          "name": "Lansing/East Lansing",
+          "host": "LEAP",
+          "url": "https://www.purelansing.com/",
+          "center": {
+            "lat": 42.7325,
+            "lng": -84.5555
+          }
+        }
+      ],
+      "nextEvents": [
+        {
+          "title": "Data Science + AI Summit",
+          "date": "2026-10-21",
+          "zone": "lansing",
+          "url": "/south-central-events.html"
+        },
+        {
+          "title": "SHAPE Seminar Series: Advancing Circular Packaging Systems Through Reuse and Refill Innovation",
+          "date": "2026-11-04",
+          "zone": "lansing",
+          "url": "/south-central-events.html"
+        },
+        {
+          "title": "When Things Go Wrong: Founder Disputes, Breakups, and Forced Exits",
+          "date": "2026-11-12",
+          "zone": "lansing",
+          "url": "/south-central-events.html"
+        }
+      ]
+    },
+    {
+      "id": "southwest",
+      "name": "Southwest",
+      "center": {
+        "lat": 42.29,
+        "lng": -85.4
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "battle-creek",
+          "name": "Battle Creek",
+          "host": "Battle Creek Unlimited",
+          "url": "https://www.bcunlimited.org/",
+          "center": {
+            "lat": 42.3212,
+            "lng": -85.1797
+          }
+        },
+        {
+          "id": "kalamazoo",
+          "name": "Kalamazoo",
+          "host": "WMed Innovation Center",
+          "url": "https://wmed.edu/innovationcenter",
+          "center": {
+            "lat": 42.2917,
+            "lng": -85.5872
+          }
+        }
+      ],
+      "nextEvents": []
+    },
+    {
+      "id": "southeast",
+      "name": "Southeast",
+      "center": {
+        "lat": 42.2,
+        "lng": -83.85
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "ann-arbor",
+          "name": "Ann Arbor/Ypsilanti",
+          "host": "Ann Arbor SPARK",
+          "url": "https://annarborusa.org/",
+          "center": {
+            "lat": 42.2808,
+            "lng": -83.743
+          }
+        },
+        {
+          "id": "jackson",
+          "name": "Jackson",
+          "host": "Lean Rocket Lab",
+          "url": "https://www.leanrocketlab.org/",
+          "center": {
+            "lat": 42.2459,
+            "lng": -84.4013
+          }
+        },
+        {
+          "id": "adrian-tecumseh",
+          "name": "Adrian-Tecumseh",
+          "host": "Lenawee Now",
+          "url": "https://www.lenaweenow.org/",
+          "center": {
+            "lat": 41.8975,
+            "lng": -84.0372
+          }
+        }
+      ],
+      "nextEvents": []
+    },
+    {
+      "id": "detroit-metro",
+      "name": "Detroit Metro",
+      "center": {
+        "lat": 42.45,
+        "lng": -83.1
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "rochester-hills",
+          "name": "Rochester Hills",
+          "host": "OU INC",
+          "url": "https://www.oakland.edu/ouinc/",
+          "center": {
+            "lat": 42.6584,
+            "lng": -83.1499
+          }
+        },
+        {
+          "id": "sterling-heights",
+          "name": "Sterling Heights",
+          "host": "Velocity Center",
+          "url": "https://www.mivelocity.com/",
+          "center": {
+            "lat": 42.5803,
+            "lng": -83.0302
+          }
+        },
+        {
+          "id": "troy",
+          "name": "Troy",
+          "host": "Automation Alley",
+          "url": "https://automationalley.com/",
+          "center": {
+            "lat": 42.6064,
+            "lng": -83.1498
+          }
+        },
+        {
+          "id": "southfield",
+          "name": "Southfield",
+          "host": "Centrepolis Accelerator",
+          "url": "https://www.centrepolisaccelerator.com/",
+          "center": {
+            "lat": 42.4734,
+            "lng": -83.2219
+          }
+        },
+        {
+          "id": "detroit",
+          "name": "Detroit",
+          "host": "TechTown Detroit",
+          "url": "https://techtowndetroit.org/",
+          "center": {
+            "lat": 42.3314,
+            "lng": -83.0458
+          }
+        }
+      ],
+      "nextEvents": []
+    },
+    {
+      "id": "northwest-michigan",
+      "name": "Northwest Michigan",
+      "center": {
+        "lat": 44.76,
+        "lng": -85.62
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "traverse-city",
+          "name": "Traverse City",
+          "host": "20Fathoms",
+          "url": "https://20fathoms.org/",
+          "center": {
+            "lat": 44.7631,
+            "lng": -85.6206
+          }
+        },
+        {
+          "id": "petoskey",
+          "name": "Petoskey",
+          "host": "Petoskey Regional Chamber",
+          "url": "https://www.petoskeychamber.com/",
+          "center": {
+            "lat": 45.3733,
+            "lng": -84.9553
+          }
+        },
+        {
+          "id": "cadillac",
+          "name": "Cadillac",
+          "host": "Cadillac Area Chamber",
+          "url": "https://cadillacareachamberofcommerce.growthzoneapp.com/",
+          "center": {
+            "lat": 44.2519,
+            "lng": -85.4012
+          }
+        },
+        {
+          "id": "manistee",
+          "name": "Manistee",
+          "host": "Manistee Area Chamber",
+          "url": "https://www.manisteechamber.com/",
+          "center": {
+            "lat": 44.2444,
+            "lng": -86.3242
+          }
+        },
+        {
+          "id": "charlevoix",
+          "name": "Charlevoix",
+          "host": "Charlevoix Area Chamber",
+          "url": "https://www.charlevoix.org/",
+          "center": {
+            "lat": 45.3181,
+            "lng": -85.2584
+          }
+        }
+      ],
+      "nextEvents": []
+    },
+    {
+      "id": "northeast-michigan",
+      "name": "Northeast Michigan",
+      "center": {
+        "lat": 44.95,
+        "lng": -84.1
+      },
+      "eventCount": 0,
+      "zones": [
+        {
+          "id": "alpena",
+          "name": "Alpena",
+          "host": "Alpena Area Chamber",
+          "url": "https://alpenachamber.com/",
+          "center": {
+            "lat": 45.0617,
+            "lng": -83.4327
+          }
+        },
+        {
+          "id": "gaylord",
+          "name": "Gaylord",
+          "host": "Otsego County Economic Alliance",
+          "url": "https://www.gaylord-otsego.com/",
+          "center": {
+            "lat": 45.0275,
+            "lng": -84.6747
+          }
+        },
+        {
+          "id": "cheboygan",
+          "name": "Cheboygan",
+          "host": "Cheboygan Area Chamber",
+          "url": "https://www.cheboygan.com/",
+          "center": {
+            "lat": 45.6469,
+            "lng": -84.4745
+          }
+        },
+        {
+          "id": "grayling",
+          "name": "Grayling",
+          "host": "Grayling Regional Chamber",
+          "url": "https://www.graylingchamber.com/",
+          "center": {
+            "lat": 44.6614,
+            "lng": -84.7147
+          }
+        },
+        {
+          "id": "oscoda-tawas",
+          "name": "Oscoda/Tawas",
+          "host": "Tawas Area Chamber",
+          "url": "https://tawas.com/",
+          "center": {
+            "lat": 44.42,
+            "lng": -83.49
+          }
+        }
+      ],
+      "nextEvents": []
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "region": {
+    "id": "northwest-michigan",
+    "name": "Northwest Michigan",
+    "center": {
+      "lat": 44.76,
+      "lng": -85.62
+    },
+    "zoom": 7,
+    "zones": [
+      {
+        "id": "traverse-city",
+        "name": "Traverse City",
+        "host": "20Fathoms",
+        "url": "https://20fathoms.org/",
+        "center": {
+          "lat": 44.7631,
+          "lng": -85.6206
+        }
+      },
+      {
+        "id": "petoskey",
+        "name": "Petoskey",
+        "host": "Petoskey Regional Chamber",
+        "url": "https://www.petoskeychamber.com/",
+        "center": {
+          "lat": 45.3733,
+          "lng": -84.9553
+        }
+      },
+      {
+        "id": "cadillac",
+        "name": "Cadillac",
+        "host": "Cadillac Area Chamber",
+        "url": "https://cadillacareachamberofcommerce.growthzoneapp.com/",
+        "center": {
+          "lat": 44.2519,
+          "lng": -85.4012
+        }
+      },
+      {
+        "id": "manistee",
+        "name": "Manistee",
+        "host": "Manistee Area Chamber",
+        "url": "https://www.manisteechamber.com/",
+        "center": {
+          "lat": 44.2444,
+          "lng": -86.3242
+        }
+      },
+      {
+        "id": "charlevoix",
+        "name": "Charlevoix",
+        "host": "Charlevoix Area Chamber",
+        "url": "https://www.charlevoix.org/",
+        "center": {
+          "lat": 45.3181,
+          "lng": -85.2584
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "20fathoms": {
+      "id": "20fathoms",
+      "name": "20Fathoms",
+      "url": "https://20fathoms.org/events/",
+      "color": "#4CAF50",
+      "zone": "traverse-city",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "traverse-connect": {
+      "id": "traverse-connect",
+      "name": "Traverse Connect",
+      "url": "https://business.traverseconnect.com/events",
+      "color": "#2196F3",
+      "zone": "traverse-city",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "grove-incubator": {
+      "id": "grove-incubator",
+      "name": "Grove Community Incubator",
+      "url": "https://www.eventbrite.com/o/grove-community-incubator-59269622333",
+      "color": "#9C27B0",
+      "zone": "traverse-city",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "build-guild-tc": {
+      "id": "build-guild-tc",
+      "name": "Build Guild Traverse City",
+      "url": "https://www.meetup.com/build-guild-traverse-city/events/ical/",
+      "color": "#1E3A5F",
+      "zone": "traverse-city",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "venture-north": {
+      "id": "venture-north",
+      "name": "Venture North Funding",
+      "url": "https://www.venturenorthfunding.org/events",
+      "color": "#E65100",
+      "zone": "traverse-city",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "petoskey-chamber": {
+      "id": "petoskey-chamber",
+      "name": "Petoskey Regional Chamber",
+      "url": "https://www.petoskeychamber.com/events/search",
+      "color": "#2E7D32",
+      "zone": "petoskey",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "cadillac-chamber": {
+      "id": "cadillac-chamber",
+      "name": "Cadillac Area Chamber",
+      "url": "https://cadillacareachamberofcommerce.growthzoneapp.com/events",
+      "color": "#00695C",
+      "zone": "cadillac",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "manistee-chamber": {
+      "id": "manistee-chamber",
+      "name": "Manistee Area Chamber",
+      "url": "https://business.manisteechamber.com/events/search",
+      "color": "#1565C0",
+      "zone": "manistee",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    },
+    "charlevoix-chamber": {
+      "id": "charlevoix-chamber",
+      "name": "Charlevoix Area Chamber",
+      "url": "https://business.charlevoix.org/events/search",
+      "color": "#6A1B9A",
+      "zone": "charlevoix",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": null
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

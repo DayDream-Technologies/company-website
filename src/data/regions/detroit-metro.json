@@ -1,0 +1,265 @@
+{
+  "region": {
+    "id": "detroit-metro",
+    "name": "Detroit Metro",
+    "center": {
+      "lat": 42.45,
+      "lng": -83.1
+    },
+    "zoom": 9,
+    "zones": [
+      {
+        "id": "rochester-hills",
+        "name": "Rochester Hills",
+        "host": "OU INC",
+        "url": "https://www.oakland.edu/ouinc/",
+        "center": {
+          "lat": 42.6584,
+          "lng": -83.1499
+        }
+      },
+      {
+        "id": "sterling-heights",
+        "name": "Sterling Heights",
+        "host": "Velocity Center",
+        "url": "https://www.mivelocity.com/",
+        "center": {
+          "lat": 42.5803,
+          "lng": -83.0302
+        }
+      },
+      {
+        "id": "troy",
+        "name": "Troy",
+        "host": "Automation Alley",
+        "url": "https://automationalley.com/",
+        "center": {
+          "lat": 42.6064,
+          "lng": -83.1498
+        }
+      },
+      {
+        "id": "southfield",
+        "name": "Southfield",
+        "host": "Centrepolis Accelerator",
+        "url": "https://www.centrepolisaccelerator.com/",
+        "center": {
+          "lat": 42.4734,
+          "lng": -83.2219
+        }
+      },
+      {
+        "id": "detroit",
+        "name": "Detroit",
+        "host": "TechTown Detroit",
+        "url": "https://techtowndetroit.org/",
+        "center": {
+          "lat": 42.3314,
+          "lng": -83.0458
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "michigan-founders-fund": {
+      "id": "michigan-founders-fund",
+      "name": "Michigan Founders Fund",
+      "url": "https://luma.com/a4eb60lc",
+      "color": "#2196F3",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "michigan-black-business-alliance": {
+      "id": "michigan-black-business-alliance",
+      "name": "Michigan Black Business Alliance",
+      "url": "https://www.eventbrite.com/o/michigan-black-business-alliance-32852268307",
+      "color": "#9C27B0",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "techtown": {
+      "id": "techtown",
+      "name": "TechTown Detroit",
+      "url": "https://techtowndetroit.org/events/",
+      "color": "#E65100",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "detroit-regional-chamber": {
+      "id": "detroit-regional-chamber",
+      "name": "Detroit Regional Chamber",
+      "url": "https://www.detroitchamber.com/events/",
+      "color": "#2E7D32",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "automation-alley": {
+      "id": "automation-alley",
+      "name": "Automation Alley",
+      "url": "https://automationalley.com/events/",
+      "color": "#00695C",
+      "zone": "troy",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "rochester-regional-chamber": {
+      "id": "rochester-regional-chamber",
+      "name": "Rochester Regional Chamber",
+      "url": "https://business.rrc-mi.com/events/mc/chamber-events-6",
+      "color": "#1565C0",
+      "zone": "rochester-hills",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "macomb-county-chamber": {
+      "id": "macomb-county-chamber",
+      "name": "Macomb County Chamber",
+      "url": "https://mccbiz.macombcountychamber.com/events/calendar",
+      "color": "#6A1B9A",
+      "zone": "sterling-heights",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "southfield-chamber": {
+      "id": "southfield-chamber",
+      "name": "Southfield Area Chamber",
+      "url": "https://members.southfieldchamber.com/events/Search?mode=0",
+      "color": "#C62828",
+      "zone": "southfield",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "oakland-thrive": {
+      "id": "oakland-thrive",
+      "name": "Oakland Thrive",
+      "url": "https://oaklandthrive.org/workshops-events/",
+      "color": "#00897B",
+      "zone": "rochester-hills",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "velocity-center": {
+      "id": "velocity-center",
+      "name": "Velocity Center",
+      "url": "https://www.mivelocity.com/",
+      "color": "#455A64",
+      "zone": "sterling-heights",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "troy-chamber": {
+      "id": "troy-chamber",
+      "name": "Troy Chamber",
+      "url": "https://troychamber.com/chamber-events/",
+      "color": "#AD1457",
+      "zone": "troy",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "sterling-heights-chamber": {
+      "id": "sterling-heights-chamber",
+      "name": "Sterling Heights Regional Chamber",
+      "url": "https://www.chamberdata.net/webforms/EvtListing.aspx?class=E&dbid2=mister",
+      "color": "#37474F",
+      "zone": "sterling-heights",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "birmingham-bloomfield-chamber": {
+      "id": "birmingham-bloomfield-chamber",
+      "name": "Birmingham Bloomfield Chamber",
+      "url": "https://www.bbcc.com/get-involved/events/calendar/",
+      "color": "#0277BD",
+      "zone": "troy",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "oakland-university": {
+      "id": "oakland-university",
+      "name": "Oakland University",
+      "url": "https://calendar.oakland.edu/",
+      "color": "#5D4037",
+      "zone": "rochester-hills",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "detroit-new-tech": {
+      "id": "detroit-new-tech",
+      "name": "Detroit New Tech",
+      "url": "https://www.meetup.com/dnewtech/events/ical/",
+      "color": "#F57C00",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "detroit-code-coffee": {
+      "id": "detroit-code-coffee",
+      "name": "Detroit Code & Coffee",
+      "url": "https://www.meetup.com/detroit-code-coffee/events/ical/",
+      "color": "#4527A0",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "startup-detroit-happy-hour": {
+      "id": "startup-detroit-happy-hour",
+      "name": "Startup Detroit Happy Hour",
+      "url": "https://www.purpose.jobs/startup-detroit-happy-hour",
+      "color": "#18453B",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "luma-detroit": {
+      "id": "luma-detroit",
+      "name": "Luma Detroit",
+      "url": "https://luma.com/detroit",
+      "color": "#FF6B35",
+      "zone": "detroit",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}

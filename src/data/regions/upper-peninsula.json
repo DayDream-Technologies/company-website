@@ -1,0 +1,135 @@
+{
+  "region": {
+    "id": "upper-peninsula",
+    "name": "Upper Peninsula",
+    "center": {
+      "lat": 46.55,
+      "lng": -87.4
+    },
+    "zoom": 6,
+    "zones": [
+      {
+        "id": "houghton-hancock",
+        "name": "Houghton/Hancock",
+        "host": "MTEC SmartZone",
+        "url": "https://www.mtecsz.com/",
+        "center": {
+          "lat": 47.121,
+          "lng": -88.569
+        }
+      },
+      {
+        "id": "marquette",
+        "name": "Marquette",
+        "host": "Innovate Marquette",
+        "url": "https://www.innovatemarquette.org/",
+        "center": {
+          "lat": 46.548,
+          "lng": -87.395
+        }
+      },
+      {
+        "id": "sault-ste-marie",
+        "name": "Sault Ste. Marie",
+        "host": "Headwaters North",
+        "url": "https://www.headwatersnorth.org/",
+        "center": {
+          "lat": 46.495,
+          "lng": -84.345
+        }
+      }
+    ]
+  },
+  "events": [],
+  "sources": {
+    "lake-superior-community-partnership": {
+      "id": "lake-superior-community-partnership",
+      "name": "Lake Superior Community Partnership",
+      "url": "https://members.marquette.org/calendar",
+      "color": "#E65100",
+      "zone": "marquette",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "keweenaw-chamber": {
+      "id": "keweenaw-chamber",
+      "name": "Keweenaw Chamber of Commerce",
+      "url": "https://business.keweenaw.org/events/",
+      "color": "#2E7D32",
+      "zone": "houghton-hancock",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "mtec-smartzone": {
+      "id": "mtec-smartzone",
+      "name": "MTEC SmartZone",
+      "url": "https://www.mtecsz.com/events/",
+      "color": "#00695C",
+      "zone": "houghton-hancock",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "michigan-tech-events": {
+      "id": "michigan-tech-events",
+      "name": "Michigan Tech",
+      "url": "https://events.mtu.edu/",
+      "color": "#1565C0",
+      "zone": "houghton-hancock",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "headwaters-north": {
+      "id": "headwaters-north",
+      "name": "Headwaters North",
+      "url": "https://www.headwatersnorth.org/events",
+      "color": "#6A1B9A",
+      "zone": "sault-ste-marie",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "lssu-events": {
+      "id": "lssu-events",
+      "name": "Lake Superior State University",
+      "url": "https://www.lssu.edu/events/",
+      "color": "#C62828",
+      "zone": "sault-ste-marie",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "sault-cvb": {
+      "id": "sault-cvb",
+      "name": "Sault Ste. Marie CVB",
+      "url": "https://saultstemarie.com/events/",
+      "color": "#00897B",
+      "zone": "sault-ste-marie",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    },
+    "keep-it-in-the-up": {
+      "id": "keep-it-in-the-up",
+      "name": "Keep It In The UP",
+      "url": "https://www.keepitintheup.com/events/",
+      "color": "#455A64",
+      "zone": "marquette",
+      "eventCount": 0,
+      "status": "missing",
+      "error": null,
+      "lastSuccess": "2026-10-09T17:40:35.454Z"
+    }
+  },
+  "lastScraped": "2026-10-09T18:19:32.717Z"
+}
