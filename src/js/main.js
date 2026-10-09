@@ -2,6 +2,7 @@
 const hamburger = document.querySelector('.hamburger');
 const dropdown = document.querySelector('.dropdown');
 
+if (hamburger && dropdown) {
 hamburger.querySelector('input').addEventListener('change', event => {
     if (event.target.checked) {
         dropdown.style.display = 'block';
@@ -76,6 +77,7 @@ handleResize();
 
 // Add resize event listener
 window.addEventListener('resize', handleResize);
+} // end if (hamburger && dropdown)
 /********* End JS for the dropdown menu *********/
 
 
