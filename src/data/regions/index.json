@@ -1,5 +1,5 @@
 {
-  "lastScraped": "2026-10-09T18:19:32.717Z",
+  "lastScraped": "2026-10-09T19:27:57.883Z",
   "regions": [
     {
       "id": "upper-peninsula",
@@ -8,7 +8,7 @@
         "lat": 46.55,
         "lng": -87.4
       },
-      "eventCount": 0,
+      "eventCount": 25,
       "zones": [
         {
           "id": "houghton-hancock",
@@ -41,7 +41,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "P3MQT Marquette County Local Economic Exchange 2026",
+          "date": "2026-10-09",
+          "zone": "marquette",
+          "url": "/upper-peninsula-events.html"
+        },
+        {
+          "title": "2nd annual P3MQT, Marquette County Economic Development Exchange",
+          "date": "2026-10-09",
+          "zone": "marquette",
+          "url": "/upper-peninsula-events.html"
+        },
+        {
+          "title": "Manoomin Camp – Wild Rice Workshop",
+          "date": "2026-10-10",
+          "zone": "houghton-hancock",
+          "url": "/upper-peninsula-events.html"
+        }
+      ]
     },
     {
       "id": "west-michigan",
@@ -50,7 +69,7 @@
         "lat": 43,
         "lng": -86
       },
-      "eventCount": 44,
+      "eventCount": 74,
       "zones": [
         {
           "id": "muskegon",
@@ -111,7 +130,7 @@
         "lat": 43.6,
         "lng": -84.5
       },
-      "eventCount": 0,
+      "eventCount": 44,
       "zones": [
         {
           "id": "midland",
@@ -134,7 +153,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "2026 Seine River Cruise Global Networking Trip",
+          "date": "2026-10-09",
+          "zone": "midland",
+          "url": "/east-central-events.html"
+        },
+        {
+          "title": "Coffee Talk",
+          "date": "2026-10-13",
+          "zone": "mount-pleasant",
+          "url": "/east-central-events.html"
+        },
+        {
+          "title": "Bay City Impact Day",
+          "date": "2026-10-14",
+          "zone": "midland",
+          "url": "/east-central-events.html"
+        }
+      ]
     },
     {
       "id": "east-michigan",
@@ -143,7 +181,7 @@
         "lat": 43,
         "lng": -82.45
       },
-      "eventCount": 0,
+      "eventCount": 10,
       "zones": [
         {
           "id": "port-huron",
@@ -156,7 +194,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "Port Huron: 3rd Thursday of each month",
+          "date": "2026-10-15",
+          "zone": "port-huron",
+          "url": "/east-michigan-events.html"
+        },
+        {
+          "title": "Grand Opening Celebration for Soulback Sober Bar & Coffee Shop",
+          "date": "2026-10-15",
+          "zone": "port-huron",
+          "url": "/east-michigan-events.html"
+        },
+        {
+          "title": "Morning Mingle Sponsored by Soulback Sober Bar & Coffee Shop",
+          "date": "2026-10-21",
+          "zone": "port-huron",
+          "url": "/east-michigan-events.html"
+        }
+      ]
     },
     {
       "id": "south-central",
@@ -165,7 +222,7 @@
         "lat": 42.73,
         "lng": -84.55
       },
-      "eventCount": 9,
+      "eventCount": 42,
       "zones": [
         {
           "id": "lansing",
@@ -180,20 +237,20 @@
       ],
       "nextEvents": [
         {
-          "title": "Data Science + AI Summit",
-          "date": "2026-10-21",
+          "title": "Member Mixer at Impression 5 Science Center - Hosted by Consumers Energy",
+          "date": "2026-10-13",
           "zone": "lansing",
           "url": "/south-central-events.html"
         },
         {
-          "title": "SHAPE Seminar Series: Advancing Circular Packaging Systems Through Reuse and Refill Innovation",
-          "date": "2026-11-04",
+          "title": "LRCC Lansing-Delhi Township Business Roundtable (IN-PERSON)",
+          "date": "2026-10-14",
           "zone": "lansing",
           "url": "/south-central-events.html"
         },
         {
-          "title": "When Things Go Wrong: Founder Disputes, Breakups, and Forced Exits",
-          "date": "2026-11-12",
+          "title": "From Prototype to FDA Clearance: Navigating Medical Device Development",
+          "date": "2026-10-14",
           "zone": "lansing",
           "url": "/south-central-events.html"
         }
@@ -206,7 +263,7 @@
         "lat": 42.29,
         "lng": -85.4
       },
-      "eventCount": 0,
+      "eventCount": 48,
       "zones": [
         {
           "id": "battle-creek",
@@ -229,7 +286,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "Starting Gate Speaker Series: Commercial Lending in the Current Economic Environment",
+          "date": "2026-10-12",
+          "zone": "kalamazoo",
+          "url": "/southwest-events.html"
+        },
+        {
+          "title": "Monday Midday Mixer",
+          "date": "2026-10-12",
+          "zone": "kalamazoo",
+          "url": "/southwest-events.html"
+        },
+        {
+          "title": "Discover Seine Cruise: Informational Meeting at the Catalyst Center",
+          "date": "2026-10-13",
+          "zone": "kalamazoo",
+          "url": "/southwest-events.html"
+        }
+      ]
     },
     {
       "id": "southeast",
@@ -238,7 +314,7 @@
         "lat": 42.2,
         "lng": -83.85
       },
-      "eventCount": 0,
+      "eventCount": 59,
       "zones": [
         {
           "id": "ann-arbor",
@@ -271,7 +347,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "Journey for T1D Gala",
+          "date": "2026-10-09",
+          "zone": "ann-arbor",
+          "url": "/southeast-events.html"
+        },
+        {
+          "title": "MIATD26 Michigan Regional ATD Conference 2026",
+          "date": "2026-10-12",
+          "zone": "ann-arbor",
+          "url": "/southeast-events.html"
+        },
+        {
+          "title": "AMTC Lunch & Learn",
+          "date": "2026-10-13",
+          "zone": "jackson",
+          "url": "/southeast-events.html"
+        }
+      ]
     },
     {
       "id": "detroit-metro",
@@ -280,7 +375,7 @@
         "lat": 42.45,
         "lng": -83.1
       },
-      "eventCount": 0,
+      "eventCount": 231,
       "zones": [
         {
           "id": "rochester-hills",
@@ -333,7 +428,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "Coffee Talk",
+          "date": "2026-10-09",
+          "zone": "rochester-hills",
+          "url": "/detroit-metro-events.html"
+        },
+        {
+          "title": "The Forward 20: Celebrating Michigan's Innovation Ecosystem",
+          "date": "2026-10-09",
+          "zone": "detroit",
+          "url": "/detroit-metro-events.html"
+        },
+        {
+          "title": "San Francisco | Claude Culture",
+          "date": "2026-10-10",
+          "zone": "detroit",
+          "url": "/detroit-metro-events.html"
+        }
+      ]
     },
     {
       "id": "northwest-michigan",
@@ -342,7 +456,7 @@
         "lat": 44.76,
         "lng": -85.62
       },
-      "eventCount": 0,
+      "eventCount": 40,
       "zones": [
         {
           "id": "traverse-city",
@@ -395,7 +509,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "BOGO 50% OFF SKECHERS",
+          "date": "2026-09-22",
+          "zone": "petoskey",
+          "url": "/northwest-michigan-events.html"
+        },
+        {
+          "title": "Trunk Show: AUBADE x PECADO Fashion House",
+          "date": "2026-10-09",
+          "zone": "petoskey",
+          "url": "/northwest-michigan-events.html"
+        },
+        {
+          "title": "47th ANNUAL APPLE FEST",
+          "date": "2026-10-09",
+          "zone": "charlevoix",
+          "url": "/northwest-michigan-events.html"
+        }
+      ]
     },
     {
       "id": "northeast-michigan",
@@ -404,7 +537,7 @@
         "lat": 44.95,
         "lng": -84.1
       },
-      "eventCount": 0,
+      "eventCount": 33,
       "zones": [
         {
           "id": "alpena",
@@ -457,7 +590,26 @@
           }
         }
       ],
-      "nextEvents": []
+      "nextEvents": [
+        {
+          "title": "Book Nook Used Book Sale - Cheboygan Public Library",
+          "date": "2026-10-10",
+          "zone": "cheboygan",
+          "url": "/northeast-michigan-events.html"
+        },
+        {
+          "title": "Witchin' Night Out - Gaylord",
+          "date": "2026-10-10",
+          "zone": "gaylord",
+          "url": "/northeast-michigan-events.html"
+        },
+        {
+          "title": "Disc Golf Fundraiser",
+          "date": "2026-10-11",
+          "zone": "gaylord",
+          "url": "/northeast-michigan-events.html"
+        }
+      ]
     }
   ]
 }

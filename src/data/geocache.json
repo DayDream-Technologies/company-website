@@ -418,5 +418,505 @@
   "|butternut dr holland|mi": {
     "lat": 42.8193117,
     "lng": -86.127594
+  },
+  "|petoskey|mi": {
+    "lat": 45.373343,
+    "lng": -84.95533
+  },
+  "|midland|mi": {
+    "lat": 43.6155825,
+    "lng": -84.2472117
+  },
+  "200 howard street, petoskey, mi|petoskey|mi": {
+    "lat": 45.375777,
+    "lng": -84.955645
+  },
+  "|charlevoix|mi": {
+    "lat": 45.202075,
+    "lng": -84.9676387
+  },
+  "|rochester hills|mi": {
+    "lat": 42.6583661,
+    "lng": -83.1499322
+  },
+  "|marquette|mi": {
+    "lat": 46.4481521,
+    "lng": -87.6305899
+  },
+  "2296 sugar loaf ave|marquette|mi": null,
+  "10850 e. traverse hwy, ste. 4400|traverse city|mi": null,
+  "|ann arbor|mi": {
+    "lat": 42.2813722,
+    "lng": -83.7484616
+  },
+  "newlab detroit, 2050 15th st, detroit, mi 48216, usa|detroit|mi": null,
+  "|detroit|mi": {
+    "lat": 42.3315509,
+    "lng": -83.0466403
+  },
+  "https://luma.com/event/evt-tdfatcqimbqrqwq|detroit|mi": null,
+  "https://luma.com/event/evt-htx7mdtwhhasrbi|detroit|mi": null,
+  "https://luma.com/event/evt-av1layvasdxfyfk|detroit|mi": null,
+  "16037 brewery road|l'anse|mi": {
+    "lat": 46.7552229,
+    "lng": -88.4477631
+  },
+  "https://luma.com/event/evt-ogcr29wuovmvumw|detroit|mi": null,
+  "https://luma.com/event/evt-hihblora3kpnffa|detroit|mi": null,
+  "|cheboygan|mi": {
+    "lat": 45.4417481,
+    "lng": -84.4768486
+  },
+  "|gaylord|mi": {
+    "lat": 45.027513,
+    "lng": -84.674752
+  },
+  "https://luma.com/event/evt-4pvgynop18cymhr|detroit|mi": null,
+  "https://luma.com/event/evt-aabaay40stpkj9i|detroit|mi": null,
+  "https://luma.com/event/evt-dygnhfbhlpgwrus|detroit|mi": null,
+  "https://luma.com/event/evt-ylyw1e24h0erdzy|detroit|mi": null,
+  "https://luma.com/event/evt-ve7sqpqh289c2de|detroit|mi": null,
+  "https://luma.com/event/evt-twuwdv5y1nazrxm|detroit|mi": null,
+  "detroit smart parking lab (dspl), 1701 w lafayette blvd, detroit, mi 48216, usa|detroit|mi": null,
+  "inspired.lab, japan, 〒100-0004 tokyo, chiyoda city, ōtemachi, 1-chōme−6−１ otemachi bldg., 6階|detroit|mi": null,
+  "217 n front st|marquette|mi": {
+    "lat": 46.5444468,
+    "lng": -87.3925931
+  },
+  "https://luma.com/event/evt-j8ojfxashxeidkq|detroit|mi": null,
+  "https://luma.com/event/evt-jtu03qfbfcgkndi|detroit|mi": null,
+  "3517 scheele dr, jackson, mi 49202, usa|jackson|mi": null,
+  "|jackson|mi": {
+    "lat": 42.2416466,
+    "lng": -84.425589
+  },
+  "https://luma.com/event/evt-nlv3efpmzthyxey|detroit|mi": null,
+  "|mount pleasant|mi": {
+    "lat": 43.597646,
+    "lng": -84.7668495
+  },
+  "180 e water street, suite 1000, kalamazoo, mi 49007|kalamazoo|mi": null,
+  "5 science center 200 museum dr., lansing, mi 48933|lansing|mi": null,
+  "|lansing|mi": {
+    "lat": 42.7338254,
+    "lng": -84.5546295
+  },
+  "461 burroughs st|detroit|mi": {
+    "lat": 42.3641654,
+    "lng": -83.0732512
+  },
+  "shakers madrid, calle de zurbano, 71, chamberí, 28010 madrid, spain|detroit|mi": null,
+  "https://luma.com/event/evt-gknd67vrajnkezb|detroit|mi": null,
+  "https://luma.com/event/evt-cxer8nz1lfkb8yc|detroit|mi": null,
+  "hudson grille midtown, 942 peachtree st ne, atlanta, ga 30309, usa|detroit|mi": null,
+  "https://luma.com/event/evt-lr0gjacifac445c|detroit|mi": null,
+  "https://luma.com/event/evt-yy3wwnrstyfjsqw|detroit|mi": null,
+  "|s mitchell st cadillac|mi": {
+    "lat": 44.226079,
+    "lng": -85.3961434
+  },
+  "777 woodward avenue, suite 800|detroit|mi": null,
+  "|dori lane lansing|mi": null,
+  "|southfield|mi": {
+    "lat": 42.4733689,
+    "lng": -83.2218731
+  },
+  ": 7141 s westnedge ave|portage|mi": {
+    "lat": 42.2134949,
+    "lng": -85.5893026
+  },
+  "122 uptown dr ste 204, bay city, mi 48708, usa|bay city|mi": null,
+  "|bay city|mi": {
+    "lat": 43.5962107,
+    "lng": -83.8881711
+  },
+  "|sault ste. marie|mi": {
+    "lat": 46.4976734,
+    "lng": -84.3476583
+  },
+  "241 east kalamazoo avenue, kalamazoo, mi 49007|kalamazoo|mi": {
+    "lat": 42.2949135,
+    "lng": -85.5806667
+  },
+  "1810 east beltline avenue southeast|grand rapids|mi": {
+    "lat": 42.933629,
+    "lng": -85.5846007
+  },
+  "https://luma.com/event/evt-brd6kscswwk18id|detroit|mi": null,
+  "https://luma.com/event/evt-ys8k15fswrqkjje|detroit|mi": null,
+  "https://luma.com/event/evt-ltpcuzywe0q9q7h|detroit|mi": null,
+  "|houghton|mi": {
+    "lat": 46.8591287,
+    "lng": -88.7774734
+  },
+  "500 e. michigan ave., ste 200, lansing, mi 48912|lansing|mi": null,
+  "bhopal, india|detroit|mi": null,
+  "|port huron|mi": {
+    "lat": 42.9760854,
+    "lng": -82.4333742
+  },
+  "haliç congress center, sütlüce, karaağaç cd haliç kongre merkezi no:19 i̇dari bina, 34445 beyoğlu/i̇stanbul, türkiye|detroit|mi": null,
+  "fürther str. 80a, 90429 nürnberg, germany|detroit|mi": null,
+  "boğaziçi üniversitesi | güney kampüs, bebek, bü güney kampüsü, 34342 beşiktaş/i̇stanbul, türkiye|detroit|mi": null,
+  "3945 e. holland road|saginaw|mi": {
+    "lat": 43.4149339,
+    "lng": -83.9054474
+  },
+  "627 huron ave|port huron|mi": {
+    "lat": 42.9806616,
+    "lng": -82.4245337
+  },
+  "house of ai hamburg, hongkongstraße 2, 20457 hamburg, germany|detroit|mi": null,
+  "https://luma.com/event/evt-tunpo94b3olaldi|detroit|mi": null,
+  "28 west adams avenue, detroit, mi 48226|detroit|mi": {
+    "lat": 42.3369242,
+    "lng": -83.0517787
+  },
+  "651 n shaw ln., room m025 business pavilion, east lansing, mi 48824|east lansing|mi": null,
+  "320 library lane, portage, mi 49002|portage|mi": {
+    "lat": 42.2026747,
+    "lng": -85.586676
+  },
+  "320 library ln.|portage|mi": {
+    "lat": 42.2026747,
+    "lng": -85.586676
+  },
+  "aca, 905 garden of the gods rd, suite e|detroit|mi": null,
+  "6184 e. m115 suite 132, cadillac mi cadillac, mi 49601|cadillac mi cadillac|mi": null,
+  "|cadillac mi cadillac|mi": {
+    "lat": 44.282221,
+    "lng": -85.3970028
+  },
+  "180 east water street, #suite 2690, kalamazoo, mi 49007|kalamazoo|mi": null,
+  "hackhouse africa, 124 manyani e rd, nairobi, kenya|detroit|mi": null,
+  "https://luma.com/event/evt-26of2itfm55arbp|detroit|mi": null,
+  "|evergreen road lathrup village lathrup village|mi": {
+    "lat": 42.4879483,
+    "lng": -83.2412444
+  },
+  "https://luma.com/event/evt-6b64wk2hlakke5u|detroit|mi": null,
+  "https://luma.com/event/evt-jq1cw7etg3myqcq|detroit|mi": null,
+  "https://luma.com/event/evt-ejix7olwyeoiyub|detroit|mi": null,
+  "q hotel wrocław|detroit|mi": null,
+  "2625 denison dr, mt pleasant, mi 48858, usa|mt pleasant|mi": null,
+  "|mt pleasant|mi": {
+    "lat": 43.597646,
+    "lng": -84.7668495
+  },
+  "https://luma.com/event/evt-pjhqwlgk2kdt6x1|detroit|mi": null,
+  "757 makerspace - hampton, 16 murray st, hampton, va 23651, usa|detroit|mi": null,
+  "|troy|mi": {
+    "lat": 42.6055893,
+    "lng": -83.1499304
+  },
+  "https://luma.com/event/evt-5f9latynvlmdxjb|detroit|mi": null,
+  "|allendale|mi": {
+    "lat": 42.9903205,
+    "lng": -85.9529685
+  },
+  "アールスリーインスティテュート, japan, 〒530-0011 osaka, kita ward, ōfukachō, 3−１ グランフロント大阪 タワーc 16f|detroit|mi": null,
+  "101 w. washington street,|marquette|mi": {
+    "lat": 46.5430995,
+    "lng": -87.3934207
+  },
+  "|saginaw|mi": {
+    "lat": 43.4200387,
+    "lng": -83.9490365
+  },
+  "https://luma.com/event/evt-cmx7ouhtdw05q9t|detroit|mi": null,
+  "https://luma.com/event/evt-uqmk1kgcm0dhs0b|detroit|mi": null,
+  "the madison rooftop, 1555 broadway st, detroit, mi 48226, usa|detroit|mi": null,
+  "universidad iberoamericana ciudad de méxico, prol. p.º de la reforma, santa fe, zedec sta fé, álvaro obregón, 01376 ciudad de méxico, cdmx, mexico|detroit|mi": null,
+  "126 north kalamazoo avenue, ## a, vicksburg, mi 49097|vicksburg|mi": null,
+  "|vicksburg|mi": {
+    "lat": 42.1200456,
+    "lng": -85.532775
+  },
+  "business college complex, east lansing, mi 48824|east lansing|mi": null,
+  "515 n. washington ave., 3rd fl.|saginaw|mi": null,
+  "164 n. center rd.|saginaw|mi": {
+    "lat": 43.4164706,
+    "lng": -84.0146946
+  },
+  "https://luma.com/event/evt-ubhhwwzdpafi457|detroit|mi": null,
+  "28 adams ave, suite 800, detroit, mi 48226|detroit|mi": null,
+  "https://luma.com/event/evt-0sob1fwfjzzjfiv|detroit|mi": null,
+  "san francisco, ca, usa|detroit|mi": null,
+  "https://luma.com/event/evt-8wmjnzjlunhaenq|detroit|mi": null,
+  "|okemos rd okemos|mi": {
+    "lat": 42.6905726,
+    "lng": -84.4324145
+  },
+  "7227 west q avenue, kalamazoo, mi 49009|kalamazoo|mi": {
+    "lat": 42.2009692,
+    "lng": -85.691552
+  },
+  "|evergreen road southfield pavilion southfield|mi": null,
+  "https://luma.com/event/evt-n0n8ajcjhr5zrkq|detroit|mi": null,
+  "512 mcmorran blvd|port huron|mi": {
+    "lat": 42.9785586,
+    "lng": -82.4245667
+  },
+  "https://umich.zoom.us/webinar/register/wn_jxj2cjpbtriuix5dobjaig#/registration|ann arbor|mi": null,
+  "https://luma.com/event/evt-23ieljf32izoxns|detroit|mi": null,
+  "1371 gray drive, ##200, ##200|traverse city|mi": null,
+  "801 joe mann blvd suite p, midland, mi 48642, usa|midland|mi": null,
+  "fiap - paulista, av. paulista, 1106 - 7º andar - bela vista, são paulo - sp, 01311-000, brazil|detroit|mi": null,
+  "https://luma.com/event/evt-u9ch494zva9tgl2|detroit|mi": null,
+  "https://luma.com/event/evt-kx8k1mcfpbvcah2|detroit|mi": null,
+  "university of connecticut-stamford campus, 1 university pl, stamford, ct 06901, usa|detroit|mi": null,
+  "https://luma.com/event/evt-dykr5dmkpcebuzb|detroit|mi": null,
+  "https://luma.com/event/evt-dnlcydev65894vp|detroit|mi": null,
+  "https://luma.com/event/evt-oxsbjmtralgmuqw|detroit|mi": null,
+  "3403 lapeer rd., suite b 201|port huron|mi": null,
+  "|riverfront drive lansing|mi": {
+    "lat": 42.7356454,
+    "lng": -84.5475604
+  },
+  "https://luma.com/event/evt-busubsm1ta3niqh|ann arbor|mi": null,
+  "https://luma.com/event/evt-fvdbfg0w7zhbltd|detroit|mi": null,
+  "https://luma.com/event/evt-idztw13faw7p2pv|detroit|mi": null,
+  "mutation brewing and distilling company, 5825 roswell rd ne, sandy springs, ga 30328, usa|detroit|mi": null,
+  "https://luma.com/event/evt-9n7sqvuhfcgxo2o|detroit|mi": null,
+  "https://luma.com/event/evt-ehomqunnwwaft4n|detroit|mi": null,
+  "4519 n. river road|freeland|mi": {
+    "lat": 43.4740809,
+    "lng": -84.107054
+  },
+  "r2420 | umich samuel zell and robert h. lurie institute for entrepreneurial studies|ann arbor|mi": null,
+  "1000 meridian st.|sault ste. marie|mi": {
+    "lat": 46.489791,
+    "lng": -84.364071
+  },
+  "https://luma.com/event/evt-rkvn9ffhb25nv8w|detroit|mi": null,
+  "plapla - world ocean plastic planning center (720-1 hado, chinzei-machi, karatsu, saga)|detroit|mi": null,
+  "https://luma.com/event/evt-s6wsqgaebazwdot|detroit|mi": null,
+  "https://luma.com/event/evt-dnshypqysmfgybx|detroit|mi": null,
+  "https://luma.com/event/evt-bw5ij5agwg1pzjo|detroit|mi": null,
+  "https://luma.com/event/evt-bjtanttehwga2ln|detroit|mi": null,
+  "https://luma.com/event/evt-wgxisrmhlpvuvp3|detroit|mi": null,
+  "thinkspace seattle, 1700 westlake ave n #200, seattle, wa 98109, usa|detroit|mi": null,
+  "https://luma.com/event/evt-22d8pf2nl932frl|detroit|mi": null,
+  "https://luma.com/event/evt-d7osdqv0lytbsuj|detroit|mi": null,
+  "https://luma.com/event/evt-vzcj2j4cbn2elgz|detroit|mi": null,
+  "https://luma.com/event/evt-fjy0jqyfqnfladl|detroit|mi": null,
+  "28 adams ave w, suite 800, detroit, mi 48226|detroit|mi": null,
+  "kamppi, helsinki, finland|detroit|mi": null,
+  "1700 south burdick street, kalamazoo, mi 49001|kalamazoo|mi": {
+    "lat": 42.2744892,
+    "lng": -85.5836506
+  },
+  "414 east eighth street, traverse city, mi 49686|traverse city|mi": {
+    "lat": 44.7591484,
+    "lng": -85.6150114
+  },
+  "111 n. hamilton st.|saginaw|mi": {
+    "lat": 43.4171384,
+    "lng": -83.963386
+  },
+  "315 w. holland ave.|saginaw|mi": {
+    "lat": 43.4213623,
+    "lng": -83.9516544
+  },
+  "tolhouse, 1447 n summit st, toledo, oh 43604, usa|detroit|mi": null,
+  "https://luma.com/event/evt-mmfmti4qhpfs70s|ann arbor|mi": null,
+  "https://luma.com/event/evt-gqq67f1vijotysz|detroit|mi": null,
+  "|sterling heights|mi": {
+    "lat": 42.5803122,
+    "lng": -83.0302033
+  },
+  "|alpena|mi": {
+    "lat": 45.0176181,
+    "lng": -83.6670019
+  },
+  "https://luma.com/event/evt-1rmhygk3j6sdt6b|detroit|mi": null,
+  "|escanaba dr dewitt|mi": {
+    "lat": 42.8310467,
+    "lng": -84.544937
+  },
+  "8425 mcnichols road|detroit|mi": {
+    "lat": 42.4171307,
+    "lng": -83.1539881
+  },
+  "https://luma.com/event/evt-71gfzhtrtj6puix|detroit|mi": null,
+  "6633 18 mile rd ,sterling heights ,mi,48314|sterling heights|mi": {
+    "lat": 42.5946409,
+    "lng": -83.0428897
+  },
+  "1819 innovation hub - university of cincinnati, 2900 reading rd, cincinnati, oh 45206, usa|detroit|mi": null,
+  "talent garden, via pedro alvares cabral, 6, 87036 rende cs, italy|detroit|mi": null,
+  "r0230 | ross|ann arbor|mi": null,
+  "https://luma.com/event/evt-q1lrvx0agjh6cup|detroit|mi": null,
+  "https://luma.com/event/evt-aqzsgrtgbef2aeq|detroit|mi": null,
+  "railspur, 419 occidental ave s, seattle, wa 98104, usa|detroit|mi": null,
+  "108 s. main st.|vicksburg|mi": {
+    "lat": 42.1197511,
+    "lng": -85.5324988
+  },
+  "corgi cafe, 74 great eastern st, london ec2a 3jl, uk|detroit|mi": null,
+  "126 north kalamazoo avenue, vicksburg, mi 49097|vicksburg|mi": {
+    "lat": 42.1207301,
+    "lng": -85.5308326
+  },
+  "2675 bellingham,troy,mi,48083,united states|troy|mi": null,
+  "tuspark grainger hub newcastle, maybrook house, 27 grainger st, newcastle upon tyne ne1 5je, uk|detroit|mi": null,
+  "1646 barrington st, halifax, ns b3j 2a3, canada|detroit|mi": null,
+  "byyard, 11-chōme-15-4 kita 5 jōnishi, chuo ward, sapporo, hokkaido 060-0005, japan|detroit|mi": null,
+  "915 east drayton street|ferndale|mi": {
+    "lat": 42.4666458,
+    "lng": -83.1259293
+  },
+  "222 n., lake st cadillac, mi 49601|lake st cadillac|mi": null,
+  "|lake st cadillac|mi": {
+    "lat": 44.2480057,
+    "lng": -85.4004199
+  },
+  "https://luma.com/event/evt-etuc3n20elprprb|detroit|mi": null,
+  "mark maizan, 9-15 meizanchō, kagoshima, 892-0821, japan|detroit|mi": null,
+  "サイボウズ㈱ 札幌営業所, japan, 〒060-0042 hokkaido, sapporo, chuo ward, ōdōrinishi, 3-chōme−8−１ 9階|detroit|mi": null,
+  "https://luma.com/event/evt-fttflw6pcq2p4x3|detroit|mi": null,
+  "harvey and janet cohen student union, 11090 fgcu blvd n, fort myers, fl 33965, usa|detroit|mi": null,
+  "wix, yunitsman st 5, tel aviv-yafo, israel|detroit|mi": null,
+  "https://luma.com/event/evt-ujzkdfxztqb2236|detroit|mi": null,
+  "umich samuel zell and robert h. lurie institute for entrepreneurial studies, 701 tappan ave r2420, ann arbor, mi 48109, usa|ann arbor|mi": null,
+  "savor cinema fort lauderdale, 503 se 6th st, fort lauderdale, fl 33301, usa|detroit|mi": null,
+  "https://luma.com/event/evt-z3rbd1whgfvgvak|detroit|mi": null,
+  "https://luma.com/event/evt-fy28qtuw3nfubrc|detroit|mi": null,
+  "https://luma.com/event/evt-otkghfb3xqeftc1|detroit|mi": null,
+  "4717 campus dr.|kalamazoo|mi": {
+    "lat": 42.2562854,
+    "lng": -85.6446714
+  },
+  "4717 campus drive, kalamazoo, mi 49008|kalamazoo|mi": {
+    "lat": 42.2561352,
+    "lng": -85.6445948
+  },
+  "https://luma.com/event/evt-bp253ro9pa65ybr|detroit|mi": null,
+  "2871 research dr,rochester hills,mi,48309|rochester hills|mi": {
+    "lat": 42.6400528,
+    "lng": -83.1912691
+  },
+  "cic berlin, lohmühlenstraße 65, 12435 berlin-bezirk treptow-köpenick, germany|detroit|mi": null,
+  "spaces bleicherweg, bleicherweg 10, 8002 zürich, switzerland|detroit|mi": null,
+  "https://luma.com/event/evt-b1ta7ey7ed948if|detroit|mi": null,
+  "108 south main street, vicksburg, mi 49097|vicksburg|mi": {
+    "lat": 42.1197511,
+    "lng": -85.5324988
+  },
+  "laurel ballroom 5100 oarie dr shelbyville, mi 49344 although only a five-minute walk apart the inn and bay pointe woods have separate addresses , please see address for correct location.|wyoming|mi": null,
+  "1685 east big beaver road, troy, mi 48083|troy|mi": {
+    "lat": 42.5644028,
+    "lng": -83.1139435
+  },
+  "valledupar, colombia|detroit|mi": null,
+  "303 johnson st.|saginaw|mi": {
+    "lat": 43.4360222,
+    "lng": -83.9369373
+  },
+  "|e canda st ishpeming|mi": {
+    "lat": 46.4913017,
+    "lng": -87.6684498
+  },
+  "651 n. shaw ln, m025 (business pavilion), east lansing, mi 48824|east lansing|mi": null,
+  "https://luma.com/event/evt-xgrpyqfkwklzgzk|detroit|mi": null,
+  "https://luma.com/event/evt-fbwsbzrk242crel||mi": null,
+  "https://luma.com/event/evt-sqnil1mq28pivf7||mi": null,
+  "https://luma.com/event/evt-i8lfe7teyevsf9e||mi": null,
+  "https://luma.com/event/evt-it8acfmttnwjsbk||mi": null,
+  "https://luma.com/event/evt-9q1bh6c4ucqbc7f||mi": null,
+  "200 monroe ave nw|grand rapids|mi": {
+    "lat": 42.967612,
+    "lng": -85.671713
+  },
+  "|east michigan ave lansing|mi": {
+    "lat": 42.7336057,
+    "lng": -84.5104133
+  },
+  "|wright street cadillac|mi": {
+    "lat": 44.2560134,
+    "lng": -85.4315766
+  },
+  "26261 evergreen rd., southfield, mi 48076|southfield|mi": {
+    "lat": 42.4823726,
+    "lng": -83.241062
+  },
+  "20300 civic center dr. st. 1102, southfield, mi 48076|southfield|mi": null,
+  "https://luma.com/event/evt-pguzvf6p9fdxh0t|ann arbor|mi": null,
+  "https://luma.com/event/evt-1fdghenrfepfkrm|detroit|mi": null,
+  "nec, japan, 〒060-0035 hokkaido, sapporo, chuo ward, kita 5 jōhigashi, 2-chōme−１ ａｆｔビル|detroit|mi": null,
+  "314 n hamilton st., ste 102|saginaw|mi": null,
+  "219 s. harrison rd ., east lansing, mi 48824|east lansing|mi": {
+    "lat": 42.7114261,
+    "lng": -84.4937225
+  },
+  "capital factory, austin, tx|detroit|mi": null,
+  "229 e. michigan ave. suite 335|kalamazoo|mi": null,
+  "the lab miami, 2750 nw 3rd ave #24, miami, fl 33127, usa|detroit|mi": null,
+  "https://luma.com/event/evt-yrzkgha7chjk563|detroit|mi": null,
+  "720 michigan ave., east lansing, mi 48823|east lansing|mi": {
+    "lat": 42.7341423,
+    "lng": -84.492996
+  },
+  "211 east water street, kalamazoo, mi 49007|kalamazoo|mi": {
+    "lat": 42.2940383,
+    "lng": -85.5801115
+  },
+  "3380 chicago drive, hudsonville, mi 49426|hudsonville|mi": {
+    "lat": 42.8681538,
+    "lng": -85.8660611
+  },
+  "https://luma.com/event/evt-6yqnokfo4ujk5w0|detroit|mi": null,
+  "25228 w 12, mile rd southfield, mi 48034|mile rd southfield|mi": null,
+  "|mile rd southfield|mi": {
+    "lat": 42.5174548,
+    "lng": -83.2053867
+  },
+  "https://luma.com/event/evt-ad6nebaxw0wv8in||mi": null,
+  "jeff t. blau hall, 700 e university ave, ann arbor, mi 48109, usa|ann arbor|mi": null,
+  "https://luma.com/event/evt-oikpvomaqesmv1p|detroit|mi": null,
+  "microsoft innovation center saga, japan, 〒840-0801 saga, ekimae chūō, 1-chōme−8−３２ 5f|detroit|mi": null,
+  "https://luma.com/event/evt-gmmldj3vabyrnoo|detroit|mi": null,
+  "https://luma.com/event/evt-c4lhdkkgo55lm8y|detroit|mi": null,
+  "byron bay nsw 2481, australia|detroit|mi": null,
+  "tkp sapporo conference centre, japan, 〒060-0003 hokkaido, sapporo, chuo ward, kita 3 jōnishi, 3-chōme−1−６ 札幌小暮ビル 6~7階（事務所：7階|detroit|mi": null,
+  "925 s. creyts rd., lansing, mi 48917|lansing|mi": {
+    "lat": 42.7228321,
+    "lng": -84.6409975
+  },
+  "https://luma.com/event/evt-j7wl4ic7nh40yct|detroit|mi": null,
+  "6200 state street|saginaw|mi": {
+    "lat": 43.4370745,
+    "lng": -84.0380464
+  },
+  "https://luma.com/event/evt-8ja2ytvh5hvehia|detroit|mi": null,
+  "505 e. michigan ave., lansing, mi 48912|lansing|mi": {
+    "lat": 42.7351542,
+    "lng": -84.5456274
+  },
+  "103 michigan street|port huron|mi": {
+    "lat": 42.9760143,
+    "lng": -82.4233736
+  },
+  "https://luma.com/event/evt-47jaqcladkcsu3z|detroit|mi": null,
+  "303 johnson street|saginaw|mi": {
+    "lat": 43.4360222,
+    "lng": -83.9369373
+  },
+  "1000 nick gilbert way|detroit|mi": {
+    "lat": 42.3335604,
+    "lng": -83.0476028
+  },
+  "3330 highland drive, hudsonville, mi 49426|hudsonville|mi": {
+    "lat": 42.85021,
+    "lng": -85.8642791
+  },
+  "north shaw lane, east lansing, mi 48824|east lansing|mi": {
+    "lat": 42.7262744,
+    "lng": -84.4736878
+  },
+  "311 abbot road, community room, east lansing, mi 48823|east lansing|mi": null,
+  "one campus martius|detroit|mi": {
+    "lat": 42.332628,
+    "lng": -83.0467201
   }
 }
