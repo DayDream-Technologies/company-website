@@ -17,6 +17,7 @@ function pageFor(region) {
   const description = `Entrepreneurship and networking events across Michigan's ${region.name} SmartZone region. Calendar, list, and map views, updated every other Monday.`;
   let html = template;
   html = html.replaceAll('gr-events.html', file);
+  html = html.replace('/gr-events"', `/${region.id}-events"`);
   html = html.replaceAll('GR Events Calendar | Grand Rapids Community Events by DayDream Technologies', `${title} | DayDream Technologies`);
   html = html.replaceAll('GR Events Calendar | Grand Rapids Community Events', title);
   html = html.replaceAll('Discover Grand Rapids community events in one place. Interactive calendar, map view, and list view. Filter by category and export to your calendar.', description);

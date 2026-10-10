@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Michigan SmartZone Events | Entrepreneurship and Networking</title>
     <meta name="description" content="Entrepreneurship and networking events across Michigan's SmartZone regions. Pick a region to open its calendar." />
-    <link rel="canonical" href="https://www.daydreamtechnologies.net/michigan-events.html" />
+    <link rel="canonical" href="https://www.daydreamtechnologies.net/michigan-events" />
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
@@ -14,15 +14,186 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="./src/js/main.js" defer></script>
     <style>
-        .sz-wrap { max-width: 1100px; margin: 96px auto 48px; padding: 0 1rem; }
-        .sz-wrap h1 { margin-bottom: 0.25rem; }
-        .sz-lead { color: #4b5563; margin-bottom: 1rem; }
-        #sz-map { height: 420px; border-radius: 12px; margin-bottom: 1.5rem; }
-        .sz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
-        .sz-card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; background: #fff; }
-        .sz-card h2 { font-size: 1.1rem; margin: 0 0 0.35rem; }
-        .sz-card a { color: #4f46e5; }
-        .sz-count { font-weight: 600; }
+        .sz-wrap {
+            max-width: 1200px;
+            margin: 96px auto 48px;
+            padding: 0 1.25rem;
+        }
+        .sz-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .sz-header h1 {
+            font-family: 'Poppins', 'Roboto', sans-serif;
+            font-size: 2.2rem;
+            color: #D95204;
+            margin-bottom: 0.5rem;
+        }
+        .sz-lead {
+            color: #9ca3af;
+            font-size: 1.05rem;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+        #sz-map {
+            width: 100%;
+            max-width: 640px;
+            aspect-ratio: 1 / 1;
+            margin: 0 auto 2.5rem;
+            border-radius: 16px;
+            border: 2px solid #1a1a1a;
+            overflow: hidden;
+        }
+
+        /* Region cards grid */
+        .sz-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+        @media (min-width: 600px)  { .sz-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 960px)  { .sz-grid { grid-template-columns: repeat(3, 1fr); } }
+
+        .sz-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 14px;
+            padding: 1.25rem 1.25rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            transition: border-color 0.2s, transform 0.15s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .sz-card:hover {
+            border-color: #D95204;
+            transform: translateY(-3px);
+        }
+        .sz-card-top {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .sz-region-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        .sz-card h2 {
+            font-family: 'Poppins', 'Roboto', sans-serif;
+            font-size: 1.15rem;
+            color: #fff;
+            margin: 0;
+        }
+        .sz-meta {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            padding-left: 30px;
+        }
+        .sz-count {
+            color: #D95204;
+            font-weight: 700;
+        }
+        .sz-smartzones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            padding-left: 30px;
+            margin-top: 0.15rem;
+        }
+        .sz-sz-chip {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 2px 8px;
+            font-size: 0.75rem;
+            color: #ccc;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sz-sz-chip .chip-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #D95204;
+            color: #fff;
+            font-size: 0.6rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .sz-next {
+            list-style: none;
+            padding: 0.5rem 0 0 30px;
+            margin: 0;
+            border-top: 1px solid #1a1a1a;
+        }
+        .sz-next li {
+            font-size: 0.82rem;
+            color: #9ca3af;
+            padding: 3px 0;
+        }
+        .sz-next li strong {
+            color: #ccc;
+            font-weight: 500;
+        }
+
+        /* Numbered map markers */
+        .sz-marker-num {
+            background: #D95204;
+            color: #fff;
+            font-weight: 700;
+            font-size: 11px;
+            text-align: center;
+            line-height: 26px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+        .sz-marker-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+        }
+
+        .sz-empty {
+            text-align: center;
+            color: #9ca3af;
+            padding: 3rem 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Legend */
+        .sz-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.5rem;
+            justify-content: center;
+            margin-bottom: 1.75rem;
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+        .sz-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .sz-legend-swatch {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
@@ -39,40 +210,136 @@
         </ul>
     </nav>
     <main class="sz-wrap">
-        <h1>Michigan SmartZone events</h1>
-        <p class="sz-lead">Entrepreneurship and networking calendars for the state's SmartZone regions. Updated every other Monday.</p>
+        <div class="sz-header">
+            <h1>Michigan SmartZone Events</h1>
+            <p class="sz-lead">Entrepreneurship and networking calendars across Michigan's 10 regions and 20 SmartZones. Updated every other Monday.</p>
+        </div>
         <div id="sz-map"></div>
+        <div id="sz-legend" class="sz-legend"></div>
         <div class="sz-grid" id="sz-cards"></div>
     </main>
+    <script src="./src/data/mi-regions-geo.js"></script>
     <script>
-        const map = L.map('sz-map').setView([44.3, -85.5], 6);
+        var map = L.map('sz-map', { scrollWheelZoom: false, zoomSnap: 0.25 }).setView([44.6, -84.8], 6.5);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             maxZoom: 19
         }).addTo(map);
 
-        fetch('src/data/regions/index.json', { cache: 'no-cache' })
-            .then((response) => response.json())
-            .then((data) => {
-                const cards = document.getElementById('sz-cards');
-                (data.regions || []).forEach((region) => {
-                    const card = document.createElement('article');
-                    card.className = 'sz-card';
-                    const next = (region.nextEvents || []).map((event) => `<li>${event.date}: ${event.title}</li>`).join('');
-                    card.innerHTML = `<h2><a href="/${region.id}-events.html">${region.name}</a></h2>
-                        <p class="sz-count">${region.eventCount} upcoming events</p>
-                        <ul>${next}</ul>`;
-                    cards.appendChild(card);
-                    (region.zones || []).forEach((zone) => {
-                        if (!zone.center) return;
-                        L.marker([zone.center.lat, zone.center.lng])
-                            .addTo(map)
-                            .bindPopup(`<strong>${zone.name}</strong><br>${zone.host || ''}<br><a href="/${region.id}-events.html?zone=${zone.id}">View events</a>`);
-                    });
+        // Draw region boundary polygons
+        function drawRegions(regions) {
+            var legendEl = document.getElementById('sz-legend');
+            regions.forEach(function (region) {
+                var boundary = REGION_BOUNDARIES[region.id];
+                var colors = REGION_COLORS[region.id];
+                if (!boundary || !colors) return;
+                var poly = L.polygon(boundary, {
+                    color: colors.stroke,
+                    fillColor: colors.fill,
+                    fillOpacity: 0.18,
+                    weight: 2,
+                    opacity: 0.6
+                }).addTo(map);
+                poly.bindPopup('<strong>' + region.name + '</strong><br>' +
+                    '<span style="color:#D95204;font-weight:700">' + region.eventCount + '</span> events<br>' +
+                    '<a href="/' + region.id + '-events.html">Open calendar &rarr;</a>');
+
+                var swatch = document.createElement('span');
+                swatch.className = 'sz-legend-item';
+                swatch.innerHTML = '<span class="sz-legend-swatch" style="background:' + colors.fill + '"></span>' + region.name;
+                legendEl.appendChild(swatch);
+            });
+        }
+
+        // Place numbered SmartZone markers (1-20) and plain dots for non-SmartZone zones
+        function placeMarkers(regions) {
+            regions.forEach(function (region) {
+                var href = '/' + region.id + '-events.html';
+                (region.zones || []).forEach(function (zone) {
+                    if (!zone.center) return;
+                    var num = MEDC_NUMBERS[zone.id];
+                    var icon;
+                    if (num) {
+                        icon = L.divIcon({
+                            className: '',
+                            html: '<div class="sz-marker-num">' + num + '</div>',
+                            iconSize: [26, 26],
+                            iconAnchor: [13, 13],
+                            popupAnchor: [0, -15]
+                        });
+                    } else {
+                        var colors = REGION_COLORS[region.id] || { fill: '#666' };
+                        icon = L.divIcon({
+                            className: '',
+                            html: '<div class="sz-marker-dot" style="background:' + colors.fill + '"></div>',
+                            iconSize: [12, 12],
+                            iconAnchor: [6, 6],
+                            popupAnchor: [0, -10]
+                        });
+                    }
+                    L.marker([zone.center.lat, zone.center.lng], { icon: icon })
+                        .addTo(map)
+                        .bindPopup(
+                            (num ? '<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:#D95204;color:#fff;font-weight:700;font-size:11px;text-align:center;line-height:22px;margin-right:6px">' + num + '</span>' : '') +
+                            '<strong>' + zone.name + '</strong>' +
+                            (zone.host ? '<br>' + zone.host : '') +
+                            '<br><a href="' + href + '?zone=' + zone.id + '">View events</a>'
+                        );
                 });
+            });
+        }
+
+        // Build region cards
+        function buildCards(regions) {
+            var cards = document.getElementById('sz-cards');
+            regions.forEach(function (region) {
+                var href = '/' + region.id + '-events.html';
+                var colors = REGION_COLORS[region.id] || { fill: '#666' };
+
+                // SmartZone chips with MEDC numbers
+                var zoneChips = (region.zones || []).map(function (z) {
+                    var num = MEDC_NUMBERS[z.id];
+                    var numBadge = num ? '<span class="chip-num">' + num + '</span>' : '';
+                    return '<span class="sz-sz-chip">' + numBadge + z.name + '</span>';
+                }).join('');
+
+                // Next events
+                var nextItems = (region.nextEvents || []).slice(0, 3).map(function (ev) {
+                    var d = ev.date || '';
+                    var short = d.slice(5).replace('-', '/');
+                    return '<li><strong>' + short + '</strong> &nbsp;' + ev.title + '</li>';
+                }).join('');
+
+                var card = document.createElement('a');
+                card.className = 'sz-card';
+                card.href = href;
+                card.innerHTML =
+                    '<div class="sz-card-top">' +
+                        '<span class="sz-region-dot" style="background:' + colors.fill + '"></span>' +
+                        '<h2>' + region.name + '</h2>' +
+                    '</div>' +
+                    '<div class="sz-meta"><span class="sz-count">' + region.eventCount + '</span> upcoming events</div>' +
+                    (zoneChips ? '<div class="sz-smartzones">' + zoneChips + '</div>' : '') +
+                    (nextItems ? '<ul class="sz-next">' + nextItems + '</ul>' : '');
+                cards.appendChild(card);
+            });
+        }
+
+        // Load data and render
+        fetch('src/data/regions/index.json', { cache: 'no-cache' })
+            .then(function (response) { return response.json(); })
+            .then(function (data) {
+                var regions = data.regions || [];
+                if (!regions.length) {
+                    document.getElementById('sz-cards').innerHTML = '<p class="sz-empty">Event index is not available yet.</p>';
+                    return;
+                }
+                drawRegions(regions);
+                placeMarkers(regions);
+                buildCards(regions);
             })
-            .catch(() => {
-                document.getElementById('sz-cards').textContent = 'Event index is not available yet.';
+            .catch(function () {
+                document.getElementById('sz-cards').innerHTML = '<p class="sz-empty">Event index is not available yet.</p>';
             });
     </script>
 </body>
