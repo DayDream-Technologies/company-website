@@ -46,7 +46,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:45.003Z",
+      "scrapedAt": "2026-10-12T17:22:57.395Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -76,7 +76,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:38.597Z",
+      "scrapedAt": "2026-10-12T17:22:49.891Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -106,7 +106,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:38.598Z",
+      "scrapedAt": "2026-10-12T17:22:49.891Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -136,7 +136,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:38.598Z",
+      "scrapedAt": "2026-10-12T17:22:49.891Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -166,7 +166,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:38.598Z",
+      "scrapedAt": "2026-10-12T17:22:49.891Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -196,7 +196,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:45.004Z",
+      "scrapedAt": "2026-10-12T17:22:57.395Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -226,7 +226,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:38.598Z",
+      "scrapedAt": "2026-10-12T17:22:49.891Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -256,7 +256,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:45.004Z",
+      "scrapedAt": "2026-10-12T17:22:57.395Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -286,7 +286,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:45.004Z",
+      "scrapedAt": "2026-10-12T17:22:57.395Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -316,7 +316,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:45.004Z",
+      "scrapedAt": "2026-10-12T17:22:57.395Z",
       "zone": "port-huron",
       "region": "east-michigan",
       "alsoListedBy": []
@@ -332,7 +332,7 @@
       "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:38.598Z"
+      "lastSuccess": "2026-10-12T17:22:49.891Z"
     },
     "propeller-6": {
       "id": "propeller-6",
@@ -343,7 +343,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:39.749Z"
+      "lastSuccess": "2026-10-12T17:22:51.016Z"
     },
     "eastern-michigan-sbn": {
       "id": "eastern-michigan-sbn",
@@ -354,7 +354,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:40.913Z"
+      "lastSuccess": "2026-10-12T17:22:53.331Z"
     },
     "eda-st-clair": {
       "id": "eda-st-clair",
@@ -365,7 +365,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:42.201Z"
+      "lastSuccess": "2026-10-12T17:22:54.741Z"
     },
     "mi-real-estate-mastermind": {
       "id": "mi-real-estate-mastermind",
@@ -376,8 +376,8 @@
       "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:45.004Z"
+      "lastSuccess": "2026-10-12T17:22:57.396Z"
     }
   },
-  "lastScraped": "2026-10-09T19:27:57.883Z"
+  "lastScraped": "2026-10-12T17:25:45.627Z"
 }

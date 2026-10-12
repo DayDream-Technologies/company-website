@@ -42,33 +42,6 @@
   },
   "events": [
     {
-      "id": "a2y-chamber-journey-for-t1d-gala-2026-10-09",
-      "title": "Journey for T1D Gala",
-      "description": "Breakthrough T1D Celebrates the Type 1 Diabetes Journey at the Big House",
-      "date": "2026-10-09",
-      "time": "5:30 PM",
-      "startDateTime": "2026-10-09T17:30:00",
-      "location": {
-        "name": "University of Michigan Jack Roth Stadium Club 1201 South Main St Ann Arbor, MI 48104",
-        "address": "",
-        "city": "Ann Arbor",
-        "state": "MI",
-        "lat": 42.2813722,
-        "lng": -83.7484616
-      },
-      "url": "https://business.a2ychamber.org/events/details/journey-for-t1d-gala-19534",
-      "source": "a2y-chamber",
-      "category": "conference",
-      "isRecurring": false,
-      "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:47.021Z",
-      "endDateTime": "2026-10-09T22:30:00",
-      "isVirtual": false,
-      "zone": "ann-arbor",
-      "region": "southeast",
-      "alsoListedBy": []
-    },
-    {
       "id": "ann-arbor-spark-miatd26-michigan-regional-atd-conference-2026-20",
       "title": "MIATD26 Michigan Regional ATD Conference 2026",
       "description": "In-person MIATD26 Michigan Regional ATD Conference 2026 Monday, October 12, 2026 — 8:00AM - 5:00PM Community $225.00",
@@ -93,38 +66,8 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.583Z",
+      "scrapedAt": "2026-10-12T17:22:40.716Z",
       "zone": "ann-arbor",
-      "region": "southeast",
-      "alsoListedBy": []
-    },
-    {
-      "id": "lean-rocket-lab-amtc-lunch-learn-2026-10-13",
-      "title": "AMTC Lunch & Learn",
-      "description": "Get run time, downtime and OEE off machines you have no intention of replacing.",
-      "date": "2026-10-13",
-      "time": "12:00 PM",
-      "startDateTime": "2026-10-13T12:00:00",
-      "endDateTime": "2026-10-13T13:00:00",
-      "endDate": null,
-      "location": {
-        "name": "AMTC",
-        "address": "3517 Scheele Dr, Jackson, MI 49202, USA",
-        "city": "Jackson",
-        "state": "MI",
-        "lat": 42.2416466,
-        "lng": -84.425589
-      },
-      "url": "https://www.leanrocketlab.org/event-details/amtc-lunch-learn",
-      "source": "lean-rocket-lab",
-      "category": "other",
-      "isRecurring": false,
-      "recurringKnown": false,
-      "isFree": true,
-      "freeKnown": false,
-      "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:47.885Z",
-      "zone": "jackson",
       "region": "southeast",
       "alsoListedBy": []
     },
@@ -153,7 +96,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.585Z",
+      "scrapedAt": "2026-10-12T17:22:40.717Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -177,7 +120,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:43.055Z",
+      "scrapedAt": "2026-10-12T17:22:44.395Z",
       "category": "pitch",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -209,7 +152,7 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.585Z",
+      "scrapedAt": "2026-10-12T17:22:40.717Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -234,7 +177,7 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:16:17.632Z",
+      "scrapedAt": "2026-10-12T17:24:15.230Z",
       "endDateTime": "2026-10-15T13:00:00",
       "isVirtual": false,
       "zone": "jackson",
@@ -266,7 +209,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.586Z",
+      "scrapedAt": "2026-10-12T17:22:40.718Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -291,7 +234,7 @@
       "category": "networking",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:16:18.287Z",
+      "scrapedAt": "2026-10-12T17:24:15.958Z",
       "endDateTime": "2026-10-15T17:00:00",
       "isVirtual": false,
       "zone": "jackson",
@@ -323,7 +266,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.586Z",
+      "scrapedAt": "2026-10-12T17:22:40.718Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -353,8 +296,38 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.587Z",
+      "scrapedAt": "2026-10-12T17:22:40.718Z",
       "zone": "ann-arbor",
+      "region": "southeast",
+      "alsoListedBy": []
+    },
+    {
+      "id": "jackson-young-professionals-october-large-group-meeting-2026-10-",
+      "title": "October Large Group Meeting",
+      "description": "Join us at Skydive Tecumseh!",
+      "date": "2026-10-15",
+      "time": "6:00 PM",
+      "startDateTime": "2026-10-15T18:00:00",
+      "endDateTime": "2026-10-15T20:00:00",
+      "endDate": null,
+      "location": {
+        "name": "8607 Cady Rd",
+        "address": "8607 Cady Rd, Jackson, MI 49201, USA",
+        "city": "Jackson",
+        "state": "MI",
+        "lat": 42.2416466,
+        "lng": -84.425589
+      },
+      "url": "https://www.jxnyp.com/event-details-registration/october-large-group-meeting",
+      "source": "jackson-young-professionals",
+      "category": "other",
+      "isRecurring": false,
+      "recurringKnown": false,
+      "isFree": true,
+      "freeKnown": false,
+      "isVirtual": false,
+      "scrapedAt": "2026-10-12T17:24:52.106Z",
+      "zone": "jackson",
       "region": "southeast",
       "alsoListedBy": []
     },
@@ -383,7 +356,7 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.587Z",
+      "scrapedAt": "2026-10-12T17:22:40.718Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": [
@@ -415,7 +388,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:11.838Z",
+      "scrapedAt": "2026-10-12T17:24:08.642Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -440,7 +413,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:52.038Z",
+      "scrapedAt": "2026-10-12T17:23:27.617Z",
       "endDateTime": "2026-10-18T13:00:00",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -472,7 +445,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:41.588Z",
+      "scrapedAt": "2026-10-12T17:22:40.719Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -496,7 +469,7 @@
       "source": "bamboo",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:43.055Z",
+      "scrapedAt": "2026-10-12T17:22:44.395Z",
       "category": "networking",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -528,7 +501,7 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.194Z",
+      "scrapedAt": "2026-10-12T17:22:42.059Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -553,7 +526,7 @@
       "category": "workshop",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:54.016Z",
+      "scrapedAt": "2026-10-12T17:23:34.916Z",
       "endDateTime": "2026-10-20T12:00:00",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -585,7 +558,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.194Z",
+      "scrapedAt": "2026-10-12T17:22:42.059Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -615,10 +588,11 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.195Z",
+      "scrapedAt": "2026-10-12T17:22:42.059Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": [
+        "zell-lurie",
         "ann-arbor-new-tech"
       ]
     },
@@ -642,7 +616,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:56.018Z",
+      "scrapedAt": "2026-10-12T17:23:42.898Z",
       "endDateTime": "2026-10-21T09:30:00",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -668,7 +642,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:43.055Z",
+      "scrapedAt": "2026-10-12T17:22:44.395Z",
       "category": "pitch",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -700,7 +674,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.195Z",
+      "scrapedAt": "2026-10-12T17:22:42.059Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -730,7 +704,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.195Z",
+      "scrapedAt": "2026-10-12T17:22:42.059Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -745,8 +719,8 @@
       "endDateTime": null,
       "endDate": null,
       "location": {
-        "name": "https://umich.zoom.us/webinar/register/WN_JxJ2CJPbTRiuix5doBjAIg#/registration",
-        "address": "https://umich.zoom.us/webinar/register/WN_JxJ2CJPbTRiuix5doBjAIg#/registration",
+        "name": "",
+        "address": "",
         "city": "Ann Arbor",
         "state": "MI",
         "lat": 42.2813722,
@@ -760,7 +734,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": true,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
+      "scrapedAt": "2026-10-12T17:24:05.004Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -790,7 +764,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.196Z",
+      "scrapedAt": "2026-10-12T17:22:42.059Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -820,7 +794,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.196Z",
+      "scrapedAt": "2026-10-12T17:22:42.060Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -835,8 +809,8 @@
       "endDateTime": null,
       "endDate": null,
       "location": {
-        "name": "https://luma.com/event/evt-BUsUBsm1TA3NiQh",
-        "address": "https://luma.com/event/evt-BUsUBsm1TA3NiQh",
+        "name": "",
+        "address": "",
         "city": "Ann Arbor",
         "state": "MI",
         "lat": 42.2813722,
@@ -850,37 +824,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
-      "zone": "ann-arbor",
-      "region": "southeast",
-      "alsoListedBy": []
-    },
-    {
-      "id": "zell-lurie-zli-hackathon-learn-how-to-build-with-replit-2026-10-",
-      "title": "ZLI Hackathon | Learn how to Build with Replit",
-      "description": "Get up-to-date information at: https://luma.com/zq6xm04d Address: R2420 | UMich Samuel Zell and Robert H. Lurie Institute for Entrepreneurial Studies Hosted by Jasmine Jaggers",
-      "date": "2026-10-23",
-      "time": "5:00 PM",
-      "startDateTime": "2026-10-23T17:00:00",
-      "endDateTime": null,
-      "endDate": null,
-      "location": {
-        "name": "R2420 | UMich Samuel Zell and Robert H. Lurie Institute for Entrepreneurial Studies",
-        "address": "R2420 | UMich Samuel Zell and Robert H. Lurie Institute for Entrepreneurial Studies",
-        "city": "Ann Arbor",
-        "state": "MI",
-        "lat": 42.2813722,
-        "lng": -83.7484616
-      },
-      "url": "https://luma.com/zli",
-      "source": "zell-lurie",
-      "category": "pitch",
-      "isRecurring": false,
-      "recurringKnown": false,
-      "isFree": true,
-      "freeKnown": false,
-      "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
+      "scrapedAt": "2026-10-12T17:24:05.004Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -905,7 +849,7 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:16:03.423Z",
+      "scrapedAt": "2026-10-12T17:23:59.806Z",
       "endDate": "2026-10-31",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -937,7 +881,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.196Z",
+      "scrapedAt": "2026-10-12T17:22:42.060Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -967,7 +911,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.771Z",
+      "scrapedAt": "2026-10-12T17:22:43.316Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -997,7 +941,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.772Z",
+      "scrapedAt": "2026-10-12T17:22:43.316Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1027,7 +971,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.772Z",
+      "scrapedAt": "2026-10-12T17:22:43.316Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1042,8 +986,8 @@
       "endDateTime": null,
       "endDate": null,
       "location": {
-        "name": "https://luma.com/event/evt-MmFmTi4QhPFS70s",
-        "address": "https://luma.com/event/evt-MmFmTi4QhPFS70s",
+        "name": "",
+        "address": "",
         "city": "Ann Arbor",
         "state": "MI",
         "lat": 42.2813722,
@@ -1057,7 +1001,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
+      "scrapedAt": "2026-10-12T17:24:05.004Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1087,7 +1031,7 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.772Z",
+      "scrapedAt": "2026-10-12T17:22:43.316Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1111,7 +1055,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:43.055Z",
+      "scrapedAt": "2026-10-12T17:22:44.395Z",
       "category": "pitch",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -1138,40 +1082,10 @@
       "category": "other",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:16:18.919Z",
+      "scrapedAt": "2026-10-12T17:24:16.545Z",
       "endDateTime": "2026-10-28T18:00:00",
       "isVirtual": false,
       "zone": "jackson",
-      "region": "southeast",
-      "alsoListedBy": []
-    },
-    {
-      "id": "zell-lurie-entrepreneurship-venture-capital-in-the-age-of-ai-202",
-      "title": "Entrepreneurship & Venture Capital in the Age of AI",
-      "description": "Get up-to-date information at: https://luma.com/91oqz9om Address: R0230 | Ross",
-      "date": "2026-10-28",
-      "time": "9:00 PM",
-      "startDateTime": "2026-10-28T21:00:00",
-      "endDateTime": null,
-      "endDate": null,
-      "location": {
-        "name": "R0230 | Ross",
-        "address": "R0230 | Ross",
-        "city": "Ann Arbor",
-        "state": "MI",
-        "lat": 42.2813722,
-        "lng": -83.7484616
-      },
-      "url": "https://luma.com/zli",
-      "source": "zell-lurie",
-      "category": "pitch",
-      "isRecurring": false,
-      "recurringKnown": false,
-      "isFree": true,
-      "freeKnown": false,
-      "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
-      "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
     },
@@ -1200,7 +1114,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.772Z",
+      "scrapedAt": "2026-10-12T17:22:43.316Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1230,7 +1144,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
+      "scrapedAt": "2026-10-12T17:24:05.004Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1260,7 +1174,7 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.773Z",
+      "scrapedAt": "2026-10-12T17:22:43.317Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1290,7 +1204,7 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.773Z",
+      "scrapedAt": "2026-10-12T17:22:43.317Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1315,7 +1229,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:16:19.553Z",
+      "scrapedAt": "2026-10-12T17:24:17.193Z",
       "endDateTime": "2026-11-05T09:00:00",
       "isVirtual": false,
       "zone": "jackson",
@@ -1347,7 +1261,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.773Z",
+      "scrapedAt": "2026-10-12T17:22:43.317Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1377,7 +1291,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.637Z",
+      "scrapedAt": "2026-10-12T17:24:07.151Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1407,7 +1321,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:33.795Z",
+      "scrapedAt": "2026-10-12T17:24:31.938Z",
       "zone": "jackson",
       "region": "southeast",
       "alsoListedBy": []
@@ -1437,7 +1351,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
+      "scrapedAt": "2026-10-12T17:24:05.004Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1452,8 +1366,8 @@
       "endDateTime": null,
       "endDate": null,
       "location": {
-        "name": "https://luma.com/event/evt-PgUZvF6P9FdXh0t",
-        "address": "https://luma.com/event/evt-PgUZvF6P9FdXh0t",
+        "name": "",
+        "address": "",
         "city": "Ann Arbor",
         "state": "MI",
         "lat": 42.2813722,
@@ -1467,7 +1381,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
+      "scrapedAt": "2026-10-12T17:24:05.004Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1492,9 +1406,39 @@
       "category": "conference",
       "isRecurring": false,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:16:20.200Z",
+      "scrapedAt": "2026-10-12T17:24:17.785Z",
       "endDateTime": "2026-11-12T20:00:00",
       "isVirtual": false,
+      "zone": "jackson",
+      "region": "southeast",
+      "alsoListedBy": []
+    },
+    {
+      "id": "jackson-young-professionals-november-large-group-meeting-2026-11",
+      "title": "November Large Group Meeting",
+      "description": "To be announced!",
+      "date": "2026-11-19",
+      "time": "6:00 PM",
+      "startDateTime": "2026-11-19T18:00:00",
+      "endDateTime": "2026-11-19T20:00:00",
+      "endDate": null,
+      "location": {
+        "name": "Location is TBD",
+        "address": "",
+        "city": "Jackson",
+        "state": "MI",
+        "lat": 42.2416466,
+        "lng": -84.425589
+      },
+      "url": "https://www.jxnyp.com/event-details-registration/november-large-group-meeting-1",
+      "source": "jackson-young-professionals",
+      "category": "other",
+      "isRecurring": false,
+      "recurringKnown": false,
+      "isFree": true,
+      "freeKnown": false,
+      "isVirtual": false,
+      "scrapedAt": "2026-10-12T17:24:59.912Z",
       "zone": "jackson",
       "region": "southeast",
       "alsoListedBy": []
@@ -1518,7 +1462,7 @@
       "source": "bamboo",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:15:43.055Z",
+      "scrapedAt": "2026-10-12T17:22:44.395Z",
       "category": "other",
       "isVirtual": false,
       "zone": "ann-arbor",
@@ -1526,8 +1470,8 @@
       "alsoListedBy": []
     },
     {
-      "id": "zell-lurie-zli-launch-and-learn-how-to-handle-anything-book-rele",
-      "title": "ZLI Launch and Learn: \"How to Handle Anything\" Book Release with U-M Alum Author",
+      "id": "zell-lurie-launch-and-learn-how-to-handle-anything-book-release-",
+      "title": "Launch and Learn: \"How to Handle Anything\" Book Release with U-M Alum Author",
       "description": "Get up-to-date information at: https://luma.com/zli-h58x Address: Jeff T. Blau Hall Room: B1570 Ann Arbor, MI United States Hosted by Drea Shipp-Caldwell",
       "date": "2026-11-20",
       "time": "10:00 PM",
@@ -1550,7 +1494,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.536Z",
+      "scrapedAt": "2026-10-12T17:24:05.004Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1580,7 +1524,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:11.838Z",
+      "scrapedAt": "2026-10-12T17:24:08.642Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1605,7 +1549,7 @@
       "category": "other",
       "isRecurring": true,
       "isFree": true,
-      "scrapedAt": "2026-10-09T19:16:20.834Z",
+      "scrapedAt": "2026-10-12T17:24:18.461Z",
       "endDateTime": "2026-12-03T09:00:00",
       "isVirtual": false,
       "zone": "jackson",
@@ -1613,31 +1557,31 @@
       "alsoListedBy": []
     },
     {
-      "id": "lean-rocket-lab-amtc-consortium-launch-event-2026-12-14",
-      "title": "AMTC Consortium Launch Event",
-      "description": "Lean Rocket Lab, JAMA, and The Shop Rate Foundation launch the AMTC Consortium, bringing apprenticeships, youth STEM, and startup support together.",
-      "date": "2026-12-14",
-      "time": "3:30 PM",
-      "startDateTime": "2026-12-14T15:30:00",
-      "endDateTime": "2026-12-14T18:00:00",
+      "id": "jackson-young-professionals-december-large-group-meeting-2026-12",
+      "title": "December Large Group Meeting",
+      "description": "Join us for our holiday bar crawl!",
+      "date": "2026-12-17",
+      "time": "6:00 PM",
+      "startDateTime": "2026-12-17T18:00:00",
+      "endDateTime": "2026-12-17T22:00:00",
       "endDate": null,
       "location": {
-        "name": "Advanced Manufacturing Training Center",
-        "address": "3517 Scheele Dr, Jackson, MI 49202, USA",
+        "name": "Jackson",
+        "address": "Jackson, MI, USA",
         "city": "Jackson",
         "state": "MI",
         "lat": 42.2416466,
         "lng": -84.425589
       },
-      "url": "https://www.leanrocketlab.org/event-details/amtc-consortium-launch-event/form",
-      "source": "lean-rocket-lab",
-      "category": "pitch",
+      "url": "https://www.jxnyp.com/event-details-registration/december-large-group-meeting",
+      "source": "jackson-young-professionals",
+      "category": "other",
       "isRecurring": false,
       "recurringKnown": false,
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:40.222Z",
+      "scrapedAt": "2026-10-12T17:24:48.804Z",
       "zone": "jackson",
       "region": "southeast",
       "alsoListedBy": []
@@ -1667,7 +1611,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:11.838Z",
+      "scrapedAt": "2026-10-12T17:24:08.642Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1697,7 +1641,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:11.838Z",
+      "scrapedAt": "2026-10-12T17:24:08.642Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1727,7 +1671,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:11.838Z",
+      "scrapedAt": "2026-10-12T17:24:08.642Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1757,7 +1701,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:11.838Z",
+      "scrapedAt": "2026-10-12T17:24:08.642Z",
       "zone": "ann-arbor",
       "region": "southeast",
       "alsoListedBy": []
@@ -1773,7 +1717,7 @@
       "eventCount": 34,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:43.106Z"
+      "lastSuccess": "2026-10-12T17:22:44.430Z"
     },
     "ann-arbor-spark": {
       "id": "ann-arbor-spark",
@@ -1784,7 +1728,7 @@
       "eventCount": 24,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:43.174Z"
+      "lastSuccess": "2026-10-12T17:22:43.718Z"
     },
     "a2y-chamber": {
       "id": "a2y-chamber",
@@ -1792,10 +1736,10 @@
       "url": "https://business.a2ychamber.org/events",
       "color": "#AD1457",
       "zone": "ann-arbor",
-      "eventCount": 6,
+      "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:03.924Z"
+      "lastSuccess": "2026-10-12T17:24:00.307Z"
     },
     "umich-happening": {
       "id": "umich-happening",
@@ -1814,10 +1758,10 @@
       "url": "https://luma.com/zli",
       "color": "#0277BD",
       "zone": "ann-arbor",
-      "eventCount": 9,
+      "eventCount": 8,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:08.536Z"
+      "lastSuccess": "2026-10-12T17:24:05.004Z"
     },
     "ann-arbor-new-tech": {
       "id": "ann-arbor-new-tech",
@@ -1828,7 +1772,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:09.606Z"
+      "lastSuccess": "2026-10-12T17:24:06.153Z"
     },
     "ann-arbor-ai": {
       "id": "ann-arbor-ai",
@@ -1839,7 +1783,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:10.637Z"
+      "lastSuccess": "2026-10-12T17:24:07.151Z"
     },
     "tech-inclusive": {
       "id": "tech-inclusive",
@@ -1850,7 +1794,7 @@
       "eventCount": 6,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:11.839Z"
+      "lastSuccess": "2026-10-12T17:24:08.642Z"
     },
     "new-enterprise-forum": {
       "id": "new-enterprise-forum",
@@ -1861,7 +1805,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:13.749Z"
+      "lastSuccess": "2026-10-12T17:24:11.555Z"
     },
     "cahoots": {
       "id": "cahoots",
@@ -1872,7 +1816,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:16.163Z"
+      "lastSuccess": "2026-10-12T17:24:13.794Z"
     },
     "jackson-chamber": {
       "id": "jackson-chamber",
@@ -1883,7 +1827,7 @@
       "eventCount": 6,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:21.336Z"
+      "lastSuccess": "2026-10-12T17:24:18.962Z"
     },
     "lean-rocket-lab": {
       "id": "lean-rocket-lab",
@@ -1891,10 +1835,10 @@
       "url": "https://www.leanrocketlab.org/event-list",
       "color": "#2196F3",
       "zone": "jackson",
-      "eventCount": 3,
+      "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:51.529Z"
+      "lastSuccess": "2026-10-12T17:24:46.072Z"
     },
     "jackson-young-professionals": {
       "id": "jackson-young-professionals",
@@ -1902,10 +1846,10 @@
       "url": "https://www.jxnyp.com/events",
       "color": "#9C27B0",
       "zone": "jackson",
-      "eventCount": 0,
+      "eventCount": 3,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:17:12.378Z"
+      "lastSuccess": "2026-10-12T17:25:04.654Z"
     },
     "greater-lenawee-chamber": {
       "id": "greater-lenawee-chamber",
@@ -1916,8 +1860,8 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:18:51.397Z"
+      "lastSuccess": "2026-10-12T17:23:27.895Z"
     }
   },
-  "lastScraped": "2026-10-09T19:27:57.883Z"
+  "lastScraped": "2026-10-12T17:25:45.627Z"
 }

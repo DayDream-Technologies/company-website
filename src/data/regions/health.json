@@ -1,5 +1,5 @@
 {
-  "lastScraped": "2026-10-09T19:27:57.883Z",
+  "lastScraped": "2026-10-12T17:25:45.627Z",
   "sources": {
     "msu-foundation": {
       "id": "msu-foundation",
@@ -10,7 +10,7 @@
       "eventCount": 11,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:41.993Z"
+      "lastSuccess": "2026-10-12T17:22:43.351Z"
     },
     "bamboo": {
       "id": "bamboo",
@@ -21,7 +21,7 @@
       "eventCount": 34,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:43.106Z"
+      "lastSuccess": "2026-10-12T17:22:44.430Z"
     },
     "michigan-founders-fund": {
       "id": "michigan-founders-fund",
@@ -32,7 +32,7 @@
       "eventCount": 6,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:44.313Z"
+      "lastSuccess": "2026-10-12T17:22:45.899Z"
     },
     "michigan-black-business-alliance": {
       "id": "michigan-black-business-alliance",
@@ -40,10 +40,10 @@
       "url": "https://www.eventbrite.com/o/michigan-black-business-alliance-32852268307",
       "color": "#9C27B0",
       "zone": "detroit",
-      "eventCount": 4,
+      "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:50.204Z"
+      "lastSuccess": "2026-10-12T17:22:50.529Z"
     },
     "michigan-sbdc": {
       "id": "michigan-sbdc",
@@ -51,10 +51,10 @@
       "url": "https://michigansbdc.org/get-started/training-events/view/",
       "color": "#1E3A5F",
       "zone": "lansing",
-      "eventCount": 0,
-      "status": "error",
-      "error": "page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://events.blackthorn.io/en/5Y1bSaM7/g/3m508x45e5\", waiting until \"networkidle\"\n",
-      "lastSuccess": "2026-10-09T17:40:35.454Z"
+      "eventCount": 6,
+      "status": "ok",
+      "error": null,
+      "lastSuccess": "2026-10-12T17:23:22.432Z"
     },
     "lake-superior-community-partnership": {
       "id": "lake-superior-community-partnership",
@@ -62,10 +62,10 @@
       "url": "https://members.marquette.org/calendar",
       "color": "#E65100",
       "zone": "marquette",
-      "eventCount": 9,
+      "eventCount": 7,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:45.281Z"
+      "lastSuccess": "2026-10-12T17:22:46.412Z"
     },
     "keweenaw-chamber": {
       "id": "keweenaw-chamber",
@@ -76,7 +76,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:52.339Z"
+      "lastSuccess": "2026-10-12T17:22:54.198Z"
     },
     "mtec-smartzone": {
       "id": "mtec-smartzone",
@@ -87,7 +87,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:53.996Z"
+      "lastSuccess": "2026-10-12T17:22:58.916Z"
     },
     "michigan-tech-events": {
       "id": "michigan-tech-events",
@@ -109,7 +109,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:06.472Z"
+      "lastSuccess": "2026-10-12T17:23:14.360Z"
     },
     "lssu-events": {
       "id": "lssu-events",
@@ -120,7 +120,7 @@
       "eventCount": 4,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:07.877Z"
+      "lastSuccess": "2026-10-12T17:23:16.044Z"
     },
     "sault-cvb": {
       "id": "sault-cvb",
@@ -128,10 +128,10 @@
       "url": "https://saultstemarie.com/events/",
       "color": "#00897B",
       "zone": "sault-ste-marie",
-      "eventCount": 8,
+      "eventCount": 9,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:09.144Z"
+      "lastSuccess": "2026-10-12T17:23:17.787Z"
     },
     "keep-it-in-the-up": {
       "id": "keep-it-in-the-up",
@@ -139,10 +139,10 @@
       "url": "https://www.keepitintheup.com/events/",
       "color": "#455A64",
       "zone": "marquette",
-      "eventCount": 6,
+      "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:11.784Z"
+      "lastSuccess": "2026-10-12T17:23:20.556Z"
     },
     "start-garden": {
       "id": "start-garden",
@@ -153,7 +153,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:39.107Z"
+      "lastSuccess": "2026-10-12T17:22:43.233Z"
     },
     "grand-rapids-org": {
       "id": "grand-rapids-org",
@@ -164,7 +164,7 @@
       "eventCount": 48,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:41.648Z"
+      "lastSuccess": "2026-10-12T17:22:45.139Z"
     },
     "gr-junior-chamber": {
       "id": "gr-junior-chamber",
@@ -175,7 +175,7 @@
       "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:42.849Z"
+      "lastSuccess": "2026-10-12T17:22:46.322Z"
     },
     "right-place": {
       "id": "right-place",
@@ -186,7 +186,7 @@
       "eventCount": 4,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:45.145Z"
+      "lastSuccess": "2026-10-12T17:22:50.162Z"
     },
     "startup-garage": {
       "id": "startup-garage",
@@ -197,7 +197,7 @@
       "eventCount": 7,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:46.029Z"
+      "lastSuccess": "2026-10-12T17:22:51.968Z"
     },
     "springgr": {
       "id": "springgr",
@@ -205,10 +205,10 @@
       "url": "https://www.springgr.com/events-page/",
       "color": "#2E7D32",
       "zone": "grand-rapids",
-      "eventCount": 4,
+      "eventCount": 3,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:46.992Z"
+      "lastSuccess": "2026-10-12T17:22:53.339Z"
     },
     "south-kent-chamber": {
       "id": "south-kent-chamber",
@@ -219,7 +219,7 @@
       "eventCount": 10,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:54.761Z"
+      "lastSuccess": "2026-10-12T17:23:01.231Z"
     },
     "west-coast-chamber": {
       "id": "west-coast-chamber",
@@ -230,7 +230,7 @@
       "eventCount": 15,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:22.956Z"
+      "lastSuccess": "2026-10-12T17:23:27.074Z"
     },
     "muskegon-innovation-hub": {
       "id": "muskegon-innovation-hub",
@@ -241,7 +241,7 @@
       "eventCount": 4,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:24.037Z"
+      "lastSuccess": "2026-10-12T17:23:28.184Z"
     },
     "gvsu-cei": {
       "id": "gvsu-cei",
@@ -252,7 +252,7 @@
       "eventCount": 3,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:25.057Z"
+      "lastSuccess": "2026-10-12T17:23:29.199Z"
     },
     "muskegon-lakeshore-chamber": {
       "id": "muskegon-lakeshore-chamber",
@@ -263,7 +263,7 @@
       "eventCount": 7,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:26.783Z"
+      "lastSuccess": "2026-10-12T17:23:31.014Z"
     },
     "grand-haven-chamber": {
       "id": "grand-haven-chamber",
@@ -271,10 +271,10 @@
       "url": "https://grandhavenchamber.org/work/member-events/",
       "color": "#1E3A5F",
       "zone": "holland",
-      "eventCount": 0,
-      "status": "error",
-      "error": "Timeout for https://grandhavenchamber.org/work/member-events/",
-      "lastSuccess": "2026-10-09T17:40:35.454Z"
+      "eventCount": 18,
+      "status": "ok",
+      "error": null,
+      "lastSuccess": "2026-10-12T17:23:34.085Z"
     },
     "jci-muskegon": {
       "id": "jci-muskegon",
@@ -285,7 +285,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:17:31.488Z"
+      "lastSuccess": "2026-10-12T17:23:36.131Z"
     },
     "surge-lakeshore": {
       "id": "surge-lakeshore",
@@ -296,7 +296,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:17:32.558Z"
+      "lastSuccess": "2026-10-12T17:23:37.678Z"
     },
     "lakeshore-advantage": {
       "id": "lakeshore-advantage",
@@ -307,7 +307,7 @@
       "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:17:38.025Z"
+      "lastSuccess": "2026-10-12T17:23:40.315Z"
     },
     "cmurc": {
       "id": "cmurc",
@@ -315,10 +315,10 @@
       "url": "https://www.cmurc.com/events",
       "color": "#1565C0",
       "zone": "mount-pleasant",
-      "eventCount": 14,
+      "eventCount": 13,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:37.950Z"
+      "lastSuccess": "2026-10-12T17:22:44.573Z"
     },
     "midland-business-alliance": {
       "id": "midland-business-alliance",
@@ -326,10 +326,10 @@
       "url": "https://business.mbami.org/events",
       "color": "#6A1B9A",
       "zone": "midland",
-      "eventCount": 12,
+      "eventCount": 13,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:49.434Z"
+      "lastSuccess": "2026-10-12T17:22:57.538Z"
     },
     "mt-pleasant-chamber": {
       "id": "mt-pleasant-chamber",
@@ -340,7 +340,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:56.932Z"
+      "lastSuccess": "2026-10-12T17:23:04.791Z"
     },
     "saginaw-chamber": {
       "id": "saginaw-chamber",
@@ -348,10 +348,10 @@
       "url": "https://web.saginawchamber.org/atlas/calendar",
       "color": "#00897B",
       "zone": "midland",
-      "eventCount": 17,
+      "eventCount": 22,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:58.266Z"
+      "lastSuccess": "2026-10-12T17:23:06.235Z"
     },
     "bay-area-chamber": {
       "id": "bay-area-chamber",
@@ -362,7 +362,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:59.446Z"
+      "lastSuccess": "2026-10-12T17:23:07.415Z"
     },
     "blue-water-chamber": {
       "id": "blue-water-chamber",
@@ -373,7 +373,7 @@
       "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:38.598Z"
+      "lastSuccess": "2026-10-12T17:22:49.891Z"
     },
     "propeller-6": {
       "id": "propeller-6",
@@ -384,7 +384,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:39.749Z"
+      "lastSuccess": "2026-10-12T17:22:51.016Z"
     },
     "eastern-michigan-sbn": {
       "id": "eastern-michigan-sbn",
@@ -395,7 +395,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:40.913Z"
+      "lastSuccess": "2026-10-12T17:22:53.331Z"
     },
     "eda-st-clair": {
       "id": "eda-st-clair",
@@ -406,7 +406,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:42.201Z"
+      "lastSuccess": "2026-10-12T17:22:54.741Z"
     },
     "mi-real-estate-mastermind": {
       "id": "mi-real-estate-mastermind",
@@ -417,7 +417,7 @@
       "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:45.004Z"
+      "lastSuccess": "2026-10-12T17:22:57.396Z"
     },
     "pure-lansing": {
       "id": "pure-lansing",
@@ -427,7 +427,7 @@
       "zone": "lansing",
       "eventCount": 0,
       "status": "error",
-      "error": "HTTP 403 for https://www.purelansing.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-09",
+      "error": "HTTP 403 for https://www.purelansing.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-12",
       "lastSuccess": "2026-10-09T17:40:35.454Z"
     },
     "lansing-regional-chamber": {
@@ -439,7 +439,7 @@
       "eventCount": 19,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:00.696Z"
+      "lastSuccess": "2026-10-12T17:23:03.027Z"
     },
     "lansing-chamber-community": {
       "id": "lansing-chamber-community",
@@ -450,7 +450,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:01.782Z"
+      "lastSuccess": "2026-10-12T17:23:04.136Z"
     },
     "msu-burgess": {
       "id": "msu-burgess",
@@ -461,7 +461,7 @@
       "eventCount": 8,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:14.074Z"
+      "lastSuccess": "2026-10-12T17:23:14.903Z"
     },
     "catech": {
       "id": "catech",
@@ -472,7 +472,7 @@
       "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:15.191Z"
+      "lastSuccess": "2026-10-12T17:23:15.984Z"
     },
     "lansing-ai-lab": {
       "id": "lansing-ai-lab",
@@ -483,7 +483,7 @@
       "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:16.170Z"
+      "lastSuccess": "2026-10-12T17:23:16.960Z"
     },
     "southwest-michigan-first": {
       "id": "southwest-michigan-first",
@@ -494,7 +494,7 @@
       "eventCount": 12,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:53.406Z"
+      "lastSuccess": "2026-10-12T17:22:48.455Z"
     },
     "now-kalamazoo": {
       "id": "now-kalamazoo",
@@ -502,10 +502,10 @@
       "url": "https://nowkalamazoo.org/events/",
       "color": "#E65100",
       "zone": "kalamazoo",
-      "eventCount": 18,
+      "eventCount": 20,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:56.864Z"
+      "lastSuccess": "2026-10-12T17:22:55.490Z"
     },
     "one-million-cups-kalamazoo": {
       "id": "one-million-cups-kalamazoo",
@@ -516,7 +516,7 @@
       "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:01.048Z"
+      "lastSuccess": "2026-10-12T17:22:58.520Z"
     },
     "wmu-haworth": {
       "id": "wmu-haworth",
@@ -527,7 +527,7 @@
       "eventCount": 7,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:08.199Z"
+      "lastSuccess": "2026-10-12T17:23:12.464Z"
     },
     "wmed-innovation-center": {
       "id": "wmed-innovation-center",
@@ -538,7 +538,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:09.278Z"
+      "lastSuccess": "2026-10-12T17:23:13.665Z"
     },
     "kalamazoo-software-developers": {
       "id": "kalamazoo-software-developers",
@@ -549,7 +549,7 @@
       "eventCount": 10,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:10.421Z"
+      "lastSuccess": "2026-10-12T17:23:14.775Z"
     },
     "battle-creek-chamber": {
       "id": "battle-creek-chamber",
@@ -560,7 +560,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:12.345Z"
+      "lastSuccess": "2026-10-12T17:23:16.695Z"
     },
     "small-business-battle-creek": {
       "id": "small-business-battle-creek",
@@ -570,7 +570,7 @@
       "zone": "battle-creek",
       "eventCount": 0,
       "status": "error",
-      "error": "HTTP 403 for https://smallbusinessbattlecreek.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-09",
+      "error": "HTTP 403 for https://smallbusinessbattlecreek.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-12",
       "lastSuccess": "2026-10-09T17:40:35.454Z"
     },
     "ann-arbor-spark": {
@@ -582,7 +582,7 @@
       "eventCount": 24,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:43.174Z"
+      "lastSuccess": "2026-10-12T17:22:43.718Z"
     },
     "a2y-chamber": {
       "id": "a2y-chamber",
@@ -590,10 +590,10 @@
       "url": "https://business.a2ychamber.org/events",
       "color": "#AD1457",
       "zone": "ann-arbor",
-      "eventCount": 6,
+      "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:03.924Z"
+      "lastSuccess": "2026-10-12T17:24:00.307Z"
     },
     "umich-happening": {
       "id": "umich-happening",
@@ -612,10 +612,10 @@
       "url": "https://luma.com/zli",
       "color": "#0277BD",
       "zone": "ann-arbor",
-      "eventCount": 9,
+      "eventCount": 8,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:08.536Z"
+      "lastSuccess": "2026-10-12T17:24:05.004Z"
     },
     "ann-arbor-new-tech": {
       "id": "ann-arbor-new-tech",
@@ -626,7 +626,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:09.606Z"
+      "lastSuccess": "2026-10-12T17:24:06.153Z"
     },
     "ann-arbor-ai": {
       "id": "ann-arbor-ai",
@@ -637,7 +637,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:10.637Z"
+      "lastSuccess": "2026-10-12T17:24:07.151Z"
     },
     "tech-inclusive": {
       "id": "tech-inclusive",
@@ -648,7 +648,7 @@
       "eventCount": 6,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:11.839Z"
+      "lastSuccess": "2026-10-12T17:24:08.642Z"
     },
     "new-enterprise-forum": {
       "id": "new-enterprise-forum",
@@ -659,7 +659,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:13.749Z"
+      "lastSuccess": "2026-10-12T17:24:11.555Z"
     },
     "cahoots": {
       "id": "cahoots",
@@ -670,7 +670,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:16.163Z"
+      "lastSuccess": "2026-10-12T17:24:13.794Z"
     },
     "jackson-chamber": {
       "id": "jackson-chamber",
@@ -681,7 +681,7 @@
       "eventCount": 6,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:21.336Z"
+      "lastSuccess": "2026-10-12T17:24:18.962Z"
     },
     "lean-rocket-lab": {
       "id": "lean-rocket-lab",
@@ -689,10 +689,10 @@
       "url": "https://www.leanrocketlab.org/event-list",
       "color": "#2196F3",
       "zone": "jackson",
-      "eventCount": 3,
+      "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:51.529Z"
+      "lastSuccess": "2026-10-12T17:24:46.072Z"
     },
     "jackson-young-professionals": {
       "id": "jackson-young-professionals",
@@ -700,10 +700,10 @@
       "url": "https://www.jxnyp.com/events",
       "color": "#9C27B0",
       "zone": "jackson",
-      "eventCount": 0,
+      "eventCount": 3,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:17:12.378Z"
+      "lastSuccess": "2026-10-12T17:25:04.654Z"
     },
     "greater-lenawee-chamber": {
       "id": "greater-lenawee-chamber",
@@ -714,7 +714,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:18:51.397Z"
+      "lastSuccess": "2026-10-12T17:23:27.895Z"
     },
     "techtown": {
       "id": "techtown",
@@ -722,10 +722,10 @@
       "url": "https://techtowndetroit.org/events/",
       "color": "#E65100",
       "zone": "detroit",
-      "eventCount": 14,
+      "eventCount": 13,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:40.957Z"
+      "lastSuccess": "2026-10-12T17:22:46.682Z"
     },
     "detroit-regional-chamber": {
       "id": "detroit-regional-chamber",
@@ -736,7 +736,7 @@
       "eventCount": 7,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:42.133Z"
+      "lastSuccess": "2026-10-12T17:22:48.344Z"
     },
     "automation-alley": {
       "id": "automation-alley",
@@ -747,7 +747,7 @@
       "eventCount": 14,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:44.352Z"
+      "lastSuccess": "2026-10-12T17:22:49.773Z"
     },
     "rochester-regional-chamber": {
       "id": "rochester-regional-chamber",
@@ -755,10 +755,10 @@
       "url": "https://business.rrc-mi.com/events/mc/chamber-events-6",
       "color": "#1565C0",
       "zone": "rochester-hills",
-      "eventCount": 17,
+      "eventCount": 16,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:58.597Z"
+      "lastSuccess": "2026-10-12T17:23:02.388Z"
     },
     "macomb-county-chamber": {
       "id": "macomb-county-chamber",
@@ -769,7 +769,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:11.787Z"
+      "lastSuccess": "2026-10-12T17:23:14.578Z"
     },
     "southfield-chamber": {
       "id": "southfield-chamber",
@@ -777,10 +777,10 @@
       "url": "https://members.southfieldchamber.com/events/Search?mode=0",
       "color": "#C62828",
       "zone": "southfield",
-      "eventCount": 13,
+      "eventCount": 12,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:22.147Z"
+      "lastSuccess": "2026-10-12T17:23:25.839Z"
     },
     "oakland-thrive": {
       "id": "oakland-thrive",
@@ -791,7 +791,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:23.494Z"
+      "lastSuccess": "2026-10-12T17:23:27.243Z"
     },
     "velocity-center": {
       "id": "velocity-center",
@@ -802,7 +802,7 @@
       "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:24.485Z"
+      "lastSuccess": "2026-10-12T17:23:28.175Z"
     },
     "troy-chamber": {
       "id": "troy-chamber",
@@ -824,7 +824,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:18:56.450Z"
+      "lastSuccess": "2026-10-12T17:23:33.297Z"
     },
     "birmingham-bloomfield-chamber": {
       "id": "birmingham-bloomfield-chamber",
@@ -835,7 +835,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:19:02.142Z"
+      "lastSuccess": "2026-10-12T17:23:38.865Z"
     },
     "oakland-university": {
       "id": "oakland-university",
@@ -846,7 +846,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:29.214Z"
+      "lastSuccess": "2026-10-12T17:23:32.899Z"
     },
     "detroit-new-tech": {
       "id": "detroit-new-tech",
@@ -857,7 +857,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:30.220Z"
+      "lastSuccess": "2026-10-12T17:23:33.854Z"
     },
     "detroit-code-coffee": {
       "id": "detroit-code-coffee",
@@ -865,10 +865,10 @@
       "url": "https://www.meetup.com/detroit-code-coffee/events/ical/",
       "color": "#4527A0",
       "zone": "detroit",
-      "eventCount": 2,
+      "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:31.169Z"
+      "lastSuccess": "2026-10-12T17:23:34.748Z"
     },
     "startup-detroit-happy-hour": {
       "id": "startup-detroit-happy-hour",
@@ -879,7 +879,7 @@
       "eventCount": 1,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:32.267Z"
+      "lastSuccess": "2026-10-12T17:23:36.029Z"
     },
     "luma-detroit": {
       "id": "luma-detroit",
@@ -887,10 +887,10 @@
       "url": "https://luma.com/detroit",
       "color": "#FF6B35",
       "zone": "detroit",
-      "eventCount": 124,
+      "eventCount": 77,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:36.849Z"
+      "lastSuccess": "2026-10-12T17:23:40.338Z"
     },
     "20fathoms": {
       "id": "20fathoms",
@@ -901,7 +901,7 @@
       "eventCount": 13,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:40.943Z"
+      "lastSuccess": "2026-10-12T17:22:41.401Z"
     },
     "traverse-connect": {
       "id": "traverse-connect",
@@ -912,7 +912,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:48.953Z"
+      "lastSuccess": "2026-10-12T17:22:48.248Z"
     },
     "grove-incubator": {
       "id": "grove-incubator",
@@ -923,7 +923,7 @@
       "eventCount": 5,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:55.830Z"
+      "lastSuccess": "2026-10-12T17:22:58.914Z"
     },
     "build-guild-tc": {
       "id": "build-guild-tc",
@@ -934,7 +934,7 @@
       "eventCount": 6,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:57.050Z"
+      "lastSuccess": "2026-10-12T17:23:00.143Z"
     },
     "venture-north": {
       "id": "venture-north",
@@ -945,7 +945,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:58.029Z"
+      "lastSuccess": "2026-10-12T17:23:01.581Z"
     },
     "petoskey-chamber": {
       "id": "petoskey-chamber",
@@ -956,7 +956,7 @@
       "eventCount": 10,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:05.756Z"
+      "lastSuccess": "2026-10-12T17:23:08.326Z"
     },
     "cadillac-chamber": {
       "id": "cadillac-chamber",
@@ -967,7 +967,7 @@
       "eventCount": 7,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:13.528Z"
+      "lastSuccess": "2026-10-12T17:23:16.098Z"
     },
     "manistee-chamber": {
       "id": "manistee-chamber",
@@ -978,7 +978,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:16.168Z"
+      "lastSuccess": "2026-10-12T17:23:18.450Z"
     },
     "charlevoix-chamber": {
       "id": "charlevoix-chamber",
@@ -986,10 +986,10 @@
       "url": "https://business.charlevoix.org/events/search",
       "color": "#6A1B9A",
       "zone": "charlevoix",
-      "eventCount": 3,
+      "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:28.741Z"
+      "lastSuccess": "2026-10-12T17:23:28.850Z"
     },
     "ocea-gaylord": {
       "id": "ocea-gaylord",
@@ -1000,7 +1000,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:38.163Z"
+      "lastSuccess": "2026-10-12T17:22:41.017Z"
     },
     "gaylord-chamber": {
       "id": "gaylord-chamber",
@@ -1008,10 +1008,10 @@
       "url": "https://www.gaylordchamber.com/events/calendar",
       "color": "#00897B",
       "zone": "gaylord",
-      "eventCount": 12,
+      "eventCount": 10,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:50.435Z"
+      "lastSuccess": "2026-10-12T17:22:54.531Z"
     },
     "nmi-remote-workers": {
       "id": "nmi-remote-workers",
@@ -1022,7 +1022,7 @@
       "eventCount": 3,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:51.464Z"
+      "lastSuccess": "2026-10-12T17:22:55.640Z"
     },
     "tawas-chamber": {
       "id": "tawas-chamber",
@@ -1032,7 +1032,7 @@
       "zone": "oscoda-tawas",
       "eventCount": 0,
       "status": "error",
-      "error": "HTTP 403 for https://tawas.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-09",
+      "error": "HTTP 403 for https://tawas.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-12",
       "lastSuccess": "2026-10-09T18:19:32.717Z"
     },
     "cheboygan-main-street": {
@@ -1043,7 +1043,7 @@
       "zone": "cheboygan",
       "eventCount": 0,
       "status": "error",
-      "error": "HTTP 403 for https://www.cheboyganmainstreet.org/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-09",
+      "error": "HTTP 403 for https://www.cheboyganmainstreet.org/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-12",
       "lastSuccess": "2026-10-09T18:19:32.717Z"
     },
     "cheboygan-chamber": {
@@ -1052,10 +1052,10 @@
       "url": "https://www.cheboygan.com/events/calendar/",
       "color": "#0277BD",
       "zone": "cheboygan",
-      "eventCount": 17,
+      "eventCount": 16,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:11.269Z"
+      "lastSuccess": "2026-10-12T17:23:17.144Z"
     },
     "grayling-chamber": {
       "id": "grayling-chamber",
@@ -1066,7 +1066,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:12.572Z"
+      "lastSuccess": "2026-10-12T17:23:18.589Z"
     },
     "alpena-chamber": {
       "id": "alpena-chamber",
@@ -1077,7 +1077,7 @@
       "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:13.639Z"
+      "lastSuccess": "2026-10-12T17:23:19.682Z"
     },
     "destination-oscoda": {
       "id": "destination-oscoda",
@@ -1098,7 +1098,7 @@
       "zone": "oscoda-tawas",
       "eventCount": 0,
       "status": "error",
-      "error": "HTTP 403 for https://oscodachamber.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-09",
+      "error": "HTTP 403 for https://oscodachamber.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-12",
       "lastSuccess": "2026-10-09T18:19:32.717Z"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "lastScraped": "2026-10-09T19:27:57.883Z",
+  "lastScraped": "2026-10-12T17:25:45.627Z",
   "regions": [
     {
       "id": "upper-peninsula",
@@ -8,7 +8,7 @@
         "lat": 46.55,
         "lng": -87.4
       },
-      "eventCount": 25,
+      "eventCount": 24,
       "zones": [
         {
           "id": "houghton-hancock",
@@ -43,20 +43,20 @@
       ],
       "nextEvents": [
         {
-          "title": "P3MQT Marquette County Local Economic Exchange 2026",
-          "date": "2026-10-09",
+          "title": "PWPL Presents: 1-ON-1 Tech Coaching for Seniors",
+          "date": "2026-10-13",
           "zone": "marquette",
           "url": "/upper-peninsula-events.html"
         },
         {
-          "title": "2nd annual P3MQT, Marquette County Economic Development Exchange",
-          "date": "2026-10-09",
-          "zone": "marquette",
+          "title": "Engineering Senior Project Presentations",
+          "date": "2026-10-14",
+          "zone": "sault-ste-marie",
           "url": "/upper-peninsula-events.html"
         },
         {
-          "title": "Manoomin Camp – Wild Rice Workshop",
-          "date": "2026-10-10",
+          "title": "Lunch & Learn - AI",
+          "date": "2026-10-15",
           "zone": "houghton-hancock",
           "url": "/upper-peninsula-events.html"
         }
@@ -69,7 +69,7 @@
         "lat": 43,
         "lng": -86
       },
-      "eventCount": 74,
+      "eventCount": 91,
       "zones": [
         {
           "id": "muskegon",
@@ -110,15 +110,15 @@
           "url": "/west-michigan-events.html"
         },
         {
-          "title": "Zeeland Network",
+          "title": "Learn More",
           "date": "2026-10-13",
           "zone": "holland",
           "url": "/west-michigan-events.html"
         },
         {
-          "title": "West Michigan Azure User Group Meetup - Hosted Agents in Microsoft Foundry",
+          "title": "Zeeland Network",
           "date": "2026-10-13",
-          "zone": "grand-rapids",
+          "zone": "holland",
           "url": "/west-michigan-events.html"
         }
       ]
@@ -130,7 +130,7 @@
         "lat": 43.6,
         "lng": -84.5
       },
-      "eventCount": 44,
+      "eventCount": 49,
       "zones": [
         {
           "id": "midland",
@@ -222,7 +222,7 @@
         "lat": 42.73,
         "lng": -84.55
       },
-      "eventCount": 42,
+      "eventCount": 48,
       "zones": [
         {
           "id": "lansing",
@@ -243,13 +243,13 @@
           "url": "/south-central-events.html"
         },
         {
-          "title": "LRCC Lansing-Delhi Township Business Roundtable (IN-PERSON)",
+          "title": "FREE Market Research & Techniques That Drive Traffic to Your Business - Webinar Wed, October 14, 2026, 4:00 PM ET 4:00 PM ET - Webinar",
           "date": "2026-10-14",
           "zone": "lansing",
           "url": "/south-central-events.html"
         },
         {
-          "title": "From Prototype to FDA Clearance: Navigating Medical Device Development",
+          "title": "Market Research & Techniques That Drive Traffic to Your Business - Webinar Wed, October 14, 2026, 4:00 PM ET 4:00 PM ET - Webinar",
           "date": "2026-10-14",
           "zone": "lansing",
           "url": "/south-central-events.html"
@@ -263,7 +263,7 @@
         "lat": 42.29,
         "lng": -85.4
       },
-      "eventCount": 48,
+      "eventCount": 50,
       "zones": [
         {
           "id": "battle-creek",
@@ -314,7 +314,7 @@
         "lat": 42.2,
         "lng": -83.85
       },
-      "eventCount": 59,
+      "eventCount": 57,
       "zones": [
         {
           "id": "ann-arbor",
@@ -349,21 +349,21 @@
       ],
       "nextEvents": [
         {
-          "title": "Journey for T1D Gala",
-          "date": "2026-10-09",
-          "zone": "ann-arbor",
-          "url": "/southeast-events.html"
-        },
-        {
           "title": "MIATD26 Michigan Regional ATD Conference 2026",
           "date": "2026-10-12",
           "zone": "ann-arbor",
           "url": "/southeast-events.html"
         },
         {
-          "title": "AMTC Lunch & Learn",
+          "title": "SPARK Boot Camp Celebration and Pitch Competition",
           "date": "2026-10-13",
-          "zone": "jackson",
+          "zone": "ann-arbor",
+          "url": "/southeast-events.html"
+        },
+        {
+          "title": "1 Million Cups",
+          "date": "2026-10-14",
+          "zone": "ann-arbor",
           "url": "/southeast-events.html"
         }
       ]
@@ -375,7 +375,7 @@
         "lat": 42.45,
         "lng": -83.1
       },
-      "eventCount": 231,
+      "eventCount": 181,
       "zones": [
         {
           "id": "rochester-hills",
@@ -430,21 +430,21 @@
       ],
       "nextEvents": [
         {
-          "title": "Coffee Talk",
-          "date": "2026-10-09",
+          "title": "Slow Mornings @ Cafe Boo",
+          "date": "2026-10-12",
+          "zone": "southfield",
+          "url": "/detroit-metro-events.html"
+        },
+        {
+          "title": "October Mobility Meetup @DSPL",
+          "date": "2026-10-12",
+          "zone": "detroit",
+          "url": "/detroit-metro-events.html"
+        },
+        {
+          "title": "Breakfast with the RRC Ambassadors",
+          "date": "2026-10-13",
           "zone": "rochester-hills",
-          "url": "/detroit-metro-events.html"
-        },
-        {
-          "title": "The Forward 20: Celebrating Michigan's Innovation Ecosystem",
-          "date": "2026-10-09",
-          "zone": "detroit",
-          "url": "/detroit-metro-events.html"
-        },
-        {
-          "title": "San Francisco | Claude Culture",
-          "date": "2026-10-10",
-          "zone": "detroit",
           "url": "/detroit-metro-events.html"
         }
       ]
@@ -511,21 +511,21 @@
       ],
       "nextEvents": [
         {
-          "title": "BOGO 50% OFF SKECHERS",
-          "date": "2026-09-22",
+          "title": "Join the Northern Michigan Chorale for Fall '26 Season",
+          "date": "2026-10-12",
           "zone": "petoskey",
           "url": "/northwest-michigan-events.html"
         },
         {
-          "title": "Trunk Show: AUBADE x PECADO Fashion House",
-          "date": "2026-10-09",
+          "title": "Ballroom Dance of Northern Michigan",
+          "date": "2026-10-13",
           "zone": "petoskey",
           "url": "/northwest-michigan-events.html"
         },
         {
-          "title": "47th ANNUAL APPLE FEST",
-          "date": "2026-10-09",
-          "zone": "charlevoix",
+          "title": "Jack-O-Lantern Luminary Craft Night at Brandy's",
+          "date": "2026-10-13",
+          "zone": "petoskey",
           "url": "/northwest-michigan-events.html"
         }
       ]
@@ -537,7 +537,7 @@
         "lat": 44.95,
         "lng": -84.1
       },
-      "eventCount": 33,
+      "eventCount": 31,
       "zones": [
         {
           "id": "alpena",
@@ -592,21 +592,21 @@
       ],
       "nextEvents": [
         {
+          "title": "Mama Mingle Mondays",
+          "date": "2026-10-12",
+          "zone": "gaylord",
+          "url": "/northeast-michigan-events.html"
+        },
+        {
           "title": "Book Nook Used Book Sale - Cheboygan Public Library",
-          "date": "2026-10-10",
+          "date": "2026-10-13",
           "zone": "cheboygan",
           "url": "/northeast-michigan-events.html"
         },
         {
-          "title": "Witchin' Night Out - Gaylord",
-          "date": "2026-10-10",
-          "zone": "gaylord",
-          "url": "/northeast-michigan-events.html"
-        },
-        {
-          "title": "Disc Golf Fundraiser",
-          "date": "2026-10-11",
-          "zone": "gaylord",
+          "title": "Rivertown Readers & Beyond Book Club - Cheboygan Library",
+          "date": "2026-10-13",
+          "zone": "cheboygan",
           "url": "/northeast-michigan-events.html"
         }
       ]

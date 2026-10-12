@@ -56,7 +56,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.195Z",
+      "scrapedAt": "2026-10-12T17:23:12.458Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -86,7 +86,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.488Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -116,7 +116,37 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:42.265Z",
+      "scrapedAt": "2026-10-12T17:22:41.448Z",
+      "zone": "kalamazoo",
+      "region": "southwest",
+      "alsoListedBy": []
+    },
+    {
+      "id": "now-kalamazoo-behind-the-business-real-stories-of-risk-resilienc",
+      "title": "Behind the Business Real Stories of Risk Resilience and Growth Panel Discussion at The Foundry",
+      "description": "Every business has a story shaped by big ideas, tough decisions, unexpected challenges, and lessons learned along the way. Join AMA Southwest Michigan for a candid panel discussion with local business leaders as they share how they got started, the risks they took, the obstacles they faced, and the strategies that helped them grow. The conversation will explore entrepreneurship, marketing, leadership, and what it takes to build and sustain a business in today’s market. Our panel of speakers includes: Isaac Bugarin – Director of Marketing, Kalamazoo Growlers Angello A. Cruz – President, AGL Building Fixing Maintaining LLC Adam McFarlin – Owner, Kalamazoo Candle Amy Spalsbury – Owner, LFG Gaming Bar Tanya Thompson – Owner, The Aroma Labs",
+      "date": "2026-10-13",
+      "time": "5:00 PM",
+      "startDateTime": "2026-10-13T17:00:00",
+      "endDateTime": null,
+      "endDate": null,
+      "location": {
+        "name": "The Foundry",
+        "address": "600 E. Michigan Ave.",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "lat": 42.2940412,
+        "lng": -85.5746617
+      },
+      "url": "https://nowkalamazoo.org/event/behind-the-business-real-stories-of-risk-resilience-and-growth-panel-discussion-at-the-foundry/",
+      "source": "now-kalamazoo",
+      "category": "pitch",
+      "isRecurring": false,
+      "recurringKnown": false,
+      "isFree": true,
+      "freeKnown": false,
+      "isVirtual": false,
+      "scrapedAt": "2026-10-12T17:22:55.488Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -146,7 +176,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.488Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -176,7 +206,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.774Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -206,7 +236,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:43.290Z",
+      "scrapedAt": "2026-10-12T17:22:41.930Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -236,7 +266,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:44.616Z",
+      "scrapedAt": "2026-10-12T17:22:42.403Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -266,7 +296,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.488Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -296,7 +326,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:45.610Z",
+      "scrapedAt": "2026-10-12T17:22:42.866Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -326,7 +356,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.196Z",
+      "scrapedAt": "2026-10-12T17:23:12.459Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -356,7 +386,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:47.848Z",
+      "scrapedAt": "2026-10-12T17:22:44.452Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -386,7 +416,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:48.298Z",
+      "scrapedAt": "2026-10-12T17:22:44.919Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -416,7 +446,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:49.213Z",
+      "scrapedAt": "2026-10-12T17:22:45.390Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -446,7 +476,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.196Z",
+      "scrapedAt": "2026-10-12T17:23:12.459Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -476,7 +506,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:50.132Z",
+      "scrapedAt": "2026-10-12T17:22:46.234Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -506,7 +536,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.774Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -536,7 +566,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -566,7 +596,37 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:51.110Z",
+      "scrapedAt": "2026-10-12T17:22:46.707Z",
+      "zone": "kalamazoo",
+      "region": "southwest",
+      "alsoListedBy": []
+    },
+    {
+      "id": "now-kalamazoo-lunch-with-entrepreneurs-and-business-owners-almue",
+      "title": "Lunch with Entrepreneurs and Business Owners / Almuerzo Con Emprendedores Y Dueños De Negocios at El Concilio",
+      "description": "¡QUEREMOS ESCUCHARTE! ALMUERZO CON EMPRENDEDORES Y DUEÑOS DE NEGOCIOS DE KALAMAZOO El programa Camino al Éxito de El Concilio invita a los emprendedores y propietarios de negocios de nuestra comunidad a compartir un almuerzo y participar en un espacio de diálogo abierto. Queremos escuchar sus experiencias, conocer sus necesidades, entender los desafíos que enfrentan y descubrir cómo podemos continuar apoyándolos para fortalecer y hacer crecer sus negocios. ¡Tu voz es importante! Este encuentro es una oportunidad para compartir ideas, expresar inquietudes y contribuir a la creación de nuevas oportunidades para nuestra comunidad empresarial. Fecha: Sábado 31 de octubre de 2026 Hora: 12:00 p.m. a 1:30 p.m. Lugar: El Concilio 2501 Millcork St, Kalamazoo, MI 49001 INSCRIPCIÓN OBLIGATORIA El almuerzo es gratuito, pero es indispensable registrarse previamente para participar. Regístrate aquí: https://forms.gle/gKQeBkn7ctw346FLA ¡Queremos conocer tu historia, escuchar tus ideas y trabajar juntos por el éxito de nuestros negocios! Organiza: Programa Camino al Éxito de El Concilio WE WANT TO HEAR FROM YOU! LUNCH WITH ENTREPRENEURS AND BUSINESS OWNERS OF THE KALAMAZOO COMMUNITY The El Concilio’s Path to Success program invites entrepreneurs and business owners from our community to share a lunch and participate in an open dialogue. We want to hear your experiences, understand your needs, identify the challenges you face, and discover how we can continue to support you in strengthening and growing your businesses. Your voice matters! This meeting is an opportunity to share ideas, express concerns, and contribute to creating new opportunities for our business community. Date: Saturday, October 31, 2026 Time: 12:00 p.m. to 1:30 p.m. Location: El Concilio 2501 Millcork St, Kalamazoo, MI 49001 Mandatory Registration Lunch is free, but registration is required to participate. Register here: https://forms.gle/gKQeBkn7ctw346FLA We want to hear your story, listen to your ideas, and work together for the success of our businesses! Organized by: El Concilio’s Path to Success program",
+      "date": "2026-10-31",
+      "time": "12:00 PM",
+      "startDateTime": "2026-10-31T12:00:00",
+      "endDateTime": null,
+      "endDate": null,
+      "location": {
+        "name": "El Concilio Kalamazoo",
+        "address": "930 Lake St., Ste. A",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "lat": 42.291707,
+        "lng": -85.5872286
+      },
+      "url": "https://nowkalamazoo.org/event/lunch-with-entrepreneurs-and-business-owners-almuerzo-con-emprendedores-y-duenos-de-negocios-at-el-concilio/",
+      "source": "now-kalamazoo",
+      "category": "pitch",
+      "isRecurring": false,
+      "recurringKnown": false,
+      "isFree": true,
+      "freeKnown": false,
+      "isVirtual": false,
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -596,7 +656,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.197Z",
+      "scrapedAt": "2026-10-12T17:23:12.463Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -626,7 +686,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -656,7 +716,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:59.657Z",
+      "scrapedAt": "2026-10-12T17:22:57.648Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -686,7 +746,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:52.045Z",
+      "scrapedAt": "2026-10-12T17:22:47.589Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -716,7 +776,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -746,7 +806,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.197Z",
+      "scrapedAt": "2026-10-12T17:23:12.463Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -776,7 +836,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -806,7 +866,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -836,7 +896,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -866,7 +926,7 @@
       "isFree": false,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -896,7 +956,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.198Z",
+      "scrapedAt": "2026-10-12T17:23:12.463Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -926,7 +986,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:53.006Z",
+      "scrapedAt": "2026-10-12T17:22:48.053Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -956,7 +1016,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:08.198Z",
+      "scrapedAt": "2026-10-12T17:23:12.464Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -986,7 +1046,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1016,7 +1076,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.863Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1046,7 +1106,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:00.648Z",
+      "scrapedAt": "2026-10-12T17:22:58.120Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1076,7 +1136,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1106,7 +1166,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1136,7 +1196,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1166,7 +1226,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1196,7 +1256,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1226,7 +1286,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1256,7 +1316,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1286,7 +1346,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:16:10.421Z",
+      "scrapedAt": "2026-10-12T17:23:14.775Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1316,7 +1376,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1346,7 +1406,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1376,7 +1436,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1406,7 +1466,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1436,7 +1496,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.489Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1466,7 +1526,7 @@
       "isFree": true,
       "freeKnown": false,
       "isVirtual": false,
-      "scrapedAt": "2026-10-09T19:15:56.864Z",
+      "scrapedAt": "2026-10-12T17:22:55.490Z",
       "zone": "kalamazoo",
       "region": "southwest",
       "alsoListedBy": []
@@ -1482,7 +1542,7 @@
       "eventCount": 12,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:53.406Z"
+      "lastSuccess": "2026-10-12T17:22:48.455Z"
     },
     "now-kalamazoo": {
       "id": "now-kalamazoo",
@@ -1490,10 +1550,10 @@
       "url": "https://nowkalamazoo.org/events/",
       "color": "#E65100",
       "zone": "kalamazoo",
-      "eventCount": 18,
+      "eventCount": 20,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:15:56.864Z"
+      "lastSuccess": "2026-10-12T17:22:55.490Z"
     },
     "one-million-cups-kalamazoo": {
       "id": "one-million-cups-kalamazoo",
@@ -1504,7 +1564,7 @@
       "eventCount": 2,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:01.048Z"
+      "lastSuccess": "2026-10-12T17:22:58.520Z"
     },
     "wmu-haworth": {
       "id": "wmu-haworth",
@@ -1515,7 +1575,7 @@
       "eventCount": 7,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:08.199Z"
+      "lastSuccess": "2026-10-12T17:23:12.464Z"
     },
     "wmed-innovation-center": {
       "id": "wmed-innovation-center",
@@ -1526,7 +1586,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:09.278Z"
+      "lastSuccess": "2026-10-12T17:23:13.665Z"
     },
     "kalamazoo-software-developers": {
       "id": "kalamazoo-software-developers",
@@ -1537,7 +1597,7 @@
       "eventCount": 10,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:10.421Z"
+      "lastSuccess": "2026-10-12T17:23:14.775Z"
     },
     "battle-creek-chamber": {
       "id": "battle-creek-chamber",
@@ -1548,7 +1608,7 @@
       "eventCount": 0,
       "status": "ok",
       "error": null,
-      "lastSuccess": "2026-10-09T19:16:12.345Z"
+      "lastSuccess": "2026-10-12T17:23:16.695Z"
     },
     "small-business-battle-creek": {
       "id": "small-business-battle-creek",
@@ -1558,9 +1618,9 @@
       "zone": "battle-creek",
       "eventCount": 0,
       "status": "error",
-      "error": "HTTP 403 for https://smallbusinessbattlecreek.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-09",
+      "error": "HTTP 403 for https://smallbusinessbattlecreek.com/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-10-12",
       "lastSuccess": "2026-10-09T17:40:35.454Z"
     }
   },
-  "lastScraped": "2026-10-09T19:27:57.883Z"
+  "lastScraped": "2026-10-12T17:25:45.627Z"
 }

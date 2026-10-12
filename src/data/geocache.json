@@ -918,5 +918,33 @@
   "one campus martius|detroit|mi": {
     "lat": 42.332628,
     "lng": -83.0467201
-  }
+  },
+  "|grand haven|mi": {
+    "lat": 43.0630734,
+    "lng": -86.2283864
+  },
+  "600 e. michigan ave.|kalamazoo|mi": {
+    "lat": 42.2940412,
+    "lng": -85.5746617
+  },
+  "hudson grille midtown, 942 peachtree st ne, atlanta, ga 30309, usa|atlanta|mi": null,
+  "|atlanta|mi": {
+    "lat": 45.0047575,
+    "lng": -84.1519702
+  },
+  "||mi": {
+    "lat": 43.6211955,
+    "lng": -84.6824346
+  },
+  "8607 cady rd, jackson, mi 49201, usa|jackson|mi": null,
+  "930 lake st., ste. a|kalamazoo|mi": null,
+  "|frankenmuth|mi": {
+    "lat": 43.3323684,
+    "lng": -83.7392288
+  },
+  "914 w baraga avenue|marquette|mi": {
+    "lat": 46.5435893,
+    "lng": -87.4149989
+  },
+  "jackson, mi, usa|jackson|mi": null
 }
