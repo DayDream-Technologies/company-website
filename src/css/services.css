@@ -269,6 +269,20 @@ body {
 .bento-card[data-service="hosting"] { grid-area: hosting; }
 .bento-card[data-service="email"] { grid-area: email; }
 .bento-card[data-service="crm"] { grid-area: crm; }
+
+a.bento-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-more {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-orange);
+}
 .bento-card[data-service="marketing"] { grid-area: marketing; }
 .bento-card[data-service="ecommerce"] { grid-area: ecommerce; }
 
