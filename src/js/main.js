@@ -1,3 +1,16 @@
+function setCopyrightYear() {
+    const year = String(new Date().getFullYear());
+    document.querySelectorAll('[data-copyright-year]').forEach((el) => {
+        el.textContent = year;
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setCopyrightYear);
+} else {
+    setCopyrightYear();
+}
+
 /********* Begin JS for the dropdown menu *********/
 const hamburger = document.querySelector('.hamburger');
 const dropdown = document.querySelector('.dropdown');

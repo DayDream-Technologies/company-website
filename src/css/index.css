@@ -530,9 +530,9 @@ section {
 
 .review-card {
     position: relative;
-    background: #F2B705;
+    background: #D95204;
     border-radius: 14px;
-    box-shadow: 0 2px 16px 0 rgba(231, 130, 60, 0.06);
+    box-shadow: 0 2px 16px 0 rgba(217, 82, 4, 0.2);
     padding: 15px 30px;
     display: grid;
     align-items: center;
@@ -546,7 +546,7 @@ section {
 .review-card p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.05rem;
-    color: #444;
+    color: #FFFFFF;
     text-align: center;
     margin: 0;
     line-height: 1.5;
@@ -554,7 +554,7 @@ section {
 
 .quote {
     font-size: 2rem;
-    color: #000000;
+    color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
