@@ -647,3 +647,82 @@ document.addEventListener('DOMContentLoaded', () => {
     createMouseHoverEffect();
 });
 /********* End JS for mouse hover transparency effect *********/
+
+/********* Auth nav link *********/
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const existing = document.querySelector(`script[src="${src}"]`);
+        if (existing) {
+            if (existing.dataset.loaded === 'true' || existing.readyState === 'complete') {
+                resolve();
+                return;
+            }
+            existing.addEventListener('load', () => resolve(), { once: true });
+            existing.addEventListener('error', () => reject(new Error(src)), { once: true });
+            return;
+        }
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = () => {
+            script.dataset.loaded = 'true';
+            resolve();
+        };
+        script.onerror = () => reject(new Error('Failed to load ' + src));
+        document.head.appendChild(script);
+    });
+}
+
+function ensureAuthNavLinks() {
+    document.querySelectorAll('.nav_links, .dropdown').forEach((list) => {
+        if (list.querySelector('[data-nav-auth]')) return;
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.className = 'nav_link';
+        link.href = '/login';
+        link.dataset.navAuth = 'login';
+        link.title = 'Client login';
+        link.textContent = 'Login';
+        item.appendChild(link);
+        list.appendChild(item);
+    });
+}
+
+function setAuthNav(label, href, current) {
+    document.querySelectorAll('[data-nav-auth]').forEach((link) => {
+        link.textContent = label;
+        link.href = href;
+        link.classList.toggle('nav-auth-current', current);
+    });
+}
+
+async function ensureSupabase() {
+    if (window.supabaseClient || window.isSupabaseConfigured) return window.supabaseClient;
+    if (!window.APP_CONFIG) await loadScript('./src/js/config.js');
+    if (!window.supabase) {
+        await loadScript('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js');
+    }
+    if (!window.supabaseClient) await loadScript('./src/js/supabase-client.js');
+    return window.supabaseClient;
+}
+
+async function initAuthNav() {
+    ensureAuthNavLinks();
+    const path = window.location.pathname;
+    const onLogin = /\/login(\.html)?$/.test(path);
+    if (onLogin) setAuthNav('Login', '/login', true);
+    try {
+        const client = await ensureSupabase();
+        if (!client || !window.isSupabaseConfigured()) return;
+        const { data, error } = await client.auth.getSession();
+        if (error || !data.session) return;
+        const { data: profile } = await client.from('profiles').select('role').eq('id', data.session.user.id).maybeSingle();
+        const admin = profile && profile.role === 'admin';
+        const href = admin ? '/admin' : '/dashboard';
+        const onPortal = /\/(dashboard|admin)(\.html)?$/.test(path);
+        setAuthNav(admin ? 'Admin' : 'Dashboard', href, onPortal);
+    } catch (error) {
+        console.warn('Auth navigation skipped', error);
+    }
+}
+
+initAuthNav();

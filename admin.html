@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin | DayDream Technologies</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/auth.css" />
+    <link rel="stylesheet" href="./src/css/dashboard.css" />
+    <link rel="stylesheet" href="./src/css/admin.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="icon" href="./src/images/favicon.ico" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="./src/js/config.js"></script>
+    <script src="./src/js/supabase-client.js"></script>
+    <script src="./src/js/portal-format.js"></script>
+    <script src="./src/js/auth.js"></script>
+    <script src="./src/js/dashboard/billing.js"></script>
+    <script src="./src/js/admin/app.js"></script>
+    <script src="./src/js/main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li>
+                <a class="nav_logo" href="/">
+                    <img class="logo_img" src="./logos/star-moon-logo-right.png" alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <div class="nav_links">
+                <li><a class="nav_link" href="/" title="Daydream's homepage">Home</a></li>
+                <li><a class="nav_link" href="/services" title="Our services">Services</a></li>
+                <li><a class="nav_link" href="/projects" title="Our projects">Projects</a></li>
+                <li><a class="nav_link" href="/nonprofits" title="Nonprofit services">Nonprofits</a></li>
+                <li><a class="nav_link" href="/contact" title="Contact us">Contact</a></li>
+                <li><a class="nav_link" data-nav-auth href="/admin" title="Admin">Admin</a></li>
+            </div>
+        </ul>
+        <ul class="respo_navbar">
+            <li>
+                <a class="nav_logo" href="/">
+                    <img class="logo_img" src="./logos/star-moon-logo-right.png" alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <li>
+                <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </li>
+        </ul>
+        <ul class="dropdown">
+            <li><a class="nav_link" href="/">Home</a></li>
+            <li><a class="nav_link" href="/services">Services</a></li>
+            <li><a class="nav_link" href="/projects">Projects</a></li>
+            <li><a class="nav_link" href="/nonprofits">Nonprofits</a></li>
+            <li><a class="nav_link" href="/contact">Contact</a></li>
+            <li><a class="nav_link" data-nav-auth href="/admin">Admin</a></li>
+        </ul>
+    </nav>
+
+    <main class="portal">
+        <header class="portal-header">
+            <div>
+                <p class="portal-kicker">Admin</p>
+                <h1>Client billing</h1>
+            </div>
+            <button type="button" id="logout-button">Log out</button>
+        </header>
+        <p id="portal-banner" class="portal-banner" hidden></p>
+        <div class="portal-tabs" role="tablist">
+            <button type="button" class="portal-tab" role="tab" aria-selected="true" data-panel="panel-clients">Clients</button>
+            <button type="button" class="portal-tab" role="tab" aria-selected="false" data-panel="panel-invoice">Create invoice</button>
+            <button type="button" class="portal-tab" role="tab" aria-selected="false" data-panel="panel-plans">Plans</button>
+        </div>
+
+        <section id="panel-clients" class="portal-panel">
+            <div class="admin-split">
+                <div>
+                    <label class="field">Find a client
+                        <input id="client-search" type="search" placeholder="Name or company" />
+                    </label>
+                    <div id="client-list" class="client-list"></div>
+                </div>
+                <div id="client-detail" class="portal-card"></div>
+            </div>
+        </section>
+
+        <section id="panel-invoice" class="portal-panel" hidden>
+            <h2>Create invoice</h2>
+            <form id="invoice-form" class="portal-card stack-form">
+                <label class="field">Client
+                    <select id="invoice-client" name="clientId" required></select>
+                </label>
+                <label class="field">Amount (USD)
+                    <input name="amount" type="number" min="0.50" step="0.01" required />
+                </label>
+                <label class="field">Description
+                    <textarea name="description" required></textarea>
+                </label>
+                <label class="field">Due date
+                    <input name="dueDate" type="date" />
+                </label>
+                <label class="check-field">
+                    <input name="send" type="checkbox" checked />
+                    Email this invoice to the client
+                </label>
+                <button type="submit">Create invoice</button>
+            </form>
+        </section>
+
+        <section id="panel-plans" class="portal-panel" hidden></section>
+    </main>
+
+    <footer>
+        <div class="footer_left">
+            <a class="footer_link" href="/">
+                <img class="linkdn" src="./logos/star-moon-logo-right.png" alt="Daydream Technologies" />
+                DayDream Technologies
+            </a>
+            <p class="footer_copyright">© <span data-copyright-year>2026</span> DayDream Technologies. All rights reserved.</p>
+        </div>
+        <div class="footer_links">
+            <a class="footer_link footer_social" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/" title="Follow us on LinkedIn">
+                <img src="./src/images/alt-linkedin.jpg" alt="LinkedIn" class="social-icon" />
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

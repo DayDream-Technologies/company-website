@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | DayDream Technologies</title>
+    <meta name="description" content="Sign in to the DayDream Technologies client portal." />
+    <link rel="canonical" href="https://www.daydreamtechnologies.net/login" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/auth.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="icon" href="./src/images/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="./src/js/config.js"></script>
+    <script src="./src/js/supabase-client.js"></script>
+    <script src="./src/js/auth.js"></script>
+    <script src="./src/js/main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li>
+                <a class="nav_logo" href="/">
+                    <img class="logo_img" src="./logos/star-moon-logo-right.png" alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <div class="nav_links">
+                <li><a class="nav_link" href="/" title="Daydream's homepage">Home</a></li>
+                <li><a class="nav_link" href="/services" title="Our services">Services</a></li>
+                <li><a class="nav_link" href="/projects" title="Our projects">Projects</a></li>
+                <li><a class="nav_link" href="/nonprofits" title="Nonprofit services">Nonprofits</a></li>
+                <li><a class="nav_link" href="/contact" title="Contact us">Contact</a></li>
+                <li><a class="nav_link nav-auth-current" data-nav-auth href="/login" title="Client login">Login</a></li>
+            </div>
+        </ul>
+        <ul class="respo_navbar">
+            <li>
+                <a class="nav_logo" href="/">
+                    <img class="logo_img" src="./logos/star-moon-logo-right.png" alt="Day Dream Technologies" />
+                </a>
+            </li>
+            <li>
+                <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </li>
+        </ul>
+        <ul class="dropdown">
+            <li><a class="nav_link" href="/" title="DayDream's homepage">Home</a></li>
+            <li><a class="nav_link" href="/services" title="Our services">Services</a></li>
+            <li><a class="nav_link" href="/projects" title="Our projects">Projects</a></li>
+            <li><a class="nav_link" href="/nonprofits" title="Nonprofit services">Nonprofits</a></li>
+            <li><a class="nav_link" href="/contact" title="Contact us">Contact</a></li>
+            <li><a class="nav_link nav-auth-current" data-nav-auth href="/login" title="Client login">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="auth-page">
+        <div class="auth-card">
+            <h1>Client portal</h1>
+            <p>Sign in to see projects, invoices, and billing.</p>
+            <div class="auth-tabs" role="tablist">
+                <button type="button" id="sign-in-tab" role="tab" aria-selected="true">Sign in</button>
+                <button type="button" id="sign-up-tab" role="tab" aria-selected="false">Create account</button>
+            </div>
+            <p id="auth-message" class="auth-message" hidden></p>
+            <form id="auth-form">
+                <div class="field" id="name-field" hidden>
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" />
+                </div>
+                <div class="field" id="company-field" hidden>
+                    <label for="company">Company</label>
+                    <input id="company" name="company" type="text" autocomplete="organization" />
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" required />
+                </div>
+                <button class="auth-submit" id="auth-submit" type="submit">Sign in</button>
+            </form>
+            <div class="auth-links">
+                <button type="button" class="text-button" id="forgot-password">Forgot password</button>
+            </div>
+            <form id="reset-form">
+                <div id="reset-panel" hidden>
+                    <p class="auth-note">Choose a new password.</p>
+                    <div class="field">
+                        <label for="new-password">New password</label>
+                        <input id="new-password" type="password" autocomplete="new-password" required />
+                    </div>
+                    <button class="auth-submit" id="reset-submit" type="submit">Update password</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_left">
+            <a class="footer_link" href="/">
+                <img class="linkdn" src="./logos/star-moon-logo-right.png" alt="Daydream Technologies" />
+                DayDream Technologies
+            </a>
+            <p class="footer_copyright">© <span data-copyright-year>2026</span> DayDream Technologies. All rights reserved.</p>
+        </div>
+        <div class="footer_links">
+            <a class="footer_link footer_social" target="_blank" href="https://www.linkedin.com/company/daydream-technologies/" title="Follow us on LinkedIn">
+                <img src="./src/images/alt-linkedin.jpg" alt="LinkedIn" class="social-icon" />
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

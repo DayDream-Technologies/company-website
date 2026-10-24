@@ -38,12 +38,16 @@ body {
 }
 
 .nav_links {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(90px, 115px));
-    grid-template-rows: 12vh;
+    display: flex;
     align-items: center;
-    justify-items: center;
-    padding-right: 10px;
+    justify-content: flex-end;
+    gap: 4px;
+    height: 100%;
+    padding-right: 16px;
+}
+
+.nav_links li {
+    list-style: none;
 }
 
 .respo_navbar {
@@ -104,6 +108,11 @@ body {
     background-color: #FBE8D4;
     padding: 12px 14px;
     border-radius: 12px;
+}
+
+.nav-auth-current {
+    color: #000000;
+    background-color: #FBE8D4;
 }
 
 .nav_logo {

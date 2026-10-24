@@ -5,6 +5,9 @@
     "build:mi": "node scripts/events/build.js",
     "build:pages": "node scripts/events/build-pages.js",
     "test": "node --test scripts/events/__tests__/core.test.js",
+    "test:billing": "node --test scripts/billing/self-check.test.mjs",
+    "billing:sync": "node scripts/billing/sync-plans.mjs",
+    "billing:deploy": "node scripts/billing/deploy.mjs",
     "scrape:summer-music": "node scripts/scrape-summer-music.js",
     "merge:local-spins": "node scripts/merge-local-spins-guide.mjs",
     "scrape:all": "node scripts/events/run.js --group west-michigan --out raw/west-michigan.json && node scripts/scrape-summer-music.js"
