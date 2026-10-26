@@ -1,5 +1,5 @@
 {
-  "lastScraped": "2026-10-12T17:25:45.627Z",
+  "lastScraped": "2026-10-26T14:54:02.996Z",
   "regions": [
     {
       "id": "upper-peninsula",
@@ -44,20 +44,20 @@
       "nextEvents": [
         {
           "title": "PWPL Presents: 1-ON-1 Tech Coaching for Seniors",
-          "date": "2026-10-13",
+          "date": "2026-10-27",
           "zone": "marquette",
           "url": "/upper-peninsula-events.html"
         },
         {
-          "title": "Engineering Senior Project Presentations",
-          "date": "2026-10-14",
-          "zone": "sault-ste-marie",
+          "title": "PWPL Presents: All Booked Up: On Air",
+          "date": "2026-10-28",
+          "zone": "marquette",
           "url": "/upper-peninsula-events.html"
         },
         {
-          "title": "Lunch & Learn - AI",
-          "date": "2026-10-15",
-          "zone": "houghton-hancock",
+          "title": "PWPL Presents: ‘Twas the Night Before Halloween Storytime",
+          "date": "2026-10-30",
+          "zone": "marquette",
           "url": "/upper-peninsula-events.html"
         }
       ]
@@ -69,7 +69,7 @@
         "lat": 43,
         "lng": -86
       },
-      "eventCount": 91,
+      "eventCount": 74,
       "zones": [
         {
           "id": "muskegon",
@@ -104,21 +104,21 @@
       ],
       "nextEvents": [
         {
-          "title": "Government Matters",
-          "date": "2026-10-12",
+          "title": "Business After Hours – Meet the Candidates",
+          "date": "2026-10-26",
+          "zone": "muskegon",
+          "url": "/west-michigan-events.html"
+        },
+        {
+          "title": "Leadership Lesson Breakfast",
+          "date": "2026-10-27",
           "zone": "grand-rapids",
           "url": "/west-michigan-events.html"
         },
         {
-          "title": "Learn More",
-          "date": "2026-10-13",
-          "zone": "holland",
-          "url": "/west-michigan-events.html"
-        },
-        {
-          "title": "Zeeland Network",
-          "date": "2026-10-13",
-          "zone": "holland",
+          "title": "Wyoming Business Leaders",
+          "date": "2026-10-27",
+          "zone": "grand-rapids",
           "url": "/west-michigan-events.html"
         }
       ]
@@ -130,7 +130,7 @@
         "lat": 43.6,
         "lng": -84.5
       },
-      "eventCount": 49,
+      "eventCount": 46,
       "zones": [
         {
           "id": "midland",
@@ -155,20 +155,20 @@
       ],
       "nextEvents": [
         {
-          "title": "2026 Seine River Cruise Global Networking Trip",
-          "date": "2026-10-09",
-          "zone": "midland",
-          "url": "/east-central-events.html"
-        },
-        {
-          "title": "Coffee Talk",
-          "date": "2026-10-13",
+          "title": "Sault Tribe Alliance 2026 Annual Business Conference",
+          "date": "2026-10-27",
           "zone": "mount-pleasant",
           "url": "/east-central-events.html"
         },
         {
-          "title": "Bay City Impact Day",
-          "date": "2026-10-14",
+          "title": "Coffee Talk",
+          "date": "2026-10-27",
+          "zone": "mount-pleasant",
+          "url": "/east-central-events.html"
+        },
+        {
+          "title": "YPN Connect: Brunch Before Business",
+          "date": "2026-10-27",
           "zone": "midland",
           "url": "/east-central-events.html"
         }
@@ -181,7 +181,7 @@
         "lat": 43,
         "lng": -82.45
       },
-      "eventCount": 10,
+      "eventCount": 7,
       "zones": [
         {
           "id": "port-huron",
@@ -196,20 +196,20 @@
       ],
       "nextEvents": [
         {
+          "title": "Morning Mingle – Sponsored by Riverfront Financial",
+          "date": "2026-11-18",
+          "zone": "port-huron",
+          "url": "/east-michigan-events.html"
+        },
+        {
           "title": "Port Huron: 3rd Thursday of each month",
-          "date": "2026-10-15",
+          "date": "2026-11-19",
           "zone": "port-huron",
           "url": "/east-michigan-events.html"
         },
         {
-          "title": "Grand Opening Celebration for Soulback Sober Bar & Coffee Shop",
-          "date": "2026-10-15",
-          "zone": "port-huron",
-          "url": "/east-michigan-events.html"
-        },
-        {
-          "title": "Morning Mingle Sponsored by Soulback Sober Bar & Coffee Shop",
-          "date": "2026-10-21",
+          "title": "Holiday Party Hosted by the Chamber and the EDA",
+          "date": "2026-12-10",
           "zone": "port-huron",
           "url": "/east-michigan-events.html"
         }
@@ -222,7 +222,7 @@
         "lat": 42.73,
         "lng": -84.55
       },
-      "eventCount": 48,
+      "eventCount": 42,
       "zones": [
         {
           "id": "lansing",
@@ -237,20 +237,20 @@
       ],
       "nextEvents": [
         {
-          "title": "Member Mixer at Impression 5 Science Center - Hosted by Consumers Energy",
-          "date": "2026-10-13",
+          "title": "Beyond the Firewall",
+          "date": "2026-10-27",
           "zone": "lansing",
           "url": "/south-central-events.html"
         },
         {
-          "title": "FREE Market Research & Techniques That Drive Traffic to Your Business - Webinar Wed, October 14, 2026, 4:00 PM ET 4:00 PM ET - Webinar",
-          "date": "2026-10-14",
+          "title": "FREE HR Fundamentals for Small Business - Webinar Wed, October 28, 2026, 2:00 PM ET 2:00 PM ET - Webinar",
+          "date": "2026-10-28",
           "zone": "lansing",
           "url": "/south-central-events.html"
         },
         {
-          "title": "Market Research & Techniques That Drive Traffic to Your Business - Webinar Wed, October 14, 2026, 4:00 PM ET 4:00 PM ET - Webinar",
-          "date": "2026-10-14",
+          "title": "HR Fundamentals for Small Business - Webinar Wed, October 28, 2026, 2:00 PM ET 2:00 PM ET - Webinar",
+          "date": "2026-10-28",
           "zone": "lansing",
           "url": "/south-central-events.html"
         }
@@ -263,7 +263,7 @@
         "lat": 42.29,
         "lng": -85.4
       },
-      "eventCount": 50,
+      "eventCount": 63,
       "zones": [
         {
           "id": "battle-creek",
@@ -288,20 +288,20 @@
       ],
       "nextEvents": [
         {
-          "title": "Starting Gate Speaker Series: Commercial Lending in the Current Economic Environment",
-          "date": "2026-10-12",
+          "title": "Starting Gate Speaker Series: Providing Leadership Within Your Organization",
+          "date": "2026-10-26",
           "zone": "kalamazoo",
           "url": "/southwest-events.html"
         },
         {
-          "title": "Monday Midday Mixer",
-          "date": "2026-10-12",
+          "title": "Rise & Thrive Coffee Connect",
+          "date": "2026-10-27",
           "zone": "kalamazoo",
           "url": "/southwest-events.html"
         },
         {
-          "title": "Discover Seine Cruise: Informational Meeting at the Catalyst Center",
-          "date": "2026-10-13",
+          "title": "💻Code and ☕Coffee",
+          "date": "2026-10-28",
           "zone": "kalamazoo",
           "url": "/southwest-events.html"
         }
@@ -314,7 +314,7 @@
         "lat": 42.2,
         "lng": -83.85
       },
-      "eventCount": 57,
+      "eventCount": 50,
       "zones": [
         {
           "id": "ann-arbor",
@@ -349,20 +349,20 @@
       ],
       "nextEvents": [
         {
-          "title": "MIATD26 Michigan Regional ATD Conference 2026",
-          "date": "2026-10-12",
+          "title": "Washtenaw Community College Career & Internship Fair",
+          "date": "2026-10-26",
           "zone": "ann-arbor",
           "url": "/southeast-events.html"
         },
         {
-          "title": "SPARK Boot Camp Celebration and Pitch Competition",
-          "date": "2026-10-13",
+          "title": "SPARK.ed | Where Are the Leads?",
+          "date": "2026-10-27",
           "zone": "ann-arbor",
           "url": "/southeast-events.html"
         },
         {
-          "title": "1 Million Cups",
-          "date": "2026-10-14",
+          "title": "Bright Minds Collective",
+          "date": "2026-10-27",
           "zone": "ann-arbor",
           "url": "/southeast-events.html"
         }
@@ -375,7 +375,7 @@
         "lat": 42.45,
         "lng": -83.1
       },
-      "eventCount": 181,
+      "eventCount": 102,
       "zones": [
         {
           "id": "rochester-hills",
@@ -431,19 +431,19 @@
       "nextEvents": [
         {
           "title": "Slow Mornings @ Cafe Boo",
-          "date": "2026-10-12",
+          "date": "2026-10-26",
           "zone": "southfield",
           "url": "/detroit-metro-events.html"
         },
         {
-          "title": "October Mobility Meetup @DSPL",
-          "date": "2026-10-12",
+          "title": "Capital Connect Essentials: Know Before You Borrow",
+          "date": "2026-10-26",
           "zone": "detroit",
           "url": "/detroit-metro-events.html"
         },
         {
-          "title": "Breakfast with the RRC Ambassadors",
-          "date": "2026-10-13",
+          "title": "Women's Peer Solution Group",
+          "date": "2026-10-27",
           "zone": "rochester-hills",
           "url": "/detroit-metro-events.html"
         }
@@ -456,7 +456,7 @@
         "lat": 44.76,
         "lng": -85.62
       },
-      "eventCount": 40,
+      "eventCount": 36,
       "zones": [
         {
           "id": "traverse-city",
@@ -511,21 +511,21 @@
       ],
       "nextEvents": [
         {
+          "title": "ACOTAR Book 6 Midnight Release Party",
+          "date": "2026-10-26",
+          "zone": "petoskey",
+          "url": "/northwest-michigan-events.html"
+        },
+        {
           "title": "Join the Northern Michigan Chorale for Fall '26 Season",
-          "date": "2026-10-12",
+          "date": "2026-10-26",
           "zone": "petoskey",
           "url": "/northwest-michigan-events.html"
         },
         {
-          "title": "Ballroom Dance of Northern Michigan",
-          "date": "2026-10-13",
-          "zone": "petoskey",
-          "url": "/northwest-michigan-events.html"
-        },
-        {
-          "title": "Jack-O-Lantern Luminary Craft Night at Brandy's",
-          "date": "2026-10-13",
-          "zone": "petoskey",
+          "title": "OOPs 200",
+          "date": "2026-10-27",
+          "zone": "traverse-city",
           "url": "/northwest-michigan-events.html"
         }
       ]
@@ -537,7 +537,7 @@
         "lat": 44.95,
         "lng": -84.1
       },
-      "eventCount": 31,
+      "eventCount": 8,
       "zones": [
         {
           "id": "alpena",
@@ -592,20 +592,20 @@
       ],
       "nextEvents": [
         {
-          "title": "Mama Mingle Mondays",
-          "date": "2026-10-12",
-          "zone": "gaylord",
-          "url": "/northeast-michigan-events.html"
-        },
-        {
           "title": "Book Nook Used Book Sale - Cheboygan Public Library",
-          "date": "2026-10-13",
+          "date": "2026-10-27",
           "zone": "cheboygan",
           "url": "/northeast-michigan-events.html"
         },
         {
-          "title": "Rivertown Readers & Beyond Book Club - Cheboygan Library",
-          "date": "2026-10-13",
+          "title": "Date: Wednesday, Time: 5:00 p.m.-7:00 p.m.Location: PACE Northeast MichiganDetails: Join us for networking, refreshments and more. Free to a",
+          "date": "2026-10-28",
+          "zone": "alpena",
+          "url": "/northeast-michigan-events.html"
+        },
+        {
+          "title": "Wine Wednesday - Mulligan's",
+          "date": "2026-10-28",
           "zone": "cheboygan",
           "url": "/northeast-michigan-events.html"
         }

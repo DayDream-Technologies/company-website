@@ -946,5 +946,69 @@
     "lat": 46.5435893,
     "lng": -87.4149989
   },
-  "jackson, mi, usa|jackson|mi": null
+  "jackson, mi, usa|jackson|mi": null,
+  "6800 soaring eagle boulevard|mt pleasant|mi": {
+    "lat": 43.6084044,
+    "lng": -84.7129906
+  },
+  "the congregation, 9321 rosa parks blvd, detroit, mi 48206, usa|detroit|mi": null,
+  "177 us-41 east|negaunee|mi": null,
+  "|negaunee|mi": {
+    "lat": 46.499102,
+    "lng": -87.611803
+  },
+  "519 south park street|kalamazoo|mi": {
+    "lat": 42.2868947,
+    "lng": -85.586833
+  },
+  "|battle creek|mi": {
+    "lat": 42.3192548,
+    "lng": -85.1824269
+  },
+  "1449 engineering research ct,east lansing,mi,48824|east lansing|mi": {
+    "lat": 42.7159632,
+    "lng": -84.4681555
+  },
+  "418 east walnut street, kalamazoo, mi 49007|kalamazoo|mi": {
+    "lat": 42.286084,
+    "lng": -85.5785423
+  },
+  "ross school of business, 701 tappan ave, ann arbor, mi 48109, usa|ann arbor|mi": null,
+  "235 n. main street|frankenmuth|mi": {
+    "lat": 43.3371341,
+    "lng": -83.7380391
+  },
+  "773 w michigan ave.|kalamazoo|mi": {
+    "lat": 42.2907233,
+    "lng": -85.5941774
+  },
+  "82 w warren, detroit, mi 48202|detroit|mi": {
+    "lat": 42.3564386,
+    "lng": -83.0664462
+  },
+  "community room 2600 s. summerton rd mt. pleasant, mi 48858|mount pleasant|mi": null,
+  "11189 shook rd, romulus|romulus|mi": {
+    "lat": 42.2207258,
+    "lng": -83.3959638
+  },
+  "310 meredith street|saginaw|mi": {
+    "lat": 43.4241265,
+    "lng": -83.941573
+  },
+  "center for advancing arts research, western michigan university, 1300 theatre dr (dalton center), kalamazoo, mi 49008|kalamazoo|mi": null,
+  "6415 state st.|saginaw|mi": {
+    "lat": 43.4370578,
+    "lng": -84.0434054
+  },
+  "spaceman, 3301 lenox pkwy ne ne, atlanta, ga 30326, usa|atlanta|mi": null,
+  "2500 hamlin dr.|inkster|mi": {
+    "lat": 42.2917252,
+    "lng": -83.3121434
+  },
+  "2697 tittabawassee rd.|saginaw|mi": {
+    "lat": 43.479921,
+    "lng": -83.970833
+  },
+  "203 s. washington, ste. 260|saginaw|mi": null,
+  "49 abbot road, ballroom, east lansing, mi 48824|east lansing|mi": null
 }
